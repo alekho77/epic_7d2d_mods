@@ -1,0 +1,18 @@
+# Normalize line endings to LF in the repository for all text files.
+# This overrides core.autocrlf for everyone working on this project.
+
+* text=auto eol=lf
+
+# Explicitly text files
+*.xml   text eol=lf
+*.txt   text eol=lf
+*.md    text eol=lf
+*.csv   text eol=lf
+*.json  text eol=lf
+
+# Binary files — never touch line endings
+*.png   binary
+*.jpg   binary
+*.unity3d binary
+*.bundle  binary
+*.dll   binary
