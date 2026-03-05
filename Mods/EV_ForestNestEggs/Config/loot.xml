@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <!-- Add 1 guaranteed egg to bird nests in pine_forest biome -->
+  <append xpath="/lootcontainers/lootgroup[@name='groupBirdNest02']">
+    <item name="foodEgg" count="1" loot_prob_template="guaranteed">
+      <requirement class="Biome" biomes="pine_forest"/>
+    </item>
+  </append>
+</config>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+    <!-- *** PLAYER STORAGE CONTAINERS *** -->
+    
+    <!-- Player Writable Crates -->
+    <append xpath="/blocks/block[@name='cntWoodWritableCrate']">
+        <drop event="Harvest" name="cntWoodWritableCrate" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntWoodWritableCrateInsecure']">
+        <drop event="Harvest" name="cntWoodWritableCrateInsecure" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntIronWritableCrate']">
+        <drop event="Harvest" name="cntIronWritableCrate" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntIronWritableCrateInsecure']">
+        <drop event="Harvest" name="cntIronWritableCrateInsecure" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntSteelWritableCrate']">
+        <drop event="Harvest" name="cntSteelWritableCrate" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntSteelWritableCrateInsecure']">
+        <drop event="Harvest" name="cntSteelWritableCrateInsecure" count="1" tool_category="Disassemble"/>
+    </append>
+
+    <!-- *** PLAYER SAFES *** -->
+    
+    <!-- Player Wall Safes -->
+    <append xpath="/blocks/block[@name='cntWallSafe_Player']">
+        <drop event="Harvest" name="cntWallSafe_Player" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntWallSafeInsecure_Player']">
+        <drop event="Harvest" name="cntWallSafeInsecure_Player" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <!-- Player Desk Safes -->
+    <append xpath="/blocks/block[@name='cntDeskSafe_Player']">
+        <drop event="Harvest" name="cntDeskSafe_Player" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntDeskSafeInsecure_Player']">
+        <drop event="Harvest" name="cntDeskSafeInsecure_Player" count="1" tool_category="Disassemble"/>
+    </append>
+
+    <!-- Player Gun Safes (All Colors) -->
+    <append xpath="/blocks/block[@name='cntGunSafe_Player']">
+        <drop event="Harvest" name="cntGunSafe_Player" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_Player']">
+        <drop event="Harvest" name="cntGunSafeInsecure_Player" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <!-- Gun Safe Color Variants -->
+    <append xpath="/blocks/block[@name='cntGunSafe_PlayerWhite']">
+        <drop event="Harvest" name="cntGunSafe_PlayerWhite" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafe_PlayerBrown']">
+        <drop event="Harvest" name="cntGunSafe_PlayerBrown" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafe_PlayerRed']">
+        <drop event="Harvest" name="cntGunSafe_PlayerRed" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafe_PlayerOrange']">
+        <drop event="Harvest" name="cntGunSafe_PlayerOrange" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafe_PlayerYellow']">
+        <drop event="Harvest" name="cntGunSafe_PlayerYellow" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafe_PlayerGreen']">
+        <drop event="Harvest" name="cntGunSafe_PlayerGreen" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafe_PlayerBlue']">
+        <drop event="Harvest" name="cntGunSafe_PlayerBlue" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafe_PlayerPurple']">
+        <drop event="Harvest" name="cntGunSafe_PlayerPurple" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafe_PlayerGrey']">
+        <drop event="Harvest" name="cntGunSafe_PlayerGrey" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafe_PlayerPink']">
+        <drop event="Harvest" name="cntGunSafe_PlayerPink" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafe_PlayerArmyGreen']">
+        <drop event="Harvest" name="cntGunSafe_PlayerArmyGreen" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <!-- Gun Safe Insecure Color Variants -->
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerWhite']">
+        <drop event="Harvest" name="cntGunSafeInsecure_PlayerWhite" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerBrown']">
+        <drop event="Harvest" name="cntGunSafeInsecure_PlayerBrown" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerRed']">
+        <drop event="Harvest" name="cntGunSafeInsecure_PlayerRed" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerOrange']">
+        <drop event="Harvest" name="cntGunSafeInsecure_PlayerOrange" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerYellow']">
+        <drop event="Harvest" name="cntGunSafeInsecure_PlayerYellow" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerGreen']">
+        <drop event="Harvest" name="cntGunSafeInsecure_PlayerGreen" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerBlue']">
+        <drop event="Harvest" name="cntGunSafeInsecure_PlayerBlue" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerPurple']">
+        <drop event="Harvest" name="cntGunSafeInsecure_PlayerPurple" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerGrey']">
+        <drop event="Harvest" name="cntGunSafeInsecure_PlayerGrey" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerPink']">
+        <drop event="Harvest" name="cntGunSafeInsecure_PlayerPink" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntGunSafeInsecure_PlayerArmyGreen']">
+        <drop event="Harvest" name="cntGunSafeInsecure_PlayerArmyGreen" count="1" tool_category="Disassemble"/>
+    </append>
+
+    <!-- *** OTHER STORAGE CONTAINERS *** -->
+    
+    <!-- Garage Storage -->
+    <append xpath="/blocks/block[@name='cntGarageStorage']">
+        <drop event="Harvest" name="cntGarageStorage" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <!-- Coolers -->
+    <append xpath="/blocks/block[@name='cntCoolerBlue']">
+        <drop event="Harvest" name="cntCoolerBlue" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntCoolerRed']">
+        <drop event="Harvest" name="cntCoolerRed" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntCoolerGreen']">
+        <drop event="Harvest" name="cntCoolerGreen" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <!-- Fridges/Refrigerators -->
+    <append xpath="/blocks/block[@name='cntRetroFridgeVer1Closed_Player']">
+        <drop event="Harvest" name="cntRetroFridgeVer1Closed_Player" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntFridgeStainlessSteel_Player']">
+        <drop event="Harvest" name="cntFridgeStainlessSteel_Player" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <!-- Cabinets (Kitchen/Bath) -->
+    <append xpath="/blocks/block[@name='cntCabinetBottom']">
+        <drop event="Harvest" name="cntCabinetBottom" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntCounterHollowCabinet']">
+        <drop event="Harvest" name="cntCounterHollowCabinet" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntCupboardCabinetRedTopClosed']">
+        <drop event="Harvest" name="cntCupboardCabinetRedTopClosed" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntCupboardCornerCNRRed']">
+        <drop event="Harvest" name="cntCupboardCornerCNRRed" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntCupboardCabinetFullRedTopClosed']">
+        <drop event="Harvest" name="cntCupboardCabinetFullRedTopClosed" count="1" tool_category="Disassemble"/>
+    </append>
+    
+    <append xpath="/blocks/block[@name='cntCabinetOldBottom']">
+        <drop event="Harvest" name="cntCabinetOldBottom" count="1" tool_category="Disassemble"/>
+    </append>
+
+</config>

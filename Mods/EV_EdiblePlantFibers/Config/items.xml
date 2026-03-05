@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <!-- Edible Plant Fibers Mod -->
+  <!-- Makes resourceYuccaFibers (Plant Fibers / Волокна травы) edible -->
+  <!-- Restores 1 food per use, no health, no dysentery -->
+
+  <!-- Add Eat action to plant fibers -->
+  <append xpath="//item[@name='resourceYuccaFibers']">
+    <property class="Action0">
+      <property name="Class" value="Eat"/>
+      <property name="Delay" value="0.5"/>
+      <property name="Sound_start" value="player_eating"/>
+    </property>
+
+    <effect_group tiered="false" name="Edible Grass">
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="1"/>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+    </effect_group>
+  </append>
+
+  <!-- Change HoldType to 31 (hand-held food like bread) for proper eating animation -->
+  <set xpath="//item[@name='resourceYuccaFibers']/property[@name='HoldType']/@value">31</set>
+</config>
