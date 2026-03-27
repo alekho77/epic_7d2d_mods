@@ -264,6 +264,22 @@ def filter_unsellable_leaves(nodes: dict, edges: list):
     return nodes, edges
 
 
+def filter_isolated_nodes(nodes: dict, edges: list):
+    """Remove nodes that have no incoming or outgoing edges."""
+    connected: set = set()
+    for src, dst, _ in edges:
+        connected.add(src)
+        connected.add(dst)
+
+    isolated = set(nodes.keys()) - connected
+    for name in isolated:
+        del nodes[name]
+
+    print(f"  Removed {len(isolated)} isolated nodes")
+    print(f"  After filter: {len(nodes)} nodes, {len(edges)} edges")
+    return nodes, edges
+
+
 # ---------------------------------------------------------------------------
 # 4. Colour helpers
 # ---------------------------------------------------------------------------
@@ -404,8 +420,11 @@ def main():
     print("\n[3/5] Building graph …")
     nodes, edges = build_graph_data(objects, recipes)
 
-    print("\n[4/5] Filtering unsellable leaf nodes …")
+    print("\n[4/6] Filtering unsellable leaf nodes …")
     nodes, edges = filter_unsellable_leaves(nodes, edges)
+
+    print("\n[5/6] Removing isolated nodes …")
+    nodes, edges = filter_isolated_nodes(nodes, edges)
 
     # Enrich nodes with localization
     for name, info in nodes.items():
@@ -413,7 +432,7 @@ def main():
         info["name_en"] = loc.get("english", "")
         info["name_ru"] = loc.get("russian", "")
 
-    print("\n[5/5] Rendering with pyvis …")
+    print("\n[6/6] Rendering with pyvis …")
     render_graph(nodes, edges, OUTPUT_HTML)
 
     print("\nDone! Open graph.html in a browser.")
