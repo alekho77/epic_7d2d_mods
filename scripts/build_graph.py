@@ -1,11 +1,74 @@
 """
 7 Days to Die — Recipe Graph Builder
+=====================================
 
-Parses Config/recipes.xml, Config/items.xml, Config/blocks.xml
-and builds an interactive graph (pyvis) of crafting dependencies.
+Reads the vanilla game configuration files from the /Config folder and
+produces a self-contained interactive HTML graph (pyvis / vis.js) that
+visualises crafting recipe dependencies across all in-game objects.
 
-Nodes  = items / blocks  (weight = EconomicValue, label = name)
-Edges  = ingredient → product  (weight = ingredient count)
+Usage
+-----
+    .venv/Scripts/python.exe scripts/build_graph.py
+
+Output
+------
+    scripts/graph.html  — open in any modern browser (requires internet
+                          access for CDN assets on first load).
+
+Data sources (all read from /Config)
+-------------------------------------
+    items.xml          — holdable items, weapons, tools, consumables
+    blocks.xml         — placeable world blocks
+    item_modifiers.xml — weapon/tool attachments and mods
+    recipes.xml        — crafting recipes (ingredient → product links)
+    Localization.txt   — EN / RU display names for all objects
+
+Graph structure
+---------------
+    Nodes  — every object (item / block / modifier) that participates in
+              at least one recipe, either as an ingredient or as a product.
+              Isolated objects with no recipe connections are excluded.
+
+    Edges  — directed link: ingredient → product.
+              Edge weight = total ingredient count across all recipes that
+              use that ingredient to produce that product.
+
+Node properties
+---------------
+    Size    — proportional to EconomicValue (8 – 36 px).
+    Label   — English display name from Localization.txt, or the raw ID
+              if no translation exists.
+    Tooltip — full details: object ID, EN/RU name, source file, whether
+              it is a base resource or craftable, EconomicValue, and a
+              warning if the object has CreativeMode=None (template/base
+              class not available to players).
+
+Node colour scheme
+------------------
+    #9137FF  purple  — template / base class (CreativeMode=None)
+    #4CAF50  green   — base resource (exists in no recipe as a product;
+                       must be gathered or found in the world)
+    #229CFF  blue    — craftable item  (source: items.xml)
+    #EEFF00  yellow  — craftable block (source: blocks.xml)
+    #FD7B10  orange  — item modifier   (source: item_modifiers.xml)
+    #9E9E9E  grey    — unknown / not found in any config file
+
+Filtering pipeline
+------------------
+    1. Load all objects from items.xml, blocks.xml, item_modifiers.xml.
+    2. Parse all recipes; build raw node + edge lists.
+    3. Remove "unsellable leaf" nodes: objects that are NOT used as an
+       ingredient in any recipe AND have either SellableToTrader=false
+       or no EconomicValue defined.  These are purely decorative or
+       internal objects with no economic/crafting relevance.
+    4. Remove isolated nodes: objects that remain after step 3 but still
+       have no edges (neither ingredient nor product of any recipe).
+    5. Enrich surviving nodes with localisation data.
+    6. Render to HTML with Barnes-Hut physics on a dark (#1a1a2e) canvas.
+
+Typical output size
+-------------------
+    ~346 nodes, ~896 edges  (out of 7 776 raw objects and 588 recipes).
 """
 
 import os
