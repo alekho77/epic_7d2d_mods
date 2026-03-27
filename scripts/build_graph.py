@@ -364,9 +364,8 @@ def render_graph(nodes: dict, edges: list, output_path: str):
         label = display_name
 
         # pyvis strips `color` when `group` is present, so we only
-        # set group for craftable nodes where we rely on group auto-coloring.
-        # For creative=None and base-resource nodes we omit group so the
-        # explicit colour (purple / green) takes effect.
+        # Do NOT set `group` — pyvis overrides explicit `color` when
+        # `group` is present.  All colouring is handled by node_color().
         node_opts = dict(
             label=label,
             title=title,
@@ -374,8 +373,6 @@ def render_graph(nodes: dict, edges: list, output_path: str):
             size=node_size(info),
             value=eco if eco else 1,
         )
-        if is_creative and not info["is_base"]:
-            node_opts["group"] = source_str
 
         net.add_node(name, **node_opts)
 
