@@ -364,11 +364,11 @@ def render_html(results: list[dict], statuses: dict, localization: dict, output_
 
     # Filter buttons
     lines.append('<div class="filters">')
-    lines.append('  <button class="active" onclick="setFilter(\'all\', this)">All</button>')
-    lines.append('  <button onclick="setFilter(\'undervalued\', this)">Undervalued</button>')
-    lines.append('  <button onclick="setFilter(\'suspect\', this)">Suspect</button>')
-    lines.append('  <button onclick="setFilter(\'unverifiable\', this)">Unverifiable</button>')
-    lines.append('  <button onclick="setFilter(\'healthy\', this)">Healthy</button>')
+    lines.append('  <button class="active" onclick="setFilter(\'all\', this)" title="Show all recipes regardless of status">All</button>')
+    lines.append('  <button onclick="setFilter(\'undervalued\', this)" title="Product EconomicValue is LOWER than the total cost of its ingredients. The object is directly underpriced — selling ingredients separately would be more profitable than crafting.">Undervalued</button>')
+    lines.append('  <button onclick="setFilter(\'suspect\', this)" title="This object is crafted from at least one undervalued or suspect ingredient. Its real crafting cost is higher than what the ingredient values suggest, so its own EconomicValue is also questionable.">Suspect</button>')
+    lines.append('  <button onclick="setFilter(\'unverifiable\', this)" title="At least one ingredient (or the product itself) has no EconomicValue defined, so the cost comparison cannot be performed.">Unverifiable</button>')
+    lines.append('  <button onclick="setFilter(\'healthy\', this)" title="Product EconomicValue is greater than or equal to the total ingredient cost. The pricing is consistent.">Healthy</button>')
     lines.append('</div>')
 
     # Table
