@@ -1,4 +1,5 @@
 /Config/
 /scripts/graph.html
 /scripts/undervalued.html
+/dist/
 *.pyc

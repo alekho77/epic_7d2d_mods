@@ -1,0 +1,52 @@
+name: Package Mods
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      mods:
+        description: "Comma-separated mod folder names (empty = all)"
+        required: false
+        default: ""
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Package mods
+        run: |
+          ARGS=""
+          if [ -n "${{ github.event.inputs.mods }}" ]; then
+            ARGS="--mods ${{ github.event.inputs.mods }}"
+          fi
+          python scripts/package_mods.py $ARGS
+
+      - name: Upload individual mod artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: mod-archives
+          path: dist/*.zip
+          if-no-files-found: error
+
+      - name: Upload manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: manifest
+          path: dist/manifest.json
+
+      - name: Attach archives to release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.zip
