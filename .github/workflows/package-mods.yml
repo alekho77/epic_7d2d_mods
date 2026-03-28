@@ -24,6 +24,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
       - name: Package mods
         run: |
           ARGS=""
