@@ -1,5 +1,7 @@
 # Alloy Motor Tool Parts
 
+> **Work in Progress** — This mod is part of a larger tool upgrade system still under active development. Features and values may change in future releases.
+
 ## Description
 
 Adds **Alloy Motor Tool Parts (Tier A)** — an upgraded tier of motor tool parts crafted from regular chainsaw parts, a silver nugget, and forged steel. Part of a planned multi-tier tool upgrade system for the EpicVales server community.
@@ -69,13 +71,13 @@ This mod is the first part of an advanced tool parts system:
 
 ## Changelog
 
-### v1.0.0
-- Initial release with Tier A Alloy Motor Tool Parts
+### v0.1.0
+- Initial work-in-progress release with Tier A Alloy Motor Tool Parts
 - Salvage Tools cap raised to 100
 - Full progression UI integration
 
 ---
 
 **Author:** Aleksei Khozin  
-**Version:** 1.0.0  
+**Version:** 0.1.0  
 **Website:** https://alekho77.github.io/epic_7d2d_mods/
