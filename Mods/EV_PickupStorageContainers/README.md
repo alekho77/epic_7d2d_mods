@@ -1,5 +1,7 @@
 # Pickup Storage Containers
 
+> **Work in Progress** — This mod is still under active development. Features and supported containers may change in future releases.
+
 ## Description
 
 Allows players to recover storage containers, chests, and safes by disassembling them when empty. Instead of getting raw materials, you get the container back as a placeable item — perfect for base reorganization.
@@ -48,11 +50,11 @@ Allows players to recover storage containers, chests, and safes by disassembling
 
 ## Changelog
 
-### v1.0.0
-- Initial release with support for all writable crates, safes, coolers, refrigerators, garage storage, and cabinets
+### v0.1.0
+- Initial work-in-progress release with support for all writable crates, safes, coolers, refrigerators, garage storage, and cabinets
 
 ---
 
 **Author:** Aleksei Khozin  
-**Version:** 1.0.0  
+**Version:** 0.1.0  
 **Website:** https://alekho77.github.io/epic_7d2d_mods/
