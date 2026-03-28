@@ -1,103 +1,81 @@
-# Alloy Motor Tool Parts Mod
+# Alloy Motor Tool Parts
 
-## Описание
+## Description
 
-Этот мод добавляет в игру **Легированные части бензоинструмента (Tier A)** - улучшенные части для создания более мощных инструментов.
+Adds **Alloy Motor Tool Parts (Tier A)** — an upgraded tier of motor tool parts crafted from regular chainsaw parts, a silver nugget, and forged steel. Part of a planned multi-tier tool upgrade system for the EpicVales server community.
 
-## Особенности
+## Features
 
-- **Новый предмет**: Легированные части бензоинструмента (Tier A)
-- **Серверный мод**: Не требует установки на клиенте
-- **Переиспользование ресурсов**: Использует существующую иконку с новой цветовой схемой
-- **Сбалансированная экономика**: Цена рассчитана как удвоенная стоимость ингредиентов
+- New craftable item: Alloy Motor Tool Parts (Tier A)
+- Server-side mod — no mandatory client installation for basic functionality
+- Reuses existing game icon with a custom steel-blue color tint (`7A8C9E`)
+- Balanced economic value calculated as 2× ingredient cost (EconomicValue: 1400)
 
-## Рецепт крафта
+## Crafting Recipe
 
-Для создания легированных частей бензоинструмента требуется:
+| Ingredient | Quantity |
+|---|---|
+| Motor Tool Parts (regular) | 1 |
+| Silver Nugget | 1 |
+| Forged Steel | 5 |
 
-- 1x Части бензоинструмента (обычные)
-- 1x Серебряный самородок
-- 5x Кованая сталь
+**Crafting Station:** Workbench  
+**Craft Time:** 60 seconds
 
-**Место крафта**: Верстак  
-**Время крафта**: 60 секунд
+## Unlock Requirements
 
-## Требования для разблокировки
+The recipe is locked behind the **Salvage Tools** progression line (Scrapping 4 Fun magazines):
 
-**📚 Прогрессия**: Рецепт разблокируется после чтения **76-го журнала "Scrapping 4 Fun"**
+- Unlocks at **level 76** of the Salvage Tools skill
+- The mod raises the vanilla Salvage Tools cap from **75 → 100** to make the unlock achievable
+- A dedicated "Industrial Parts: Tier A" entry appears in the Salvage Tools progression tab
+- The UI shows a lock icon and requirements until level 76 is reached
 
-- Журналы серии "Scrapping 4 Fun" улучшают навык "Salvage Tools" 
-- **Важно**: Мод повышает максимальный уровень ветки "Salvage Tools" с 75 до 100
-- После чтения 76-го журнала рецепт появится в меню прогрессии отдельной строкой
-- Строка "Индустриальные части: Tier A" будет видна на вкладке "Salvage Tools"
+## Installation
 
-### Изменения в прогрессии
+1. Copy the `EV_AlloyMotorToolParts` folder into your game's `Mods/` directory
+2. Restart the game or server
 
-- **Ванильный лимит**: 75 журналов "Scrapping 4 Fun"
-- **Новый лимит**: 100 журналов "Scrapping 4 Fun" 
-- **Анлок рецепта**: на 76-м уровне (первый сверх-ванильный уровень)
-- **UI отображение**: показывает замок и требования до достижения 76-го уровня
+> **Note on Progression UI:** The `progression.xml` file is NOT synced to clients automatically. For players to see the correct lock icons and unlock requirements in the progression menu, they need to install the mod locally as well. Without it, the recipe will appear as "available" in the UI but will still be locked server-side until 76 magazines are read.
 
-## Установка
+## Compatibility
 
-1. Скопируйте папку `AlloyMotorToolParts` в директорию `mods/` вашего сервера
-2. Перезапустите сервер
+- 7 Days to Die 1.0 (Alpha 21+)
+- Server and single-player compatible
+- May conflict with mods that modify the Salvage Tools progression cap or the `craftingSalvageTools` skill tree
 
-**⚠️ Важное примечание о UI прогрессии:**
-- Файл `progression.xml` НЕ передается клиентам автоматически
-- Игроки увидят корректные замки и требования только если установят мод локально
-- Без клиентского мода игроки будут видеть рецепт как "доступный", но крафтить не смогут до 76-го журнала
-- Это техническое ограничение движка 7 Days to Die
+## Planned Development
 
-## Планы развития
+This mod is the first part of an advanced tool parts system:
 
-Этот мод является частью большой системы улучшенных инструментов:
+- **Tier A** (Alloy Steel) — this mod ✅
+- **Tier AAA** (Composite) — planned
+- **Tier S** (Diamond) — planned
 
-- **Tier A** (Легированный стальной) - текущий мод ✅
-- **Tier AAA** (Композитный) - планируется
-- **Tier S** (Алмазный) - планируется
+## Technical Details
 
-## Техническая информация
+- **Unlock tag:** `mtPartsA_Alloy_unlock`
+- **Progression:** Linked to `craftingSalvageTools` (level 76+)
+- **Cap change:** Raises `max_level` of Salvage Tools from 75 to 100
 
-- **EconomicValue**: 1400 (рассчитано как (200 + 250 + 250) × 2)
-- **Цветовая схема**: `7A8C9E` (стально-синий)
-- **Совместимость**: 7 Days to Die Alpha 21+
-- **Анлок тег**: `mtPartsA_Alloy_unlock`
-- **Прогрессия**: Привязан к ветке `craftingSalvageTools` (уровень 76+)
-- **Изменение капа**: Повышает max_level ветки Salvage Tools с 75 до 100
+### Mod Files
 
-### Файлы мода
+| File | Purpose |
+|---|---|
+| `items.xml` | Item definition with recolored icon |
+| `recipes.xml` | Crafting recipe with unlock tag |
+| `progression.xml` | Progression system, cap increase, and UI display entry |
+| `Localization.txt` | English and Russian localization |
 
-- `items.xml` - определение предмета с перекрашенной иконкой
-- `recipes.xml` - рецепт крафта с тегом анлока
-- `progression.xml` - система прогрессии, повышение капа и отображение в меню
-- `Localization.txt` - русская и английская локализация
+## Changelog
 
-### Зачем повышать кап Salvage Tools?
+### v1.0.0
+- Initial release with Tier A Alloy Motor Tool Parts
+- Salvage Tools cap raised to 100
+- Full progression UI integration
 
-В ванильной игре максимум журналов "Scrapping 4 Fun" = 75. Без повышения капа 76-й уровень недостижим, и рецепт никогда не разблокируется. Мод повышает лимит до 100, позволяя игрокам продолжить изучение журналов сверх ванильного лимита.
+---
 
-### Важные особенности рецепта
-
-- **Только тег анлока**: `toolPartsA_unlock` - рецепт заблокирован без прогрессии
-- **Привязан к ветке Salvage Tools**: разблокируется исключительно через журналы "Scrapping 4 Fun"
-- **Без workbenchCrafting**: предотвращает показ как "доступный по умолчанию"
-- **Серверная логика**: работает на сервере, но UI корректен только с клиентским модом
-
-### Формат display_entry
-
-Мод использует полный формат `display_entry` с вложенным `unlock_entry`, обязательный для A21/1.0:
-```xml
-<display_entry icon="meleeToolAxeT3ChainsawParts"
-               has_quality="false"
-               name_key="salvageTools_IndustrialPartsA"
-               unlock_level="76">
-  <unlock_entry item="motorToolPartsA_Alloy" unlock_tier="1"/>
-</display_entry>
-```
-Это обеспечивает корректное отображение замка, требований и правой панели в UI прогрессии.
-
-## Автор
-
-Aleksei Khozin  
-Website: https://alekho77.github.io/7d2d-servers/
+**Author:** Aleksei Khozin  
+**Version:** 1.0.0  
+**Website:** https://alekho77.github.io/epic_7d2d_mods/
