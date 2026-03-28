@@ -447,10 +447,18 @@ def render_html(results: list[dict], statuses: dict, localization: dict, output_
 
     for entry in sorted_results:
         product = entry["product"]
-        # Use the propagated status (worst across all recipes + downstream)
-        final_status = statuses.get(product, entry["status"])
-        # But if this specific recipe is undervalued, show that
-        row_status = entry["status"] if entry["status"] == UNDERVALUED else final_status
+        # Use the propagated status for downstream suspect detection
+        propagated = statuses.get(product, HEALTHY)
+        # Row status: recipe's own assessment takes priority,
+        # but healthy recipes inherit SUSPECT if product is flagged downstream
+        if entry["status"] == UNDERVALUED:
+            row_status = UNDERVALUED
+        elif entry["status"] == UNVERIFIABLE:
+            row_status = UNVERIFIABLE
+        elif propagated == SUSPECT:
+            row_status = SUSPECT
+        else:
+            row_status = HEALTHY
         color = STATUS_COLORS[row_status]
         label = STATUS_LABELS[row_status]
         dn = _esc(display_name(product, localization))
