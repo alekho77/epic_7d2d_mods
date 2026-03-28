@@ -62,13 +62,23 @@ def parse_objects(xml_path: str, source_label: str) -> dict:
         if not name:
             continue
         eco = None
+        bundle_size = 1
         for prop in elem.findall("property"):
             if prop.get("name") == "EconomicValue":
                 try:
                     eco = int(prop.get("value", 0))
                 except ValueError:
                     eco = None
-        objects[name] = {"source": source_label, "economic_value": eco}
+            if prop.get("name") == "EconomicBundleSize":
+                try:
+                    bundle_size = int(prop.get("value", 1))
+                except ValueError:
+                    bundle_size = 1
+        objects[name] = {
+            "source": source_label,
+            "economic_value": eco,
+            "bundle_size": bundle_size,
+        }
     return objects
 
 
@@ -142,11 +152,15 @@ UNVERIFIABLE = "unverifiable"
 
 
 def get_eco(objects: dict, name: str):
-    """Return EconomicValue or None."""
+    """Return per-unit EconomicValue (EconomicValue / EconomicBundleSize) or None."""
     info = objects.get(name)
     if info is None:
         return None
-    return info.get("economic_value")
+    eco = info.get("economic_value")
+    if eco is None:
+        return None
+    bundle_size = info.get("bundle_size", 1)
+    return eco / bundle_size
 
 
 def analyse_recipes(objects: dict, recipes: list[dict]):
@@ -204,9 +218,9 @@ def analyse_recipes(objects: dict, recipes: list[dict]):
             "product": product,
             "product_count": product_count,
             "product_eco": product_eco,
-            "product_total": (product_eco * product_count) if product_eco is not None else None,
+            "product_total": round(product_eco * product_count, 2) if product_eco is not None else None,
             "ingredients": ingredients_detail,
-            "ingredient_cost": total_ingredient_cost if not has_missing else None,
+            "ingredient_cost": round(total_ingredient_cost, 2) if not has_missing else None,
             "status": status,
         }
         results.append(entry)
@@ -397,13 +411,13 @@ def render_html(results: list[dict], statuses: dict, localization: dict, output_
         product_total = entry["product_total"]
         ing_cost = entry["ingredient_cost"]
 
-        pt_str = str(product_total) if product_total is not None else "N/A"
-        ic_str = str(ing_cost) if ing_cost is not None else "N/A"
+        pt_str = f"{product_total:.2f}" if product_total is not None else "N/A"
+        ic_str = f"{ing_cost:.2f}" if ing_cost is not None else "N/A"
 
         if product_total is not None and ing_cost is not None:
             diff = product_total - ing_cost
             diff_class = "diff-positive" if diff >= 0 else "diff-negative"
-            diff_str = f'<span class="{diff_class}">{diff:+d}</span>'
+            diff_str = f'<span class="{diff_class}">{diff:+.2f}</span>'
         else:
             diff_str = "—"
 
@@ -415,8 +429,8 @@ def render_html(results: list[dict], statuses: dict, localization: dict, output_
             if ing["total_value"] is not None:
                 ing_html_parts.append(
                     f"<li>{ing_dn} <small>({ing_id})</small> "
-                    f"×{ing['count']} = {ing['total_value']} "
-                    f"<small>(unit: {ing['unit_value']})</small></li>"
+                    f"×{ing['count']} = {ing['total_value']:.2f} "
+                    f"<small>(unit: {ing['unit_value']:.4g})</small></li>"
                 )
             else:
                 ing_html_parts.append(
@@ -533,7 +547,7 @@ def main():
         pt = entry["product_total"]
         ic = entry["ingredient_cost"]
         diff = pt - ic if pt is not None and ic is not None else 0
-        print(f"  {en:40s}  value={pt:>6}  cost={ic:>6}  diff={diff:>+6}")
+        print(f"  {en:40s}  value={pt:>10.2f}  cost={ic:>10.2f}  diff={diff:>+10.2f}")
 
     print(f"\nTotal: {undervalued_count} undervalued + {suspect_count} suspect downstream")
     print("Done!")
