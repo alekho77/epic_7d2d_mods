@@ -105,6 +105,7 @@ def parse_recipes(xml_path: str) -> list[dict]:
         if not name:
             continue
         count = int(recipe_el.get("count", 1))
+        material_based = recipe_el.get("material_based", "false").lower() == "true"
         ingredients = []
         for ing in recipe_el.findall("ingredient"):
             ing_name = ing.get("name")
@@ -115,7 +116,12 @@ def parse_recipes(xml_path: str) -> list[dict]:
         # Skip scrap-only recipes with no ingredients
         if not ingredients:
             continue
-        recipes.append({"name": name, "count": count, "ingredients": ingredients})
+        recipes.append({
+            "name": name,
+            "count": count,
+            "ingredients": ingredients,
+            "material_based": material_based,
+        })
     print(f"  recipes.xml → {len(recipes)} recipes (with ingredients)")
     return recipes
 
@@ -161,6 +167,48 @@ def get_eco(objects: dict, name: str):
         return None
     bundle_size = info.get("bundle_size", 1)
     return eco / bundle_size
+
+
+def derive_forge_unit_values(objects: dict, recipes: list[dict]):
+    """
+    Derive EconomicValue for forge unit items (unit_*) that have no price.
+
+    Forge-emptying recipes convert N × unit_X → 1 × resource.
+    So 1 unit_X is worth (resource_per_unit_price / N).
+
+    We use material_based forge recipes where the sole ingredient is a
+    unit_* item with no EconomicValue, and the product has a known price.
+    """
+    derived = 0
+    for r in recipes:
+        if not r.get("material_based"):
+            continue
+        if len(r["ingredients"]) != 1:
+            continue
+        ing = r["ingredients"][0]
+        ing_name = ing["name"]
+        # Only process unit_ items with no EconomicValue
+        if not ing_name.startswith("unit_"):
+            continue
+        ing_info = objects.get(ing_name)
+        if ing_info is None or ing_info.get("economic_value") is not None:
+            continue
+        # Product must have a known price
+        product_eco = get_eco(objects, r["name"])
+        if product_eco is None:
+            continue
+        # N × unit_X → count × product
+        # 1 unit_X = (product_per_unit_price × product_count) / ing_count
+        unit_value = (product_eco * r["count"]) / ing["count"]
+        # Store as EconomicValue with bundle_size=1 (already per-unit)
+        ing_info["economic_value"] = unit_value
+        ing_info["bundle_size"] = 1
+        ing_info["derived"] = True
+        derived += 1
+        print(f"    {ing_name}: {unit_value:.4g} dukes/unit "
+              f"(from {r['name']} ×{r['count']}, needs {ing['count']} units)")
+    print(f"  Derived values for {derived} forge unit(s)")
+    return objects
 
 
 def analyse_recipes(objects: dict, recipes: list[dict]):
@@ -513,24 +561,27 @@ def main():
     print("7D2D Undervalued Object Finder")
     print("=" * 60)
 
-    print("\n[1/5] Loading objects …")
+    print("\n[1/6] Loading objects …")
     objects = load_all_objects()
 
-    print("\n[2/5] Parsing recipes …")
+    print("\n[2/6] Parsing recipes …")
     recipes = parse_recipes(RECIPES_XML)
 
-    print("\n[3/5] Analysing recipe economics …")
+    print("\n[3/6] Deriving forge unit values …")
+    objects = derive_forge_unit_values(objects, recipes)
+
+    print("\n[4/6] Analysing recipe economics …")
     results, statuses = analyse_recipes(objects, recipes)
 
     undervalued_count = sum(1 for s in statuses.values() if s == UNDERVALUED)
     print(f"  Directly undervalued: {undervalued_count}")
 
-    print("\n[4/5] Propagating suspect status downstream …")
+    print("\n[5/6] Propagating suspect status downstream …")
     statuses = propagate_suspect(recipes, statuses)
     suspect_count = sum(1 for s in statuses.values() if s == SUSPECT)
     print(f"  Suspect (downstream): {suspect_count}")
 
-    print("\n[5/5] Generating HTML report …")
+    print("\n[6/6] Generating HTML report …")
     localization = parse_localization(LOCALIZATION_TXT)
     render_html(results, statuses, localization, OUTPUT_HTML)
 
