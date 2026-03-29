@@ -40,13 +40,13 @@ A standard 7 Days to Die installation contains these top-level directories:
 | `Licenses\` | Third-party library license texts |
 | `Logos\` | Splash screen and app icon images |
 | `MonoBleedingEdge\` | Mono runtime (`mono-2.0-bdwgc.dll`) and configuration |
-| `Mods\` | Installed mods — the game auto-loads every subfolder here |
+| `Mods\` | Installed mods — the game loads valid mod folders (those containing `ModInfo.xml`). Mods can also be placed in `%APPDATA%\7DaysToDie\Mods\` (official recommendation); both locations work |
 
 ---
 
 ## Modlet Folder Structure
 
-All mods live in the game's `Mods\` folder. Each mod is a self-contained subfolder:
+Mods can be placed in the game's `Mods\` folder or in `%APPDATA%\7DaysToDie\Mods\` (the currently recommended location). Each mod is a self-contained subfolder:
 
 ```
 Mods\
@@ -103,11 +103,10 @@ Key differences: V2 uses `<xml>` as root (instead of `<ModInfo>`), `Name` is str
 
 ## How to Test Mods
 
-1. Copy (or symlink) the mod folder into the game's `Mods\` directory.
+1. Copy (or symlink) the mod folder into `%APPDATA%\7DaysToDie\Mods\` (recommended) or the game's `Mods\` directory.
 2. Launch the game **without EAC** (`7DaysToDie.exe` directly, not `7DaysToDie_EAC.exe`).
-3. Check `%APPDATA%\7DaysToDie\output_log.txt` for errors.
+3. Check `Player.log` / `output_log` in the client log location for your version and launch method (commonly `%APPDATA%\..\LocalLow\The Fun Pimps\7 Days To Die\Player.log`).
 4. The game validates XML on load — XPath errors are logged with the offending file and line.
-5. For rapid iteration, use a dedicated modded copy of the game (environment variable `7D2D_MODED` can point to it).
 
 ---
 
@@ -165,7 +164,8 @@ Key differences: V2 uses `<xml>` as root (instead of `<ModInfo>`), `Name` is str
 |---|---|
 | Harmony Documentation | https://harmony.pardeike.net/articles/intro.html |
 | HarmonyX (BepInEx fork) | https://github.com/BepInEx/HarmonyX |
-| Sphereii's DMT (Mod Launcher) | https://github.com/SphereII/DMT |
+| SphereII's DMT | https://github.com/SphereII/DMT |
+| 7D2D Mod Launcher | https://github.com/SphereII/The7D2DModLauncher |
 | KhaineGB's Modding Examples | https://community.7daystodie.com/topic/19594-khainesgb-modlets/ |
 | SphereII's Modlets & Tutorials | https://community.7daystodie.com/topic/28540-sphereiis-modlets/ |
 
@@ -186,7 +186,7 @@ Key differences: V2 uses `<xml>` as root (instead of `<ModInfo>`), `Name` is str
 - **EAC must be disabled** to use Harmony mods or any DLL-based mods.
 - Launch `7DaysToDie.exe` directly (not via `7DaysToDie_EAC.exe`) to bypass EAC.
 - XML-only modlets **can** work with EAC enabled (no DLLs involved), but it is safer to test without EAC.
-- Servers using mods typically disable EAC — clients connecting must also have EAC off.
+- Servers using DLL/Harmony mods must disable EAC; clients connecting to such servers must also have EAC off. XML-only and some server-side-only mods can be EAC-compatible.
 
 ---
 
