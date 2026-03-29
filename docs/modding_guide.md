@@ -60,19 +60,37 @@ Mods\
 
 ### ModInfo.xml (Required)
 
-Every mod **must** include a `ModInfo.xml`:
+Every mod **must** include a `ModInfo.xml`. There are two format versions:
+
+**V2 format** (introduced in Alpha 21, recommended):
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <Name value="MyModName"/>             <!-- Required. Internal ID: latin letters, numbers, underscores, dashes only. No spaces. Must be globally unique. -->
+  <DisplayName value="My Mod Name"/>    <!-- Required. Human-readable name shown in UI. -->
+  <Version value="1.0.0"/>              <!-- Required. SemVer: major.minor[.build[.revision]] -->
+  <Description value="What this mod does."/>  <!-- Optional -->
+  <Author value="AuthorName"/>          <!-- Optional -->
+  <Website value="https://example.com"/>      <!-- Optional -->
+</xml>
+```
+
+**V1 format** (legacy, pre-Alpha 21):
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <ModInfo>
   <Name value="MyModName"/>
-  <DisplayName value="My Mod Display Name"/>
-  <Description value="Short description of what this mod does."/>
+  <DisplayName value="My Mod Name"/>
+  <Description value="What this mod does."/>
   <Author value="AuthorName"/>
   <Version value="1.0.0"/>
   <Website value="https://example.com"/>
 </ModInfo>
 ```
+
+Key differences: V2 uses `<xml>` as root (instead of `<ModInfo>`), `Name` is strictly an internal ID (no spaces), and `DisplayName` is the user-facing name. V1 is still loaded but logs a warning; TFP indicated V1 support may be dropped in future versions.
 
 ### Mod Load Order
 
