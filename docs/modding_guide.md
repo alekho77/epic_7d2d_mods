@@ -118,9 +118,10 @@ Every mod **must** include a `ModInfo.xml`:
 |---|---|
 | The Fun Pimps Official Site | https://7daystodie.com/ |
 | 7D2D Steam Store Page | https://store.steampowered.com/app/251570/7_Days_to_Die/ |
-| TFP Official Forums | https://community.7daystodie.com/forum/ |
-| TFP Modding Subforum | https://community.7daystodie.com/forum/46-modding/ |
-| TFP Modding Documentation | https://community.7daystodie.com/topic/3099-the-xml-modding-guide/ |
+| TFP Community Forums | https://community.thefunpimps.com/ |
+| Game Modification Category | https://community.thefunpimps.com/categories/game-modification.48/ |
+| Tutorials & Guides | https://community.thefunpimps.com/forums/tutorials-guides.39/ |
+| Mods (Resources) | https://community.thefunpimps.com/resources/ |
 
 ### Wikis & Knowledge Bases
 
@@ -128,16 +129,16 @@ Every mod **must** include a `ModInfo.xml`:
 |---|---|
 | 7 Days to Die Wiki (Fandom) | https://7daystodie.fandom.com/wiki/7_Days_to_Die_Wiki |
 | 7D2D Modding Wiki | https://7d2dsdx.github.io/ |
-| Guppy's Modding Guide (XML) | https://community.7daystodie.com/topic/3099-the-xml-modding-guide/ |
+| XPath Modding Explanation Thread (sphereii) | https://community.thefunpimps.com/threads/xpath-modding-explanation-thread.7653/ |
 
 ### Community Forums & Hubs
 
 | Resource | URL |
 |---|---|
-| 7D2D Mods Forum | https://7daystodiemods.com/ |
 | Nexus Mods — 7D2D | https://www.nexusmods.com/7daystodie |
 | Reddit r/7daystodie | https://www.reddit.com/r/7daystodie/ |
 | Discord — Official 7D2D | https://discord.gg/7daystodie |
+| Unofficial Modding Discord | https://community.thefunpimps.com/threads/unnofficial-modding-discord.23400/ |
 | Discord — 7D2D Modding | https://discord.gg/7d2dmodding |
 
 ### Modding References
