@@ -22,8 +22,8 @@ All paths are relative to the game installation root.
 | Path | Origin | Purpose |
 |---|---|---|
 | `7DaysToDie.exe` | TFP | Main game executable (launches without EAC) |
-| `7DaysToDie_EAC.exe` | TFP/EAC | Game launcher with EAC protection (default Steam launch) |
-| `7dLauncher.exe` | TFP | Game launcher/patcher UI |
+| `7DaysToDie_EAC.exe` | TFP/EAC | EAC-enabled executable used in the anti-cheat startup path |
+| `7dLauncher.exe` | TFP | Steam launcher executable — launches the game, shows launcher UI, can start without EAC |
 | `UnityCrashHandler64.exe` | Unity | Handles Unity engine crash dumps |
 | `UnityPlayer.dll` | Unity | Unity engine core runtime (native C++) |
 | `UnityPlayer_Win64_player_mono_x64.pdb` | Unity | Debug symbols for `UnityPlayer.dll` |
@@ -87,7 +87,7 @@ All paths are relative to the game installation root.
 
 | Path | Origin | Purpose |
 |---|---|---|
-| `7DaysToDie_Data\Managed\NGUI.dll` | 3rd | NGUI — game's primary UI system (**not** standard Unity UI) |
+| `7DaysToDie_Data\Managed\NGUI.dll` | 3rd | NGUI — underlying UI runtime library; game's moddable UI layer is XUi (`Data\Config\XUi\`) built on top of NGUI |
 | `7DaysToDie_Data\Managed\NCalc.dll` | 3rd | Math expression evaluator (used in buff/progression formulas) |
 | `7DaysToDie_Data\Managed\AstarPathfindingProject.dll` | 3rd | A* Pathfinding Project Pro — NPC/zombie navigation |
 | `7DaysToDie_Data\Managed\Pathfinding.ClipperLib.dll` | 3rd | Polygon clipping for pathfinding mesh generation |
@@ -133,7 +133,7 @@ All paths are relative to the game installation root.
 | `7DaysToDie_Data\Managed\UnityEngine.AudioModule.dll` | Unity | Audio playback (`AudioSource`, `AudioClip`) |
 | `7DaysToDie_Data\Managed\UnityEngine.UI.dll` | Unity | Built-in Unity UI (Canvas, Image, Text) |
 | `7DaysToDie_Data\Managed\UnityEngine.UIModule.dll` | Unity | Low-level UI module |
-| `7DaysToDie_Data\Managed\UnityEngine.UIElementsModule.dll` | Unity | UIToolkit (not used by game UI) |
+| `7DaysToDie_Data\Managed\UnityEngine.UIElementsModule.dll` | Unity | Unity UI Toolkit module included in the build |
 | `7DaysToDie_Data\Managed\UnityEngine.IMGUIModule.dll` | Unity | Immediate-mode GUI |
 | `7DaysToDie_Data\Managed\UnityEngine.InputLegacyModule.dll` | Unity | Legacy `Input` class |
 | `7DaysToDie_Data\Managed\UnityEngine.InputModule.dll` | Unity | Input system module |
@@ -152,8 +152,8 @@ All paths are relative to the game installation root.
 | `7DaysToDie_Data\Managed\UnityEngine.WindModule.dll` | Unity | Wind zones for vegetation animation |
 | `7DaysToDie_Data\Managed\UnityEngine.AIModule.dll` | Unity | NavMesh and AI navigation |
 | `7DaysToDie_Data\Managed\UnityEngine.AccessibilityModule.dll` | Unity | Accessibility features |
-| `7DaysToDie_Data\Managed\UnityEngine.AndroidJNIModule.dll` | Unity | Android JNI bridge (unused on PC) |
-| `7DaysToDie_Data\Managed\UnityEngine.ARModule.dll` | Unity | Augmented Reality (unused) |
+| `7DaysToDie_Data\Managed\UnityEngine.AndroidJNIModule.dll` | Unity | Android JNI bridge — platform-specific module included in the build |
+| `7DaysToDie_Data\Managed\UnityEngine.ARModule.dll` | Unity | Augmented Reality — platform-specific module included in the build |
 | `7DaysToDie_Data\Managed\UnityEngine.ClothModule.dll` | Unity | Cloth simulation |
 | `7DaysToDie_Data\Managed\UnityEngine.ClusterInputModule.dll` | Unity | Cluster rendering input |
 | `7DaysToDie_Data\Managed\UnityEngine.ClusterRendererModule.dll` | Unity | Cluster rendering |
@@ -161,7 +161,7 @@ All paths are relative to the game installation root.
 | `7DaysToDie_Data\Managed\UnityEngine.CrashReportingModule.dll` | Unity | Crash reporting |
 | `7DaysToDie_Data\Managed\UnityEngine.DirectorModule.dll` | Unity | Timeline director |
 | `7DaysToDie_Data\Managed\UnityEngine.DSPGraphModule.dll` | Unity | DSP audio graph |
-| `7DaysToDie_Data\Managed\UnityEngine.GameCenterModule.dll` | Unity | Apple GameCenter (unused on PC) |
+| `7DaysToDie_Data\Managed\UnityEngine.GameCenterModule.dll` | Unity | Apple GameCenter — platform-specific module included in the build |
 | `7DaysToDie_Data\Managed\UnityEngine.GIModule.dll` | Unity | Global Illumination |
 | `7DaysToDie_Data\Managed\UnityEngine.GridModule.dll` | Unity | Grid/Tilemap grid |
 | `7DaysToDie_Data\Managed\UnityEngine.HotReloadModule.dll` | Unity | Hot reload support |
@@ -322,7 +322,7 @@ All paths are relative to the game installation root.
 | `Data\Config\ui_display.xml` | TFP | Stat/property display labels for the UI |
 | `Data\Config\music.xml` | TFP | Background music event mappings: biome/situation → tracks |
 | `Data\Config\subtitles.xml` | TFP | Subtitle entries for audio events |
-| `Data\Config\dmscontent.xml` | TFP | Diersville map static content definitions |
+| `Data\Config\dmscontent.xml` | TFP | Dynamic Music System (DMS) configuration and content definitions |
 | `Data\Config\twitch.xml` | TFP | Twitch integration configuration |
 | `Data\Config\twitch_events.xml` | TFP | Twitch integration event definitions |
 | `Data\Config\videos.xml` | TFP | Intro/cutscene video references |
@@ -369,7 +369,7 @@ All paths are relative to the game installation root.
 
 | Path | Origin | Purpose |
 |---|---|---|
-| `Data\Music\*.wav` | TFP | WAV music tracks. Naming convention: `NNN_<type>_NN.wav`. Types: `combat`, `explore`, `suspense`, `building`, `ambient`, `bloodmoon`. Controlled by `music.xml`. |
+| `Data\Music\*.wav` | TFP | WAV music tracks. Naming convention: `NNN_<type>_NN.wav`. Types: `combat`, `explore`, `suspense`, `building`, `ambient`, `bloodmoon`. Used by the dynamic music system; see `dmscontent.xml` and possibly `music.xml`. |
 
 ### `Data\Bluffs\`
 
@@ -413,13 +413,13 @@ All paths are relative to the game installation root.
 
 | Path | Origin | Purpose |
 |---|---|---|
-| `Data\UMATextures\` | TFP | Empty directory — UMA character textures placeholder |
+| `Data\UMATextures\` | TFP | Directory present; empty in this build snapshot |
 
 ### `Data\Prefabs\` — World Prefab Structures
 
 | Path | Origin | Purpose |
 |---|---|---|
-| `Data\Prefabs\POIs\` (~1041 POIs, 6227 files) | TFP | Points of Interest: houses, stores, factories, farms, caves, hospitals, trader bases, etc. Each POI has: `.xml` (metadata, dimensions, biome tags, tier), `.tts` (block data), `.nim` (block NIM), `.mesh` (AI nav mesh), `.jpg` (preview), `.ins` (instance data) |
+| `Data\Prefabs\POIs\` (~1041 POIs, 6227 files) | TFP | Points of Interest: houses, stores, factories, farms, caves, hospitals, trader bases, etc. POIs typically include files such as `.xml` (metadata, dimensions, biome tags, tier), `.tts` (block data), `.nim` (block NIM), `.mesh` (AI nav mesh), `.jpg` (preview), `.ins` (instance data) |
 | `Data\Prefabs\Parts\` (3143 files) | TFP | Reusable prefab components/building parts |
 | `Data\Prefabs\RWGTiles\` (348 files) | TFP | Random World Generation road/city tile templates |
 | `Data\Prefabs\Test\` (580 files) | TFP | Development/test prefabs |
