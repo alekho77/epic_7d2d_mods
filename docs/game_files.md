@@ -1,556 +1,847 @@
-Here's the comprehensive table of the 7d2dmods game installation, with repetitive bulk assets grouped for readability.
-Comprehensive table of the game installation has been compiled, covering all directories and files with origin classification, purpose descriptions, and ILSpy/dnSpy study recommendations for modding.
+# 7 Days to Die — Complete File Inventory
 
----
+All paths are relative to the game installation root.
 
-## 7 Days to Die — File Inventory (7d2dmods)
+## Legend
 
-### Legend
-
-| Origin Code | Meaning |
+| Origin | Meaning |
 |---|---|
 | **TFP** | The Fun Pimps (game developer) |
 | **Unity** | Unity engine / Unity Technologies |
-| **.NET** | Mono/.NET framework |
+| **.NET** | Mono / .NET framework |
 | **Steam** | Valve / Steamworks |
 | **3rd** | Third-party library |
 | **EAC** | Easy Anti-Cheat (Epic) |
 | **NVIDIA** | NVIDIA Corporation |
 | **MS** | Microsoft (Xbox GDK) |
 
-### ILSpy/dnSpy Priority
+---
 
-| Rating | Meaning |
-|---|---|
-| **ESSENTIAL** | Must study — main game logic, core to modding |
-| **USEFUL** | Contains APIs you may want to hook via Harmony |
-| **REFERENCE** | Helpful to understand if you hit edge cases |
-| **SKIP** | Not useful for modding |
+## Root Directory
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `7DaysToDie.exe` | TFP | Main game executable (launches without EAC) |
+| `7DaysToDie_EAC.exe` | TFP/EAC | Game launcher with EAC protection (default Steam launch) |
+| `7dLauncher.exe` | TFP | Game launcher/patcher UI |
+| `UnityCrashHandler64.exe` | Unity | Handles Unity engine crash dumps |
+| `UnityPlayer.dll` | Unity | Unity engine core runtime (native C++) |
+| `UnityPlayer_Win64_player_mono_x64.pdb` | Unity | Debug symbols for `UnityPlayer.dll` |
+| `UnityCrashHandler64.pdb` | Unity | Debug symbols for crash handler |
+| `WindowsPlayer_player_Master_mono_x64.pdb` | Unity/TFP | Debug symbols for master player build |
+| `nvngx_dlss.dll` | NVIDIA | DLSS (Deep Learning Super Sampling) native library |
+| `NVUnityPlugin.dll` | NVIDIA | NVIDIA Unity integration plugin (native) |
+| `steamclient64.dll` | Steam | Steam client runtime library (native) |
+| `steam_appid.txt` | Steam | Steam Application ID (`251570`) |
+| `tier0_s64.dll` | Steam | Valve low-level runtime library (native) |
+| `vstdlib_s64.dll` | Steam | Valve standard library runtime (native) |
+| `serverconfig.xml` | TFP | Dedicated server configuration template |
+| `platform.cfg` | TFP | Platform-specific settings |
+| `startdedicated.bat` | TFP | Launch script for dedicated server |
+| `MicrosoftGame.Config` | MS | Microsoft Store / Xbox packaging config |
+| `installscript.vdf` | Steam | Steam install/uninstall script |
 
 ---
 
-### Root Directory (7d2dmods)
+## `7DaysToDie_Data\`
 
-| Path | Origin | Purpose | ILSpy? |
-|---|---|---|---|
-| `7DaysToDie.exe` | TFP | Main game executable (launches without EAC) | SKIP (native) |
-| `7DaysToDie_EAC.exe` | TFP/EAC | Game launcher with EAC protection (default Steam launch) | SKIP (native) |
-| `7dLauncher.exe` | TFP | Game launcher/patcher UI | SKIP (native) |
-| `UnityCrashHandler64.exe` | Unity | Handles Unity engine crash dumps | SKIP |
-| `UnityPlayer.dll` | Unity | Unity engine core runtime (native C++) | SKIP (native) |
-| `UnityPlayer_Win64_player_mono_x64.pdb` | Unity | Debug symbols for UnityPlayer.dll | SKIP |
-| `UnityCrashHandler64.pdb` | Unity | Debug symbols for crash handler | SKIP |
-| `WindowsPlayer_player_Master_mono_x64.pdb` | Unity/TFP | Debug symbols for master player build | SKIP |
-| `nvngx_dlss.dll` | NVIDIA | DLSS (Deep Learning Super Sampling) library | SKIP (native) |
-| `NVUnityPlugin.dll` | NVIDIA | NVIDIA Unity integration plugin | SKIP (native) |
-| `steamclient64.dll` | Steam | Steam client runtime library | SKIP (native) |
-| `steam_appid.txt` | Steam | Steam application ID (text: `251570`) | SKIP |
-| `tier0_s64.dll` | Steam | Valve low-level runtime library | SKIP (native) |
-| `vstdlib_s64.dll` | Steam | Valve standard library runtime | SKIP (native) |
-| `serverconfig.xml` | TFP | Dedicated server configuration template | SKIP (XML — useful for server admins) |
-| `platform.cfg` | TFP | Platform-specific settings | SKIP |
-| `startdedicated.bat` | TFP | Launch script for dedicated server | SKIP |
-| `MicrosoftGame.Config` | MS | Microsoft Store / Xbox packaging config | SKIP |
-| `installscript.vdf` | Steam | Steam install/uninstall script | SKIP |
-
----
-
-### `7DaysToDie_Data\` (Unity Player Data)
-
-| Path | Origin | Purpose | ILSpy? |
-|---|---|---|---|
-| `app.info` | Unity | Application metadata (company, product name) | SKIP |
-| `boot.config` | Unity | Unity boot parameters (scripting backend, GC settings) | SKIP |
-| `data.unity3d` | Unity | Packed Unity asset data (scenes, shaders, resources) | SKIP (binary asset) |
-| `resources.resource` | Unity | Packed resource assets | SKIP (binary asset) |
-| `sharedassets2.resource` | Unity | Shared assets pack | SKIP (binary asset) |
-| `RuntimeInitializeOnLoads.json` | Unity | Runtime initialization sequence definitions | REFERENCE |
-| `ScriptingAssemblies.json` | Unity | List of assemblies loaded by the scripting runtime | REFERENCE |
-
----
-
-### `7DaysToDie_Data\Managed\` — .NET / Managed DLLs
-
-This is the **most important directory for modders**. All C# game logic lives here.
-
-#### TFP Game Assemblies (MUST STUDY)
-
-| Path | Origin | Purpose | ILSpy? |
-|---|---|---|---|
-| `Assembly-CSharp.dll` | **TFP** | **MAIN GAME CODE** — all items, blocks, entities, AI, UI, networking, world gen, buffs, crafting, quests, etc. | **ESSENTIAL** |
-| `Assembly-CSharp-firstpass.dll` | **TFP** | Early-init code (loaded before main assembly — utility classes, base types) | **ESSENTIAL** |
-| `LogLibrary.dll` | TFP | Custom TFP logging framework | USEFUL |
-
-#### Unity Engine Modules (~40 DLLs)
-
-| Path Pattern | Origin | Purpose | ILSpy? |
-|---|---|---|---|
-| `UnityEngine.dll` | Unity | Unity engine facade/entry point | REFERENCE |
-| `UnityEngine.CoreModule.dll` | Unity | Core types: `GameObject`, `MonoBehaviour`, `Transform`, `Component` | REFERENCE |
-| `UnityEngine.PhysicsModule.dll` | Unity | Physics, raycasts, colliders, rigidbodies | REFERENCE |
-| `UnityEngine.AnimationModule.dll` | Unity | Animation system (Animator, AnimationClip) | SKIP |
-| `UnityEngine.AudioModule.dll` | Unity | Audio playback, `AudioSource`, `AudioClip` | SKIP |
-| `UnityEngine.UI.dll` | Unity | Built-in Unity UI (Canvas, Image, Text) | REFERENCE |
-| `UnityEngine.UIModule.dll` | Unity | Low-level UI module | SKIP |
-| `UnityEngine.UIElementsModule.dll` | Unity | UIToolkit (not used by the game UI) | SKIP |
-| `UnityEngine.IMGUIModule.dll` | Unity | Immediate-mode GUI | SKIP |
-| `UnityEngine.InputLegacyModule.dll` | Unity | Legacy Input class | SKIP |
-| `UnityEngine.TextRenderingModule.dll` | Unity | Text rendering (Font, TextMesh) | SKIP |
-| `UnityEngine.ParticleSystemModule.dll` | Unity | Particle effects | SKIP |
-| `UnityEngine.TerrainModule.dll` | Unity | Terrain system | SKIP |
-| `UnityEngine.TerrainPhysicsModule.dll` | Unity | Terrain colliders | SKIP |
-| `UnityEngine.AssetBundleModule.dll` | Unity | AssetBundle loading | REFERENCE |
-| `UnityEngine.JSONSerializeModule.dll` | Unity | JSON utility | SKIP |
-| `UnityEngine.ImageConversionModule.dll` | Unity | Texture encoding/decoding | SKIP |
-| `UnityEngine.TextCoreTextEngineModule.dll` | Unity | TextMeshPro underlying engine | SKIP |
-| `UnityEngine.TextCoreFontEngineModule.dll` | Unity | Font rendering engine | SKIP |
-| Other `UnityEngine.*.dll` (~22 more) | Unity | Networking, VR, Video, Vehicles, AI, Subsystems, etc. | SKIP |
-
-#### Unity Packages
-
-| Path Pattern | Origin | Purpose | ILSpy? |
-|---|---|---|---|
-| `Unity.TextMeshPro.dll` | Unity | TextMeshPro text rendering (game uses this for UI text) | SKIP |
-| `Unity.Addressables.dll` | Unity | Addressable Asset System (asset loading/management) | REFERENCE |
-| `Unity.ResourceManager.dll` | Unity | Resource management for Addressables | SKIP |
-| `Unity.Burst.dll` / `Unity.Burst.Unsafe.dll` | Unity | Burst compiler runtime (high-perf math/ECS) | SKIP |
-| `Unity.Collections.dll` | Unity | Native collections (NativeArray, etc.) | SKIP |
-| `Unity.Mathematics.dll` | Unity | High-perf math library | SKIP |
-| `Unity.Animation.Rigging.dll` | Unity | Animation rigging constraints | SKIP |
-| `Unity.Postprocessing.Runtime.dll` | Unity | Post-processing stack (bloom, AO, etc.) | SKIP |
-| `Unity.TerrainTools.dll` | Unity | Terrain tools runtime | SKIP |
-| `Unity.RenderPipelines.Core.Runtime.dll` | Unity | Render pipeline core | SKIP |
-| `Unity.Jobs.dll` | Unity | C# Job System | SKIP |
-| `Unity.Profiling.Core.dll` | Unity | Profiling API | SKIP |
-| `Unity.InputSystem.dll` | Unity | New Input System package | SKIP |
-
-#### .NET Framework Assemblies
-
-| Path Pattern | Origin | Purpose | ILSpy? |
-|---|---|---|---|
-| `mscorlib.dll` | .NET | Core .NET runtime (object, string, collections) | SKIP |
-| `System.dll` | .NET | Core System classes (IO, Net, Config) | SKIP |
-| `System.Core.dll` | .NET | LINQ, Expressions, dynamic types | SKIP |
-| `System.Xml.dll` / `System.Xml.Linq.dll` | .NET | XML parsing (used by the game for configs) | SKIP |
-| `System.Net.Http.dll` | .NET | HTTP client | SKIP |
-| `System.Data.dll` | .NET | ADO.NET data access | SKIP |
-| Other `System.*.dll` (~15 more) | .NET | Various framework libraries | SKIP |
-| `Mono.Security.dll` | .NET | Mono security/crypto | SKIP |
-| `netstandard.dll` | .NET | .NET Standard 2.0 shim | SKIP |
-
-#### Third-Party Libraries (Modding-Relevant)
-
-| Path | Origin | Purpose | ILSpy? |
-|---|---|---|---|
-| `0Harmony.dll` | 3rd (HarmonyX) | **Harmony patching framework** — your Harmony mods depend on this | **ESSENTIAL** |
-| `Mono.Cecil.dll` / `MonoMod.*.dll` | 3rd | Cecil IL manipulation + MonoMod (used by Harmony internally) | REFERENCE |
-| `AstarPathfindingProject.dll` | 3rd | A* Pathfinding Project — NPC/zombie navigation | USEFUL |
-| `Pathfinding.ClipperLib.dll` | 3rd | Polygon clipping for pathfinding mesh generation | SKIP |
-| `Pathfinding.Ionic.Zip.dll` | 3rd | Zip compression for path data | SKIP |
-| `Pathfinding.JsonFx.dll` | 3rd | JSON serialization for path data | SKIP |
-| `NGUI.dll` | 3rd | NGUI — game's primary UI system (not Unity UI!) | **USEFUL** |
-| `InControl.dll` | 3rd | Controller/input mapping framework | REFERENCE |
-| `NCalc.dll` | 3rd | Math expression evaluator (used in buff/progression formulas) | USEFUL |
-| `Newtonsoft.Json.dll` | 3rd | JSON.NET serialization | SKIP |
-| `Utf8Json.dll` | 3rd | High-perf JSON serializer | SKIP |
-| `MemoryPack.Core.dll` / `MemoryPack.dll` | 3rd | Binary serialization (save data, network packets) | REFERENCE |
-| `LiteNetLib.dll` | 3rd | UDP networking library (multiplayer) | REFERENCE |
-| `Noemax.GZip.dll` | 3rd | GZip compression | SKIP |
-| `Antlr3.Runtime.dll` | 3rd | ANTLR parser runtime (used by NCalc) | SKIP |
-| `Backtrace.Unity.dll` | 3rd | Crash reporting SDK | SKIP |
-| `zxing.unity.dll` | 3rd | QR/barcode scanning (Twitch integration) | SKIP |
-| `enum2int.dll` | 3rd | Fast enum-to-int conversion | SKIP |
-
-#### Platform SDKs
-
-| Path | Origin | Purpose | ILSpy? |
-|---|---|---|---|
-| `com.rlabrecque.steamworks.net.dll` | 3rd | Steamworks.NET — Steam API wrapper (achievements, lobbies, workshop) | REFERENCE |
-| `Discord.Sdk.dll` | 3rd | Discord Rich Presence / Game SDK | SKIP |
-| `com.epicgames.eos.dll` / `Epic.OnlineServices.dll` | 3rd | Epic Online Services (cross-platform networking) | SKIP |
-| `XblPCSandbox.dll` | MS | Xbox Live PC sandbox | SKIP |
-| `Unity.Microsoft.GDK.dll` | MS | Xbox/MS Store GDK integration | SKIP |
-
-#### Graphics & Effects
-
-| Path | Origin | Purpose | ILSpy? |
-|---|---|---|---|
-| `com.thenakeddev.dlss.Runtime.dll` | 3rd | DLSS Unity integration | SKIP |
-| `com.thenakeddev.fsr.Runtime.dll` | 3rd | AMD FSR Unity integration | SKIP |
-| `HBAO.Runtime.dll` | 3rd | Horizon-Based Ambient Occlusion | SKIP |
-| `ScreenSpaceReflections.dll` | 3rd | Screen-space reflections effect | SKIP |
-
----
-
-### `7DaysToDie_Data\Plugins\x86_64\` — Native Plugins
-
-| Path | Origin | Purpose | ILSpy? |
-|---|---|---|---|
-| `steam_api64.dll` | Steam | Steamworks native API | SKIP (native) |
-| `EOSSDK-Win64-Shipping.dll` | 3rd (Epic) | Epic Online Services native SDK | SKIP (native) |
-| `discord_partner_sdk.dll` | 3rd (Discord) | Discord SDK native lib | SKIP (native) |
-| `InControlNative.dll` | 3rd | InControl native input handler | SKIP (native) |
-| `lib_burst_generated.dll` | Unity | Burst-compiled native code | SKIP (native) |
-| `BacktraceCrashpadWindows.dll` | 3rd | Backtrace crash capture | SKIP (native) |
-| `backtrace_native_xbox.dll` | 3rd | Xbox-specific Backtrace | SKIP (native) |
-| `crashpad_handler.dll` | 3rd | Crashpad crash handler | SKIP (native) |
-| `ControllerExt.dll` | 3rd | Extended controller support | SKIP (native) |
-| `getrss.dll` | 3rd | Memory usage monitoring (RSS) | SKIP (native) |
-| `Magick.dll` | 3rd | ImageMagick — image processing | SKIP (native) |
-| `xaudio2_9redist.dll` | MS | XAudio2 redistributable (audio backend) | SKIP (native) |
-| `XCurl.dll` | MS | Xbox HTTP/CURL library | SKIP (native) |
-| `XGameRuntime.Thunks.dll` | MS | Xbox Game Runtime thunks | SKIP (native) |
-| `XInputInterface64.dll` | MS | XInput (gamepad input) | SKIP (native) |
-| `Microsoft.Xbox.Services.GDK.C.Thunks.dll` | MS | Xbox services GDK thunks | SKIP (native) |
-
----
-
-### `7DaysToDie_Data\StreamingAssets\`
-
-| Path | Origin | Purpose | ILSpy? |
-|---|---|---|---|
-| `aa/catalog.json` | Unity | Addressables catalog (asset addresses → bundle paths) | SKIP |
-| `aa/settings.json` | Unity | Addressables system settings | SKIP |
-| `aa/shaders.json` | Unity | Shader variant tracking data | SKIP |
-| `aa/AddressablesLink/` (folder) | Unity | Links between Addressables and resources | SKIP |
-| `Video/TFP_Intro.webm` | TFP | The Fun Pimps splash/intro video | SKIP |
-
----
+| Path | Origin | Purpose |
+|---|---|---|
+| `7DaysToDie_Data\app.info` | Unity | Application metadata (company, product name) |
+| `7DaysToDie_Data\boot.config` | Unity | Unity boot parameters (scripting backend, GC settings) |
+| `7DaysToDie_Data\data.unity3d` | Unity | Packed Unity asset data (scenes, shaders, built-in resources) |
+| `7DaysToDie_Data\resources.resource` | Unity | Packed resource assets |
+| `7DaysToDie_Data\sharedassets2.resource` | Unity | Shared assets pack |
+| `7DaysToDie_Data\RuntimeInitializeOnLoads.json` | Unity | Runtime initialization sequence definitions |
+| `7DaysToDie_Data\ScriptingAssemblies.json` | Unity | List of assemblies loaded by the scripting runtime |
 
 ### `7DaysToDie_Data\Resources\`
 
-| Path | Origin | Purpose | ILSpy? |
-|---|---|---|---|
-| `unity default resources` | Unity | Built-in Unity default assets (shaders, materials, fonts) | SKIP |
-
----
-
-### `Data\` — Game Content Root
-
-#### `Data\Config\` — **XML Configuration Files (CRITICAL for Modlets)**
-
-| Path | Origin | Purpose | ILSpy? |
-|---|---|---|---|
-| `items.xml` | TFP | All holdable items: weapons, tools, consumables, resources, ammo + all properties | SKIP (XML — **key modlet target**) |
-| `blocks.xml` | TFP | All placeable blocks, doors, traps, terrain, workstations | SKIP (XML — **key modlet target**) |
-| `recipes.xml` | TFP | Crafting recipes, ingredients, required stations | SKIP (XML — **key modlet target**) |
-| `loot.xml` | TFP | Loot containers, loot groups, probability tables, quest loot | SKIP (XML — **key modlet target**) |
-| `entityclasses.xml` | TFP | Zombie, animal, NPC class definitions + AI/stats | SKIP (XML — **key modlet target**) |
-| `entitygroups.xml` | TFP | Entity spawn groups used by gamestages/spawning | SKIP (XML — **key modlet target**) |
-| `buffs.xml` | TFP | Buffs, debuffs, status effects and their triggers/actions | SKIP (XML — **key modlet target**) |
-| `progression.xml` | TFP | Skills, perks, attributes, level scaling | SKIP (XML — **key modlet target**) |
-| `gamestages.xml` | TFP | Horde night waves, spawn scaling by gamestage | SKIP (XML — **key modlet target**) |
-| `spawning.xml` | TFP | Biome/zone spawning rules | SKIP (XML — **key modlet target**) |
-| `traders.xml` | TFP | Trader inventories, tiers, restock settings | SKIP (XML — **key modlet target**) |
-| `vehicles.xml` | TFP | Vehicle definitions and properties | SKIP (XML — modlet target) |
-| `item_modifiers.xml` | TFP | Weapon/tool mod attachments (mods, dyes) | SKIP (XML — modlet target) |
-| `quests.xml` | TFP | Quest definitions, objectives, rewards | SKIP (XML — modlet target) |
-| `biomes.xml` | TFP | Biome definitions, surfaces, decoration spawns | SKIP (XML — modlet target) |
-| `sounds.xml` | TFP | Sound event mappings (action → audio file) | SKIP (XML — modlet target) |
-| `materials.xml` | TFP | Block material properties (hardness, resistance, particles) | SKIP (XML — modlet target) |
-| `shapes.xml` | TFP | Block shape definitions (3D mesh shapes) | SKIP (XML) |
-| `qualityinfo.xml` | TFP | Item quality tiers and stat scaling per tier | SKIP (XML — modlet target) |
-| `worldglobal.xml` | TFP | Global world settings (day/night cycle, weather) | SKIP (XML — modlet target) |
-| `weathersurvival.xml` | TFP | Weather and survival stat effects (temperature, wetness) | SKIP (XML) |
-| `painting.xml` | TFP | Block painting textures | SKIP (XML) |
-| `nav_objects.xml` | TFP | Minimap/compass navigation icons | SKIP (XML) |
-| `archetypes.xml` | TFP | Entity archetypes (base templates) | SKIP (XML) |
-| `dialogs.xml` | TFP | NPC dialog trees (trader conversations) | SKIP (XML) |
-| `npc.xml` | TFP | NPC-specific settings | SKIP (XML) |
-| `challenges.xml` | TFP | In-game challenges and objectives | SKIP (XML) |
-| `events.xml` | TFP | Game event triggers | SKIP (XML) |
-| `gameevents.xml` | TFP | Game event responses | SKIP (XML) |
-| `rwgmixer.xml` | TFP | Random World Generation rules | SKIP (XML) |
-| `utilityai.xml` | TFP | AI utility scoring and behaviour trees | SKIP (XML) |
-| `misc.xml` | TFP | Miscellaneous global game variables | SKIP (XML) |
-| `physicsbodies.xml` | TFP | Ragdoll/physics body definitions | SKIP (XML) |
-| `ui_display.xml` | TFP | Stat/property display labels for the UI | SKIP (XML) |
-| `music.xml` | TFP | Background music event mappings | SKIP (XML) |
-| `subtitles.xml` | TFP | Subtitle entries for audio events | SKIP (XML) |
-| `dmscontent.xml` | TFP | Diersville map static content definitions | SKIP (XML) |
-| `twitch.xml` / `twitch_events.xml` | TFP | Twitch integration event definitions | SKIP (XML) |
-| `videos.xml` | TFP | Intro/cutscene video references | SKIP (XML) |
-| `loadingscreen.xml` | TFP | Loading screen tips | SKIP (XML) |
-| `blockplaceholders.xml` | TFP | Block placeholder substitution rules | SKIP (XML) |
-| `Localization.txt` | TFP | **All in-game strings** (TSV: key → language columns) | SKIP (text — **key modlet target**) |
-| `BlockUpdates.csv` | TFP | Block upgrade/downgrade transition table | SKIP (CSV) |
-| `OversizedConversionTargets.txt` | TFP | Oversized block conversion list | SKIP (text) |
-| `Stealth.txt` | TFP | Stealth system parameters | SKIP (text) |
-| `XML.txt` | TFP | Notes on the XML patching system | SKIP (doc) |
-| `XUi/*.xml` | TFP | HUD and in-game UI: windows, controls, styles | SKIP (XML — modlet target for UI mods) |
-| `XUi_Common/*.xml` | TFP | Shared UI components | SKIP (XML) |
-| `XUi_Menu/*.xml` | TFP | Main menu UI | SKIP (XML) |
-
-#### Bulk Asset Directories
-
-| Path | Origin | Contents | ILSpy? |
-|---|---|---|---|
-| `Data\ItemIcons\` (~5000+ files) | TFP | PNG icon sprites for every item/block in the game (e.g., `gunPistol.png`, `drinkJarBoiledWater.png`) | SKIP |
-| `Data\Music\` (~400+ files) | TFP | WAV music tracks: combat, exploration, suspense, building, ambient (numbered series like `000_combat_01.wav`) | SKIP |
-| `Data\Bluffs\` (2 files) | TFP | `bluff1.tga`, `bluff2.tga` — terrain bluff textures | SKIP |
-| `Data\Stamps\` (~26 files) | TFP | `.raw`/`.png` terrain generation stamps (mountains, hills, lakes, rivers, valleys) | SKIP |
-| `Data\UMATextures\` | TFP | Empty directory (UMA character textures placeholder) | SKIP |
-
-#### `Data\Prefabs\` — World Prefab Structures
-
-| Subfolder | Origin | Contents | ILSpy? |
-|---|---|---|---|
-| `POIs\` (~500+ POIs, each with 4-6 files) | TFP | **Points of Interest**: houses, stores, factories, farms, caves, offices, hospitals, trader bases, etc. Each POI has: `.xml` (metadata), `.tts` (block data), `.blocks.nim` (block NIM), `.mesh` (nav mesh), `.jpg` (preview), `.ins` (instance data) | SKIP |
-| `Parts\` | TFP | Reusable prefab components/building parts | SKIP |
-| `RWGTiles\` | TFP | Random World Generation road/city tiles | SKIP |
-| `Test\` | TFP | Test/development prefabs | SKIP |
-
-#### `Data\Bundles\Standalone\Entities\`
-
-| Path | Origin | Purpose | ILSpy? |
-|---|---|---|---|
-| `Entities` / `Entities.manifest` | TFP | Unity AssetBundle containing entity models (zombies, animals, NPCs) | SKIP (binary asset) |
-| `trees` / `trees.manifest` | TFP | Unity AssetBundle containing tree/vegetation models | SKIP (binary asset) |
-
-#### `Data\Addressables\Standalone\`
-
-| Path Pattern | Origin | Purpose | ILSpy? |
-|---|---|---|---|
-| `*_unitybuiltinshaders.bundle` | Unity | Built-in shader variants | SKIP |
-| `animations_assets_animations/` | TFP | Entity/player animation bundles | SKIP |
-| `automatic_assets_entities/` | TFP | Entity model/material bundles | SKIP |
-| `automatic_assets_sounds/` | TFP | Sound effect bundles | SKIP |
-| `automatic_assets_generic/` | TFP | Generic asset bundles | SKIP |
-| `automatic_assets_dlc/` | TFP | DLC content bundles | SKIP |
-| `automatic_assets_other/` | TFP | Miscellaneous asset bundles | SKIP |
-| `automatic_assets_twitchdrops/` | TFP | Twitch drops content bundles | SKIP |
-| `blocktextureatlases_assets_all.bundle` | TFP | Block texture atlas (all block surface textures) | SKIP |
-| `effects_assets_all.bundle` | TFP | VFX/particle effect bundles | SKIP |
-| `meshdescriptions_assets_all.bundle` | TFP | Mesh description data | SKIP |
-| `player_assets_entities/` | TFP | Player model bundles | SKIP |
-| `prefabs_assets_all.bundle` | TFP | Prefab structure bundles | SKIP |
-| `shaders_assets_all.bundle` | TFP | Custom shader bundles | SKIP |
-| `shapes_assets_all.bundle` | TFP | Block shape geometry bundles | SKIP |
-| `soundmixers_assets_all.bundle` | TFP | Audio mixer settings | SKIP |
-| `terraintextures_assets_all.bundle` | TFP | Terrain surface textures | SKIP |
-| `textures_assets_textures/` | TFP | General texture bundles | SKIP |
-| `zombies_assets_entities/` | TFP | Zombie-specific model bundles | SKIP |
-
-#### `Data\Worlds\`
-
-| Path | Origin | Purpose | ILSpy? |
-|---|---|---|---|
-| `Empty/` | TFP | Empty world template | SKIP |
-| `Navezgane/` | TFP | Hand-crafted campaign map | SKIP |
-| `Playtesting/` | TFP | QA/testing world | SKIP |
-| `Pregen06k01/`, `Pregen06k02/` | TFP | Pre-generated 6k random worlds | SKIP |
-| `Pregen08k01/`, `Pregen08k02/` | TFP | Pre-generated 8k random worlds | SKIP |
-
----
-
-### `EasyAntiCheat\`
-
-| Path | Origin | Purpose | ILSpy? |
-|---|---|---|---|
-| `EasyAntiCheat_EOS_Setup.exe` | EAC | EAC installer/setup | SKIP |
-| `install.bat` / `uninstall.bat` | EAC | EAC install/uninstall scripts | SKIP |
-| `Settings.json` | EAC | EAC configuration | SKIP |
-| `SplashScreen.png` | EAC | EAC loading splash image | SKIP |
-| `Certificates/` (3 files) | EAC | `base.bin`, `base.cer`, `runtime.conf` — EAC integrity certs | SKIP |
-| `Licenses/` | EAC | EAC license files | SKIP |
-| `Localization/` (20 `.cfg` files) | EAC | EAC UI translations (ar_sa, cs_cz, de_de, en_us, es_es, fr_fr, ja_ja, ko_kr, ru_ru, zh_cn, etc.) | SKIP |
-
----
-
-### `Launcher\`
-
-| Path | Origin | Purpose | ILSpy? |
-|---|---|---|---|
-| `7dLauncher.po` / `7dLauncher.de.po` | TFP | Launcher UI translation files (English, German) | SKIP |
-
----
-
-### `Licenses\` (19 `.txt` files)
-
-| Path | Origin | Purpose | ILSpy? |
-|---|---|---|---|
-| License files for: AmplifyMotion, ANTLR3, Backtrace, Cecil, Crc32.NET, GameSense, HarmonyX, InControl, LibNoise, LiteNetLib, MemoryPack, MonoMod, NCalc, PathfindingProject, SharpEXR, Steamworks.NET, Utf8Json, ZXing, plus standard License.txt | Various (3rd) | Third-party library license texts | SKIP |
-
----
-
-### `Logos\`
-
-| Path | Origin | Purpose | ILSpy? |
-|---|---|---|---|
-| `SplashScreen.png` | TFP | Game splash screen image | SKIP |
-| `Square150x150Logo.png` etc. (5 PNG files) | TFP | App icon tiles for Windows/Store | SKIP |
-
----
-
-### `MonoBleedingEdge\`
-
-| Path | Origin | Purpose | ILSpy? |
-|---|---|---|---|
-| `EmbedRuntime/mono-2.0-bdwgc.dll` | .NET (Mono) | Mono runtime with Boehm-Demers-Weiser GC (the actual C# VM) | SKIP (native) |
-| `EmbedRuntime/MonoPosixHelper.dll` | .NET (Mono) | POSIX helper for Mono | SKIP (native) |
-| `etc/mono/` | .NET (Mono) | Mono configuration files (machine.config, assembly remapping) | SKIP |
-
----
-
-### Mods — Installed Mods (30 folders)
-
-| Path | Origin | Purpose | ILSpy? |
-|---|---|---|---|
-| `0_TFP_Harmony/` | TFP | Official TFP Harmony mod framework (loaded first by `0_` prefix) | USEFUL (contains TFP Harmony patches) |
-
----
-
-### Summary: What to Study for Modding
-
-| Priority | Files | Why |
+| Path | Origin | Purpose |
 |---|---|---|
-| **#1 ESSENTIAL** | `Assembly-CSharp.dll` | All game classes, methods, fields — the core of all Harmony patches |
-| **#2 ESSENTIAL** | `Assembly-CSharp-firstpass.dll` | Base utility classes, loaded first |
-| **#3 ESSENTIAL** | `0Harmony.dll` | Understand the Harmony API you'll use for patches |
-| **#4 USEFUL** | `NGUI.dll` | Game UI system — needed for UI mods |
-| **#5 USEFUL** | `NCalc.dll` | Expression evaluator used in buff/progression formulas |
-| **#6 USEFUL** | `AstarPathfindingProject.dll` | AI navigation — relevant for entity behavior mods |
-| **#7 USEFUL** | `0_TFP_Harmony/` mod | TFP's own Harmony patches — great reference examples |
-| **#8 REFERENCE** | `Data\Config\*.xml` (all) | The XML configs are your primary modlet targets — study them as text, not in decompiler |
+| `7DaysToDie_Data\Resources\unity default resources` | Unity | Built-in Unity default assets (shaders, materials, fonts) |
 
----
+### `7DaysToDie_Data\StreamingAssets\`
 
-A table of all files and directories relevant for building a total conversion mod (like Undead Legacy) has been provided, organized by category: C# code, UI system, asset bundles, audio/video, icons, XML game data, world prefabs, and Unity infrastructure.
-Для тотальной конверсии уровня Undead Legacy нужно знать гораздо больше, чем для простых модлетов. Вот целевая карта:
-
----
-
-## Файлы и папки для изучения: Total Conversion Mod
-
-### 1. Код игры (C# / Harmony) — без этого глубокие изменения невозможны
-
-| Путь | Зачем изучать |
-|---|---|
-| `7DaysToDie_Data\Managed\Assembly-CSharp.dll` | **Главный код игры.** Все классы: крафт, инвентарь, AI, UI-контроллеры, загрузка ассетов, сетевой код. Декомпилировать в dnSpy/ILSpy и изучать структуру классов. Harmony-патчи пишутся именно сюда |
-| `7DaysToDie_Data\Managed\Assembly-CSharp-firstpass.dll` | Базовые утилиты, загружаемые до основного кода. Часто содержит фундаментальные типы |
-| `7DaysToDie_Data\Managed\0Harmony.dll` | API Harmony — знать `[HarmonyPatch]`, `Prefix`, `Postfix`, `Transpiler` |
-| `7DaysToDie_Data\Managed\NGUI.dll` | Движок UI игры — **не** стандартный Unity UI. Без понимания NGUI нельзя делать глубокие изменения интерфейса |
-| `7DaysToDie_Data\Managed\NCalc.dll` | Парсер математических выражений — используется в `buffs.xml` и `progression.xml`. Нужно знать синтаксис для сложных формул |
-| `7DaysToDie_Data\Managed\AstarPathfindingProject.dll` | Навигация AI. Если меняешь размеры/поведение зомби — нужно понимать навмеш |
-| `Mods\0_TFP_Harmony\` | Официальные Harmony-патчи TFP — **образец** как правильно патчить |
-
-### 2. Полная замена UI / Меню / HUD
-
-| Путь | Зачем изучать |
-|---|---|
-| `Data\Config\XUi\windows.xml` | **Все окна** игрового HUD: инвентарь, крафт, хот-бар, карта, компас, полоски здоровья, окна контейнеров |
-| `Data\Config\XUi\controls.xml` | Переиспользуемые UI-компоненты (кнопки, слоты, иконки, списки) |
-| `Data\Config\XUi\styles.xml` | Стили UI: цвета, размеры шрифтов, отступы, привязки |
-| `Data\Config\XUi\xui.xml` | Корневой файл XUi — связывает всё вместе, определяет загрузку окон |
-| `Data\Config\XUi_Menu\windows.xml` | **Главное меню** — экран запуска, настройки, выбор мира, мультиплеер |
-| `Data\Config\XUi_Menu\controls.xml` | UI-компоненты главного меню |
-| `Data\Config\XUi_Menu\styles.xml` | Стили главного меню |
-| `Data\Config\XUi_Menu\xui.xml` | Корневой файл меню |
-| `Data\Config\XUi_Common\controls.xml` | Общие контролы между HUD и Menu |
-| `Data\Config\XUi_Common\styles.xml` | Общие стили |
-
-### 3. Замена визуала: текстуры, меши, модели, эффекты
-
-| Путь | Зачем изучать |
-|---|---|
-| `Data\Addressables\Standalone\` (весь каталог) | **Основная система ассетов.** Все текстуры, модели, анимации, эффекты загружаются через Addressables. Нужно изучить структуру бандлов и научиться заменять содержимое |
-| `  blocktextureatlases_assets_all.bundle` | Атлас текстур ВСЕХ блоков — замена внешнего вида мира |
-| `  terraintextures_assets_all.bundle` | Текстуры поверхности terrain — земля, камень, снег, песок |
-| `  shapes_assets_all.bundle` | Геометрия форм блоков — замена 3D-форм |
-| `  effects_assets_all.bundle` | Все VFX: взрывы, огонь, кровь, дым |
-| `  shaders_assets_all.bundle` | Кастомные шейдеры — управление рендерингом |
-| `  prefabs_assets_all.bundle` | Ассеты префабов |
-| `  zombies_assets_entities\` | Модели и текстуры зомби |
-| `  player_assets_entities\` | Модели и текстуры игрока |
-| `  automatic_assets_entities\` | Прочие сущности (животные, NPC) |
-| `  animations_assets_animations\` | Все анимации (движение, атаки, смерть) |
-| `  automatic_assets_sounds\` | Звуковые бандлы |
-| `  textures_assets_textures\` | Прочие текстуры (UI-элементы, иконки, разное) |
-| `  meshdescriptions_assets_all.bundle` | Описания мешей (LOD, коллайдеры) |
-| `  soundmixers_assets_all.bundle` | Аудио-миксеры (баланс громкости) |
-| `Data\Bundles\Standalone\Entities\` | Старая система бандлов — модели entity + деревья |
-| `7DaysToDie_Data\StreamingAssets\aa\catalog.json` | **Каталог Addressables** — карта: какой ассет лежит в каком бандле. Ключ к пониманию, как игра находит ресурсы |
-
-### 4. Замена музыки, звуков, видео
-
-| Путь | Зачем изучать |
-|---|---|
-| `Data\Music\` (~400+ WAV) | Все музыкальные треки. Структура именования: `NNN_<тип>_NN.wav` (combat, explore, suspense, building) |
-| `Data\Config\music.xml` | Маппинг: какая музыка играет при каком событии/биоме |
-| `Data\Config\sounds.xml` | Маппинг ВСЕХ звуковых событий: выстрелы, удары, шаги, UI-клики, крики зомби |
-| `7DaysToDie_Data\StreamingAssets\Video\TFP_Intro.webm` | Интро-видео (заставка TFP) — заменяется своим видео |
-| `Data\Config\videos.xml` | Список видео-файлов, воспроизводимых игрой |
-
-### 5. Замена иконок и splash-экранов
-
-| Путь | Зачем изучать |
-|---|---|
-| `Data\ItemIcons\` (~5000+ PNG) | Иконки ВСЕХ предметов/блоков. Имя файла = `name` из `items.xml`/`blocks.xml` |
-| `Logos\SplashScreen.png` | Splash-экран при запуске движка |
-| `Logos\Square*.png`, `Logos\StoreLogo.png` | Иконки приложения (Windows/Store) |
-| `Data\Config\loadingscreen.xml` | Текст подсказок на экране загрузки |
-| `EasyAntiCheat\SplashScreen.png` | Splash EAC (если запуск с EAC) |
-
-### 6. Полная переработка игровых данных (XML)
-
-| Путь | Что переделывается |
-|---|---|
-| `Data\Config\items.xml` | Все предметы — новое оружие, инструменты, броня, ресурсы, еда |
-| `Data\Config\blocks.xml` | Все блоки — новые ворксейшены, блоки, двери, ловушки |
-| `Data\Config\recipes.xml` | Вся система крафта с нуля |
-| `Data\Config\loot.xml` | Полная переработка лута |
-| `Data\Config\progression.xml` | Своё дерево перков/навыков/атрибутов |
-| `Data\Config\buffs.xml` | Новые баффы, механики, триггеры |
-| `Data\Config\entityclasses.xml` | Новые зомби, NPC, животные, боссы |
-| `Data\Config\entitygroups.xml` | Группы спавна для переработанных сущностей |
-| `Data\Config\gamestages.xml` | Новые волны и масштабирование сложности |
-| `Data\Config\spawning.xml` | Новые правила спавна по биомам |
-| `Data\Config\traders.xml` | Переработка торговцев |
-| `Data\Config\vehicles.xml` | Новые/изменённые транспортные средства |
-| `Data\Config\item_modifiers.xml` | Новые модификации оружия |
-| `Data\Config\quests.xml` | Своя система квестов |
-| `Data\Config\challenges.xml` | Свои челленджи |
-| `Data\Config\biomes.xml` | Переработка биомов |
-| `Data\Config\materials.xml` | Новые материалы блоков |
-| `Data\Config\qualityinfo.xml` | Своя система качества |
-| `Data\Config\worldglobal.xml` | Глобальные настройки мира (цикл дня, погода) |
-| `Data\Config\weathersurvival.xml` | Выживание и погодные эффекты |
-| `Data\Config\dialogs.xml` | NPC-диалоги |
-| `Data\Config\utilityai.xml` | AI поведение сущностей |
-| `Data\Config\Localization.txt` | **ВСЕ** тексты — названия, описания, UI-строки |
-
-### 7. Мир и префабы
-
-| Путь | Зачем изучать |
-|---|---|
-| `Data\Config\rwgmixer.xml` | Рецепт генерации случайного мира — города, дороги, биомы |
-| `Data\Prefabs\POIs\` (~500+ POI) | Все здания мира. Формат: `.xml` (мета), `.tts` (блоки), `.mesh` (навмеш), `.jpg` (превью) |
-| `Data\Prefabs\Parts\` | Составные части зданий |
-| `Data\Prefabs\RWGTiles\` | Тайлы дорог/перекрёстков для RWG |
-| `Data\Stamps\` | Штампы рельефа (горы, холмы, озёра, реки) |
-| `Data\Worlds\Navezgane\` | Фиксированная карта — образец структуры мира |
-
-### 8. Инфраструктура Unity (для создания своих ассетов)
-
-| Путь | Зачем изучать |
-|---|---|
-| `7DaysToDie_Data\ScriptingAssemblies.json` | Какие сборки загружает рантайм — нужно знать при добавлении своих DLL |
-| `7DaysToDie_Data\RuntimeInitializeOnLoads.json` | Порядок инициализации — важно для ранних патчей |
-| `7DaysToDie_Data\boot.config` | Конфиг Unity-рантайма |
-| `MonoBleedingEdge\` | Среда исполнения Mono — понимание ограничений .NET |
-
----
-
-### Порядок изучения для Total Conversion
-
-| Этап | Фокус | Ключевые файлы |
+| Path | Origin | Purpose |
 |---|---|---|
-| **1** | Декомпиляция и изучение кода | `Assembly-CSharp.dll` в dnSpy |
-| **2** | Изучение XML-системы | Все `Data\Config\*.xml` |
-| **3** | Изучение UI-системы | `XUi\`, `XUi_Menu\`, `XUi_Common\` + `NGUI.dll` |
-| **4** | Изучение системы ассетов | `catalog.json` + структура `Addressables\Standalone\` |
-| **5** | Создание Unity-проекта | Для сборки своих AssetBundle с мешами/текстурами |
-| **6** | Изучение Harmony API | `0Harmony.dll` + `0_TFP_Harmony\` как образец |
-| **7** | Изучение префабов | POIs формат + инструменты TFP Editor |
+| `7DaysToDie_Data\StreamingAssets\aa\catalog.json` | Unity | Addressables catalog — master index mapping asset addresses to bundle paths |
+| `7DaysToDie_Data\StreamingAssets\aa\settings.json` | Unity | Addressables system settings |
+| `7DaysToDie_Data\StreamingAssets\aa\shaders.json` | Unity | Shader variant tracking data |
+| `7DaysToDie_Data\StreamingAssets\aa\AddressablesLink\link.xml` | Unity | Link between Addressables and resources |
+| `7DaysToDie_Data\StreamingAssets\Video\TFP_Intro.webm` | TFP | The Fun Pimps splash/intro video |
 
-Undead Legacy и подобные total conversion моды используют **все** эти слои одновременно: Harmony DLL для изменения поведения кода + XML для данных + Unity AssetBundles для визуала + XUi для интерфейса.
+---
+
+## `7DaysToDie_Data\Managed\` — Managed (.NET) DLLs
+
+### TFP Game Assemblies
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `7DaysToDie_Data\Managed\Assembly-CSharp.dll` | TFP | **Main game code** — all items, blocks, entities, AI, UI, networking, world gen, buffs, crafting, quests |
+| `7DaysToDie_Data\Managed\Assembly-CSharp-firstpass.dll` | TFP | Early-init code loaded before main assembly — utility classes, base types |
+| `7DaysToDie_Data\Managed\LogLibrary.dll` | TFP | Custom TFP logging framework |
+
+### Third-Party Libraries
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `7DaysToDie_Data\Managed\NGUI.dll` | 3rd | NGUI — game's primary UI system (**not** standard Unity UI) |
+| `7DaysToDie_Data\Managed\NCalc.dll` | 3rd | Math expression evaluator (used in buff/progression formulas) |
+| `7DaysToDie_Data\Managed\AstarPathfindingProject.dll` | 3rd | A* Pathfinding Project Pro — NPC/zombie navigation |
+| `7DaysToDie_Data\Managed\Pathfinding.ClipperLib.dll` | 3rd | Polygon clipping for pathfinding mesh generation |
+| `7DaysToDie_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll` | 3rd | Zip compression for pathfinding data |
+| `7DaysToDie_Data\Managed\Pathfinding.Poly2Tri.dll` | 3rd | 2D polygon triangulation for pathfinding |
+| `7DaysToDie_Data\Managed\InControl.dll` | 3rd | Controller/input mapping framework |
+| `7DaysToDie_Data\Managed\InControl.Examples.dll` | 3rd | InControl usage examples |
+| `7DaysToDie_Data\Managed\LiteNetLib.dll` | 3rd | UDP networking library (multiplayer) |
+| `7DaysToDie_Data\Managed\MemoryPack.dll` | 3rd | Binary serialization (save data, network packets) |
+| `7DaysToDie_Data\Managed\Newtonsoft.Json.dll` | 3rd | JSON.NET — JSON serialization |
+| `7DaysToDie_Data\Managed\Utf8Json.dll` | 3rd | High-performance UTF-8 JSON serializer |
+| `7DaysToDie_Data\Managed\Noemax.GZip.dll` | 3rd | GZip compression |
+| `7DaysToDie_Data\Managed\Antlr3.Runtime.dll` | 3rd | ANTLR3 parser runtime (used by NCalc) |
+| `7DaysToDie_Data\Managed\Backtrace.Unity.dll` | 3rd | Crash reporting SDK |
+| `7DaysToDie_Data\Managed\zxing.unity.dll` | 3rd | QR/barcode scanning (Twitch integration) |
+| `7DaysToDie_Data\Managed\enum2int.dll` | 3rd | Fast enum-to-int conversion |
+| `7DaysToDie_Data\Managed\ScreenSpaceReflections.dll` | 3rd | Screen-space reflections post-process effect |
+| `7DaysToDie_Data\Managed\HBAO.Runtime.dll` | 3rd | Horizon-Based Ambient Occlusion effect |
+| `7DaysToDie_Data\Managed\HBAO.Demo.Runtime.dll` | 3rd | HBAO demo/sample runtime |
+| `7DaysToDie_Data\Managed\AmplifyShaderEditor.Samples.BuiltIn.dll` | 3rd | Amplify Shader Editor sample shaders |
+
+### Platform SDKs
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `7DaysToDie_Data\Managed\com.rlabrecque.steamworks.net.dll` | 3rd | Steamworks.NET — Steam API wrapper (achievements, lobbies, workshop) |
+| `7DaysToDie_Data\Managed\Discord.Sdk.dll` | 3rd | Discord Rich Presence / Game SDK |
+| `7DaysToDie_Data\Managed\EOS.dll` | 3rd | Epic Online Services managed wrapper |
+| `7DaysToDie_Data\Managed\XblPCSandbox.dll` | MS | Xbox Live PC sandbox |
+| `7DaysToDie_Data\Managed\com.thenakeddev.dlss.Runtime.dll` | 3rd | NVIDIA DLSS Unity integration |
+| `7DaysToDie_Data\Managed\com.thenakeddev.fsr.Runtime.dll` | 3rd | AMD FSR Unity integration |
+| `7DaysToDie_Data\Managed\com.thenakeddev.fsr.Runtime.BIRP.dll` | 3rd | AMD FSR Built-In Render Pipeline support |
+
+### Unity Engine Modules
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `7DaysToDie_Data\Managed\UnityEngine.dll` | Unity | Unity engine facade/entry point |
+| `7DaysToDie_Data\Managed\UnityEngine.CoreModule.dll` | Unity | Core types: `GameObject`, `MonoBehaviour`, `Transform`, `Component` |
+| `7DaysToDie_Data\Managed\UnityEngine.PhysicsModule.dll` | Unity | Physics, raycasts, colliders, rigidbodies |
+| `7DaysToDie_Data\Managed\UnityEngine.Physics2DModule.dll` | Unity | 2D physics engine |
+| `7DaysToDie_Data\Managed\UnityEngine.AnimationModule.dll` | Unity | Animation system (Animator, AnimationClip) |
+| `7DaysToDie_Data\Managed\UnityEngine.AudioModule.dll` | Unity | Audio playback (`AudioSource`, `AudioClip`) |
+| `7DaysToDie_Data\Managed\UnityEngine.UI.dll` | Unity | Built-in Unity UI (Canvas, Image, Text) |
+| `7DaysToDie_Data\Managed\UnityEngine.UIModule.dll` | Unity | Low-level UI module |
+| `7DaysToDie_Data\Managed\UnityEngine.UIElementsModule.dll` | Unity | UIToolkit (not used by game UI) |
+| `7DaysToDie_Data\Managed\UnityEngine.IMGUIModule.dll` | Unity | Immediate-mode GUI |
+| `7DaysToDie_Data\Managed\UnityEngine.InputLegacyModule.dll` | Unity | Legacy `Input` class |
+| `7DaysToDie_Data\Managed\UnityEngine.InputModule.dll` | Unity | Input system module |
+| `7DaysToDie_Data\Managed\UnityEngine.TextRenderingModule.dll` | Unity | Text rendering (Font, TextMesh) |
+| `7DaysToDie_Data\Managed\UnityEngine.TextCoreTextEngineModule.dll` | Unity | TextMeshPro underlying text engine |
+| `7DaysToDie_Data\Managed\UnityEngine.TextCoreFontEngineModule.dll` | Unity | Font rendering engine |
+| `7DaysToDie_Data\Managed\UnityEngine.ParticleSystemModule.dll` | Unity | Particle effects |
+| `7DaysToDie_Data\Managed\UnityEngine.TerrainModule.dll` | Unity | Terrain system |
+| `7DaysToDie_Data\Managed\UnityEngine.TerrainPhysicsModule.dll` | Unity | Terrain colliders |
+| `7DaysToDie_Data\Managed\UnityEngine.AssetBundleModule.dll` | Unity | AssetBundle loading API |
+| `7DaysToDie_Data\Managed\UnityEngine.JSONSerializeModule.dll` | Unity | JSON utility |
+| `7DaysToDie_Data\Managed\UnityEngine.ImageConversionModule.dll` | Unity | Texture encoding/decoding (PNG, JPG) |
+| `7DaysToDie_Data\Managed\UnityEngine.VideoModule.dll` | Unity | Video playback |
+| `7DaysToDie_Data\Managed\UnityEngine.VFXModule.dll` | Unity | Visual Effects Graph |
+| `7DaysToDie_Data\Managed\UnityEngine.VehiclesModule.dll` | Unity | Wheel colliders, vehicle physics |
+| `7DaysToDie_Data\Managed\UnityEngine.WindModule.dll` | Unity | Wind zones for vegetation animation |
+| `7DaysToDie_Data\Managed\UnityEngine.AIModule.dll` | Unity | NavMesh and AI navigation |
+| `7DaysToDie_Data\Managed\UnityEngine.AccessibilityModule.dll` | Unity | Accessibility features |
+| `7DaysToDie_Data\Managed\UnityEngine.AndroidJNIModule.dll` | Unity | Android JNI bridge (unused on PC) |
+| `7DaysToDie_Data\Managed\UnityEngine.ARModule.dll` | Unity | Augmented Reality (unused) |
+| `7DaysToDie_Data\Managed\UnityEngine.ClothModule.dll` | Unity | Cloth simulation |
+| `7DaysToDie_Data\Managed\UnityEngine.ClusterInputModule.dll` | Unity | Cluster rendering input |
+| `7DaysToDie_Data\Managed\UnityEngine.ClusterRendererModule.dll` | Unity | Cluster rendering |
+| `7DaysToDie_Data\Managed\UnityEngine.ContentLoadModule.dll` | Unity | Content loading subsystem |
+| `7DaysToDie_Data\Managed\UnityEngine.CrashReportingModule.dll` | Unity | Crash reporting |
+| `7DaysToDie_Data\Managed\UnityEngine.DirectorModule.dll` | Unity | Timeline director |
+| `7DaysToDie_Data\Managed\UnityEngine.DSPGraphModule.dll` | Unity | DSP audio graph |
+| `7DaysToDie_Data\Managed\UnityEngine.GameCenterModule.dll` | Unity | Apple GameCenter (unused on PC) |
+| `7DaysToDie_Data\Managed\UnityEngine.GIModule.dll` | Unity | Global Illumination |
+| `7DaysToDie_Data\Managed\UnityEngine.GridModule.dll` | Unity | Grid/Tilemap grid |
+| `7DaysToDie_Data\Managed\UnityEngine.HotReloadModule.dll` | Unity | Hot reload support |
+| `7DaysToDie_Data\Managed\UnityEngine.LocalizationModule.dll` | Unity | Localization subsystem |
+| `7DaysToDie_Data\Managed\UnityEngine.NVIDIAModule.dll` | Unity | NVIDIA integration module |
+| `7DaysToDie_Data\Managed\UnityEngine.PerformanceReportingModule.dll` | Unity | Performance metrics reporting |
+| `7DaysToDie_Data\Managed\UnityEngine.ProfilerModule.dll` | Unity | Profiler API |
+| `7DaysToDie_Data\Managed\UnityEngine.PropertiesModule.dll` | Unity | Properties module |
+| `7DaysToDie_Data\Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll` | Unity | Runtime init-on-load manager |
+| `7DaysToDie_Data\Managed\UnityEngine.ScreenCaptureModule.dll` | Unity | Screenshot capture |
+| `7DaysToDie_Data\Managed\UnityEngine.SharedInternalsModule.dll` | Unity | Shared engine internals |
+| `7DaysToDie_Data\Managed\UnityEngine.SpriteMaskModule.dll` | Unity | Sprite masking |
+| `7DaysToDie_Data\Managed\UnityEngine.SpriteShapeModule.dll` | Unity | Sprite shapes |
+| `7DaysToDie_Data\Managed\UnityEngine.StreamingModule.dll` | Unity | Asset streaming |
+| `7DaysToDie_Data\Managed\UnityEngine.SubstanceModule.dll` | Unity | Substance materials |
+| `7DaysToDie_Data\Managed\UnityEngine.SubsystemsModule.dll` | Unity | Subsystem management |
+| `7DaysToDie_Data\Managed\UnityEngine.TilemapModule.dll` | Unity | 2D Tilemap |
+| `7DaysToDie_Data\Managed\UnityEngine.TLSModule.dll` | Unity | TLS/SSL support |
+| `7DaysToDie_Data\Managed\UnityEngine.UmbraModule.dll` | Unity | Umbra occlusion culling |
+| `7DaysToDie_Data\Managed\UnityEngine.UnityAnalyticsCommonModule.dll` | Unity | Analytics common types |
+| `7DaysToDie_Data\Managed\UnityEngine.UnityAnalyticsModule.dll` | Unity | Unity Analytics |
+| `7DaysToDie_Data\Managed\UnityEngine.UnityConnectModule.dll` | Unity | Unity Connect services |
+| `7DaysToDie_Data\Managed\UnityEngine.UnityCurlModule.dll` | Unity | libcurl wrapper |
+| `7DaysToDie_Data\Managed\UnityEngine.UnityTestProtocolModule.dll` | Unity | Test protocol |
+| `7DaysToDie_Data\Managed\UnityEngine.UnityWebRequestModule.dll` | Unity | HTTP web requests |
+| `7DaysToDie_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll` | Unity | Web request for asset bundles |
+| `7DaysToDie_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll` | Unity | Web request for audio clips |
+| `7DaysToDie_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll` | Unity | Web request for textures |
+| `7DaysToDie_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll` | Unity | Legacy WWW web request |
+| `7DaysToDie_Data\Managed\UnityEngine.VRModule.dll` | Unity | Virtual Reality |
+| `7DaysToDie_Data\Managed\UnityEngine.XRModule.dll` | Unity | Extended Reality (XR) |
+
+### Unity Packages
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `7DaysToDie_Data\Managed\Unity.Addressables.dll` | Unity | Addressable Asset System (asset loading/management) |
+| `7DaysToDie_Data\Managed\Unity.ResourceManager.dll` | Unity | Resource management for Addressables |
+| `7DaysToDie_Data\Managed\Unity.TextMeshPro.dll` | Unity | TextMeshPro text rendering |
+| `7DaysToDie_Data\Managed\Unity.Burst.dll` | Unity | Burst compiler runtime |
+| `7DaysToDie_Data\Managed\Unity.Burst.Unsafe.dll` | Unity | Burst unsafe utilities |
+| `7DaysToDie_Data\Managed\Unity.Collections.dll` | Unity | Native collections (`NativeArray`, etc.) |
+| `7DaysToDie_Data\Managed\Unity.Collections.LowLevel.ILSupport.dll` | Unity | Low-level IL support for collections |
+| `7DaysToDie_Data\Managed\Unity.Mathematics.dll` | Unity | High-performance math library |
+| `7DaysToDie_Data\Managed\Unity.Animation.Rigging.dll` | Unity | Animation rigging constraints |
+| `7DaysToDie_Data\Managed\Unity.Animation.Rigging.DocCodeExamples.dll` | Unity | Animation rigging code examples |
+| `7DaysToDie_Data\Managed\Unity.Postprocessing.Runtime.dll` | Unity | Post-processing stack (bloom, AO, color grading) |
+| `7DaysToDie_Data\Managed\Unity.TerrainTools.dll` | Unity | Terrain tools runtime |
+| `7DaysToDie_Data\Managed\Unity.Profiling.Core.dll` | Unity | Profiling API |
+| `7DaysToDie_Data\Managed\Unity.MemoryProfiler.dll` | Unity | Memory profiler |
+| `7DaysToDie_Data\Managed\Unity.ScriptableBuildPipeline.dll` | Unity | Scriptable build pipeline |
+| `7DaysToDie_Data\Managed\Unity.Microsoft.GDK.dll` | MS | Xbox/MS Store GDK integration |
+| `7DaysToDie_Data\Managed\Unity.Microsoft.GDK.Tools.dll` | MS | GDK tools |
+
+### .NET / Mono Framework
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `7DaysToDie_Data\Managed\mscorlib.dll` | .NET | Core .NET runtime (object, string, collections, threading) |
+| `7DaysToDie_Data\Managed\System.dll` | .NET | Core System classes (IO, Net, Config, Diagnostics) |
+| `7DaysToDie_Data\Managed\System.Core.dll` | .NET | LINQ, Expressions, dynamic types |
+| `7DaysToDie_Data\Managed\System.Xml.dll` | .NET | XML DOM and XPath processing |
+| `7DaysToDie_Data\Managed\System.Xml.Linq.dll` | .NET | LINQ to XML |
+| `7DaysToDie_Data\Managed\System.Net.Http.dll` | .NET | HTTP client |
+| `7DaysToDie_Data\Managed\System.Data.dll` | .NET | ADO.NET data access |
+| `7DaysToDie_Data\Managed\System.Data.DataSetExtensions.dll` | .NET | DataSet LINQ extensions |
+| `7DaysToDie_Data\Managed\System.Drawing.dll` | .NET | GDI+ graphics (System.Drawing) |
+| `7DaysToDie_Data\Managed\System.IO.Compression.dll` | .NET | Compression streams (deflate, gzip) |
+| `7DaysToDie_Data\Managed\System.IO.Compression.FileSystem.dll` | .NET | Zip file I/O |
+| `7DaysToDie_Data\Managed\System.Numerics.dll` | .NET | Numeric types (BigInteger, Complex) |
+| `7DaysToDie_Data\Managed\System.Runtime.dll` | .NET | Runtime support types |
+| `7DaysToDie_Data\Managed\System.Runtime.CompilerServices.Unsafe.dll` | .NET | Unsafe memory operations |
+| `7DaysToDie_Data\Managed\System.Runtime.Serialization.dll` | .NET | Data contract serialization |
+| `7DaysToDie_Data\Managed\System.Security.dll` | .NET | Security and cryptography extensions |
+| `7DaysToDie_Data\Managed\System.ServiceModel.Internals.dll` | .NET | WCF internals |
+| `7DaysToDie_Data\Managed\System.ServiceProcess.dll` | .NET | Windows service support |
+| `7DaysToDie_Data\Managed\System.Transactions.dll` | .NET | Transaction management |
+| `7DaysToDie_Data\Managed\System.Windows.Forms.dll` | .NET | Windows Forms (minimal, used for clipboard/dialogs) |
+| `7DaysToDie_Data\Managed\System.ComponentModel.Composition.dll` | .NET | MEF (Managed Extensibility Framework) |
+| `7DaysToDie_Data\Managed\System.Configuration.dll` | .NET | App configuration system |
+| `7DaysToDie_Data\Managed\System.Configuration.Install.dll` | .NET | Install/uninstall components |
+| `7DaysToDie_Data\Managed\System.EnterpriseServices.dll` | .NET | COM+ enterprise services |
+| `7DaysToDie_Data\Managed\Mono.Posix.dll` | .NET | POSIX API wrapper for Mono |
+| `7DaysToDie_Data\Managed\Mono.Security.dll` | .NET | Mono security/crypto |
+| `7DaysToDie_Data\Managed\Mono.WebBrowser.dll` | .NET | Mono embedded web browser |
+| `7DaysToDie_Data\Managed\netstandard.dll` | .NET | .NET Standard 2.0 compatibility shim |
+| `7DaysToDie_Data\Managed\Accessibility.dll` | .NET | Accessibility support types |
+| `7DaysToDie_Data\Managed\Unity.InputSystem.dll` | Unity | New Input System package |
+
+---
+
+## `7DaysToDie_Data\Plugins\x86_64\` — Native Plugins
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `7DaysToDie_Data\Plugins\x86_64\steam_api64.dll` | Steam | Steamworks native API |
+| `7DaysToDie_Data\Plugins\x86_64\EOSSDK-Win64-Shipping.dll` | 3rd (Epic) | Epic Online Services native SDK |
+| `7DaysToDie_Data\Plugins\x86_64\discord_partner_sdk.dll` | 3rd | Discord SDK native library |
+| `7DaysToDie_Data\Plugins\x86_64\InControlNative.dll` | 3rd | InControl native input handler |
+| `7DaysToDie_Data\Plugins\x86_64\lib_burst_generated.dll` | Unity | Burst-compiled native code |
+| `7DaysToDie_Data\Plugins\x86_64\BacktraceCrashpadWindows.dll` | 3rd | Backtrace crash capture |
+| `7DaysToDie_Data\Plugins\x86_64\backtrace_native_xbox.dll` | 3rd | Xbox-specific Backtrace |
+| `7DaysToDie_Data\Plugins\x86_64\crashpad_handler.dll` | 3rd | Crashpad crash handler |
+| `7DaysToDie_Data\Plugins\x86_64\ControllerExt.dll` | 3rd | Extended controller support |
+| `7DaysToDie_Data\Plugins\x86_64\getrss.dll` | 3rd | Memory usage (RSS) monitoring |
+| `7DaysToDie_Data\Plugins\x86_64\Magick.dll` | 3rd | ImageMagick — image processing |
+| `7DaysToDie_Data\Plugins\x86_64\xaudio2_9redist.dll` | MS | XAudio2 redistributable (audio backend) |
+| `7DaysToDie_Data\Plugins\x86_64\XCurl.dll` | MS | Xbox HTTP/CURL library |
+| `7DaysToDie_Data\Plugins\x86_64\XGameRuntime.Thunks.dll` | MS | Xbox Game Runtime thunks |
+| `7DaysToDie_Data\Plugins\x86_64\XInputInterface64.dll` | MS | XInput (gamepad input) |
+| `7DaysToDie_Data\Plugins\x86_64\Microsoft.Xbox.Services.GDK.C.Thunks.dll` | MS | Xbox services GDK thunks |
+
+---
+
+## `Data\` — Game Content Root
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `Data\7dtd_icon.ico` | TFP | Game icon file |
+
+### `Data\Config\` — XML Configuration Files
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `Data\Config\items.xml` | TFP | All holdable items: weapons, tools, consumables, resources, ammo and their properties |
+| `Data\Config\blocks.xml` | TFP | All placeable blocks: terrain, structures, doors, traps, workstations, storage |
+| `Data\Config\recipes.xml` | TFP | Crafting recipes: ingredients, output amounts, required workstations |
+| `Data\Config\loot.xml` | TFP | Loot containers, loot groups, probability tables, quest loot |
+| `Data\Config\entityclasses.xml` | TFP | Zombie, animal, NPC, bandit class definitions — stats, AI, meshes, sounds |
+| `Data\Config\entitygroups.xml` | TFP | Named groups of entities used by gamestage spawning |
+| `Data\Config\buffs.xml` | TFP | Buffs, debuffs, status effects — triggers, durations, stacking, passive effects |
+| `Data\Config\progression.xml` | TFP | Skills, perks, attributes, level scaling, skill point costs |
+| `Data\Config\gamestages.xml` | TFP | Horde night wave definitions, spawn scaling by gamestage |
+| `Data\Config\spawning.xml` | TFP | Biome and zone spawning rules — which entities spawn where |
+| `Data\Config\traders.xml` | TFP | Trader inventories, tiers, restock settings, quest offerings |
+| `Data\Config\vehicles.xml` | TFP | Vehicle definitions, properties, fuel, storage, speed |
+| `Data\Config\item_modifiers.xml` | TFP | Weapon/tool mod attachments, dyes, cosmetic slots |
+| `Data\Config\quests.xml` | TFP | Quest definitions, objectives, reward tables, quest chains |
+| `Data\Config\biomes.xml` | TFP | Biome definitions: surface blocks, sub-biomes, decoration spawns |
+| `Data\Config\sounds.xml` | TFP | Sound event mappings: every game action → audio file(s) |
+| `Data\Config\materials.xml` | TFP | Block material properties: hardness, damage resistance, particle effects |
+| `Data\Config\shapes.xml` | TFP | Block shape definitions (3D mesh shape references) |
+| `Data\Config\qualityinfo.xml` | TFP | Item quality tiers and stat scaling per tier |
+| `Data\Config\worldglobal.xml` | TFP | Global world settings: day length, day/night cycle, loot respawn, blood moon |
+| `Data\Config\weathersurvival.xml` | TFP | Weather effects on player survival stats (temperature, wetness) |
+| `Data\Config\painting.xml` | TFP | Block painting textures catalogue |
+| `Data\Config\nav_objects.xml` | TFP | Minimap/compass navigation icons |
+| `Data\Config\archetypes.xml` | TFP | Entity archetypes — base templates for entityclasses |
+| `Data\Config\dialogs.xml` | TFP | NPC dialog trees (trader conversations, quest dialogs) |
+| `Data\Config\npc.xml` | TFP | NPC-specific settings |
+| `Data\Config\challenges.xml` | TFP | In-game challenges and objectives |
+| `Data\Config\events.xml` | TFP | Game event trigger definitions |
+| `Data\Config\gameevents.xml` | TFP | Game event response/action definitions |
+| `Data\Config\rwgmixer.xml` | TFP | Random World Generation recipe — cities, roads, biome placement |
+| `Data\Config\utilityai.xml` | TFP | AI utility scoring and behaviour trees for entities |
+| `Data\Config\misc.xml` | TFP | Miscellaneous global game variables |
+| `Data\Config\physicsbodies.xml` | TFP | Ragdoll/physics body definitions |
+| `Data\Config\ui_display.xml` | TFP | Stat/property display labels for the UI |
+| `Data\Config\music.xml` | TFP | Background music event mappings: biome/situation → tracks |
+| `Data\Config\subtitles.xml` | TFP | Subtitle entries for audio events |
+| `Data\Config\dmscontent.xml` | TFP | Diersville map static content definitions |
+| `Data\Config\twitch.xml` | TFP | Twitch integration configuration |
+| `Data\Config\twitch_events.xml` | TFP | Twitch integration event definitions |
+| `Data\Config\videos.xml` | TFP | Intro/cutscene video references |
+| `Data\Config\loadingscreen.xml` | TFP | Loading screen tip text entries |
+| `Data\Config\blockplaceholders.xml` | TFP | Block placeholder substitution rules during world load |
+| `Data\Config\Localization.txt` | TFP | All in-game strings — TSV format, key → language columns (english, german, spanish, french, italian, japanese, koreana, polish, brazilian, russian, turkish, schinese, tchinese) |
+| `Data\Config\BlockUpdates.csv` | TFP | Block upgrade/downgrade transition table |
+| `Data\Config\OversizedConversionTargets.txt` | TFP | Oversized block conversion list |
+| `Data\Config\Stealth.txt` | TFP | Stealth system parameters |
+| `Data\Config\XML.txt` | TFP | Developer notes on the XML patching system, Extends, block naming conventions |
+
+### `Data\Config\XUi\` — In-Game HUD UI
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `Data\Config\XUi\windows.xml` | TFP | All in-game HUD windows: inventory, crafting, loot, map, compass, health bars, hotbar, container UI, vehicle UI, trader UI |
+| `Data\Config\XUi\controls.xml` | TFP | Reusable UI components: buttons, item slots, icons, lists, grids, scrollbars |
+| `Data\Config\XUi\styles.xml` | TFP | UI styles: colors, font sizes, padding, alignment, anchoring |
+| `Data\Config\XUi\xui.xml` | TFP | Root XUi file — binds windows, controls, styles together, defines window loading |
+
+### `Data\Config\XUi_Menu\` — Main Menu UI
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `Data\Config\XUi_Menu\windows.xml` | TFP | Main menu windows: start screen, settings, world selection, multiplayer browser |
+| `Data\Config\XUi_Menu\controls.xml` | TFP | Menu-specific UI components |
+| `Data\Config\XUi_Menu\styles.xml` | TFP | Menu UI styles |
+| `Data\Config\XUi_Menu\xui.xml` | TFP | Menu root XUi file |
+
+### `Data\Config\XUi_Common\` — Shared UI Components
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `Data\Config\XUi_Common\controls.xml` | TFP | Shared controls used by both HUD and Menu |
+| `Data\Config\XUi_Common\styles.xml` | TFP | Shared styles used by both HUD and Menu |
+
+### `Data\ItemIcons\` — Item/Block Icons (~5091 PNG files)
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `Data\ItemIcons\*.png` | TFP | PNG icon sprites for every item and block. Filename matches `name` attribute from `items.xml` / `blocks.xml` (e.g., `gunPistol.png`, `drinkJarBoiledWater.png`). Typically 116×116 or 232×232 px with transparency. |
+
+### `Data\Music\` — Music Tracks (~496 WAV files)
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `Data\Music\*.wav` | TFP | WAV music tracks. Naming convention: `NNN_<type>_NN.wav`. Types: `combat`, `explore`, `suspense`, `building`, `ambient`, `bloodmoon`. Controlled by `music.xml`. |
+
+### `Data\Bluffs\`
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `Data\Bluffs\bluff1.tga` | TFP | Terrain bluff texture #1 |
+| `Data\Bluffs\bluff2.tga` | TFP | Terrain bluff texture #2 |
+
+### `Data\Stamps\` — Terrain Generation Stamps (~28 files)
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `Data\Stamps\base_01.raw` | TFP | Base terrain elevation stamp |
+| `Data\Stamps\canyon_01.raw` | TFP | Canyon terrain stamp |
+| `Data\Stamps\crater_01.raw` | TFP | Crater terrain stamp |
+| `Data\Stamps\desert_land_border_01.raw` | TFP | Desert land border stamp #1 |
+| `Data\Stamps\desert_land_border_02.raw` | TFP | Desert land border stamp #2 |
+| `Data\Stamps\desert_mountains_01.raw` | TFP | Desert mountains stamp #1 |
+| `Data\Stamps\desert_mountains_02.raw` | TFP | Desert mountains stamp #2 |
+| `Data\Stamps\filler_biome_01.png` | TFP | Filler biome shape |
+| `Data\Stamps\ground_01.raw` | TFP | Ground elevation stamp |
+| `Data\Stamps\hills_01.raw` | TFP | Hills terrain stamp #1 |
+| `Data\Stamps\hills_02.raw` | TFP | Hills terrain stamp #2 |
+| `Data\Stamps\lake_01.raw` | TFP | Lake terrain stamp #1 |
+| `Data\Stamps\lake_02.raw` | TFP | Lake terrain stamp #2 |
+| `Data\Stamps\land_border_01.raw` | TFP | Land border stamp |
+| `Data\Stamps\mountains_01.raw` | TFP | Mountains stamp #1 |
+| `Data\Stamps\mountains_02.raw` | TFP | Mountains stamp #2 |
+| `Data\Stamps\plains_01.raw` | TFP | Plains stamp #1 |
+| `Data\Stamps\plains_02.raw` | TFP | Plains stamp #2 |
+| `Data\Stamps\river_01.png` | TFP | River shape stamp #1 |
+| `Data\Stamps\river_02.png` | TFP | River shape stamp #2 |
+| `Data\Stamps\rwg_tile_cap.png` | TFP | RWG road tile: dead end cap |
+| `Data\Stamps\rwg_tile_corner.png` | TFP | RWG road tile: corner |
+| `Data\Stamps\rwg_tile_intersection.png` | TFP | RWG road tile: intersection |
+| `Data\Stamps\rwg_tile_straight.png` | TFP | RWG road tile: straight |
+| `Data\Stamps\rwg_tile_t.png` | TFP | RWG road tile: T-junction |
+| `Data\Stamps\water_border_01.raw` | TFP | Water border stamp |
+
+### `Data\UMATextures\`
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `Data\UMATextures\` | TFP | Empty directory — UMA character textures placeholder |
+
+### `Data\Prefabs\` — World Prefab Structures
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `Data\Prefabs\POIs\` (~1041 POIs, 6227 files) | TFP | Points of Interest: houses, stores, factories, farms, caves, hospitals, trader bases, etc. Each POI has: `.xml` (metadata, dimensions, biome tags, tier), `.tts` (block data), `.nim` (block NIM), `.mesh` (AI nav mesh), `.jpg` (preview), `.ins` (instance data) |
+| `Data\Prefabs\Parts\` (3143 files) | TFP | Reusable prefab components/building parts |
+| `Data\Prefabs\RWGTiles\` (348 files) | TFP | Random World Generation road/city tile templates |
+| `Data\Prefabs\Test\` (580 files) | TFP | Development/test prefabs |
+
+### `Data\Bundles\Standalone\Entities\` — Legacy AssetBundles
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `Data\Bundles\Standalone\Entities\Entities` | TFP | Unity AssetBundle containing entity models (zombies, animals, NPCs) |
+| `Data\Bundles\Standalone\Entities\Entities.manifest` | TFP | Manifest for Entities bundle |
+| `Data\Bundles\Standalone\Entities\trees` | TFP | Unity AssetBundle containing tree/vegetation models |
+| `Data\Bundles\Standalone\Entities\trees.manifest` | TFP | Manifest for trees bundle |
+
+### `Data\Addressables\Standalone\` — Addressable Asset Bundles
+
+#### Global Bundles
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `…\7c401d1245288cd4ca6169241e1a104c_unitybuiltinshaders.bundle` | Unity | Built-in shader variants |
+| `…\blocktextureatlases_assets_all.bundle` | TFP | Texture atlas for all block surfaces |
+| `…\terraintextures_assets_all.bundle` | TFP | Terrain surface textures (dirt, stone, snow, sand, grass) |
+| `…\shapes_assets_all.bundle` | TFP | Block shape geometry (3D mesh data for all block shapes) |
+| `…\effects_assets_all.bundle` | TFP | All VFX: explosions, fire, blood, smoke, muzzle flash |
+| `…\shaders_assets_all.bundle` | TFP | Custom shaders |
+| `…\prefabs_assets_all.bundle` | TFP | Prefab structure asset data |
+| `…\meshdescriptions_assets_all.bundle` | TFP | Mesh descriptions (LOD levels, collider shapes) |
+| `…\soundmixers_assets_all.bundle` | TFP | Audio mixer configurations (volume balancing) |
+
+#### Animation Bundles (`animations_assets_animations\`)
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `…\animations_assets_animations\zombie.bundle` | TFP | Zombie animation clips |
+
+#### Entity Bundles (`automatic_assets_entities\`)
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `…\automatic_assets_entities\animals.bundle` | TFP | Animal models and materials |
+| `…\automatic_assets_entities\appliances.bundle` | TFP | Appliance entity models |
+| `…\automatic_assets_entities\banditprops.bundle` | TFP | Bandit prop models |
+| `…\automatic_assets_entities\bandits.bundle` | TFP | Bandit NPC models and materials |
+| `…\automatic_assets_entities\buildings.bundle` | TFP | Building entity models |
+| `…\automatic_assets_entities\commercial.bundle` | TFP | Commercial store entity models |
+| `…\automatic_assets_entities\crafting.bundle` | TFP | Crafting station entity models |
+| `…\automatic_assets_entities\debris.bundle` | TFP | Debris/rubble entity models |
+| `…\automatic_assets_entities\decor.bundle` | TFP | Decorative entity models |
+| `…\automatic_assets_entities\doors.bundle` | TFP | Door entity models |
+| `…\automatic_assets_entities\effects.bundle` | TFP | Effect entity models |
+| `…\automatic_assets_entities\electrical.bundle` | TFP | Electrical component entity models |
+| `…\automatic_assets_entities\elevators.bundle` | TFP | Elevator entity models |
+| `…\automatic_assets_entities\furniture.bundle` | TFP | Furniture entity models |
+| `…\automatic_assets_entities\gore.bundle` | TFP | Gore/body part entity models |
+| `…\automatic_assets_entities\industrial.bundle` | TFP | Industrial object entity models |
+| `…\automatic_assets_entities\lighting.bundle` | TFP | Light fixture entity models |
+| `…\automatic_assets_entities\lootcontainers.bundle` | TFP | Loot container entity models |
+| `…\automatic_assets_entities\minerals.bundle` | TFP | Mineral/ore entity models |
+| `…\automatic_assets_entities\misc.bundle` | TFP | Miscellaneous entity models |
+| `…\automatic_assets_entities\outdoordecor.bundle` | TFP | Outdoor decoration models |
+| `…\automatic_assets_entities\plants.bundle` | TFP | Plant entity models |
+| `…\automatic_assets_entities\plumbing.bundle` | TFP | Plumbing fixture models |
+| `…\automatic_assets_entities\quests.bundle` | TFP | Quest-related entity models |
+| `…\automatic_assets_entities\respawnpoints.bundle` | TFP | Respawn point entity models |
+| `…\automatic_assets_entities\sandbags.bundle` | TFP | Sandbag entity models |
+| `…\automatic_assets_entities\signs.bundle` | TFP | Sign entity models |
+| `…\automatic_assets_entities\streetsigns.bundle` | TFP | Street sign entity models |
+| `…\automatic_assets_entities\supplycrate.bundle` | TFP | Supply crate entity models |
+| `…\automatic_assets_entities\supplyplane.bundle` | TFP | Supply plane entity models |
+| `…\automatic_assets_entities\traders.bundle` | TFP | Trader entity models |
+| `…\automatic_assets_entities\traps.bundle` | TFP | Trap entity models |
+| `…\automatic_assets_entities\vehicles.bundle` | TFP | Vehicle entity models |
+| `…\automatic_assets_entities\player\common.bundle` | TFP | Player common entity assets |
+
+#### Sound Bundles (`automatic_assets_sounds\`)
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `…\automatic_assets_sounds\ambient_loops.bundle` | TFP | Ambient loop sound effects |
+| `…\automatic_assets_sounds\ambient_oneshots.bundle` | TFP | Ambient one-shot sound effects |
+| `…\automatic_assets_sounds\animals.bundle` | TFP | Animal sound effects |
+| `…\automatic_assets_sounds\biomes.bundle` | TFP | Biome ambient sounds |
+| `…\automatic_assets_sounds\buffs.bundle` | TFP | Buff/debuff sound effects |
+| `…\automatic_assets_sounds\campfire.bundle` | TFP | Campfire sounds |
+| `…\automatic_assets_sounds\chem_station.bundle` | TFP | Chemistry station sounds |
+| `…\automatic_assets_sounds\collector.bundle` | TFP | Collector sounds |
+| `…\automatic_assets_sounds\crafting.bundle` | TFP | General crafting sounds |
+| `…\automatic_assets_sounds\destroyblock.bundle` | TFP | Block destruction sounds |
+| `…\automatic_assets_sounds\doors.bundle` | TFP | Door open/close sounds |
+| `…\automatic_assets_sounds\drone.bundle` | TFP | Drone sounds |
+| `…\automatic_assets_sounds\electricity.bundle` | TFP | Electrical sounds |
+| `…\automatic_assets_sounds\enemies.bundle` | TFP | Enemy vocalization sounds |
+| `…\automatic_assets_sounds\explosions.bundle` | TFP | Explosion sounds |
+| `…\automatic_assets_sounds\foliage.bundle` | TFP | Foliage rustle sounds |
+| `…\automatic_assets_sounds\forge.bundle` | TFP | Forge sounds |
+| `…\automatic_assets_sounds\hazards.bundle` | TFP | Environmental hazard sounds |
+| `…\automatic_assets_sounds\impactsurface.bundle` | TFP | Impact on surface sounds (by material) |
+| `…\automatic_assets_sounds\items.bundle` | TFP | Item pickup/use sounds |
+| `…\automatic_assets_sounds\loot.bundle` | TFP | Loot container open/close sounds |
+| `…\automatic_assets_sounds\misc.bundle` | TFP | Miscellaneous sounds |
+| `…\automatic_assets_sounds\music.bundle` | TFP | Music tracks (Addressable version) |
+| `…\automatic_assets_sounds\pickups.bundle` | TFP | Item pickup sounds |
+| `…\automatic_assets_sounds\player_common.bundle` | TFP | Common player sounds (breathing, jumping, landing) |
+| `…\automatic_assets_sounds\player_female.bundle` | TFP | Female player voice sounds |
+| `…\automatic_assets_sounds\player_male.bundle` | TFP | Male player voice sounds |
+| `…\automatic_assets_sounds\prefabs.bundle` | TFP | Prefab ambient sounds |
+| `…\automatic_assets_sounds\quests.bundle` | TFP | Quest system sounds |
+| `…\automatic_assets_sounds\step.bundle` | TFP | Footstep sounds (by surface material) |
+| `…\automatic_assets_sounds\supplydrops.bundle` | TFP | Supply drop sounds |
+| `…\automatic_assets_sounds\switches.bundle` | TFP | Switch/lever sounds |
+| `…\automatic_assets_sounds\throwimpact.bundle` | TFP | Thrown item impact sounds |
+| `…\automatic_assets_sounds\tools.bundle` | TFP | Tool use sounds |
+| `…\automatic_assets_sounds\traps.bundle` | TFP | Trap trigger/activation sounds |
+| `…\automatic_assets_sounds\triggeredevents.bundle` | TFP | Triggered event sounds |
+| `…\automatic_assets_sounds\twitch.bundle` | TFP | Twitch integration sounds |
+| `…\automatic_assets_sounds\ui.bundle` | TFP | UI interaction sounds (clicks, hover, confirm) |
+| `…\automatic_assets_sounds\useactions.bundle` | TFP | Item use action sounds |
+| `…\automatic_assets_sounds\vehicles.bundle` | TFP | Vehicle engine/horn sounds |
+| `…\automatic_assets_sounds\vo.bundle` | TFP | Voice-over sounds |
+| `…\automatic_assets_sounds\weapons.bundle` | TFP | Weapon firing/reload sounds |
+
+#### Generic/Other Bundles
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `…\automatic_assets_generic\itemicons.bundle` | TFP | Item icon atlas (Addressable) |
+| `…\automatic_assets_other\items.bundle` | TFP | Item models and materials |
+
+#### DLC Cosmetic Bundles (`automatic_assets_dlc\`)
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `…\automatic_assets_dlc\butchercosmetic.bundle` | TFP | Butcher cosmetic DLC |
+| `…\automatic_assets_dlc\christmascosmetics.bundle` | TFP | Christmas cosmetics DLC |
+| `…\automatic_assets_dlc\classicsurvivorcosmetic.bundle` | TFP | Classic Survivor cosmetic DLC |
+| `…\automatic_assets_dlc\crimsonwarlordcosmetic.bundle` | TFP | Crimson Warlord cosmetic DLC |
+| `…\automatic_assets_dlc\desertcosmetic.bundle` | TFP | Desert cosmetic DLC |
+| `…\automatic_assets_dlc\femalepimpcosmetic.bundle` | TFP | Female Pimp cosmetic DLC |
+| `…\automatic_assets_dlc\hellreavercosmetic.bundle` | TFP | Hell Reaver cosmetic DLC |
+| `…\automatic_assets_dlc\hoardercosmetic.bundle` | TFP | Hoarder cosmetic DLC |
+| `…\automatic_assets_dlc\maraudercosmetic.bundle` | TFP | Marauder cosmetic DLC |
+| `…\automatic_assets_dlc\monstermaskcosmetics.bundle` | TFP | Monster Mask cosmetics DLC |
+| `…\automatic_assets_dlc\piratecosmetic.bundle` | TFP | Pirate cosmetic DLC |
+| `…\automatic_assets_dlc\samuraicosmetic.bundle` | TFP | Samurai cosmetic DLC |
+| `…\automatic_assets_dlc\storymaskcosmetics.bundle` | TFP | Story Mask cosmetics DLC |
+
+#### Twitch Drops Bundles (`automatic_assets_twitchdrops\`)
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `…\automatic_assets_twitchdrops\crackabookstoregearhat.bundle` | TFP | Crack-a-Book store gear hat |
+| `…\automatic_assets_twitchdrops\crackabookstoregearoutfit.bundle` | TFP | Crack-a-Book store gear outfit |
+| `…\automatic_assets_twitchdrops\generalstoregearhat.bundle` | TFP | General Store gear hat |
+| `…\automatic_assets_twitchdrops\generalstoregearoutfit.bundle` | TFP | General Store gear outfit |
+| `…\automatic_assets_twitchdrops\mopowerstoregearhat.bundle` | TFP | Mo' Power store gear hat |
+| `…\automatic_assets_twitchdrops\mopowerstoregearoutfit.bundle` | TFP | Mo' Power store gear outfit |
+| `…\automatic_assets_twitchdrops\passngasstoregearhat.bundle` | TFP | Pass-N-Gas store gear hat |
+| `…\automatic_assets_twitchdrops\passngasstoregearoutfit.bundle` | TFP | Pass-N-Gas store gear outfit |
+| `…\automatic_assets_twitchdrops\pimphatblue.bundle` | TFP | Blue Pimp Hat drop |
+| `…\automatic_assets_twitchdrops\pimphatpurple.bundle` | TFP | Purple Pimp Hat drop |
+| `…\automatic_assets_twitchdrops\popnpillsstoregearhat.bundle` | TFP | Pop-N-Pills store gear hat |
+| `…\automatic_assets_twitchdrops\popnpillsstoregearoutfit.bundle` | TFP | Pop-N-Pills store gear outfit |
+| `…\automatic_assets_twitchdrops\savagecountrystoregearhat.bundle` | TFP | Savage Country store gear hat |
+| `…\automatic_assets_twitchdrops\savagecountrystoregearoutfit.bundle` | TFP | Savage Country store gear outfit |
+| `…\automatic_assets_twitchdrops\shamwaystoregearhat.bundle` | TFP | Shamway store gear hat |
+| `…\automatic_assets_twitchdrops\shamwaystoregearoutfit.bundle` | TFP | Shamway store gear outfit |
+| `…\automatic_assets_twitchdrops\shotgunmessiahstoregearhat.bundle` | TFP | Shotgun Messiah store gear hat |
+| `…\automatic_assets_twitchdrops\shotgunmessiahstoregearoutfit.bundle` | TFP | Shotgun Messiah store gear outfit |
+| `…\automatic_assets_twitchdrops\watcher.bundle` | TFP | Watcher Twitch drop |
+| `…\automatic_assets_twitchdrops\workingstiffsstoregearhat.bundle` | TFP | Working Stiff's store gear hat |
+| `…\automatic_assets_twitchdrops\workingstiffsstoregearoutfit.bundle` | TFP | Working Stiff's store gear outfit |
+
+#### Texture Bundles (`textures_assets_textures\`)
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `…\textures_assets_textures\environment.bundle` | TFP | Environment textures |
+| `…\textures_assets_textures\graphics.bundle` | TFP | Graphics/rendering textures |
+| `…\textures_assets_textures\hud.bundle` | TFP | HUD textures |
+| `…\textures_assets_textures\ui.bundle` | TFP | UI textures |
+
+#### Zombie Entity Bundles (`zombies_assets_entities\zombies\`)
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `…\zombies_assets_entities\zombies\arlene.bundle` | TFP | Zombie Arlene model |
+| `…\zombies_assets_entities\zombies\bigmama.bundle` | TFP | Zombie Big Mama model |
+| `…\zombies_assets_entities\zombies\biker.bundle` | TFP | Zombie Biker model |
+| `…\zombies_assets_entities\zombies\boe.bundle` | TFP | Zombie Boe model |
+| `…\zombies_assets_entities\zombies\burnt.bundle` | TFP | Zombie Burnt model |
+| `…\zombies_assets_entities\zombies\chuck.bundle` | TFP | Zombie Chuck model |
+| `…\zombies_assets_entities\zombies\cocktailwaitress.bundle` | TFP | Zombie Cocktail Waitress model |
+| `…\zombies_assets_entities\zombies\common.bundle` | TFP | Common zombie shared assets |
+| `…\zombies_assets_entities\zombies\cop.bundle` | TFP | Zombie Cop model |
+| `…\zombies_assets_entities\zombies\crawler.bundle` | TFP | Zombie Crawler model |
+| `…\zombies_assets_entities\zombies\darlene.bundle` | TFP | Zombie Darlene model |
+| `…\zombies_assets_entities\zombies\demolition.bundle` | TFP | Zombie Demolition model |
+| `…\zombies_assets_entities\zombies\dog.bundle` | TFP | Zombie Dog model |
+| `…\zombies_assets_entities\zombies\frostclaw.bundle` | TFP | Zombie Frostclaw model |
+| `…\zombies_assets_entities\zombies\hawaiian.bundle` | TFP | Zombie Hawaiian model |
+| `…\zombies_assets_entities\zombies\hazmat.bundle` | TFP | Zombie Hazmat model |
+| `…\zombies_assets_entities\zombies\joe.bundle` | TFP | Zombie Joe model |
+| `…\zombies_assets_entities\zombies\lab.bundle` | TFP | Zombie Lab model |
+| `…\zombies_assets_entities\zombies\lumberjack.bundle` | TFP | Zombie Lumberjack model |
+| `…\zombies_assets_entities\zombies\marlene.bundle` | TFP | Zombie Marlene model |
+| `…\zombies_assets_entities\zombies\mechanic.bundle` | TFP | Zombie Mechanic model |
+| `…\zombies_assets_entities\zombies\moe.bundle` | TFP | Zombie Moe model |
+| `…\zombies_assets_entities\zombies\mutated.bundle` | TFP | Zombie Mutated model |
+| `…\zombies_assets_entities\zombies\nurse.bundle` | TFP | Zombie Nurse model |
+| `…\zombies_assets_entities\zombies\plaguespitter.bundle` | TFP | Plague Spitter model |
+| `…\zombies_assets_entities\zombies\rancher.bundle` | TFP | Zombie Rancher model |
+| `…\zombies_assets_entities\zombies\sand.bundle` | TFP | Zombie Sand model |
+| `…\zombies_assets_entities\zombies\screamer.bundle` | TFP | Zombie Screamer model |
+| `…\zombies_assets_entities\zombies\snow.bundle` | TFP | Zombie Snow model |
+| `…\zombies_assets_entities\zombies\soldier.bundle` | TFP | Zombie Soldier model |
+| `…\zombies_assets_entities\zombies\spider.bundle` | TFP | Zombie Spider model |
+| `…\zombies_assets_entities\zombies\steve.bundle` | TFP | Zombie Steve model |
+| `…\zombies_assets_entities\zombies\suit.bundle` | TFP | Zombie Suit model |
+| `…\zombies_assets_entities\zombies\thug.bundle` | TFP | Zombie Thug model |
+| `…\zombies_assets_entities\zombies\tomclark.bundle` | TFP | Zombie Tom Clark model |
+| `…\zombies_assets_entities\zombies\wight.bundle` | TFP | Zombie Wight model |
+| `…\zombies_assets_entities\zombies\worker.bundle` | TFP | Zombie Worker model |
+| `…\zombies_assets_entities\zombies\yo.bundle` | TFP | Zombie Yo model |
+
+#### Player Entity Bundles (`player_assets_entities\player\`)
+
+Organized by gender → category. Both male and female have the same gear/hair sets.
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `…\player\common.bundle` | TFP | Player common shared assets |
+| `…\player\female\common.bundle` | TFP | Female player common assets |
+| `…\player\male\common.bundle` | TFP | Male player common assets |
+
+**Gear bundles** (`player\{female,male}\gear\`): `assassin`, `biker`, `commando`, `enforcer`, `farmer`, `fiber`, `fitness`, `lumberjack`, `miner`, `nerd`, `nomad`, `preacher`, `raider`, `ranger`, `santahat`, `scavenger`, `stealth` — each as a `.bundle` file.
+
+**Hair bundles** (`player\{female,male}\hair\`): `afro_curly`, `buzzcut`, `comb_over`, `cornrows`, `dreads`, `flattop_fro`, `midpart_karen_messy`, `midpart_long`, `midpart_mid`, `midpart_short`, `midpart_shoulder`, `mohawk`, `pixie_cut`, `ponytail`, `sidepart_long`, `sidepart_mid`, `sidepart_short`, `slicked_back`, `slicked_back_long`, `small_fro` — each as a `.bundle` file.
+
+**Head bundles** (`player\{female,male}\heads\{asian,black,native,white}\`): `01.bundle`, `02.bundle`, `03.bundle`, `04.bundle` — 4 variants per ethnicity per gender (32 head bundles total).
+
+**Facial hair bundles** (male only) (`player\male\facialhair\`): `beard.bundle`, `chops.bundle`, `mustache.bundle`.
+
+### `Data\Worlds\` — Pre-built Worlds
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `Data\Worlds\Empty\` | TFP | Empty world template |
+| `Data\Worlds\Navezgane\` | TFP | Hand-crafted official campaign map |
+| `Data\Worlds\Playtesting\` | TFP | QA/testing world |
+| `Data\Worlds\Pregen06k01\` | TFP | Pre-generated 6K random world #1 |
+| `Data\Worlds\Pregen06k02\` | TFP | Pre-generated 6K random world #2 |
+| `Data\Worlds\Pregen08k01\` | TFP | Pre-generated 8K random world #1 |
+| `Data\Worlds\Pregen08k02\` | TFP | Pre-generated 8K random world #2 |
+
+---
+
+## `EasyAntiCheat\`
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `EasyAntiCheat\EasyAntiCheat_EOS_Setup.exe` | EAC | EAC installer/setup |
+| `EasyAntiCheat\install_eac.bat` | EAC | EAC install script |
+| `EasyAntiCheat\uninstall_eac.bat` | EAC | EAC uninstall script |
+| `EasyAntiCheat\Settings.json` | EAC | EAC configuration |
+| `EasyAntiCheat\SplashScreen.png` | EAC | EAC loading splash image |
+| `EasyAntiCheat\Certificates\base.bin` | EAC | EAC integrity certificate (binary) |
+| `EasyAntiCheat\Certificates\base.cer` | EAC | EAC integrity certificate |
+| `EasyAntiCheat\Certificates\runtime.conf` | EAC | EAC runtime configuration |
+| `EasyAntiCheat\Licenses\Apache-2.0.txt` | EAC | Apache 2.0 license text |
+| `EasyAntiCheat\Licenses\Licenses.txt` | EAC | Combined license notices |
+| `EasyAntiCheat\Licenses\MIT.txt` | EAC | MIT license text |
+| `EasyAntiCheat\Localization\ar_sa.cfg` | EAC | Arabic localization |
+| `EasyAntiCheat\Localization\cs_cz.cfg` | EAC | Czech localization |
+| `EasyAntiCheat\Localization\de_de.cfg` | EAC | German localization |
+| `EasyAntiCheat\Localization\en_us.cfg` | EAC | English localization |
+| `EasyAntiCheat\Localization\es_ar.cfg` | EAC | Spanish (Argentina) localization |
+| `EasyAntiCheat\Localization\es_es.cfg` | EAC | Spanish (Spain) localization |
+| `EasyAntiCheat\Localization\fr_fr.cfg` | EAC | French localization |
+| `EasyAntiCheat\Localization\id_id.cfg` | EAC | Indonesian localization |
+| `EasyAntiCheat\Localization\it_it.cfg` | EAC | Italian localization |
+| `EasyAntiCheat\Localization\ja_ja.cfg` | EAC | Japanese localization |
+| `EasyAntiCheat\Localization\ko_kr.cfg` | EAC | Korean localization |
+| `EasyAntiCheat\Localization\nl_nl.cfg` | EAC | Dutch localization |
+| `EasyAntiCheat\Localization\pl_pl.cfg` | EAC | Polish localization |
+| `EasyAntiCheat\Localization\pt_br.cfg` | EAC | Portuguese (Brazil) localization |
+| `EasyAntiCheat\Localization\ru_ru.cfg` | EAC | Russian localization |
+| `EasyAntiCheat\Localization\th_th.cfg` | EAC | Thai localization |
+| `EasyAntiCheat\Localization\tr_tr.cfg` | EAC | Turkish localization |
+| `EasyAntiCheat\Localization\vi_vn.cfg` | EAC | Vietnamese localization |
+| `EasyAntiCheat\Localization\zh_cn.cfg` | EAC | Chinese Simplified localization |
+| `EasyAntiCheat\Localization\zh_tw.cfg` | EAC | Chinese Traditional localization |
+
+---
+
+## `Launcher\`
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `Launcher\7dLauncher.po` | TFP | Launcher UI translations (English, PO format) |
+| `Launcher\7dLauncher.de.po` | TFP | Launcher UI translations (German, PO format) |
+
+---
+
+## `Licenses\` — Third-Party License Files (19 files)
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `Licenses\AmplifyMotion-MIT.txt` | 3rd | Amplify Motion — MIT license |
+| `Licenses\ANTLR3-BSD.txt` | 3rd | ANTLR3 parser — BSD license |
+| `Licenses\Backtrace-MIT.txt` | 3rd | Backtrace crash reporting — MIT license |
+| `Licenses\cecil-MIT.txt` | 3rd | Mono.Cecil IL manipulation — MIT license |
+| `Licenses\Crc32.NET-MIT.txt` | 3rd | CRC32 hash — MIT license |
+| `Licenses\GameSense-MIT.txt` | 3rd | SteelSeries GameSense — MIT license |
+| `Licenses\getRSS.c.txt` | 3rd | getRSS memory tracker — license |
+| `Licenses\HarmonyX-MIT.txt` | 3rd | HarmonyX patching framework — MIT license |
+| `Licenses\LibNoise-LGPL.txt` | 3rd | LibNoise noise generation — LGPL license |
+| `Licenses\LiteNetLib-MIT.txt` | 3rd | LiteNetLib networking — MIT license |
+| `Licenses\MemoryPack-MIT.txt` | 3rd | MemoryPack serialization — MIT license |
+| `Licenses\MonoMod-MIT.txt` | 3rd | MonoMod runtime detour — MIT license |
+| `Licenses\NCalc-MIT.txt` | 3rd | NCalc expression evaluator — MIT license |
+| `Licenses\Ncalc2-MIT.txt` | 3rd | NCalc2 fork — MIT license |
+| `Licenses\SharpEXR-MIT.txt` | 3rd | SharpEXR OpenEXR reader — MIT license |
+| `Licenses\Steamworks.NET-MIT.txt` | 3rd | Steamworks.NET — MIT license |
+| `Licenses\UniLinq.txt` | 3rd | UniLinq — license |
+| `Licenses\Utf8Json-MIT.txt` | 3rd | Utf8Json serializer — MIT license |
+| `Licenses\ZXing-Apache2.0.txt` | 3rd | ZXing barcode — Apache 2.0 license |
+
+---
+
+## `Logos\`
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `Logos\SplashScreenImage.png` | TFP | Engine splash screen shown during startup |
+| `Logos\Square150x150Logo.png` | TFP | App icon tile 150×150 |
+| `Logos\Square44x44Logo.png` | TFP | App icon tile 44×44 |
+| `Logos\Square480x480Logo.png` | TFP | App icon tile 480×480 |
+| `Logos\StoreLogo.png` | TFP | Store listing logo |
+
+---
+
+## `MonoBleedingEdge\` — Mono Runtime
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `MonoBleedingEdge\EmbedRuntime\mono-2.0-bdwgc.dll` | .NET (Mono) | Mono runtime with Boehm-Demers-Weiser GC (the C# virtual machine) |
+| `MonoBleedingEdge\EmbedRuntime\MonoPosixHelper.dll` | .NET (Mono) | POSIX helper for Mono |
+| `MonoBleedingEdge\etc\mono\browscap.ini` | .NET (Mono) | Browser capability definitions |
+| `MonoBleedingEdge\etc\mono\config` | .NET (Mono) | Mono DLL mapping configuration |
+| `MonoBleedingEdge\etc\mono\2.0\machine.config` | .NET (Mono) | .NET 2.0 machine configuration |
+| `MonoBleedingEdge\etc\mono\2.0\settings.map` | .NET (Mono) | .NET 2.0 settings mapping |
+| `MonoBleedingEdge\etc\mono\2.0\web.config` | .NET (Mono) | .NET 2.0 web configuration |
+| `MonoBleedingEdge\etc\mono\2.0\DefaultWsdlHelpGenerator.aspx` | .NET (Mono) | WSDL help page template |
+| `MonoBleedingEdge\etc\mono\2.0\Browsers\Compat.browser` | .NET (Mono) | Browser compatibility definitions |
+| `MonoBleedingEdge\etc\mono\4.0\machine.config` | .NET (Mono) | .NET 4.0 machine configuration |
+| `MonoBleedingEdge\etc\mono\4.0\settings.map` | .NET (Mono) | .NET 4.0 settings mapping |
+| `MonoBleedingEdge\etc\mono\4.0\web.config` | .NET (Mono) | .NET 4.0 web configuration |
+| `MonoBleedingEdge\etc\mono\4.0\DefaultWsdlHelpGenerator.aspx` | .NET (Mono) | WSDL help page template |
+| `MonoBleedingEdge\etc\mono\4.0\Browsers\Compat.browser` | .NET (Mono) | Browser compatibility definitions |
+| `MonoBleedingEdge\etc\mono\4.5\machine.config` | .NET (Mono) | .NET 4.5 machine configuration |
+| `MonoBleedingEdge\etc\mono\4.5\settings.map` | .NET (Mono) | .NET 4.5 settings mapping |
+| `MonoBleedingEdge\etc\mono\4.5\web.config` | .NET (Mono) | .NET 4.5 web configuration |
+| `MonoBleedingEdge\etc\mono\4.5\DefaultWsdlHelpGenerator.aspx` | .NET (Mono) | WSDL help page template |
+| `MonoBleedingEdge\etc\mono\4.5\Browsers\Compat.browser` | .NET (Mono) | Browser compatibility definitions |
+| `MonoBleedingEdge\etc\mono\mconfig\config.xml` | .NET (Mono) | Mono configuration tool settings |
+
+---
+
+## `Mods\` — Installed Mods
+
+### `Mods\0_TFP_Harmony\` — Official TFP Harmony Framework
+
+Loaded first due to `0_` prefix. Ships the HarmonyX runtime and TFP's own Harmony patches.
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `Mods\0_TFP_Harmony\ModInfo.xml` | TFP | Mod metadata |
+| `Mods\0_TFP_Harmony\TfpHarmony.dll` | TFP | TFP's own Harmony patches |
+| `Mods\0_TFP_Harmony\TfpHarmony.pdb` | TFP | Debug symbols for TfpHarmony |
+| `Mods\0_TFP_Harmony\0Harmony.dll` | 3rd (HarmonyX) | HarmonyX patching framework runtime |
+| `Mods\0_TFP_Harmony\Mono.Cecil.dll` | 3rd | Mono.Cecil — IL assembly reading/writing |
+| `Mods\0_TFP_Harmony\Mono.Cecil.Mdb.dll` | 3rd | Cecil MDB debug symbol support |
+| `Mods\0_TFP_Harmony\Mono.Cecil.Pdb.dll` | 3rd | Cecil PDB debug symbol support |
+| `Mods\0_TFP_Harmony\Mono.Cecil.Rocks.dll` | 3rd | Cecil utility extensions |
+| `Mods\0_TFP_Harmony\MonoMod.Backports.dll` | 3rd | MonoMod .NET backports |
+| `Mods\0_TFP_Harmony\MonoMod.Core.dll` | 3rd | MonoMod core detouring engine |
+| `Mods\0_TFP_Harmony\MonoMod.Iced.dll` | 3rd | MonoMod x86/x64 instruction decoder (Iced) |
+| `Mods\0_TFP_Harmony\MonoMod.ILHelpers.dll` | 3rd | MonoMod IL manipulation helpers |
+| `Mods\0_TFP_Harmony\MonoMod.RuntimeDetour.dll` | 3rd | MonoMod runtime method detouring |
+| `Mods\0_TFP_Harmony\MonoMod.Utils.dll` | 3rd | MonoMod utilities |
+| `Mods\0_TFP_Harmony\System.ValueTuple.dll` | .NET | ValueTuple polyfill for older .NET |
+
+### Third-Party Mods (Z_ prefix)
+
+| Path | Origin | Purpose |
+|---|---|---|
+| `Mods\Z_Armor_Balance\` | 3rd (community) | Armor balance adjustments |
+| `Mods\Z_Armor_Improved\` | 3rd (community) | Improved armor system |
+| `Mods\Z_Better_Quest_Reward\` | 3rd (community) | Enhanced quest rewards |
+| `Mods\Z_Better_Stacks\` | 3rd (community) | Increased stack sizes |
+| `Mods\Z_BigInv98slots\` | 3rd (community) | 98-slot inventory expansion |
+| `Mods\Z_Bosses\` | 3rd (community) | Boss zombie encounters |
+| `Mods\Z_Combinations\` | 3rd (community) | Item combination recipes |
+| `Mods\Z_Contracts\` | 3rd (community) | Contract system |
+| `Mods\Z_Craft_Ammo\` | 3rd (community) | Ammunition crafting changes |
+| `Mods\Z_DECO\` | 3rd (community) | Decorative blocks/items |
+| `Mods\Z_EliteZombies\` | 3rd (community) | Elite zombie variants |
+| `Mods\Z_FearAndFatigue\` | 3rd (community) | Fear and fatigue mechanics |
+| `Mods\Z_Game_Balance\` | 3rd (community) | General game balance changes |
+| `Mods\Z_HUD\` | 3rd (community) | HUD modifications |
+| `Mods\Z_Master_Skills\` | 3rd (community) | Master skill tree |
+| `Mods\Z_Mining_Balance\` | 3rd (community) | Mining balance adjustments |
+| `Mods\Z_PassiveSkills\` | 3rd (community) | Passive skill system |
+| `Mods\Z_Perfection\` | 3rd (community) | Perfection system |
+| `Mods\Z_Radiostation\` | 3rd (community) | Radio station gameplay feature |
+| `Mods\Z_RareItems\` | 3rd (community) | Rare item drops |
+| `Mods\Z_RareResources\` | 3rd (community) | Rare resource system |
+| `Mods\Z_Rare_Modifiers\` | 3rd (community) | Rare item modifiers |
+| `Mods\Z_RepairToolsXP\` | 3rd (community) | XP from tool repair |
+| `Mods\Z_RoughTerrain\` | 3rd (community) | Rough terrain modifications |
+| `Mods\Z_SelfTraits\` | 3rd (community) | Self-trait character system |
+| `Mods\Z_Story\` | 3rd (community) | Story/quest content |
+| `Mods\Z_SuperElixirs\` | 3rd (community) | Super elixir consumables |
+| `Mods\Z_Universal_Parts\` | 3rd (community) | Universal crafting parts |
+| `Mods\Z_Vulnerability\` | 3rd (community) | Vulnerability system |
