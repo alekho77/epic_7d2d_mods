@@ -57,4 +57,4 @@ Allows players to recover storage containers, chests, and safes by disassembling
 
 **Author:** Aleksei Khozin  
 **Version:** 0.1.0  
-**Website:** https://alekho77.github.io/epic_7d2d_mods/
+**Website:** https://github.com/alekho77/epic_7d2d_mods

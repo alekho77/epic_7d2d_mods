@@ -63,7 +63,7 @@ Mods/
   <Description value="Short description of what this mod does."/>
   <Author value="Aleksei Khozin"/>
   <Version value="1.0.0"/>
-  <Website value="https://alekho77.github.io/epic_7d2d_mods/"/>
+  <Website value="https://github.com/alekho77/epic_7d2d_mods"/>
 </ModInfo>
 ```
 

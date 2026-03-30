@@ -53,4 +53,4 @@ Expands the player's inventory from the vanilla 45 slots (5×9) to **60 slots (6
 
 **Author:** Aleksei Khozin  
 **Version:** 1.1.0  
-**Website:** https://alekho77.github.io/epic_7d2d_mods/
+**Website:** https://github.com/alekho77/epic_7d2d_mods

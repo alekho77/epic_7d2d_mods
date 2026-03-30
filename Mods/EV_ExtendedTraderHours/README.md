@@ -40,4 +40,4 @@ Removes opening and closing time restrictions from all traders, making them avai
 
 **Author:** Aleksei Khozin  
 **Version:** 1.0.0  
-**Website:** https://alekho77.github.io/epic_7d2d_mods/
+**Website:** https://github.com/alekho77/epic_7d2d_mods

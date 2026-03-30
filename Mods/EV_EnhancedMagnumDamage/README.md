@@ -29,4 +29,4 @@ Increases the base damage bonus of the .44 Magnum pistol, making it hit harder a
 
 **Author:** Aleksei Khozin  
 **Version:** 1.0.0  
-**Website:** https://alekho77.github.io/epic_7d2d_mods/
+**Website:** https://github.com/alekho77/epic_7d2d_mods

@@ -80,4 +80,4 @@ This mod is the first part of an advanced tool parts system:
 
 **Author:** Aleksei Khozin  
 **Version:** 0.1.0  
-**Website:** https://alekho77.github.io/epic_7d2d_mods/
+**Website:** https://github.com/alekho77/epic_7d2d_mods
