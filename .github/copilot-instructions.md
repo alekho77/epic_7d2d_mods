@@ -21,11 +21,13 @@ All modlets live under the `/Mods` folder in the repository root. Each mod is a 
 ```
 Mods/
   EV_<ModName>/
-    ModInfo.xml          # Required — name, version, author, description
-    Config/              # XML overrides (items, blocks, recipes, entityclasses, etc.)
-    Resources/           # Unity asset bundles, textures, sounds (optional)
-    UIAtlases/           # Custom UI sprites (optional)
-    Harmony/             # C# Harmony patches compiled to a DLL (optional)
+    ModInfo.xml              # Required — name, version, author, description
+    README.md                # Required — GitHub description (Markdown)
+    NEXUS_DESCRIPTION.txt    # Required — Nexus Mods description (BBCode)
+    Config/                  # XML overrides (items, blocks, recipes, entityclasses, etc.)
+    Resources/               # Unity asset bundles, textures, sounds (optional)
+    UIAtlases/               # Custom UI sprites (optional)
+    Harmony/                 # C# Harmony patches compiled to a DLL (optional)
 ```
 
 ## Key Conventions
@@ -139,6 +141,67 @@ The modded game installation path is stored in the environment variable `7D2D_MO
 1. Copy (or symlink) the mod folder into `$env:7D2D_MODED\Mods\`.
 2. Launch the game — mod errors appear in `%APPDATA%\7DaysToDie\output_log.txt`.
 3. The game validates XML on load; xpath errors are logged with the offending file and line.
+
+## Nexus Mods Description (`NEXUS_DESCRIPTION.txt`)
+
+Every modlet **must** include a `NEXUS_DESCRIPTION.txt` alongside its `README.md`. This file contains the mod description formatted in **BBCode** for direct copy-paste into a Nexus Mods page. When creating or updating a mod's `README.md`, always generate or update `NEXUS_DESCRIPTION.txt` as well.
+
+### File Location
+
+```
+Mods/
+  EV_<ModName>/
+    README.md              # GitHub — Markdown
+    NEXUS_DESCRIPTION.txt  # Nexus Mods — BBCode
+```
+
+### Nexus BBCode — Supported Tags
+
+Nexus Mods uses a **limited subset of BBCode**. Only the tags below are reliably supported:
+
+| Tag | Syntax | Notes |
+|-----|--------|-------|
+| Bold | `[b]text[/b]` | |
+| Italic | `[i]text[/i]` | |
+| Underline | `[u]text[/u]` | |
+| Strikethrough | `[s]text[/s]` | |
+| Font colour | `[color=#hex]text[/color]` | Hex format: `#RRGGBB` |
+| Font size | `[size=N]text[/size]` | Integer, typically 1–7 |
+| Font family | `[font=Name]text[/font]` | |
+| Code block | `[code]text[/code]` | Monospaced block |
+| Quote block | `[quote]text[/quote]` | |
+| Unordered list | `[list][*]item[/list]` | |
+| Ordered list | `[list=1][*]item[/list]` | |
+| Center align | `[center]text[/center]` | |
+| Right align | `[right]text[/right]` | |
+| Spoiler | `[spoiler]text[/spoiler]` | Collapsible section |
+| URL | `[url=https://...]text[/url]` | |
+| Image | `[img]https://...[/img]` | Direct image URL only |
+
+> **Tables are NOT supported** on Nexus. Convert Markdown tables to `[list]` with formatted items.
+
+### Markdown → BBCode Conversion Rules
+
+| Markdown | BBCode |
+|----------|--------|
+| `# Heading 1` | `[size=6][b]...[/b][/size]` |
+| `## Heading 2` | `[size=5][b]...[/b][/size]` |
+| `### Heading 3` | `[size=4][b]...[/b][/size]` |
+| `**bold**` | `[b]...[/b]` |
+| `*italic*` | `[i]...[/i]` |
+| `> blockquote` | `[quote]...[/quote]` |
+| `- item` / `* item` | `[list][*]item[/list]` |
+| `1. item` | `[list=1][*]item[/list]` |
+| `[text](url)` | `[url=...]text[/url]` |
+| Tables | `[list]` with `[b]key:[/b] value` items |
+| 🟢 (server-side badge) | `[color=#55aa55][b]Server-Side Friendly[/b][/color]` |
+| 🟡 (client-side badge) | `[color=#cc9900][b]Client-Side Mod[/b][/color]` or `[b]Client + Server Mod[/b]` |
+
+### Nesting Rules
+
+- Tags must be **properly nested** — inner tags close before outer tags: `[size=5][b]...[/b][/size]` ✅
+- Do **not** interleave tags: `[b][i]...[/b][/i]` ❌
+- `[spoiler]` must be a top-level block — do not nest it inside `[quote]` or `[list]`.
 
 ## Anti-patterns
 
