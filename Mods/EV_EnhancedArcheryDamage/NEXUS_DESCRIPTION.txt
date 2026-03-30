@@ -1,0 +1,73 @@
+[size=6][b]Enhanced Archery Damage[/b][/size]
+
+[size=5][b]Description[/b][/size]
+
+Increases damage for bows, crossbows, arrows, and bolts to make archery a more viable combat option in the mid and late game.
+
+[quote]
+[color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
+
+[b]If you are running a dedicated server, this mod only needs to be installed on the server.[/b]
+Players connecting to the server [b]do not need to download or install anything[/b] on their game clients — all changes are synced automatically when they join.
+[/quote]
+
+[size=5][b]Features[/b][/size]
+
+[list]
+[*]Boosted damage for all arrow and bolt types
+[*]Increased base damage bonus for bows and crossbows
+[*]Balanced scaling — higher tier ammo gets proportionally larger boosts
+[/list]
+
+[size=5][b]Damage Changes[/b][/size]
+
+[size=4][b]Arrows[/b][/size]
+[list]
+[*][b]Stone Arrow:[/b] 35 → 49 (+40%)
+[*][b]Iron Arrow:[/b] 38 → 68 (+79%)
+[*][b]Steel AP Arrow:[/b] 42 → 92 (+119%)
+[*][b]Flaming Arrow:[/b] 25 → 38 (+52%)
+[*][b]Exploding Arrow:[/b] 180 → 220 (+22%)
+[/list]
+
+[size=4][b]Crossbow Bolts[/b][/size]
+[list]
+[*][b]Stone Bolt:[/b] 50 → 58 (+16%)
+[*][b]Iron Bolt:[/b] 59 → 100 (+69%)
+[*][b]Steel AP Bolt:[/b] 63 → 142 (+125%)
+[*][b]Flaming Bolt:[/b] 38 → 68 (+79%)
+[*][b]Exploding Bolt:[/b] 250 → 270 (+8%)
+[/list]
+
+[size=4][b]Weapons (base_add bonus)[/b][/size]
+[list]
+[*][b]Wooden Bow:[/b] +9 → +19 (+111%)
+[*][b]Compound Bow:[/b] +29 → +51 (+76%)
+[*][b]Compound Crossbow:[/b] +25 → +50 (+100%)
+[/list]
+
+[size=5][b]Installation[/b][/size]
+
+[list=1]
+[*]Copy the [b]EV_EnhancedArcheryDamage[/b] folder into your game's Mods/ directory
+[*]Restart the game or server
+[/list]
+
+[size=5][b]Compatibility[/b][/size]
+
+[list]
+[*]7 Days to Die 1.0 (Alpha 21+)
+[*]Server-side mod — works without client installation
+[*]May conflict with mods that modify arrow/bolt EntityDamage values or bow/crossbow base_add damage
+[/list]
+
+[size=5][b]Changelog[/b][/size]
+
+[size=4][b]v1.0.0[/b][/size]
+[list]
+[*]Initial release with enhanced damage for all arrow/bolt types and archery weapons
+[/list]
+
+[b]Author:[/b] Aleksei Khozin
+[b]Version:[/b] 1.0.0
+[b]Website:[/b] [url=https://github.com/alekho77/epic_7d2d_mods]https://github.com/alekho77/epic_7d2d_mods[/url]

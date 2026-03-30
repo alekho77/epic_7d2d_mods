@@ -1,0 +1,56 @@
+[size=6][b]Always Open Traders[/b][/size]
+
+[size=5][b]Description[/b][/size]
+
+Removes opening and closing time restrictions from all traders, making them available [b]24/7[/b]. No more waiting around for the shop to open.
+
+[quote]
+[color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
+
+[b]If you are running a dedicated server, this mod only needs to be installed on the server.[/b]
+Players connecting to the server [b]do not need to download or install anything[/b] on their game clients — all changes are synced automatically when they join.
+[/quote]
+
+[size=5][b]Features[/b][/size]
+
+[list]
+[*]All 5 traders are open around the clock
+[*]Removes open_time and close_time attributes entirely
+[*]No more locked doors at night — trade whenever you want
+[/list]
+
+[size=5][b]Affected Traders[/b][/size]
+
+[list]
+[*][b]Trader Joel[/b] (ID: 1)
+[*][b]Trader Rekt[/b] (ID: 2)
+[*][b]Trader Hugh[/b] (ID: 6)
+[*][b]Trader Jen[/b] (ID: 7)
+[*][b]Trader Bob[/b] (ID: 8)
+[/list]
+
+[size=5][b]Installation[/b][/size]
+
+[list=1]
+[*]Copy the [b]EV_ExtendedTraderHours[/b] folder into your game's Mods/ directory
+[*]Restart the game or server
+[/list]
+
+[size=5][b]Compatibility[/b][/size]
+
+[list]
+[*]7 Days to Die 1.0 (Alpha 21+)
+[*]Server-side mod — works without client installation
+[*]May conflict with mods that modify trader open_time/close_time attributes
+[/list]
+
+[size=5][b]Changelog[/b][/size]
+
+[size=4][b]v1.0.0[/b][/size]
+[list]
+[*]Initial release — all traders open 24/7
+[/list]
+
+[b]Author:[/b] Aleksei Khozin
+[b]Version:[/b] 1.0.0
+[b]Website:[/b] [url=https://github.com/alekho77/epic_7d2d_mods]https://github.com/alekho77/epic_7d2d_mods[/url]

@@ -1,0 +1,73 @@
+[size=6][b]Darker Nights[/b][/size]
+
+[size=5][b]Description[/b][/size]
+
+Makes nights significantly darker for a more immersive and challenging survival experience. Ambient lighting during nighttime is reduced to approximately half of vanilla values. Also enhances night vision goggles with an additional Bright effect to compensate for the increased darkness.
+
+[quote]
+[color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
+
+[b]If you are running a dedicated server, this mod only needs to be installed on the server.[/b]
+Players connecting to the server [b]do not need to download or install anything[/b] on their game clients — all changes are synced automatically when they join.
+[/quote]
+
+[size=5][b]Features[/b][/size]
+
+[list]
+[*][b]Darker nights[/b] — ambient light values reduced ~2x across the board
+[*][b]Enhanced night vision goggles[/b] — adds a secondary Bright screen effect alongside the standard NightVision filter for better visibility in the darkened world
+[*][b]Indoor lighting affected[/b] — interior ambient values also reduced for consistency
+[*][b]Moon lighting reduced[/b] — moonlight contribution halved for truly dark nights
+[/list]
+
+[size=5][b]Changes[/b][/size]
+
+[size=4][b]Ambient Lighting (Night Values)[/b][/size]
+[list]
+[*][b]Ambient Equator Scale:[/b] 0.45 → 0.225
+[*][b]Ambient Ground Scale:[/b] 0.05 → 0.025
+[*][b]Ambient Sky Scale:[/b] 0.70 → 0.35
+[*][b]Ambient Sky Desat:[/b] 0.70 → 0.35
+[*][b]Ambient Moon:[/b] 0.40 → 0.20
+[*][b]Indoor Equator Scale:[/b] 1.50 → 0.75
+[*][b]Indoor Ground Scale:[/b] 0.20 → 0.10
+[*][b]Indoor Sky Scale:[/b] 0.40 → 0.20
+[/list]
+
+[size=4][b]Night Vision Goggles[/b][/size]
+[list]
+[*]Standard NightVision effect (green tint) — [b]retained[/b]
+[*]Additional [b]Bright[/b] effect (intensity 0.9) — [b]added[/b] for enhanced visibility
+[*]Both effects activate/deactivate and unequip properly
+[/list]
+
+[size=5][b]Installation[/b][/size]
+
+[list=1]
+[*]Copy the [b]EV_DarkerNights[/b] folder into your game's Mods/ directory
+[*]Restart the game or server
+[/list]
+
+[size=5][b]Compatibility[/b][/size]
+
+[list]
+[*]7 Days to Die 1.0 (Alpha 21+)
+[*]Server and single-player compatible
+[*]May conflict with mods that modify worldglobal.xml ambient values or the modArmorNightVision item modifier
+[/list]
+
+[size=5][b]Changelog[/b][/size]
+
+[size=4][b]v1.1.0[/b][/size]
+[list]
+[*]Added enhanced night vision goggles with Bright effect
+[/list]
+
+[size=4][b]v1.0.0[/b][/size]
+[list]
+[*]Initial release with darker ambient night lighting
+[/list]
+
+[b]Author:[/b] Aleksei Khozin
+[b]Version:[/b] 1.1.0
+[b]Website:[/b] [url=https://github.com/alekho77/epic_7d2d_mods]https://github.com/alekho77/epic_7d2d_mods[/url]

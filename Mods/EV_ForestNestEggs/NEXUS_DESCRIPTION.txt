@@ -1,0 +1,46 @@
+[size=6][b]Forest Nest Eggs[/b][/size]
+
+[size=5][b]Description[/b][/size]
+
+Adds [b]1 guaranteed egg[/b] to bird nest loot in the pine forest biome. A small early-game food boost for players who explore forested areas.
+
+[quote]
+[color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
+
+[b]If you are running a dedicated server, this mod only needs to be installed on the server.[/b]
+Players connecting to the server [b]do not need to download or install anything[/b] on their game clients — all changes are synced automatically when they join.
+[/quote]
+
+[size=5][b]Features[/b][/size]
+
+[list]
+[*]Bird nests in the [b]pine forest[/b] biome always contain 1 egg
+[*]Other biomes are unaffected — nests work as vanilla elsewhere
+[*]Stacks with existing bird nest loot — the egg is added, not replacing anything
+[/list]
+
+[size=5][b]Installation[/b][/size]
+
+[list=1]
+[*]Copy the [b]EV_ForestNestEggs[/b] folder into your game's Mods/ directory
+[*]Restart the game or server
+[/list]
+
+[size=5][b]Compatibility[/b][/size]
+
+[list]
+[*]7 Days to Die 1.0 (Alpha 21+)
+[*]Server-side mod — works without client installation
+[*]May conflict with mods that modify the groupBirdNest02 loot group
+[/list]
+
+[size=5][b]Changelog[/b][/size]
+
+[size=4][b]v1.0.0[/b][/size]
+[list]
+[*]Initial release — 1 guaranteed egg from bird nests in pine forest
+[/list]
+
+[b]Author:[/b] Aleksei Khozin
+[b]Version:[/b] 1.0.0
+[b]Website:[/b] [url=https://github.com/alekho77/epic_7d2d_mods]https://github.com/alekho77/epic_7d2d_mods[/url]

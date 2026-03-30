@@ -1,0 +1,45 @@
+[size=6][b]Enemy Health Bar[/b][/size]
+
+[size=5][b]Description[/b][/size]
+
+Displays the enemy health bar above targets at all times, not just when aiming at them. Makes it easier to track enemy health during combat.
+
+[quote]
+[color=#cc9900][size=4][b]Client-Side Mod[/b][/size][/color]
+
+[b]This mod must be installed on each player's game client.[/b] Installing it on the server alone is not enough — players need it locally to see the UI changes.
+[/quote]
+
+[size=5][b]Features[/b][/size]
+
+[list]
+[*]Enemy health bar is [b]always visible[/b] above hostile entities
+[*]Uses the vanilla target bar UI — no custom assets required
+[*]Simple one-line XML patch
+[/list]
+
+[size=5][b]Installation[/b][/size]
+
+[list=1]
+[*]Copy the [b]EV_EnemyHealthBar[/b] folder into your game's Mods/ directory
+[*]Restart the game or server
+[/list]
+
+[size=5][b]Compatibility[/b][/size]
+
+[list]
+[*]7 Days to Die 1.0 (Alpha 21+)
+[*]Client-side mod
+[*]May conflict with mods that modify the windowTargetBar visibility setting in XUi/windows.xml
+[/list]
+
+[size=5][b]Changelog[/b][/size]
+
+[size=4][b]v1.0.0[/b][/size]
+[list]
+[*]Initial release — target health bar set to always visible
+[/list]
+
+[b]Author:[/b] Aleksei Khozin
+[b]Version:[/b] 1.0.0
+[b]Website:[/b] [url=https://github.com/alekho77/epic_7d2d_mods]https://github.com/alekho77/epic_7d2d_mods[/url]

@@ -1,0 +1,48 @@
+[size=6][b]Edible Plant Fibers[/b][/size]
+
+[size=5][b]Description[/b][/size]
+
+Makes plant fibers (Yucca Fibers) edible, restoring [b]1 food[/b] per use. A small quality-of-life change for early game survival when food is scarce — you can nibble on grass to stave off starvation just a little longer.
+
+[quote]
+[color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
+
+[b]If you are running a dedicated server, this mod only needs to be installed on the server.[/b]
+Players connecting to the server [b]do not need to download or install anything[/b] on their game clients — all changes are synced automatically when they join.
+[/quote]
+
+[size=5][b]Features[/b][/size]
+
+[list]
+[*]Plant fibers can be eaten directly from your inventory
+[*]Restores 1 food per use — minimal but can save you in a pinch
+[*]No health gain, no dysentery risk
+[*]Uses the hand-held food eating animation
+[*]Fast 0.5 second consume time
+[/list]
+
+[size=5][b]Installation[/b][/size]
+
+[list=1]
+[*]Copy the [b]EV_EdiblePlantFibers[/b] folder into your game's Mods/ directory
+[*]Restart the game or server
+[/list]
+
+[size=5][b]Compatibility[/b][/size]
+
+[list]
+[*]7 Days to Die 1.0 (Alpha 21+)
+[*]Server-side mod — works without client installation
+[*]May conflict with mods that modify the resourceYuccaFibers item definition
+[/list]
+
+[size=5][b]Changelog[/b][/size]
+
+[size=4][b]v1.0.0[/b][/size]
+[list]
+[*]Initial release — plant fibers are now edible (1 food per use)
+[/list]
+
+[b]Author:[/b] Aleksei Khozin
+[b]Version:[/b] 1.0.0
+[b]Website:[/b] [url=https://github.com/alekho77/epic_7d2d_mods]https://github.com/alekho77/epic_7d2d_mods[/url]

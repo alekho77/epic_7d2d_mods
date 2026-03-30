@@ -1,0 +1,70 @@
+[size=6][b]Extended Inventory[/b][/size]
+
+[size=5][b]Description[/b][/size]
+
+Expands the player's inventory from the vanilla 45 slots (5x9) to [b]60 slots (6x10)[/b] with a custom compact cell design. Features scaled-down item icons and UI elements for a clean, professional look that fits standard screen ratios.
+
+[quote]
+[color=#cc9900][size=4][b]Client + Server Mod[/b][/size][/color]
+
+[b]This mod must be installed on both the dedicated server and each player's game client.[/b] The server handles the extra inventory slots, but the UI changes (compact grid layout) require a local client installation to display correctly.
+[/quote]
+
+[size=5][b]Features[/b][/size]
+
+[list]
+[*][b]15 extra inventory slots[/b] — from 45 to 60 total
+[*][b]Compact cell design[/b] — 60x60px cells (down from 67x67px vanilla) with 57x57px icons
+[*][b]Proportionally scaled UI[/b] — durability bars, labels, overlays, and borders all adjusted
+[*][b]Proper encumbrance support[/b] — full compatibility with overweight item highlighting
+[*][b]Optimized layout[/b] — fits without overlapping the toolbelt on 16:9 and 5:3 displays
+[/list]
+
+[size=5][b]Installation[/b][/size]
+
+[list=1]
+[*]Copy the [b]EV_ExtendedInventory[/b] folder into your game's Mods/ directory
+[*]Restart the game or server
+[/list]
+
+This is a [b]client + server[/b] mod — install it on both the client and server for full functionality.
+
+[size=5][b]Compatibility[/b][/size]
+
+[list]
+[*]7 Days to Die 1.0 (Alpha 21+)
+[*]Works with all standard game mechanics (Pack Mule, encumbrance, etc.)
+[*]Uses a separate backpack_item_stack_compact template, reducing conflicts with most inventory mods
+[/list]
+
+[b]Potential conflicts[/b] with mods that:
+[list]
+[*]Modify inventory cell templates or sizing
+[*]Change the inventory window layout significantly
+[*]Override the backpack_item_stack control template
+[*]Alter inventory grid dimensions
+[/list]
+
+[size=5][b]Mod Files[/b][/size]
+
+[list]
+[*][b]Config/XUi/controls.xml[/b] — Custom compact item stack template definition
+[*][b]Config/XUi/windows.xml[/b] — Inventory window configuration (6x10 grid, cell sizing)
+[*][b]Config/entityclasses.xml[/b] — Player entity bag size adjustment
+[*][b]Config/item_modifiers.xml[/b] — Pocket mod slot adjustments
+[*][b]Config/Localization.xml[/b] — Localization strings
+[/list]
+
+[size=5][b]Changelog[/b][/size]
+
+[size=4][b]v1.1.0[/b][/size]
+[list]
+[*]Initial public release with 6x10 inventory grid (60 slots)
+[*]Custom compact cell design (60x60px)
+[*]Proportionally scaled UI elements
+[*]Optimized for multiple screen ratios
+[/list]
+
+[b]Author:[/b] Aleksei Khozin
+[b]Version:[/b] 1.1.0
+[b]Website:[/b] [url=https://github.com/alekho77/epic_7d2d_mods]https://github.com/alekho77/epic_7d2d_mods[/url]

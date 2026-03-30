@@ -1,0 +1,101 @@
+[size=6][b]Alloy Motor Tool Parts[/b][/size]
+
+[color=#cc9900][b]Work in Progress[/b][/color] — This mod is part of a larger tool upgrade system still under active development. Features and values may change in future releases.
+
+[size=5][b]Description[/b][/size]
+
+Adds [b]Alloy Motor Tool Parts (Tier A)[/b] — an upgraded tier of motor tool parts crafted from regular chainsaw parts, a silver nugget, and forged steel. Part of a planned multi-tier tool upgrade system for the EpicVales server community.
+
+[quote]
+[color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
+
+[b]If you are running a dedicated server, this mod only needs to be installed on the server.[/b]
+Players connecting to the server [b]do not need to download or install anything[/b] on their game clients — all changes are synced automatically when they join.
+[/quote]
+
+[size=5][b]Features[/b][/size]
+
+[list]
+[*]New craftable item: Alloy Motor Tool Parts (Tier A)
+[*]Server-side mod — no mandatory client installation for basic functionality
+[*]Reuses existing game icon with a custom steel-blue color tint (7A8C9E)
+[*]Balanced economic value calculated as 2x ingredient cost (EconomicValue: 1400)
+[/list]
+
+[size=5][b]Crafting Recipe[/b][/size]
+
+[list]
+[*][b]Motor Tool Parts (regular)[/b] x1
+[*][b]Silver Nugget[/b] x1
+[*][b]Forged Steel[/b] x5
+[/list]
+
+[b]Crafting Station:[/b] Workbench
+[b]Craft Time:[/b] 60 seconds
+
+[size=5][b]Unlock Requirements[/b][/size]
+
+The recipe is locked behind the [b]Salvage Tools[/b] progression line (Scrapping 4 Fun magazines):
+
+[list]
+[*]Unlocks at [b]level 76[/b] of the Salvage Tools skill
+[*]The mod raises the vanilla Salvage Tools cap from 75 to 100 to make the unlock achievable
+[*]A dedicated "Industrial Parts: Tier A" entry appears in the Salvage Tools progression tab
+[*]The UI shows a lock icon and requirements until level 76 is reached
+[/list]
+
+[size=5][b]Installation[/b][/size]
+
+[list=1]
+[*]Copy the [b]EV_AlloyMotorToolParts[/b] folder into your game's Mods/ directory
+[*]Restart the game or server
+[/list]
+
+[b]Note on Progression UI:[/b] The progression.xml file is NOT synced to clients automatically. For players to see the correct lock icons and unlock requirements in the progression menu, they need to install the mod locally as well. Without it, the recipe will appear as "available" in the UI but will still be locked server-side until 76 magazines are read.
+
+[size=5][b]Compatibility[/b][/size]
+
+[list]
+[*]7 Days to Die 1.0 (Alpha 21+)
+[*]Server and single-player compatible
+[*]May conflict with mods that modify the Salvage Tools progression cap or the craftingSalvageTools skill tree
+[/list]
+
+[size=5][b]Planned Development[/b][/size]
+
+This mod is the first part of an advanced tool parts system:
+
+[list]
+[*][b]Tier A[/b] (Alloy Steel) — this mod
+[*][b]Tier AAA[/b] (Composite) — planned
+[*][b]Tier S[/b] (Diamond) — planned
+[/list]
+
+[size=5][b]Technical Details[/b][/size]
+
+[list]
+[*][b]Unlock tag:[/b] mtPartsA_Alloy_unlock
+[*][b]Progression:[/b] Linked to craftingSalvageTools (level 76+)
+[*][b]Cap change:[/b] Raises max_level of Salvage Tools from 75 to 100
+[/list]
+
+[size=4][b]Mod Files[/b][/size]
+[list]
+[*][b]items.xml[/b] — Item definition with recolored icon
+[*][b]recipes.xml[/b] — Crafting recipe with unlock tag
+[*][b]progression.xml[/b] — Progression system, cap increase, and UI display entry
+[*][b]Localization.txt[/b] — English and Russian localization
+[/list]
+
+[size=5][b]Changelog[/b][/size]
+
+[size=4][b]v0.1.0[/b][/size]
+[list]
+[*]Initial work-in-progress release with Tier A Alloy Motor Tool Parts
+[*]Salvage Tools cap raised to 100
+[*]Full progression UI integration
+[/list]
+
+[b]Author:[/b] Aleksei Khozin
+[b]Version:[/b] 0.1.0
+[b]Website:[/b] [url=https://github.com/alekho77/epic_7d2d_mods]https://github.com/alekho77/epic_7d2d_mods[/url]

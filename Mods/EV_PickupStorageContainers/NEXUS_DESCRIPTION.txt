@@ -1,0 +1,81 @@
+[size=6][b]Pickup Storage Containers[/b][/size]
+
+[color=#cc9900][b]Work in Progress[/b][/color] — This mod is still under active development. Features and supported containers may change in future releases.
+
+[size=5][b]Description[/b][/size]
+
+Allows players to recover storage containers, chests, and safes by disassembling them when empty. Instead of getting raw materials, you get the container back as a placeable item — perfect for base reorganization.
+
+[quote]
+[color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
+
+[b]If you are running a dedicated server, this mod only needs to be installed on the server.[/b]
+Players connecting to the server [b]do not need to download or install anything[/b] on their game clients — all changes are synced automatically when they join.
+[/quote]
+
+[size=5][b]Features[/b][/size]
+
+[list]
+[*]Recover storage containers instead of scrapping them
+[*]Works with wrench, nail gun, or impact driver (standard disassemble tools)
+[*]Containers must be [b]empty[/b] before disassembly
+[*]No Land Claim Block required — works anywhere
+[/list]
+
+[size=5][b]Supported Containers[/b][/size]
+
+[size=4][b]Writable Crates[/b][/size]
+[list]
+[*]Wood, Iron, and Steel Writable Crates (locked and unlocked)
+[/list]
+
+[size=4][b]Safes[/b][/size]
+[list]
+[*]Wall Safes (locked and unlocked)
+[*]Desk Safes (locked and unlocked)
+[*]Gun Safes — all colors: Black, White, Brown, Red, Orange, Yellow, Green, Blue, Purple, Grey, Pink, Army Green (locked and unlocked)
+[/list]
+
+[size=4][b]Other Storage[/b][/size]
+[list]
+[*]Garage Storage
+[*]Player Coolers (Blue, Red, Green)
+[*]Player Refrigerators (Retro and Stainless Steel)
+[*]Kitchen/Bathroom Cabinets and Cupboards
+[/list]
+
+[size=5][b]How to Use[/b][/size]
+
+[list=1]
+[*]Remove [b]all items[/b] from the storage container
+[*]Use a disassemble tool (wrench, nail gun, or impact driver)
+[*]Disassemble the empty container
+[*]Pick up the returned container item
+[/list]
+
+[size=5][b]Installation[/b][/size]
+
+[list=1]
+[*]Copy the [b]EV_PickupStorageContainers[/b] folder into your game's Mods/ directory
+[*]Restart the game or server
+[/list]
+
+[size=5][b]Compatibility[/b][/size]
+
+[list]
+[*]7 Days to Die 1.0 (Alpha 21+)
+[*]Server and single-player compatible
+[*]Works alongside other storage and base building mods
+[*]Uses standard drop event="Harvest" with tool_category="Disassemble" — no custom scripts
+[/list]
+
+[size=5][b]Changelog[/b][/size]
+
+[size=4][b]v0.1.0[/b][/size]
+[list]
+[*]Initial work-in-progress release with support for all writable crates, safes, coolers, refrigerators, garage storage, and cabinets
+[/list]
+
+[b]Author:[/b] Aleksei Khozin
+[b]Version:[/b] 0.1.0
+[b]Website:[/b] [url=https://github.com/alekho77/epic_7d2d_mods]https://github.com/alekho77/epic_7d2d_mods[/url]
