@@ -4,6 +4,8 @@
 
 Increases the base damage bonus of the .44 Magnum pistol, making it hit harder and feel more like the powerful handgun it should be.
 
+Remember that scene in *Police Academy* where a tiny, delicate girl casually pulls an absolutely enormous .44 Magnum revolver out of her purse — and proceeds to blast away without flinching? That's the energy this mod is going for. The Magnum is slow to reload. It kicks like a mule. It's impractical, loud, and absolutely unhinged. But if you're going to holster that much raw iron, the least it can do is **put a zombie down in one shot**. This mod makes that a reality.
+
 > ### 🟢 Server-Side Friendly
 >
 > **If you are running a dedicated server, this mod only needs to be installed on the server.**
