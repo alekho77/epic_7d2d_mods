@@ -1,0 +1,12 @@
+<config>
+	<append xpath="/lootcontainers/lootgroup[@name='dyes']">
+		<item name="modDyeRoyalPurple"/>
+		<item name="modDyeTurquoise"/>
+		<item name="modDyeGold"/>
+		<item name="modDyeSilver"/>
+		<item name="modDyeBronze"/>
+		<item name="modDyeLime"/>
+		<item name="modDyeCandyPink"/>
+		<item name="modDyeNeonOrange"/>
+	</append>
+</config>

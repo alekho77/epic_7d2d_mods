@@ -1,0 +1,8 @@
+modDyeRoyalPurple,item_modifiers,mod,,,Dye: Royal Purple,,,,,,,,,,Краситель: Королевский Пурпур,,,
+modDyeTurquoise,item_modifiers,mod,,,Dye: Turquoise,,,,,,,,,,Краситель: Бирюзовый,,,
+modDyeGold,item_modifiers,mod,,,Dye: Gold,,,,,,,,,,Краситель: Золотой,,,
+modDyeSilver,item_modifiers,mod,,,Dye: Silver,,,,,,,,,,Краситель: Серебряный,,,
+modDyeBronze,item_modifiers,mod,,,Dye: Bronze,,,,,,,,,,Краситель: Бронзовый,,,
+modDyeLime,item_modifiers,mod,,,Dye: Lime,,,,,,,,,,Краситель: Лайм,,,
+modDyeCandyPink,item_modifiers,mod,,,Dye: Candy Pink,,,,,,,,,,Краситель: Леденцовый Розовый,,,
+modDyeNeonOrange,item_modifiers,mod,,,Dye: Neon Orange,,,,,,,,,,Краситель: Неоновый Оранжевый,,,
