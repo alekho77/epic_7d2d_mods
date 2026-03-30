@@ -4,6 +4,11 @@
 
 Makes plant fibers (Yucca Fibers) edible, restoring **1 food** per use. A small quality-of-life change for early game survival when food is scarce — you can nibble on grass to stave off starvation just a little longer.
 
+> ### 🟢 Server-Side Friendly
+>
+> **If you are running a dedicated server, this mod only needs to be installed on the server.**
+> Players connecting to the server **do not need to download or install anything** on their game clients — all changes are synced automatically when they join.
+
 ## Features
 
 - Plant fibers can be eaten directly from your inventory

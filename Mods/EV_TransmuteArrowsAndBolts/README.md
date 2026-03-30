@@ -4,6 +4,11 @@
 
 Adds crafting recipes to convert arrows into crossbow bolts and vice versa at a **1:1 ratio** with no material loss. Switch between bow and crossbow ammo without wasting resources.
 
+> ### 🟢 Server-Side Friendly
+>
+> **If you are running a dedicated server, this mod only needs to be installed on the server.**
+> Players connecting to the server **do not need to download or install anything** on their game clients — all changes are synced automatically when they join.
+
 ## Features
 
 - **10 new recipes** — 5 arrow-to-bolt conversions + 5 bolt-to-arrow conversions

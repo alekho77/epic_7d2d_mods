@@ -6,6 +6,11 @@
 
 Adds **Alloy Motor Tool Parts (Tier A)** — an upgraded tier of motor tool parts crafted from regular chainsaw parts, a silver nugget, and forged steel. Part of a planned multi-tier tool upgrade system for the EpicVales server community.
 
+> ### 🟢 Server-Side Friendly
+>
+> **If you are running a dedicated server, this mod only needs to be installed on the server.**
+> Players connecting to the server **do not need to download or install anything** on their game clients — all changes are synced automatically when they join.
+
 ## Features
 
 - New craftable item: Alloy Motor Tool Parts (Tier A)

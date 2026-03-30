@@ -4,6 +4,11 @@
 
 Removes opening and closing time restrictions from all traders, making them available **24/7**. No more waiting around for the shop to open.
 
+> ### 🟢 Server-Side Friendly
+>
+> **If you are running a dedicated server, this mod only needs to be installed on the server.**
+> Players connecting to the server **do not need to download or install anything** on their game clients — all changes are synced automatically when they join.
+
 ## Features
 
 - All 5 traders are open around the clock

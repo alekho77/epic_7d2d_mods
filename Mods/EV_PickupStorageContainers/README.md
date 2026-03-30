@@ -6,6 +6,11 @@
 
 Allows players to recover storage containers, chests, and safes by disassembling them when empty. Instead of getting raw materials, you get the container back as a placeable item — perfect for base reorganization.
 
+> ### 🟢 Server-Side Friendly
+>
+> **If you are running a dedicated server, this mod only needs to be installed on the server.**
+> Players connecting to the server **do not need to download or install anything** on their game clients — all changes are synced automatically when they join.
+
 ## Features
 
 - Recover storage containers instead of scrapping them

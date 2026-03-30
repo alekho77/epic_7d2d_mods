@@ -4,6 +4,11 @@
 
 Adds **1 guaranteed egg** to bird nest loot in the pine forest biome. A small early-game food boost for players who explore forested areas.
 
+> ### 🟢 Server-Side Friendly
+>
+> **If you are running a dedicated server, this mod only needs to be installed on the server.**
+> Players connecting to the server **do not need to download or install anything** on their game clients — all changes are synced automatically when they join.
+
 ## Features
 
 - Bird nests in the **pine forest** biome always contain 1 egg

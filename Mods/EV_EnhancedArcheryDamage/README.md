@@ -4,6 +4,11 @@
 
 Increases damage for bows, crossbows, arrows, and bolts to make archery a more viable combat option in the mid and late game.
 
+> ### 🟢 Server-Side Friendly
+>
+> **If you are running a dedicated server, this mod only needs to be installed on the server.**
+> Players connecting to the server **do not need to download or install anything** on their game clients — all changes are synced automatically when they join.
+
 ## Features
 
 - Boosted damage for all arrow and bolt types

@@ -4,6 +4,11 @@
 
 Makes nights significantly darker for a more immersive and challenging survival experience. Ambient lighting during nighttime is reduced to approximately half of vanilla values. Also enhances night vision goggles with an additional Bright effect to compensate for the increased darkness.
 
+> ### 🟢 Server-Side Friendly
+>
+> **If you are running a dedicated server, this mod only needs to be installed on the server.**
+> Players connecting to the server **do not need to download or install anything** on their game clients — all changes are synced automatically when they join.
+
 ## Features
 
 - **Darker nights** — ambient light values reduced ~2× across the board

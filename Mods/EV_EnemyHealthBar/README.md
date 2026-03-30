@@ -4,6 +4,10 @@
 
 Displays the enemy health bar above targets at all times, not just when aiming at them. Makes it easier to track enemy health during combat.
 
+> ### 🟡 Client-Side Mod
+>
+> **This mod must be installed on each player's game client.** Installing it on the server alone is not enough — players need it locally to see the UI changes.
+
 ## Features
 
 - Enemy health bar is **always visible** above hostile entities

@@ -4,6 +4,11 @@
 
 Increases the base damage bonus of the .44 Magnum pistol, making it hit harder and feel more like the powerful handgun it should be.
 
+> ### 🟢 Server-Side Friendly
+>
+> **If you are running a dedicated server, this mod only needs to be installed on the server.**
+> Players connecting to the server **do not need to download or install anything** on their game clients — all changes are synced automatically when they join.
+
 ## Features
 
 - .44 Magnum `base_add` EntityDamage increased to **50** (vanilla is lower)

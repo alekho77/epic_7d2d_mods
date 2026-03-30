@@ -4,6 +4,10 @@
 
 Expands the player's inventory from the vanilla 45 slots (5×9) to **60 slots (6×10)** with a custom compact cell design. Features scaled-down item icons and UI elements for a clean, professional look that fits standard screen ratios.
 
+> ### 🟡 Client + Server Mod
+>
+> **This mod must be installed on both the dedicated server and each player's game client.** The server handles the extra inventory slots, but the UI changes (compact grid layout) require a local client installation to display correctly.
+
 ## Features
 
 - **15 extra inventory slots** — from 45 to 60 total
