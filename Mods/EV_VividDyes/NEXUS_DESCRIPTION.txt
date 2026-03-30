@@ -1,0 +1,64 @@
+[size=6][b]Vivid Dyes[/b][/size]
+
+[size=5][b]Description[/b][/size]
+
+Adds 8 new vivid and bright dyes with eye-catching acid colors to customize your weapons, tools, vehicles, and drones. Stand out in the apocalypse with Royal Purple, Turquoise, Gold, Silver, Bronze, Lime, Candy Pink, and Neon Orange.
+
+[quote]
+[color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
+
+[b]If you are running a dedicated server, this mod only needs to be installed on the server.[/b]
+Players connecting to the server [b]do not need to download or install anything[/b] on their game clients — all changes are synced automatically when they join.
+[/quote]
+
+[size=5][b]New Dyes[/b][/size]
+
+[list]
+[*][color=#8C04B5][b]Dye: Royal Purple[/b][/color] — Deep vibrant purple (140, 4, 181)
+[*][color=#29FFF4][b]Dye: Turquoise[/b][/color] — Bright cyan-turquoise (41, 255, 244)
+[*][color=#FFD23B][b]Dye: Gold[/b][/color] — Rich golden yellow (255, 210, 59)
+[*][b]Dye: Silver[/b] — Light metallic silver (165, 207, 204)
+[*][color=#FF9D3D][b]Dye: Bronze[/b][/color] — Warm metallic bronze (255, 157, 61)
+[*][color=#2FFF00][b]Dye: Lime[/b][/color] — Vivid acid green (47, 255, 0)
+[*][color=#FF00DD][b]Dye: Candy Pink[/b][/color] — Hot neon pink (255, 0, 221)
+[*][color=#FF5900][b]Dye: Neon Orange[/b][/color] — Bright vivid orange (255, 89, 0)
+[/list]
+
+[size=5][b]Features[/b][/size]
+
+[list]
+[*][b]8 new dyes[/b] with vivid, bright, acid-style colors not found in vanilla
+[*][b]Fully integrated[/b] into the game's loot system — find them in the same places as vanilla dyes
+[*][b]Cosmetic auto-attach[/b] — randomly applied to looted weapons, tools, vehicles, and drones (10% chance each)
+[*][b]Same icon system[/b] as vanilla dyes — uses tinted version of the standard dye icon
+[*][b]Localized[/b] — English and Russian translations included
+[/list]
+
+[size=5][b]Installation[/b][/size]
+
+[list=1]
+[*]Copy the [b]EV_VividDyes[/b] folder into your game's Mods/ directory
+[*]Restart the game or server
+[/list]
+
+[size=5][b]Compatibility[/b][/size]
+
+[list]
+[*]7 Days to Die 1.0+
+[*]Server and single-player compatible
+[*]Compatible with other dye mods as long as they don't use the same internal names
+[/list]
+
+[size=5][b]Credits[/b][/size]
+
+Based on the original [url=https://www.nexusmods.com/7daystodie/mods/526]7 Days to Dye[/url] mod by [b]TheOptimalNoob[/b]. The original mod was created for Alpha 18 and has been fully rewritten and adapted for the current version of 7 Days to Die with updated item modifier structure, loot integration, and localization.
+
+[size=5][b]Changelog[/b][/size]
+
+[b]v1.0.0[/b]
+[list]
+[*]Initial release with 8 new vivid dyes adapted for 7D2D 1.0+
+[/list]
+
+[b]Author:[/b] Aleksei Khozin
+[b]Version:[/b] 1.0.0

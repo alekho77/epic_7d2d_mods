@@ -1,0 +1,149 @@
+<config>
+	<append xpath="/item_modifiers">
+
+		<!-- Dye: Royal Purple -->
+		<item_modifier name="modDyeRoyalPurple" installable_tags="weapon,tool,vehicle,drone" modifier_tags="dye,modDyeRoyalPurple" type="attachment" cosmetic_install_chance=".1">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="DescriptionKey" value="modDyeGroupDesc"/>
+			<property name="CustomIcon" value="modDyeWhite"/>
+			<property name="CustomIconTint" value="96,0,125"/>
+			<property name="Material" value="Mpaint"/>
+			<property name="Weight" value="20"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="SoundPickup" value="dye_grab"/>
+			<property name="SoundPlace" value="dye_place"/>
+
+			<item_property_overrides name="*">
+				<property name="TintColor" value="140,4,181"/>
+				<property name="CustomIconTint" value="140,4,181"/>
+			</item_property_overrides>
+		</item_modifier>
+
+		<!-- Dye: Turquoise -->
+		<item_modifier name="modDyeTurquoise" installable_tags="weapon,tool,vehicle,drone" modifier_tags="dye,modDyeTurquoise" type="attachment" cosmetic_install_chance=".1">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="DescriptionKey" value="modDyeGroupDesc"/>
+			<property name="CustomIcon" value="modDyeWhite"/>
+			<property name="CustomIconTint" value="41,255,244"/>
+			<property name="Material" value="Mpaint"/>
+			<property name="Weight" value="20"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="SoundPickup" value="dye_grab"/>
+			<property name="SoundPlace" value="dye_place"/>
+
+			<item_property_overrides name="*">
+				<property name="TintColor" value="41,255,244"/>
+				<property name="CustomIconTint" value="41,255,244"/>
+			</item_property_overrides>
+		</item_modifier>
+
+		<!-- Dye: Gold -->
+		<item_modifier name="modDyeGold" installable_tags="weapon,tool,vehicle,drone" modifier_tags="dye,modDyeGold" type="attachment" cosmetic_install_chance=".1">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="DescriptionKey" value="modDyeGroupDesc"/>
+			<property name="CustomIcon" value="modDyeWhite"/>
+			<property name="CustomIconTint" value="255,210,59"/>
+			<property name="Material" value="Mpaint"/>
+			<property name="Weight" value="20"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="SoundPickup" value="dye_grab"/>
+			<property name="SoundPlace" value="dye_place"/>
+
+			<item_property_overrides name="*">
+				<property name="TintColor" value="255,210,59"/>
+				<property name="CustomIconTint" value="255,210,59"/>
+			</item_property_overrides>
+		</item_modifier>
+
+		<!-- Dye: Silver -->
+		<item_modifier name="modDyeSilver" installable_tags="weapon,tool,vehicle,drone" modifier_tags="dye,modDyeSilver" type="attachment" cosmetic_install_chance=".1">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="DescriptionKey" value="modDyeGroupDesc"/>
+			<property name="CustomIcon" value="modDyeWhite"/>
+			<property name="CustomIconTint" value="213,245,243"/>
+			<property name="Material" value="Mpaint"/>
+			<property name="Weight" value="20"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="SoundPickup" value="dye_grab"/>
+			<property name="SoundPlace" value="dye_place"/>
+
+			<item_property_overrides name="*">
+				<property name="TintColor" value="165,207,204"/>
+				<property name="CustomIconTint" value="213,245,243"/>
+			</item_property_overrides>
+		</item_modifier>
+
+		<!-- Dye: Bronze -->
+		<item_modifier name="modDyeBronze" installable_tags="weapon,tool,vehicle,drone" modifier_tags="dye,modDyeBronze" type="attachment" cosmetic_install_chance=".1">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="DescriptionKey" value="modDyeGroupDesc"/>
+			<property name="CustomIcon" value="modDyeWhite"/>
+			<property name="CustomIconTint" value="255,157,61"/>
+			<property name="Material" value="Mpaint"/>
+			<property name="Weight" value="20"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="SoundPickup" value="dye_grab"/>
+			<property name="SoundPlace" value="dye_place"/>
+
+			<item_property_overrides name="*">
+				<property name="TintColor" value="255,157,61"/>
+				<property name="CustomIconTint" value="255,157,61"/>
+			</item_property_overrides>
+		</item_modifier>
+
+		<!-- Dye: Lime -->
+		<item_modifier name="modDyeLime" installable_tags="weapon,tool,vehicle,drone" modifier_tags="dye,modDyeLime" type="attachment" cosmetic_install_chance=".1">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="DescriptionKey" value="modDyeGroupDesc"/>
+			<property name="CustomIcon" value="modDyeWhite"/>
+			<property name="CustomIconTint" value="47,255,0"/>
+			<property name="Material" value="Mpaint"/>
+			<property name="Weight" value="20"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="SoundPickup" value="dye_grab"/>
+			<property name="SoundPlace" value="dye_place"/>
+
+			<item_property_overrides name="*">
+				<property name="TintColor" value="47,255,0"/>
+				<property name="CustomIconTint" value="47,255,0"/>
+			</item_property_overrides>
+		</item_modifier>
+
+		<!-- Dye: Candy Pink -->
+		<item_modifier name="modDyeCandyPink" installable_tags="weapon,tool,vehicle,drone" modifier_tags="dye,modDyeCandyPink" type="attachment" cosmetic_install_chance=".1">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="DescriptionKey" value="modDyeGroupDesc"/>
+			<property name="CustomIcon" value="modDyeWhite"/>
+			<property name="CustomIconTint" value="255,0,221"/>
+			<property name="Material" value="Mpaint"/>
+			<property name="Weight" value="20"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="SoundPickup" value="dye_grab"/>
+			<property name="SoundPlace" value="dye_place"/>
+
+			<item_property_overrides name="*">
+				<property name="TintColor" value="255,0,221"/>
+				<property name="CustomIconTint" value="255,0,221"/>
+			</item_property_overrides>
+		</item_modifier>
+
+		<!-- Dye: Neon Orange (renamed from "Orange" to avoid conflict with vanilla modDyeOrange) -->
+		<item_modifier name="modDyeNeonOrange" installable_tags="weapon,tool,vehicle,drone" modifier_tags="dye,modDyeNeonOrange" type="attachment" cosmetic_install_chance=".1">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="DescriptionKey" value="modDyeGroupDesc"/>
+			<property name="CustomIcon" value="modDyeWhite"/>
+			<property name="CustomIconTint" value="255,89,0"/>
+			<property name="Material" value="Mpaint"/>
+			<property name="Weight" value="20"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="SoundPickup" value="dye_grab"/>
+			<property name="SoundPlace" value="dye_place"/>
+
+			<item_property_overrides name="*">
+				<property name="TintColor" value="255,89,0"/>
+				<property name="CustomIconTint" value="255,89,0"/>
+			</item_property_overrides>
+		</item_modifier>
+
+	</append>
+</config>

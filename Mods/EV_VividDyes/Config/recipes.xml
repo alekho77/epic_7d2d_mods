@@ -1,0 +1,60 @@
+<config>
+	<!-- Crafting recipes for all dyes: 500 resourcePaint at workbench, 2 seconds -->
+
+	<!-- Vanilla dyes -->
+	<append xpath="/recipes">
+		<recipe name="modDyeBrown" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+		<recipe name="modDyeRed" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+		<recipe name="modDyeOrange" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+		<recipe name="modDyeYellow" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+		<recipe name="modDyeGreen" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+		<recipe name="modDyeBlue" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+		<recipe name="modDyePurple" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+		<recipe name="modDyeBlack" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+		<recipe name="modDyePink" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+
+		<!-- Vivid dyes -->
+		<recipe name="modDyeRoyalPurple" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+		<recipe name="modDyeTurquoise" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+		<recipe name="modDyeGold" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+		<recipe name="modDyeSilver" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+		<recipe name="modDyeBronze" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+		<recipe name="modDyeLime" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+		<recipe name="modDyeCandyPink" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+		<recipe name="modDyeNeonOrange" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+	</append>
+</config>
