@@ -1,3 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
 modDyeRoyalPurple,item_modifiers,mod,,,Dye: Royal Purple,,,,,,,,,,Краситель: Королевский Пурпур,,,
 modDyeTurquoise,item_modifiers,mod,,,Dye: Turquoise,,,,,,,,,,Краситель: Бирюзовый,,,
 modDyeGold,item_modifiers,mod,,,Dye: Gold,,,,,,,,,,Краситель: Золотой,,,
