@@ -1,0 +1,7 @@
+<configs>
+  <append xpath="/recipes">
+    <recipe name="evMotorcycleStarterBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+  </append>
+</configs>
