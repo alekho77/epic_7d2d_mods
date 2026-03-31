@@ -2,11 +2,17 @@
 
 🟢 **Server-Side Friendly**
 
-Adds **Epic Bucks** (`evCash`) — a custom in-game currency with a distinctive **Neon Yellow** appearance, designed for server administrators to reward players.
+Adds **Epic Bucks** (`evCash`) — a custom in-game currency that lets server admins build an in-game item shop backed by a real-money or points-based online store.
 
 ## Overview
 
-Epic Bucks is a bright neon yellow version of Old Cash that serves as a dedicated server currency. Admins can grant Epic Bucks to players via console commands, and players can then use them to craft exclusive items through custom recipes.
+Epic Bucks is a neon yellow in-game currency designed as a bridge between a server's external donation/points shop and the in-game economy. The flow is simple:
+
+1. A player purchases points or donates on the server's website.
+2. An admin (or automated system) issues Epic Bucks to the player via a console command.
+3. The player opens their crafting inventory in-game and exchanges Epic Bucks for the item bundles they want — no admin involvement needed at that point.
+
+This mod also ships a ready-made example bundle — a **Motorcycle Starter Kit** — to demonstrate the pattern. The included guide explains how to add your own bundles for any combination of items.
 
 ## Features
 
@@ -16,6 +22,8 @@ Epic Bucks is a bright neon yellow version of Old Cash that serves as a dedicate
 - **Cannot Be Sold** — not sellable to traders, keeping it as a server-only economy
 - **Cannot Be Used as Fuel** — prevents accidental burning
 - **Creative Menu Access** — available in creative mode for easy admin distribution
+- **Example Bundle Included** — Motorcycle Starter Kit (motorcycle + 5000 gas + Fuel Saver mod) craftable for 10 Epic Bucks
+- **Extensible** — add unlimited custom bundles with any items and prices
 
 ## Admin Commands
 
