@@ -14,5 +14,19 @@
       <property name="Stacknumber" value="50000"/>
       <property name="Group" value="Resources"/>
     </item>
+
+    <!-- Motorcycle Starter Kit bundle: motorcycle + 12000 gas + fuel saver mod -->
+    <item name="evMotorcycleStarterBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleVehicleMotorCycle"/>
+      <property name="CustomIconTint" value="7FFF00"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evMotorcycleStarterBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="vehicleMotorcyclePlaceable,ammoGasCan,modVehicleFuelSaver"/>
+        <property name="Create_item_count" value="1,12000,1"/>
+      </property>
+    </item>
   </append>
 </configs>
