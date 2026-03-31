@@ -9,6 +9,7 @@
       <property name="CreativeMode" value="Player"/>
       <property name="SellableToTrader" value="false"/>
       <property name="EconomicValue" value="0"/>
+      <property name="Weight" value="0"/>
       <property name="FuelValue" value="0"/>
       <property name="Stacknumber" value="50000"/>
       <property name="Group" value="Resources"/>
