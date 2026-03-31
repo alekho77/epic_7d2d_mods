@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModInfo>
+  <Name value="EV_EpicCash"/>
+  <DisplayName value="Epic Cash — Custom Server Currency"/>
+  <Description value="Adds Epic Bucks, a neon yellow custom currency that admins can give to players for crafting exclusive items."/>
+  <Author value="Aleksei Khozin"/>
+  <Version value="1.0.0"/>
+  <Website value="https://github.com/alekho77/epic_7d2d_mods"/>
+</ModInfo>

@@ -1,0 +1,50 @@
+[size=6][b]EV_EpicCash — Custom Server Currency[/b][/size]
+
+[color=#55aa55][b]Server-Side Friendly[/b][/color]
+
+Adds [b]Epic Bucks[/b] ([font=Courier New]evCash[/font]) — a custom in-game currency with a distinctive [b]Neon Yellow[/b] appearance, designed for server administrators to reward players.
+
+[size=5][b]Overview[/b][/size]
+
+Epic Bucks is a bright neon yellow version of Old Cash that serves as a dedicated server currency. Admins can grant Epic Bucks to players via console commands, and players can then use them to craft exclusive items through custom recipes.
+
+[size=5][b]Features[/b][/size]
+
+[list]
+[*][b]Custom Currency Item[/b] — [font=Courier New]evCash[/font] (Epic Bucks) based on the Old Cash model
+[*][b]Neon Yellow Icon[/b] — instantly recognizable bright #FFF200 tint
+[*][b]Large Stack Size[/b] — stacks up to 50,000 for convenient storage
+[*][b]Cannot Be Sold[/b] — not sellable to traders, keeping it as a server-only economy
+[*][b]Cannot Be Used as Fuel[/b] — prevents accidental burning
+[*][b]Creative Menu Access[/b] — available in creative mode for easy admin distribution
+[/list]
+
+[size=5][b]Admin Commands[/b][/size]
+
+Give Epic Bucks to a player:
+
+[code]giveself evCash 100
+give <player_name> evCash 100[/code]
+
+[size=5][b]Installation[/b][/size]
+
+[list=1]
+[*]Copy the [font=Courier New]EV_EpicCash[/font] folder into your [font=Courier New]7 Days to Die/Mods/[/font] directory.
+[*]Restart the game or server.
+[/list]
+
+[size=5][b]Compatibility[/b][/size]
+
+[list]
+[*][b]Game Version:[/b] 7 Days to Die (latest stable)
+[*][b]Type:[/b] XML modlet (no Harmony patches required)
+[*][b]Multiplayer:[/b] Server-side only — clients do not need this mod installed.
+[/list]
+
+[size=5][b]Credits[/b][/size]
+
+[list]
+[*][b]Author:[/b] Aleksei Khozin
+[*][b]Community:[/b] [url=https://steamcommunity.com/groups/EpicVales]EpicVales Steam Group[/url]
+[*][b]Source:[/b] [url=https://github.com/alekho77/epic_7d2d_mods]GitHub Repository[/url]
+[/list]

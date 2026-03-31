@@ -1,0 +1,3 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Comment
+evCash,items,Item,,,Epic Bucks,Custom currency display name
+evCashDesc,items,Item,,,"A bright neon yellow currency for the EpicVales community. Earn these from server admins and exchange them for exclusive items at the crafting station.",Item description
