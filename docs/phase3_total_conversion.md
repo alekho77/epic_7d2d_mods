@@ -13,7 +13,7 @@ This guide covers everything beyond Phases 1–2: the asset pipeline, UI replace
 ## What Makes a Total Conversion
 
 | Layer | Technology | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | Game Data | XML xpath patches | New items, blocks, recipes, buffs, perks, entities, quests, loot, traders, spawning |
 | Game Logic | Harmony C# patches | New mechanics, altered AI, custom UI controllers, new console commands, network changes |
 | Visuals | Unity AssetBundles + Addressables | New models, textures, animations, shaders, VFX |
@@ -36,7 +36,7 @@ Location: `Data\Addressables\Standalone\`
 The Addressables system is the game's primary asset delivery mechanism. Assets are packed into `.bundle` files, and a catalog maps logical addresses to physical bundle locations.
 
 | Bundle | Contents |
-|---|---|
+| --- | --- |
 | `blocktextureatlases_assets_all.bundle` | Texture atlas for **all** block surfaces — replacing this changes the look of the entire world |
 | `terraintextures_assets_all.bundle` | Terrain surface textures (dirt, stone, snow, sand, grass) |
 | `shapes_assets_all.bundle` | Block shape geometry (3D mesh data for all block shapes) |
@@ -62,7 +62,7 @@ The Addressables system is the game's primary asset delivery mechanism. Assets a
 Location: `Data\Bundles\Standalone\Entities\`
 
 | Bundle | Contents |
-|---|---|
+| --- | --- |
 | `Entities` / `Entities.manifest` | Unity AssetBundle containing entity models (zombies, animals, NPCs) |
 | `trees` / `trees.manifest` | Tree and vegetation models |
 
@@ -71,13 +71,14 @@ Location: `Data\Bundles\Standalone\Entities\`
 **Tools needed:**
 
 | Tool | Purpose |
-|---|---|
+| --- | --- |
 | **Unity Editor** (matching game version) | Create new AssetBundles from your custom models/textures. The Unity version must match the game's engine version. |
 | **UABE (Unity Asset Bundle Extractor)** | Extract and replace individual assets within existing bundles |
 | **AssetStudio** | Browse and preview assets inside bundles (read-only, great for research) |
 | **AssetRipper** | Extract assets from bundles into a Unity project |
 
 **Workflow for replacing assets:**
+
 1. Use **AssetStudio** to browse existing bundles and identify the asset you want to replace.
 2. Create your replacement asset in the appropriate tool (Blender for models, Photoshop/GIMP for textures).
 3. Import into a **Unity project** matching the game's Unity version.
@@ -93,7 +94,7 @@ The game UI is built with **NGUI** (third-party UI framework, not standard Unity
 ### UI File Structure
 
 | Path | Controls |
-|---|---|
+| --- | --- |
 | `Data\Config\XUi\windows.xml` | **All in-game HUD windows**: inventory, crafting, loot, map, compass, health bars, hotbar, container windows, vehicle UI, trader UI |
 | `Data\Config\XUi\controls.xml` | Reusable UI components: buttons, slots, icons, lists, grids, scrollbars |
 | `Data\Config\XUi\styles.xml` | UI styles: colors, font sizes, padding, alignment, anchoring |
@@ -114,7 +115,7 @@ The game UI is built with **NGUI** (third-party UI framework, not standard Unity
 ### Key UI Classes (in Assembly-CSharp.dll)
 
 | Class | Purpose |
-|---|---|
+| --- | --- |
 | `XUi` | Main XUi system manager |
 | `XUiController` | Base controller — subclass for custom window logic |
 | `XUiC_ItemStack` | Single item slot controller |
@@ -136,7 +137,7 @@ Location: `Data\Music\` (~400+ WAV files)
 Naming convention: `NNN_<type>_NN.wav` where `NNN` is a numeric index and `<type>` indicates the context:
 
 | Type | When It Plays |
-|---|---|
+| --- | --- |
 | `combat` | During combat encounters |
 | `explore` | While exploring the world |
 | `suspense` | Tense moments, nearby threats |
@@ -146,7 +147,7 @@ Naming convention: `NNN_<type>_NN.wav` where `NNN` is a numeric index and `<type
 ### Sound Configuration
 
 | File | Controls |
-|---|---|
+| --- | --- |
 | `Data\Config\music.xml` | Maps music tracks to game events, biomes, and situations |
 | `Data\Config\sounds.xml` | Maps **all** sound events: weapon firing, melee hits, footsteps, UI clicks, zombie screams, animal sounds, environmental audio, door opens, explosions, etc. |
 
@@ -175,7 +176,7 @@ For total conversions, you typically create a full custom icon set.
 ## Splash Screens and Branding
 
 | Path | Purpose |
-|---|---|
+| --- | --- |
 | `Logos\SplashScreen.png` | Engine splash screen shown during startup |
 | `Logos\Square150x150Logo.png` (and similar) | Application icons for Windows/Store |
 | `Logos\StoreLogo.png` | Store listing logo |
@@ -185,7 +186,7 @@ For total conversions, you typically create a full custom icon set.
 ### Video
 
 | Path | Purpose |
-|---|---|
+| --- | --- |
 | `7DaysToDie_Data\StreamingAssets\Video\TFP_Intro.webm` | Intro video (TFP splash). Replace with your own `.webm` video. |
 | `Data\Config\videos.xml` | Video file references used by the game |
 
@@ -198,7 +199,7 @@ For total conversions, you typically create a full custom icon set.
 Location: `Data\Prefabs\`
 
 | Subfolder | Contents |
-|---|---|
+| --- | --- |
 | `POIs\` (~500+ POIs) | **Points of Interest**: houses, stores, factories, hospitals, caves, trader bases. Each POI consists of multiple files |
 | `Parts\` | Reusable building components/parts |
 | `RWGTiles\` | Road and city tile templates for random world generation |
@@ -207,7 +208,7 @@ Location: `Data\Prefabs\`
 **POI File Format** (each POI has):
 
 | Extension | Purpose |
-|---|---|
+| --- | --- |
 | `.xml` | Metadata (dimensions, biome tags, difficulty tier) |
 | `.tts` | Block data (the actual block layout) |
 | `.blocks.nim` | Block NIM data |
@@ -224,7 +225,7 @@ Location: `Data\Stamps\` (~26 files)
 ### World Generation
 
 | File | Controls |
-|---|---|
+| --- | --- |
 | `Data\Config\rwgmixer.xml` | Random World Generation recipe — defines how cities, roads, biomes, wilderness are laid out |
 | `Data\Config\biomes.xml` | Biome definitions: surface blocks, decorations, sub-biomes |
 | `Data\Config\spawning.xml` | What entities spawn in each biome/zone |
@@ -234,7 +235,7 @@ Location: `Data\Stamps\` (~26 files)
 Location: `Data\Worlds\`
 
 | World | Purpose |
-|---|---|
+| --- | --- |
 | `Navezgane/` | The hand-crafted official campaign map. Study its file structure as a reference for custom worlds. |
 | `Empty/` | Empty world template |
 | `Pregen06k01/`, `Pregen06k02/` | Pre-generated 6K random worlds |
@@ -247,7 +248,7 @@ Location: `Data\Worlds\`
 These files control the Unity runtime and are relevant when adding custom assemblies or understanding load behavior.
 
 | Path | Purpose |
-|---|---|
+| --- | --- |
 | `7DaysToDie_Data\ScriptingAssemblies.json` | List of assemblies loaded by the scripting runtime. Relevant when adding your own DLLs. |
 | `7DaysToDie_Data\RuntimeInitializeOnLoads.json` | Runtime initialization sequence. Important for understanding early-stage patches. |
 | `7DaysToDie_Data\boot.config` | Unity runtime boot configuration (scripting backend, GC settings). |
@@ -261,7 +262,7 @@ These files control the Unity runtime and are relevant when adding custom assemb
 
 A full total conversion typically has a structure like this:
 
-```
+```text
 Mods\
   MyTotalConversion\
     ModInfo.xml
@@ -319,7 +320,7 @@ Mods\
 Follow this progression to build skills systematically:
 
 | Step | Focus | Key Files / Tools |
-|---|---|---|
+| --- | --- | --- |
 | **1** | Decompile and study game code | Open `Assembly-CSharp.dll` in dnSpy. Read class hierarchies for items, blocks, entities, UI. |
 | **2** | Master XML data system | Study all `Data\Config\*.xml` files. Build complex modlets with cross-file relationships. |
 | **3** | Learn the UI system | Study `XUi\`, `XUi_Menu\`, `XUi_Common\` XML files. Decompile `NGUI.dll` to understand the rendering layer. |
@@ -339,7 +340,7 @@ Location: `7DaysToDie_Data\Plugins\x86_64\`
 These are native (non-.NET) DLLs that cannot be Harmony-patched. Listed for completeness:
 
 | File | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `steam_api64.dll` | Steam | Steamworks native API |
 | `EOSSDK-Win64-Shipping.dll` | Epic | Epic Online Services native SDK |
 | `discord_partner_sdk.dll` | Discord | Discord SDK |
@@ -367,7 +368,7 @@ These are native (non-.NET) DLLs that cannot be Harmony-patched. Listed for comp
 Study these mods (via their public documentation, not by redistributing their code) to understand approaches used by the community:
 
 | Mod | Scope | What to Study |
-|---|---|---|
+| --- | --- | --- |
 | **Undead Legacy** | Full overhaul | Complete rework of crafting, progression, entities, UI, assets |
 | **Darkness Falls** | Full overhaul | New classes, demons, endgame content, custom entities |
 | **Rebirth** | Full overhaul | New mechanics, extended progression, custom AI |
