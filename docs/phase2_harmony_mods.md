@@ -18,7 +18,7 @@ Harmony mods use the **HarmonyX** runtime patching framework to modify game C# c
 ### Patch Types
 
 | Type | When It Runs | Use Case |
-|---|---|---|
+| --- | --- | --- |
 | **Prefix** | Before the original method | Modify input parameters, skip the original method entirely (`return false`), add pre-checks |
 | **Postfix** | After the original method | Modify return values, add side effects, read results |
 | **Transpiler** | Rewrites IL instructions | Surgical changes to method internals (advanced) |
@@ -29,7 +29,7 @@ Harmony mods use the **HarmonyX** runtime patching framework to modify game C# c
 ## Required Tools
 
 | Tool | Purpose |
-|---|---|
+| --- | --- |
 | **dnSpy** or **ILSpy** | Decompile `Assembly-CSharp.dll` to read game source code. **Essential** — you cannot write patches without knowing the original code. |
 | **Visual Studio** or **JetBrains Rider** | Write and compile your Harmony mod C# project |
 | **.NET Framework 4.8 SDK** | The game targets .NET Framework (Mono runtime) |
@@ -39,7 +39,7 @@ Harmony mods use the **HarmonyX** runtime patching framework to modify game C# c
 
 ## Harmony Mod Folder Structure
 
-```
+```text
 Mods\
   MyHarmonyMod\
     ModInfo.xml              # Required — same as XML modlets
@@ -59,7 +59,7 @@ The game auto-discovers and loads all `.dll` files in the `Harmony\` folder.
 ### Essential (Must Decompile)
 
 | File | Location | What to Study |
-|---|---|---|
+| --- | --- | --- |
 | `Assembly-CSharp.dll` | `7DaysToDie_Data\Managed\` | **The main game code.** All game logic lives here: item system (`ItemClass`, `ItemValue`, `ItemAction*`), block system (`Block`, `BlockValue`), entity system (`Entity`, `EntityAlive`, `EntityPlayer`, `EntityZombie`), crafting (`Recipe`, `CraftingManager`), loot (`LootContainer`, `LootManager`), buff system (`BuffClass`, `MinEffectController`), progression (`Progression`, `ProgressionClass`), UI controllers (`XUiC_*`), world generation (`ChunkProviderGenerateWorld`), networking (`NetPackage*`), AI (`EAI*` tasks), console commands (`ConsoleCmdAbstract`). |
 | `Assembly-CSharp-firstpass.dll` | `7DaysToDie_Data\Managed\` | Early-init utilities, base types loaded before the main assembly. Contains foundational helpers used throughout the game. |
 | `0Harmony.dll` | `7DaysToDie_Data\Managed\` | The HarmonyX framework itself. Study its API: `Harmony`, `HarmonyPatch`, `HarmonyPrefix`, `HarmonyPostfix`, `HarmonyTranspiler`, `AccessTools`, `CodeInstruction`. |
@@ -67,7 +67,7 @@ The game auto-discovers and loads all `.dll` files in the `Harmony\` folder.
 ### Useful (Study When Needed)
 
 | File | Location | What to Study |
-|---|---|---|
+| --- | --- | --- |
 | `NGUI.dll` | `7DaysToDie_Data\Managed\` | The game's UI framework. Not standard Unity UI — it uses NGUI (`UILabel`, `UISprite`, `UIWidget`, `UIPanel`, `UIGrid`). Study this when patching UI behavior. |
 | `NCalc.dll` | `7DaysToDie_Data\Managed\` | Math expression evaluator. Used in `buffs.xml` and `progression.xml` for dynamic formulas. Understanding the evaluator helps when creating custom effects. |
 | `AstarPathfindingProject.dll` | `7DaysToDie_Data\Managed\` | A* Pathfinding Project Pro. Handles NPC/zombie navigation. Study when modifying entity movement, pathfinding, or creating custom AI. |
@@ -76,7 +76,7 @@ The game auto-discovers and loads all `.dll` files in the `Harmony\` folder.
 ### Reference (Occasional Lookup)
 
 | File | Location | What to Study |
-|---|---|---|
+| --- | --- | --- |
 | `InControl.dll` | `7DaysToDie_Data\Managed\` | Input mapping framework. Study when patching input handling or adding custom keybinds. |
 | `LiteNetLib.dll` | `7DaysToDie_Data\Managed\` | UDP networking library. Study when modifying multiplayer behavior or adding net-synced features. |
 | `MemoryPack.Core.dll` | `7DaysToDie_Data\Managed\` | Binary serialization for save data and network packets. Study when patching save/load or network sync. |
@@ -91,7 +91,7 @@ The game auto-discovers and loads all `.dll` files in the `Harmony\` folder.
 ### Official TFP Harmony Example
 
 | Path | Purpose |
-|---|---|
+| --- | --- |
 | `Mods\0_TFP_Harmony\` | The Fun Pimps' official Harmony mod. Study its DLL structure and patches as a reference for how TFP themselves use Harmony. Loaded first (prefix `0_`). |
 
 ---
@@ -103,7 +103,7 @@ These are the most commonly patched classes in `Assembly-CSharp.dll`:
 ### Items and Inventory
 
 | Class | Responsibility |
-|---|---|
+| --- | --- |
 | `ItemClass` | Base class for all item definitions. Properties, actions, effects. |
 | `ItemValue` | Runtime instance of an item: quality, durability, mods, metadata. |
 | `ItemAction` | Base class for item actions (use, attack, place). |
@@ -117,7 +117,7 @@ These are the most commonly patched classes in `Assembly-CSharp.dll`:
 ### Blocks and World
 
 | Class | Responsibility |
-|---|---|
+| --- | --- |
 | `Block` | Base class for all block definitions. |
 | `BlockValue` | Runtime instance of a placed block. |
 | `BlockShape` | 3D shape of a block. |
@@ -128,7 +128,7 @@ These are the most commonly patched classes in `Assembly-CSharp.dll`:
 ### Entities
 
 | Class | Responsibility |
-|---|---|
+| --- | --- |
 | `Entity` | Base class for all world entities. |
 | `EntityAlive` | Living entity: health, buffs, death, inventory. |
 | `EntityPlayer` | The player. |
@@ -141,7 +141,7 @@ These are the most commonly patched classes in `Assembly-CSharp.dll`:
 ### Buffs and Effects
 
 | Class | Responsibility |
-|---|---|
+| --- | --- |
 | `BuffClass` | Buff definition (loaded from `buffs.xml`). |
 | `BuffValue` | Runtime buff instance on an entity. |
 | `MinEffectController` | Manages active effects on an entity. |
@@ -150,7 +150,7 @@ These are the most commonly patched classes in `Assembly-CSharp.dll`:
 ### Crafting and Recipes
 
 | Class | Responsibility |
-|---|---|
+| --- | --- |
 | `Recipe` | Crafting recipe definition. |
 | `CraftingManager` | Manages crafting queue and recipe lookup. |
 | `XUiC_CraftingQueue` | UI controller for the crafting queue. |
@@ -158,14 +158,14 @@ These are the most commonly patched classes in `Assembly-CSharp.dll`:
 ### Loot
 
 | Class | Responsibility |
-|---|---|
+| --- | --- |
 | `LootContainer` | Loot container definition. |
 | `LootManager` | Manages loot generation. |
 
 ### Progression and Skills
 
 | Class | Responsibility |
-|---|---|
+| --- | --- |
 | `Progression` | Player's progression state (level, XP, skill points). |
 | `ProgressionClass` | Skill/perk definition. |
 | `ProgressionValue` | Current level of a specific perk. |
@@ -173,7 +173,7 @@ These are the most commonly patched classes in `Assembly-CSharp.dll`:
 ### UI System
 
 | Class | Responsibility |
-|---|---|
+| --- | --- |
 | `XUi` | Main XUi system manager. |
 | `XUiController` | Base class for all UI controllers. |
 | `XUiC_*` | Specific UI controllers: `XUiC_ItemStack`, `XUiC_RecipeList`, `XUiC_MapArea`, etc. |
@@ -183,14 +183,14 @@ These are the most commonly patched classes in `Assembly-CSharp.dll`:
 ### AI
 
 | Class | Responsibility |
-|---|---|
+| --- | --- |
 | `EAIManager` | Entity AI manager. |
 | `EAITask*` | Individual AI tasks: `EAITaskWander`, `EAITaskApproachAndAttack`, `EAITaskInvestigate`, etc. |
 
 ### Networking
 
 | Class | Responsibility |
-|---|---|
+| --- | --- |
 | `NetPackage` | Base class for network packets. |
 | `NetPackage*` | Specific packet types for every networked action. |
 | `ConnectionManager` | Manages multiplayer connections. |
@@ -198,7 +198,7 @@ These are the most commonly patched classes in `Assembly-CSharp.dll`:
 ### Console Commands
 
 | Class | Responsibility |
-|---|---|
+| --- | --- |
 | `ConsoleCmdAbstract` | Base class for console commands. Subclass this to add new commands. |
 | `SdtdConsole` | Console system manager. |
 
@@ -317,16 +317,20 @@ public interface IModApi
 1. **Check `output_log.txt`** (`%APPDATA%\7DaysToDie\output_log.txt`) for exceptions and your `Log.Out` messages.
 2. **Use dnSpy's debugger** — attach to the running game process for breakpoints and inspection.
 3. **Harmony debug logging** — enable verbose Harmony logs:
+
    ```csharp
    Harmony.DEBUG = true;
    ```
+
    This writes detailed patch application logs to the Player.log.
 4. **Common errors**:
    - `MissingMethodException` — Method signature changed between game versions. Re-check in dnSpy.
    - `AmbiguousMatchException` — Multiple method overloads. Use `HarmonyPatch` with parameter types:
+
      ```csharp
      [HarmonyPatch(typeof(SomeClass), "Method", new Type[] { typeof(int), typeof(string) })]
      ```
+
    - `NullReferenceException` in Prefix — The game object may not be initialized yet. Add null checks.
 
 ---
@@ -335,7 +339,7 @@ public interface IModApi
 
 Most real mods use **both** Harmony and XML:
 
-```
+```text
 Mods\
   MyFullMod\
     ModInfo.xml
