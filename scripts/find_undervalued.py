@@ -37,13 +37,14 @@ from lxml import etree
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.dirname(SCRIPT_DIR)
 CONFIG_DIR = os.path.join(ROOT_DIR, "Config")
+BUILD_DIR = os.path.join(ROOT_DIR, "build")
 
 RECIPES_XML = os.path.join(CONFIG_DIR, "recipes.xml")
 ITEMS_XML = os.path.join(CONFIG_DIR, "items.xml")
 BLOCKS_XML = os.path.join(CONFIG_DIR, "blocks.xml")
 ITEM_MODIFIERS_XML = os.path.join(CONFIG_DIR, "item_modifiers.xml")
 LOCALIZATION_TXT = os.path.join(CONFIG_DIR, "Localization.txt")
-OUTPUT_HTML = os.path.join(SCRIPT_DIR, "undervalued.html")
+OUTPUT_HTML = os.path.join(BUILD_DIR, "undervalued.html")
 
 
 # ---------------------------------------------------------------------------
@@ -554,6 +555,7 @@ function sortTable(col) {
 
     lines.append("</body></html>")
 
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
 

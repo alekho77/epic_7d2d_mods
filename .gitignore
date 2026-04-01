@@ -1,5 +1,4 @@
 /Data/
-/scripts/graph.html
-/scripts/undervalued.html
+/build/
 /dist/
 *.pyc
