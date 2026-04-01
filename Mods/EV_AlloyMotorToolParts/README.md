@@ -21,7 +21,7 @@ Adds **Alloy Motor Tool Parts (Tier A)** — an upgraded tier of motor tool part
 ## Crafting Recipe
 
 | Ingredient | Quantity |
-|---|---|
+| --- | --- |
 | Motor Tool Parts (regular) | 1 |
 | Silver Nugget | 1 |
 | Forged Steel | 5 |
@@ -68,7 +68,7 @@ This mod is the first part of an advanced tool parts system:
 ### Mod Files
 
 | File | Purpose |
-|---|---|
+| --- | --- |
 | `items.xml` | Item definition with recolored icon |
 | `recipes.xml` | Crafting recipe with unlock tag |
 | `progression.xml` | Progression system, cap increase, and UI display entry |
@@ -77,6 +77,7 @@ This mod is the first part of an advanced tool parts system:
 ## Changelog
 
 ### v0.1.0
+
 - Initial work-in-progress release with Tier A Alloy Motor Tool Parts
 - Salvage Tools cap raised to 100
 - Full progression UI integration
@@ -85,4 +86,4 @@ This mod is the first part of an advanced tool parts system:
 
 **Author:** Aleksei Khozin  
 **Version:** 0.1.0  
-**Website:** https://github.com/alekho77/epic_7d2d_mods
+**Website:** <https://github.com/alekho77/epic_7d2d_mods>

@@ -18,8 +18,9 @@ Increases damage for bows, crossbows, arrows, and bolts to make archery a more v
 ## Damage Changes
 
 ### Arrows
+
 | Ammo Type | Vanilla | Modded | Change |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Stone Arrow | 35 | 49 | +40% |
 | Iron Arrow | 38 | 68 | +79% |
 | Steel AP Arrow | 42 | 92 | +119% |
@@ -27,8 +28,9 @@ Increases damage for bows, crossbows, arrows, and bolts to make archery a more v
 | Exploding Arrow | 180 | 220 | +22% |
 
 ### Crossbow Bolts
+
 | Ammo Type | Vanilla | Modded | Change |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Stone Bolt | 50 | 58 | +16% |
 | Iron Bolt | 59 | 100 | +69% |
 | Steel AP Bolt | 63 | 142 | +125% |
@@ -36,8 +38,9 @@ Increases damage for bows, crossbows, arrows, and bolts to make archery a more v
 | Exploding Bolt | 250 | 270 | +8% |
 
 ### Weapons (base_add bonus)
+
 | Weapon | Vanilla | Modded | Change |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Wooden Bow | +9 | +19 | +111% |
 | Compound Bow | +29 | +51 | +76% |
 | Compound Crossbow | +25 | +50 | +100% |
@@ -56,10 +59,11 @@ Increases damage for bows, crossbows, arrows, and bolts to make archery a more v
 ## Changelog
 
 ### v1.0.0
+
 - Initial release with enhanced damage for all arrow/bolt types and archery weapons
 
 ---
 
 **Author:** Aleksei Khozin  
 **Version:** 1.0.0  
-**Website:** https://github.com/alekho77/epic_7d2d_mods
+**Website:** <https://github.com/alekho77/epic_7d2d_mods>

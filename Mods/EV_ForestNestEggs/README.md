@@ -29,10 +29,11 @@ Adds **1 guaranteed egg** to bird nest loot in the pine forest biome. A small ea
 ## Changelog
 
 ### v1.0.0
+
 - Initial release — 1 guaranteed egg from bird nests in pine forest
 
 ---
 
 **Author:** Aleksei Khozin  
 **Version:** 1.0.0  
-**Website:** https://github.com/alekho77/epic_7d2d_mods
+**Website:** <https://github.com/alekho77/epic_7d2d_mods>

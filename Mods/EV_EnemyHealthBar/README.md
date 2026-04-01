@@ -28,10 +28,11 @@ Displays the enemy health bar above targets at all times, not just when aiming a
 ## Changelog
 
 ### v1.0.0
+
 - Initial release — target health bar set to always visible
 
 ---
 
 **Author:** Aleksei Khozin  
 **Version:** 1.0.0  
-**Website:** https://github.com/alekho77/epic_7d2d_mods
+**Website:** <https://github.com/alekho77/epic_7d2d_mods>

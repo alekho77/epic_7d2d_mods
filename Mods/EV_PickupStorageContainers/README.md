@@ -21,14 +21,17 @@ Allows players to recover storage containers, chests, and safes by disassembling
 ## Supported Containers
 
 ### Writable Crates
+
 - Wood, Iron, and Steel Writable Crates (locked and unlocked)
 
 ### Safes
+
 - Wall Safes (locked and unlocked)
 - Desk Safes (locked and unlocked)
 - Gun Safes — all colors: Black, White, Brown, Red, Orange, Yellow, Green, Blue, Purple, Grey, Pink, Army Green (locked and unlocked)
 
 ### Other Storage
+
 - Garage Storage
 - Player Coolers (Blue, Red, Green)
 - Player Refrigerators (Retro and Stainless Steel)
@@ -56,10 +59,11 @@ Allows players to recover storage containers, chests, and safes by disassembling
 ## Changelog
 
 ### v0.1.0
+
 - Initial work-in-progress release with support for all writable crates, safes, coolers, refrigerators, garage storage, and cabinets
 
 ---
 
 **Author:** Aleksei Khozin  
 **Version:** 0.1.0  
-**Website:** https://github.com/alekho77/epic_7d2d_mods
+**Website:** <https://github.com/alekho77/epic_7d2d_mods>

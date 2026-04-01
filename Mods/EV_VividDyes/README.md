@@ -12,7 +12,7 @@ Adds 8 new vivid and bright dyes with eye-catching acid colors to customize your
 ## New Dyes
 
 | Dye | Color (RGB) | Preview |
-|---|---|---|
+| --- | --- | --- |
 | Dye: Royal Purple | 140, 4, 181 | 🟣 Deep vibrant purple |
 | Dye: Turquoise | 41, 255, 244 | 🔵 Bright cyan-turquoise |
 | Dye: Gold | 255, 210, 59 | 🟡 Rich golden yellow |
@@ -48,6 +48,7 @@ Based on the original [7 Days to Dye](https://www.nexusmods.com/7daystodie/mods/
 ## Changelog
 
 ### v1.0.0
+
 - Initial release with 8 new vivid dyes adapted for 7D2D 1.0+
 
 ---

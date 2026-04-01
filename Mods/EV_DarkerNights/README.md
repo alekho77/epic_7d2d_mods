@@ -19,8 +19,9 @@ Makes nights significantly darker for a more immersive and challenging survival 
 ## Changes
 
 ### Ambient Lighting (Night Values)
+
 | Parameter | Vanilla | Modded |
-|---|---|---|
+| --- | --- | --- |
 | Ambient Equator Scale | 0.45 | 0.225 |
 | Ambient Ground Scale | 0.05 | 0.025 |
 | Ambient Sky Scale | 0.70 | 0.35 |
@@ -31,6 +32,7 @@ Makes nights significantly darker for a more immersive and challenging survival 
 | Indoor Sky Scale | 0.40 | 0.20 |
 
 ### Night Vision Goggles
+
 - Standard NightVision effect (green tint) — **retained**
 - Additional **Bright** effect (intensity 0.9) — **added** for enhanced visibility
 - Both effects activate/deactivate and unequip properly
@@ -49,13 +51,15 @@ Makes nights significantly darker for a more immersive and challenging survival 
 ## Changelog
 
 ### v1.1.0
+
 - Added enhanced night vision goggles with Bright effect
 
 ### v1.0.0
+
 - Initial release with darker ambient night lighting
 
 ---
 
 **Author:** Aleksei Khozin  
 **Version:** 1.1.0  
-**Website:** https://github.com/alekho77/epic_7d2d_mods
+**Website:** <https://github.com/alekho77/epic_7d2d_mods>

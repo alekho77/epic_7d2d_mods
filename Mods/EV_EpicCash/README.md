@@ -29,7 +29,7 @@ This mod also ships a ready-made example bundle — a **Motorcycle Starter Kit**
 
 Give Epic Bucks to a player:
 
-```
+```text
 giveself evCash 100
 give <player_name> evCash 100
 ```
@@ -71,7 +71,7 @@ Add a new `<item>` block inside the `<append xpath="/items">` section in `Config
 **Customizable parts:**
 
 | Property | What it controls |
-|---|---|
+| --- | --- |
 | `name` | Unique internal ID — must be unique across all mods. Use `ev` prefix to avoid conflicts. |
 | `CustomIcon` | Icon sprite name. Reuse any vanilla bundle icon, e.g. `bundleVehicleMotorCycle`, `bundleRevolver`, `bundleShotgun`, `bundleRifle`. |
 | `CustomIconTint` | RGB hex color of the icon tint (e.g. `00FFCC` for acid turquoise, `FF6600` for orange). |
@@ -84,7 +84,7 @@ Add a new `<item>` block inside the `<append xpath="/items">` section in `Config
 
 Add two rows to `Config/Localization.txt` — one for the display name and one for the description. At minimum fill in the `english` column; copy the pattern from existing entries for other languages.
 
-```
+```text
 evMyCustomBundle,items,Item,,,My Custom Bundle,Bundle display name,...
 evMyCustomBundleDesc,items,Item,,,"Open to receive item1, 500× item2 and item3.",Bundle description,...
 ```
@@ -104,7 +104,7 @@ Add a `<recipe>` block inside the `<append xpath="/recipes">` section in `Config
 **Customizable parts:**
 
 | Attribute | What it controls |
-|---|---|
+| --- | --- |
 | `name` | Must match the item `name` exactly. |
 | `count` | How many bundles are produced per craft (normally `1`). |
 | `craft_time` | Crafting time in seconds. |

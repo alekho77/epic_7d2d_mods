@@ -31,10 +31,11 @@ Makes plant fibers (Yucca Fibers) edible, restoring **1 food** per use. A small 
 ## Changelog
 
 ### v1.0.0
+
 - Initial release — plant fibers are now edible (1 food per use)
 
 ---
 
 **Author:** Aleksei Khozin  
 **Version:** 1.0.0  
-**Website:** https://github.com/alekho77/epic_7d2d_mods
+**Website:** <https://github.com/alekho77/epic_7d2d_mods>

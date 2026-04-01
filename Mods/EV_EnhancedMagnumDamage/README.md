@@ -30,10 +30,11 @@ Remember that scene in *Police Academy* where a tiny, delicate girl casually pul
 ## Changelog
 
 ### v1.0.0
+
 - Initial release — .44 Magnum base_add damage set to 50
 
 ---
 
 **Author:** Aleksei Khozin  
 **Version:** 1.0.0  
-**Website:** https://github.com/alekho77/epic_7d2d_mods
+**Website:** <https://github.com/alekho77/epic_7d2d_mods>

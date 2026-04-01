@@ -30,6 +30,7 @@ Expands the player's inventory from the vanilla 45 slots (5×9) to **60 slots (6
 - Uses a separate `backpack_item_stack_compact` template, reducing conflicts with most inventory mods
 
 **Potential conflicts** with mods that:
+
 - Modify inventory cell templates or sizing
 - Change the inventory window layout significantly
 - Override the `backpack_item_stack` control template
@@ -38,7 +39,7 @@ Expands the player's inventory from the vanilla 45 slots (5×9) to **60 slots (6
 ## Mod Files
 
 | File | Purpose |
-|---|---|
+| --- | --- |
 | `Config/XUi/controls.xml` | Custom compact item stack template definition |
 | `Config/XUi/windows.xml` | Inventory window configuration (6×10 grid, cell sizing) |
 | `Config/entityclasses.xml` | Player entity bag size adjustment |
@@ -48,6 +49,7 @@ Expands the player's inventory from the vanilla 45 slots (5×9) to **60 slots (6
 ## Changelog
 
 ### v1.1.0
+
 - Initial public release with 6×10 inventory grid (60 slots)
 - Custom compact cell design (60×60px)
 - Proportionally scaled UI elements
@@ -57,4 +59,4 @@ Expands the player's inventory from the vanilla 45 slots (5×9) to **60 slots (6
 
 **Author:** Aleksei Khozin  
 **Version:** 1.1.0  
-**Website:** https://github.com/alekho77/epic_7d2d_mods
+**Website:** <https://github.com/alekho77/epic_7d2d_mods>

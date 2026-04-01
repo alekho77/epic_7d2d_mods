@@ -20,7 +20,7 @@ Adds crafting recipes to convert arrows into crossbow bolts and vice versa at a 
 ## Conversion Recipes
 
 | From | To | Craft Time | Station |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Stone Arrow | Stone Bolt | 1s | Anywhere |
 | Iron Arrow | Iron Bolt | 1s | Workbench |
 | Steel AP Arrow | Steel AP Bolt | 2s | Workbench |
@@ -46,10 +46,11 @@ Adds crafting recipes to convert arrows into crossbow bolts and vice versa at a 
 ## Changelog
 
 ### v1.0.0
+
 - Initial release with all 10 arrow/bolt conversion recipes
 
 ---
 
 **Author:** Aleksei Khozin  
 **Version:** 1.0.0  
-**Website:** https://github.com/alekho77/epic_7d2d_mods
+**Website:** <https://github.com/alekho77/epic_7d2d_mods>
