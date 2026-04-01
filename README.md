@@ -13,8 +13,14 @@ Some mods are server-side only; others require installation on both server and c
 ## Structure
 
 - **`Mods/`** — individual modlet folders, each self-contained with its own `ModInfo.xml` and `README.md`
-- **`Config/`** — reference copy of the unmodified vanilla game configuration files (source of truth for authoring patches)
+- **`Data/Config/`** — reference copy of the unmodified vanilla game configuration files (source of truth for authoring patches)
 - **`scripts/`** — utility scripts for mod development and analysis
+- **`docs/`** — modding documentation:
+  - [Modding Guide](docs/modding_guide.md) — overview of all modding phases
+  - [Phase 1: XML Modlets](docs/phase1_xml_modlets.md) — XPath patching, mod structure, examples
+  - [Phase 2: Harmony Mods](docs/phase2_harmony_mods.md) — C# patches with HarmonyLib
+  - [Phase 3: Total Conversion](docs/phase3_total_conversion.md) — deep modding and asset replacement
+  - [Game File Inventory](docs/game_files.md) — complete reference of game installation files
 
 ## Installation
 
