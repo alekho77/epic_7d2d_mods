@@ -13,7 +13,7 @@ Some mods are server-side only; others require installation on both server and c
 ## Structure
 
 - **`Mods/`** — individual modlet folders, each self-contained with its own `ModInfo.xml` and `README.md`
-- **`Data/Config/`** — reference copy of the unmodified vanilla game configuration files (source of truth for authoring patches)
+- **`Data/`** — unmodified vanilla game data copied from the game installation directory (required for AI agent queries and repository scripts to work correctly). To prepare it, copy the `Data\` folder from your 7 Days to Die installation into the repository root.
 - **`scripts/`** — utility scripts for mod development and analysis
 - **`docs/`** — modding documentation:
   - [Modding Guide](docs/modding_guide.md) — overview of all modding phases
