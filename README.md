@@ -35,4 +35,4 @@ Free to use and modify for personal and server use. Credit appreciated but not r
 ---
 
 **Author:** Aleksei Khozin  
-**Website:** https://www.epicvales.online/
+**Website:** <https://www.epicvales.online/>
