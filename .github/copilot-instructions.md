@@ -69,13 +69,26 @@ Mods/
 </ModInfo>
 ```
 
-## Vanilla Config Reference (Source of Truth)
+## Vanilla Game Data Reference (Source of Truth)
 
-The repository contains a `/Config` folder with the **original unmodified game configuration files**.
+The repository contains a `/Data` folder with the **complete original unmodified game data** — a full copy of the `Data\` directory from the vanilla 7 Days to Die installation. Its structure mirrors the game installation as documented in `docs/modding_guide.md`:
 
-> **CRITICAL**: Before writing or modifying any mod, always read the relevant vanilla file(s) from `/Config` first.
+| Subfolder | Contents |
+|-----------|----------|
+| `Data/Config/` | All XML configuration files — the primary modding reference |
+| `Data/Prefabs/` | POI prefab definitions |
+| `Data/ItemIcons/` | Item icon textures |
+| `Data/Bundles/` | Legacy Unity AssetBundles |
+| `Data/Addressables/` | Unity Addressables catalog and assets |
+| `Data/Music/` | Background music tracks |
+| `Data/Worlds/` | Bundled world maps |
+| `Data/Stamps/` | World generation stamp assets |
+
+> **CRITICAL**: Before writing or modifying any mod, always read the relevant vanilla file(s) from `/Data/Config` first.
 > These files are the authoritative source for item names, property keys, buff IDs, perk names, UI elements, entity names, and all inter-file relationships.
 > Never guess or assume values — look them up in the source files.
+>
+> When a request involves non-config assets (icons, prefabs, bundles, etc.), consult the relevant subfolder under `/Data` as well.
 
 ### Config File Reference
 
@@ -127,6 +140,8 @@ The repository contains a `/Config` folder with the **original unmodified game c
 | `XUi/` | In-game HUD and UI: `windows.xml`, `controls.xml`, `styles.xml`, `xui.xml` |
 | `XUi_Common/` | Shared UI components: `controls.xml`, `styles.xml` |
 | `XUi_Menu/` | Main menu UI: `windows.xml`, `controls.xml`, `styles.xml`, `xui.xml` |
+
+All files listed above are located under `/Data/Config/`.
 
 ## Game Version
 
