@@ -13,11 +13,14 @@ Usage
 
 Output
 ------
-    build/inventory_catalog.html — searchable, filterable catalog.
+    build/inventory_catalog.html  — searchable, filterable catalog.
+    build/inventory_catalog/      — processed icons (resized, tinted).
 """
 
 import os
 import csv
+import shutil
+from PIL import Image
 from lxml import etree
 
 # ---------------------------------------------------------------------------
@@ -157,6 +160,13 @@ def parse_localization(txt_path: str) -> dict:
     return loc
 
 
+# ---------------------------------------------------------------------------
+# Icon processing
+# ---------------------------------------------------------------------------
+
+ICON_SIZE = 80  # 80×80 px (displayed at 40×40 CSS, 2× for retina)
+
+
 def load_icon_index(icons_dir: str) -> set[str]:
     """Return set of icon names (without extension) available in ItemIcons."""
     icons = set()
@@ -167,9 +177,115 @@ def load_icon_index(icons_dir: str) -> set[str]:
     return icons
 
 
-def icon_relative_path(icon_name: str) -> str:
-    """Return relative path from the build/ dir to the icon PNG."""
-    return f"../Data/ItemIcons/{icon_name}.png"
+def _parse_tint(tint: str) -> tuple[int, int, int] | None:
+    """
+    Parse a CustomIconTint value into (r, g, b).
+
+    Supports two game formats:
+      - Hex:    "FF8800" or "ff8800" (6 hex chars, optional alpha ignored)
+      - Comma:  "255,136,0" (three decimal 0-255 values)
+    """
+    tint = tint.strip()
+    if "," in tint:
+        parts = [p.strip() for p in tint.split(",")]
+        if len(parts) >= 3:
+            try:
+                return int(parts[0]), int(parts[1]), int(parts[2])
+            except ValueError:
+                return None
+    else:
+        # Hex format — strip optional alpha prefix for 8-char strings
+        h = tint.lstrip("#")
+        if len(h) == 8:
+            h = h[2:]  # AARRGGBB → RRGGBB
+        if len(h) >= 6:
+            try:
+                return int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16)
+            except ValueError:
+                return None
+    return None
+
+
+def _apply_tint(img: Image.Image, tr: int, tg: int, tb: int) -> Image.Image:
+    """
+    Multiply-blend an RGB tint onto an RGBA image.
+
+    For each pixel: out.r = pixel.r * tint.r / 255  (same for g, b).
+    Alpha is preserved.  This matches how the game applies CustomIconTint.
+    """
+    img = img.convert("RGBA")
+    r, g, b, a = img.split()
+
+    r = r.point(lambda v: v * tr // 255)
+    g = g.point(lambda v: v * tg // 255)
+    b = b.point(lambda v: v * tb // 255)
+
+    return Image.merge("RGBA", (r, g, b, a))
+
+
+def process_icons(
+    all_objects: dict[str, list[dict]],
+    icon_index: set[str],
+    icons_src_dir: str,
+    icons_dst_dir: str,
+) -> dict[str, str]:
+    """
+    Copy, resize, and optionally tint every needed icon into *icons_dst_dir*.
+
+    Returns a mapping  {output_filename: relative_path}  for use in HTML.
+    Each unique (icon_name, tint) pair produces one output file.
+    """
+    os.makedirs(icons_dst_dir, exist_ok=True)
+
+    # Collect all unique (icon_name, tint) combinations
+    needed: dict[tuple[str, str | None], str] = {}  # (icon, tint) → out_filename
+    for objects in all_objects.values():
+        for obj in objects:
+            icon_name = obj["icon_name"]
+            tint = obj.get("custom_icon_tint")
+            key = (icon_name, tint)
+            if key in needed:
+                continue
+            if icon_name not in icon_index:
+                continue
+            if tint:
+                # Normalize tint for filename (replace commas)
+                tint_slug = tint.replace(",", "_").replace(" ", "")
+                out_name = f"{icon_name}__{tint_slug}.png"
+            else:
+                out_name = f"{icon_name}.png"
+            needed[key] = out_name
+
+    # Process each icon
+    icon_map: dict[tuple[str, str | None], str] = {}  # key → relative path
+    dst_folder_name = os.path.basename(icons_dst_dir)
+    total = len(needed)
+    done = 0
+    for (icon_name, tint), out_name in needed.items():
+        src_path = os.path.join(icons_src_dir, icon_name + ".png")
+        dst_path = os.path.join(icons_dst_dir, out_name)
+
+        img = Image.open(src_path).convert("RGBA")
+
+        # Resize
+        if img.size != (ICON_SIZE, ICON_SIZE):
+            img = img.resize((ICON_SIZE, ICON_SIZE), Image.LANCZOS)
+
+        # Tint
+        if tint:
+            rgb = _parse_tint(tint)
+            if rgb:
+                img = _apply_tint(img, *rgb)
+
+        img.save(dst_path, "PNG", optimize=True)
+
+        icon_map[(icon_name, tint)] = f"{dst_folder_name}/{out_name}"
+
+        done += 1
+        if done % 500 == 0 or done == total:
+            print(f"    {done}/{total} icons processed")
+
+    return icon_map
 
 
 # ---------------------------------------------------------------------------
@@ -199,9 +315,9 @@ def render_html(
     all_objects: dict[str, list[dict]],
     localization: dict,
     icon_index: set[str],
+    icon_map: dict[tuple[str, str | None], str],
     output_path: str,
 ):
-
     # Count totals
     grand_total = sum(len(objs) for objs in all_objects.values())
 
@@ -260,14 +376,12 @@ def render_html(
             ru_desc = loc_desc.get("russian", "")
 
             # Icon HTML
-            if icon_name in icon_index:
-                src = _esc(icon_relative_path(icon_name))
-                tint_style = ""
-                if tint:
-                    tint_style = f' style="filter: drop-shadow(0 0 0 #{_esc(tint)}); opacity: 0.95;"'
+            icon_key = (icon_name, tint)
+            icon_path = icon_map.get(icon_key)
+            if icon_path:
                 icon_html = (
-                    f'<img src="{src}" width="48" height="48" '
-                    f'loading="lazy" alt="{_esc(icon_name)}"{tint_style}>'
+                    f'<img src="{_esc(icon_path)}" width="40" height="40" '
+                    f'loading="lazy" alt="{_esc(icon_name)}">'
                 )
             else:
                 icon_html = '<span class="no-icon">—</span>'
@@ -340,8 +454,8 @@ table.catalog td {
     vertical-align: middle;
 }
 table.catalog tr:hover { background: rgba(255,255,255,0.04); }
-td.icon-cell { width: 56px; text-align: center; }
-td.icon-cell img { display: block; margin: auto; image-rendering: pixelated; }
+td.icon-cell { width: 48px; text-align: center; }
+td.icon-cell img { display: block; margin: auto; }
 td.name-cell code {
     background: #2a2a4a; padding: 2px 6px; border-radius: 3px;
     font-size: 12px; word-break: break-all;
@@ -396,7 +510,7 @@ def main():
     print("7D2D Inventory Object Catalog")
     print("=" * 60)
 
-    print("\n[1/4] Loading objects …")
+    print("\n[1/5] Loading objects …")
     all_objects: dict[str, list[dict]] = {}
     total = 0
     for xml_path, tag, label in SOURCES:
@@ -409,11 +523,11 @@ def main():
         total += len(objects)
     print(f"  Total: {total}")
 
-    print("\n[2/4] Parsing localization …")
+    print("\n[2/5] Parsing localization …")
     localization = parse_localization(LOCALIZATION_TXT)
     print(f"  Keys loaded: {len(localization)}")
 
-    print("\n[3/4] Indexing icons …")
+    print("\n[3/5] Indexing icons …")
     icon_index = load_icon_index(ICONS_DIR)
     print(f"  Icon files found: {len(icon_index)}")
 
@@ -428,8 +542,15 @@ def main():
                 missing += 1
     print(f"  Objects with icon: {found}, without: {missing}")
 
-    print("\n[4/4] Generating HTML report …")
-    render_html(all_objects, localization, icon_index, OUTPUT_HTML)
+    print("\n[4/5] Processing icons (resize + tint) …")
+    icons_dst_dir = OUTPUT_HTML.rsplit(".", 1)[0]  # build/inventory_catalog
+    if os.path.isdir(icons_dst_dir):
+        shutil.rmtree(icons_dst_dir)
+    icon_map = process_icons(all_objects, icon_index, ICONS_DIR, icons_dst_dir)
+    print(f"  Output icons: {len(icon_map)}")
+
+    print("\n[5/5] Generating HTML report …")
+    render_html(all_objects, localization, icon_index, icon_map, OUTPUT_HTML)
 
     print(f"\nDone! → {OUTPUT_HTML}")
 
