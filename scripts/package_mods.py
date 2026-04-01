@@ -33,7 +33,7 @@ MODS_DIR = REPO_ROOT / "Mods"
 DEFAULT_OUTPUT_DIR = REPO_ROOT / "dist"
 
 # Files/patterns excluded from the archive (not needed in-game)
-EXCLUDE_NAMES = {"README.md", ".git", ".gitignore", "__pycache__"}
+EXCLUDE_NAMES = {"NEXUS_DESCRIPTION.txt", ".git", ".gitignore", "__pycache__"}
 
 
 def parse_mod_info(mod_path: Path) -> dict:
