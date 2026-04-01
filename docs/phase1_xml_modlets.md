@@ -13,7 +13,7 @@ The game loads all vanilla XML from `Data\Config\`, then iterates through every 
 ### XPath Operations
 
 | Operation | Description | Example |
-|---|---|---|
+| --- | --- | --- |
 | `set` | Change an existing value | `<set xpath=".../@value">50</set>` |
 | `append` | Add child nodes at the end of a parent | `<append xpath="/items"><item name="...">...</item></append>` |
 | `insertAfter` | Insert nodes after a specific sibling | `<insertAfter xpath="/items/item[@name='gunPistol']">...</insertAfter>` |
@@ -44,7 +44,7 @@ Every XML patch file must be wrapped in a `<configs>` root element:
 ### XPath Syntax Quick Reference
 
 | Pattern | Selects |
-|---|---|
+| --- | --- |
 | `/items` | Root `<items>` element |
 | `/items/item[@name='gunPistol']` | `<item>` with `name="gunPistol"` |
 | `.../property[@name='DamageEntity']/@value` | The `value` attribute of a `property` node |
@@ -65,6 +65,7 @@ Items, blocks, and entities support inheritance via the `Extends` property:
 ```
 
 Key rules for `Extends`:
+
 - The child inherits **all** properties from the parent.
 - Properties explicitly set on the child override the parent.
 - `Extends` copies upgrade/downgrade paths in blocks.
@@ -76,7 +77,7 @@ Key rules for `Extends`:
 
 ## Modlet Folder Layout
 
-```
+```text
 Mods\
   MyModName\
     ModInfo.xml              # Required
@@ -97,12 +98,12 @@ Your `Config\` folder mirrors the game's `Data\Config\` structure. The file name
 
 `Localization.txt` is a **tab-separated** file with this header:
 
-```
+```text
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
 ```
 
 | Column | Purpose |
-|---|---|
+| --- | --- |
 | `Key` | Unique string key referenced by XML configs (e.g., item descriptions) |
 | `File` | Source file category: `blocks`, `items`, `buffs`, etc. |
 | `Type` | Entry type: `Block`, `Item`, `Buff`, `Quest`, etc. |
@@ -113,7 +114,7 @@ Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german
 
 Your mod's `Localization.txt` is **appended** to the vanilla file. Add only your new entries:
 
-```
+```text
 myCustomItem,items,Item,,,"My Custom Pickaxe","A powerful mining tool",,,,,,,,,,,
 myCustomItemDesc,items,Item,,,"A legendary pickaxe forged in fire.",,,,,,,,,,,,
 ```
@@ -127,7 +128,7 @@ All files are located in `Data\Config\` relative to the game installation root. 
 ### Core Game Data Files
 
 | File | Purpose | Typical Modlet Uses |
-|---|---|---|
+| --- | --- | --- |
 | `items.xml` | **All holdable items**: weapons, tools, consumables, resources, ammo, armor, clothing. Defines stats (damage, range, magazine size, degradation), visual properties, action types, sound references, passive effects. | Change weapon damage, add new items via `Extends`, tweak stack sizes, modify repair costs, add new effect groups |
 | `blocks.xml` | **All placeable blocks**: terrain, building materials, workstations, doors, traps, containers, plants, trees, electrical components. Defines shapes, textures, materials, hit points, upgrade/downgrade paths. | Add new blocks/workstations, change block HP, modify upgrade paths, add new traps, change harvest yields |
 | `recipes.xml` | **Crafting recipes**: ingredients, quantities, crafting area (hand, workbench, forge, etc.), unlock requirements, craft time, output count. | Add recipes for new items, change ingredient costs, add new crafting stations to existing recipes |
@@ -144,14 +145,14 @@ All files are located in `Data\Config\` relative to the game installation root. 
 ### Items, Modifiers, and Quality
 
 | File | Purpose | Typical Modlet Uses |
-|---|---|---|
+| --- | --- | --- |
 | `item_modifiers.xml` | **Weapon/tool mods**: barrel mods, scope mods, grip mods, dyes, cosmetic mods. Defines stat modifications applied when installed. | Add new weapon mods, change mod bonuses, add mod slots to items |
 | `qualityinfo.xml` | **Quality tiers**: defines stat scaling per quality level (1–6). Controls how damage, durability, and secondary stats scale with quality. | Change quality scaling curves, rebalance tier progression |
 
 ### World Configuration
 
 | File | Purpose | Typical Modlet Uses |
-|---|---|---|
+| --- | --- | --- |
 | `biomes.xml` | **Biome definitions**: surface blocks, sub-surface layers, decoration placement (trees, rocks, grass), prefab spawning rules per biome. | Change biome terrain composition, modify decoration density, add custom biome features |
 | `rwgmixer.xml` | **Random World Generation**: city sizes, town spacing, road types, POI placement rules, biome distribution, wilderness rules. | Modify world generation parameters, change city density, POI placement rules |
 | `worldglobal.xml` | **Global world settings**: day/night cycle duration, ambient light, moon phases, loot respawn time, zombie feralness settings, blood moon frequency. | Change day length, modify blood moon frequency, adjust global loot respawn |
@@ -160,14 +161,14 @@ All files are located in `Data\Config\` relative to the game installation root. 
 ### AI and Entity Behavior
 
 | File | Purpose | Typical Modlet Uses |
-|---|---|---|
+| --- | --- | --- |
 | `utilityai.xml` | **AI behavior trees**: utility scoring for AI decisions (attack, flee, wander, investigate). Defines how entities prioritize actions. | Modify zombie behavior, change AI aggression, create custom AI routines |
 | `archetypes.xml` | **Entity archetypes**: base templates that `entityclasses.xml` entries can inherit from. Defines shared property sets. | Create new archetypes for custom entity families |
 
 ### NPC and Quest System
 
 | File | Purpose | Typical Modlet Uses |
-|---|---|---|
+| --- | --- | --- |
 | `quests.xml` | **Quest definitions**: quest types (clear, fetch, treasure, buried supply), objectives, rewards, difficulty tiers, POI requirements. | Add new quests, modify rewards, create quest chains |
 | `challenges.xml` | **Challenges**: in-game challenge objectives and rewards (kill X zombies, craft Y items, etc.). | Add new challenges, modify challenge requirements |
 | `dialogs.xml` | **NPC dialogs**: trader conversation trees, dialog options, response conditions, quest offerings. | Add dialog options, create new trader conversations |
@@ -176,7 +177,7 @@ All files are located in `Data\Config\` relative to the game installation root. 
 ### Sounds and Music
 
 | File | Purpose | Typical Modlet Uses |
-|---|---|---|
+| --- | --- | --- |
 | `sounds.xml` | **Sound events**: maps action names to audio files and playback parameters. Every gunshot, footstep, UI click, zombie growl is defined here. | Change weapon sounds, add sounds for new items, modify ambient sounds |
 | `music.xml` | **Music events**: maps game states/biomes to music tracks. Controls combat music, exploration music, horde night music. | Change music assignments, add custom music tracks |
 | `subtitles.xml` | **Subtitles**: subtitle text for audio events (for accessibility). | Add subtitles for new sounds |
@@ -184,7 +185,7 @@ All files are located in `Data\Config\` relative to the game installation root. 
 ### Materials and Physics
 
 | File | Purpose | Typical Modlet Uses |
-|---|---|---|
+| --- | --- | --- |
 | `materials.xml` | **Block materials**: hardness, damage resistance by type (bullet, melee, explosion), harvest tool, particle effects on hit, repair material. | Change block resistance, add new material types, modify harvest drops |
 | `physicsbodies.xml` | **Ragdoll physics**: physics body definitions for entities (limb mass, joint limits). | Modify ragdoll behavior |
 | `shapes.xml` | **Block shapes**: 3D shape definitions that blocks can use. Maps shape names to mesh data. | Reference only — new shapes require Unity AssetBundles (Phase 3) |
@@ -192,7 +193,7 @@ All files are located in `Data\Config\` relative to the game installation root. 
 ### UI Configuration
 
 | File | Purpose | Typical Modlet Uses |
-|---|---|---|
+| --- | --- | --- |
 | `XUi\windows.xml` | **In-game HUD windows**: inventory, crafting, map, toolbelt, health bars, loot containers, vehicle UI, compass. | Rearrange UI elements, add new UI panels, modify existing windows |
 | `XUi\controls.xml` | **Reusable UI controls**: buttons, item slots, labels, progress bars, icons — building blocks used by `windows.xml`. | Modify control appearance, add custom controls |
 | `XUi\styles.xml` | **UI styles**: colors, fonts, sizes, paddings, anchors. | Restyle the UI, change color schemes |
@@ -207,7 +208,7 @@ All files are located in `Data\Config\` relative to the game installation root. 
 ### Display and Presentation
 
 | File | Purpose | Typical Modlet Uses |
-|---|---|---|
+| --- | --- | --- |
 | `ui_display.xml` | **UI display labels**: maps property names to display strings in the item inspection UI (e.g., "Entity Damage", "Block Damage"). | Add display labels for custom properties |
 | `painting.xml` | **Block painting**: available paint textures for the painting system. | Add custom paint textures |
 | `nav_objects.xml` | **Navigation icons**: minimap and compass icons for tracked objects (traders, quests, allies). | Add custom map markers |
@@ -216,14 +217,14 @@ All files are located in `Data\Config\` relative to the game installation root. 
 ### Events and Triggers
 
 | File | Purpose | Typical Modlet Uses |
-|---|---|---|
+| --- | --- | --- |
 | `events.xml` | **Event triggers**: defines what events the game can fire (entity death, block destroyed, item crafted). | Reference for buff/quest triggers |
 | `gameevents.xml` | **Event responses**: what happens when events fire (spawn entity, play sound, give buff). | Create custom event-driven mechanics |
 
 ### Integrations
 
 | File | Purpose | Typical Modlet Uses |
-|---|---|---|
+| --- | --- | --- |
 | `twitch.xml` | **Twitch integration**: actions available for Twitch viewers to trigger in-game. | Add custom Twitch actions |
 | `twitch_events.xml` | **Twitch events**: specific Twitch event definitions and their effects. | Customize Twitch interactions |
 | `videos.xml` | **Video playback**: references to video files played by the game (intro, cutscenes). | Change intro video |
@@ -232,7 +233,7 @@ All files are located in `Data\Config\` relative to the game installation root. 
 ### Supplementary Data Files
 
 | File | Format | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `Localization.txt` | TSV | All in-game strings — item names, descriptions, UI labels, buff names, quest text. Key → language columns. Mods append to this. |
 | `BlockUpdates.csv` | CSV | Block upgrade/downgrade transition table (material → upgraded material). |
 | `blockplaceholders.xml` | XML | Block placeholder substitution rules for prefab loading. |
@@ -306,7 +307,7 @@ All files are located in `Data\Config\` relative to the game installation root. 
 
 In `Config/Localization.txt` (tab-separated, appended to vanilla):
 
-```
+```text
 gunPistolCustom,items,Item,,,"Custom Pistol",,,,,,,,,,,,
 gunPistolCustomDesc,items,Item,,,"A specially modified pistol with enhanced damage.",,,,,,,,,,,,
 ```
@@ -333,7 +334,7 @@ From the game's `XML.txt` developer notes:
 **Block naming** follows the pattern: `[material/texture] [shape] [extra properties]`
 
 | Shape Code | Block Shape |
-|---|---|
+| --- | --- |
 | `block` | Full 1m cube |
 | `half` | Half block |
 | `quarter` | Quarter block |
@@ -358,6 +359,7 @@ From the game's `XML.txt` developer notes:
 Example names: `awningRedBlock`, `rebarFrameRamp`, `rConcreteCNRFull`, `rConcretePlate`
 
 **`CreativeMode` property values**: `Player`, `Dev`, `None`, `Test`
+
 - `Player` — visible in player creative menu
 - `Dev` — visible only when dev button is active
 - `None` — never displayed (master blocks)
@@ -370,7 +372,7 @@ Example names: `awningRedBlock`, `rebarFrameRamp`, `rConcreteCNRFull`, `rConcret
 The game uses **NCalc** (math expression evaluator) for dynamic calculations in buffs and progression. Common variables:
 
 | Variable | Available In | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | `@_level` | progression.xml | Current perk level |
 | `@_maxLevel` | progression.xml | Max perk level |
 | `{EntityDamage}` | buffs.xml | Current entity damage value |
@@ -382,6 +384,7 @@ The game uses **NCalc** (math expression evaluator) for dynamic calculations in 
 | `{WaterAmount}` | buffs.xml | Current water level |
 
 Example expression in `progression.xml`:
+
 ```xml
 <effect_group>
   <passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" level="1,5"/>
