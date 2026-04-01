@@ -11,7 +11,7 @@ This guide covers three progressive phases of modding 7 Days to Die, from simple
 ## Game Overview
 
 | Property | Value |
-|---|---|
+| --- | --- |
 | **Game** | 7 Days to Die |
 | **Developer** | The Fun Pimps (TFP) |
 | **Engine** | Unity (Mono backend) |
@@ -31,7 +31,7 @@ This guide covers three progressive phases of modding 7 Days to Die, from simple
 A standard 7 Days to Die installation contains these top-level directories:
 
 | Directory | Purpose |
-|---|---|
+| --- | --- |
 | `(root)` | Executables (`7DaysToDie.exe`, `7DaysToDie_EAC.exe`, `7dLauncher.exe`), Unity runtime (`UnityPlayer.dll`), Steam/NVIDIA libraries |
 | `7DaysToDie_Data\` | Unity player data: `Managed\` (all .NET DLLs), `Plugins\` (native DLLs), `StreamingAssets\` (Addressables catalog, intro video) |
 | `Data\` | Game content: `Config\` (XML configs), `Prefabs\` (POIs), `ItemIcons\`, `Music\`, `Bundles\`, `Addressables\`, `Worlds\`, `Stamps\` |
@@ -48,7 +48,7 @@ A standard 7 Days to Die installation contains these top-level directories:
 
 Mods can be placed in the game's `Mods\` folder or in `%APPDATA%\7DaysToDie\Mods\` (the currently recommended location). Each mod is a self-contained subfolder:
 
-```
+```text
 Mods\
   <ModName>\
     ModInfo.xml          # Required — name, version, author, description
@@ -113,7 +113,7 @@ Key differences: V2 uses `<xml>` as root (instead of `<ModInfo>`), `Name` is str
 ## Key Tools for Modders
 
 | Tool | Purpose | Phase |
-|---|---|---|
+| --- | --- | --- |
 | **Text editor** (VS Code, Notepad++) | Edit XML configs, Localization.txt | 1, 2, 3 |
 | **dnSpy** or **ILSpy** | Decompile `Assembly-CSharp.dll` to read game C# source | 2, 3 |
 | **Visual Studio** or **Rider** | Write and compile Harmony C# mods | 2, 3 |
@@ -132,47 +132,47 @@ Key differences: V2 uses `<xml>` as root (instead of `<ModInfo>`), `Name` is str
 ### Official
 
 | Resource | URL |
-|---|---|
-| The Fun Pimps Official Site | https://7daystodie.com/ |
-| 7D2D Steam Store Page | https://store.steampowered.com/app/251570/7_Days_to_Die/ |
-| TFP Community Forums | https://community.thefunpimps.com/ |
-| Game Modification Category | https://community.thefunpimps.com/categories/game-modification.48/ |
-| Tutorials & Guides | https://community.thefunpimps.com/forums/tutorials-guides.39/ |
-| Mods (Resources) | https://community.thefunpimps.com/resources/ |
+| --- | --- |
+| The Fun Pimps Official Site | <https://7daystodie.com/> |
+| 7D2D Steam Store Page | <https://store.steampowered.com/app/251570/7_Days_to_Die/> |
+| TFP Community Forums | <https://community.thefunpimps.com/> |
+| Game Modification Category | <https://community.thefunpimps.com/categories/game-modification.48/> |
+| Tutorials & Guides | <https://community.thefunpimps.com/forums/tutorials-guides.39/> |
+| Mods (Resources) | <https://community.thefunpimps.com/resources/> |
 
 ### Wikis & Knowledge Bases
 
 | Resource | URL |
-|---|---|
-| 7 Days to Die Wiki (Fandom) | https://7daystodie.fandom.com/wiki/7_Days_to_Die_Wiki |
-| 7D2D Modding Wiki | https://7d2dsdx.github.io/ |
-| XPath Modding Explanation Thread (sphereii) | https://community.thefunpimps.com/threads/xpath-modding-explanation-thread.7653/ |
+| --- | --- |
+| 7 Days to Die Wiki (Fandom) | <https://7daystodie.fandom.com/wiki/7_Days_to_Die_Wiki> |
+| 7D2D Modding Wiki | <https://7d2dsdx.github.io/> |
+| XPath Modding Explanation Thread (sphereii) | <https://community.thefunpimps.com/threads/xpath-modding-explanation-thread.7653/> |
 
 ### Community Forums & Hubs
 
 | Resource | URL |
-|---|---|
-| Nexus Mods — 7D2D | https://www.nexusmods.com/7daystodie |
-| Reddit r/7daystodie | https://www.reddit.com/r/7daystodie/ |
-| Discord — Official 7D2D | https://discord.gg/7daystodie |
-| Unofficial Modding Discord | https://community.thefunpimps.com/threads/unnofficial-modding-discord.23400/ |
-| Discord — 7D2D Modding | https://discord.gg/7d2dmodding |
+| --- | --- |
+| Nexus Mods — 7D2D | <https://www.nexusmods.com/7daystodie> |
+| Reddit r/7daystodie | <https://www.reddit.com/r/7daystodie/> |
+| Discord — Official 7D2D | <https://discord.gg/7daystodie> |
+| Unofficial Modding Discord | <https://community.thefunpimps.com/threads/unnofficial-modding-discord.23400/> |
+| Discord — 7D2D Modding | <https://discord.gg/7d2dmodding> |
 
 ### Modding References
 
 | Resource | URL |
-|---|---|
-| Harmony Documentation | https://harmony.pardeike.net/articles/intro.html |
-| HarmonyX (BepInEx fork) | https://github.com/BepInEx/HarmonyX |
-| SphereII's DMT | https://github.com/SphereII/DMT |
-| 7D2D Mod Launcher | https://github.com/SphereII/The7D2DModLauncher |
-| KhaineGB's Modding Examples | https://community.7daystodie.com/topic/19594-khainesgb-modlets/ |
-| SphereII's Modlets & Tutorials | https://community.7daystodie.com/topic/28540-sphereiis-modlets/ |
+| --- | --- |
+| Harmony Documentation | <https://harmony.pardeike.net/articles/intro.html> |
+| HarmonyX (BepInEx fork) | <https://github.com/BepInEx/HarmonyX> |
+| SphereII's DMT | <https://github.com/SphereII/DMT> |
+| 7D2D Mod Launcher | <https://github.com/SphereII/The7D2DModLauncher> |
+| KhaineGB's Modding Examples | <https://community.7daystodie.com/topic/19594-khainesgb-modlets/> |
+| SphereII's Modlets & Tutorials | <https://community.7daystodie.com/topic/28540-sphereiis-modlets/> |
 
 ### Notable Total Conversion Mods (Study Material)
 
 | Mod | Description |
-|---|---|
+| --- | --- |
 | **Undead Legacy** | Complete overhaul: new crafting, UI, progression, textures, sounds |
 | **Darkness Falls** | Adds classes, demons, new biomes, quests, NPCs |
 | **Rebirth** | Survival-focused with new mechanics and progression |
@@ -193,7 +193,7 @@ Key differences: V2 uses `<xml>` as root (instead of `<ModInfo>`), `Name` is str
 ## Quick Reference: What Each Phase Covers
 
 | Capability | Phase 1 (XML) | Phase 2 (Harmony) | Phase 3 (Total Conversion) |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Change item stats, recipes, loot | Yes | — | Yes |
 | Add new items/blocks/entities (data) | Yes | — | Yes |
 | Modify UI layout (XUi) | Yes | — | Yes |
@@ -215,7 +215,7 @@ This section documents **every game configuration file** whose entries can appea
 Only **three config files** define inventory-compatible objects:
 
 | File | Root Element | Object Tag | Total Objects |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `Data/Config/items.xml` | `<items>` | `<item>` | **1 380** |
 | `Data/Config/blocks.xml` | `<blocks>` | `<block>` | **6 289** |
 | `Data/Config/item_modifiers.xml` | `<item_modifiers>` | `<item_modifier>` | **107** |
@@ -228,7 +228,7 @@ Only **three config files** define inventory-compatible objects:
 Every item, block, and modifier can have a `CreativeMode` property that controls whether it appears in the Creative Menu:
 
 | Value | Meaning |
-|---|---|
+| --- | --- |
 | *(not set / default)* | Inherits standard visibility — typically **visible** in the Creative Menu |
 | `Player` | Explicitly visible to players in the Creative Menu |
 | `Dev` | Visible only when the game is in Developer mode |
@@ -241,7 +241,7 @@ Every item, block, and modifier can have a `CreativeMode` property that controls
 Items visible in the Creative Menu are organized into tab groups via the `Group` property. A single object can belong to multiple groups (comma-separated). The following groups exist across all three config files:
 
 | Group | Visible Objects |
-|---|---|
+| --- | --- |
 | `Building` | 131 |
 | `advBuilding` | 121 |
 | `Decor/Miscellaneous` | 99 |
@@ -273,10 +273,10 @@ Items visible in the Creative Menu are organized into tab groups via the `Group`
 
 Defines **all items the player can hold, use, equip, or consume**: weapons, tools, food, drinks, medicine, resources, ammunition, schematics, skill books, vehicle placement items, quest items, etc.
 
-#### CreativeMode Breakdown
+#### `items.xml` — CreativeMode Breakdown
 
 | CreativeMode | Count | Description |
-|---|---|---|
+| --- | --- | --- |
 | *(default)* | 593 | Standard visible items |
 | `None` | 551 | Hidden from Creative Menu (internal items, masters, intermediates) |
 | `Player` | 162 | Explicitly player-visible |
@@ -287,6 +287,7 @@ Defines **all items the player can hold, use, equip, or consume**: weapons, tool
 #### Major Item Categories
 
 **Ranged Weapons** (~35 items) — Firearms, bows, crossbows, rocket launchers:
+
 - Pistols: `gunHandgunT0PipePistol`, `gunHandgunT1Pistol`, `gunHandgunT2Magnum44`, etc.
 - Rifles: `gunRifleT0PipeRifle`, `gunRifleT1HuntingRifle`, `gunRifleT3SniperRifle`, etc.
 - Shotguns: `gunShotgunT0PipeShotgun`, `gunShotgunT1DoubleBarrel`, `gunShotgunT2PumpShotgun`, etc.
@@ -295,12 +296,14 @@ Defines **all items the player can hold, use, equip, or consume**: weapons, tool
 - Explosives: `gunExplosivesT3RocketLauncher`
 
 **Melee Weapons** (~18 items) — Blades, clubs, spears, knuckles, stun batons:
+
 - Blades: `meleeWpnBladeT0BoneKnife`, `meleeWpnBladeT1HuntingKnife`, `meleeWpnBladeT3Machete`
 - Clubs: `meleeWpnClubT0WoodenClub`, `meleeWpnClubT1BaseballBat`, `meleeWpnClubT3SteelClub`
 - Spears: `meleeWpnSpearT0StoneSpear`, `meleeWpnSpearT1IronSpear`, `meleeWpnSpearT3SteelSpear`
 - Stun batons: `meleeWpnStunBatonT0StunBaton`, `meleeWpnStunBatonT3CattleProd`
 
 **Tools** (~30 items) — Repair tools, axes, pickaxes, shovels, wrenches, augers, chainsaws:
+
 - `meleeToolRepairT0StoneAxe`, `meleeToolRepairT1ClawHammer`, `meleeToolRepairT3Nailgun`
 - `meleeToolAxeT1IronFireaxe`, `meleeToolAxeT3SteelAxe`
 - `meleeToolPickT1IronPickaxe`, `meleeToolPickT3SteelPickaxe`
@@ -309,6 +312,7 @@ Defines **all items the player can hold, use, equip, or consume**: weapons, tool
 - `meleeToolChainsaw`, `meleeToolAuger`
 
 **Ammunition** (~23 items) — Bullets, arrows, bolts, shells, rockets:
+
 - `ammo9mmBulletBall`, `ammo9mmBulletHP`, `ammo9mmBulletAP`
 - `ammo762mmBulletBall`, `ammo762mmBulletHP`, `ammo762mmBulletAP`
 - `ammoArrowStone`, `ammoArrowIron`, `ammoArrowSteel`, `ammoArrowExploding`
@@ -317,38 +321,46 @@ Defines **all items the player can hold, use, equip, or consume**: weapons, tool
 - `ammoRocketHE`, `ammoRocketFrag`
 
 **Food & Drinks** (~66 items) — Raw food, cooked meals, canned food, drinks, smoothies:
+
 - Canned: `foodCanBeef`, `foodCanChili`, `foodCanSoup`, `foodCanPasta`
 - Cooked: `foodGrilledMeat`, `foodSteakAndPotato`, `foodHoboStew`
 - Smoothies: `foodOasisSmoothie`, `foodFrostbiteSmoothie`, `foodAtomicSmoothie`
 - Drinks: `drinkJarBoiledWater`, `drinkJarCoffee`, `drinkJarBeer`, `drinkCanMegaCrush`
 
 **Medicine & Science** (~18 items) — Healing items, antibiotics, medications:
+
 - `medicalBandage`, `medicalFirstAidBandage`, `medicalFirstAidKit`
 - `medicalAloeCream`, `medicalSplint`
 - `drugAntibiotics`, `drugPainkillers`, `drugVitamins`
 
 **Resources & Materials** (~60 items) — Crafting components, ores, materials:
+
 - `resourceWood`, `resourceRockSmall`, `resourceIron`, `resourceSteel`
 - `resourceForgedIron`, `resourceForgedSteel`, `resourceBulletCasing`
 - `resourceGunPowder`, `resourceNail`, `resourceDuctTape`, `resourceGlue`
 
 **Books & Schematics** (~20 items) — Skill books, perk magazines, crafting schematics:
+
 - `bookFiremansAlmanacHeat`, `bookNightStalkerStealthDamage`, `bookRangersCraftingBow`
 - Each book series grants bonuses from its respective perk line
 
 **Robotic Companions** (4 items) — Automated turrets and drones:
+
 - `gunBotT1JunkSledge`, `gunBotT2JunkTurret`, `gunBotT3JunkDrone`
 
 **Vehicle Placement Items** — Vehicles exist in `vehicles.xml` as behavior definitions, but are **placed through items** defined in `items.xml`:
+
 - `vehicleBicyclePlaceable`, `vehicleMinibikePlaceable`, `vehicleMotorcyclePlaceable`
 - `vehicleTruck4x4Placeable`, `vehicleGyrocopterPlaceable`
 
 **Special / Quest Items** (~23 items) — Quest rewards, treasure maps, admin tools:
+
 - Hidden from the Creative Menu but usable via `giveself`
 
 #### Hidden Items (`CreativeMode="None"`, 551 items)
 
 These are not visible in the Creative Menu but can be given via `giveself`. They include:
+
 - **Master templates** — base definitions other items extend (e.g., `meleeWpnBladeMaster`, `gunHandgunMaster`, `partsMaster`)
 - **Internal quest items** — `questMaster`, `adminQuestTicketMaster`
 - **Intermediate crafting items** — items referenced by recipes but not directly useful
@@ -363,10 +375,10 @@ Defines **all blocks that exist in the game world**: terrain, building materials
 
 Blocks can also be received into inventory like items (as a held block) and placed in the world.
 
-#### CreativeMode Breakdown
+#### `blocks.xml` — CreativeMode Breakdown
 
 | CreativeMode | Count | Description |
-|---|---|---|
+| --- | --- | --- |
 | *(default)* | 3 709 | Standard blocks (many are POI-specific) |
 | `Dev` | 1 342 | Developer-only blocks |
 | `Player` | 814 | Explicitly player-visible in Creative Menu |
@@ -379,7 +391,7 @@ Blocks can also be received into inventory like items (as a held block) and plac
 Blocks are not just simple cubes — they have functional classes:
 
 | Block Class | Count | Description |
-|---|---|---|
+| --- | --- | --- |
 | *(default block)* | 5 649 | Standard placeable blocks with no special behavior |
 | `Loot` | 300 | Lootable containers (trash cans, cupboards, safes, etc.) |
 | `DoorSecure` | 75 | Lockable/secure doors |
@@ -400,7 +412,7 @@ Blocks are not just simple cubes — they have functional classes:
 #### Block Materials (top 15)
 
 | Material | Count | Description |
-|---|---|---|
+| --- | --- | --- |
 | `Mmetal` | 166 | Standard metal |
 | `Mmetal_weak` | 46 | Weak metal |
 | `Mfurniture` | 40 | Furniture |
@@ -422,7 +434,7 @@ Blocks are not just simple cubes — they have functional classes:
 Blocks with `CreativeMode="Player"` (814 blocks) organized by Group:
 
 | Group | Count | Examples |
-|---|---|---|
+| --- | --- | --- |
 | *(no group)* | 756 | Various building shapes, doors, windows, frames |
 | `Science,TCScience` | 17 | Electrical devices, traps, generators |
 | `Decor/Miscellaneous` | 14 | Decorative blocks, signs, flags |
@@ -434,6 +446,7 @@ Blocks with `CreativeMode="Player"` (814 blocks) organized by Group:
 #### Developer Blocks (`CreativeMode="Dev"`, 1 342 blocks)
 
 A large portion of blocks are marked Dev-only. These include:
+
 - POI-specific structural blocks used by the world generator
 - Variant shapes and damage states of building blocks
 - Debug and testing blocks
@@ -445,10 +458,10 @@ A large portion of blocks are marked Dev-only. These include:
 
 Defines **all modification attachments** for weapons, tools, armor, vehicles, and drones. These are inventory objects that can be installed into compatible equipment mod slots.
 
-#### CreativeMode Breakdown
+#### `item_modifiers.xml` — CreativeMode Breakdown
 
 | CreativeMode | Count | Description |
-|---|---|---|
+| --- | --- | --- |
 | *(default)* | 93 | Visible in Creative Menu |
 | `None` | 5 | Hidden (master templates, special mods) |
 | `Dev` | 5 | Developer-only mods |
@@ -458,6 +471,7 @@ Defines **all modification attachments** for weapons, tools, armor, vehicles, an
 #### Mod Categories
 
 **Gun Mods** (25 mods) — Attachments for firearms:
+
 - Barrel: `modGunBarrelExtender`, `modGunMuzzleBrake`, `modGunSoundSuppressorSilencer`
 - Optics: `modGunScopeSmall`, `modGunScopeMedium`, `modGunScopeLarge`, `modGunReflexSight`, `modGunLaserSight`
 - Grips/Stocks: `modGunForegrip`, `modGunRetractingStock`, `modGunBipod`
@@ -468,6 +482,7 @@ Defines **all modification attachments** for weapons, tools, armor, vehicles, an
 - Hybrid: `modGunMeleeTheHunter`, `modGunMeleeRadRemover`
 
 **Melee Mods** (16 mods) — Attachments for melee weapons and tools:
+
 - Blades: `modMeleeTemperedBlade`, `modMeleeSerratedBlade`
 - Head/Weight: `modMeleeWeightedHead`, `modMeleeStructuralBrace`
 - Grips: `modMeleeErgonomicGrip`, `modMeleeFortifyingGrip`
@@ -476,6 +491,7 @@ Defines **all modification attachments** for weapons, tools, armor, vehicles, an
 - Stun Baton: `modMeleeStunBatonRepulsor`
 
 **Armor Mods** (22 mods) — Attachments for clothing and armor:
+
 - Insulation: `modArmorInsulatedLinerT1`/`T2`/`T3`
 - Storage: `modArmorStoragePocket`, `modArmorDoubleStoragePocket`, `modArmorTripleStoragePocket`, `modArmorQuadStoragePocket`
 - Protection: `modArmorPlatingBasic`, `modArmorPlatingReinforced`, `modArmorImpactBracing`
@@ -485,25 +501,30 @@ Defines **all modification attachments** for weapons, tools, armor, vehicles, an
 - Other: `modArmorBandolier`, `modArmorImprovedFittings`, `modArmorCustomizedFittings`, `modArmorTreasureHunter`
 
 **Fuel Tank Mods** (2 mods):
+
 - `modFuelTankSmall`, `modFuelTankLarge`
 
 **Dye Mods** (9 mods) — Color dyes for equipment:
+
 - `modDyeBrown`, `modDyeRed`, `modDyeOrange`, `modDyeYellow`, `modDyeGreen`, `modDyeBlue`, `modDyePurple`, `modDyeBlack`, `modDyePink`
 - Base: `modDyeWhite` (hidden, `CreativeMode="None"`)
 
 **Vehicle Mods** (8 mods) — Attachments for vehicles:
+
 - `modVehicleFuelSaver`, `modVehicleOffRoadHeadlights`, `modVehicleSuperCharger`
 - `modVehicleExpandedSeat`, `modVehicleReserveFuelTank`
 - `modVehiclePlow`, `modVehicleArmor`, `modVehicleStorage`
 - Dev: `modVehicleMega`
 
 **Robotic Drone Mods** (5 mods) — Attachments for the Junk Drone:
+
 - `modRoboticDroneArmorPlatingMod`, `modRoboticDroneCargoMod`
 - `modRoboticDroneMoraleBoosterMod`, `modRoboticDroneHeadlampMod`
 - `modRoboticDroneMedicMod`
 - Hidden: `modRoboticDroneWeaponMod`, `modRoboticDroneStunWeaponMod` (`CreativeMode="None"`)
 
 **Developer/Test Mods** (9 mods):
+
 - `modMeleeGunToolDecapitizer`, `modArmorJumpJets`, `modGunBowAdminArcheryReloadRecovery`, `modArmorAdminToughGuyShirt` (Dev)
 - `questWhiteRiverSupplies`, `questCassadoreSupplies`, `modGunButtkick3000`, `modGunButtkick4000` (Test)
 - `modGeneralMaster` (None — base template)
@@ -515,7 +536,7 @@ Defines **all modification attachments** for weapons, tools, armor, vehicles, an
 The following config files are often confused with item sources but do **not** define giveable objects:
 
 | File | What It Defines | Relationship to Inventory |
-|---|---|---|
+| --- | --- | --- |
 | `vehicles.xml` | Vehicle **behavior** (speed, physics, fuel, parts) | Vehicles are **placed via items** in `items.xml` (e.g., `vehicleMinibikePlaceable`). The `vehicles.xml` file only defines how they drive. |
 | `recipes.xml` | **Crafting recipes** and ingredient lists | References items/blocks from the other files; does not create new objects. |
 | `loot.xml` | **Loot tables** — probability tables for container drops | References items/blocks; does not create new objects. |
