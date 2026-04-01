@@ -271,6 +271,21 @@ def parse_objects(xml_path: str, tag: str, source_label: str) -> list[dict]:
         # Determine the actual icon filename (without .png)
         icon_name = custom_icon if custom_icon else name
 
+        # Collect Extends chain names as fallback icon candidates
+        # (used when neither CustomIcon nor own-name icon file exists)
+        extends_chain: list[str] = []
+        if custom_icon is None:
+            _walk = props.get("Extends")
+            _depth = 0
+            while _walk and _depth < 10:
+                extends_chain.append(_walk)
+                _par = elements_by_name.get(_walk)
+                if _par is None:
+                    break
+                _ext = _par.find("property[@name='Extends']")
+                _walk = _ext.get("value", "") if _ext is not None else ""
+                _depth += 1
+
         objects.append({
             "name": name,
             "source": source_label,
@@ -280,6 +295,7 @@ def parse_objects(xml_path: str, tag: str, source_label: str) -> list[dict]:
             "creative_mode": creative_mode,
             "group": group,
             "block_class": block_class,
+            "extends_chain": extends_chain,
         })
 
     return objects
@@ -780,15 +796,29 @@ def main():
     print(f"  Icon files found: {len(icon_index)}")
 
     # Stats: how many objects have matching icons?
+    # Also resolve fallback icon names via Extends chain.
     found = 0
     missing = 0
+    fallback_resolved = 0
     for objects in all_objects.values():
         for obj in objects:
             if obj["icon_name"].lower() in icon_index:
                 found += 1
             else:
-                missing += 1
+                # Try parent names from Extends chain as icon fallback
+                resolved = False
+                for parent_name in obj.get("extends_chain", []):
+                    if parent_name.lower() in icon_index:
+                        obj["icon_name"] = parent_name
+                        found += 1
+                        fallback_resolved += 1
+                        resolved = True
+                        break
+                if not resolved:
+                    missing += 1
     print(f"  Objects with icon: {found}, without: {missing}")
+    if fallback_resolved:
+        print(f"  Resolved via Extends fallback: {fallback_resolved}")
 
     print("\n[4/5] Processing icons (resize + tint) …")
     icons_dst_dir = OUTPUT_HTML.rsplit(".", 1)[0]  # build/inventory_catalog
