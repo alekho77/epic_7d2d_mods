@@ -136,6 +136,55 @@ def categorize_items(items: list[dict]) -> list[tuple[str, list[dict]]]:
 
 
 # ---------------------------------------------------------------------------
+# Item Modifier sub-categories (matches Mod Categories from modding_guide.md)
+# ---------------------------------------------------------------------------
+
+_MOD_CATEGORY_RULES: list[tuple[str, callable]] = [
+    ("Gun Mods",            lambda o: o["name"].startswith("modGun") or
+                            o["name"].startswith("modShotgun")),
+    ("Melee Mods",          lambda o: o["name"].startswith("modMelee")),
+    ("Armor Mods",          lambda o: o["name"].startswith("modArmor")),
+    ("Dye Mods",            lambda o: o["name"].startswith("modDye")),
+    ("Vehicle Mods",        lambda o: o["name"].startswith("modVehicle")),
+    ("Robotic Drone Mods",  lambda o: o["name"].startswith("modRoboticDrone")),
+    ("Fuel Tank Mods",      lambda o: o["name"].startswith("modFuelTank")),
+]
+
+
+def categorize_modifiers(modifiers: list[dict]) -> list[tuple[str, list[dict]]]:
+    """Split item modifiers into sub-categories by name prefix."""
+    buckets: dict[str, list[dict]] = {}
+    for cat, _ in _MOD_CATEGORY_RULES:
+        buckets[cat] = []
+    buckets["Other"] = []
+    hidden: list[dict] = []
+
+    for obj in modifiers:
+        cm = obj.get("creative_mode", "")
+        if cm in ("Dev", "Test", "None"):
+            hidden.append(obj)
+            continue
+        matched = False
+        for cat, rule in _MOD_CATEGORY_RULES:
+            if rule(obj):
+                buckets[cat].append(obj)
+                matched = True
+                break
+        if not matched:
+            buckets["Other"].append(obj)
+
+    result = []
+    for cat, _ in _MOD_CATEGORY_RULES:
+        if buckets[cat]:
+            result.append((cat, buckets[cat]))
+    if buckets["Other"]:
+        result.append(("Other", buckets["Other"]))
+    if hidden:
+        result.append(("Hidden / Dev / Test", hidden))
+    return result
+
+
+# ---------------------------------------------------------------------------
 # Block sub-categories (by Class property from blocks.xml)
 # ---------------------------------------------------------------------------
 
@@ -585,14 +634,29 @@ def render_html(
             )
             _render_table(lines, cat_blocks, anchor, localization, icon_map)
 
-    # --- Item Modifiers: single table ---
-    for source_label in ["Item Modifiers"]:
-        if source_label not in all_objects:
-            continue
-        objects = all_objects[source_label]
-        anchor = source_label.replace(" ", "_").lower()
-        lines.append(f'<h2 id="{anchor}">{_esc(source_label)} ({len(objects)})</h2>')
-        _render_table(lines, objects, anchor, localization, icon_map)
+    # --- Item Modifiers: split into sub-categories ---
+    if "Item Modifiers" in all_objects:
+        modifiers = all_objects["Item Modifiers"]
+        mod_categories = categorize_modifiers(modifiers)
+
+        lines.append(f'<h2 id="item_modifiers">Item Modifiers ({len(modifiers)})</h2>')
+
+        # Table of contents for mod categories
+        lines.append('<div class="category-nav">')
+        for cat, cat_mods in mod_categories:
+            anchor = "mods_" + cat.lower().replace(" ", "_").replace("/", "_")
+            lines.append(
+                f'  <a href="#{_esc(anchor)}">{_esc(cat)}</a>'
+                f' <small>({len(cat_mods)})</small>'
+            )
+        lines.append("</div>")
+
+        for cat, cat_mods in mod_categories:
+            anchor = "mods_" + cat.lower().replace(" ", "_").replace("/", "_")
+            lines.append(
+                f'<h3 id="{_esc(anchor)}">{_esc(cat)} ({len(cat_mods)})</h3>'
+            )
+            _render_table(lines, cat_mods, anchor, localization, icon_map)
 
     lines.append(_JS)
     lines.append("</body></html>")
