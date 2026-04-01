@@ -36,7 +36,7 @@ from lxml import etree
 # ---------------------------------------------------------------------------
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.dirname(SCRIPT_DIR)
-CONFIG_DIR = os.path.join(ROOT_DIR, "Config")
+CONFIG_DIR = os.path.join(ROOT_DIR, "Data", "Config")
 BUILD_DIR = os.path.join(ROOT_DIR, "build")
 
 RECIPES_XML = os.path.join(CONFIG_DIR, "recipes.xml")
