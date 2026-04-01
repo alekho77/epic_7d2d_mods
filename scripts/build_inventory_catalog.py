@@ -49,6 +49,91 @@ SOURCES = [
     (ITEM_MODIFIERS_XML, "item_modifier", "Item Modifiers"),
 ]
 
+# ---------------------------------------------------------------------------
+# Item sub-categories (matches Major Item Categories from modding_guide.md)
+# ---------------------------------------------------------------------------
+
+# Order matters — first match wins.
+_ITEM_CATEGORY_RULES: list[tuple[str, callable]] = [
+    ("Ranged Weapons",      lambda o: _grp(o, "Ranged Weapons") or
+                            (o["name"].startswith("gun") and not o["name"].startswith("gunBot"))),
+    ("Melee Weapons",       lambda o: _grp(o, "Melee Weapons") or
+                            o["name"].startswith("meleeWpn") or
+                            o["name"].startswith("meleeHand")),
+    ("Tools",               lambda o: _grp(o, "Tools/Traps") or
+                            o["name"].startswith("meleeTool")),
+    ("Robotic Companions",  lambda o: _grp(o, "Robotics") or
+                            o["name"].startswith("gunBot")),
+    ("Ammunition",          lambda o: _grp(o, "Ammo") or
+                            o["name"].startswith("ammo")),
+    ("Food & Drinks",       lambda o: _grp(o, "Food/Cooking") or
+                            _grp(o, "Drink") or
+                            o["name"].startswith("food") or
+                            o["name"].startswith("drink")),
+    ("Medicine & Science",  lambda o: _grp(o, "Medical") or
+                            _grp(o, "Science") or
+                            o["name"].startswith("medical") or
+                            o["name"].startswith("drug")),
+    ("Clothing & Armor",    lambda o: _grp(o, "Armor") or
+                            _grp(o, "Clothing") or
+                            o["name"].startswith("armor") or
+                            o["name"].startswith("clothing") or
+                            o["name"].startswith("apparel")),
+    ("Resources & Materials", lambda o: _grp(o, "Resources") or
+                            _grp(o, "Chemicals") or
+                            o["name"].startswith("resource") or
+                            o["name"].startswith("unit_")),
+    ("Books & Schematics",  lambda o: _grp(o, "Books") or
+                            o["name"].startswith("book") or
+                            o["name"].startswith("schematic")),
+    ("Vehicles",            lambda o: o["name"].startswith("vehicle")),
+    ("Decorations",         lambda o: _grp(o, "Decor")),
+    ("Special / Quest Items", lambda o: _grp(o, "Special Items") or
+                            o["name"].startswith("quest")),
+]
+
+
+def _grp(obj: dict, keyword: str) -> bool:
+    """Check if any of the object's comma-separated Group values contain *keyword*."""
+    return keyword in obj.get("group", "")
+
+
+def categorize_items(items: list[dict]) -> list[tuple[str, list[dict]]]:
+    """
+    Split items into sub-categories.  Returns a list of (category_name, items)
+    tuples preserving insertion order, plus a final catch-all bucket.
+    Hidden/internal items (CreativeMode='None') are separated first.
+    """
+    buckets: dict[str, list[dict]] = {}
+    for cat, _ in _ITEM_CATEGORY_RULES:
+        buckets[cat] = []
+    buckets["Other"] = []
+    hidden: list[dict] = []
+
+    for obj in items:
+        if obj.get("creative_mode") == "None":
+            hidden.append(obj)
+            continue
+        matched = False
+        for cat, rule in _ITEM_CATEGORY_RULES:
+            if rule(obj):
+                buckets[cat].append(obj)
+                matched = True
+                break
+        if not matched:
+            buckets["Other"].append(obj)
+
+    # Build result: non-empty categories in definition order, then Other, then Hidden
+    result = []
+    for cat, _ in _ITEM_CATEGORY_RULES:
+        if buckets[cat]:
+            result.append((cat, buckets[cat]))
+    if buckets["Other"]:
+        result.append(("Other", buckets["Other"]))
+    if hidden:
+        result.append(("Hidden / Internal", hidden))
+    return result
+
 
 def parse_objects(xml_path: str, tag: str, source_label: str) -> list[dict]:
     """Parse all objects from an XML file, resolving CustomIcon via Extends."""
@@ -348,62 +433,38 @@ def render_html(
     lines.append("  </select>")
     lines.append("</div>")
 
-    # One table per source
-    for label, objects in all_objects.items():
-        anchor = label.replace(" ", "_").lower()
-        lines.append(f'<h2 id="{anchor}">{_esc(label)} ({len(objects)})</h2>')
-        lines.append(f'<table class="catalog" data-section="{_esc(anchor)}">')
-        lines.append("<thead><tr>")
-        lines.append("  <th>Icon</th>")
-        lines.append('  <th class="sortable" onclick="sortSection(this, 1)">Name (ID)</th>')
-        lines.append('  <th class="sortable" onclick="sortSection(this, 2)">English</th>')
-        lines.append('  <th class="sortable" onclick="sortSection(this, 3)">Russian</th>')
-        lines.append("  <th>Description (RU)</th>")
-        lines.append('  <th class="sortable" onclick="sortSection(this, 5)">Creative</th>')
-        lines.append("</tr></thead><tbody>")
+    # --- Items: split into sub-categories ---
+    if "Items" in all_objects:
+        items = all_objects["Items"]
+        categories = categorize_items(items)
 
-        for obj in objects:
-            name = obj["name"]
-            icon_name = obj["icon_name"]
-            tint = obj.get("custom_icon_tint")
-            creative = obj["creative_mode"]
+        lines.append(f'<h2 id="items">Items ({len(items)})</h2>')
 
-            loc_name = localization.get(name, {})
-            en_name = loc_name.get("english", "")
-            ru_name = loc_name.get("russian", "")
-
-            loc_desc = localization.get(name + "Desc", {})
-            ru_desc = loc_desc.get("russian", "")
-
-            # Icon HTML
-            icon_key = (icon_name, tint)
-            icon_path = icon_map.get(icon_key)
-            if icon_path:
-                icon_html = (
-                    f'<img src="{_esc(icon_path)}" width="40" height="40" '
-                    f'loading="lazy" alt="{_esc(icon_name)}">'
-                )
-            else:
-                icon_html = '<span class="no-icon">—</span>'
-
-            # CreativeMode badge
-            cm_color = CREATIVE_COLORS.get(creative, "#aaa")
-            cm_label = creative if creative else "default"
-            cm_html = f'<span class="cm-badge" style="color:{cm_color}">{_esc(cm_label)}</span>'
-
-            search_text = f"{name.lower()} {en_name.lower()} {ru_name.lower()}"
+        # Table of contents for categories
+        lines.append('<div class="category-nav">')
+        for cat, cat_items in categories:
+            anchor = "items_" + cat.lower().replace(" ", "_").replace("/", "_")
             lines.append(
-                f'<tr data-search="{_esc(search_text)}" data-cm="{_esc(creative)}">'
+                f'  <a href="#{_esc(anchor)}">{_esc(cat)}</a>'
+                f' <small>({len(cat_items)})</small>'
             )
-            lines.append(f"  <td class=\"icon-cell\">{icon_html}</td>")
-            lines.append(f"  <td class=\"name-cell\"><code>{_esc(name)}</code></td>")
-            lines.append(f"  <td>{_esc(en_name)}</td>")
-            lines.append(f"  <td>{_esc(ru_name)}</td>")
-            lines.append(f"  <td class=\"desc-cell\">{_esc(ru_desc)}</td>")
-            lines.append(f"  <td>{cm_html}</td>")
-            lines.append("</tr>")
+        lines.append("</div>")
 
-        lines.append("</tbody></table>")
+        for cat, cat_items in categories:
+            anchor = "items_" + cat.lower().replace(" ", "_").replace("/", "_")
+            lines.append(
+                f'<h3 id="{_esc(anchor)}">{_esc(cat)} ({len(cat_items)})</h3>'
+            )
+            _render_table(lines, cat_items, anchor, localization, icon_map)
+
+    # --- Blocks and Item Modifiers: single table each ---
+    for source_label in ["Blocks", "Item Modifiers"]:
+        if source_label not in all_objects:
+            continue
+        objects = all_objects[source_label]
+        anchor = source_label.replace(" ", "_").lower()
+        lines.append(f'<h2 id="{anchor}">{_esc(source_label)} ({len(objects)})</h2>')
+        _render_table(lines, objects, anchor, localization, icon_map)
 
     lines.append(_JS)
     lines.append("</body></html>")
@@ -413,6 +474,68 @@ def render_html(
         f.write("\n".join(lines))
 
     print(f"\n  Report saved → {output_path}")
+
+
+def _render_table(
+    lines: list[str],
+    objects: list[dict],
+    anchor: str,
+    localization: dict,
+    icon_map: dict,
+):
+    """Render a single catalog table into *lines*."""
+    lines.append(f'<table class="catalog" data-section="{_esc(anchor)}">')
+    lines.append("<thead><tr>")
+    lines.append("  <th>Icon</th>")
+    lines.append('  <th class="sortable" onclick="sortSection(this, 1)">Name (ID)</th>')
+    lines.append('  <th class="sortable" onclick="sortSection(this, 2)">English</th>')
+    lines.append('  <th class="sortable" onclick="sortSection(this, 3)">Russian</th>')
+    lines.append("  <th>Description (RU)</th>")
+    lines.append('  <th class="sortable" onclick="sortSection(this, 5)">Creative</th>')
+    lines.append("</tr></thead><tbody>")
+
+    for obj in objects:
+        name = obj["name"]
+        icon_name = obj["icon_name"]
+        tint = obj.get("custom_icon_tint")
+        creative = obj["creative_mode"]
+
+        loc_name = localization.get(name, {})
+        en_name = loc_name.get("english", "")
+        ru_name = loc_name.get("russian", "")
+
+        loc_desc = localization.get(name + "Desc", {})
+        ru_desc = loc_desc.get("russian", "")
+
+        # Icon HTML
+        icon_key = (icon_name, tint)
+        icon_path = icon_map.get(icon_key)
+        if icon_path:
+            icon_html = (
+                f'<img src="{_esc(icon_path)}" width="40" height="40" '
+                f'loading="lazy" alt="{_esc(icon_name)}">'
+            )
+        else:
+            icon_html = '<span class="no-icon">—</span>'
+
+        # CreativeMode badge
+        cm_color = CREATIVE_COLORS.get(creative, "#aaa")
+        cm_label = creative if creative else "default"
+        cm_html = f'<span class="cm-badge" style="color:{cm_color}">{_esc(cm_label)}</span>'
+
+        search_text = f"{name.lower()} {en_name.lower()} {ru_name.lower()}"
+        lines.append(
+            f'<tr data-search="{_esc(search_text)}" data-cm="{_esc(creative)}">'
+        )
+        lines.append(f"  <td class=\"icon-cell\">{icon_html}</td>")
+        lines.append(f"  <td class=\"name-cell\"><code>{_esc(name)}</code></td>")
+        lines.append(f"  <td>{_esc(en_name)}</td>")
+        lines.append(f"  <td>{_esc(ru_name)}</td>")
+        lines.append(f"  <td class=\"desc-cell\">{_esc(ru_desc)}</td>")
+        lines.append(f"  <td>{cm_html}</td>")
+        lines.append("</tr>")
+
+    lines.append("</tbody></table>")
 
 
 # ---------------------------------------------------------------------------
@@ -429,6 +552,19 @@ h2 {
     color: #ccc; margin-top: 30px; padding-bottom: 6px;
     border-bottom: 1px solid #333;
 }
+h3 {
+    color: #aab; margin-top: 22px; margin-bottom: 6px; font-size: 16px;
+    padding-left: 10px; border-left: 3px solid #4a5a8a;
+}
+.category-nav {
+    display: flex; flex-wrap: wrap; gap: 6px 16px;
+    margin: 10px 0 14px 0; font-size: 13px;
+}
+.category-nav a {
+    color: #6a9fd8; text-decoration: none;
+}
+.category-nav a:hover { text-decoration: underline; }
+.category-nav small { color: #777; }
 .summary { color: #aaa; margin-bottom: 15px; font-size: 14px; }
 .controls {
     display: flex; gap: 10px; margin-bottom: 15px;
