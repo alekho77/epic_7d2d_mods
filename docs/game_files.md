@@ -5,7 +5,7 @@ All paths are relative to the game installation root.
 ## Legend
 
 | Origin | Meaning |
-|---|---|
+| --- | --- |
 | **TFP** | The Fun Pimps (game developer) |
 | **Unity** | Unity engine / Unity Technologies |
 | **.NET** | Mono / .NET framework |
@@ -20,7 +20,7 @@ All paths are relative to the game installation root.
 ## Root Directory
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `7DaysToDie.exe` | TFP | Main game executable (launches without EAC) |
 | `7DaysToDie_EAC.exe` | TFP/EAC | EAC-enabled executable used in the anti-cheat startup path |
 | `7dLauncher.exe` | TFP | Steam launcher executable — launches the game, shows launcher UI, can start without EAC |
@@ -46,7 +46,7 @@ All paths are relative to the game installation root.
 ## `7DaysToDie_Data\`
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `7DaysToDie_Data\app.info` | Unity | Application metadata (company, product name) |
 | `7DaysToDie_Data\boot.config` | Unity | Unity boot parameters (scripting backend, GC settings) |
 | `7DaysToDie_Data\data.unity3d` | Unity | Packed Unity asset data (scenes, shaders, built-in resources) |
@@ -58,13 +58,13 @@ All paths are relative to the game installation root.
 ### `7DaysToDie_Data\Resources\`
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `7DaysToDie_Data\Resources\unity default resources` | Unity | Built-in Unity default assets (shaders, materials, fonts) |
 
 ### `7DaysToDie_Data\StreamingAssets\`
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `7DaysToDie_Data\StreamingAssets\aa\catalog.json` | Unity | Addressables catalog — master index mapping asset addresses to bundle paths |
 | `7DaysToDie_Data\StreamingAssets\aa\settings.json` | Unity | Addressables system settings |
 | `7DaysToDie_Data\StreamingAssets\aa\shaders.json` | Unity | Shader variant tracking data |
@@ -78,7 +78,7 @@ All paths are relative to the game installation root.
 ### TFP Game Assemblies
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `7DaysToDie_Data\Managed\Assembly-CSharp.dll` | TFP | **Main game code** — all items, blocks, entities, AI, UI, networking, world gen, buffs, crafting, quests |
 | `7DaysToDie_Data\Managed\Assembly-CSharp-firstpass.dll` | TFP | Early-init code loaded before main assembly — utility classes, base types |
 | `7DaysToDie_Data\Managed\LogLibrary.dll` | TFP | Custom TFP logging framework |
@@ -86,7 +86,7 @@ All paths are relative to the game installation root.
 ### Third-Party Libraries
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `7DaysToDie_Data\Managed\NGUI.dll` | 3rd | NGUI — underlying UI runtime library; game's moddable UI layer is XUi (`Data\Config\XUi\`) built on top of NGUI |
 | `7DaysToDie_Data\Managed\NCalc.dll` | 3rd | Math expression evaluator (used in buff/progression formulas) |
 | `7DaysToDie_Data\Managed\AstarPathfindingProject.dll` | 3rd | A* Pathfinding Project Pro — NPC/zombie navigation |
@@ -112,7 +112,7 @@ All paths are relative to the game installation root.
 ### Platform SDKs
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `7DaysToDie_Data\Managed\com.rlabrecque.steamworks.net.dll` | 3rd | Steamworks.NET — Steam API wrapper (achievements, lobbies, workshop) |
 | `7DaysToDie_Data\Managed\Discord.Sdk.dll` | 3rd | Discord Rich Presence / Game SDK |
 | `7DaysToDie_Data\Managed\EOS.dll` | 3rd | Epic Online Services managed wrapper |
@@ -124,7 +124,7 @@ All paths are relative to the game installation root.
 ### Unity Engine Modules
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `7DaysToDie_Data\Managed\UnityEngine.dll` | Unity | Unity engine facade/entry point |
 | `7DaysToDie_Data\Managed\UnityEngine.CoreModule.dll` | Unity | Core types: `GameObject`, `MonoBehaviour`, `Transform`, `Component` |
 | `7DaysToDie_Data\Managed\UnityEngine.PhysicsModule.dll` | Unity | Physics, raycasts, colliders, rigidbodies |
@@ -197,7 +197,7 @@ All paths are relative to the game installation root.
 ### Unity Packages
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `7DaysToDie_Data\Managed\Unity.Addressables.dll` | Unity | Addressable Asset System (asset loading/management) |
 | `7DaysToDie_Data\Managed\Unity.ResourceManager.dll` | Unity | Resource management for Addressables |
 | `7DaysToDie_Data\Managed\Unity.TextMeshPro.dll` | Unity | TextMeshPro text rendering |
@@ -219,7 +219,7 @@ All paths are relative to the game installation root.
 ### .NET / Mono Framework
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `7DaysToDie_Data\Managed\mscorlib.dll` | .NET | Core .NET runtime (object, string, collections, threading) |
 | `7DaysToDie_Data\Managed\System.dll` | .NET | Core System classes (IO, Net, Config, Diagnostics) |
 | `7DaysToDie_Data\Managed\System.Core.dll` | .NET | LINQ, Expressions, dynamic types |
@@ -256,7 +256,7 @@ All paths are relative to the game installation root.
 ## `7DaysToDie_Data\Plugins\x86_64\` — Native Plugins
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `7DaysToDie_Data\Plugins\x86_64\steam_api64.dll` | Steam | Steamworks native API |
 | `7DaysToDie_Data\Plugins\x86_64\EOSSDK-Win64-Shipping.dll` | 3rd (Epic) | Epic Online Services native SDK |
 | `7DaysToDie_Data\Plugins\x86_64\discord_partner_sdk.dll` | 3rd | Discord SDK native library |
@@ -279,13 +279,13 @@ All paths are relative to the game installation root.
 ## `Data\` — Game Content Root
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `Data\7dtd_icon.ico` | TFP | Game icon file |
 
 ### `Data\Config\` — XML Configuration Files
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `Data\Config\items.xml` | TFP | All holdable items: weapons, tools, consumables, resources, ammo and their properties |
 | `Data\Config\blocks.xml` | TFP | All placeable blocks: terrain, structures, doors, traps, workstations, storage |
 | `Data\Config\recipes.xml` | TFP | Crafting recipes: ingredients, output amounts, required workstations |
@@ -337,7 +337,7 @@ All paths are relative to the game installation root.
 ### `Data\Config\XUi\` — In-Game HUD UI
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `Data\Config\XUi\windows.xml` | TFP | All in-game HUD windows: inventory, crafting, loot, map, compass, health bars, hotbar, container UI, vehicle UI, trader UI |
 | `Data\Config\XUi\controls.xml` | TFP | Reusable UI components: buttons, item slots, icons, lists, grids, scrollbars |
 | `Data\Config\XUi\styles.xml` | TFP | UI styles: colors, font sizes, padding, alignment, anchoring |
@@ -346,7 +346,7 @@ All paths are relative to the game installation root.
 ### `Data\Config\XUi_Menu\` — Main Menu UI
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `Data\Config\XUi_Menu\windows.xml` | TFP | Main menu windows: start screen, settings, world selection, multiplayer browser |
 | `Data\Config\XUi_Menu\controls.xml` | TFP | Menu-specific UI components |
 | `Data\Config\XUi_Menu\styles.xml` | TFP | Menu UI styles |
@@ -355,33 +355,33 @@ All paths are relative to the game installation root.
 ### `Data\Config\XUi_Common\` — Shared UI Components
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `Data\Config\XUi_Common\controls.xml` | TFP | Shared controls used by both HUD and Menu |
 | `Data\Config\XUi_Common\styles.xml` | TFP | Shared styles used by both HUD and Menu |
 
 ### `Data\ItemIcons\` — Item/Block Icons (~5091 PNG files)
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `Data\ItemIcons\*.png` | TFP | PNG icon sprites for every item and block. Filename matches `name` attribute from `items.xml` / `blocks.xml` (e.g., `gunPistol.png`, `drinkJarBoiledWater.png`). Typically 116×116 or 232×232 px with transparency. |
 
 ### `Data\Music\` — Music Tracks (~496 WAV files)
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `Data\Music\*.wav` | TFP | WAV music tracks. Naming convention: `NNN_<type>_NN.wav`. Types: `combat`, `explore`, `suspense`, `building`, `ambient`, `bloodmoon`. Used by the dynamic music system; see `dmscontent.xml` and possibly `music.xml`. |
 
 ### `Data\Bluffs\`
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `Data\Bluffs\bluff1.tga` | TFP | Terrain bluff texture #1 |
 | `Data\Bluffs\bluff2.tga` | TFP | Terrain bluff texture #2 |
 
 ### `Data\Stamps\` — Terrain Generation Stamps (~28 files)
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `Data\Stamps\base_01.raw` | TFP | Base terrain elevation stamp |
 | `Data\Stamps\canyon_01.raw` | TFP | Canyon terrain stamp |
 | `Data\Stamps\crater_01.raw` | TFP | Crater terrain stamp |
@@ -412,13 +412,13 @@ All paths are relative to the game installation root.
 ### `Data\UMATextures\`
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `Data\UMATextures\` | TFP | Directory present; empty in this build snapshot |
 
 ### `Data\Prefabs\` — World Prefab Structures
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `Data\Prefabs\POIs\` (~1041 POIs, 6227 files) | TFP | Points of Interest: houses, stores, factories, farms, caves, hospitals, trader bases, etc. POIs typically include files such as `.xml` (metadata, dimensions, biome tags, tier), `.tts` (block data), `.nim` (block NIM), `.mesh` (AI nav mesh), `.jpg` (preview), `.ins` (instance data) |
 | `Data\Prefabs\Parts\` (3143 files) | TFP | Reusable prefab components/building parts |
 | `Data\Prefabs\RWGTiles\` (348 files) | TFP | Random World Generation road/city tile templates |
@@ -427,7 +427,7 @@ All paths are relative to the game installation root.
 ### `Data\Bundles\Standalone\Entities\` — Legacy AssetBundles
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `Data\Bundles\Standalone\Entities\Entities` | TFP | Unity AssetBundle containing entity models (zombies, animals, NPCs) |
 | `Data\Bundles\Standalone\Entities\Entities.manifest` | TFP | Manifest for Entities bundle |
 | `Data\Bundles\Standalone\Entities\trees` | TFP | Unity AssetBundle containing tree/vegetation models |
@@ -438,7 +438,7 @@ All paths are relative to the game installation root.
 #### Global Bundles
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `…\7c401d1245288cd4ca6169241e1a104c_unitybuiltinshaders.bundle` | Unity | Built-in shader variants |
 | `…\blocktextureatlases_assets_all.bundle` | TFP | Texture atlas for all block surfaces |
 | `…\terraintextures_assets_all.bundle` | TFP | Terrain surface textures (dirt, stone, snow, sand, grass) |
@@ -452,13 +452,13 @@ All paths are relative to the game installation root.
 #### Animation Bundles (`animations_assets_animations\`)
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `…\animations_assets_animations\zombie.bundle` | TFP | Zombie animation clips |
 
 #### Entity Bundles (`automatic_assets_entities\`)
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `…\automatic_assets_entities\animals.bundle` | TFP | Animal models and materials |
 | `…\automatic_assets_entities\appliances.bundle` | TFP | Appliance entity models |
 | `…\automatic_assets_entities\banditprops.bundle` | TFP | Bandit prop models |
@@ -497,7 +497,7 @@ All paths are relative to the game installation root.
 #### Sound Bundles (`automatic_assets_sounds\`)
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `…\automatic_assets_sounds\ambient_loops.bundle` | TFP | Ambient loop sound effects |
 | `…\automatic_assets_sounds\ambient_oneshots.bundle` | TFP | Ambient one-shot sound effects |
 | `…\automatic_assets_sounds\animals.bundle` | TFP | Animal sound effects |
@@ -544,14 +544,14 @@ All paths are relative to the game installation root.
 #### Generic/Other Bundles
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `…\automatic_assets_generic\itemicons.bundle` | TFP | Item icon atlas (Addressable) |
 | `…\automatic_assets_other\items.bundle` | TFP | Item models and materials |
 
 #### DLC Cosmetic Bundles (`automatic_assets_dlc\`)
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `…\automatic_assets_dlc\butchercosmetic.bundle` | TFP | Butcher cosmetic DLC |
 | `…\automatic_assets_dlc\christmascosmetics.bundle` | TFP | Christmas cosmetics DLC |
 | `…\automatic_assets_dlc\classicsurvivorcosmetic.bundle` | TFP | Classic Survivor cosmetic DLC |
@@ -569,7 +569,7 @@ All paths are relative to the game installation root.
 #### Twitch Drops Bundles (`automatic_assets_twitchdrops\`)
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `…\automatic_assets_twitchdrops\crackabookstoregearhat.bundle` | TFP | Crack-a-Book store gear hat |
 | `…\automatic_assets_twitchdrops\crackabookstoregearoutfit.bundle` | TFP | Crack-a-Book store gear outfit |
 | `…\automatic_assets_twitchdrops\generalstoregearhat.bundle` | TFP | General Store gear hat |
@@ -595,7 +595,7 @@ All paths are relative to the game installation root.
 #### Texture Bundles (`textures_assets_textures\`)
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `…\textures_assets_textures\environment.bundle` | TFP | Environment textures |
 | `…\textures_assets_textures\graphics.bundle` | TFP | Graphics/rendering textures |
 | `…\textures_assets_textures\hud.bundle` | TFP | HUD textures |
@@ -604,7 +604,7 @@ All paths are relative to the game installation root.
 #### Zombie Entity Bundles (`zombies_assets_entities\zombies\`)
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `…\zombies_assets_entities\zombies\arlene.bundle` | TFP | Zombie Arlene model |
 | `…\zombies_assets_entities\zombies\bigmama.bundle` | TFP | Zombie Big Mama model |
 | `…\zombies_assets_entities\zombies\biker.bundle` | TFP | Zombie Biker model |
@@ -649,7 +649,7 @@ All paths are relative to the game installation root.
 Organized by gender → category. Both male and female have the same gear/hair sets.
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `…\player\common.bundle` | TFP | Player common shared assets |
 | `…\player\female\common.bundle` | TFP | Female player common assets |
 | `…\player\male\common.bundle` | TFP | Male player common assets |
@@ -665,7 +665,7 @@ Organized by gender → category. Both male and female have the same gear/hair s
 ### `Data\Worlds\` — Pre-built Worlds
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `Data\Worlds\Empty\` | TFP | Empty world template |
 | `Data\Worlds\Navezgane\` | TFP | Hand-crafted official campaign map |
 | `Data\Worlds\Playtesting\` | TFP | QA/testing world |
@@ -679,7 +679,7 @@ Organized by gender → category. Both male and female have the same gear/hair s
 ## `EasyAntiCheat\`
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `EasyAntiCheat\EasyAntiCheat_EOS_Setup.exe` | EAC | EAC installer/setup |
 | `EasyAntiCheat\install_eac.bat` | EAC | EAC install script |
 | `EasyAntiCheat\uninstall_eac.bat` | EAC | EAC uninstall script |
@@ -717,7 +717,7 @@ Organized by gender → category. Both male and female have the same gear/hair s
 ## `Launcher\`
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `Launcher\7dLauncher.po` | TFP | Launcher UI translations (English, PO format) |
 | `Launcher\7dLauncher.de.po` | TFP | Launcher UI translations (German, PO format) |
 
@@ -726,7 +726,7 @@ Organized by gender → category. Both male and female have the same gear/hair s
 ## `Licenses\` — Third-Party License Files (19 files)
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `Licenses\AmplifyMotion-MIT.txt` | 3rd | Amplify Motion — MIT license |
 | `Licenses\ANTLR3-BSD.txt` | 3rd | ANTLR3 parser — BSD license |
 | `Licenses\Backtrace-MIT.txt` | 3rd | Backtrace crash reporting — MIT license |
@@ -752,7 +752,7 @@ Organized by gender → category. Both male and female have the same gear/hair s
 ## `Logos\`
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `Logos\SplashScreenImage.png` | TFP | Engine splash screen shown during startup |
 | `Logos\Square150x150Logo.png` | TFP | App icon tile 150×150 |
 | `Logos\Square44x44Logo.png` | TFP | App icon tile 44×44 |
@@ -764,7 +764,7 @@ Organized by gender → category. Both male and female have the same gear/hair s
 ## `MonoBleedingEdge\` — Mono Runtime
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `MonoBleedingEdge\EmbedRuntime\mono-2.0-bdwgc.dll` | .NET (Mono) | Mono runtime with Boehm-Demers-Weiser GC (the C# virtual machine) |
 | `MonoBleedingEdge\EmbedRuntime\MonoPosixHelper.dll` | .NET (Mono) | POSIX helper for Mono |
 | `MonoBleedingEdge\etc\mono\browscap.ini` | .NET (Mono) | Browser capability definitions |
@@ -795,7 +795,7 @@ Organized by gender → category. Both male and female have the same gear/hair s
 Loaded first due to `0_` prefix. Ships the HarmonyX runtime and TFP's own Harmony patches.
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `Mods\0_TFP_Harmony\ModInfo.xml` | TFP | Mod metadata |
 | `Mods\0_TFP_Harmony\TfpHarmony.dll` | TFP | TFP's own Harmony patches |
 | `Mods\0_TFP_Harmony\TfpHarmony.pdb` | TFP | Debug symbols for TfpHarmony |
@@ -815,7 +815,7 @@ Loaded first due to `0_` prefix. Ships the HarmonyX runtime and TFP's own Harmon
 ### Third-Party Mods (Z_ prefix)
 
 | Path | Origin | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `Mods\Z_Armor_Balance\` | 3rd (community) | Armor balance adjustments |
 | `Mods\Z_Armor_Improved\` | 3rd (community) | Improved armor system |
 | `Mods\Z_Better_Quest_Reward\` | 3rd (community) | Enhanced quest rewards |
