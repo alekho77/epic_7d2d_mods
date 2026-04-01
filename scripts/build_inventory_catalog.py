@@ -252,13 +252,14 @@ def parse_localization(txt_path: str) -> dict:
 ICON_SIZE = 80  # 80×80 px (displayed at 40×40 CSS, 2× for retina)
 
 
-def load_icon_index(icons_dir: str) -> set[str]:
-    """Return set of icon names (without extension) available in ItemIcons."""
-    icons = set()
+def load_icon_index(icons_dir: str) -> dict[str, str]:
+    """Return a case-insensitive mapping {lowercase_name: actual_name} for ItemIcons."""
+    icons: dict[str, str] = {}
     if os.path.isdir(icons_dir):
         for fname in os.listdir(icons_dir):
             if fname.lower().endswith(".png"):
-                icons.add(fname[:-4])  # strip .png
+                base = fname[:-4]  # strip .png
+                icons[base.lower()] = base
     return icons
 
 
@@ -310,7 +311,7 @@ def _apply_tint(img: Image.Image, tr: int, tg: int, tb: int) -> Image.Image:
 
 def process_icons(
     all_objects: dict[str, list[dict]],
-    icon_index: set[str],
+    icon_index: dict[str, str],
     icons_src_dir: str,
     icons_dst_dir: str,
 ) -> dict[str, str]:
@@ -323,7 +324,8 @@ def process_icons(
     os.makedirs(icons_dst_dir, exist_ok=True)
 
     # Collect all unique (icon_name, tint) combinations
-    needed: dict[tuple[str, str | None], str] = {}  # (icon, tint) → out_filename
+    # needed maps (icon_name, tint) → (out_filename, actual_icon_on_disk)
+    needed: dict[tuple[str, str | None], tuple[str, str]] = {}
     for objects in all_objects.values():
         for obj in objects:
             icon_name = obj["icon_name"]
@@ -331,7 +333,8 @@ def process_icons(
             key = (icon_name, tint)
             if key in needed:
                 continue
-            if icon_name not in icon_index:
+            actual = icon_index.get(icon_name.lower())
+            if actual is None:
                 continue
             if tint:
                 # Normalize tint for filename (replace commas)
@@ -339,15 +342,15 @@ def process_icons(
                 out_name = f"{icon_name}__{tint_slug}.png"
             else:
                 out_name = f"{icon_name}.png"
-            needed[key] = out_name
+            needed[key] = (out_name, actual)
 
     # Process each icon
     icon_map: dict[tuple[str, str | None], str] = {}  # key → relative path
     dst_folder_name = os.path.basename(icons_dst_dir)
     total = len(needed)
     done = 0
-    for (icon_name, tint), out_name in needed.items():
-        src_path = os.path.join(icons_src_dir, icon_name + ".png")
+    for (icon_name, tint), (out_name, actual) in needed.items():
+        src_path = os.path.join(icons_src_dir, actual + ".png")
         dst_path = os.path.join(icons_dst_dir, out_name)
 
         img = Image.open(src_path).convert("RGBA")
@@ -399,7 +402,6 @@ CREATIVE_COLORS = {
 def render_html(
     all_objects: dict[str, list[dict]],
     localization: dict,
-    icon_index: set[str],
     icon_map: dict[tuple[str, str | None], str],
     output_path: str,
 ):
@@ -672,7 +674,7 @@ def main():
     missing = 0
     for objects in all_objects.values():
         for obj in objects:
-            if obj["icon_name"] in icon_index:
+            if obj["icon_name"].lower() in icon_index:
                 found += 1
             else:
                 missing += 1
@@ -686,7 +688,7 @@ def main():
     print(f"  Output icons: {len(icon_map)}")
 
     print("\n[5/5] Generating HTML report …")
-    render_html(all_objects, localization, icon_index, icon_map, OUTPUT_HTML)
+    render_html(all_objects, localization, icon_map, OUTPUT_HTML)
 
     print(f"\nDone! → {OUTPUT_HTML}")
 
