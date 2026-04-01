@@ -135,6 +135,90 @@ def categorize_items(items: list[dict]) -> list[tuple[str, list[dict]]]:
     return result
 
 
+# ---------------------------------------------------------------------------
+# Block sub-categories (by Class property from blocks.xml)
+# ---------------------------------------------------------------------------
+
+# Maps category name → set of Class values that belong to it.
+_BLOCK_CLASS_GROUPS: list[tuple[str, set[str]]] = [
+    ("Loot Containers", {
+        "Loot", "SecureLoot", "QuestLoot", "CarExplodeLoot", "VendingMachine",
+    }),
+    ("Doors", {
+        "DoorSecure", "TrapDoor", "PoweredDoor", "DrawBridge",
+    }),
+    ("Lighting", {
+        "Light", "Spotlight", "PoweredLight", "TorchHeatMap",
+    }),
+    ("Electrical / Powered", {
+        "Generator", "SolarPanel", "BatteryBank", "Powered", "Switch",
+        "MotionSensor", "TimerRelay", "Speaker", "SpeakerTrader",
+        "ElectricWire", "ActivateSwitch", "Activate", "ActivateSingle",
+        "Collector",
+    }),
+    ("Traps & Hazards", {
+        "Hazard", "BladeTrap", "Mine", "Damage", "TripWire",
+        "PressurePlate", "Launcher", "Ranged",
+    }),
+    ("Vehicles", {
+        "CarExplode",
+    }),
+    ("Vegetation", {
+        "Tallgrass", "Deadgrass", "PlantGrowing", "ModelTree",
+        "TrunkTip", "Trunk", "Cactus", "Hay",
+    }),
+    ("Functional Blocks", {
+        "Campfire", "Workstation", "Forge", "SleepingBag",
+        "LandClaim", "PlayerSign", "CompositeTileEntity",
+    }),
+    ("Events & Triggers", {
+        "GameEvent", "QuestActivate", "RallyMarker",
+        "TriggerDowngrade", "SpawnEntity", "Sleeper",
+    }),
+    ("Terrain & Structure", {
+        "Liquidv2", "Ladder", "Stairs",
+    }),
+]
+
+# Build a reverse lookup: Class value → category name
+_BLOCK_CLASS_TO_CATEGORY: dict[str, str] = {}
+for _cat, _classes in _BLOCK_CLASS_GROUPS:
+    for _cls in _classes:
+        _BLOCK_CLASS_TO_CATEGORY[_cls] = _cat
+
+
+def categorize_blocks(blocks: list[dict]) -> list[tuple[str, list[dict]]]:
+    """
+    Split blocks into sub-categories by their Class property.
+    Blocks without a Class go into 'Standard Blocks'.
+    Any unknown Class values go into 'Other'.
+    """
+    buckets: dict[str, list[dict]] = {"Standard Blocks": []}
+    for cat, _ in _BLOCK_CLASS_GROUPS:
+        buckets[cat] = []
+    buckets["Other"] = []
+
+    for obj in blocks:
+        cls = obj.get("block_class", "")
+        if not cls:
+            buckets["Standard Blocks"].append(obj)
+        elif cls in _BLOCK_CLASS_TO_CATEGORY:
+            buckets[_BLOCK_CLASS_TO_CATEGORY[cls]].append(obj)
+        else:
+            buckets["Other"].append(obj)
+
+    # Build result: Standard Blocks first, then classified groups, then Other
+    result = []
+    if buckets["Standard Blocks"]:
+        result.append(("Standard Blocks", buckets["Standard Blocks"]))
+    for cat, _ in _BLOCK_CLASS_GROUPS:
+        if buckets[cat]:
+            result.append((cat, buckets[cat]))
+    if buckets["Other"]:
+        result.append(("Other", buckets["Other"]))
+    return result
+
+
 def parse_objects(xml_path: str, tag: str, source_label: str) -> list[dict]:
     """Parse all objects from an XML file, resolving CustomIcon via Extends."""
     tree = etree.parse(xml_path)
@@ -165,6 +249,7 @@ def parse_objects(xml_path: str, tag: str, source_label: str) -> list[dict]:
         custom_icon_tint = props.get("CustomIconTint")
         creative_mode = props.get("CreativeMode", "")
         group = props.get("Group", "")
+        block_class = props.get("Class", "")
 
         # If no CustomIcon, check inheritance via Extends
         if custom_icon is None:
@@ -194,6 +279,7 @@ def parse_objects(xml_path: str, tag: str, source_label: str) -> list[dict]:
             "custom_icon_tint": custom_icon_tint,
             "creative_mode": creative_mode,
             "group": group,
+            "block_class": block_class,
         })
 
     return objects
@@ -459,8 +545,32 @@ def render_html(
             )
             _render_table(lines, cat_items, anchor, localization, icon_map)
 
-    # --- Blocks and Item Modifiers: single table each ---
-    for source_label in ["Blocks", "Item Modifiers"]:
+    # --- Blocks: split into sub-categories by Class ---
+    if "Blocks" in all_objects:
+        blocks = all_objects["Blocks"]
+        block_categories = categorize_blocks(blocks)
+
+        lines.append(f'<h2 id="blocks">Blocks ({len(blocks)})</h2>')
+
+        # Table of contents for block categories
+        lines.append('<div class="category-nav">')
+        for cat, cat_blocks in block_categories:
+            anchor = "blocks_" + cat.lower().replace(" ", "_").replace("/", "_").replace("&", "")
+            lines.append(
+                f'  <a href="#{_esc(anchor)}">{_esc(cat)}</a>'
+                f' <small>({len(cat_blocks)})</small>'
+            )
+        lines.append("</div>")
+
+        for cat, cat_blocks in block_categories:
+            anchor = "blocks_" + cat.lower().replace(" ", "_").replace("/", "_").replace("&", "")
+            lines.append(
+                f'<h3 id="{_esc(anchor)}">{_esc(cat)} ({len(cat_blocks)})</h3>'
+            )
+            _render_table(lines, cat_blocks, anchor, localization, icon_map)
+
+    # --- Item Modifiers: single table ---
+    for source_label in ["Item Modifiers"]:
         if source_label not in all_objects:
             continue
         objects = all_objects[source_label]
