@@ -20,7 +20,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleVehicleMotorCycle"/>
-      <property name="CustomIconTint" value="00FFCC"/>
+      <property name="CustomIconTint" value="fff200"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evMotorcycleStarterBundleDesc"/>
       <property class="Action0">
@@ -34,7 +34,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleVehicleMiniBike"/>
-      <property name="CustomIconTint" value="00FFCC"/>
+      <property name="CustomIconTint" value="fff200"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evMinibikeStarterBundleDesc"/>
       <property class="Action0">
@@ -48,7 +48,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleVehicleParts"/>
-      <property name="CustomIconTint" value="00FFCC"/>
+      <property name="CustomIconTint" value="fff200"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evBicycleBundleDesc"/>
       <property class="Action0">
@@ -62,7 +62,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleVehicle4x4"/>
-      <property name="CustomIconTint" value="00FFCC"/>
+      <property name="CustomIconTint" value="fff200"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evTruckStarterBundleDesc"/>
       <property class="Action0">
@@ -76,7 +76,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleVehicleGyro"/>
-      <property name="CustomIconTint" value="00FFCC"/>
+      <property name="CustomIconTint" value="fff200"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evGyrocopterStarterBundleDesc"/>
       <property class="Action0">
