@@ -28,5 +28,61 @@
         <property name="Create_item_count" value="1,5000,1"/>
       </property>
     </item>
+
+    <!-- Minibike Starter Kit bundle: minibike + 3000 gas + super charger mod -->
+    <item name="evMinibikeStarterBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleVehicleMiniBike"/>
+      <property name="CustomIconTint" value="00FFCC"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evMinibikeStarterBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="vehicleMinibikePlaceable,ammoGasCan,modVehicleSuperCharger"/>
+        <property name="Create_item_count" value="1,3000,1"/>
+      </property>
+    </item>
+
+    <!-- Bicycle Kit bundle: bicycle + 2 storage mods -->
+    <item name="evBicycleBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleVehicleParts"/>
+      <property name="CustomIconTint" value="00FFCC"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evBicycleBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="vehicleBicyclePlaceable,modVehicleStorage"/>
+        <property name="Create_item_count" value="1,2"/>
+      </property>
+    </item>
+
+    <!-- Truck Starter Kit bundle: 4x4 truck + 12000 gas + fuel saver + super charger + reserve fuel tank -->
+    <item name="evTruckStarterBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleVehicle4x4"/>
+      <property name="CustomIconTint" value="00FFCC"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evTruckStarterBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="vehicleTruck4x4Placeable,ammoGasCan,modVehicleFuelSaver,modVehicleSuperCharger,modVehicleReserveFuelTank"/>
+        <property name="Create_item_count" value="1,12000,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Gyrocopter Starter Kit bundle: gyrocopter + 12000 gas -->
+    <item name="evGyrocopterStarterBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleVehicleGyro"/>
+      <property name="CustomIconTint" value="00FFCC"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evGyrocopterStarterBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="vehicleGyrocopterPlaceable,ammoGasCan"/>
+        <property name="Create_item_count" value="1,12000"/>
+      </property>
+    </item>
   </append>
 </configs>

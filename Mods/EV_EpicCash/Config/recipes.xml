@@ -3,5 +3,17 @@
     <recipe name="evMotorcycleStarterBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
       <ingredient name="evCash" count="10"/>
     </recipe>
+    <recipe name="evMinibikeStarterBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="7"/>
+    </recipe>
+    <recipe name="evBicycleBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="5"/>
+    </recipe>
+    <recipe name="evTruckStarterBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="20"/>
+    </recipe>
+    <recipe name="evGyrocopterStarterBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="20"/>
+    </recipe>
   </append>
 </configs>
