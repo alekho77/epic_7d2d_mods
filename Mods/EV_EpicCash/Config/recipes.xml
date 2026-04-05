@@ -27,6 +27,9 @@
     <recipe name="evPumpShotgunBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
       <ingredient name="evCash" count="10"/>
     </recipe>
+    <recipe name="evAutoShotgunBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="20"/>
+    </recipe>
     <recipe name="evSniperRifleBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
       <ingredient name="evCash" count="15"/>
     </recipe>

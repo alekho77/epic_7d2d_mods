@@ -141,6 +141,20 @@
       </property>
     </item>
 
+    <!-- Auto Shotgun Kit: T6 auto shotgun + 1000 shotgun shells -->
+    <item name="evAutoShotgunBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleShotgun"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAutoShotgunBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="gunShotgunT3AutoShotgun,ammoShotgunShell"/>
+        <property name="Create_item_count" value="6,1000"/>
+      </property>
+    </item>
+
     <!-- Sniper Rifle Kit: T6 sniper rifle + 1000 7.62mm rounds -->
     <item name="evSniperRifleBundle">
       <property name="Extends" value="questRewardBundleMaster"/>
