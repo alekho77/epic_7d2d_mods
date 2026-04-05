@@ -60,5 +60,50 @@
     <recipe name="evAmmoShotgunAPBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
       <ingredient name="evCash" count="2"/>
     </recipe>
+    <recipe name="evArmorLumberjackBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evArmorPreacherBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evArmorRogueBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evArmorAthleticBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evArmorEnforcerBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evArmorFarmerBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evArmorBikerBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evArmorScavengerBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evArmorRangerBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evArmorCommandoBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evArmorAssassinBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evArmorMinerBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evArmorNomadBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evArmorNerdBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evArmorRaiderBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
   </append>
 </configs>

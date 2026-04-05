@@ -294,5 +294,217 @@
         <property name="Create_item_count" value="1000"/>
       </property>
     </item>
+
+    <!-- === ARMOR BUNDLES === -->
+
+    <!-- Lumberjack Armor Set -->
+    <item name="evArmorLumberjackBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorLumberjackHelmet"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorLumberjackBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorLumberjackHelmet,armorLumberjackOutfit,armorLumberjackGloves,armorLumberjackBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Preacher Armor Set -->
+    <item name="evArmorPreacherBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorPreacherHelmet"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorPreacherBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorPreacherHelmet,armorPreacherOutfit,armorPreacherGloves,armorPreacherBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Rogue Armor Set -->
+    <item name="evArmorRogueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorRogueHelmet"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorRogueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorRogueHelmet,armorRogueOutfit,armorRogueGloves,armorRogueBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Athletic Armor Set -->
+    <item name="evArmorAthleticBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorAthleticHelmet"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorAthleticBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorAthleticHelmet,armorAthleticOutfit,armorAthleticGloves,armorAthleticBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Enforcer Armor Set -->
+    <item name="evArmorEnforcerBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorEnforcerHelmet"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorEnforcerBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorEnforcerHelmet,armorEnforcerOutfit,armorEnforcerGloves,armorEnforcerBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Farmer Armor Set -->
+    <item name="evArmorFarmerBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorFarmerHelmet"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorFarmerBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorFarmerHelmet,armorFarmerOutfit,armorFarmerGloves,armorFarmerBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Biker Armor Set -->
+    <item name="evArmorBikerBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorBikerHelmet"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorBikerBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorBikerHelmet,armorBikerOutfit,armorBikerGloves,armorBikerBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Scavenger Armor Set -->
+    <item name="evArmorScavengerBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorScavengerHelmet"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorScavengerBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorScavengerHelmet,armorScavengerOutfit,armorScavengerGloves,armorScavengerBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Ranger Armor Set -->
+    <item name="evArmorRangerBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorRangerHelmet"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorRangerBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorRangerHelmet,armorRangerOutfit,armorRangerGloves,armorRangerBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Commando Armor Set -->
+    <item name="evArmorCommandoBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorCommandoHelmet"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorCommandoBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorCommandoHelmet,armorCommandoOutfit,armorCommandoGloves,armorCommandoBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Assassin Armor Set -->
+    <item name="evArmorAssassinBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorAssassinHelmet"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorAssassinBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorAssassinHelmet,armorAssassinOutfit,armorAssassinGloves,armorAssassinBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Miner Armor Set -->
+    <item name="evArmorMinerBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorMinerHelmet"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorMinerBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorMinerHelmet,armorMinerOutfit,armorMinerGloves,armorMinerBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Nomad Armor Set -->
+    <item name="evArmorNomadBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorNomadHelmet"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorNomadBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorNomadHelmet,armorNomadOutfit,armorNomadGloves,armorNomadBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Nerd Armor Set -->
+    <item name="evArmorNerdBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorNerdHelmet"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorNerdBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorNerdHelmet,armorNerdOutfit,armorNerdGloves,armorNerdBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Raider Armor Set -->
+    <item name="evArmorRaiderBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorRaiderHelmet"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorRaiderBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorRaiderHelmet,armorRaiderOutfit,armorRaiderGloves,armorRaiderBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
   </append>
 </configs>
