@@ -182,5 +182,117 @@
         <property name="Create_item_count" value="6,3000"/>
       </property>
     </item>
+
+    <!-- 9mm Ammo Bundle: 1000 regular 9mm rounds -->
+    <item name="evAmmo9mmBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleAmmo"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmo9mmBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammo9mmBulletBall"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
+    <!-- AP 9mm Ammo Bundle: 1000 AP 9mm rounds -->
+    <item name="evAmmo9mmAPBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleAmmo"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmo9mmAPBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammo9mmBulletAP"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
+    <!-- .44 Magnum Ammo Bundle: 1000 regular .44 rounds -->
+    <item name="evAmmo44Bundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleAmmo"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmo44BundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammo44MagnumBulletBall"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
+    <!-- AP .44 Magnum Ammo Bundle: 1000 AP .44 rounds -->
+    <item name="evAmmo44APBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleAmmo"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmo44APBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammo44MagnumBulletAP"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
+    <!-- 7.62mm Ammo Bundle: 1000 regular 7.62mm rounds -->
+    <item name="evAmmo762Bundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleAmmo"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmo762BundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammo762mmBulletBall"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
+    <!-- AP 7.62mm Ammo Bundle: 1000 AP 7.62mm rounds -->
+    <item name="evAmmo762APBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleAmmo"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmo762APBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammo762mmBulletAP"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
+    <!-- Shotgun Shell Bundle: 1000 regular shotgun shells -->
+    <item name="evAmmoShotgunBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleAmmo"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmoShotgunBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammoShotgunShell"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
+    <!-- AP Shotgun Slug Bundle: 1000 AP shotgun slugs -->
+    <item name="evAmmoShotgunAPBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleAmmo"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmoShotgunAPBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammoShotgunSlug"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
   </append>
 </configs>

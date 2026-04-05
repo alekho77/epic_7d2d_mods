@@ -36,5 +36,29 @@
     <recipe name="evM60Bundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
       <ingredient name="evCash" count="25"/>
     </recipe>
+    <recipe name="evAmmo9mmBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="1"/>
+    </recipe>
+    <recipe name="evAmmo9mmAPBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="2"/>
+    </recipe>
+    <recipe name="evAmmo44Bundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="1"/>
+    </recipe>
+    <recipe name="evAmmo44APBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="2"/>
+    </recipe>
+    <recipe name="evAmmo762Bundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="1"/>
+    </recipe>
+    <recipe name="evAmmo762APBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="2"/>
+    </recipe>
+    <recipe name="evAmmoShotgunBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="1"/>
+    </recipe>
+    <recipe name="evAmmoShotgunAPBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="2"/>
+    </recipe>
   </append>
 </configs>
