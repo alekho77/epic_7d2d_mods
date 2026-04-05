@@ -20,12 +20,152 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleVehicleMotorCycle"/>
-      <property name="CustomIconTint" value="00FFCC"/>
+      <property name="CustomIconTint" value="fff200"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evMotorcycleStarterBundleDesc"/>
       <property class="Action0">
         <property name="Create_item" value="vehicleMotorcyclePlaceable,ammoGasCan,modVehicleFuelSaver"/>
         <property name="Create_item_count" value="1,5000,1"/>
+      </property>
+    </item>
+
+    <!-- Minibike Starter Kit bundle: minibike + 3000 gas + super charger mod -->
+    <item name="evMinibikeStarterBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleVehicleMiniBike"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evMinibikeStarterBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="vehicleMinibikePlaceable,ammoGasCan,modVehicleSuperCharger"/>
+        <property name="Create_item_count" value="1,3000,1"/>
+      </property>
+    </item>
+
+    <!-- Bicycle Kit bundle: bicycle + 2 storage mods -->
+    <item name="evBicycleBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleVehicleParts"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evBicycleBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="vehicleBicyclePlaceable,modVehicleStorage"/>
+        <property name="Create_item_count" value="1,2"/>
+      </property>
+    </item>
+
+    <!-- Truck Starter Kit bundle: 4x4 truck + 12000 gas + fuel saver + super charger + reserve fuel tank -->
+    <item name="evTruckStarterBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleVehicle4x4"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evTruckStarterBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="vehicleTruck4x4Placeable,ammoGasCan,modVehicleFuelSaver,modVehicleSuperCharger,modVehicleReserveFuelTank"/>
+        <property name="Create_item_count" value="1,12000,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Gyrocopter Starter Kit bundle: gyrocopter + 12000 gas -->
+    <item name="evGyrocopterStarterBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleVehicleGyro"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evGyrocopterStarterBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="vehicleGyrocopterPlaceable,ammoGasCan"/>
+        <property name="Create_item_count" value="1,12000"/>
+      </property>
+    </item>
+
+    <!-- Pistol Kit: T6 pistol + 600 9mm rounds -->
+    <item name="evPistolBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundlePistol"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evPistolBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="gunHandgunT1Pistol,ammo9mmBulletBall"/>
+        <property name="Create_item_count" value="6,600"/>
+      </property>
+    </item>
+
+    <!-- SMG-5 Kit: T6 SMG-5 + 1500 9mm rounds -->
+    <item name="evSMG5Bundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundlePistol"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evSMG5BundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="gunHandgunT3SMG5,ammo9mmBulletBall"/>
+        <property name="Create_item_count" value="6,1500"/>
+      </property>
+    </item>
+
+    <!-- Desert Vulture Kit: T6 Desert Vulture + 1000 .44 Magnum rounds -->
+    <item name="evDesertVultureBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundlePistol"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evDesertVultureBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="gunHandgunT3DesertVulture,ammo44MagnumBulletBall"/>
+        <property name="Create_item_count" value="6,1000"/>
+      </property>
+    </item>
+
+    <!-- Pump Shotgun Kit: T6 pump shotgun + 600 shotgun shells -->
+    <item name="evPumpShotgunBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleShotgun"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evPumpShotgunBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="gunShotgunT2PumpShotgun,ammoShotgunShell"/>
+        <property name="Create_item_count" value="6,600"/>
+      </property>
+    </item>
+
+    <!-- Sniper Rifle Kit: T6 sniper rifle + 1000 7.62mm rounds -->
+    <item name="evSniperRifleBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleRifle"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evSniperRifleBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="gunRifleT3SniperRifle,ammo762mmBulletBall"/>
+        <property name="Create_item_count" value="6,1000"/>
+      </property>
+    </item>
+
+    <!-- M60 Machine Gun Kit: T6 M60 + 3000 7.62mm rounds -->
+    <item name="evM60Bundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleMachineGun"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evM60BundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="gunMGT3M60,ammo762mmBulletBall"/>
+        <property name="Create_item_count" value="6,3000"/>
       </property>
     </item>
   </append>
