@@ -94,7 +94,7 @@
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evPistolBundleDesc"/>
       <property class="Action0">
-        <property name="Create_item" value="gunHandgunT1Pistol,ammo9mmBulletBall"/>
+        <property name="Create_item" value="gunHandgunT1Pistol,ammo9mmBulletAP"/>
         <property name="Create_item_count" value="6,600"/>
       </property>
     </item>
@@ -108,7 +108,7 @@
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evSMG5BundleDesc"/>
       <property class="Action0">
-        <property name="Create_item" value="gunHandgunT3SMG5,ammo9mmBulletBall"/>
+        <property name="Create_item" value="gunHandgunT3SMG5,ammo9mmBulletAP"/>
         <property name="Create_item_count" value="6,1500"/>
       </property>
     </item>
@@ -122,7 +122,7 @@
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evDesertVultureBundleDesc"/>
       <property class="Action0">
-        <property name="Create_item" value="gunHandgunT3DesertVulture,ammo44MagnumBulletBall"/>
+        <property name="Create_item" value="gunHandgunT3DesertVulture,ammo44MagnumBulletAP"/>
         <property name="Create_item_count" value="6,1000"/>
       </property>
     </item>
@@ -136,7 +136,7 @@
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evPumpShotgunBundleDesc"/>
       <property class="Action0">
-        <property name="Create_item" value="gunShotgunT2PumpShotgun,ammoShotgunShell"/>
+        <property name="Create_item" value="gunShotgunT2PumpShotgun,ammoShotgunSlug"/>
         <property name="Create_item_count" value="6,600"/>
       </property>
     </item>
@@ -150,7 +150,7 @@
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evAutoShotgunBundleDesc"/>
       <property class="Action0">
-        <property name="Create_item" value="gunShotgunT3AutoShotgun,ammoShotgunShell"/>
+        <property name="Create_item" value="gunShotgunT3AutoShotgun,ammoShotgunSlug"/>
         <property name="Create_item_count" value="6,1000"/>
       </property>
     </item>
@@ -164,7 +164,7 @@
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evSniperRifleBundleDesc"/>
       <property class="Action0">
-        <property name="Create_item" value="gunRifleT3SniperRifle,ammo762mmBulletBall"/>
+        <property name="Create_item" value="gunRifleT3SniperRifle,ammo762mmBulletAP"/>
         <property name="Create_item_count" value="6,1000"/>
       </property>
     </item>
@@ -178,7 +178,7 @@
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evM60BundleDesc"/>
       <property class="Action0">
-        <property name="Create_item" value="gunMGT3M60,ammo762mmBulletBall"/>
+        <property name="Create_item" value="gunMGT3M60,ammo762mmBulletAP"/>
         <property name="Create_item_count" value="6,3000"/>
       </property>
     </item>
