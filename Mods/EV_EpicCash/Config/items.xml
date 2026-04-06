@@ -1218,5 +1218,61 @@
         <property name="Create_item_count" value="1,1,1,1,2"/>
       </property>
     </item>
+
+    <!-- === FOOD BUNDLES === -->
+
+    <!-- Small Food Kit: 1 random food x8 + 1 random drink x10 -->
+    <item name="evFoodSmallBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleFood"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evFoodSmallBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourcePaper"/>
+        <property name="Create_item_count" value="0"/>
+        <property name="Random_item" value="foodBaconAndEggs,foodVegetableStew,foodGrilledMeat,foodBlueberryPie,foodPumpkinBread,foodEggBoiled,drinkJarGoldenRodTea,drinkJarRedTea,drinkJarCoffee,drinkJarBoiledWater"/>
+        <property name="Random_item_count" value="8,10"/>
+        <property name="Random_count" value="2"/>
+        <property name="Unique_random_only" value="true"/>
+      </property>
+    </item>
+
+    <!-- Medium Food Kit: 1 random food x8 + 1 random drink x10 -->
+    <item name="evFoodMediumBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleFood"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evFoodMediumBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourcePaper"/>
+        <property name="Create_item_count" value="0"/>
+        <property name="Random_item" value="foodMeatStew,foodSteakAndPotato,foodHoboStew,foodFishTacos,foodChiliDog,foodPumpkinPie,foodTunaFishGravyToast,drinkJarPureMineralWater,drinkJarYuccaJuice"/>
+        <property name="Random_item_count" value="8,10"/>
+        <property name="Random_count" value="2"/>
+        <property name="Unique_random_only" value="true"/>
+      </property>
+    </item>
+
+    <!-- Large Food Kit: 1 random food x8 + 1 random drink x10 -->
+    <item name="evFoodLargeBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleFood"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evFoodLargeBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourcePaper"/>
+        <property name="Create_item_count" value="0"/>
+        <property name="Random_item" value="foodHoneyGlazedSham,foodHoneyBrisket,foodShamChowder,foodGumboStew,foodShepardsPie,foodSpaghetti,drinkJarHoneyTea,drinkYuccaJuiceSmoothie,drinkCanMegaCrush,drinkJarPureMineralWater"/>
+        <property name="Random_item_count" value="8,10"/>
+        <property name="Random_count" value="2"/>
+        <property name="Unique_random_only" value="true"/>
+      </property>
+    </item>
   </append>
 </configs>
