@@ -112,5 +112,19 @@
     <recipe name="evArmorRaiderBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
       <ingredient name="evCash" count="10"/>
     </recipe>
+
+    <!-- === TOOL RECIPES === -->
+    <recipe name="meleeToolRepairT3Nailgun" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="5"/>
+    </recipe>
+    <recipe name="meleeToolAxeT3Chainsaw" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="5"/>
+    </recipe>
+    <recipe name="meleeToolPickT3Auger" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="5"/>
+    </recipe>
+    <recipe name="meleeToolSalvageT3ImpactDriver" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="5"/>
+    </recipe>
   </append>
 </configs>
