@@ -90,6 +90,16 @@ The repository contains a `/Data` folder with the **complete original unmodified
 >
 > When a request involves non-config assets (icons, prefabs, bundles, etc.), consult the relevant subfolder under `/Data` as well.
 
+### Inventory Object Catalog (`docs/inventory_catalog.md`)
+
+The file `docs/inventory_catalog.md` is a **pre-built catalog of all game objects** (items, blocks, and item modifiers) generated from the vanilla XML configs. Use it as the **first lookup step** when working with game objects:
+
+1. **Find an object ID by name or description.** When the user refers to an object by its English name, Russian name, or description — search `docs/inventory_catalog.md` to resolve the internal ID (e.g., `gunHandgunT2Magnum44`).
+2. **Browse object groups and categories.** The catalog is organized into categorized sections (Ranged Weapons, Melee Weapons, Loot Containers, Armor Mods, etc.) — use these to discover related objects or get a list of IDs in a specific group.
+3. **Look up detailed properties in XML configs.** Once the internal ID is known, search the corresponding XML config file (`items.xml`, `blocks.xml`, or `item_modifiers.xml` under `/Data/Config/`) by the `name` attribute to find its full property set, effects, recipes, and relationships.
+
+> **Workflow**: user description/name → search `docs/inventory_catalog.md` → get internal ID → search `/Data/Config/*.xml` by that ID for full details.
+
 ### Config File Reference
 
 | File | Controls |
