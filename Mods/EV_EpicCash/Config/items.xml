@@ -1221,7 +1221,7 @@
 
     <!-- === FOOD BUNDLES === -->
 
-    <!-- Small Food Kit: 1 random food x8 + 1 random drink x10 -->
+    <!-- Small Food Kit: 1 random food x12 -->
     <item name="evFoodSmallBundle">
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
@@ -1232,14 +1232,14 @@
       <property class="Action0">
         <property name="Create_item" value="resourcePaper"/>
         <property name="Create_item_count" value="0"/>
-        <property name="Random_item" value="foodBaconAndEggs,foodVegetableStew,foodGrilledMeat,foodBlueberryPie,foodPumpkinBread,foodEggBoiled,drinkJarGoldenRodTea,drinkJarRedTea,drinkJarCoffee,drinkJarBoiledWater"/>
-        <property name="Random_item_count" value="8,8,8,8,8,8,10,10,10,10"/>
-        <property name="Random_count" value="2"/>
+        <property name="Random_item" value="foodBaconAndEggs,foodVegetableStew,foodGrilledMeat,foodBlueberryPie,foodPumpkinBread,foodEggBoiled"/>
+        <property name="Random_item_count" value="12,12,12,12,12,12"/>
+        <property name="Random_count" value="1"/>
         <property name="Unique_random_only" value="true"/>
       </property>
     </item>
 
-    <!-- Medium Food Kit: 1 random food x8 + 1 random drink x10 -->
+    <!-- Medium Food Kit: 1 random food x12 -->
     <item name="evFoodMediumBundle">
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
@@ -1250,14 +1250,14 @@
       <property class="Action0">
         <property name="Create_item" value="resourcePaper"/>
         <property name="Create_item_count" value="0"/>
-        <property name="Random_item" value="foodMeatStew,foodSteakAndPotato,foodHoboStew,foodFishTacos,foodChiliDog,foodPumpkinPie,foodTunaFishGravyToast,drinkJarPureMineralWater,drinkJarYuccaJuice"/>
-        <property name="Random_item_count" value="8,8,8,8,8,8,8,10,10"/>
-        <property name="Random_count" value="2"/>
+        <property name="Random_item" value="foodMeatStew,foodSteakAndPotato,foodHoboStew,foodFishTacos,foodChiliDog,foodPumpkinPie,foodTunaFishGravyToast"/>
+        <property name="Random_item_count" value="12,12,12,12,12,12,12"/>
+        <property name="Random_count" value="1"/>
         <property name="Unique_random_only" value="true"/>
       </property>
     </item>
 
-    <!-- Large Food Kit: 1 random food x8 + 1 random drink x10 -->
+    <!-- Large Food Kit: 1 random food x12 -->
     <item name="evFoodLargeBundle">
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
@@ -1268,9 +1268,65 @@
       <property class="Action0">
         <property name="Create_item" value="resourcePaper"/>
         <property name="Create_item_count" value="0"/>
-        <property name="Random_item" value="foodHoneyGlazedSham,foodHoneyBrisket,foodShamChowder,foodGumboStew,foodShepardsPie,foodSpaghetti,drinkJarHoneyTea,drinkYuccaJuiceSmoothie,drinkCanMegaCrush,drinkJarPureMineralWater"/>
-        <property name="Random_item_count" value="8,8,8,8,8,8,10,10,10,10"/>
-        <property name="Random_count" value="2"/>
+        <property name="Random_item" value="foodHoneyGlazedSham,foodHoneyBrisket,foodShamChowder,foodGumboStew,foodShepardsPie,foodSpaghetti"/>
+        <property name="Random_item_count" value="12,12,12,12,12,12"/>
+        <property name="Random_count" value="1"/>
+        <property name="Unique_random_only" value="true"/>
+      </property>
+    </item>
+
+    <!-- === DRINK BUNDLES === -->
+
+    <!-- Small Drink Kit: 1 random drink x15 -->
+    <item name="evDrinkSmallBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="drinkJarBoiledWater"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evDrinkSmallBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourcePaper"/>
+        <property name="Create_item_count" value="0"/>
+        <property name="Random_item" value="drinkJarGoldenRodTea,drinkJarRedTea,drinkJarCoffee,drinkJarBoiledWater"/>
+        <property name="Random_item_count" value="15,15,15,15"/>
+        <property name="Random_count" value="1"/>
+        <property name="Unique_random_only" value="true"/>
+      </property>
+    </item>
+
+    <!-- Medium Drink Kit: 1 random drink x15 -->
+    <item name="evDrinkMediumBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="drinkJarPureMineralWater"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evDrinkMediumBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourcePaper"/>
+        <property name="Create_item_count" value="0"/>
+        <property name="Random_item" value="drinkJarPureMineralWater,drinkJarYuccaJuice"/>
+        <property name="Random_item_count" value="15,15"/>
+        <property name="Random_count" value="1"/>
+        <property name="Unique_random_only" value="true"/>
+      </property>
+    </item>
+
+    <!-- Large Drink Kit: 1 random drink x15 -->
+    <item name="evDrinkLargeBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="drinkJarHoneyTea"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evDrinkLargeBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourcePaper"/>
+        <property name="Create_item_count" value="0"/>
+        <property name="Random_item" value="drinkJarHoneyTea,drinkYuccaJuiceSmoothie,drinkCanMegaCrush,drinkJarPureMineralWater"/>
+        <property name="Random_item_count" value="15,15,15,15"/>
+        <property name="Random_count" value="1"/>
         <property name="Unique_random_only" value="true"/>
       </property>
     </item>
