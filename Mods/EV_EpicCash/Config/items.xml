@@ -22,7 +22,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleVehicleMotorCycle"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF6A00"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evMotorcycleStarterBundleDesc"/>
       <property class="Action0">
@@ -36,7 +36,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleVehicleMiniBike"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF6A00"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evMinibikeStarterBundleDesc"/>
       <property class="Action0">
@@ -50,7 +50,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleVehicleParts"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF6A00"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evBicycleBundleDesc"/>
       <property class="Action0">
@@ -64,7 +64,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleVehicle4x4"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF6A00"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evTruckStarterBundleDesc"/>
       <property class="Action0">
@@ -78,7 +78,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleVehicleGyro"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF6A00"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evGyrocopterStarterBundleDesc"/>
       <property class="Action0">
@@ -94,7 +94,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundlePistol"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF3131"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evPistolBundleDesc"/>
       <property class="Action0">
@@ -108,7 +108,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundlePistol"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF3131"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evSMG5BundleDesc"/>
       <property class="Action0">
@@ -122,7 +122,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundlePistol"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF3131"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evDesertVultureBundleDesc"/>
       <property class="Action0">
@@ -136,7 +136,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleShotgun"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF3131"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evPumpShotgunBundleDesc"/>
       <property class="Action0">
@@ -150,7 +150,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleShotgun"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF3131"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evAutoShotgunBundleDesc"/>
       <property class="Action0">
@@ -164,7 +164,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleRifle"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF3131"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evSniperRifleBundleDesc"/>
       <property class="Action0">
@@ -178,7 +178,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleMachineGun"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF3131"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evM60BundleDesc"/>
       <property class="Action0">
@@ -192,7 +192,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleTurrets"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF3131"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evRoboticTurretBundleDesc"/>
       <property class="Action0">
@@ -208,7 +208,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleAmmo"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FDFF00"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evAmmo9mmBundleDesc"/>
       <property class="Action0">
@@ -222,7 +222,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleAmmo"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FDFF00"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evAmmo9mmAPBundleDesc"/>
       <property class="Action0">
@@ -236,7 +236,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleAmmo"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FDFF00"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evAmmo44BundleDesc"/>
       <property class="Action0">
@@ -250,7 +250,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleAmmo"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FDFF00"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evAmmo44APBundleDesc"/>
       <property class="Action0">
@@ -264,7 +264,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleAmmo"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FDFF00"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evAmmo762BundleDesc"/>
       <property class="Action0">
@@ -278,7 +278,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleAmmo"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FDFF00"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evAmmo762APBundleDesc"/>
       <property class="Action0">
@@ -292,7 +292,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleAmmo"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FDFF00"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evAmmoShotgunBundleDesc"/>
       <property class="Action0">
@@ -306,7 +306,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleAmmo"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FDFF00"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evAmmoShotgunAPBundleDesc"/>
       <property class="Action0">
@@ -320,7 +320,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleAmmo"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FDFF00"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evAmmoTurretBundleDesc"/>
       <property class="Action0">
@@ -334,7 +334,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleAmmo"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FDFF00"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evAmmoTurretAPBundleDesc"/>
       <property class="Action0">
@@ -350,7 +350,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="armorLumberjackHelmet"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="1F51FF"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evArmorLumberjackBundleDesc"/>
       <property class="Action0">
@@ -364,7 +364,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="armorPreacherHelmet"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="1F51FF"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evArmorPreacherBundleDesc"/>
       <property class="Action0">
@@ -378,7 +378,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="armorRogueHelmet"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="1F51FF"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evArmorRogueBundleDesc"/>
       <property class="Action0">
@@ -392,7 +392,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="armorAthleticHelmet"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="1F51FF"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evArmorAthleticBundleDesc"/>
       <property class="Action0">
@@ -406,7 +406,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="armorEnforcerHelmet"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="1F51FF"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evArmorEnforcerBundleDesc"/>
       <property class="Action0">
@@ -420,7 +420,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="armorFarmerHelmet"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="1F51FF"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evArmorFarmerBundleDesc"/>
       <property class="Action0">
@@ -434,7 +434,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="armorBikerHelmet"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="1F51FF"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evArmorBikerBundleDesc"/>
       <property class="Action0">
@@ -448,7 +448,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="armorScavengerHelmet"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="1F51FF"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evArmorScavengerBundleDesc"/>
       <property class="Action0">
@@ -462,7 +462,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="armorRangerHelmet"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="1F51FF"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evArmorRangerBundleDesc"/>
       <property class="Action0">
@@ -476,7 +476,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="armorCommandoHelmet"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="1F51FF"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evArmorCommandoBundleDesc"/>
       <property class="Action0">
@@ -490,7 +490,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="armorAssassinHelmet"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="1F51FF"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evArmorAssassinBundleDesc"/>
       <property class="Action0">
@@ -504,7 +504,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="armorMinerHelmet"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="1F51FF"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evArmorMinerBundleDesc"/>
       <property class="Action0">
@@ -518,7 +518,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="armorNomadHelmet"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="1F51FF"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evArmorNomadBundleDesc"/>
       <property class="Action0">
@@ -532,7 +532,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="armorNerdHelmet"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="1F51FF"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evArmorNerdBundleDesc"/>
       <property class="Action0">
@@ -546,7 +546,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="armorRaiderHelmet"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="1F51FF"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evArmorRaiderBundleDesc"/>
       <property class="Action0">
@@ -562,7 +562,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleTools"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="39FF14"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evNailgunBundleDesc"/>
       <property class="Action0">
@@ -576,7 +576,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleTools"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="39FF14"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evChainsawBundleDesc"/>
       <property class="Action0">
@@ -590,7 +590,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleTools"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="39FF14"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evAugerBundleDesc"/>
       <property class="Action0">
@@ -604,7 +604,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleTools"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="39FF14"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evImpactDriverBundleDesc"/>
       <property class="Action0">
@@ -620,7 +620,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookHomeCookingWeekly"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="BC13FE"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evFoodMagazineBundleDesc"/>
       <property class="Action0">
@@ -634,7 +634,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookMedicalJournal"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="BC13FE"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evMedicalMagazineBundleDesc"/>
       <property class="Action0">
@@ -648,7 +648,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookArmoredUp"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="BC13FE"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evArmorMagazineBundleDesc"/>
       <property class="Action0">
@@ -662,7 +662,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookVehicleAdventures"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="BC13FE"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evVehiclesMagazineBundleDesc"/>
       <property class="Action0">
@@ -676,7 +676,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookToolsDigest"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="BC13FE"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evHarvestingToolsMagazineBundleDesc"/>
       <property class="Action0">
@@ -690,7 +690,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookHandyLand"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="BC13FE"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evRepairToolsMagazineBundleDesc"/>
       <property class="Action0">
@@ -704,7 +704,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookScrapping4Fun"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="BC13FE"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evSalvageToolsMagazineBundleDesc"/>
       <property class="Action0">
@@ -718,7 +718,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookFuriousFists"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="BC13FE"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evKnucklesMagazineBundleDesc"/>
       <property class="Action0">
@@ -732,7 +732,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookKnifeGuy"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="BC13FE"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evBladesMagazineBundleDesc"/>
       <property class="Action0">
@@ -746,7 +746,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookBigHitters"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="BC13FE"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evClubsMagazineBundleDesc"/>
       <property class="Action0">
@@ -760,7 +760,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookGetHammered"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="BC13FE"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evSledgehammersMagazineBundleDesc"/>
       <property class="Action0">
@@ -774,7 +774,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookSharpSticks"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="BC13FE"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evSpearsMagazineBundleDesc"/>
       <property class="Action0">
@@ -788,7 +788,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookBowHunters"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="BC13FE"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evBowsMagazineBundleDesc"/>
       <property class="Action0">
@@ -802,7 +802,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookHandgunMagazine"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="BC13FE"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evHandgunsMagazineBundleDesc"/>
       <property class="Action0">
@@ -816,7 +816,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookShotgunWeekly"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="BC13FE"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evShotgunsMagazineBundleDesc"/>
       <property class="Action0">
@@ -830,7 +830,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookRifleWorld"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="BC13FE"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evRiflesMagazineBundleDesc"/>
       <property class="Action0">
@@ -844,7 +844,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookTacticalWarfare"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="BC13FE"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evMachineGunsMagazineBundleDesc"/>
       <property class="Action0">
@@ -858,7 +858,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookExplosiveMagazine"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="BC13FE"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evExplosivesMagazineBundleDesc"/>
       <property class="Action0">
@@ -872,7 +872,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookTechPlanet"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="BC13FE"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evRoboticsMagazineBundleDesc"/>
       <property class="Action0">
@@ -886,7 +886,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookSouthernFarming"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="BC13FE"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evSeedMagazineBundleDesc"/>
       <property class="Action0">
@@ -900,7 +900,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookWiring101"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="BC13FE"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evElectricianMagazineBundleDesc"/>
       <property class="Action0">
@@ -914,7 +914,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookElectricalTraps"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="BC13FE"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evTrapsMagazineBundleDesc"/>
       <property class="Action0">
@@ -928,7 +928,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookForgeAhead"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="BC13FE"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evWorkstationMagazineBundleDesc"/>
       <property class="Action0">
@@ -944,7 +944,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookFiremansAlmanacHeat"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="8F00F2"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evFiremansAlmanacBookBundleDesc"/>
       <property class="Action0">
@@ -958,7 +958,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookNightStalkerStealthDamage"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="8F00F2"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evNightStalkerBookBundleDesc"/>
       <property class="Action0">
@@ -972,7 +972,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookLuckyLooterDukes"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="8F00F2"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evLuckyLooterBookBundleDesc"/>
       <property class="Action0">
@@ -986,7 +986,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookEnforcerDamage"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="8F00F2"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evEnforcerBookBundleDesc"/>
       <property class="Action0">
@@ -1000,7 +1000,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookBatterUpBigHits"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="8F00F2"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evBatterUpBookBundleDesc"/>
       <property class="Action0">
@@ -1014,7 +1014,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookSledgeSagaKnockdown"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="8F00F2"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evSledgeSagaBookBundleDesc"/>
       <property class="Action0">
@@ -1028,7 +1028,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookTheGreatHeistSafes"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="8F00F2"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evGreatHeistBookBundleDesc"/>
       <property class="Action0">
@@ -1042,7 +1042,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookWasteTreasuresHoney"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="8F00F2"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evWasteTreasuresBookBundleDesc"/>
       <property class="Action0">
@@ -1056,7 +1056,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookHuntingJournalBears"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="8F00F2"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evHuntingJournalBookBundleDesc"/>
       <property class="Action0">
@@ -1070,7 +1070,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookArtOfMiningLuckyStrike"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="8F00F2"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evArtOfMiningBookBundleDesc"/>
       <property class="Action0">
@@ -1084,7 +1084,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookRangersArrowRecovery"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="8F00F2"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evRangersBookBundleDesc"/>
       <property class="Action0">
@@ -1098,7 +1098,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookPistolPeteTakeAim"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="8F00F2"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evPistolPeteBookBundleDesc"/>
       <property class="Action0">
@@ -1112,7 +1112,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookShotgunMessiahDamage"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="8F00F2"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evShotgunMessiahBookBundleDesc"/>
       <property class="Action0">
@@ -1126,7 +1126,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookSniperDamage"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="8F00F2"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evSniperBookBundleDesc"/>
       <property class="Action0">
@@ -1140,7 +1140,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookAutoWeaponsDamage"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="8F00F2"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evAutoWeaponsBookBundleDesc"/>
       <property class="Action0">
@@ -1154,7 +1154,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookUrbanCombatLanding"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="8F00F2"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evUrbanCombatBookBundleDesc"/>
       <property class="Action0">
@@ -1168,7 +1168,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookTechJunkie1Damage"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="8F00F2"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evTechJunkieBookBundleDesc"/>
       <property class="Action0">
@@ -1182,7 +1182,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookBarBrawling1BasicMoves"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="8F00F2"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evBarBrawlingBookBundleDesc"/>
       <property class="Action0">
@@ -1196,7 +1196,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bookSpearHunter1Damage"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="8F00F2"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evSpearHunterBookBundleDesc"/>
       <property class="Action0">
@@ -1210,7 +1210,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="forge"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="F000FF"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evWorkstationBundleDesc"/>
       <property class="Action0">
@@ -1226,7 +1226,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleFood"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="66FF00"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evFoodSmallBundleDesc"/>
       <property class="Action0">
@@ -1244,7 +1244,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleFood"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="66FF00"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evFoodMediumBundleDesc"/>
       <property class="Action0">
@@ -1262,7 +1262,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleFood"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="66FF00"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evFoodLargeBundleDesc"/>
       <property class="Action0">
@@ -1282,7 +1282,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="drinkJarBoiledWater"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="00FFD5"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evDrinkSmallBundleDesc"/>
       <property class="Action0">
@@ -1300,7 +1300,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="drinkJarPureMineralWater"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="00FFD5"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evDrinkMediumBundleDesc"/>
       <property class="Action0">
@@ -1318,7 +1318,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="drinkJarHoneyTea"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="00FFD5"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evDrinkLargeBundleDesc"/>
       <property class="Action0">
