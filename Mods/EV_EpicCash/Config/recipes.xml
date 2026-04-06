@@ -265,5 +265,10 @@
     <recipe name="evSpearHunterBookBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
       <ingredient name="evCash" count="10"/>
     </recipe>
+
+    <!-- === WORKSTATION BUNDLE === -->
+    <recipe name="evWorkstationBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="50"/>
+    </recipe>
   </append>
 </configs>

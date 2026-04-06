@@ -1204,5 +1204,19 @@
         <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
       </property>
     </item>
+
+    <!-- === WORKSTATION BUNDLE === -->
+    <item name="evWorkstationBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="forge"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evWorkstationBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="forge,workbench,cementMixer,chemistryStation,cntDewCollector"/>
+        <property name="Create_item_count" value="1,1,1,1,2"/>
+      </property>
+    </item>
   </append>
 </configs>
