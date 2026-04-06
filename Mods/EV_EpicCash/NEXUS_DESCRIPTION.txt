@@ -51,6 +51,161 @@ give <player_name> evCash 100[/code]
 [*][b]Multiplayer:[/b] Server-side only — clients do not need this mod installed.
 [/list]
 
+[size=5][b]Included Bundles[/b][/size]
+
+The mod ships with [b]92 ready-made bundles[/b] across 10 categories, all craftable from the player inventory using Epic Bucks (EB).
+
+[color=#FF6A00][size=4][b]Vehicle Bundles[/b][/size][/color]
+
+[list]
+[*][b]Bicycle Kit[/b] (5 EB) — Bicycle, 2× Vehicle Storage mod
+[*][b]Minibike Starter Kit[/b] (7 EB) — Minibike, 3,000× Gas Can, Super Charger mod
+[*][b]Motorcycle Starter Kit[/b] (10 EB) — Motorcycle, 5,000× Gas Can, Fuel Saver mod
+[*][b]4x4 Truck Starter Kit[/b] (20 EB) — 4x4 Truck, 12,000× Gas Can, Fuel Saver / Super Charger / Reserve Fuel Tank mods
+[*][b]Gyrocopter Starter Kit[/b] (20 EB) — Gyrocopter, 12,000× Gas Can
+[/list]
+
+[color=#FF3131][size=4][b]Weapon Bundles[/b][/size][/color]
+
+[list]
+[*][b]Pistol Kit[/b] (10 EB) — T6 Pistol, 600× AP 9mm rounds
+[*][b]Pump Shotgun Kit[/b] (10 EB) — T6 Pump Shotgun, 600× AP slugs
+[*][b]Sniper Rifle Kit[/b] (15 EB) — T6 Sniper Rifle, 1,000× AP 7.62mm rounds
+[*][b]SMG-5 Kit[/b] (20 EB) — T6 SMG-5, 1,500× AP 9mm rounds
+[*][b]Desert Vulture Kit[/b] (20 EB) — T6 Desert Vulture, 1,000× AP .44 Magnum rounds
+[*][b]Auto Shotgun Kit[/b] (20 EB) — T6 Auto Shotgun, 1,000× AP slugs
+[*][b]Robotic Turret Kit[/b] (20 EB) — T6 Robotic Turret, 1,000× AP turret rounds
+[*][b]M60 Machine Gun Kit[/b] (25 EB) — T6 M60, 3,000× AP 7.62mm rounds
+[/list]
+
+[color=#FDFF00][size=4][b]Ammo Bundles[/b][/size][/color]
+
+[list]
+[*][b]9mm Ammo Pack[/b] (1 EB) — 1,000× standard 9mm rounds
+[*][b].44 Magnum Ammo Pack[/b] (1 EB) — 1,000× standard .44 Magnum rounds
+[*][b]7.62mm Ammo Pack[/b] (1 EB) — 1,000× standard 7.62mm rounds
+[*][b]Shotgun Shell Pack[/b] (1 EB) — 1,000× standard shotgun shells
+[*][b]Robotic Turret Ammo Pack[/b] (1 EB) — 1,000× standard Robotic Turret rounds
+[*][b]AP 9mm Ammo Pack[/b] (2 EB) — 1,000× AP 9mm rounds
+[*][b]AP .44 Magnum Ammo Pack[/b] (2 EB) — 1,000× AP .44 Magnum rounds
+[*][b]AP 7.62mm Ammo Pack[/b] (2 EB) — 1,000× AP 7.62mm rounds
+[*][b]AP Shotgun Slug Pack[/b] (2 EB) — 1,000× AP shotgun slugs
+[*][b]AP Robotic Turret Ammo Pack[/b] (2 EB) — 1,000× AP Robotic Turret rounds
+[/list]
+
+[color=#1F51FF][size=4][b]Armor Bundles[/b][/size][/color]
+
+All armor bundles include a full Tier 6 set (helmet, outfit, gloves, boots) — [b]10 EB[/b] each.
+
+[list]
+[*]Lumberjack Armor Set
+[*]Preacher Armor Set
+[*]Rogue Armor Set
+[*]Athletic Armor Set
+[*]Enforcer Armor Set
+[*]Farmer Armor Set
+[*]Biker Armor Set
+[*]Scavenger Armor Set
+[*]Ranger Armor Set
+[*]Commando Armor Set
+[*]Assassin Armor Set
+[*]Miner Armor Set
+[*]Nomad Armor Set
+[*]Nerd Armor Set
+[*]Raider Armor Set
+[/list]
+
+[color=#39FF14][size=4][b]Tool Bundles[/b][/size][/color]
+
+All tool bundles contain a single Tier 6 tool — [b]5 EB[/b] each.
+
+[list]
+[*]Nailgun Kit
+[*]Chainsaw Kit
+[*]Auger Kit
+[*]Impact Driver Kit
+[/list]
+
+[color=#BC13FE][size=4][b]Skill Magazine Bundles[/b][/size][/color]
+
+All magazine bundles contain 10 copies of the respective magazine — [b]10 EB[/b] each.
+
+[list]
+[*]Home Cooking Weekly Pack (10)
+[*]Medical Journal Pack (10)
+[*]Armored Up Pack (10)
+[*]Vehicle Adventures Pack (10)
+[*]Tools Digest Pack (10)
+[*]Handy Land Pack (10)
+[*]Scrapping 4 Fun Pack (10)
+[*]Furious Fists Pack (10)
+[*]Knife Guy Pack (10)
+[*]Big Hitters Pack (10)
+[*]Get Hammered Pack (10)
+[*]Sharp Sticks Pack (10)
+[*]Bow Hunters Pack (10)
+[*]Handgun Magazine Pack (10)
+[*]Shotgun Weekly Pack (10)
+[*]Rifle World Pack (10)
+[*]Tactical Warfare Pack (10)
+[*]Explosive Magazine Pack (10)
+[*]Tech Planet Pack (10)
+[*]Southern Farming Pack (10)
+[*]Wiring 101 Pack (10)
+[*]Electrical Traps Pack (10)
+[*]Forge Ahead Pack (10)
+[/list]
+
+[color=#8F00F2][size=4][b]Skill Book Bundles[/b][/size][/color]
+
+All book bundles contain the complete set of 7 volumes — [b]10 EB[/b] each.
+
+[list]
+[*]The Fireman's Almanac Complete Set
+[*]Night Stalker Complete Set
+[*]Lucky Looter Complete Set
+[*]Magnum Enforcer Complete Set
+[*]Batter Up Complete Set
+[*]Sledge Saga Complete Set
+[*]The Great Heist Complete Set
+[*]Wasteland Treasures Complete Set
+[*]The Hunter's Journal Complete Set
+[*]Art of Mining Complete Set
+[*]Ranger's Guide to Archery Complete Set
+[*]Pistol Pete Complete Set
+[*]Shotgun Messiah Complete Set
+[*]Sniper Complete Set
+[*]Automatic Weapons Handbook Complete Set
+[*]Urban Combat Complete Set
+[*]Tech Junkie Complete Set
+[*]Bar Brawling Complete Set
+[*]Spear Hunter Complete Set
+[/list]
+
+[color=#F000FF][size=4][b]Workstation Bundle[/b][/size][/color]
+
+[list]
+[*][b]Basic Workstations Kit[/b] (50 EB) — Forge, Workbench, Cement Mixer, Chemistry Station, 2× Dew Collector
+[/list]
+
+[color=#66FF00][size=4][b]Food Bundles[/b][/size][/color]
+
+[list]
+[*][b]Small Food Kit[/b] (1 EB) — 12× random basic meals
+[*][b]Medium Food Kit[/b] (2 EB) — 12× random hearty meals
+[*][b]Large Food Kit[/b] (3 EB) — 12× random gourmet meals
+[/list]
+
+[color=#00FFD5][size=4][b]Drink Bundles[/b][/size][/color]
+
+[list]
+[*][b]Small Drink Kit[/b] (1 EB) — 15× random basic drinks
+[*][b]Medium Drink Kit[/b] (2 EB) — 15× random quality drinks
+[*][b]Large Drink Kit[/b] (3 EB) — 15× random premium drinks
+[/list]
+
+[quote]If your server runs mods that add custom items to the game, you can easily extend EpicCash to support them. Follow the guide in the mod's README to create bundles containing any modded items at any price.[/quote]
+
 [size=5][b]Credits[/b][/size]
 
 [list]
