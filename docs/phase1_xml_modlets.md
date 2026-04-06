@@ -402,10 +402,12 @@ A random subset of items is selected from the pool. Uses `Create_item` as a requ
 | --- | --- |
 | `Random_item` | Comma-separated pool of all possible item/block IDs |
 | `Random_count` | Number of items to randomly pick from the pool |
-| `Random_item_count` | Comma-separated count for each picked slot (length must equal `Random_count`) |
+| `Random_item_count` | Comma-separated count **parallel to `Random_item`** — one value per item in the pool, defining how many the player receives if that item is picked |
 | `Unique_random_only` | `true` — each pick is unique (no duplicates); `false` — duplicates allowed |
 
 > **Note**: `Create_item` + `Create_item_count` are still required as a placeholder. Set `Create_item_count` to `0` to give zero of the placeholder item.
+>
+> **Important**: `Random_item_count` is a parallel array to `Random_item`, **not** to the number of slots. Each value specifies the quantity for the corresponding item in the pool. If fewer values are provided than items in the pool, remaining items default to count `1`.
 
 ### Pattern C: Loot Table Bundle (OpenLootBundle)
 
