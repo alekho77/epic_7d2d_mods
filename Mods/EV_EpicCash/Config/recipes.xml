@@ -1,5 +1,6 @@
 <configs>
   <append xpath="/recipes">
+    <!-- === VEHICLE BUNDLES === -->
     <recipe name="evMotorcycleStarterBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
       <ingredient name="evCash" count="10"/>
     </recipe>
@@ -15,6 +16,8 @@
     <recipe name="evGyrocopterStarterBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
       <ingredient name="evCash" count="20"/>
     </recipe>
+
+    <!-- === WEAPON BUNDLES === -->
     <recipe name="evPistolBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
       <ingredient name="evCash" count="10"/>
     </recipe>
@@ -36,6 +39,8 @@
     <recipe name="evM60Bundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
       <ingredient name="evCash" count="25"/>
     </recipe>
+
+    <!-- === AMMO BUNDLES === -->
     <recipe name="evAmmo9mmBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
       <ingredient name="evCash" count="1"/>
     </recipe>
@@ -60,6 +65,8 @@
     <recipe name="evAmmoShotgunAPBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
       <ingredient name="evCash" count="2"/>
     </recipe>
+
+    <!-- === ARMOR BUNDLES === -->
     <recipe name="evArmorLumberjackBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
       <ingredient name="evCash" count="10"/>
     </recipe>
