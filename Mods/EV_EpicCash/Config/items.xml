@@ -15,6 +15,8 @@
       <property name="Group" value="Resources"/>
     </item>
 
+    <!-- === VEHICLE BUNDLES === -->
+
     <!-- Motorcycle Starter Kit bundle: motorcycle + 5000 gas + fuel saver mod -->
     <item name="evMotorcycleStarterBundle">
       <property name="Extends" value="questRewardBundleMaster"/>
@@ -84,6 +86,8 @@
         <property name="Create_item_count" value="1,12000"/>
       </property>
     </item>
+
+    <!-- === WEAPON BUNDLES === -->
 
     <!-- Pistol Kit: T6 pistol + 600 9mm rounds -->
     <item name="evPistolBundle">
@@ -182,6 +186,8 @@
         <property name="Create_item_count" value="6,3000"/>
       </property>
     </item>
+
+    <!-- === AMMO BUNDLES === -->
 
     <!-- 9mm Ammo Bundle: 1000 regular 9mm rounds -->
     <item name="evAmmo9mmBundle">
