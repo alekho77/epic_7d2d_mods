@@ -39,6 +39,9 @@
     <recipe name="evM60Bundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
       <ingredient name="evCash" count="25"/>
     </recipe>
+    <recipe name="evRoboticTurretBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="20"/>
+    </recipe>
 
     <!-- === AMMO BUNDLES === -->
     <recipe name="evAmmo9mmBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
@@ -63,6 +66,12 @@
       <ingredient name="evCash" count="1"/>
     </recipe>
     <recipe name="evAmmoShotgunAPBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="2"/>
+    </recipe>
+    <recipe name="evAmmoTurretBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="1"/>
+    </recipe>
+    <recipe name="evAmmoTurretAPBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
       <ingredient name="evCash" count="2"/>
     </recipe>
 

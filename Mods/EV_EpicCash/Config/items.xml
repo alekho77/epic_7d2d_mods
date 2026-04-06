@@ -187,6 +187,20 @@
       </property>
     </item>
 
+    <!-- Robotic Turret Kit: T6 robotic turret + 1000 AP turret ammo -->
+    <item name="evRoboticTurretBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleTurrets"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evRoboticTurretBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="gunBotT2JunkTurret,ammoJunkTurretAP"/>
+        <property name="Create_item_count" value="6,1000"/>
+      </property>
+    </item>
+
     <!-- === AMMO BUNDLES === -->
 
     <!-- 9mm Ammo Bundle: 1000 regular 9mm rounds -->
@@ -297,6 +311,34 @@
       <property name="DescriptionKey" value="evAmmoShotgunAPBundleDesc"/>
       <property class="Action0">
         <property name="Create_item" value="ammoShotgunSlug"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
+    <!-- Robotic Turret Ammo Bundle: 1000 regular turret rounds -->
+    <item name="evAmmoTurretBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleAmmo"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmoTurretBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammoJunkTurretRegular"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
+    <!-- AP Robotic Turret Ammo Bundle: 1000 AP turret rounds -->
+    <item name="evAmmoTurretAPBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleAmmo"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmoTurretAPBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammoJunkTurretAP"/>
         <property name="Create_item_count" value="1000"/>
       </property>
     </item>
