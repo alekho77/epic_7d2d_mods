@@ -512,5 +512,63 @@
         <property name="Create_item_count" value="6,6,6,6"/>
       </property>
     </item>
+
+    <!-- === TOOL BUNDLES === -->
+
+    <!-- Nailgun Kit: T6 nailgun -->
+    <item name="evNailgunBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleTools"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evNailgunBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeToolRepairT3Nailgun"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <!-- Chainsaw Kit: T6 chainsaw -->
+    <item name="evChainsawBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleTools"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evChainsawBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeToolAxeT3Chainsaw"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <!-- Auger Kit: T6 auger -->
+    <item name="evAugerBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleTools"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAugerBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeToolPickT3Auger"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <!-- Impact Driver Kit: T6 impact driver -->
+    <item name="evImpactDriverBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleTools"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evImpactDriverBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeToolSalvageT3ImpactDriver"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
   </append>
 </configs>
