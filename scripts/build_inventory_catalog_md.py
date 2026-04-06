@@ -320,8 +320,12 @@ def parse_localization(txt_path: str) -> dict:
 # ---------------------------------------------------------------------------
 
 def _md_escape(text: str) -> str:
-    """Escape pipe characters and collapse newlines for Markdown table cells."""
-    return text.replace("\\n", " ").replace("|", "\\|").replace("\n", " ")
+    """Escape pipe characters, brackets, and collapse newlines for Markdown table cells."""
+    return (text
+            .replace("\\n", " ")
+            .replace("|", "\\|")
+            .replace("\n", " ")
+            .replace("[", "\\["))
 
 
 def _gfm_anchor(heading: str) -> str:
@@ -366,6 +370,8 @@ def render_markdown(
     grand_total = sum(len(objs) for objs in all_objects.values())
 
     lines: list[str] = []
+    lines.append("<!-- markdownlint-disable MD060 -->")
+    lines.append("")
     lines.append("# 7D2D Inventory Object Catalog")
     lines.append("")
     parts = [f"**Total objects: {grand_total}**"]

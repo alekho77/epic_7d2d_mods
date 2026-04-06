@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD060 -->
+
 # 7D2D Inventory Object Catalog
 
 **Total objects: 7776** | Items: 1380 | Blocks: 6289 | Item Modifiers: 107
@@ -139,7 +141,7 @@
 | `meleeToolSalvageT1Wrench` | Wrench | Гаечный ключ | Отлично подходит для разбора механических устройств вроде машин, кондиционеров и тому подобного.  Ремонтируется с помощью ремонтного набора. Разбирается на железо. | default |
 | `meleeToolSalvageT2Ratchet` | Ratchet | Ключ-трещотка | Отлично подходит для разбора механических устройств вроде машин, кондиционеров и тому подобного.  Ремонтируется с помощью ремонтного набора. Разбирается на части стального инструмента. | default |
 | `meleeToolSalvageT3ImpactDriver` | Impact Driver | Гайковерт | Отлично подходит для разбора механических устройств вроде машин, кондиционеров и тому подобного.  Ремонтируется с помощью ремонтного набора. Разбирается на части бензоинструмента. | default |
-| `meleeToolFlashlight02` | Flashlight | Фонарик | Фонарик можно использовать в качестве источника света.  Для включения используйте действие «Источник света» ([action:permanent:ToggleFlashlight][action:local:ToggleFlashlight]).  Разбирается на электрику. | default |
+| `meleeToolFlashlight02` | Flashlight | Фонарик | Фонарик можно использовать в качестве источника света.  Для включения используйте действие «Источник света» (\[action:permanent:ToggleFlashlight]\[action:local:ToggleFlashlight]).  Разбирается на электрику. | default |
 | `meleeToolTorch` | Torch | Факел | Факел можно использовать как источник света и тепла или как оружие, которым можно поджечь врагов.  Размещается с помощью дополнительного действия. Может привлечь зомби. | default |
 | `meleeToolWireTool` | Wire Tool | Стриппер | Используйте стриппер для прокладки электрических коммуникаций. | default |
 | `meleeToolPaintTool` | Paint Brush | Кисточка | Используйте краску, чтобы покрасить строительные блоки, удерживайте клавишу перезарядки, чтобы выбрать варианты покраски. Можно удалить нежелательное окрашивание блоков с помощью основного действия. | Player |
@@ -159,7 +161,7 @@
 | `toolApiaryExtractor` | Honey Extractor | Экстрактор мёда | При установке на пасеке повышает скорость добычи мёда. | default |
 | `toolApiaryBroodBox` | Brood Box | Гнездовая секция | При установке на пасеке удваивает добычу мёда. | default |
 | `toolApiarySmoker` | Smoker | Дымарь | При установке на пасеке сводит на нет вероятность появления раздраженных пчел. | default |
-| `resourceLockPick` | Lockpick | Отмычка | Найдя закрытый контейнер, просто нажмите [action:local:Activate][action:permanent:Activate], чтобы попытаться его открыть. Если попытка провалится, то отмычка сломается и исчезнет.  Отмычки не нужно перемещать на панель быстрого доступа. | default |
+| `resourceLockPick` | Lockpick | Отмычка | Найдя закрытый контейнер, просто нажмите \[action:local:Activate]\[action:permanent:Activate], чтобы попытаться его открыть. Если попытка провалится, то отмычка сломается и исчезнет.  Отмычки не нужно перемещать на панель быстрого доступа. | default |
 | `resourceLockPickBundle` | Stack of Lockpicks (50) | Запас отмычек (50) | Компактный запас отмычек. Используйте, чтобы распаковать его. | default |
 | `meleeToolPaintToolAdmin` | Dev: Paint Brush | Разраб: Кисточка | Не требует краски. | Dev |
 | `meleeToolSalvageWrenchAdmin` | Dev: Super Wrench | Разраб: Суперинструмент | Гаечный ключ, который собирает что угодно с полоборота. | Dev |
@@ -225,11 +227,11 @@
 | `ammoBundleCrossbowBoltFlaming` | Box of Flaming Crossbow Bolts (100) | Коробка зажигательных болтов (100) |  | default |
 | `ammoBundleCrossbowBoltExploding` | Box of Exploding Crossbow Bolts (75) | Коробка взрывных болтов (75) |  | default |
 | `ammoGasCanBundle` | Stack of Gas Cans (5000) | Запас канистр с бензином (5 000) | Это компактный запас канистр с бензином. Используйте, чтобы распаковать его. | default |
-| `thrownAmmoPipeBomb` | Pipe Bomb (Ammo) | Самодельная бомба (боеприпасы) | Делайте самодельные бомбы из пороха, труб и стеблей травы. Поджигайте с помощью [action:local:Secondary] Бросайте с помощью [action:local:Primary] | default |
-| `thrownGrenadeContact` | Contact Grenade (Ammo) | Контактная граната (боеприпасы) | Гранаты с контактной детонацией — опасные вещицы, которые во взведенном состоянии взрываются при контакте. Взводите с помощью [action:local:Secondary] Бросайте с помощью [action:local:Primary] | default |
-| `thrownTimedCharge` | Timed Charge (Ammo) | Взрывчатка с часовым механизмом (боеприпасы) | Кумулятивный заряд для деликатных задач: взорвать запор сейфа, двери или голову зомби. Автоматически детонирует через 5 секунд. Нужно снести целый дом? Воспользуйтесь динамитом. Взводите с помощью [action:local:Secondary] Бросайте с помощью [action:local:Primary] | default |
-| `thrownDynamite` | Stick of Dynamite (Ammo) | Динамитная шашка (боеприпасы) | Динамитная шашка. Поджигайте с помощью [action:local:Secondary] Бросайте с помощью [action:local:Primary] Не забывайте бросить шашку. | default |
-| `thrownAmmoMolotovCocktail` | Molotov Cocktail (Ammo) | Коктейль Молотова (боеприпасы) | Первая страница «Кулинарной книги анархиста». Поджигайте с помощью [action:local:Secondary] Бросайте с помощью [action:local:Primary] | default |
+| `thrownAmmoPipeBomb` | Pipe Bomb (Ammo) | Самодельная бомба (боеприпасы) | Делайте самодельные бомбы из пороха, труб и стеблей травы. Поджигайте с помощью \[action:local:Secondary] Бросайте с помощью \[action:local:Primary] | default |
+| `thrownGrenadeContact` | Contact Grenade (Ammo) | Контактная граната (боеприпасы) | Гранаты с контактной детонацией — опасные вещицы, которые во взведенном состоянии взрываются при контакте. Взводите с помощью \[action:local:Secondary] Бросайте с помощью \[action:local:Primary] | default |
+| `thrownTimedCharge` | Timed Charge (Ammo) | Взрывчатка с часовым механизмом (боеприпасы) | Кумулятивный заряд для деликатных задач: взорвать запор сейфа, двери или голову зомби. Автоматически детонирует через 5 секунд. Нужно снести целый дом? Воспользуйтесь динамитом. Взводите с помощью \[action:local:Secondary] Бросайте с помощью \[action:local:Primary] | default |
+| `thrownDynamite` | Stick of Dynamite (Ammo) | Динамитная шашка (боеприпасы) | Динамитная шашка. Поджигайте с помощью \[action:local:Secondary] Бросайте с помощью \[action:local:Primary] Не забывайте бросить шашку. | default |
+| `thrownAmmoMolotovCocktail` | Molotov Cocktail (Ammo) | Коктейль Молотова (боеприпасы) | Первая страница «Кулинарной книги анархиста». Поджигайте с помощью \[action:local:Secondary] Бросайте с помощью \[action:local:Primary] | default |
 | `ammoDartIron` | Iron Dart (Ammo) | Железный дротик (боеприпасы) | Используется в качестве боеприпасов для ловушек. | default |
 | `resourceArrowHeadIron` | Iron Arrowhead | Железный наконечник | Широкий железный наконечник используется для изготовления стрел и болтов. | default |
 | `resourceArrowHeadSteelAP` | Steel Arrowhead | Стальной наконечник | Тонкий наконечник, изготовленный из стали. Используется для изготовления бронебойных стрел и болтов. | default |
@@ -787,7 +789,7 @@
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
-| `thrownGrenade` | Grenade (Ammo) | Граната (боеприпасы) | Выдерните чеку. Бросайте. Взводите с помощью [action:local:Secondary] Бросайте с помощью [action:local:Primary] | default |
+| `thrownGrenade` | Grenade (Ammo) | Граната (боеприпасы) | Выдерните чеку. Бросайте. Взводите с помощью \[action:local:Secondary] Бросайте с помощью \[action:local:Primary] | default |
 | `modGunBarrelExtenderSchematic` | Barrel Extender Mod Schematic | Схема модификации «Удлиненный ствол» |  | Player |
 | `modGunMuzzleBrakeSchematic` | Muzzle Brake Mod Schematic | Схема модификации «Дульный тормоз» |  | Player |
 | `modGunSoundSuppressorSilencerSchematic` | Silencer Mod Schematic | Схема модификации «Глушитель» |  | Player |
@@ -1118,7 +1120,7 @@
 | `questItem` |  |  |  | None |
 | `masterSkillMagazine` |  |  |  | None |
 | `questRewardBundleMaster` |  |  |  | None |
-| `twitchTurd` | Poop | Какашка | Это [DECEA3]какашка[-]. Вы видели, что это [DECEA3]какашка[-], но все равно ее подобрали. [DECEA3]НЕ НАДО[-] таскать ее с собой.  С ней ничего нельзя сделать. От какашки буквально [DECEA3]НИКАКОЙ[-] пользы, а ее ценность — [DECEA3]НОЛЬ[-].  Зачем она вам?! Избавьтесь от нее! | None |
+| `twitchTurd` | Poop | Какашка | Это \[DECEA3]какашка\[-]. Вы видели, что это \[DECEA3]какашка\[-], но все равно ее подобрали. \[DECEA3]НЕ НАДО\[-] таскать ее с собой.  С ней ничего нельзя сделать. От какашки буквально \[DECEA3]НИКАКОЙ\[-] пользы, а ее ценность — \[DECEA3]НОЛЬ\[-].  Зачем она вам?! Избавьтесь от нее! | None |
 | `biomeBadge1` | Biome Badge 1 | Значок биома 1 | Значок биома 1 навсегда убирает негативные эффекты дыма, который вы вдыхаете в Сгоревшем лесу.  Не защищает от ураганов. | None |
 | `biomeBadge2` | Biome Badge 2 | Значок биома 2 | Значок биома 2 навсегда убирает негативные эффекты жары в пустыне. Также активирует преимущества значка 1.  Не защищает от ураганов. | None |
 | `biomeBadge3` | Biome Badge 3 | Значок биома 3 | Значок биома 3 навсегда убирает негативные эффекты холода в заснеженной области. Также активирует преимущества значков 1 и 2.  Не защищает от ураганов. | None |
@@ -3556,7 +3558,7 @@
 | `ironDoorBlack` | Black Iron Door | Черная железная дверь |  | default |
 | `ironDoorPink` | Pink Iron Door | Розовая железная дверь |  | default |
 | `ironDoorArmyGreen` | Army Green Iron Door | Железная дверь цвета хаки |  | default |
-| `ironDoorBlockVariantHelper` | Iron Door | Железная дверь | Можно разместить или использовать для улучшения деревянной двери. Нажмите и удерживайте «[action:local:Activate][action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа. Ремонтируйте с помощью кованого железа и строительного инструмента. Используйте перезарядку и круговое меню, чтобы выбрать цвет при размещении. Можно дополнить стальной дверью. | default |
+| `ironDoorBlockVariantHelper` | Iron Door | Железная дверь | Можно разместить или использовать для улучшения деревянной двери. Нажмите и удерживайте «\[action:local:Activate]\[action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа. Ремонтируйте с помощью кованого железа и строительного инструмента. Используйте перезарядку и круговое меню, чтобы выбрать цвет при размещении. Можно дополнить стальной дверью. | default |
 | `ironDoorDoubleBrown` | Brown Iron Door Double | Коричневая двойная железная дверь |  | default |
 | `ironDoorDoubleRed` | Red Iron Door Double | Красная двойная железная дверь |  | default |
 | `ironDoorDoubleOrange` | Orange Iron Door Double | Оранжевая двойная железная дверь |  | default |
@@ -3568,7 +3570,7 @@
 | `ironDoorDoubleBlack` | Black Iron Door Double | Черная двойная железная дверь |  | default |
 | `ironDoorDoublePink` | Pink Iron Door Double | Розовая двойная железная дверь |  | default |
 | `ironDoorDoubleArmyGreen` | Army Green Iron Door Double | Двойная железная дверь цвета хаки |  | default |
-| `ironDoorDoubleBlockVariantHelper` | Iron Double Door | Двойная железная дверь | Можно разместить или использовать для улучшения двойной деревянной двери. Нажмите и удерживайте «[action:local:Activate][action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа. Ремонтируйте с помощью кованого железа и строительного инструмента. Используйте перезарядку и круговое меню, чтобы выбрать цвет при размещении. Можно дополнить двойной стальной дверью. | default |
+| `ironDoorDoubleBlockVariantHelper` | Iron Double Door | Двойная железная дверь | Можно разместить или использовать для улучшения двойной деревянной двери. Нажмите и удерживайте «\[action:local:Activate]\[action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа. Ремонтируйте с помощью кованого железа и строительного инструмента. Используйте перезарядку и круговое меню, чтобы выбрать цвет при размещении. Можно дополнить двойной стальной дверью. | default |
 | `shuttersWood01` | Wood Shutters Inside | Деревянные ставни внутри |  | default |
 | `shuttersIron01` | Iron Shutters Inside | Железные ставни внутри |  | default |
 | `shuttersSteel01` | Steel Shutters Inside | Стальные ставни внутри |  | default |
@@ -4018,7 +4020,7 @@
 | `ironHatchGrey` | Grey Iron Hatch | Серая железная крышка люка |  | default |
 | `ironHatchBlack` | Black Iron Hatch | Черная железная крышка люка |  | default |
 | `ironHatchPink` | Pink Iron Hatch | Розовая железная крышка люка |  | default |
-| `vaultHatch01` | Steel Hatch | Стальная крышка люка | Можно разместить или использовать для улучшения железной крышки люка.  Нажмите и удерживайте «[action:local:Activate][action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа. Ремонтируйте с помощью кованой стали и строительного инструмента. | default |
+| `vaultHatch01` | Steel Hatch | Стальная крышка люка | Можно разместить или использовать для улучшения железной крышки люка.  Нажмите и удерживайте «\[action:local:Activate]\[action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа. Ремонтируйте с помощью кованой стали и строительного инструмента. | default |
 | `securityGateCTRPlate` | Security Gate Centered | Центрованные укрепленные ворота |  | None |
 | `securityGatePlate` | Security Gate | Укрепленные ворота |  | None |
 | `securityGateCTRPlateDiagonal` | Security Gate Diagonal | Диагональные укрепленные ворота |  | None |
@@ -7135,7 +7137,7 @@
 | `shuttersWoodBlockVariantHelper` | Wood Shutters | Деревянные ставни |  | Player |
 | `shuttersIronBlockVariantHelper` | Iron Shutters | Железные ставни |  | Player |
 | `shuttersSteelBlockVariantHelper` | Steel Shutters | Стальные ставни |  | Player |
-| `ironHatchBlockVariantHelper` | Iron Hatch | Железная крышка люка | Можно разместить или использовать для улучшения деревянной крышки люка. Нажмите и удерживайте «[action:local:Activate][action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа. Ремонтируйте с помощью кованого железа и строительного инструмента. Используйте перезарядку и круговое меню, чтобы выбрать цвет при размещении. Можно дополнить стальной крышкой люка. | Player |
+| `ironHatchBlockVariantHelper` | Iron Hatch | Железная крышка люка | Можно разместить или использовать для улучшения деревянной крышки люка. Нажмите и удерживайте «\[action:local:Activate]\[action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа. Ремонтируйте с помощью кованого железа и строительного инструмента. Используйте перезарядку и круговое меню, чтобы выбрать цвет при размещении. Можно дополнить стальной крышкой люка. | Player |
 | `cntMailBox01VariantHelper` | Mailbox 01 | Почтовый ящик 01 |  | Player |
 | `cntMailBox02VariantHelper` | Mailbox 02 | Почтовый ящик 02 |  | Player |
 | `cntMailBox03VariantHelper` | Mailbox 03 | Почтовый ящик 03 |  | Player |
@@ -7163,7 +7165,7 @@
 | `cntWallSafeInsecure` | Wall Safe | Настенный сейф |  | None |
 | `cntWallSafe_Player` | Wall Safe | Настенный сейф |  | Player |
 | `cntWallSafeInsecure_Player` | Wall Safe | Настенный сейф |  | None |
-| `cntGunSafe` | Gun Safe | Оружейный сейф | Нажмите и удерживайте клавишу [action:local:Activate][action:permanent:Activate], чтобы закрыть или установить пароль. | Player |
+| `cntGunSafe` | Gun Safe | Оружейный сейф | Нажмите и удерживайте клавишу \[action:local:Activate]\[action:permanent:Activate], чтобы закрыть или установить пароль. | Player |
 | `cntGunSafeInsecure` | Gun Safe | Оружейный сейф |  | None |
 | `cntGunSafe_Player` | Black Gun Safe | Черный оружейный сейф |  | Player |
 | `cntGunSafeInsecure_Player` | Black Gun Safe | Черный оружейный сейф |  | None |
@@ -7523,17 +7525,17 @@
 | `chainlinkFenceDoorDouble` | Chain Link Door Double | Двойная дверь для забора из сетки-рабицы |  | default |
 | `jailDoorWhite` | White Jail Door | Белая дверь камеры |  | default |
 | `jailDoorDoubleWhite` | White Jail Double Door | Белая двойная дверь камеры |  | default |
-| `oldWoodDoor` | Wood Door | Деревянная дверь | Нажмите и удерживайте «[action:local:Activate][action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа.  Ремонтируйте с помощью дерева, строительного инструмента и дополнительного действия. Можно дополнить железной дверью. | default |
-| `oldWoodDoorDouble` | Wood Double Door | Двойная деревянная дверь | Нажмите и удерживайте «[action:local:Activate][action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа.  Ремонтируйте с помощью дерева, строительного инструмента и дополнительного действия. Можно дополнить двойной железной дверью. | default |
+| `oldWoodDoor` | Wood Door | Деревянная дверь | Нажмите и удерживайте «\[action:local:Activate]\[action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа.  Ремонтируйте с помощью дерева, строительного инструмента и дополнительного действия. Можно дополнить железной дверью. | default |
+| `oldWoodDoorDouble` | Wood Double Door | Двойная деревянная дверь | Нажмите и удерживайте «\[action:local:Activate]\[action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа.  Ремонтируйте с помощью дерева, строительного инструмента и дополнительного действия. Можно дополнить двойной железной дверью. | default |
 | `ironDoorWhite` | White Iron Door | Белая железная дверь |  | default |
 | `ironDoorDoubleWhite` | White Iron Door Double | Белая двойная железная дверь |  | default |
-| `vaultDoor01` | Steel Door | Стальная дверь | Можно разместить или использовать для улучшения железной двери.  Нажмите и удерживайте «[action:local:Activate][action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа. Ремонтируйте с помощью кованой стали и строительного инструмента. | default |
-| `vaultDoor01_Powered` | Steel Door (Powered) | Стальная дверь (подключена к источнику энергии) | Для активации этой двери подключите ее к источнику энергии.  Нажмите и удерживайте «[action:local:Activate][action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа. Ремонтируйте с помощью кованой стали и строительного инструмента. | default |
-| `vaultDoor01Double` | Steel Door Double | Двойная стальная дверь | Можно разместить или использовать для улучшения двойной железной двери.  Нажмите и удерживайте «[action:local:Activate][action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа. Ремонтируйте с помощью кованой стали и строительного инструмента. | default |
-| `vaultDoor01Double_Powered` | Steel Door Double (Powered) | Двойная стальная дверь (подключ.) | Для активации этой двери подключите ее к источнику энергии.  Нажмите и удерживайте «[action:local:Activate][action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа. Ремонтируйте с помощью кованой стали и строительного инструмента. | default |
-| `cellarDoorDoubleWood` | Wood Cellar Door | Деревянная дверь подвала | Нажмите и удерживайте клавишу [action:local:Activate][action:permanent:Activate], чтобы закрыть или установить комбинацию для доступа. Улучшайте и ремонтируйте с помощью дерева, строительного инструмента и дополнительного действия. Можно улучшить до железной двери подвала с помощью созданной железной двери подвала. | default |
-| `cellarDoorDoubleIron` | Iron Cellar Door | Железная дверь подвала | Нажмите и удерживайте клавишу [action:local:Activate][action:permanent:Activate], чтобы закрыть или установить комбинацию для доступа. Улучшайте и ремонтируйте с помощью кованого железа, строительного инструмента и дополнительного действия. Можно улучшить до стальной двери подвала с помощью созданной стальной двери подвала. | default |
-| `cellarDoorDoubleSteel` | Steel Cellar Door | Стальная дверь подвала | Нажмите и удерживайте клавишу [action:local:Activate][action:permanent:Activate], чтобы закрыть или установить комбинацию для доступа. Улучшайте и ремонтируйте с помощью кованой стали, строительного инструмента и дополнительного действия. | default |
+| `vaultDoor01` | Steel Door | Стальная дверь | Можно разместить или использовать для улучшения железной двери.  Нажмите и удерживайте «\[action:local:Activate]\[action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа. Ремонтируйте с помощью кованой стали и строительного инструмента. | default |
+| `vaultDoor01_Powered` | Steel Door (Powered) | Стальная дверь (подключена к источнику энергии) | Для активации этой двери подключите ее к источнику энергии.  Нажмите и удерживайте «\[action:local:Activate]\[action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа. Ремонтируйте с помощью кованой стали и строительного инструмента. | default |
+| `vaultDoor01Double` | Steel Door Double | Двойная стальная дверь | Можно разместить или использовать для улучшения двойной железной двери.  Нажмите и удерживайте «\[action:local:Activate]\[action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа. Ремонтируйте с помощью кованой стали и строительного инструмента. | default |
+| `vaultDoor01Double_Powered` | Steel Door Double (Powered) | Двойная стальная дверь (подключ.) | Для активации этой двери подключите ее к источнику энергии.  Нажмите и удерживайте «\[action:local:Activate]\[action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа. Ремонтируйте с помощью кованой стали и строительного инструмента. | default |
+| `cellarDoorDoubleWood` | Wood Cellar Door | Деревянная дверь подвала | Нажмите и удерживайте клавишу \[action:local:Activate]\[action:permanent:Activate], чтобы закрыть или установить комбинацию для доступа. Улучшайте и ремонтируйте с помощью дерева, строительного инструмента и дополнительного действия. Можно улучшить до железной двери подвала с помощью созданной железной двери подвала. | default |
+| `cellarDoorDoubleIron` | Iron Cellar Door | Железная дверь подвала | Нажмите и удерживайте клавишу \[action:local:Activate]\[action:permanent:Activate], чтобы закрыть или установить комбинацию для доступа. Улучшайте и ремонтируйте с помощью кованого железа, строительного инструмента и дополнительного действия. Можно улучшить до стальной двери подвала с помощью созданной стальной двери подвала. | default |
+| `cellarDoorDoubleSteel` | Steel Cellar Door | Стальная дверь подвала | Нажмите и удерживайте клавишу \[action:local:Activate]\[action:permanent:Activate], чтобы закрыть или установить комбинацию для доступа. Улучшайте и ремонтируйте с помощью кованой стали, строительного инструмента и дополнительного действия. | default |
 | `exteriorHouseDoorWhite` | White Exterior House Door | Белая входная дверь |  | default |
 | `exteriorHouseDoorDoubleWhite` | White Exterior House Double Door | Белая двойная входная дверь |  | default |
 | `exteriorHouseDoorSideLightSingleWhite` | White Exterior House Side Light Single Door | Белая одинарная входная дверь с окнами по бокам |  | default |
@@ -7591,9 +7593,9 @@
 | `rollUpDoor3x3White` | White Roll Up Door 3x3 | Белые рольставни 3x3 |  | default |
 | `rollUpDoor5x4White` | White Roll Up Door 5x4 | Белые рольставни 5x4 |  | default |
 | `rollUpDoor7x4White` | White Roll Up Door 7x4 | Белые рольставни 7x4 |  | default |
-| `woodHatch` | Wood Hatch | Деревянная крышка люка | Нажмите и удерживайте «[action:local:Activate][action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа.  Ремонтируйте с помощью дерева, строительного инструмента и дополнительного действия. Можно дополнить железной крышкой люка. | default |
+| `woodHatch` | Wood Hatch | Деревянная крышка люка | Нажмите и удерживайте «\[action:local:Activate]\[action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа.  Ремонтируйте с помощью дерева, строительного инструмента и дополнительного действия. Можно дополнить железной крышкой люка. | default |
 | `ironHatchWhite` | White Iron Hatch | Белая железная крышка люка |  | default |
-| `vaultHatch01_Powered` | Steel Hatch (Powered) | Стальная крышка люка (подключена к источнику энергии) | Для активации этой крышки люка подключите ее к источнику энергии.  Нажмите и удерживайте «[action:local:Activate][action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа. Ремонтируйте с помощью кованой стали и строительного инструмента. | default |
+| `vaultHatch01_Powered` | Steel Hatch (Powered) | Стальная крышка люка (подключена к источнику энергии) | Для активации этой крышки люка подключите ее к источнику энергии.  Нажмите и удерживайте «\[action:local:Activate]\[action:permanent:Activate]», чтобы закрыть или установить комбинацию для доступа. Ремонтируйте с помощью кованой стали и строительного инструмента. | default |
 | `manholeHatch` | Sewer Hatch | Крышка канализационного люка |  | default |
 | `metalReinforcedWoodDrawBridge` | Reinforced Drawbridge | Укрепленный разводной мост |  | Player |
 | `metalReinforcedWoodDrawBridgePowered` | Reinforced Drawbridge (Powered) | Укрепленный разводной мост (подключенный к источнику энергии) |  | Player |
@@ -7779,11 +7781,11 @@
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
 | `keystoneBlock` | Land Claim Block | Блок притязания на землю | Разместите блок присвоения земли, чтобы защитить область от других игроков в PvP и помешать возникновению зомби в этом месте. Контур показывает размер области. Разместить можно до трех блоков присвоения земли. | Player |
-| `cntWoodWritableCrate` | Wood Storage Crate | Деревянный складской ящик | Запираемый складской ящик, на котором можно писать. Нажмите и удерживайте клавишу «[action:local:Activate][action:permanent:Activate]», чтобы закрыть, установить комбинацию для доступа или изменить надпись на коробке.  Можно улучшить с помощью кованого железа, чтобы повысить вместимость. | Player |
+| `cntWoodWritableCrate` | Wood Storage Crate | Деревянный складской ящик | Запираемый складской ящик, на котором можно писать. Нажмите и удерживайте клавишу «\[action:local:Activate]\[action:permanent:Activate]», чтобы закрыть, установить комбинацию для доступа или изменить надпись на коробке.  Можно улучшить с помощью кованого железа, чтобы повысить вместимость. | Player |
 | `cntWoodWritableCrateInsecure` | Wood Storage Crate Insecure | Ненадежный деревянный складской ящик |  | None |
-| `cntIronWritableCrate` | Iron Storage Crate | Железный складской ящик | Запираемый складской ящик, на котором можно писать. Нажмите и удерживайте клавишу «[action:local:Activate][action:permanent:Activate]», чтобы закрыть, установить комбинацию для доступа или изменить надпись на коробке.  Можно улучшить с помощью кованой стали, чтобы повысить вместимость. | Player |
+| `cntIronWritableCrate` | Iron Storage Crate | Железный складской ящик | Запираемый складской ящик, на котором можно писать. Нажмите и удерживайте клавишу «\[action:local:Activate]\[action:permanent:Activate]», чтобы закрыть, установить комбинацию для доступа или изменить надпись на коробке.  Можно улучшить с помощью кованой стали, чтобы повысить вместимость. | Player |
 | `cntIronWritableCrateInsecure` | Iron Storage Crate Insecure | Ненадежный железный складской ящик |  | None |
-| `cntSteelWritableCrate` | Steel Storage Crate | Стальной складской ящик | Запираемый складской ящик, на котором можно писать. Нажмите и удерживайте клавишу «[action:local:Activate][action:permanent:Activate]», чтобы закрыть, установить комбинацию для доступа или изменить надпись на коробке. | Player |
+| `cntSteelWritableCrate` | Steel Storage Crate | Стальной складской ящик | Запираемый складской ящик, на котором можно писать. Нажмите и удерживайте клавишу «\[action:local:Activate]\[action:permanent:Activate]», чтобы закрыть, установить комбинацию для доступа или изменить надпись на коробке. | Player |
 | `cntSteelWritableCrateInsecure` | Steel Storage Crate Insecure | Ненадежный стальной складской ящик |  | None |
 | `campfire` | Campfire | Костер | С его помощью можно приготовить еду и согреться. Добавьте кастрюлю, мангал или мерный стакан, чтобы разблокировать больше рецептов.  Ремонтируется с помощью маленького камня. | Player |
 | `forge` | Forge | Кузница | Используется для плавки металлов и создания оружия и инструментов либо для плавки камня и изготовления цемента. Установите инструменты для повышения производительности или разблокируйте рецепты. Годится для обогрева. Для ремонта нужны малый камень, глинистый грунт и кожа. | Player |
@@ -7854,8 +7856,8 @@
 | `modGunBarrelExtender` | Barrel Extender Mod | Модификация «Удлиненный ствол» | Увеличивает урон, дистанцию и точность наводки оружия, но делает неудобной стрельбу от бедра. | default |
 | `modGunMuzzleBrake` | Muzzle Brake Mod | Модификация «Дульный тормоз» | Отводит пороховые газы, уменьшая отдачу. | default |
 | `modGunSoundSuppressorSilencer` | Silencer Mod | Модификация «Глушитель» | Глушитель значительно снижает громкость выстрела, при этом негативно влияет на максимальную дальность стрельбы и урон. Лучшее применение — стрельба на короткие дистанции из малокалиберного оружия. | default |
-| `modGunLaserSight` | Laser Sight Mod | Модификация «Лазерный целеуказатель» | Помогает быстрому наведению и увеличивает точность при стрельбе от бедра. Устанавливается на любое огнестрельное оружие или арбалет.  Для включения используйте действие «Источник света» ([action:permanent:ToggleFlashlight][action:local:ToggleFlashlight]). Удерживайте действие «Источник света» для включения нескольких предметов. | default |
-| `modGunFlashlight` | Weapon Flashlight Mod | Модификация «Тактический фонарь» | Устанавливается на любое огнестрельное оружие или арбалет.  Для включения используйте действие «Источник света» ([action:permanent:ToggleFlashlight][action:local:ToggleFlashlight]). Удерживайте действие «Источник света» для включения нескольких предметов. | default |
+| `modGunLaserSight` | Laser Sight Mod | Модификация «Лазерный целеуказатель» | Помогает быстрому наведению и увеличивает точность при стрельбе от бедра. Устанавливается на любое огнестрельное оружие или арбалет.  Для включения используйте действие «Источник света» (\[action:permanent:ToggleFlashlight]\[action:local:ToggleFlashlight]). Удерживайте действие «Источник света» для включения нескольких предметов. | default |
+| `modGunFlashlight` | Weapon Flashlight Mod | Модификация «Тактический фонарь» | Устанавливается на любое огнестрельное оружие или арбалет.  Для включения используйте действие «Источник света» (\[action:permanent:ToggleFlashlight]\[action:local:ToggleFlashlight]). Удерживайте действие «Источник света» для включения нескольких предметов. | default |
 | `modGunScopeSmall` | Scope 2x Mod | Модификация «2-кратный оптический прицел» | Увеличивает изображение во время прицела. Устанавливается на короткоствольное огнестрельное оружие и арбалеты. | default |
 | `modGunScopeMedium` | Scope 4x Mod | Модификация «4-кратный оптический прицел» | Увеличивает изображение во время прицела. Устанавливается на огнестрельное оружие средней длины и арбалеты. | default |
 | `modGunScopeLarge` | Scope 8x Mod | Модификация «8-кратный оптический прицел» | Увеличивает изображение во время прицела. Устанавливается на длинноствольные винтовки. | default |
@@ -7921,7 +7923,7 @@
 | `modArmorImpactBracing` | Impact Bracing Mod | Модификация «Ударный амортизатор» | Уменьшает урон при падении. | default |
 | `modArmorStealthBoots` | Stealth Boots Mod | Модификация «Бесшумные ботинки» | Снижает шум при передвижении и потери выносливости для средних и тяжелых ботинок. | default |
 | `modArmorWaterPurifier` | Water Purifier Mod | Модификация «Очиститель воды» | Позволяет безопасно употреблять мутную воду. | default |
-| `modArmorHelmetLight` | Helmet Light Mod | Модификация «Налобный фонарь» | Источник света, который можно установить на шлем.  Для включения используйте действие «Источник света» ([action:permanent:ToggleFlashlight][action:local:ToggleFlashlight]). | default |
+| `modArmorHelmetLight` | Helmet Light Mod | Модификация «Налобный фонарь» | Источник света, который можно установить на шлем.  Для включения используйте действие «Источник света» (\[action:permanent:ToggleFlashlight]\[action:local:ToggleFlashlight]). | default |
 | `modArmorCigar` | Cigar | Сигара | Придает устрашающий вид, из-за чего торговцы делают вам скидку. А еще увеличивает силу! | default |
 | `modArmorPerception` | Perception Mod | Модификация «Восприятие» | При установке в головной убор эти усиленные ИИ контактные линзы улучшают прицел и наведение.  Восприятие +1 | default |
 | `modArmorStrength` | Strength Mod | Модификация «Сила» | Эта нейронная схема на основе ИИ при установке на головной убор, подавляет миостатин для увеличения силы.  Сила +1 | default |
@@ -7929,7 +7931,7 @@
 | `modArmorAgility` | Agility Mod | Модификация «Ловкость» | Этот нейронный интерфейс на основе ИИ при установке в головной убор значительно ускоряет передачу нервных импульсов.  Ловкость +1 | default |
 | `modArmorIntellect` | Intellect Mod | Модификация «Интеллект» | Этот удобный головной убор интерфейс на основе ИИ снабжает вас архивной информацией времен до начала апокалипсиса для стимуляции интеллекта.  Интеллект +1 | default |
 | `modArmorTreasureHunter` | Treasure Hunter's Mod | Модификация «Охотник за сокровищами» | Этот модификатор головного убора, усиленный ИИ, повышает скорость изучения и улучшает способность поиска ценных предметов и спрятанных сокровищ.  Получение опыта +10% Поиск добычи +5% Радиус сокровищ -1 | default |
-| `modArmorNightVision` | Night Vision Mod | Модификация «Ночное видение» | Вы сможете видеть в темноте благодаря этой высокотехнологичной модификации шлема.  Для включения используйте действие «Источник света» ([action:permanent:ToggleFlashlight][action:local:ToggleFlashlight]). | default |
+| `modArmorNightVision` | Night Vision Mod | Модификация «Ночное видение» | Вы сможете видеть в темноте благодаря этой высокотехнологичной модификации шлема.  Для включения используйте действие «Источник света» (\[action:permanent:ToggleFlashlight]\[action:local:ToggleFlashlight]). | default |
 
 ### Item Modifiers - Dye Mods (9)
 
@@ -7950,7 +7952,7 @@
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
 | `modVehicleFuelSaver` | Vehicle Fuel Saver Mod | Модификация транспорта «Ограничитель расхода топлива» | Транспортное средство потребляет меньше топлива. | default |
-| `modVehicleOffRoadHeadlights` | Vehicle Off Road Headlights Mod | Модификация транспорта «Внедорожные фары» | Внедорожные фары будут освещать путь даже в самую тёмную ночь.  Для включения используйте действие «Источник света» ([action:permanent:ToggleFlashlight][action:local:ToggleFlashlight]). | default |
+| `modVehicleOffRoadHeadlights` | Vehicle Off Road Headlights Mod | Модификация транспорта «Внедорожные фары» | Внедорожные фары будут освещать путь даже в самую тёмную ночь.  Для включения используйте действие «Источник света» (\[action:permanent:ToggleFlashlight]\[action:local:ToggleFlashlight]). | default |
 | `modVehicleSuperCharger` | Vehicle Super Charger Mod | Модификация транспорта «Заряженный» | Эта модификация увеличивает ускорение и максимальную скорость транспортного средства. | default |
 | `modVehicleExpandedSeat` | Vehicle Expanded Seating Mod | Модификация транспорта «Пассажировместимость» | Увеличивает количество мест для пассажиров в транспортных средствах. | default |
 | `modVehicleReserveFuelTank` | Vehicle Reserve Fuel Tank Mod | Модификация транспорта «Резервный бак» | Увеличивает вместимость топлива вашего транспортного средства на 50%. | default |
