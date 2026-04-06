@@ -135,5 +135,76 @@
     <recipe name="evImpactDriverBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
       <ingredient name="evCash" count="5"/>
     </recipe>
+
+    <!-- === SKILL MAGAZINE BUNDLES === -->
+    <recipe name="evFoodMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evMedicalMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evArmorMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evVehiclesMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evHarvestingToolsMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evRepairToolsMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evSalvageToolsMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evKnucklesMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evBladesMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evClubsMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evSledgehammersMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evSpearsMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evBowsMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evHandgunsMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evShotgunsMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evRiflesMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evMachineGunsMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evExplosivesMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evRoboticsMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evSeedMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evElectricianMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evTrapsMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
+    <recipe name="evWorkstationMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+      <ingredient name="evCash" count="10"/>
+    </recipe>
   </append>
 </configs>

@@ -612,5 +612,329 @@
         <property name="Create_item_count" value="6"/>
       </property>
     </item>
+
+    <!-- === SKILL MAGAZINE BUNDLES === -->
+
+    <!-- Home Cooking Weekly x10 -->
+    <item name="evFoodMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evFoodMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="foodSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Medical Journal x10 -->
+    <item name="evMedicalMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evMedicalMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="medicalSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Armored Up x10 -->
+    <item name="evArmorMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Vehicle Adventures x10 -->
+    <item name="evVehiclesMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evVehiclesMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="vehiclesSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Tools Digest x10 -->
+    <item name="evHarvestingToolsMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evHarvestingToolsMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="harvestingToolsSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Handy Land x10 -->
+    <item name="evRepairToolsMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evRepairToolsMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="repairToolsSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Scrapping 4 Fun x10 -->
+    <item name="evSalvageToolsMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evSalvageToolsMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="salvageToolsSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Furious Fists x10 -->
+    <item name="evKnucklesMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evKnucklesMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="knucklesSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Knife Guy x10 -->
+    <item name="evBladesMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evBladesMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bladesSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Big Hitters x10 -->
+    <item name="evClubsMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evClubsMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="clubsSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Get Hammered x10 -->
+    <item name="evSledgehammersMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evSledgehammersMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="sledgehammersSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Sharp Sticks x10 -->
+    <item name="evSpearsMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evSpearsMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="spearsSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Bow Hunters x10 -->
+    <item name="evBowsMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evBowsMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bowsSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Handgun Magazine x10 -->
+    <item name="evHandgunsMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evHandgunsMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="handgunsSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Shotgun Weekly x10 -->
+    <item name="evShotgunsMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evShotgunsMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="shotgunsSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Rifle World x10 -->
+    <item name="evRiflesMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evRiflesMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="riflesSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Tactical Warfare x10 -->
+    <item name="evMachineGunsMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evMachineGunsMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="machineGunsSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Explosive Magazine x10 -->
+    <item name="evExplosivesMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evExplosivesMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="explosivesSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Tech Planet x10 -->
+    <item name="evRoboticsMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evRoboticsMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="roboticsSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Southern Farming x10 -->
+    <item name="evSeedMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evSeedMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="seedSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Wiring 101 x10 -->
+    <item name="evElectricianMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evElectricianMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="electricianSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Electrical Traps x10 -->
+    <item name="evTrapsMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evTrapsMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="trapsSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Forge Ahead x10 -->
+    <item name="evWorkstationMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleBooks"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evWorkstationMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="workstationSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
   </append>
 </configs>
