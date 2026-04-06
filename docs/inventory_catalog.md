@@ -1,50 +1,50 @@
-# 7D2D — Inventory Object Catalog
+# 7D2D Inventory Object Catalog
 
 **Total objects: 7776** | Items: 1380 | Blocks: 6289 | Item Modifiers: 107
 
 ## Table of Contents
 
-- [Items (1380)](#items)
-  - [Ranged Weapons (43)](#items--ranged-weapons)
-  - [Melee Weapons (22)](#items--melee-weapons)
-  - [Tools (42)](#items--tools)
-  - [Robotic Companions (5)](#items--robotic-companions)
-  - [Ammunition (58)](#items--ammunition)
-  - [Food & Drinks (84)](#items--food--drinks)
-  - [Medicine & Science (30)](#items--medicine--science)
-  - [Clothing & Armor (79)](#items--clothing--armor)
-  - [Resources & Materials (60)](#items--resources--materials)
-  - [Books & Schematics (133)](#items--books--schematics)
-  - [Vehicles (15)](#items--vehicles)
-  - [Decorations (1)](#items--decorations)
-  - [Special / Quest Items (102)](#items--special---quest-items)
-  - [Other (155)](#items--other)
-  - [Hidden / Internal (551)](#items--hidden---internal)
-- [Blocks (6289)](#blocks)
-  - [Standard Blocks (5649)](#blocks--standard-blocks)
-  - [Loot Containers (351)](#blocks--loot-containers)
-  - [Doors (100)](#blocks--doors)
-  - [Lighting (44)](#blocks--lighting)
-  - [Electrical / Powered (20)](#blocks--electrical---powered)
-  - [Traps & Hazards (44)](#blocks--traps--hazards)
-  - [Vehicles (11)](#blocks--vehicles)
-  - [Vegetation (14)](#blocks--vegetation)
-  - [Functional Blocks (16)](#blocks--functional-blocks)
-  - [Events & Triggers (26)](#blocks--events--triggers)
-  - [Terrain & Structure (14)](#blocks--terrain--structure)
-- [Item Modifiers (107)](#item-modifiers)
-  - [Gun Mods (26)](#item-modifiers--gun-mods)
-  - [Melee Mods (17)](#item-modifiers--melee-mods)
-  - [Armor Mods (26)](#item-modifiers--armor-mods)
-  - [Dye Mods (9)](#item-modifiers--dye-mods)
-  - [Vehicle Mods (8)](#item-modifiers--vehicle-mods)
-  - [Robotic Drone Mods (5)](#item-modifiers--robotic-drone-mods)
-  - [Fuel Tank Mods (2)](#item-modifiers--fuel-tank-mods)
-  - [Hidden / Dev / Test (14)](#item-modifiers--hidden---dev---test)
+- [Items (1380)](#items-1380)
+  - [Items - Ranged Weapons (43)](#items---ranged-weapons-43)
+  - [Items - Melee Weapons (22)](#items---melee-weapons-22)
+  - [Items - Tools (42)](#items---tools-42)
+  - [Items - Robotic Companions (5)](#items---robotic-companions-5)
+  - [Items - Ammunition (58)](#items---ammunition-58)
+  - [Items - Food & Drinks (84)](#items---food--drinks-84)
+  - [Items - Medicine & Science (30)](#items---medicine--science-30)
+  - [Items - Clothing & Armor (79)](#items---clothing--armor-79)
+  - [Items - Resources & Materials (60)](#items---resources--materials-60)
+  - [Items - Books & Schematics (133)](#items---books--schematics-133)
+  - [Items - Vehicles (15)](#items---vehicles-15)
+  - [Items - Decorations (1)](#items---decorations-1)
+  - [Items - Special / Quest Items (102)](#items---special--quest-items-102)
+  - [Items - Other (155)](#items---other-155)
+  - [Items - Hidden / Internal (551)](#items---hidden--internal-551)
+- [Blocks (6289)](#blocks-6289)
+  - [Blocks - Standard Blocks (5649)](#blocks---standard-blocks-5649)
+  - [Blocks - Loot Containers (351)](#blocks---loot-containers-351)
+  - [Blocks - Doors (100)](#blocks---doors-100)
+  - [Blocks - Lighting (44)](#blocks---lighting-44)
+  - [Blocks - Electrical / Powered (20)](#blocks---electrical--powered-20)
+  - [Blocks - Traps & Hazards (44)](#blocks---traps--hazards-44)
+  - [Blocks - Vehicles (11)](#blocks---vehicles-11)
+  - [Blocks - Vegetation (14)](#blocks---vegetation-14)
+  - [Blocks - Functional Blocks (16)](#blocks---functional-blocks-16)
+  - [Blocks - Events & Triggers (26)](#blocks---events--triggers-26)
+  - [Blocks - Terrain & Structure (14)](#blocks---terrain--structure-14)
+- [Item Modifiers (107)](#item-modifiers-107)
+  - [Item Modifiers - Gun Mods (26)](#item-modifiers---gun-mods-26)
+  - [Item Modifiers - Melee Mods (17)](#item-modifiers---melee-mods-17)
+  - [Item Modifiers - Armor Mods (26)](#item-modifiers---armor-mods-26)
+  - [Item Modifiers - Dye Mods (9)](#item-modifiers---dye-mods-9)
+  - [Item Modifiers - Vehicle Mods (8)](#item-modifiers---vehicle-mods-8)
+  - [Item Modifiers - Robotic Drone Mods (5)](#item-modifiers---robotic-drone-mods-5)
+  - [Item Modifiers - Fuel Tank Mods (2)](#item-modifiers---fuel-tank-mods-2)
+  - [Item Modifiers - Hidden / Dev / Test (14)](#item-modifiers---hidden--dev--test-14)
 
 ## Items (1380)
 
-### Items — Ranged Weapons (43)
+### Items - Ranged Weapons (43)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -92,7 +92,7 @@
 | `gunToolDiggerAdmin` | Dev: Super Digger | Разраб: Суперкопатель | Копай глубже. | Dev |
 | `gunHandgunPistolAdmin` | Dev: Instant Death Pistol | Разраб: Пистолет мгновенной смерти | Когда вам крайне необходимо убить каждого зомби в комнате. | Dev |
 
-### Items — Melee Weapons (22)
+### Items - Melee Weapons (22)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@
 | `meleeWpnClubT3SteelClubParts` | Steel Club Parts | Части стальной дубины |  | default |
 | `meleeWpnSledgeT3SteelSledgehammerParts` | Steel Sledgehammer Parts | Части стальной кувалды |  | default |
 
-### Items — Tools (42)
+### Items - Tools (42)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -166,7 +166,7 @@
 | `meleeToolBlockReplaceTool` | Dev: Admin Block Replace Tool | Разр.: инструмент для перемещения административных блоков | Перемещает одиночные блоки или все блоки одного типа, копируя исходный блок. | Dev |
 | `meleeToolHammerOfGodAdmin` | Dev: Hammer Of God | Разраб: Молот Бога | Рагнарёк! | Dev |
 
-### Items — Robotic Companions (5)
+### Items - Robotic Companions (5)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -176,7 +176,7 @@
 | `ammoJunkTurretRegular` | Robotic Turret Ammo | Боеприпасы для роботизированной пушки | Простые боеприпасы для роботизированной пушки, изготовленные из свинцового металлолома. | default |
 | `gunBotRoboticsParts` | Robotics Parts | Части роботизированной пушки |  | default |
 
-### Items — Ammunition (58)
+### Items - Ammunition (58)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -239,7 +239,7 @@
 | `resourceRocketTip` | Rocket Tip | Капсюль реактивной гранаты | Капсюль реактивной гранаты используется при изготовлении боеприпасов для гранатомета. | default |
 | `resourceRocketCasing` | Rocket Casing | Оболочка реактивной гранаты | Оболочка реактивной гранаты используется при изготовлении боеприпасов для гранатомета. | default |
 
-### Items — Food & Drinks (84)
+### Items - Food & Drinks (84)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -328,7 +328,7 @@
 | `foodSkillMagazine` | Home Cooking Weekly | Еженедельник домашней готовки | Научитесь готовить десятки превосходных блюд и станьте настоящим шеф-поваром!  Улучшает навык изготовления пищи. | default |
 | `drinkJarFullRespecAdmin` | Dev: Full Respec | Разраб: Полная переподготовка | Сбрасывает все очки навыков, включая полученные из книг. | Dev |
 
-### Items — Medicine & Science (30)
+### Items - Medicine & Science (30)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -363,7 +363,7 @@
 | `resourceCropAloeLeaf` | Aloe Vera Leaf | Лист алоэ вера | Можно использовать для изготовления предметов с лечебными свойствами. | default |
 | `medicalSkillMagazine` | Medical Journal | Медицинский вестник | Изучайте способы спасения жизней! Создавайте бинты и медицинские припасы из предметов обихода.  Улучшает навык изготовления медикаментов. | default |
 
-### Items — Clothing & Armor (79)
+### Items - Clothing & Armor (79)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -447,7 +447,7 @@
 | `clothingFeetT3` | ThermaCore Socks | Носки ThermaCore |  | default |
 | `armorSkillMagazine` | Armored Up | Мастер-бронник | Оцените новейшие разработки в области защиты современного воина!  Улучшает навык изготовления брони. | default |
 
-### Items — Resources & Materials (60)
+### Items - Resources & Materials (60)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -512,7 +512,7 @@
 | `oldCash` | Old Cash | Старая купюра | Когда-то была законным платежным средством. Теперь ценится больше за то, что сделана из бумаги. | default |
 | `solarCell` | Solar Cell | Солнечный элемент | Поместите солнечные элементы в солнечную батарею для генерации электроэнергии. | default |
 
-### Items — Books & Schematics (133)
+### Items - Books & Schematics (133)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -650,7 +650,7 @@
 | `bookSpearHunter6PenetratingShaft` | Spear Hunter Vol 6 | Охота с копьем, том 6 |  | default |
 | `bookSpearHunter7QuickStrike` | Spear Hunter Vol 7 | Охота с копьем, том 7 |  | default |
 
-### Items — Vehicles (15)
+### Items - Vehicles (15)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -670,13 +670,13 @@
 | `vehicleGyrocopterPlaceable` | Gyrocopter | Автожир |  | default |
 | `vehiclesSkillMagazine` | Vehicle Adventures | Занимательная механика | Зацените наши байки, внедорожники, автожиры и многое другое!  Улучшает навык изготовления транспортных средств. | default |
 
-### Items — Decorations (1)
+### Items - Decorations (1)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
 | `candle` | Candle | Свеча | Свечу можно нести в руках как источник света, закрепить на стене или использовать как небольшой источник тепла.  Открытое пламя и мерцающий свет привлекают зомби. | default |
 
-### Items — Special / Quest Items (102)
+### Items - Special / Quest Items (102)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -783,7 +783,7 @@
 | `toolTerrainModelerAdmin` | Dev: Terrain Modeling Tool | Разраб: Инструмент моделирования поверхности | Используется для моделирования местности. ЛКМ — увеличение. ПКМ — уменьшение. Щелчок ПКМ, удерживая Shift, — удаление. Вращайте колесиком мыши, удерживая Shift, чтобы изменить размер кисточки. Щелкните ПКМ, удерживая Alt, чтобы выбрать другой тип местности под курсором. Текущий выбор отображается в нижнем правом углу. | Dev |
 | `adminGiveBuffInfection` | Dev: Buff Infection | Разраб.: эффект «Легкая инфекция» |  | Dev |
 
-### Items — Other (155)
+### Items - Other (155)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -943,7 +943,7 @@
 | `adminGiveBuffSprainedArm` | Dev: Buff Sprained Arm | Разраб.: эффект «Вывих руки» |  | Dev |
 | `adminGiveBuffBrokenArm` | Dev: Buff Broken Arm | Разраб.: эффект «Сломанная рука» |  | Dev |
 
-### Items — Hidden / Internal (551)
+### Items - Hidden / Internal (551)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -1501,7 +1501,7 @@
 
 ## Blocks (6289)
 
-### Blocks — Standard Blocks (5649)
+### Blocks - Standard Blocks (5649)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -7155,7 +7155,7 @@
 | `twitchSpikesWood` |  |  |  | None |
 | `twitchSpikesIron` |  |  |  | None |
 
-### Blocks — Loot Containers (351)
+### Blocks - Loot Containers (351)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -7511,7 +7511,7 @@
 | `cntLootWeaponsInsecure` | Test Weapon Loot | Тест: добыча — оружие |  | None |
 | `cntLootToolsInsecure` | Test Tool Loot | Тест: добыча — инструмент |  | None |
 
-### Blocks — Doors (100)
+### Blocks - Doors (100)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -7616,7 +7616,7 @@
 | `trapGlassBusinessCTRSheet1x1` | Business Glass Centered (Trap) | Центрованное витринное стекло (ловушка) |  | default |
 | `elevatorTest` |  |  |  | None |
 
-### Blocks — Lighting (44)
+### Blocks - Lighting (44)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -7665,7 +7665,7 @@
 | `signPillsLogo` | Pop-N-Pills Logo Sign | Знак с логотипом «Шприцы и таблетки» |  | Dev |
 | `decoPumpkinJackOLantern` | Jack o' Lantern | Тыква-фонарь | Обязательный предмет для отпугивания зомби.  Можно размещать на столах и других ровных поверхностях. Используется как источник света или небольшой источник тепла. | default |
 
-### Blocks — Electrical / Powered (20)
+### Blocks - Electrical / Powered (20)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -7690,7 +7690,7 @@
 | `cntApiary` | Apiary | Пасека | Со временем медленно производит мёд.  Можно подпитывать 10 ед. хризантемы, 10 ед. золотарника или 10 ед. хлопка. В случае отсутствия дымаря при открытии улья есть шанс спровоцировать нападение роя раздраженных пчел. Для ремонта нужно кованое железо. | Player |
 | `cntDewCollector` | Dew Collector | Коллектор росы |  | Player |
 
-### Blocks — Traps & Hazards (44)
+### Blocks - Traps & Hazards (44)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -7739,7 +7739,7 @@
 | `barbedWireSheet` | Barbed Wire | Колючая проволока | Железная колючая проволока может замедлить врагов и упростить победу над ними. Размещайте ее с помощью дополнительного действия. | Dev |
 | `mineCandyTin` | Tin Land Mine | Фугас из жестянки | Фугас из жестянки из-под конфет. Сладость или гадость?! | default |
 
-### Blocks — Vehicles (11)
+### Blocks - Vehicles (11)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -7755,7 +7755,7 @@
 | `forkliftWhite` | White Forklift 01 | Белый погрузчик 01 |  | Dev |
 | `forklift2White` | White Forklift 02 | Белый погрузчик 02 |  | Dev |
 
-### Blocks — Vegetation (14)
+### Blocks - Vegetation (14)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -7774,7 +7774,7 @@
 | `forestFlower` | Forest Flower | Лесной цветок |  | default |
 | `plantedtreeGrassSeed1` | Grass (Seed) | Трава (семя) | Посадите семена травы с помощью дополнительного действия. | Player |
 
-### Blocks — Functional Blocks (16)
+### Blocks - Functional Blocks (16)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -7795,7 +7795,7 @@
 | `bunkBedMade` | Black Bunk Bed, Made | Двухъярусная черная кровать, заправленная |  | default |
 | `playerSignWood1x1` | Wooden Sign 1m | Деревянный знак 1 м |  | Player |
 
-### Blocks — Events & Triggers (26)
+### Blocks - Events & Triggers (26)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -7826,7 +7826,7 @@
 | `testPOIReset` |  |  |  | Test |
 | `testZombieSpawnBlock` |  |  |  | Test |
 
-### Blocks — Terrain & Structure (14)
+### Blocks - Terrain & Structure (14)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -7847,7 +7847,7 @@
 
 ## Item Modifiers (107)
 
-### Item Modifiers — Gun Mods (26)
+### Item Modifiers - Gun Mods (26)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -7878,7 +7878,7 @@
 | `modGunMeleeTheHunter` | The Hunter Mod | Модификация «Охотник» | +25% урон по всем животным. | default |
 | `modGunMeleeRadRemover` | Rad Remover Mod | Модификация «Подавитель радиации» | Блокирует регенеративные способности облученных, заряженных и адских зомби на 90 секунд. | default |
 
-### Item Modifiers — Melee Mods (17)
+### Item Modifiers - Melee Mods (17)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -7900,7 +7900,7 @@
 | `modMeleeDiamondTip` | Diamond Blade Tip Mod | Модификация «Алмазное напыление» | С этой модификацией ручной инструмент и оружие с лезвием приходят в негодность на 30% медленнее. | default |
 | `modMeleeStunBatonRepulsor` | Stun Baton Repulsor Mod | Модификация «Репульсор оглушающего жезла» | Установите эту модификацию на оглушающий жезл и разбрасывайте зомби ударами электричества. | default |
 
-### Item Modifiers — Armor Mods (26)
+### Item Modifiers - Armor Mods (26)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -7931,7 +7931,7 @@
 | `modArmorTreasureHunter` | Treasure Hunter's Mod | Модификация «Охотник за сокровищами» | Этот модификатор головного убора, усиленный ИИ, повышает скорость изучения и улучшает способность поиска ценных предметов и спрятанных сокровищ.  Получение опыта +10% Поиск добычи +5% Радиус сокровищ -1 | default |
 | `modArmorNightVision` | Night Vision Mod | Модификация «Ночное видение» | Вы сможете видеть в темноте благодаря этой высокотехнологичной модификации шлема.  Для включения используйте действие «Источник света» ([action:permanent:ToggleFlashlight][action:local:ToggleFlashlight]). | default |
 
-### Item Modifiers — Dye Mods (9)
+### Item Modifiers - Dye Mods (9)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -7945,7 +7945,7 @@
 | `modDyeBlack` | Dye: Black | Краситель: Черный |  | default |
 | `modDyePink` | Dye: Pink | Краситель: Розовый |  | default |
 
-### Item Modifiers — Vehicle Mods (8)
+### Item Modifiers - Vehicle Mods (8)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -7958,7 +7958,7 @@
 | `modVehicleArmor` | Vehicle Armor Mod | Модификация транспорта «Броня» | Усиленная броня для мотоциклов и автожиров.  Уменьшает урон, получаемый при попадании объектов в переднюю часть транспортного средства. Увеличивает урон по блокам и существам. | default |
 | `modVehicleStorage` | Vehicle Storage Mod | Мод хранилища транспорта | Увеличивает вместимость хранилища. На каждую единицу техники можно установить до двух таких модификаций. | default |
 
-### Item Modifiers — Robotic Drone Mods (5)
+### Item Modifiers - Robotic Drone Mods (5)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
@@ -7968,14 +7968,14 @@
 | `modRoboticDroneHeadlampMod` | Robotic Headlamp Mod | Модификация роботизированного дрона «Прожектор» | Эта модификация для роботизированного дрона устанавливает на него прожектор, улучшающий видимость в тёмных местах. | default |
 | `modRoboticDroneMedicMod` | Robotic Drone Medic Mod | Модификация роботизированного дрона «Медик» | Превращает ваш дрон в роботизированного полевого медика, который будет автоматически лечить вас при наличии в его инвентаре бинтов и аптечек. | default |
 
-### Item Modifiers — Fuel Tank Mods (2)
+### Item Modifiers - Fuel Tank Mods (2)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |
 | `modFuelTankSmall` | Motor Tool Small Tank Mod | Модификация «Малый бак бензоинструмента» | Увеличивает объем бака бензопил и буров на 50%. | default |
 | `modFuelTankLarge` | Motor Tool Large Tank Mod | Модификация «Большой бак бензоинструмента» | Увеличивает объем бака бензопил и буров на 100%. | default |
 
-### Item Modifiers — Hidden / Dev / Test (14)
+### Item Modifiers - Hidden / Dev / Test (14)
 
 | Name (ID) | English | Russian | Description (RU) | Creative |
 | --- | --- | --- | --- | --- |

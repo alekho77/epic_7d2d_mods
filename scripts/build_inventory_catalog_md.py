@@ -18,6 +18,7 @@ Output
 
 import os
 import csv
+import re
 from lxml import etree
 
 # ---------------------------------------------------------------------------
@@ -323,6 +324,17 @@ def _md_escape(text: str) -> str:
     return text.replace("\\n", " ").replace("|", "\\|").replace("\n", " ")
 
 
+def _gfm_anchor(heading: str) -> str:
+    """Compute the GFM-compatible anchor from a heading string.
+
+    GitHub's algorithm: lowercase → keep only [a-z0-9 -] → spaces to hyphens.
+    """
+    h = heading.lower()
+    h = re.sub(r"[^a-z0-9 \-]", "", h)
+    h = h.replace(" ", "-")
+    return h
+
+
 def _render_table(lines: list[str], objects: list[dict], localization: dict):
     """Render a Markdown table for a list of objects."""
     lines.append("| Name (ID) | English | Russian | Description (RU) | Creative |")
@@ -354,7 +366,7 @@ def render_markdown(
     grand_total = sum(len(objs) for objs in all_objects.values())
 
     lines: list[str] = []
-    lines.append("# 7D2D — Inventory Object Catalog")
+    lines.append("# 7D2D Inventory Object Catalog")
     lines.append("")
     parts = [f"**Total objects: {grand_total}**"]
     for label, objects in all_objects.items():
@@ -362,80 +374,46 @@ def render_markdown(
     lines.append(" | ".join(parts))
     lines.append("")
 
-    # Table of contents
-    lines.append("## Table of Contents")
-    lines.append("")
+    # Build section structure: list of (heading_level, heading_text, objects)
+    sections: list[tuple[int, str, list[dict] | None]] = []
 
-    toc_entries: list[tuple[str, str, int]] = []
-
-    if "Items" in all_objects:
-        categories = categorize_items(all_objects["Items"])
-        toc_entries.append(("Items", "items", len(all_objects["Items"])))
-        for cat, cat_items in categories:
-            anchor = cat.lower().replace(" ", "-").replace("/", "-").replace("&", "")
-            toc_entries.append((f"  {cat}", f"items--{anchor}", len(cat_items)))
-
-    if "Blocks" in all_objects:
-        block_categories = categorize_blocks(all_objects["Blocks"])
-        toc_entries.append(("Blocks", "blocks", len(all_objects["Blocks"])))
-        for cat, cat_blocks in block_categories:
-            anchor = cat.lower().replace(" ", "-").replace("/", "-").replace("&", "")
-            toc_entries.append((f"  {cat}", f"blocks--{anchor}", len(cat_blocks)))
-
-    if "Item Modifiers" in all_objects:
-        mod_categories = categorize_modifiers(all_objects["Item Modifiers"])
-        toc_entries.append(("Item Modifiers", "item-modifiers", len(all_objects["Item Modifiers"])))
-        for cat, cat_mods in mod_categories:
-            anchor = cat.lower().replace(" ", "-").replace("/", "-").replace("&", "")
-            toc_entries.append((f"  {cat}", f"item-modifiers--{anchor}", len(cat_mods)))
-
-    for label, anchor, count in toc_entries:
-        indent = ""
-        if label.startswith("  "):
-            indent = "  "
-            label = label.strip()
-        lines.append(f"{indent}- [{label} ({count})](#{anchor})")
-    lines.append("")
-
-    # --- Items ---
     if "Items" in all_objects:
         items = all_objects["Items"]
         categories = categorize_items(items)
-
-        lines.append(f"## Items ({len(items)})")
-        lines.append("")
-
+        sections.append((2, f"Items ({len(items)})", None))
         for cat, cat_items in categories:
-            anchor = cat.lower().replace(" ", "-").replace("/", "-").replace("&", "")
-            lines.append(f"### Items — {cat} ({len(cat_items)})")
-            lines.append("")
-            _render_table(lines, cat_items, localization)
+            sections.append((3, f"Items - {cat} ({len(cat_items)})", cat_items))
 
-    # --- Blocks ---
     if "Blocks" in all_objects:
         blocks = all_objects["Blocks"]
         block_categories = categorize_blocks(blocks)
-
-        lines.append(f"## Blocks ({len(blocks)})")
-        lines.append("")
-
+        sections.append((2, f"Blocks ({len(blocks)})", None))
         for cat, cat_blocks in block_categories:
-            lines.append(f"### Blocks — {cat} ({len(cat_blocks)})")
-            lines.append("")
-            _render_table(lines, cat_blocks, localization)
+            sections.append((3, f"Blocks - {cat} ({len(cat_blocks)})", cat_blocks))
 
-    # --- Item Modifiers ---
     if "Item Modifiers" in all_objects:
         modifiers = all_objects["Item Modifiers"]
         mod_categories = categorize_modifiers(modifiers)
-
-        lines.append(f"## Item Modifiers ({len(modifiers)})")
-        lines.append("")
-
+        sections.append((2, f"Item Modifiers ({len(modifiers)})", None))
         for cat, cat_mods in mod_categories:
-            lines.append(f"### Item Modifiers — {cat} ({len(cat_mods)})")
-            lines.append("")
-            _render_table(lines, cat_mods, localization)
+            sections.append((3, f"Item Modifiers - {cat} ({len(cat_mods)})", cat_mods))
+
+    # Table of contents
+    lines.append("## Table of Contents")
+    lines.append("")
+    for level, heading, _ in sections:
+        anchor = _gfm_anchor(heading)
+        indent = "  " if level == 3 else ""
+        lines.append(f"{indent}- [{heading}](#{anchor})")
+    lines.append("")
+
+    # Render sections
+    for level, heading, objects in sections:
+        hashes = "#" * level
+        lines.append(f"{hashes} {heading}")
+        lines.append("")
+        if objects is not None:
+            _render_table(lines, objects, localization)
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
