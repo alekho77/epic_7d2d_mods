@@ -936,5 +936,273 @@
         <property name="Create_item_count" value="10"/>
       </property>
     </item>
+
+    <!-- === SKILL BOOK BUNDLES === -->
+
+    <!-- The Fireman's Almanac (all 7 volumes) -->
+    <item name="evFiremansAlmanacBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookFiremansAlmanacHeat"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evFiremansAlmanacBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookFiremansAlmanacHeat,bookFiremansAlmanacAxes,bookFiremansAlmanacSpeed,bookFiremansAlmanacMolotov,bookFiremansAlmanacPrevention,bookFiremansAlmanacHarvest,bookFiremansAlmanacEquipment"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Night Stalker (all 7 volumes) -->
+    <item name="evNightStalkerBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookNightStalkerStealthDamage"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evNightStalkerBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookNightStalkerStealthDamage,bookNightStalkerSilentNight,bookNightStalkerBlades,bookNightStalkerThiefAdrenaline,bookNightStalkerArchery,bookNightStalkerTwilightThief,bookNightStalkerSlumberParty"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Lucky Looter (all 7 volumes) -->
+    <item name="evLuckyLooterBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookLuckyLooterDukes"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evLuckyLooterBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookLuckyLooterDukes,bookLuckyLooterAmmunition,bookLuckyLooterBrass,bookLuckyLooterLead,bookLuckyLooterBooks,bookLuckyLooterFood,bookLuckyLooterMedical"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Magnum Enforcer (all 7 volumes) -->
+    <item name="evEnforcerBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookEnforcerDamage"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evEnforcerBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookEnforcerDamage,bookEnforcerApparel,bookEnforcerPunks,bookEnforcerIntimidation,bookEnforcerAPAmmo,bookEnforcerHPAmmo,bookEnforcerCriminalPursuit"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Batter Up (all 7 volumes) -->
+    <item name="evBatterUpBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookBatterUpBigHits"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evBatterUpBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookBatterUpBigHits,bookBatterUpStealingBases,bookBatterUpSlowPitch,bookBatterUpKnockdown,bookBatterUpMaintenance,bookBatterUpFoulBalls,bookBatterUpMetalChain"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Sledge Saga (all 7 volumes) -->
+    <item name="evSledgeSagaBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookSledgeSagaKnockdown"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evSledgeSagaBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookSledgeSagaKnockdown,bookSledgeSagaDegradation,bookSledgeSagaCrippledMorale,bookSledgeSagaPulverizingFinishers,bookSledgeSagaSavageReaper,bookSledgeSagaConcussiveStrike,bookSledgeSagaArmorCrusher"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- The Great Heist (all 7 volumes) -->
+    <item name="evGreatHeistBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookTheGreatHeistSafes"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evGreatHeistBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookGreatHeistSafes,bookGreatHeistGems,bookGreatHeistGoldRush,bookGreatHeistClaimed,bookGreatHeistAdrenalineFall,bookGreatHeistSprintSneak,bookGreatHeistMotionDetection"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Wasteland Treasures (all 7 volumes) -->
+    <item name="evWasteTreasuresBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookWasteTreasuresHoney"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evWasteTreasuresBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookWasteTreasuresHoney,bookWasteTreasuresCoffins,bookWasteTreasuresAcid,bookWasteTreasuresWater,bookWasteTreasuresDoors,bookWasteTreasuresCloth,bookWasteTreasuresSinks"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- The Hunter's Journal (all 7 volumes) -->
+    <item name="evHuntingJournalBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookHuntingJournalBears"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evHuntingJournalBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookHuntingJournalBears,bookHuntingJournalWolves,bookHuntingJournalCoyotes,bookHuntingJournalMountainLions,bookHuntingJournalDeer,bookHuntingJournalVultures,bookHuntingJournalSelfDefense"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Art of Mining (all 7 volumes) -->
+    <item name="evArtOfMiningBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookArtOfMiningLuckyStrike"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArtOfMiningBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookArtOfMiningLuckyStrike,bookArtOfMiningDiamondTools,bookArtOfMiningCoffee,bookArtOfMiningBlackStrap,bookArtOfMiningPallets,bookArtOfMiningAvalanche,bookArtOfMiningDamage"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Ranger's Guide to Archery (all 7 volumes) -->
+    <item name="evRangersBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookRangersArrowRecovery"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evRangersBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookRangersArrowRecovery,bookRangersExplodingBolts,bookRangersCripplingShot,bookRangersAPAmmo,bookRangersFlamingArrows,bookRangersForestGuide,bookRangersKnockdown"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Pistol Pete (all 7 volumes) -->
+    <item name="evPistolPeteBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookPistolPeteTakeAim"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evPistolPeteBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookPistolPeteTakeAim,bookPistolPeteSwissKnees,bookPistolPeteSteadyHand,bookPistolPeteMaintenance,bookPistolPeteHPAmmo,bookPistolPeteAPAmmo,bookPistolPeteDamage"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Shotgun Messiah (all 7 volumes) -->
+    <item name="evShotgunMessiahBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookShotgunMessiahDamage"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evShotgunMessiahBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookShotgunMessiahDamage,bookShotgunMessiahBreachingSlugs,bookShotgunMessiahLimbShot,bookShotgunMessiahSlugs,bookShotgunMessiahMaintenance,bookShotgunMessiahMagazine,bookShotgunMessiahPartyStarter"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Sniper (all 7 volumes) -->
+    <item name="evSniperBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookSniperDamage"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evSniperBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookSniperDamage,bookSniperCripplingShot,bookSniperHeadShot,bookSniperReload,bookSniperControlledBreathing,bookSniperAPAmmo,bookSniperHPAmmo"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Automatic Weapons Handbook (all 7 volumes) -->
+    <item name="evAutoWeaponsBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookAutoWeaponsDamage"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAutoWeaponsBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookAutoWeaponsDamage,bookAutoWeaponsUncontrolledBurst,bookAutoWeaponsMaintenance,bookAutoWeaponsDrumMag,bookAutoWeaponsRecoil,bookAutoWeaponsRagdoll,bookAutoWeaponsMachineGuns"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Urban Combat (all 7 volumes) -->
+    <item name="evUrbanCombatBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookUrbanCombatLanding"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evUrbanCombatBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookUrbanCombatLanding,bookUrbanCombatCigar,bookUrbanCombatSneaking,bookUrbanCombatJumping,bookUrbanCombatLandMines,bookUrbanCombatAdrenalineRush,bookUrbanCombatRoomClearing"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Tech Junkie (all 7 volumes) -->
+    <item name="evTechJunkieBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookTechJunkie1Damage"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evTechJunkieBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookTechJunkie1Damage,bookTechJunkie2Maintenance,bookTechJunkie3APAmmo,bookTechJunkie4Shells,bookTechJunkie5Repulsor,bookTechJunkie6BatonCharge,bookTechJunkie7Hydraulics"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Bar Brawling (all 7 volumes) -->
+    <item name="evBarBrawlingBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookBarBrawling1BasicMoves"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evBarBrawlingBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookBarBrawling1BasicMoves,bookBarBrawling2DropABomb,bookBarBrawling3KillerInstinct,bookBarBrawling4FinishingMoves,bookBarBrawling5AdrenalineHealing,bookBarBrawling6RageMode,bookBarBrawling7BoozedUp"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Spear Hunter (all 7 volumes) -->
+    <item name="evSpearHunterBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookSpearHunter1Damage"/>
+      <property name="CustomIconTint" value="fff200"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evSpearHunterBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookSpearHunter1Damage,bookSpearHunter2Maintenance,bookSpearHunter3Bleed,bookSpearHunter4KillMove,bookSpearHunter5RapidStrike,bookSpearHunter6PenetratingShaft,bookSpearHunter7QuickStrike"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
   </append>
 </configs>
