@@ -1,0 +1,8 @@
+<configs>
+  <!-- Remove all XP gained from selling items to traders.
+       PlayerExpGain perc_add of -1 means -100%, zeroing out any Selling XP.
+       Insert right after the existing PlayerExpGain Upgrading entry in playerMale. -->
+  <insertAfter xpath="/entityclasses/entity_class[@name='playerMale']/effect_group/passive_effect[@name='PlayerExpGain'][@tags='Upgrading']">
+    <passive_effect name="PlayerExpGain" operation="perc_add" value="-1" tags="Selling"/>
+  </insertAfter>
+</configs>

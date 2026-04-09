@@ -1,0 +1,32 @@
+[size=6][b]EV_RemoveTraderXP[/b][/size]
+
+[color=#55aa55][b]Server-Side Friendly[/b][/color]
+
+Completely removes XP gained from selling items to traders, preventing abuse of trader XP for rapid leveling.
+
+[size=5][b]Features[/b][/size]
+
+[list]
+[*]Zeroes out all experience points from selling items to any trader
+[*]Prevents speedrun-style power leveling through buy/sell exploits
+[*]All other XP sources (kills, crafting, quests, harvesting, etc.) remain unchanged
+[/list]
+
+[size=5][b]How It Works[/b][/size]
+
+Applies a [b]-100%[/b] modifier to [b]PlayerExpGain[/b] with the [b]Selling[/b] tag on the player entity, effectively nullifying any XP that would be awarded from trader sell transactions.
+
+[size=5][b]Installation[/b][/size]
+
+[list=1]
+[*]Copy the [b]EV_RemoveTraderXP[/b] folder into your [b]7 Days to Die/Mods/[/b] directory.
+[*]Restart the game or server.
+[/list]
+
+[size=5][b]Compatibility[/b][/size]
+
+[list]
+[*][b]Game Version:[/b] 1.2 (V1.2 b27+)
+[*][b]Mod Type:[/b] XML-only (no DLL required)
+[*]Works on dedicated servers — no client-side installation needed.
+[/list]
