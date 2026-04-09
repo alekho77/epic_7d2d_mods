@@ -1,10 +1,10 @@
 <configs>
   <!-- Remove all XP gained from selling items to traders.
-       Using -100 (-10000%) to guarantee zero result even when
-       global XP bonus buffs (Grandpa's Elixir, Twitch buffs, etc.) are active. -->
+       base_set 0 zeroes the base multiplier, so 0 * (1 + any perc_add) = 0.
+       No negative XP possible, unaffected by XP bonus buffs. -->
   <append xpath="/entity_classes/entity_class[@name='playerMale']">
     <effect_group name="Remove Trader XP">
-      <passive_effect name="PlayerExpGain" operation="perc_add" value="-100" tags="Selling"/>
+      <passive_effect name="PlayerExpGain" operation="base_set" value="0" tags="Selling"/>
     </effect_group>
   </append>
 </configs>
