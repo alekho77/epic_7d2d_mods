@@ -2,7 +2,9 @@
 
 ## Description
 
-Completely removes XP gained from selling items to traders, preventing abuse of trader XP for rapid leveling.
+Removes XP gained from selling items to traders, closing a well-known exploit that breaks server balance.
+
+In vanilla 7 Days to Die, selling items to traders awards XP via the `Selling` tag on `PlayerExpGain`. This mechanic is easily abused: cheap or quickly farmed items (plant fibers, stone, salvaged parts) can be mass-sold in buy/sell cycles, pushing a player from level 1 to level 500 in 10–15 minutes — without engaging with actual survival gameplay. This disadvantages players who level legitimately through combat, looting, and crafting.
 
 > ### 🟢 Server-Side Friendly
 >
@@ -11,9 +13,11 @@ Completely removes XP gained from selling items to traders, preventing abuse of 
 
 ## Features
 
-- Zeroes out all experience points from selling items to any trader
-- Prevents speedrun-style power leveling through buy/sell exploits
-- All other XP sources (kills, crafting, quests, harvesting, etc.) remain unchanged
+- Zeroes out all XP from selling items to any trader
+- Closes the buy/sell cycle exploit used to reach level 500 in minutes
+- Eliminates the unfair advantage over players who level through survival gameplay
+- All other XP sources (kills, crafting, quests, looting, harvesting) remain completely unchanged
+- Normal trading (buying, selling for Dukes) is unaffected — only the XP reward is removed
 
 ## How It Works
 
