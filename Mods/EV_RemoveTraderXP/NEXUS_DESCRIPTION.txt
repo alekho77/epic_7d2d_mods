@@ -1,5 +1,7 @@
 [size=6][b]Remove Trader XP[/b][/size]
 
+[size=5][b]Description[/b][/size]
+
 Completely removes XP gained from selling items to traders, preventing abuse of trader XP for rapid leveling.
 
 [quote]
@@ -34,4 +36,12 @@ Sets [b]PlayerExpGain[/b] base value to [b]0[/b] for the [b]Selling[/b] tag on t
 [*]7 Days to Die 1.0 (Alpha 21+)
 [*]Server-side mod — works without client installation
 [*]May conflict with mods that modify [b]PlayerExpGain[/b] on the [b]playerMale[/b] entity class
+[/list]
+
+[size=5][b]Changelog[/b][/size]
+
+[size=4][b]v1.0.0[/b][/size]
+
+[list]
+[*]Initial release — selling items to traders no longer grants XP
 [/list]
