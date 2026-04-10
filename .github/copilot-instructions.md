@@ -170,6 +170,46 @@ Mods/
     NEXUS_DESCRIPTION.txt  # Nexus Mods — BBCode
 ```
 
+### Mod Description Structure
+
+Both `README.md` and `NEXUS_DESCRIPTION.txt` **must** follow the same section order. The structure merges our conventions with the [Nexus Mods recommended layout](https://wiki.nexusmods.com/index.php/Mod_description_best_practices).
+
+| # | Section | Required | Purpose |
+|---|---------|----------|---------|
+| 1 | **Title** | ✅ | Human-readable mod name (not the folder name). In Markdown: `# Mod Title`. In BBCode: `[size=6][b]Mod Title[/b][/size]`. |
+| 2 | **Description** | ✅ | `## Description` — one or two sentences explaining the main purpose. Followed by the server-side / client-side badge blockquote (see below). |
+| 3 | **Features** | ✅ | `## Features` — bullet list of core features. |
+| 4 | **How It Works** | optional | `## How It Works` — technical details for advanced users (xpath logic, formula, passive effect explanation). Include only when the mechanism is not obvious. |
+| 5 | **Installation** | ✅ | `## Installation` — numbered steps to install the mod. |
+| 6 | **Compatibility** | ✅ | `## Compatibility` — game version, mod type (server-side / client-side), and known conflicts. |
+| 7 | **Changelog** | ✅ | `## Changelog` — version history with `### vX.Y.Z` sub-headings. |
+| 8 | **Credits** | optional | `## Credits` — acknowledgements, inspirations, contributors. Omit if there are none. |
+| 9 | **Footer** | ✅ | `---` separator followed by **Author**, **Version**, **Website** (Markdown only; omit in BBCode). |
+
+#### Server-Side / Client-Side Badge
+
+Place the badge inside a blockquote immediately after the description text:
+
+**Markdown (server-side):**
+```markdown
+> ### 🟢 Server-Side Friendly
+>
+> **If you are running a dedicated server, this mod only needs to be installed on the server.**
+> Players connecting to the server **do not need to download or install anything** on their game clients — all changes are synced automatically when they join.
+```
+
+**BBCode (server-side):**
+```bbcode
+[quote]
+[color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
+
+[b]If you are running a dedicated server, this mod only needs to be installed on the server.[/b]
+Players connecting to the server [b]do not need to download or install anything[/b] on their game clients — all changes are synced automatically when they join.
+[/quote]
+```
+
+For client-side mods, use 🟡 and `[color=#cc9900]` instead.
+
 ### Nexus BBCode — Supported Tags
 
 Nexus Mods uses a **limited subset of BBCode**. Only the tags below are reliably supported:

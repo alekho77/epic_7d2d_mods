@@ -1,0 +1,55 @@
+[size=6][b]Remove Trader XP[/b][/size]
+
+[size=5][b]Description[/b][/size]
+
+Removes XP gained from selling items to traders, closing a well-known exploit that breaks server balance.
+
+In vanilla 7 Days to Die, selling items to traders awards XP via the [b]Selling[/b] tag on [b]PlayerExpGain[/b]. This mechanic is easily abused: cheap or quickly farmed items (plant fibers, stone, salvaged parts) can be mass-sold in buy/sell cycles, pushing a player from level 1 to level 500 in 10–15 minutes — without engaging with actual survival gameplay. This disadvantages players who level legitimately through combat, looting, and crafting.
+
+[quote]
+[color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
+
+[b]If you are running a dedicated server, this mod only needs to be installed on the server.[/b]
+Players connecting to the server [b]do not need to download or install anything[/b] on their game clients — all changes are synced automatically when they join.
+[/quote]
+
+[size=5][b]Features[/b][/size]
+
+[list]
+[*]Zeroes out all XP from selling items to any trader
+[*]Closes the buy/sell cycle exploit used to reach level 500 in minutes
+[*]Eliminates the unfair advantage over players who level through survival gameplay
+[*]All other XP sources (kills, crafting, quests, looting, harvesting) remain completely unchanged
+[*]Normal trading (buying, selling for Dukes) is unaffected — only the XP reward is removed
+[/list]
+
+[size=5][b]How It Works[/b][/size]
+
+Sets [b]PlayerExpGain[/b] base value to [b]0[/b] for the [b]Selling[/b] tag on the player entity. Using [b]base_set 0[/b] ensures the result is always exactly zero — unaffected by XP bonus buffs (Grandpa's Learning Elixir, Twitch buffs, etc.) and cannot produce negative XP.
+
+[size=5][b]Installation[/b][/size]
+
+[list=1]
+[*]Copy the [b]EV_RemoveTraderXP[/b] folder into your [b]7 Days to Die/Mods/[/b] directory.
+[*]Restart the game or server.
+[/list]
+
+[size=5][b]Compatibility[/b][/size]
+
+[list]
+[*]7 Days to Die 1.0 (Alpha 21+)
+[*]Server-side mod — works without client installation
+[*]May conflict with mods that modify [b]PlayerExpGain[/b] on the [b]playerMale[/b] entity class
+[/list]
+
+[size=5][b]Changelog[/b][/size]
+
+[size=4][b]v1.0.0[/b][/size]
+
+[list]
+[*]Initial release — selling items to traders no longer grants XP
+[/list]
+
+[size=5][b]Credits[/b][/size]
+
+Inspired by [url=https://www.nexusmods.com/7daystodie/mods/4167]WMMRemoveTraderXP[/url] by [b]w00kie n00kie[/b]. The original mod uses a Harmony DLL patch that works in single-player but does not apply on dedicated servers. This modlet reimplements the same idea as a pure XML patch, making it server-side compatible.
