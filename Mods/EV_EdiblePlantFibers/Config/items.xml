@@ -2,7 +2,7 @@
 <config>
   <!-- Edible Plant Fibers Mod -->
   <!-- Makes resourceYuccaFibers (Plant Fibers / Волокна травы) edible -->
-  <!-- Restores 1 food per use, no health, no dysentery -->
+  <!-- Restores 1 food per use, 12% dysentery chance (same as murky water) -->
 
   <!-- Add Eat action to plant fibers -->
   <append xpath="//item[@name='resourceYuccaFibers']">
@@ -15,6 +15,13 @@
     <effect_group tiered="false" name="Edible Grass">
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="1"/>
       <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+      <!-- 12% base dysentery chance, reduced by Iron Gut perk -->
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="12"/>
+      <display_value name="dDysenteryRisk" value=".12"/>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+      <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchFood">
+        <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+      </triggered_effect>
     </effect_group>
   </append>
 

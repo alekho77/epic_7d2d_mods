@@ -16,14 +16,15 @@ Players connecting to the server [b]do not need to download or install anything[
 [list]
 [*]Plant fibers can be eaten directly from your inventory
 [*]Restores 1 food per use — barely noticeable, but technically not zero
-[*]No health gain, no dysentery risk — grass is surprisingly safe
+[*]12% chance of dysentery per bite — same as murky water, because eating grass is no safer than drinking from a puddle
+[*]Iron Gut perk reduces the dysentery chance
 [*]Uses the hand-held food eating animation
 [*]Fast 0.5-second consume time — at least the suffering is quick
 [/list]
 
 [size=5][b]How It Works[/b][/size]
 
-The mod patches [b]resourceYuccaFibers[/b] to add an [b]Eat[/b] action. On consumption it adds [b]1 point[/b] to the food meter via the standard [b]buffProcessConsumables[/b] pipeline. The hold type is changed to hand-held food (type 31) so your character plays the eating animation instead of the default resource-holding pose.
+The mod patches [b]resourceYuccaFibers[/b] to add an [b]Eat[/b] action. On consumption it adds [b]1 point[/b] to the food meter via the standard [b]buffProcessConsumables[/b] pipeline and rolls a [b]12% base chance[/b] of dysentery (same as murky water / raw food), reduced by the Iron Gut perk. The hold type is changed to hand-held food (type 31) so your character plays the eating animation instead of the default resource-holding pose.
 
 [size=5][b]Installation[/b][/size]
 
@@ -47,6 +48,12 @@ The mod patches [b]resourceYuccaFibers[/b] to add an [b]Eat[/b] action. On consu
 [*]Initial release — plant fibers are now edible (1 food per use)
 [/list]
 
+[size=4][b]v1.1.0[/b][/size]
+[list]
+[*]Added 12% dysentery chance per bite (same as murky water)
+[*]Iron Gut perk now reduces the dysentery risk
+[/list]
+
 [b]Author:[/b] Aleksei Khozin
-[b]Version:[/b] 1.0.0
+[b]Version:[/b] 1.1.0
 [b]Website:[/b] [url=https://github.com/alekho77/epic_7d2d_mods]https://github.com/alekho77/epic_7d2d_mods[/url]

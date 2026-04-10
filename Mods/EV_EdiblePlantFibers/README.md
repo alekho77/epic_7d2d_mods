@@ -13,13 +13,14 @@ A humorous mod that makes plant fibers (Yucca Fibers) edible, restoring a whoppi
 
 - Plant fibers can be eaten directly from your inventory
 - Restores 1 food per use — barely noticeable, but technically not zero
-- No health gain, no dysentery risk — grass is surprisingly safe
+- 12% chance of dysentery per bite — same as murky water, because eating grass is no safer than drinking from a puddle
+- Iron Gut perk reduces the dysentery chance
 - Uses the hand-held food eating animation
 - Fast 0.5-second consume time — at least the suffering is quick
 
 ## How It Works
 
-The mod patches `resourceYuccaFibers` to add an `Eat` action. On consumption it adds **1 point** to the food meter via the standard `buffProcessConsumables` pipeline. The hold type is changed to hand-held food (type 31) so your character plays the eating animation instead of the default resource-holding pose.
+The mod patches `resourceYuccaFibers` to add an `Eat` action. On consumption it adds **1 point** to the food meter via the standard `buffProcessConsumables` pipeline and rolls a **12% base chance** of dysentery (same as murky water / raw food), reduced by the Iron Gut perk (`$MetabolismResist`). The hold type is changed to hand-held food (type 31) so your character plays the eating animation instead of the default resource-holding pose.
 
 ## Installation
 
@@ -38,8 +39,13 @@ The mod patches `resourceYuccaFibers` to add an `Eat` action. On consumption it 
 
 - Initial release — plant fibers are now edible (1 food per use)
 
+### v1.1.0
+
+- Added 12% dysentery chance per bite (same as murky water)
+- Iron Gut perk now reduces the dysentery risk
+
 ---
 
 **Author:** Aleksei Khozin
-**Version:** 1.0.0
+**Version:** 1.1.0
 **Website:** <https://github.com/alekho77/epic_7d2d_mods>
