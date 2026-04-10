@@ -15,12 +15,14 @@
       <property name="Group" value="Resources"/>
     </item>
 
+    <!-- === VEHICLE BUNDLES === -->
+
     <!-- Motorcycle Starter Kit bundle: motorcycle + 5000 gas + fuel saver mod -->
     <item name="evMotorcycleStarterBundle">
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleVehicleMotorCycle"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF6A00"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evMotorcycleStarterBundleDesc"/>
       <property class="Action0">
@@ -34,7 +36,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleVehicleMiniBike"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF6A00"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evMinibikeStarterBundleDesc"/>
       <property class="Action0">
@@ -48,7 +50,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleVehicleParts"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF6A00"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evBicycleBundleDesc"/>
       <property class="Action0">
@@ -62,7 +64,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleVehicle4x4"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF6A00"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evTruckStarterBundleDesc"/>
       <property class="Action0">
@@ -76,7 +78,7 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleVehicleGyro"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF6A00"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evGyrocopterStarterBundleDesc"/>
       <property class="Action0">
@@ -85,16 +87,18 @@
       </property>
     </item>
 
+    <!-- === WEAPON BUNDLES === -->
+
     <!-- Pistol Kit: T6 pistol + 600 9mm rounds -->
     <item name="evPistolBundle">
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundlePistol"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF3131"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evPistolBundleDesc"/>
       <property class="Action0">
-        <property name="Create_item" value="gunHandgunT1Pistol,ammo9mmBulletBall"/>
+        <property name="Create_item" value="gunHandgunT1Pistol,ammo9mmBulletAP"/>
         <property name="Create_item_count" value="6,600"/>
       </property>
     </item>
@@ -104,11 +108,11 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundlePistol"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF3131"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evSMG5BundleDesc"/>
       <property class="Action0">
-        <property name="Create_item" value="gunHandgunT3SMG5,ammo9mmBulletBall"/>
+        <property name="Create_item" value="gunHandgunT3SMG5,ammo9mmBulletAP"/>
         <property name="Create_item_count" value="6,1500"/>
       </property>
     </item>
@@ -118,11 +122,11 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundlePistol"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF3131"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evDesertVultureBundleDesc"/>
       <property class="Action0">
-        <property name="Create_item" value="gunHandgunT3DesertVulture,ammo44MagnumBulletBall"/>
+        <property name="Create_item" value="gunHandgunT3DesertVulture,ammo44MagnumBulletAP"/>
         <property name="Create_item_count" value="6,1000"/>
       </property>
     </item>
@@ -132,11 +136,11 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleShotgun"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF3131"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evPumpShotgunBundleDesc"/>
       <property class="Action0">
-        <property name="Create_item" value="gunShotgunT2PumpShotgun,ammoShotgunShell"/>
+        <property name="Create_item" value="gunShotgunT2PumpShotgun,ammoShotgunSlug"/>
         <property name="Create_item_count" value="6,600"/>
       </property>
     </item>
@@ -146,11 +150,11 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleShotgun"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF3131"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evAutoShotgunBundleDesc"/>
       <property class="Action0">
-        <property name="Create_item" value="gunShotgunT3AutoShotgun,ammoShotgunShell"/>
+        <property name="Create_item" value="gunShotgunT3AutoShotgun,ammoShotgunSlug"/>
         <property name="Create_item_count" value="6,1000"/>
       </property>
     </item>
@@ -160,11 +164,11 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleRifle"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF3131"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evSniperRifleBundleDesc"/>
       <property class="Action0">
-        <property name="Create_item" value="gunRifleT3SniperRifle,ammo762mmBulletBall"/>
+        <property name="Create_item" value="gunRifleT3SniperRifle,ammo762mmBulletAP"/>
         <property name="Create_item_count" value="6,1000"/>
       </property>
     </item>
@@ -174,12 +178,1156 @@
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="bundleMachineGun"/>
-      <property name="CustomIconTint" value="fff200"/>
+      <property name="CustomIconTint" value="FF3131"/>
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evM60BundleDesc"/>
       <property class="Action0">
-        <property name="Create_item" value="gunMGT3M60,ammo762mmBulletBall"/>
+        <property name="Create_item" value="gunMGT3M60,ammo762mmBulletAP"/>
         <property name="Create_item_count" value="6,3000"/>
+      </property>
+    </item>
+
+    <!-- Robotic Turret Kit: T6 robotic turret + 1000 AP turret ammo -->
+    <item name="evRoboticTurretBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleTurrets"/>
+      <property name="CustomIconTint" value="FF3131"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evRoboticTurretBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="gunBotT2JunkTurret,ammoJunkTurretAP"/>
+        <property name="Create_item_count" value="6,1000"/>
+      </property>
+    </item>
+
+    <!-- === AMMO BUNDLES === -->
+
+    <!-- 9mm Ammo Bundle: 1000 regular 9mm rounds -->
+    <item name="evAmmo9mmBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleAmmo"/>
+      <property name="CustomIconTint" value="FDFF00"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmo9mmBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammo9mmBulletBall"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
+    <!-- AP 9mm Ammo Bundle: 1000 AP 9mm rounds -->
+    <item name="evAmmo9mmAPBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleAmmo"/>
+      <property name="CustomIconTint" value="FDFF00"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmo9mmAPBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammo9mmBulletAP"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
+    <!-- .44 Magnum Ammo Bundle: 1000 regular .44 rounds -->
+    <item name="evAmmo44Bundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleAmmo"/>
+      <property name="CustomIconTint" value="FDFF00"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmo44BundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammo44MagnumBulletBall"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
+    <!-- AP .44 Magnum Ammo Bundle: 1000 AP .44 rounds -->
+    <item name="evAmmo44APBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleAmmo"/>
+      <property name="CustomIconTint" value="FDFF00"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmo44APBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammo44MagnumBulletAP"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
+    <!-- 7.62mm Ammo Bundle: 1000 regular 7.62mm rounds -->
+    <item name="evAmmo762Bundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleAmmo"/>
+      <property name="CustomIconTint" value="FDFF00"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmo762BundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammo762mmBulletBall"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
+    <!-- AP 7.62mm Ammo Bundle: 1000 AP 7.62mm rounds -->
+    <item name="evAmmo762APBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleAmmo"/>
+      <property name="CustomIconTint" value="FDFF00"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmo762APBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammo762mmBulletAP"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
+    <!-- Shotgun Shell Bundle: 1000 regular shotgun shells -->
+    <item name="evAmmoShotgunBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleAmmo"/>
+      <property name="CustomIconTint" value="FDFF00"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmoShotgunBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammoShotgunShell"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
+    <!-- AP Shotgun Slug Bundle: 1000 AP shotgun slugs -->
+    <item name="evAmmoShotgunAPBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleAmmo"/>
+      <property name="CustomIconTint" value="FDFF00"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmoShotgunAPBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammoShotgunSlug"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
+    <!-- Robotic Turret Ammo Bundle: 1000 regular turret rounds -->
+    <item name="evAmmoTurretBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleAmmo"/>
+      <property name="CustomIconTint" value="FDFF00"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmoTurretBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammoJunkTurretRegular"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
+    <!-- AP Robotic Turret Ammo Bundle: 1000 AP turret rounds -->
+    <item name="evAmmoTurretAPBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleAmmo"/>
+      <property name="CustomIconTint" value="FDFF00"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmoTurretAPBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammoJunkTurretAP"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
+    <!-- === ARMOR BUNDLES === -->
+
+    <!-- Lumberjack Armor Set -->
+    <item name="evArmorLumberjackBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorLumberjackHelmet"/>
+      <property name="CustomIconTint" value="1F51FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorLumberjackBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorLumberjackHelmet,armorLumberjackOutfit,armorLumberjackGloves,armorLumberjackBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Preacher Armor Set -->
+    <item name="evArmorPreacherBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorPreacherHelmet"/>
+      <property name="CustomIconTint" value="1F51FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorPreacherBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorPreacherHelmet,armorPreacherOutfit,armorPreacherGloves,armorPreacherBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Rogue Armor Set -->
+    <item name="evArmorRogueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorRogueHelmet"/>
+      <property name="CustomIconTint" value="1F51FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorRogueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorRogueHelmet,armorRogueOutfit,armorRogueGloves,armorRogueBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Athletic Armor Set -->
+    <item name="evArmorAthleticBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorAthleticHelmet"/>
+      <property name="CustomIconTint" value="1F51FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorAthleticBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorAthleticHelmet,armorAthleticOutfit,armorAthleticGloves,armorAthleticBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Enforcer Armor Set -->
+    <item name="evArmorEnforcerBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorEnforcerHelmet"/>
+      <property name="CustomIconTint" value="1F51FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorEnforcerBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorEnforcerHelmet,armorEnforcerOutfit,armorEnforcerGloves,armorEnforcerBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Farmer Armor Set -->
+    <item name="evArmorFarmerBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorFarmerHelmet"/>
+      <property name="CustomIconTint" value="1F51FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorFarmerBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorFarmerHelmet,armorFarmerOutfit,armorFarmerGloves,armorFarmerBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Biker Armor Set -->
+    <item name="evArmorBikerBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorBikerHelmet"/>
+      <property name="CustomIconTint" value="1F51FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorBikerBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorBikerHelmet,armorBikerOutfit,armorBikerGloves,armorBikerBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Scavenger Armor Set -->
+    <item name="evArmorScavengerBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorScavengerHelmet"/>
+      <property name="CustomIconTint" value="1F51FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorScavengerBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorScavengerHelmet,armorScavengerOutfit,armorScavengerGloves,armorScavengerBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Ranger Armor Set -->
+    <item name="evArmorRangerBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorRangerHelmet"/>
+      <property name="CustomIconTint" value="1F51FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorRangerBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorRangerHelmet,armorRangerOutfit,armorRangerGloves,armorRangerBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Commando Armor Set -->
+    <item name="evArmorCommandoBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorCommandoHelmet"/>
+      <property name="CustomIconTint" value="1F51FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorCommandoBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorCommandoHelmet,armorCommandoOutfit,armorCommandoGloves,armorCommandoBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Assassin Armor Set -->
+    <item name="evArmorAssassinBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorAssassinHelmet"/>
+      <property name="CustomIconTint" value="1F51FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorAssassinBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorAssassinHelmet,armorAssassinOutfit,armorAssassinGloves,armorAssassinBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Miner Armor Set -->
+    <item name="evArmorMinerBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorMinerHelmet"/>
+      <property name="CustomIconTint" value="1F51FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorMinerBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorMinerHelmet,armorMinerOutfit,armorMinerGloves,armorMinerBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Nomad Armor Set -->
+    <item name="evArmorNomadBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorNomadHelmet"/>
+      <property name="CustomIconTint" value="1F51FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorNomadBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorNomadHelmet,armorNomadOutfit,armorNomadGloves,armorNomadBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Nerd Armor Set -->
+    <item name="evArmorNerdBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorNerdHelmet"/>
+      <property name="CustomIconTint" value="1F51FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorNerdBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorNerdHelmet,armorNerdOutfit,armorNerdGloves,armorNerdBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Raider Armor Set -->
+    <item name="evArmorRaiderBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="armorRaiderHelmet"/>
+      <property name="CustomIconTint" value="1F51FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorRaiderBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorRaiderHelmet,armorRaiderOutfit,armorRaiderGloves,armorRaiderBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- === TOOL BUNDLES === -->
+
+    <!-- Nailgun Kit: T6 nailgun -->
+    <item name="evNailgunBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleTools"/>
+      <property name="CustomIconTint" value="39FF14"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evNailgunBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeToolRepairT3Nailgun"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <!-- Chainsaw Kit: T6 chainsaw -->
+    <item name="evChainsawBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleTools"/>
+      <property name="CustomIconTint" value="39FF14"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evChainsawBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeToolAxeT3Chainsaw"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <!-- Auger Kit: T6 auger -->
+    <item name="evAugerBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleTools"/>
+      <property name="CustomIconTint" value="39FF14"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAugerBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeToolPickT3Auger"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <!-- Impact Driver Kit: T6 impact driver -->
+    <item name="evImpactDriverBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleTools"/>
+      <property name="CustomIconTint" value="39FF14"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evImpactDriverBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeToolSalvageT3ImpactDriver"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <!-- === SKILL MAGAZINE BUNDLES === -->
+
+    <!-- Home Cooking Weekly x10 -->
+    <item name="evFoodMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookHomeCookingWeekly"/>
+      <property name="CustomIconTint" value="BC13FE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evFoodMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="foodSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Medical Journal x10 -->
+    <item name="evMedicalMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookMedicalJournal"/>
+      <property name="CustomIconTint" value="BC13FE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evMedicalMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="medicalSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Armored Up x10 -->
+    <item name="evArmorMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookArmoredUp"/>
+      <property name="CustomIconTint" value="BC13FE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Vehicle Adventures x10 -->
+    <item name="evVehiclesMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookVehicleAdventures"/>
+      <property name="CustomIconTint" value="BC13FE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evVehiclesMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="vehiclesSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Tools Digest x10 -->
+    <item name="evHarvestingToolsMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookToolsDigest"/>
+      <property name="CustomIconTint" value="BC13FE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evHarvestingToolsMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="harvestingToolsSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Handy Land x10 -->
+    <item name="evRepairToolsMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookHandyLand"/>
+      <property name="CustomIconTint" value="BC13FE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evRepairToolsMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="repairToolsSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Scrapping 4 Fun x10 -->
+    <item name="evSalvageToolsMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookScrapping4Fun"/>
+      <property name="CustomIconTint" value="BC13FE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evSalvageToolsMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="salvageToolsSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Furious Fists x10 -->
+    <item name="evKnucklesMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookFuriousFists"/>
+      <property name="CustomIconTint" value="BC13FE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evKnucklesMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="knucklesSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Knife Guy x10 -->
+    <item name="evBladesMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookKnifeGuy"/>
+      <property name="CustomIconTint" value="BC13FE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evBladesMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bladesSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Big Hitters x10 -->
+    <item name="evClubsMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookBigHitters"/>
+      <property name="CustomIconTint" value="BC13FE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evClubsMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="clubsSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Get Hammered x10 -->
+    <item name="evSledgehammersMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookGetHammered"/>
+      <property name="CustomIconTint" value="BC13FE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evSledgehammersMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="sledgehammersSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Sharp Sticks x10 -->
+    <item name="evSpearsMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookSharpSticks"/>
+      <property name="CustomIconTint" value="BC13FE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evSpearsMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="spearsSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Bow Hunters x10 -->
+    <item name="evBowsMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookBowHunters"/>
+      <property name="CustomIconTint" value="BC13FE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evBowsMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bowsSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Handgun Magazine x10 -->
+    <item name="evHandgunsMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookHandgunMagazine"/>
+      <property name="CustomIconTint" value="BC13FE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evHandgunsMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="handgunsSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Shotgun Weekly x10 -->
+    <item name="evShotgunsMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookShotgunWeekly"/>
+      <property name="CustomIconTint" value="BC13FE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evShotgunsMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="shotgunsSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Rifle World x10 -->
+    <item name="evRiflesMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookRifleWorld"/>
+      <property name="CustomIconTint" value="BC13FE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evRiflesMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="riflesSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Tactical Warfare x10 -->
+    <item name="evMachineGunsMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookTacticalWarfare"/>
+      <property name="CustomIconTint" value="BC13FE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evMachineGunsMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="machineGunsSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Explosive Magazine x10 -->
+    <item name="evExplosivesMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookExplosiveMagazine"/>
+      <property name="CustomIconTint" value="BC13FE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evExplosivesMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="explosivesSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Tech Planet x10 -->
+    <item name="evRoboticsMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookTechPlanet"/>
+      <property name="CustomIconTint" value="BC13FE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evRoboticsMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="roboticsSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Southern Farming x10 -->
+    <item name="evSeedMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookSouthernFarming"/>
+      <property name="CustomIconTint" value="BC13FE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evSeedMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="seedSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Wiring 101 x10 -->
+    <item name="evElectricianMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookWiring101"/>
+      <property name="CustomIconTint" value="BC13FE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evElectricianMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="electricianSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Electrical Traps x10 -->
+    <item name="evTrapsMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookElectricalTraps"/>
+      <property name="CustomIconTint" value="BC13FE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evTrapsMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="trapsSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Forge Ahead x10 -->
+    <item name="evWorkstationMagazineBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookForgeAhead"/>
+      <property name="CustomIconTint" value="BC13FE"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evWorkstationMagazineBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="workstationSkillMagazine"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- === SKILL BOOK BUNDLES === -->
+
+    <!-- The Fireman's Almanac (all 7 volumes) -->
+    <item name="evFiremansAlmanacBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookFiremansAlmanacHeat"/>
+      <property name="CustomIconTint" value="8F00F2"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evFiremansAlmanacBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookFiremansAlmanacHeat,bookFiremansAlmanacAxes,bookFiremansAlmanacSpeed,bookFiremansAlmanacMolotov,bookFiremansAlmanacPrevention,bookFiremansAlmanacHarvest,bookFiremansAlmanacEquipment"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Night Stalker (all 7 volumes) -->
+    <item name="evNightStalkerBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookNightStalkerStealthDamage"/>
+      <property name="CustomIconTint" value="8F00F2"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evNightStalkerBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookNightStalkerStealthDamage,bookNightStalkerSilentNight,bookNightStalkerBlades,bookNightStalkerThiefAdrenaline,bookNightStalkerArchery,bookNightStalkerTwilightThief,bookNightStalkerSlumberParty"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Lucky Looter (all 7 volumes) -->
+    <item name="evLuckyLooterBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookLuckyLooterDukes"/>
+      <property name="CustomIconTint" value="8F00F2"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evLuckyLooterBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookLuckyLooterDukes,bookLuckyLooterAmmunition,bookLuckyLooterBrass,bookLuckyLooterLead,bookLuckyLooterBooks,bookLuckyLooterFood,bookLuckyLooterMedical"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Magnum Enforcer (all 7 volumes) -->
+    <item name="evEnforcerBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookEnforcerDamage"/>
+      <property name="CustomIconTint" value="8F00F2"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evEnforcerBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookEnforcerDamage,bookEnforcerApparel,bookEnforcerPunks,bookEnforcerIntimidation,bookEnforcerAPAmmo,bookEnforcerHPAmmo,bookEnforcerCriminalPursuit"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Batter Up (all 7 volumes) -->
+    <item name="evBatterUpBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookBatterUpBigHits"/>
+      <property name="CustomIconTint" value="8F00F2"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evBatterUpBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookBatterUpBigHits,bookBatterUpStealingBases,bookBatterUpSlowPitch,bookBatterUpKnockdown,bookBatterUpMaintenance,bookBatterUpFoulBalls,bookBatterUpMetalChain"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Sledge Saga (all 7 volumes) -->
+    <item name="evSledgeSagaBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookSledgeSagaKnockdown"/>
+      <property name="CustomIconTint" value="8F00F2"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evSledgeSagaBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookSledgeSagaKnockdown,bookSledgeSagaDegradation,bookSledgeSagaCrippledMorale,bookSledgeSagaPulverizingFinishers,bookSledgeSagaSavageReaper,bookSledgeSagaConcussiveStrike,bookSledgeSagaArmorCrusher"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- The Great Heist (all 7 volumes) -->
+    <item name="evGreatHeistBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookTheGreatHeistSafes"/>
+      <property name="CustomIconTint" value="8F00F2"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evGreatHeistBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookGreatHeistSafes,bookGreatHeistGems,bookGreatHeistGoldRush,bookGreatHeistClaimed,bookGreatHeistAdrenalineFall,bookGreatHeistSprintSneak,bookGreatHeistMotionDetection"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Wasteland Treasures (all 7 volumes) -->
+    <item name="evWasteTreasuresBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookWasteTreasuresHoney"/>
+      <property name="CustomIconTint" value="8F00F2"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evWasteTreasuresBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookWasteTreasuresHoney,bookWasteTreasuresCoffins,bookWasteTreasuresAcid,bookWasteTreasuresWater,bookWasteTreasuresDoors,bookWasteTreasuresCloth,bookWasteTreasuresSinks"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- The Hunter's Journal (all 7 volumes) -->
+    <item name="evHuntingJournalBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookHuntingJournalBears"/>
+      <property name="CustomIconTint" value="8F00F2"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evHuntingJournalBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookHuntingJournalBears,bookHuntingJournalWolves,bookHuntingJournalCoyotes,bookHuntingJournalMountainLions,bookHuntingJournalDeer,bookHuntingJournalVultures,bookHuntingJournalSelfDefense"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Art of Mining (all 7 volumes) -->
+    <item name="evArtOfMiningBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookArtOfMiningLuckyStrike"/>
+      <property name="CustomIconTint" value="8F00F2"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArtOfMiningBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookArtOfMiningLuckyStrike,bookArtOfMiningDiamondTools,bookArtOfMiningCoffee,bookArtOfMiningBlackStrap,bookArtOfMiningPallets,bookArtOfMiningAvalanche,bookArtOfMiningDamage"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Ranger's Guide to Archery (all 7 volumes) -->
+    <item name="evRangersBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookRangersArrowRecovery"/>
+      <property name="CustomIconTint" value="8F00F2"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evRangersBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookRangersArrowRecovery,bookRangersExplodingBolts,bookRangersCripplingShot,bookRangersAPAmmo,bookRangersFlamingArrows,bookRangersForestGuide,bookRangersKnockdown"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Pistol Pete (all 7 volumes) -->
+    <item name="evPistolPeteBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookPistolPeteTakeAim"/>
+      <property name="CustomIconTint" value="8F00F2"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evPistolPeteBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookPistolPeteTakeAim,bookPistolPeteSwissKnees,bookPistolPeteSteadyHand,bookPistolPeteMaintenance,bookPistolPeteHPAmmo,bookPistolPeteAPAmmo,bookPistolPeteDamage"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Shotgun Messiah (all 7 volumes) -->
+    <item name="evShotgunMessiahBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookShotgunMessiahDamage"/>
+      <property name="CustomIconTint" value="8F00F2"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evShotgunMessiahBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookShotgunMessiahDamage,bookShotgunMessiahBreachingSlugs,bookShotgunMessiahLimbShot,bookShotgunMessiahSlugs,bookShotgunMessiahMaintenance,bookShotgunMessiahMagazine,bookShotgunMessiahPartyStarter"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Sniper (all 7 volumes) -->
+    <item name="evSniperBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookSniperDamage"/>
+      <property name="CustomIconTint" value="8F00F2"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evSniperBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookSniperDamage,bookSniperCripplingShot,bookSniperHeadShot,bookSniperReload,bookSniperControlledBreathing,bookSniperAPAmmo,bookSniperHPAmmo"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Automatic Weapons Handbook (all 7 volumes) -->
+    <item name="evAutoWeaponsBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookAutoWeaponsDamage"/>
+      <property name="CustomIconTint" value="8F00F2"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAutoWeaponsBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookAutoWeaponsDamage,bookAutoWeaponsUncontrolledBurst,bookAutoWeaponsMaintenance,bookAutoWeaponsDrumMag,bookAutoWeaponsRecoil,bookAutoWeaponsRagdoll,bookAutoWeaponsMachineGuns"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Urban Combat (all 7 volumes) -->
+    <item name="evUrbanCombatBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookUrbanCombatLanding"/>
+      <property name="CustomIconTint" value="8F00F2"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evUrbanCombatBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookUrbanCombatLanding,bookUrbanCombatCigar,bookUrbanCombatSneaking,bookUrbanCombatJumping,bookUrbanCombatLandMines,bookUrbanCombatAdrenalineRush,bookUrbanCombatRoomClearing"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Tech Junkie (all 7 volumes) -->
+    <item name="evTechJunkieBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookTechJunkie1Damage"/>
+      <property name="CustomIconTint" value="8F00F2"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evTechJunkieBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookTechJunkie1Damage,bookTechJunkie2Maintenance,bookTechJunkie3APAmmo,bookTechJunkie4Shells,bookTechJunkie5Repulsor,bookTechJunkie6BatonCharge,bookTechJunkie7Hydraulics"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Bar Brawling (all 7 volumes) -->
+    <item name="evBarBrawlingBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookBarBrawling1BasicMoves"/>
+      <property name="CustomIconTint" value="8F00F2"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evBarBrawlingBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookBarBrawling1BasicMoves,bookBarBrawling2DropABomb,bookBarBrawling3KillerInstinct,bookBarBrawling4FinishingMoves,bookBarBrawling5AdrenalineHealing,bookBarBrawling6RageMode,bookBarBrawling7BoozedUp"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- Spear Hunter (all 7 volumes) -->
+    <item name="evSpearHunterBookBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bookSpearHunter1Damage"/>
+      <property name="CustomIconTint" value="8F00F2"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evSpearHunterBookBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="bookSpearHunter1Damage,bookSpearHunter2Maintenance,bookSpearHunter3Bleed,bookSpearHunter4KillMove,bookSpearHunter5RapidStrike,bookSpearHunter6PenetratingShaft,bookSpearHunter7QuickStrike"/>
+        <property name="Create_item_count" value="1,1,1,1,1,1,1"/>
+      </property>
+    </item>
+
+    <!-- === WORKSTATION BUNDLE === -->
+    <item name="evWorkstationBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="forge"/>
+      <property name="CustomIconTint" value="F000FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evWorkstationBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="forge,workbench,cementMixer,chemistryStation,cntDewCollector"/>
+        <property name="Create_item_count" value="1,1,1,1,2"/>
+      </property>
+    </item>
+
+    <!-- === FOOD BUNDLES === -->
+
+    <!-- Small Food Kit: 1 random food x12 -->
+    <item name="evFoodSmallBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleFood"/>
+      <property name="CustomIconTint" value="66FF00"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evFoodSmallBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourcePaper"/>
+        <property name="Create_item_count" value="0"/>
+        <property name="Random_item" value="foodBaconAndEggs,foodVegetableStew,foodGrilledMeat,foodBlueberryPie,foodPumpkinBread,foodEggBoiled"/>
+        <property name="Random_item_count" value="12,12,12,12,12,12"/>
+        <property name="Random_count" value="1"/>
+        <property name="Unique_random_only" value="true"/>
+      </property>
+    </item>
+
+    <!-- Medium Food Kit: 1 random food x12 -->
+    <item name="evFoodMediumBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleFood"/>
+      <property name="CustomIconTint" value="66FF00"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evFoodMediumBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourcePaper"/>
+        <property name="Create_item_count" value="0"/>
+        <property name="Random_item" value="foodMeatStew,foodSteakAndPotato,foodHoboStew,foodFishTacos,foodChiliDog,foodPumpkinPie,foodTunaFishGravyToast"/>
+        <property name="Random_item_count" value="12,12,12,12,12,12,12"/>
+        <property name="Random_count" value="1"/>
+        <property name="Unique_random_only" value="true"/>
+      </property>
+    </item>
+
+    <!-- Large Food Kit: 1 random food x12 -->
+    <item name="evFoodLargeBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="bundleFood"/>
+      <property name="CustomIconTint" value="66FF00"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evFoodLargeBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourcePaper"/>
+        <property name="Create_item_count" value="0"/>
+        <property name="Random_item" value="foodHoneyGlazedSham,foodHoneyBrisket,foodShamChowder,foodGumboStew,foodShepardsPie,foodSpaghetti"/>
+        <property name="Random_item_count" value="12,12,12,12,12,12"/>
+        <property name="Random_count" value="1"/>
+        <property name="Unique_random_only" value="true"/>
+      </property>
+    </item>
+
+    <!-- === DRINK BUNDLES === -->
+
+    <!-- Small Drink Kit: 1 random drink x15 -->
+    <item name="evDrinkSmallBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="drinkJarBoiledWater"/>
+      <property name="CustomIconTint" value="00FFD5"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evDrinkSmallBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourcePaper"/>
+        <property name="Create_item_count" value="0"/>
+        <property name="Random_item" value="drinkJarGoldenRodTea,drinkJarRedTea,drinkJarCoffee,drinkJarBoiledWater"/>
+        <property name="Random_item_count" value="15,15,15,15"/>
+        <property name="Random_count" value="1"/>
+        <property name="Unique_random_only" value="true"/>
+      </property>
+    </item>
+
+    <!-- Medium Drink Kit: 1 random drink x15 -->
+    <item name="evDrinkMediumBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="drinkJarPureMineralWater"/>
+      <property name="CustomIconTint" value="00FFD5"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evDrinkMediumBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourcePaper"/>
+        <property name="Create_item_count" value="0"/>
+        <property name="Random_item" value="drinkJarPureMineralWater,drinkJarYuccaJuice"/>
+        <property name="Random_item_count" value="15,15"/>
+        <property name="Random_count" value="1"/>
+        <property name="Unique_random_only" value="true"/>
+      </property>
+    </item>
+
+    <!-- Large Drink Kit: 1 random drink x15 -->
+    <item name="evDrinkLargeBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="drinkJarHoneyTea"/>
+      <property name="CustomIconTint" value="00FFD5"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evDrinkLargeBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourcePaper"/>
+        <property name="Create_item_count" value="0"/>
+        <property name="Random_item" value="drinkJarHoneyTea,drinkYuccaJuiceSmoothie,drinkCanMegaCrush,drinkJarPureMineralWater"/>
+        <property name="Random_item_count" value="15,15,15,15"/>
+        <property name="Random_count" value="1"/>
+        <property name="Unique_random_only" value="true"/>
       </property>
     </item>
   </append>

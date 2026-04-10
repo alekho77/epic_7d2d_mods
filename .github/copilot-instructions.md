@@ -9,6 +9,13 @@ This repository contains **7 Days to Die** modlets authored by **Aleksei Khozin*
 - Respond in the same language the user used in their request.
 - Always append exactly **one sentence in English** at the very end of every reply summarizing what was done, regardless of the request language.
 
+### Linting After File Changes
+
+After editing **any** file — including Markdown (`.md`), XML, JSON, plain text, or any other format — always run `get_errors` on the modified file and fix all reported lint and validation errors before finishing.
+
+- Use only linters and validators that are **already installed in VS Code**. Do not suggest installing tools, packages, or executables on the user's machine unless explicitly asked.
+- If no linter is available for a particular file format, suggest installing the relevant **VS Code extension** (not a system tool), and leave the decision to the user.
+
 ### Git Commit Policy
 - **Never suggest committing changes** unless explicitly asked by the user.
 - When a commit is requested, execute it using console `git` commands.
@@ -89,6 +96,16 @@ The repository contains a `/Data` folder with the **complete original unmodified
 > Never guess or assume values — look them up in the source files.
 >
 > When a request involves non-config assets (icons, prefabs, bundles, etc.), consult the relevant subfolder under `/Data` as well.
+
+### Inventory Object Catalog (`docs/inventory_catalog.md`)
+
+The file `docs/inventory_catalog.md` is a **pre-built catalog of all game objects** (items, blocks, and item modifiers) generated from the vanilla XML configs. Use it as the **first lookup step** when working with game objects:
+
+1. **Find an object ID by name or description.** When the user refers to an object by its English name, Russian name, or description — search `docs/inventory_catalog.md` to resolve the internal ID (e.g., `gunHandgunT2Magnum44`).
+2. **Browse object groups and categories.** The catalog is organized into categorized sections (Ranged Weapons, Melee Weapons, Loot Containers, Armor Mods, etc.) — use these to discover related objects or get a list of IDs in a specific group.
+3. **Look up detailed properties in XML configs.** Once the internal ID is known, search the corresponding XML config file (`items.xml`, `blocks.xml`, or `item_modifiers.xml` under `/Data/Config/`) by the `name` attribute to find its full property set, effects, recipes, and relationships.
+
+> **Workflow**: user description/name → search `docs/inventory_catalog.md` → get internal ID → search `/Data/Config/*.xml` by that ID for full details.
 
 ### Config File Reference
 

@@ -1,20 +1,33 @@
 [size=6][b]EV_EpicCash — Custom Server Currency[/b][/size]
 
-[color=#55aa55][b]Server-Side Friendly[/b][/color]
+[size=5][b]Description[/b][/size]
 
-Adds [b]Epic Bucks[/b] ([font=Courier New]evCash[/font]) — a custom in-game currency that lets server admins build an in-game item shop backed by a real-money or points-based online store.
+Adds [b]Epic Bucks[/b] ([font=Courier New]evCash[/font]) — a custom in-game currency designed for [b]dedicated server administrators[/b] who want to provide a fair and enjoyable experience for all players. Admins can reward active community members, compensate for lost progress, run in-game events, or help newcomers and casual players catch up with veterans — letting everyone enjoy the server equally, regardless of how much time they spend in the game.
 
-[size=5][b]Overview[/b][/size]
+[quote]
+[color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
 
-Epic Bucks is a neon yellow in-game currency designed as a bridge between a server's external donation/points shop and the in-game economy. The flow is simple:
+[b]If you are running a dedicated server, this mod only needs to be installed on the server.[/b]
+Players connecting to the server [b]do not need to download or install anything[/b] on their game clients — all changes are synced automatically when they join.
+[/quote]
+
+[quote]
+[color=#cc9900][size=4][b]Disclaimer[/b][/size][/color]
+
+The author [b]does not endorse pay-to-win mechanics[/b]. This mod was created solely to help dedicated server owners sustain their communities and provide a fair, enjoyable gameplay experience for all players. If you choose to tie Epic Bucks to real-money donations, please [b]avoid aggressive, intrusive, or no-alternative monetization policies[/b]. The best servers are those where supporting the server is voluntary and never gives a decisive competitive advantage.
+[/quote]
+
+[size=5][b]How It Works[/b][/size]
+
+Epic Bucks is a neon yellow in-game currency that server administrators distribute to players at their discretion. Typical use cases include rewards for community participation, compensation after server wipes or rollbacks, event prizes, or as part of a server support program. The flow is simple:
 
 [list=1]
-[*]A player purchases points or donates on the server's website.
-[*]An admin (or automated system) issues Epic Bucks to the player via a console command.
-[*]The player opens their crafting inventory in-game and exchanges Epic Bucks for the item bundles they want — no further admin involvement needed.
+[*]An admin decides how and when to distribute Epic Bucks (console commands, automated systems, or any other method).
+[*]Players receive Epic Bucks in their inventory.
+[*]Players open their crafting menu and exchange Epic Bucks for the item bundles they want — no further admin involvement needed.
 [/list]
 
-This mod also ships a ready-made example bundle — a [b]Motorcycle Starter Kit[/b] — to demonstrate the pattern. A built-in guide explains how to add your own bundles for any combination of items at any price.
+This mod ships [b]92 ready-made bundles[/b] covering vehicles, weapons, ammo, armor, tools, skill magazines, skill books, workstations, food, and drinks. A built-in guide also explains how to add your own custom bundles for any combination of items at any price.
 
 [size=5][b]Features[/b][/size]
 
@@ -25,7 +38,8 @@ This mod also ships a ready-made example bundle — a [b]Motorcycle Starter Kit[
 [*][b]Cannot Be Sold[/b] — not sellable to traders, keeping it as a server-only economy
 [*][b]Cannot Be Used as Fuel[/b] — prevents accidental burning
 [*][b]Creative Menu Access[/b] — available in creative mode for easy admin distribution
-[*][b]Example Bundle Included[/b] — Motorcycle Starter Kit (motorcycle + 5000 gas + Fuel Saver mod) craftable for 10 Epic Bucks
+[*][b]92 Ready-Made Bundles[/b] — vehicles, weapons, ammo, armor, tools, magazines, books, workstations, food, and drinks
+[*][b]Color-Coded Categories[/b] — each bundle type has a unique neon icon tint for instant recognition
 [*][b]Extensible[/b] — add unlimited custom bundles with any items and prices
 [/list]
 
@@ -49,6 +63,177 @@ give <player_name> evCash 100[/code]
 [*][b]Game Version:[/b] 7 Days to Die (latest stable)
 [*][b]Type:[/b] XML modlet (no Harmony patches required)
 [*][b]Multiplayer:[/b] Server-side only — clients do not need this mod installed.
+[/list]
+
+[size=5][b]Included Bundles[/b][/size]
+
+The mod ships with [b]92 ready-made bundles[/b] across 10 categories, all craftable from the player inventory using Epic Bucks (EB).
+
+[color=#FF6A00][size=4][b]Vehicle Bundles[/b][/size][/color]
+
+[list]
+[*][b]Bicycle Kit[/b] (5 EB) — Bicycle, 2× Vehicle Storage mod
+[*][b]Minibike Starter Kit[/b] (7 EB) — Minibike, 3,000× Gas Can, Super Charger mod
+[*][b]Motorcycle Starter Kit[/b] (10 EB) — Motorcycle, 5,000× Gas Can, Fuel Saver mod
+[*][b]4x4 Truck Starter Kit[/b] (20 EB) — 4x4 Truck, 12,000× Gas Can, Fuel Saver / Super Charger / Reserve Fuel Tank mods
+[*][b]Gyrocopter Starter Kit[/b] (20 EB) — Gyrocopter, 12,000× Gas Can
+[/list]
+
+[color=#FF3131][size=4][b]Weapon Bundles[/b][/size][/color]
+
+[list]
+[*][b]Pistol Kit[/b] (10 EB) — T6 Pistol, 600× AP 9mm rounds
+[*][b]Pump Shotgun Kit[/b] (10 EB) — T6 Pump Shotgun, 600× AP slugs
+[*][b]Sniper Rifle Kit[/b] (15 EB) — T6 Sniper Rifle, 1,000× AP 7.62mm rounds
+[*][b]SMG-5 Kit[/b] (20 EB) — T6 SMG-5, 1,500× AP 9mm rounds
+[*][b]Desert Vulture Kit[/b] (20 EB) — T6 Desert Vulture, 1,000× AP .44 Magnum rounds
+[*][b]Auto Shotgun Kit[/b] (20 EB) — T6 Auto Shotgun, 1,000× AP slugs
+[*][b]Robotic Turret Kit[/b] (20 EB) — T6 Robotic Turret, 1,000× AP turret rounds
+[*][b]M60 Machine Gun Kit[/b] (25 EB) — T6 M60, 3,000× AP 7.62mm rounds
+[/list]
+
+[color=#FDFF00][size=4][b]Ammo Bundles[/b][/size][/color]
+
+[list]
+[*][b]9mm Ammo Pack[/b] (1 EB) — 1,000× standard 9mm rounds
+[*][b].44 Magnum Ammo Pack[/b] (1 EB) — 1,000× standard .44 Magnum rounds
+[*][b]7.62mm Ammo Pack[/b] (1 EB) — 1,000× standard 7.62mm rounds
+[*][b]Shotgun Shell Pack[/b] (1 EB) — 1,000× standard shotgun shells
+[*][b]Robotic Turret Ammo Pack[/b] (1 EB) — 1,000× standard Robotic Turret rounds
+[*][b]AP 9mm Ammo Pack[/b] (2 EB) — 1,000× AP 9mm rounds
+[*][b]AP .44 Magnum Ammo Pack[/b] (2 EB) — 1,000× AP .44 Magnum rounds
+[*][b]AP 7.62mm Ammo Pack[/b] (2 EB) — 1,000× AP 7.62mm rounds
+[*][b]AP Shotgun Slug Pack[/b] (2 EB) — 1,000× AP shotgun slugs
+[*][b]AP Robotic Turret Ammo Pack[/b] (2 EB) — 1,000× AP Robotic Turret rounds
+[/list]
+
+[color=#1F51FF][size=4][b]Armor Bundles[/b][/size][/color]
+
+All armor bundles include a full Tier 6 set (helmet, outfit, gloves, boots) — [b]10 EB[/b] each.
+
+[list]
+[*]Lumberjack Armor Set
+[*]Preacher Armor Set
+[*]Rogue Armor Set
+[*]Athletic Armor Set
+[*]Enforcer Armor Set
+[*]Farmer Armor Set
+[*]Biker Armor Set
+[*]Scavenger Armor Set
+[*]Ranger Armor Set
+[*]Commando Armor Set
+[*]Assassin Armor Set
+[*]Miner Armor Set
+[*]Nomad Armor Set
+[*]Nerd Armor Set
+[*]Raider Armor Set
+[/list]
+
+[color=#39FF14][size=4][b]Tool Bundles[/b][/size][/color]
+
+All tool bundles contain a single Tier 6 tool — [b]5 EB[/b] each.
+
+[list]
+[*]Nailgun Kit
+[*]Chainsaw Kit
+[*]Auger Kit
+[*]Impact Driver Kit
+[/list]
+
+[color=#BC13FE][size=4][b]Skill Magazine Bundles[/b][/size][/color]
+
+All magazine bundles contain 10 copies of the respective magazine — [b]10 EB[/b] each.
+
+[list]
+[*]Home Cooking Weekly Pack (10)
+[*]Medical Journal Pack (10)
+[*]Armored Up Pack (10)
+[*]Vehicle Adventures Pack (10)
+[*]Tools Digest Pack (10)
+[*]Handy Land Pack (10)
+[*]Scrapping 4 Fun Pack (10)
+[*]Furious Fists Pack (10)
+[*]Knife Guy Pack (10)
+[*]Big Hitters Pack (10)
+[*]Get Hammered Pack (10)
+[*]Sharp Sticks Pack (10)
+[*]Bow Hunters Pack (10)
+[*]Handgun Magazine Pack (10)
+[*]Shotgun Weekly Pack (10)
+[*]Rifle World Pack (10)
+[*]Tactical Warfare Pack (10)
+[*]Explosive Magazine Pack (10)
+[*]Tech Planet Pack (10)
+[*]Southern Farming Pack (10)
+[*]Wiring 101 Pack (10)
+[*]Electrical Traps Pack (10)
+[*]Forge Ahead Pack (10)
+[/list]
+
+[color=#8F00F2][size=4][b]Skill Book Bundles[/b][/size][/color]
+
+All book bundles contain the complete set of 7 volumes — [b]10 EB[/b] each.
+
+[list]
+[*]The Fireman's Almanac Complete Set
+[*]Night Stalker Complete Set
+[*]Lucky Looter Complete Set
+[*]Magnum Enforcer Complete Set
+[*]Batter Up Complete Set
+[*]Sledge Saga Complete Set
+[*]The Great Heist Complete Set
+[*]Wasteland Treasures Complete Set
+[*]The Hunter's Journal Complete Set
+[*]Art of Mining Complete Set
+[*]Ranger's Guide to Archery Complete Set
+[*]Pistol Pete Complete Set
+[*]Shotgun Messiah Complete Set
+[*]Sniper Complete Set
+[*]Automatic Weapons Handbook Complete Set
+[*]Urban Combat Complete Set
+[*]Tech Junkie Complete Set
+[*]Bar Brawling Complete Set
+[*]Spear Hunter Complete Set
+[/list]
+
+[color=#F000FF][size=4][b]Workstation Bundle[/b][/size][/color]
+
+[list]
+[*][b]Basic Workstations Kit[/b] (50 EB) — Forge, Workbench, Cement Mixer, Chemistry Station, 2× Dew Collector
+[/list]
+
+[color=#66FF00][size=4][b]Food Bundles[/b][/size][/color]
+
+[list]
+[*][b]Small Food Kit[/b] (1 EB) — 12× random basic meals
+[*][b]Medium Food Kit[/b] (2 EB) — 12× random hearty meals
+[*][b]Large Food Kit[/b] (3 EB) — 12× random gourmet meals
+[/list]
+
+[color=#00FFD5][size=4][b]Drink Bundles[/b][/size][/color]
+
+[list]
+[*][b]Small Drink Kit[/b] (1 EB) — 15× random basic drinks
+[*][b]Medium Drink Kit[/b] (2 EB) — 15× random quality drinks
+[*][b]Large Drink Kit[/b] (3 EB) — 15× random premium drinks
+[/list]
+
+[quote]If your server runs mods that add custom items to the game, you can easily extend EpicCash to support them. Follow the guide in the mod's README to create bundles containing any modded items at any price.[/quote]
+
+[size=5][b]Changelog[/b][/size]
+
+[size=4][b]v1.1.0[/b][/size]
+
+[list]
+[*]Added 92 ready-made item bundles across 10 categories: vehicles, weapons, ammo, armor, tools, skill magazines, skill books, workstations, food, and drinks
+[*]Each bundle category has a unique neon icon color for easy visual identification
+[*]Full localization support (English + Russian descriptions, display names in all 14 languages)
+[/list]
+
+[size=4][b]v1.0.0[/b][/size]
+
+[list]
+[*]Initial release with evCash currency and Motorcycle Starter Kit example bundle
 [/list]
 
 [size=5][b]Credits[/b][/size]

@@ -314,6 +314,164 @@ gunPistolCustomDesc,items,Item,,,"A specially modified pistol with enhanced dama
 
 ---
 
+## Bundles (OpenBundle System)
+
+Bundles are special items that, when activated (right-clicked), give the player one or more items. They use the `OpenBundle` action class defined in `questRewardBundleMaster`. All bundles extend this master item and override `Action0` properties to control what drops.
+
+### Master Bundle Item
+
+The master template at `questRewardBundleMaster` defines shared behavior:
+
+```xml
+<item name="questRewardBundleMaster">
+    <property name="CreativeMode" value="None"/>
+    <property name="CustomIcon" value="resourcePaper"/>
+    <property name="ItemTypeIcon" value="computer"/>
+    <property name="HoldType" value="45"/>
+    <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+    <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+    <property name="Material" value="Mmetal"/>
+    <property name="Stacknumber" value="1"/>
+    <property name="Weight" value="0"/>
+    <property name="SellableToTrader" value="false"/>
+    <property name="Group" value="Special Items"/>
+    <property name="SoundPickup" value="questbundle_grab"/>
+    <property name="SoundPlace" value="questbundle_place"/>
+    <property class="Action0">
+        <property name="Class" value="OpenBundle"/>
+        <property name="Delay" value="0"/>
+    </property>
+</item>
+```
+
+### Pattern A: Fixed Contents (Create_item)
+
+Every item in the list is guaranteed to drop with the specified count. Works with both items and blocks (e.g., `forge`, `workbench`).
+
+```xml
+<item name="myFixedBundle">
+    <property name="Extends" value="questRewardBundleMaster"/>
+    <property name="CreativeMode" value="Player"/>
+    <property name="CustomIcon" value="bundleTools"/>
+    <property name="CustomIconTint" value="FFFFFF"/>
+    <property name="ItemTypeIcon" value="bundle"/>
+    <property name="DescriptionKey" value="myFixedBundleDesc"/>
+    <property class="Action0">
+        <property name="Create_item" value="forge,workbench,cementMixer"/>
+        <property name="Create_item_count" value="1,1,1"/>
+    </property>
+</item>
+```
+
+| Property | Description |
+| --- | --- |
+| `Create_item` | Comma-separated list of item/block IDs to give |
+| `Create_item_count` | Comma-separated counts for each item. Use `6` for T6 quality items (weapons, tools, armor) |
+
+> **Quality trick**: For tiered items, `Create_item_count` also acts as quality. Setting it to `6` spawns a Tier 6 item.
+
+### Pattern B: Random Contents (Random_item)
+
+A random subset of items is selected from the pool. Uses `Create_item` as a required placeholder (can be zero-count).
+
+```xml
+<item name="myRandomBundle">
+    <property name="Extends" value="questRewardBundleMaster"/>
+    <property name="CreativeMode" value="Player"/>
+    <property name="CustomIcon" value="bundleBooks"/>
+    <property name="CustomIconTint" value="FFFFFF"/>
+    <property name="ItemTypeIcon" value="bundle"/>
+    <property name="DescriptionKey" value="myRandomBundleDesc"/>
+    <property class="Action0">
+        <!-- Placeholder — required even if count is 0 -->
+        <property name="Create_item" value="resourcePaper"/>
+        <property name="Create_item_count" value="0"/>
+        <!-- Pool of possible drops -->
+        <property name="Random_item" value="itemA,itemB,itemC,itemD,itemE,itemF"/>
+        <!-- How many of each selected item to give -->
+        <property name="Random_item_count" value="1,1,1"/>
+        <!-- How many random items to pick from the pool -->
+        <property name="Random_count" value="3"/>
+        <!-- No duplicate picks -->
+        <property name="Unique_random_only" value="true"/>
+    </property>
+</item>
+```
+
+| Property | Description |
+| --- | --- |
+| `Random_item` | Comma-separated pool of all possible item/block IDs |
+| `Random_count` | Number of items to randomly pick from the pool |
+| `Random_item_count` | Comma-separated count **parallel to `Random_item`** — one value per item in the pool, defining how many the player receives if that item is picked |
+| `Unique_random_only` | `true` — each pick is unique (no duplicates); `false` — duplicates allowed |
+
+> **Note**: `Create_item` + `Create_item_count` are still required as a placeholder. Set `Create_item_count` to `0` to give zero of the placeholder item.
+>
+> **Important**: `Random_item_count` is a parallel array to `Random_item`, **not** to the number of slots. Each value specifies the quantity for the corresponding item in the pool. If fewer values are provided than items in the pool, remaining items default to count `1`.
+
+### Pattern C: Loot Table Bundle (OpenLootBundle)
+
+Opens a loot container window (like a chest) whose contents are generated from `loot.xml`. This changes the `Action0` class from `OpenBundle` to `OpenLootBundle`:
+
+```xml
+<item name="myLootBundle">
+    <property name="Extends" value="questRewardBundleMaster"/>
+    <property name="CreativeMode" value="Player"/>
+    <property name="CustomIcon" value="bundleBooks"/>
+    <property name="CustomIconTint" value="FFFF00"/>
+    <property name="ItemTypeIcon" value="bundle"/>
+    <property name="DescriptionKey" value="myLootBundleDesc"/>
+    <property class="Action0">
+        <property name="Class" value="OpenLootBundle"/>
+        <property name="Delay" value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="LootList" value="myCustomLootContainer"/>
+    </property>
+</item>
+```
+
+The `LootList` value references a `<lootcontainer>` defined in `loot.xml`:
+
+```xml
+<!-- In Config/loot.xml -->
+<configs>
+  <append xpath="/lootcontainers">
+    <lootcontainer name="myCustomLootContainer" count="1"
+                   size="6,1" sound_open="UseActions/open_garbage"
+                   sound_close="silencefiller"
+                   destroy_on_close="empty"
+                   unique_item="true" ignore_loot_abundance="true">
+        <item group="myCustomLootGroup"/>
+    </lootcontainer>
+  </append>
+</configs>
+```
+
+| Approach | Pros | Cons |
+| --- | --- | --- |
+| **Fixed (Create_item)** | Simple, self-contained in items.xml | No randomness |
+| **Random (Random_item)** | Random picks, self-contained in items.xml | Large lists can be verbose |
+| **Loot Table (OpenLootBundle)** | Full loot system features (probability, quality templates) | Requires additions to loot.xml |
+
+### Combining Fixed and Random
+
+You can have **both** fixed and random drops in the same bundle. The `Create_item` items always drop, while `Random_item` adds random picks on top:
+
+```xml
+<property class="Action0">
+    <!-- These always drop -->
+    <property name="Create_item" value="ammo9mmBulletBall,resourceRepairKit"/>
+    <property name="Create_item_count" value="100,2"/>
+    <!-- These are randomly selected -->
+    <property name="Random_item" value="gunHandgunT1Pistol,gunShotgunT1DoubleBarrel,gunRifleT1HuntingRifle"/>
+    <property name="Random_item_count" value="1"/>
+    <property name="Random_count" value="1"/>
+    <property name="Unique_random_only" value="true"/>
+</property>
+```
+
+---
+
 ## Debugging XML Modlets
 
 1. **Check `output_log.txt`** — the game logs all XML parsing errors with file name and line number.
