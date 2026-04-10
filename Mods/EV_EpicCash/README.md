@@ -2,7 +2,7 @@
 
 ## Description
 
-Adds **Epic Bucks** (`evCash`) — a custom in-game currency designed for **dedicated server administrators** who want to give their players a better experience. By offering item bundles through an in-game shop, admins can help newcomers and casual players catch up with veterans — letting everyone enjoy the server equally, regardless of how much time they spend in the game.
+Adds **Epic Bucks** (`evCash`) — a custom in-game currency designed for **dedicated server administrators** who want to provide a fair and enjoyable experience for all players. Admins can reward active community members, compensate for lost progress, run in-game events, or help newcomers and casual players catch up with veterans — letting everyone enjoy the server equally, regardless of how much time they spend in the game.
 
 > ### 🟢 Server-Side Friendly
 >
@@ -17,11 +17,11 @@ Adds **Epic Bucks** (`evCash`) — a custom in-game currency designed for **dedi
 
 ## How It Works
 
-Epic Bucks is a neon yellow in-game currency designed as a bridge between a server's external donation/points shop and the in-game economy. The flow is simple:
+Epic Bucks is a neon yellow in-game currency that server administrators distribute to players at their discretion. Typical use cases include rewards for community participation, compensation after server wipes or rollbacks, event prizes, or as part of a server support program. The flow is simple:
 
-1. A player purchases points or donates on the server's website.
-2. An admin (or automated system) issues Epic Bucks to the player via a console command.
-3. The player opens their crafting inventory in-game and exchanges Epic Bucks for the item bundles they want — no admin involvement needed at that point.
+1. An admin decides how and when to distribute Epic Bucks (console commands, automated systems, or any other method).
+2. Players receive Epic Bucks in their inventory.
+3. Players open their crafting menu and exchange Epic Bucks for the item bundles they want — no further admin involvement needed.
 
 This mod ships **92 ready-made bundles** covering vehicles, weapons, ammo, armor, tools, skill magazines, skill books, workstations, food, and drinks. The included guide also explains how to add your own custom bundles for any combination of items.
 

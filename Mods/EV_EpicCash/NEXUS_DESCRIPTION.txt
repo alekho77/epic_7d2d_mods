@@ -2,7 +2,7 @@
 
 [size=5][b]Description[/b][/size]
 
-Adds [b]Epic Bucks[/b] ([font=Courier New]evCash[/font]) — a custom in-game currency designed for [b]dedicated server administrators[/b] who want to give their players a better experience. By offering item bundles through an in-game shop, admins can help newcomers and casual players catch up with veterans — letting everyone enjoy the server equally, regardless of how much time they spend in the game.
+Adds [b]Epic Bucks[/b] ([font=Courier New]evCash[/font]) — a custom in-game currency designed for [b]dedicated server administrators[/b] who want to provide a fair and enjoyable experience for all players. Admins can reward active community members, compensate for lost progress, run in-game events, or help newcomers and casual players catch up with veterans — letting everyone enjoy the server equally, regardless of how much time they spend in the game.
 
 [quote]
 [color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
@@ -19,12 +19,12 @@ The author [b]does not endorse pay-to-win mechanics[/b]. This mod was created so
 
 [size=5][b]How It Works[/b][/size]
 
-Epic Bucks is a neon yellow in-game currency designed as a bridge between a server's external donation/points shop and the in-game economy. The flow is simple:
+Epic Bucks is a neon yellow in-game currency that server administrators distribute to players at their discretion. Typical use cases include rewards for community participation, compensation after server wipes or rollbacks, event prizes, or as part of a server support program. The flow is simple:
 
 [list=1]
-[*]A player purchases points or donates on the server's website.
-[*]An admin (or automated system) issues Epic Bucks to the player via a console command.
-[*]The player opens their crafting inventory in-game and exchanges Epic Bucks for the item bundles they want — no further admin involvement needed.
+[*]An admin decides how and when to distribute Epic Bucks (console commands, automated systems, or any other method).
+[*]Players receive Epic Bucks in their inventory.
+[*]Players open their crafting menu and exchange Epic Bucks for the item bundles they want — no further admin involvement needed.
 [/list]
 
 This mod ships [b]92 ready-made bundles[/b] covering vehicles, weapons, ammo, armor, tools, skill magazines, skill books, workstations, food, and drinks. A built-in guide also explains how to add your own custom bundles for any combination of items at any price.
