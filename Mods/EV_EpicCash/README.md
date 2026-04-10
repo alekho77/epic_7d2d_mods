@@ -292,6 +292,6 @@ No `craft_area` attribute means the recipe is craftable directly from the player
 
 ---
 
-**Author:** Aleksei Khozin 
-**Version:** 1.1.0 
-**Website:** https://github.com/alekho77/epic_7d2d_mods
+**Author:** Aleksei Khozin\
+**Version:** 1.1.0\
+**Website:** [https://github.com/alekho77/epic_7d2d_mods](https://github.com/alekho77/epic_7d2d_mods)
