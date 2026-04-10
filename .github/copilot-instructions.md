@@ -9,6 +9,13 @@ This repository contains **7 Days to Die** modlets authored by **Aleksei Khozin*
 - Respond in the same language the user used in their request.
 - Always append exactly **one sentence in English** at the very end of every reply summarizing what was done, regardless of the request language.
 
+### Linting After File Changes
+
+After editing **any** file — including Markdown (`.md`), XML, JSON, plain text, or any other format — always run `get_errors` on the modified file and fix all reported lint and validation errors before finishing.
+
+- Use only linters and validators that are **already installed in VS Code**. Do not suggest installing tools, packages, or executables on the user's machine unless explicitly asked.
+- If no linter is available for a particular file format, suggest installing the relevant **VS Code extension** (not a system tool), and leave the decision to the user.
+
 ### Git Commit Policy
 - **Never suggest committing changes** unless explicitly asked by the user.
 - When a commit is requested, execute it using console `git` commands.
