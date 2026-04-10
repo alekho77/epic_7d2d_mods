@@ -1,4 +1,4 @@
-[size=6][b]EV_RemoveTraderXP[/b][/size]
+[size=6][b]Remove Trader XP[/b][/size]
 
 Completely removes XP gained from selling items to traders, preventing abuse of trader XP for rapid leveling.
 

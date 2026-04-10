@@ -1,4 +1,4 @@
-# EV_RemoveTraderXP
+# Remove Trader XP
 
 ## Description
 
@@ -29,3 +29,15 @@ Sets `PlayerExpGain` base value to `0` for the `Selling` tag on the player entit
 - 7 Days to Die 1.0 (Alpha 21+)
 - Server-side mod — works without client installation
 - May conflict with mods that modify `PlayerExpGain` on `playerMale` entity class
+
+## Changelog
+
+### v1.0.0
+
+- Initial release — selling items to traders no longer grants XP
+
+---
+
+**Author:** Aleksei Khozin  
+**Version:** 1.0.0  
+**Website:** <https://github.com/alekho77/epic_7d2d_mods>
