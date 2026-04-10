@@ -2,7 +2,7 @@
 
 [size=5][b]Description[/b][/size]
 
-Makes plant fibers (Yucca Fibers) edible, restoring [b]1 food[/b] per use. A small quality-of-life change for early game survival when food is scarce — you can nibble on grass to stave off starvation just a little longer.
+A humorous mod that makes plant fibers (Yucca Fibers) edible, restoring a whopping [b]1 food[/b] per use. This is more of a joke mod than a serious gameplay feature — but hey, when the apocalypse hits and you're starving on Day 1 with nothing but grass in your pockets, at least now you can chew on it and pretend it helps.
 
 [quote]
 [color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
@@ -15,11 +15,15 @@ Players connecting to the server [b]do not need to download or install anything[
 
 [list]
 [*]Plant fibers can be eaten directly from your inventory
-[*]Restores 1 food per use — minimal but can save you in a pinch
-[*]No health gain, no dysentery risk
+[*]Restores 1 food per use — barely noticeable, but technically not zero
+[*]No health gain, no dysentery risk — grass is surprisingly safe
 [*]Uses the hand-held food eating animation
-[*]Fast 0.5 second consume time
+[*]Fast 0.5-second consume time — at least the suffering is quick
 [/list]
+
+[size=5][b]How It Works[/b][/size]
+
+The mod patches [b]resourceYuccaFibers[/b] to add an [b]Eat[/b] action. On consumption it adds [b]1 point[/b] to the food meter via the standard [b]buffProcessConsumables[/b] pipeline. The hold type is changed to hand-held food (type 31) so your character plays the eating animation instead of the default resource-holding pose.
 
 [size=5][b]Installation[/b][/size]
 
@@ -31,7 +35,7 @@ Players connecting to the server [b]do not need to download or install anything[
 [size=5][b]Compatibility[/b][/size]
 
 [list]
-[*]7 Days to Die 1.0 (Alpha 21+)
+[*]7 Days to Die — 1.0 (b36)
 [*]Server-side mod — works without client installation
 [*]May conflict with mods that modify the resourceYuccaFibers item definition
 [/list]
