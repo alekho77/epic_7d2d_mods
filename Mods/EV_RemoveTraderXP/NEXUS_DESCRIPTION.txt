@@ -1,8 +1,13 @@
 [size=6][b]EV_RemoveTraderXP[/b][/size]
 
-[color=#55aa55][b]Server-Side Friendly[/b][/color]
-
 Completely removes XP gained from selling items to traders, preventing abuse of trader XP for rapid leveling.
+
+[quote]
+[color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
+
+[b]If you are running a dedicated server, this mod only needs to be installed on the server.[/b]
+Players connecting to the server [b]do not need to download or install anything[/b] on their game clients — all changes are synced automatically when they join.
+[/quote]
 
 [size=5][b]Features[/b][/size]
 
