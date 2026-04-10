@@ -1,10 +1,15 @@
 # EV_EpicCash — Custom Server Currency
 
-🟢 **Server-Side Friendly**
+## Description
 
 Adds **Epic Bucks** (`evCash`) — a custom in-game currency that lets server admins build an in-game item shop backed by a real-money or points-based online store.
 
-## Overview
+> ### 🟢 Server-Side Friendly
+>
+> **If you are running a dedicated server, this mod only needs to be installed on the server.**
+> Players connecting to the server **do not need to download or install anything** on their game clients — all changes are synced automatically when they join.
+
+## How It Works
 
 Epic Bucks is a neon yellow in-game currency designed as a bridge between a server's external donation/points shop and the in-game economy. The flow is simple:
 
@@ -12,7 +17,7 @@ Epic Bucks is a neon yellow in-game currency designed as a bridge between a serv
 2. An admin (or automated system) issues Epic Bucks to the player via a console command.
 3. The player opens their crafting inventory in-game and exchanges Epic Bucks for the item bundles they want — no admin involvement needed at that point.
 
-This mod also ships a ready-made example bundle — a **Motorcycle Starter Kit** — to demonstrate the pattern. The included guide explains how to add your own bundles for any combination of items.
+This mod ships **92 ready-made bundles** covering vehicles, weapons, ammo, armor, tools, skill magazines, skill books, workstations, food, and drinks. The included guide also explains how to add your own custom bundles for any combination of items.
 
 ## Features
 
@@ -22,7 +27,8 @@ This mod also ships a ready-made example bundle — a **Motorcycle Starter Kit**
 - **Cannot Be Sold** — not sellable to traders, keeping it as a server-only economy
 - **Cannot Be Used as Fuel** — prevents accidental burning
 - **Creative Menu Access** — available in creative mode for easy admin distribution
-- **Example Bundle Included** — Motorcycle Starter Kit (motorcycle + 5000 gas + Fuel Saver mod) craftable for 10 Epic Bucks
+- **92 Ready-Made Bundles** — vehicles, weapons, ammo, armor, tools, magazines, books, workstations, food, and drinks
+- **Color-Coded Categories** — each bundle type has a unique neon icon tint for instant recognition
 - **Extensible** — add unlimited custom bundles with any items and prices
 
 ## Admin Commands
@@ -266,10 +272,26 @@ Add a `<recipe>` block inside the `<append xpath="/recipes">` section in `Config
 
 No `craft_area` attribute means the recipe is craftable directly from the player inventory with no workstation required.
 
----
+## Changelog
+
+### v1.1.0
+
+- Added 92 ready-made item bundles across 10 categories: vehicles, weapons, ammo, armor, tools, skill magazines, skill books, workstations, food, and drinks
+- Each bundle category has a unique neon icon color for easy visual identification
+- Full localization support (English + Russian descriptions, display names in all 14 languages)
+
+### v1.0.0
+
+- Initial release with evCash currency and Motorcycle Starter Kit example bundle
 
 ## Credits
 
 - **Author:** Aleksei Khozin
 - **Community:** [EpicVales Steam Group](https://steamcommunity.com/groups/EpicVales)
 - **Source:** [GitHub Repository](https://github.com/alekho77/epic_7d2d_mods)
+
+---
+
+**Author:** Aleksei Khozin 
+**Version:** 1.1.0 
+**Website:** https://github.com/alekho77/epic_7d2d_mods

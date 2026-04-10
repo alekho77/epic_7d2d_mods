@@ -1,10 +1,17 @@
 [size=6][b]EV_EpicCash — Custom Server Currency[/b][/size]
 
-[color=#55aa55][b]Server-Side Friendly[/b][/color]
+[size=5][b]Description[/b][/size]
 
 Adds [b]Epic Bucks[/b] ([font=Courier New]evCash[/font]) — a custom in-game currency that lets server admins build an in-game item shop backed by a real-money or points-based online store.
 
-[size=5][b]Overview[/b][/size]
+[quote]
+[color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
+
+[b]If you are running a dedicated server, this mod only needs to be installed on the server.[/b]
+Players connecting to the server [b]do not need to download or install anything[/b] on their game clients — all changes are synced automatically when they join.
+[/quote]
+
+[size=5][b]How It Works[/b][/size]
 
 Epic Bucks is a neon yellow in-game currency designed as a bridge between a server's external donation/points shop and the in-game economy. The flow is simple:
 
@@ -14,7 +21,7 @@ Epic Bucks is a neon yellow in-game currency designed as a bridge between a serv
 [*]The player opens their crafting inventory in-game and exchanges Epic Bucks for the item bundles they want — no further admin involvement needed.
 [/list]
 
-This mod also ships a ready-made example bundle — a [b]Motorcycle Starter Kit[/b] — to demonstrate the pattern. A built-in guide explains how to add your own bundles for any combination of items at any price.
+This mod ships [b]92 ready-made bundles[/b] covering vehicles, weapons, ammo, armor, tools, skill magazines, skill books, workstations, food, and drinks. A built-in guide also explains how to add your own custom bundles for any combination of items at any price.
 
 [size=5][b]Features[/b][/size]
 
@@ -25,7 +32,8 @@ This mod also ships a ready-made example bundle — a [b]Motorcycle Starter Kit[
 [*][b]Cannot Be Sold[/b] — not sellable to traders, keeping it as a server-only economy
 [*][b]Cannot Be Used as Fuel[/b] — prevents accidental burning
 [*][b]Creative Menu Access[/b] — available in creative mode for easy admin distribution
-[*][b]Example Bundle Included[/b] — Motorcycle Starter Kit (motorcycle + 5000 gas + Fuel Saver mod) craftable for 10 Epic Bucks
+[*][b]92 Ready-Made Bundles[/b] — vehicles, weapons, ammo, armor, tools, magazines, books, workstations, food, and drinks
+[*][b]Color-Coded Categories[/b] — each bundle type has a unique neon icon tint for instant recognition
 [*][b]Extensible[/b] — add unlimited custom bundles with any items and prices
 [/list]
 
@@ -205,6 +213,22 @@ All book bundles contain the complete set of 7 volumes — [b]10 EB[/b] each.
 [/list]
 
 [quote]If your server runs mods that add custom items to the game, you can easily extend EpicCash to support them. Follow the guide in the mod's README to create bundles containing any modded items at any price.[/quote]
+
+[size=5][b]Changelog[/b][/size]
+
+[size=4][b]v1.1.0[/b][/size]
+
+[list]
+[*]Added 92 ready-made item bundles across 10 categories: vehicles, weapons, ammo, armor, tools, skill magazines, skill books, workstations, food, and drinks
+[*]Each bundle category has a unique neon icon color for easy visual identification
+[*]Full localization support (English + Russian descriptions, display names in all 14 languages)
+[/list]
+
+[size=4][b]v1.0.0[/b][/size]
+
+[list]
+[*]Initial release with evCash currency and Motorcycle Starter Kit example bundle
+[/list]
 
 [size=5][b]Credits[/b][/size]
 
