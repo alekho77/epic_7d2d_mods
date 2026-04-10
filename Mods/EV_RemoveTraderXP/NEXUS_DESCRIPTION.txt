@@ -14,7 +14,7 @@ Completely removes XP gained from selling items to traders, preventing abuse of 
 
 [size=5][b]How It Works[/b][/size]
 
-Applies a [b]-100%[/b] modifier to [b]PlayerExpGain[/b] with the [b]Selling[/b] tag on the player entity, effectively nullifying any XP that would be awarded from trader sell transactions.
+Sets [b]PlayerExpGain[/b] base value to [b]0[/b] for the [b]Selling[/b] tag on the player entity. Using [b]base_set 0[/b] ensures the result is always exactly zero — unaffected by XP bonus buffs (Grandpa's Learning Elixir, Twitch buffs, etc.) and cannot produce negative XP.
 
 [size=5][b]Installation[/b][/size]
 
@@ -26,7 +26,7 @@ Applies a [b]-100%[/b] modifier to [b]PlayerExpGain[/b] with the [b]Selling[/b] 
 [size=5][b]Compatibility[/b][/size]
 
 [list]
-[*][b]Game Version:[/b] 1.2 (V1.2 b27+)
-[*][b]Mod Type:[/b] XML-only (no DLL required)
-[*]Works on dedicated servers — no client-side installation needed.
+[*]7 Days to Die 1.0 (Alpha 21+)
+[*]Server-side mod — works without client installation
+[*]May conflict with mods that modify [b]PlayerExpGain[/b] on the [b]playerMale[/b] entity class
 [/list]
