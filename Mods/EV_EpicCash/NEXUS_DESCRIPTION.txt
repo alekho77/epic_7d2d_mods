@@ -2,13 +2,19 @@
 
 [size=5][b]Description[/b][/size]
 
-Adds [b]Epic Bucks[/b] ([font=Courier New]evCash[/font]) — a custom in-game currency that lets server admins build an in-game item shop backed by a real-money or points-based online store.
+Adds [b]Epic Bucks[/b] ([font=Courier New]evCash[/font]) — a custom in-game currency designed for [b]dedicated server administrators[/b] who want to give their players a better experience. By offering item bundles through an in-game shop, admins can help newcomers and casual players catch up with veterans — letting everyone enjoy the server equally, regardless of how much time they spend in the game.
 
 [quote]
 [color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
 
 [b]If you are running a dedicated server, this mod only needs to be installed on the server.[/b]
 Players connecting to the server [b]do not need to download or install anything[/b] on their game clients — all changes are synced automatically when they join.
+[/quote]
+
+[quote]
+[color=#cc9900][size=4][b]Disclaimer[/b][/size][/color]
+
+The author [b]does not endorse pay-to-win mechanics[/b]. This mod was created solely to help dedicated server owners sustain their communities and provide a fair, enjoyable gameplay experience for all players. If you choose to tie Epic Bucks to real-money donations, please [b]avoid aggressive, intrusive, or no-alternative monetization policies[/b]. The best servers are those where supporting the server is voluntary and never gives a decisive competitive advantage.
 [/quote]
 
 [size=5][b]How It Works[/b][/size]
