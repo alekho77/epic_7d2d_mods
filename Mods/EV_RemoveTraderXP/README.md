@@ -36,6 +36,10 @@ Sets `PlayerExpGain` base value to `0` for the `Selling` tag on the player entit
 
 - Initial release — selling items to traders no longer grants XP
 
+## Credits
+
+Inspired by [WMMRemoveTraderXP](https://www.nexusmods.com/7daystodie/mods/4167) by **w00kie n00kie**. The original mod uses a Harmony DLL patch that works in single-player but does not apply on dedicated servers. This modlet reimplements the same idea as a pure XML patch, making it server-side compatible.
+
 ---
 
 **Author:** Aleksei Khozin  
