@@ -107,6 +107,18 @@ The file `docs/inventory_catalog.md` is a **pre-built catalog of all game object
 
 > **Workflow**: user description/name → search `docs/inventory_catalog.md` → get internal ID → search `/Data/Config/*.xml` by that ID for full details.
 
+## Reference Mods (`Refs/`)
+
+The repository contains a `/Refs` folder with snapshots of third-party 7D2D mod projects. These are **not published** — they are kept locally (gitignored) as practical references for real-world modding techniques.
+
+Each subfolder under `/Refs/` is a separate project. Browse them when you need to understand how a particular mechanic can be implemented:
+
+> - Pick the project subfolder most relevant to the feature you are working on.
+> - Study its XPath patches to learn proven patterns for a given XML file.
+> - Do **not** copy content verbatim — use it for inspiration and technique, then write original xpath patches.
+
+All reference modlets follow the same xpath-patching system as EpicVales modlets, so any pattern found there is directly applicable here.
+
 ### Config File Reference
 
 | File | Controls |
