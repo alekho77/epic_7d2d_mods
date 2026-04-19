@@ -22,6 +22,8 @@ Players connecting to the server [b]do not need to download or install anything[
 [*][b]No XP gain[/b] — prevents exploit crafting for experience
 [*][b]Tiered craft times[/b] — higher tier ammo takes slightly longer to convert
 [*]Stone tier can be converted anywhere; Iron+ requires a Workbench
+[*][b]10 disassembled ammo bundles[/b] — open to receive raw crafting ingredients for arrows and bolts
+[*]Bundle icons match vanilla ammo bundles with a light red tint for easy identification
 [/list]
 
 [size=5][b]Damage Changes[/b][/size]
@@ -71,6 +73,28 @@ Players connecting to the server [b]do not need to download or install anything[
 [*][b]Exploding Bolt[/b] → Exploding Arrow — 4s — Workbench
 [/list]
 
+[size=5][b]Disassembled Ammo Bundles[/b][/size]
+
+The mod adds 10 disassembled ammo bundles — one for each arrow and crossbow bolt type. Opening a bundle gives you the raw crafting ingredients instead of finished ammo. Standard bundles yield materials for 100 ammo; exploding variants yield materials for 75.
+
+[size=4][b]Arrow Kits[/b][/size]
+[list]
+[*][b]Disassembled Stone Arrow Kit:[/b] 100 Small Stones; 100 Wood; 100 Feathers
+[*][b]Disassembled Iron Arrow Kit:[/b] 100 Iron Arrowheads; 100 Wood; 100 Feathers
+[*][b]Disassembled Steel AP Arrow Kit:[/b] 100 Steel AP Arrowheads; 200 Scrap Polymers
+[*][b]Disassembled Flaming Arrow Kit:[/b] 100 Steel AP Arrowheads; 200 Scrap Polymers; 200 Gun Powder; 500 Cloth; 100 Animal Fat
+[*][b]Disassembled Exploding Arrow Kit:[/b] 75 Steel AP Arrowheads; 150 Scrap Polymers; 450 Gun Powder; 75 Paper; 75 Yucca Fibers
+[/list]
+
+[size=4][b]Crossbow Bolt Kits[/b][/size]
+[list]
+[*][b]Disassembled Stone Bolt Kit:[/b] 100 Small Stones; 100 Wood; 100 Feathers
+[*][b]Disassembled Iron Bolt Kit:[/b] 100 Iron Arrowheads; 100 Wood; 100 Feathers
+[*][b]Disassembled Steel AP Bolt Kit:[/b] 100 Steel AP Arrowheads; 200 Scrap Polymers
+[*][b]Disassembled Flaming Bolt Kit:[/b] 100 Steel AP Arrowheads; 200 Scrap Polymers; 200 Gun Powder; 500 Cloth; 100 Animal Fat
+[*][b]Disassembled Exploding Bolt Kit:[/b] 75 Steel AP Arrowheads; 150 Scrap Polymers; 600 Gun Powder; 75 Paper; 75 Yucca Fibers
+[/list]
+
 [size=5][b]Installation[/b][/size]
 
 [list=1]
@@ -88,6 +112,12 @@ Players connecting to the server [b]do not need to download or install anything[
 
 [size=5][b]Changelog[/b][/size]
 
+[size=4][b]v1.2.0[/b][/size]
+[list]
+[*]Added 10 disassembled ammo bundles (5 arrow kits + 5 crossbow bolt kits) containing raw crafting ingredients
+[*]Added Localization.txt with English and Russian translations for all bundle items
+[/list]
+
 [size=4][b]v1.1.0[/b][/size]
 [list]
 [*]Merged TransmuteArrowsAndBolts mod — added 10 recipes to convert arrows to bolts and vice versa (1:1 ratio, no material loss)
@@ -99,5 +129,5 @@ Players connecting to the server [b]do not need to download or install anything[
 [/list]
 
 [b]Author:[/b] Aleksei Khozin
-[b]Version:[/b] 1.1.0
+[b]Version:[/b] 1.2.0
 [b]Website:[/b] [url=https://github.com/alekho77/epic_7d2d_mods]https://github.com/alekho77/epic_7d2d_mods[/url]

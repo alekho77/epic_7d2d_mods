@@ -19,6 +19,8 @@ A comprehensive archery overhaul that increases damage for bows, crossbows, arro
 - **No XP gain** — prevents exploit crafting for experience
 - **Tiered craft times** — higher tier ammo takes slightly longer to convert
 - Stone tier can be converted anywhere; Iron+ requires a Workbench
+- **10 disassembled ammo bundles** — open to receive raw crafting ingredients for arrows and bolts
+- Bundle icons match vanilla ammo bundles with a light red tint for easy identification
 
 ## Damage Changes
 
@@ -65,6 +67,30 @@ A comprehensive archery overhaul that increases damage for bows, crossbows, arro
 | Flaming Bolt | Flaming Arrow | 3s | Workbench |
 | Exploding Bolt | Exploding Arrow | 4s | Workbench |
 
+## Disassembled Ammo Bundles
+
+The mod adds 10 disassembled ammo bundles — one for each arrow and crossbow bolt type. Opening a bundle gives you the raw crafting ingredients instead of finished ammo. Standard bundles yield materials for 100 ammo; exploding variants yield materials for 75.
+
+### Arrow Kits
+
+| Bundle | Contents |
+| --- | --- |
+| Disassembled Stone Arrow Kit | 100 Small Stones, 100 Wood, 100 Feathers |
+| Disassembled Iron Arrow Kit | 100 Iron Arrowheads, 100 Wood, 100 Feathers |
+| Disassembled Steel AP Arrow Kit | 100 Steel AP Arrowheads, 200 Scrap Polymers |
+| Disassembled Flaming Arrow Kit | 100 Steel AP Arrowheads, 200 Scrap Polymers, 200 Gun Powder, 500 Cloth, 100 Animal Fat |
+| Disassembled Exploding Arrow Kit | 75 Steel AP Arrowheads, 150 Scrap Polymers, 450 Gun Powder, 75 Paper, 75 Yucca Fibers |
+
+### Crossbow Bolt Kits
+
+| Bundle | Contents |
+| --- | --- |
+| Disassembled Stone Bolt Kit | 100 Small Stones, 100 Wood, 100 Feathers |
+| Disassembled Iron Bolt Kit | 100 Iron Arrowheads, 100 Wood, 100 Feathers |
+| Disassembled Steel AP Bolt Kit | 100 Steel AP Arrowheads, 200 Scrap Polymers |
+| Disassembled Flaming Bolt Kit | 100 Steel AP Arrowheads, 200 Scrap Polymers, 200 Gun Powder, 500 Cloth, 100 Animal Fat |
+| Disassembled Exploding Bolt Kit | 75 Steel AP Arrowheads, 150 Scrap Polymers, 600 Gun Powder, 75 Paper, 75 Yucca Fibers |
+
 ## Installation
 
 1. Copy the `EV_EnhancedArcheryDamage` folder into your game's `Mods/` directory
@@ -78,6 +104,11 @@ A comprehensive archery overhaul that increases damage for bows, crossbows, arro
 
 ## Changelog
 
+### v1.2.0
+
+- Added 10 disassembled ammo bundles (5 arrow kits + 5 crossbow bolt kits) containing raw crafting ingredients
+- Added Localization.txt with English and Russian translations for all bundle items
+
 ### v1.1.0
 
 - Merged TransmuteArrowsAndBolts mod — added 10 recipes to convert arrows to bolts and vice versa (1:1 ratio, no material loss)
@@ -89,5 +120,5 @@ A comprehensive archery overhaul that increases damage for bows, crossbows, arro
 ---
 
 **Author:** Aleksei Khozin  
-**Version:** 1.1.0  
+**Version:** 1.2.0  
 **Website:** <https://github.com/alekho77/epic_7d2d_mods>
