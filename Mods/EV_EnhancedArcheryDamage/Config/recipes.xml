@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
-  <!-- Transmute Arrows and Bolts Mod -->
+  <!-- Transmute Arrows and Bolts -->
   <!-- Adds recipes to convert arrows to crossbow bolts and vice versa without material loss -->
   
   <append xpath="/recipes">

@@ -2,7 +2,7 @@
 
 [size=5][b]Description[/b][/size]
 
-Increases damage for bows, crossbows, arrows, and bolts to make archery a more viable combat option in the mid and late game.
+A comprehensive archery overhaul that increases damage for bows, crossbows, arrows, and bolts, and adds crafting recipes to convert arrows into crossbow bolts and vice versa at a 1:1 ratio with no material loss.
 
 [quote]
 [color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
@@ -17,6 +17,11 @@ Players connecting to the server [b]do not need to download or install anything[
 [*]Boosted damage for all arrow and bolt types
 [*]Increased base damage bonus for bows and crossbows
 [*]Balanced scaling — higher tier ammo gets proportionally larger boosts
+[*][b]10 new recipes[/b] — 5 arrow-to-bolt conversions + 5 bolt-to-arrow conversions
+[*][b]1:1 conversion[/b] — no material loss
+[*][b]No XP gain[/b] — prevents exploit crafting for experience
+[*][b]Tiered craft times[/b] — higher tier ammo takes slightly longer to convert
+[*]Stone tier can be converted anywhere; Iron+ requires a Workbench
 [/list]
 
 [size=5][b]Damage Changes[/b][/size]
@@ -46,6 +51,26 @@ Players connecting to the server [b]do not need to download or install anything[
 [*][b]Compound Crossbow:[/b] +25 → +50 (+100%)
 [/list]
 
+[size=5][b]Conversion Recipes[/b][/size]
+
+[size=4][b]Arrows to Bolts[/b][/size]
+[list]
+[*][b]Stone Arrow[/b] → Stone Bolt — 1s — Anywhere
+[*][b]Iron Arrow[/b] → Iron Bolt — 1s — Workbench
+[*][b]Steel AP Arrow[/b] → Steel AP Bolt — 2s — Workbench
+[*][b]Flaming Arrow[/b] → Flaming Bolt — 3s — Workbench
+[*][b]Exploding Arrow[/b] → Exploding Bolt — 4s — Workbench
+[/list]
+
+[size=4][b]Bolts to Arrows[/b][/size]
+[list]
+[*][b]Stone Bolt[/b] → Stone Arrow — 1s — Anywhere
+[*][b]Iron Bolt[/b] → Iron Arrow — 1s — Workbench
+[*][b]Steel AP Bolt[/b] → Steel AP Arrow — 2s — Workbench
+[*][b]Flaming Bolt[/b] → Flaming Arrow — 3s — Workbench
+[*][b]Exploding Bolt[/b] → Exploding Arrow — 4s — Workbench
+[/list]
+
 [size=5][b]Installation[/b][/size]
 
 [list=1]
@@ -63,11 +88,16 @@ Players connecting to the server [b]do not need to download or install anything[
 
 [size=5][b]Changelog[/b][/size]
 
+[size=4][b]v1.1.0[/b][/size]
+[list]
+[*]Merged TransmuteArrowsAndBolts mod — added 10 recipes to convert arrows to bolts and vice versa (1:1 ratio, no material loss)
+[/list]
+
 [size=4][b]v1.0.0[/b][/size]
 [list]
 [*]Initial release with enhanced damage for all arrow/bolt types and archery weapons
 [/list]
 
 [b]Author:[/b] Aleksei Khozin
-[b]Version:[/b] 1.0.0
+[b]Version:[/b] 1.1.0
 [b]Website:[/b] [url=https://github.com/alekho77/epic_7d2d_mods]https://github.com/alekho77/epic_7d2d_mods[/url]

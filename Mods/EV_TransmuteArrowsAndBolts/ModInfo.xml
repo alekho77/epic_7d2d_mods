@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ModInfo>
-  <Name value="TransmuteArrowsAndBolts"/>
-  <DisplayName value="Transmute Arrows and Bolts"/>
-  <Description value="Adds recipes to convert arrows to crossbow bolts and vice versa without material loss"/>
-  <Author value="Aleksei Khozin"/>
-  <Version value="1.0.0"/>
-  <Website value="https://github.com/alekho77/epic_7d2d_mods"/>
-</ModInfo>
