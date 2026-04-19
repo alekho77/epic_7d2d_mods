@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <!-- Unlock disassembled ammo bundle recipes when the full Hunting Journal series is completed -->
+  <append xpath="/progression/perks/book[@name='perkHuntingJournalComplete']/effect_group">
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="evArrowStonePartsBundle,evArrowIronPartsBundle,evArrowSteelAPPartsBundle,evArrowFlamingPartsBundle,evArrowExplodingPartsBundle,evCrossbowBoltStonePartsBundle,evCrossbowBoltIronPartsBundle,evCrossbowBoltSteelAPPartsBundle,evCrossbowBoltFlamingPartsBundle,evCrossbowBoltExplodingPartsBundle"/>
+  </append>
+</configs>

@@ -59,6 +59,59 @@
       <ingredient name="ammoCrossbowBoltExploding" count="1" />
     </recipe>
     
+    <!-- DISASSEMBLED AMMO BUNDLES -->
+    <!-- Bundles crafted from 30 arrows/bolts; requires workbench + full Hunting Journal series -->
+    
+    <!-- Stone Arrow Bundle (30 × 0.4s = 12s) -->
+    <recipe name="evArrowStonePartsBundle" count="1" craft_time="12" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="ammoArrowStone" count="30" />
+    </recipe>
+    
+    <!-- Iron Arrow Bundle (30 × 0.2s = 6s) -->
+    <recipe name="evArrowIronPartsBundle" count="1" craft_time="6" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="ammoArrowIron" count="30" />
+    </recipe>
+    
+    <!-- Steel AP Arrow Bundle (30 × 0.4s = 12s) -->
+    <recipe name="evArrowSteelAPPartsBundle" count="1" craft_time="12" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="ammoArrowSteelAP" count="30" />
+    </recipe>
+    
+    <!-- Flaming Arrow Bundle (30 × 12s = 360s) -->
+    <recipe name="evArrowFlamingPartsBundle" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="ammoArrowFlaming" count="30" />
+    </recipe>
+    
+    <!-- Exploding Arrow Bundle (30 × 0.8s = 24s) -->
+    <recipe name="evArrowExplodingPartsBundle" count="1" craft_time="24" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="ammoArrowExploding" count="30" />
+    </recipe>
+    
+    <!-- Stone Bolt Bundle (30 × 0.4s = 12s) -->
+    <recipe name="evCrossbowBoltStonePartsBundle" count="1" craft_time="12" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="ammoCrossbowBoltStone" count="30" />
+    </recipe>
+    
+    <!-- Iron Bolt Bundle (30 × 0.2s = 6s) -->
+    <recipe name="evCrossbowBoltIronPartsBundle" count="1" craft_time="6" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="ammoCrossbowBoltIron" count="30" />
+    </recipe>
+    
+    <!-- Steel AP Bolt Bundle (30 × 0.4s = 12s) -->
+    <recipe name="evCrossbowBoltSteelAPPartsBundle" count="1" craft_time="12" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="ammoCrossbowBoltSteelAP" count="30" />
+    </recipe>
+    
+    <!-- Flaming Bolt Bundle (30 × 14s = 420s) -->
+    <recipe name="evCrossbowBoltFlamingPartsBundle" count="1" craft_time="420" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="ammoCrossbowBoltFlaming" count="30" />
+    </recipe>
+    
+    <!-- Exploding Bolt Bundle (30 × 0.8s = 24s) -->
+    <recipe name="evCrossbowBoltExplodingPartsBundle" count="1" craft_time="24" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="ammoCrossbowBoltExploding" count="30" />
+    </recipe>
+    
   </append>
   
 </configs>
