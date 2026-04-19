@@ -69,27 +69,27 @@ A comprehensive archery overhaul that increases damage for bows, crossbows, arro
 
 ## Disassembled Ammo Bundles
 
-The mod adds 10 disassembled ammo bundles — one for each arrow and crossbow bolt type. Opening a bundle gives you the raw crafting ingredients for 1 arrow or bolt.
+The mod adds 10 disassembled ammo bundles — one for each arrow and crossbow bolt type. Opening a bundle gives you the raw crafting ingredients for 30 arrows or bolts.
 
 ### Arrow Kits
 
 | Bundle | Contents |
 | --- | --- |
-| Disassembled Stone Arrow Kit | 1 Small Stone, 1 Wood, 1 Feather |
-| Disassembled Iron Arrow Kit | 1 Iron Arrowhead, 1 Wood, 1 Feather |
-| Disassembled Steel AP Arrow Kit | 1 Steel AP Arrowhead, 2 Scrap Polymers |
-| Disassembled Flaming Arrow Kit | 1 Steel AP Arrowhead, 2 Scrap Polymers, 2 Gun Powder, 5 Cloth, 1 Animal Fat |
-| Disassembled Exploding Arrow Kit | 1 Steel AP Arrowhead, 2 Scrap Polymers, 6 Gun Powder, 1 Paper, 1 Yucca Fiber |
+| Disassembled Stone Arrow Kit | 30 Small Stones, 30 Wood, 30 Feathers |
+| Disassembled Iron Arrow Kit | 30 Iron Arrowheads, 30 Wood, 30 Feathers |
+| Disassembled Steel AP Arrow Kit | 30 Steel AP Arrowheads, 60 Scrap Polymers |
+| Disassembled Flaming Arrow Kit | 30 Steel AP Arrowheads, 60 Scrap Polymers, 60 Gun Powder, 150 Cloth, 30 Animal Fat |
+| Disassembled Exploding Arrow Kit | 30 Steel AP Arrowheads, 60 Scrap Polymers, 180 Gun Powder, 30 Paper, 30 Yucca Fibers |
 
 ### Crossbow Bolt Kits
 
 | Bundle | Contents |
 | --- | --- |
-| Disassembled Stone Bolt Kit | 1 Small Stone, 1 Wood, 1 Feather |
-| Disassembled Iron Bolt Kit | 1 Iron Arrowhead, 1 Wood, 1 Feather |
-| Disassembled Steel AP Bolt Kit | 1 Steel AP Arrowhead, 2 Scrap Polymers |
-| Disassembled Flaming Bolt Kit | 1 Steel AP Arrowhead, 2 Scrap Polymers, 2 Gun Powder, 5 Cloth, 1 Animal Fat |
-| Disassembled Exploding Bolt Kit | 1 Steel AP Arrowhead, 2 Scrap Polymers, 8 Gun Powder, 1 Paper, 1 Yucca Fiber |
+| Disassembled Stone Bolt Kit | 30 Small Stones, 30 Wood, 30 Feathers |
+| Disassembled Iron Bolt Kit | 30 Iron Arrowheads, 30 Wood, 30 Feathers |
+| Disassembled Steel AP Bolt Kit | 30 Steel AP Arrowheads, 60 Scrap Polymers |
+| Disassembled Flaming Bolt Kit | 30 Steel AP Arrowheads, 60 Scrap Polymers, 60 Gun Powder, 150 Cloth, 30 Animal Fat |
+| Disassembled Exploding Bolt Kit | 30 Steel AP Arrowheads, 60 Scrap Polymers, 240 Gun Powder, 30 Paper, 30 Yucca Fibers |
 
 ## Installation
 
