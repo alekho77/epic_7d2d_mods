@@ -19,8 +19,9 @@ A comprehensive archery overhaul that increases damage for bows, crossbows, arro
 - **No XP gain** — prevents exploit crafting for experience
 - **Tiered craft times** — higher tier ammo takes slightly longer to convert
 - Stone tier can be converted anywhere; Iron+ requires a Workbench
-- **10 disassembled ammo bundles** — open to receive raw crafting ingredients for arrows and bolts
-- Bundle icons match vanilla ammo bundles with a light red tint for easy identification
+- **10 disassembled ammo bundles** — craft from 30 arrows or bolts to recover 75% of raw materials
+- Disassembly recipes require a **Workbench** and reading all 7 volumes of **Ranger's Guide to Archery**
+- Bundle icons use vanilla ammo icons with a light red tint for easy identification
 
 ## Damage Changes
 
@@ -69,27 +70,27 @@ A comprehensive archery overhaul that increases damage for bows, crossbows, arro
 
 ## Disassembled Ammo Bundles
 
-The mod adds 10 disassembled ammo bundles — one for each arrow and crossbow bolt type. Opening a bundle gives you the raw crafting ingredients for 30 arrows or bolts.
+The mod adds 10 disassembly recipes — one for each arrow and crossbow bolt type. Craft a bundle from 30 arrows or bolts on a **Workbench** to recover **75% of the original materials**. Recipes are unlocked after reading all 7 volumes of **Ranger's Guide to Archery**.
 
 ### Arrow Kits
 
-| Bundle | Contents |
-| --- | --- |
-| Disassembled Stone Arrow Kit | 30 Small Stones, 30 Wood, 30 Feathers |
-| Disassembled Iron Arrow Kit | 30 Iron Arrowheads, 30 Wood, 30 Feathers |
-| Disassembled Steel AP Arrow Kit | 30 Steel AP Arrowheads, 60 Scrap Polymers |
-| Disassembled Flaming Arrow Kit | 30 Steel AP Arrowheads, 60 Scrap Polymers, 60 Gun Powder, 150 Cloth, 30 Animal Fat |
-| Disassembled Exploding Arrow Kit | 30 Steel AP Arrowheads, 60 Scrap Polymers, 180 Gun Powder, 30 Paper, 30 Yucca Fibers |
+| Bundle | Input | Output (75%) |
+| --- | --- | --- |
+| Disassembled Stone Arrow Kit | 30 Stone Arrows | 22 Small Stones, 22 Wood, 22 Feathers |
+| Disassembled Iron Arrow Kit | 30 Iron Arrows | 22 Iron Arrowheads, 22 Wood, 22 Feathers |
+| Disassembled Steel AP Arrow Kit | 30 Steel AP Arrows | 22 Steel AP Arrowheads, 45 Scrap Polymers |
+| Disassembled Flaming Arrow Kit | 30 Flaming Arrows | 22 Steel AP Arrowheads, 45 Scrap Polymers, 45 Gun Powder, 112 Cloth, 22 Animal Fat |
+| Disassembled Exploding Arrow Kit | 30 Exploding Arrows | 22 Steel AP Arrowheads, 45 Scrap Polymers, 135 Gun Powder, 22 Paper, 22 Yucca Fibers |
 
 ### Crossbow Bolt Kits
 
-| Bundle | Contents |
-| --- | --- |
-| Disassembled Stone Bolt Kit | 30 Small Stones, 30 Wood, 30 Feathers |
-| Disassembled Iron Bolt Kit | 30 Iron Arrowheads, 30 Wood, 30 Feathers |
-| Disassembled Steel AP Bolt Kit | 30 Steel AP Arrowheads, 60 Scrap Polymers |
-| Disassembled Flaming Bolt Kit | 30 Steel AP Arrowheads, 60 Scrap Polymers, 60 Gun Powder, 150 Cloth, 30 Animal Fat |
-| Disassembled Exploding Bolt Kit | 30 Steel AP Arrowheads, 60 Scrap Polymers, 240 Gun Powder, 30 Paper, 30 Yucca Fibers |
+| Bundle | Input | Output (75%) |
+| --- | --- | --- |
+| Disassembled Stone Bolt Kit | 30 Stone Bolts | 22 Small Stones, 22 Wood, 22 Feathers |
+| Disassembled Iron Bolt Kit | 30 Iron Bolts | 22 Iron Arrowheads, 22 Wood, 22 Feathers |
+| Disassembled Steel AP Bolt Kit | 30 Steel AP Bolts | 22 Steel AP Arrowheads, 45 Scrap Polymers |
+| Disassembled Flaming Bolt Kit | 30 Flaming Bolts | 22 Steel AP Arrowheads, 45 Scrap Polymers, 45 Gun Powder, 112 Cloth, 22 Animal Fat |
+| Disassembled Exploding Bolt Kit | 30 Exploding Bolts | 22 Steel AP Arrowheads, 45 Scrap Polymers, 180 Gun Powder, 22 Paper, 22 Yucca Fibers |
 
 ## Installation
 
@@ -106,7 +107,8 @@ The mod adds 10 disassembled ammo bundles — one for each arrow and crossbow bo
 
 ### v1.2.0
 
-- Added 10 disassembled ammo bundles (5 arrow kits + 5 crossbow bolt kits) containing raw crafting ingredients
+- Added 10 disassembly recipes to break down 30 arrows/bolts into raw materials at 75% return
+- Disassembly requires a Workbench and all 7 volumes of Ranger's Guide to Archery
 - Added Localization.txt with English and Russian translations for all bundle items
 
 ### v1.1.0

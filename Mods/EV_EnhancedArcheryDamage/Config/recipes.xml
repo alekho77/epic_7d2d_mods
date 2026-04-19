@@ -60,7 +60,7 @@
     </recipe>
     
     <!-- DISASSEMBLED AMMO BUNDLES -->
-    <!-- Bundles crafted from 30 arrows/bolts; requires workbench + full Hunting Journal series -->
+    <!-- Bundles crafted from 30 arrows/bolts; requires workbench + full Ranger's Guide to Archery series -->
     
     <!-- Stone Arrow Bundle (craft_time=240, same as ammoBundleArrowStone) -->
     <recipe name="evArrowStonePartsBundle" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
