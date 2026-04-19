@@ -55,6 +55,7 @@
       <property name="CustomIcon" value="ammoArrowStone"/>
       <property name="CustomIconTint" value="FF8888"/>
       <property name="ItemTypeIcon" value="bundle"/>
+      <property name="UnlockedBy" value="perkRangersComplete"/>
       <property name="DescriptionKey" value="evArrowStonePartsBundleDesc"/>
       <property class="Action0">
         <property name="Create_item" value="resourceRockSmall,resourceWood,resourceFeather"/>
@@ -69,6 +70,7 @@
       <property name="CustomIcon" value="ammoArrowIron"/>
       <property name="CustomIconTint" value="FF8888"/>
       <property name="ItemTypeIcon" value="bundle"/>
+      <property name="UnlockedBy" value="perkRangersComplete"/>
       <property name="DescriptionKey" value="evArrowIronPartsBundleDesc"/>
       <property class="Action0">
         <property name="Create_item" value="resourceArrowHeadIron,resourceWood,resourceFeather"/>
@@ -83,6 +85,7 @@
       <property name="CustomIcon" value="ammoArrowSteelAP"/>
       <property name="CustomIconTint" value="FF8888"/>
       <property name="ItemTypeIcon" value="bundle"/>
+      <property name="UnlockedBy" value="perkRangersComplete"/>
       <property name="DescriptionKey" value="evArrowSteelAPPartsBundleDesc"/>
       <property class="Action0">
         <property name="Create_item" value="resourceArrowHeadSteelAP,resourceScrapPolymers"/>
@@ -97,6 +100,7 @@
       <property name="CustomIcon" value="ammoArrowFlaming"/>
       <property name="CustomIconTint" value="FF8888"/>
       <property name="ItemTypeIcon" value="bundle"/>
+      <property name="UnlockedBy" value="perkRangersComplete"/>
       <property name="DescriptionKey" value="evArrowFlamingPartsBundleDesc"/>
       <property class="Action0">
         <property name="Create_item" value="resourceArrowHeadSteelAP,resourceScrapPolymers,resourceGunPowder,resourceCloth,resourceAnimalFat"/>
@@ -111,6 +115,7 @@
       <property name="CustomIcon" value="ammoArrowExploding"/>
       <property name="CustomIconTint" value="FF8888"/>
       <property name="ItemTypeIcon" value="bundle"/>
+      <property name="UnlockedBy" value="perkRangersComplete"/>
       <property name="DescriptionKey" value="evArrowExplodingPartsBundleDesc"/>
       <property class="Action0">
         <property name="Create_item" value="resourceArrowHeadSteelAP,resourceScrapPolymers,resourceGunPowder,resourcePaper,resourceYuccaFibers"/>
@@ -125,6 +130,7 @@
       <property name="CustomIcon" value="ammoCrossbowBoltStone"/>
       <property name="CustomIconTint" value="FF8888"/>
       <property name="ItemTypeIcon" value="bundle"/>
+      <property name="UnlockedBy" value="perkRangersComplete"/>
       <property name="DescriptionKey" value="evCrossbowBoltStonePartsBundleDesc"/>
       <property class="Action0">
         <property name="Create_item" value="resourceRockSmall,resourceWood,resourceFeather"/>
@@ -139,6 +145,7 @@
       <property name="CustomIcon" value="ammoCrossbowBoltIron"/>
       <property name="CustomIconTint" value="FF8888"/>
       <property name="ItemTypeIcon" value="bundle"/>
+      <property name="UnlockedBy" value="perkRangersComplete"/>
       <property name="DescriptionKey" value="evCrossbowBoltIronPartsBundleDesc"/>
       <property class="Action0">
         <property name="Create_item" value="resourceArrowHeadIron,resourceWood,resourceFeather"/>
@@ -153,6 +160,7 @@
       <property name="CustomIcon" value="ammoCrossbowBoltSteelAP"/>
       <property name="CustomIconTint" value="FF8888"/>
       <property name="ItemTypeIcon" value="bundle"/>
+      <property name="UnlockedBy" value="perkRangersComplete"/>
       <property name="DescriptionKey" value="evCrossbowBoltSteelAPPartsBundleDesc"/>
       <property class="Action0">
         <property name="Create_item" value="resourceArrowHeadSteelAP,resourceScrapPolymers"/>
@@ -167,6 +175,7 @@
       <property name="CustomIcon" value="ammoCrossbowBoltFlaming"/>
       <property name="CustomIconTint" value="FF8888"/>
       <property name="ItemTypeIcon" value="bundle"/>
+      <property name="UnlockedBy" value="perkRangersComplete"/>
       <property name="DescriptionKey" value="evCrossbowBoltFlamingPartsBundleDesc"/>
       <property class="Action0">
         <property name="Create_item" value="resourceArrowHeadSteelAP,resourceScrapPolymers,resourceGunPowder,resourceCloth,resourceAnimalFat"/>
@@ -181,6 +190,7 @@
       <property name="CustomIcon" value="ammoCrossbowBoltExploding"/>
       <property name="CustomIconTint" value="FF8888"/>
       <property name="ItemTypeIcon" value="bundle"/>
+      <property name="UnlockedBy" value="perkRangersComplete"/>
       <property name="DescriptionKey" value="evCrossbowBoltExplodingPartsBundleDesc"/>
       <property class="Action0">
         <property name="Create_item" value="resourceArrowHeadSteelAP,resourceScrapPolymers,resourceGunPowder,resourcePaper,resourceYuccaFibers"/>
