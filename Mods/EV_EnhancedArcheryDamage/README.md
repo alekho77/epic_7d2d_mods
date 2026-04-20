@@ -19,6 +19,9 @@ A comprehensive archery overhaul that increases damage for bows, crossbows, arro
 - **No XP gain** — prevents exploit crafting for experience
 - **Tiered craft times** — higher tier ammo takes slightly longer to convert
 - Stone tier can be converted anywhere; Iron+ requires a Workbench
+- **10 disassembled ammo bundles** — craft from 30 arrows or bolts to recover 75% of raw materials
+- Disassembly recipes require a **Workbench** and reading all 7 volumes of **Ranger's Guide to Archery**
+- Bundle icons use vanilla ammo icons with a light red tint for easy identification
 
 ## Damage Changes
 
@@ -65,6 +68,30 @@ A comprehensive archery overhaul that increases damage for bows, crossbows, arro
 | Flaming Bolt | Flaming Arrow | 3s | Workbench |
 | Exploding Bolt | Exploding Arrow | 4s | Workbench |
 
+## Disassembled Ammo Bundles
+
+The mod adds 10 disassembly recipes — one for each arrow and crossbow bolt type. Craft a bundle from 30 arrows or bolts on a **Workbench** to recover **75% of the original materials**. Recipes are unlocked after reading all 7 volumes of **Ranger's Guide to Archery**.
+
+### Arrow Kits
+
+| Bundle | Input | Output (75%) |
+| --- | --- | --- |
+| Disassembled Stone Arrow Kit | 30 Stone Arrows | 22 Small Stones, 22 Wood, 22 Feathers |
+| Disassembled Iron Arrow Kit | 30 Iron Arrows | 22 Iron Arrowheads, 22 Wood, 22 Feathers |
+| Disassembled Steel AP Arrow Kit | 30 Steel AP Arrows | 22 Steel AP Arrowheads, 45 Scrap Polymers |
+| Disassembled Flaming Arrow Kit | 30 Flaming Arrows | 22 Steel AP Arrowheads, 45 Scrap Polymers, 45 Gun Powder, 112 Cloth, 22 Animal Fat |
+| Disassembled Exploding Arrow Kit | 30 Exploding Arrows | 22 Steel AP Arrowheads, 45 Scrap Polymers, 135 Gun Powder, 22 Paper, 22 Yucca Fibers |
+
+### Crossbow Bolt Kits
+
+| Bundle | Input | Output (75%) |
+| --- | --- | --- |
+| Disassembled Stone Bolt Kit | 30 Stone Bolts | 22 Small Stones, 22 Wood, 22 Feathers |
+| Disassembled Iron Bolt Kit | 30 Iron Bolts | 22 Iron Arrowheads, 22 Wood, 22 Feathers |
+| Disassembled Steel AP Bolt Kit | 30 Steel AP Bolts | 22 Steel AP Arrowheads, 45 Scrap Polymers |
+| Disassembled Flaming Bolt Kit | 30 Flaming Bolts | 22 Steel AP Arrowheads, 45 Scrap Polymers, 45 Gun Powder, 112 Cloth, 22 Animal Fat |
+| Disassembled Exploding Bolt Kit | 30 Exploding Bolts | 22 Steel AP Arrowheads, 45 Scrap Polymers, 180 Gun Powder, 22 Paper, 22 Yucca Fibers |
+
 ## Installation
 
 1. Copy the `EV_EnhancedArcheryDamage` folder into your game's `Mods/` directory
@@ -78,6 +105,12 @@ A comprehensive archery overhaul that increases damage for bows, crossbows, arro
 
 ## Changelog
 
+### v1.2.0
+
+- Added 10 disassembly recipes to break down 30 arrows/bolts into raw materials at 75% return
+- Disassembly requires a Workbench and all 7 volumes of Ranger's Guide to Archery
+- Added Localization.txt with English and Russian translations for all bundle items
+
 ### v1.1.0
 
 - Merged TransmuteArrowsAndBolts mod — added 10 recipes to convert arrows to bolts and vice versa (1:1 ratio, no material loss)
@@ -89,5 +122,5 @@ A comprehensive archery overhaul that increases damage for bows, crossbows, arro
 ---
 
 **Author:** Aleksei Khozin  
-**Version:** 1.1.0  
+**Version:** 1.2.0  
 **Website:** <https://github.com/alekho77/epic_7d2d_mods>

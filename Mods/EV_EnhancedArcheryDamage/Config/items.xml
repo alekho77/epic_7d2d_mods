@@ -41,5 +41,173 @@
   
   <!-- Compound Crossbow: Increase EntityDamage base_add from 25 to 50 -->
   <set xpath="//item[@name='gunBowT3CompoundCrossbow']/effect_group[@name='gunBowT3CompoundCrossbow']/passive_effect[@name='EntityDamage' and @operation='base_add']/@value">50</set>
-  
+
+  <!-- === DISASSEMBLED AMMO BUNDLES === -->
+  <!-- Bundles containing raw crafting ingredients for arrows and crossbow bolts -->
+  <!-- Each bundle yields materials for crafting exactly 30 arrows or bolts (75% return) -->
+
+  <append xpath="/items">
+
+    <!-- Disassembled Stone Arrow Kit: 75% materials for 30 Stone Arrows -->
+    <item name="evArrowStonePartsBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Stacknumber" value="100"/>
+      <property name="CustomIcon" value="ammoArrowStone"/>
+      <property name="CustomIconTint" value="FF8888"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="UnlockedBy" value="perkRangersComplete"/>
+      <property name="DescriptionKey" value="evArrowStonePartsBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceRockSmall,resourceWood,resourceFeather"/>
+        <property name="Create_item_count" value="22,22,22"/>
+      </property>
+    </item>
+
+    <!-- Disassembled Iron Arrow Kit: 75% materials for 30 Iron Arrows -->
+    <item name="evArrowIronPartsBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Stacknumber" value="100"/>
+      <property name="CustomIcon" value="ammoArrowIron"/>
+      <property name="CustomIconTint" value="FF8888"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="UnlockedBy" value="perkRangersComplete"/>
+      <property name="DescriptionKey" value="evArrowIronPartsBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceArrowHeadIron,resourceWood,resourceFeather"/>
+        <property name="Create_item_count" value="22,22,22"/>
+      </property>
+    </item>
+
+    <!-- Disassembled Steel AP Arrow Kit: 75% materials for 30 Steel AP Arrows -->
+    <item name="evArrowSteelAPPartsBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Stacknumber" value="100"/>
+      <property name="CustomIcon" value="ammoArrowSteelAP"/>
+      <property name="CustomIconTint" value="FF8888"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="UnlockedBy" value="perkRangersComplete"/>
+      <property name="DescriptionKey" value="evArrowSteelAPPartsBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceArrowHeadSteelAP,resourceScrapPolymers"/>
+        <property name="Create_item_count" value="22,45"/>
+      </property>
+    </item>
+
+    <!-- Disassembled Flaming Arrow Kit: 75% materials for 30 Flaming Arrows -->
+    <item name="evArrowFlamingPartsBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Stacknumber" value="100"/>
+      <property name="CustomIcon" value="ammoArrowFlaming"/>
+      <property name="CustomIconTint" value="FF8888"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="UnlockedBy" value="perkRangersComplete"/>
+      <property name="DescriptionKey" value="evArrowFlamingPartsBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceArrowHeadSteelAP,resourceScrapPolymers,resourceGunPowder,resourceCloth,resourceAnimalFat"/>
+        <property name="Create_item_count" value="22,45,45,112,22"/>
+      </property>
+    </item>
+
+    <!-- Disassembled Exploding Arrow Kit: 75% materials for 30 Exploding Arrows -->
+    <item name="evArrowExplodingPartsBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Stacknumber" value="100"/>
+      <property name="CustomIcon" value="ammoArrowExploding"/>
+      <property name="CustomIconTint" value="FF8888"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="UnlockedBy" value="perkRangersComplete"/>
+      <property name="DescriptionKey" value="evArrowExplodingPartsBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceArrowHeadSteelAP,resourceScrapPolymers,resourceGunPowder,resourcePaper,resourceYuccaFibers"/>
+        <property name="Create_item_count" value="22,45,135,22,22"/>
+      </property>
+    </item>
+
+    <!-- Disassembled Stone Crossbow Bolt Kit: 75% materials for 30 Stone Bolts -->
+    <item name="evCrossbowBoltStonePartsBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Stacknumber" value="100"/>
+      <property name="CustomIcon" value="ammoCrossbowBoltStone"/>
+      <property name="CustomIconTint" value="FF8888"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="UnlockedBy" value="perkRangersComplete"/>
+      <property name="DescriptionKey" value="evCrossbowBoltStonePartsBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceRockSmall,resourceWood,resourceFeather"/>
+        <property name="Create_item_count" value="22,22,22"/>
+      </property>
+    </item>
+
+    <!-- Disassembled Iron Crossbow Bolt Kit: 75% materials for 30 Iron Bolts -->
+    <item name="evCrossbowBoltIronPartsBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Stacknumber" value="100"/>
+      <property name="CustomIcon" value="ammoCrossbowBoltIron"/>
+      <property name="CustomIconTint" value="FF8888"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="UnlockedBy" value="perkRangersComplete"/>
+      <property name="DescriptionKey" value="evCrossbowBoltIronPartsBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceArrowHeadIron,resourceWood,resourceFeather"/>
+        <property name="Create_item_count" value="22,22,22"/>
+      </property>
+    </item>
+
+    <!-- Disassembled Steel AP Crossbow Bolt Kit: 75% materials for 30 Steel AP Bolts -->
+    <item name="evCrossbowBoltSteelAPPartsBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Stacknumber" value="100"/>
+      <property name="CustomIcon" value="ammoCrossbowBoltSteelAP"/>
+      <property name="CustomIconTint" value="FF8888"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="UnlockedBy" value="perkRangersComplete"/>
+      <property name="DescriptionKey" value="evCrossbowBoltSteelAPPartsBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceArrowHeadSteelAP,resourceScrapPolymers"/>
+        <property name="Create_item_count" value="22,45"/>
+      </property>
+    </item>
+
+    <!-- Disassembled Flaming Crossbow Bolt Kit: 75% materials for 30 Flaming Bolts -->
+    <item name="evCrossbowBoltFlamingPartsBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Stacknumber" value="100"/>
+      <property name="CustomIcon" value="ammoCrossbowBoltFlaming"/>
+      <property name="CustomIconTint" value="FF8888"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="UnlockedBy" value="perkRangersComplete"/>
+      <property name="DescriptionKey" value="evCrossbowBoltFlamingPartsBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceArrowHeadSteelAP,resourceScrapPolymers,resourceGunPowder,resourceCloth,resourceAnimalFat"/>
+        <property name="Create_item_count" value="22,45,45,112,22"/>
+      </property>
+    </item>
+
+    <!-- Disassembled Exploding Crossbow Bolt Kit: 75% materials for 30 Exploding Bolts -->
+    <item name="evCrossbowBoltExplodingPartsBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Stacknumber" value="100"/>
+      <property name="CustomIcon" value="ammoCrossbowBoltExploding"/>
+      <property name="CustomIconTint" value="FF8888"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="UnlockedBy" value="perkRangersComplete"/>
+      <property name="DescriptionKey" value="evCrossbowBoltExplodingPartsBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="resourceArrowHeadSteelAP,resourceScrapPolymers,resourceGunPowder,resourcePaper,resourceYuccaFibers"/>
+        <property name="Create_item_count" value="22,45,180,22,22"/>
+      </property>
+    </item>
+
+  </append>
+
 </config>
