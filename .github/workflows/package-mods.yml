@@ -129,3 +129,57 @@ jobs:
           body_path: dist/RELEASE_NOTES.md
           files: dist/*.zip
           fail_on_unmatched_files: true
+
+      - name: Write job summary
+        if: always()
+        env:
+          TAG: ${{ steps.meta.outputs.tag }}
+          RELEASE_NAME: ${{ steps.meta.outputs.release_name }}
+          MODS: ${{ steps.meta.outputs.mods }}
+          SERVER: ${{ github.server_url }}
+          REPO: ${{ github.repository }}
+          PUBLISH: ${{ inputs.publish_release }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+
+          {
+            echo "## 📦 Packaged mods"
+            echo ""
+            echo "| Field | Value |"
+            echo "| --- | --- |"
+            echo "| Trigger | \`${EVENT}\` |"
+            if [ -n "${TAG}" ]; then
+              echo "| Tag | \`${TAG}\` |"
+            else
+              echo "| Tag | _<none — artifacts only>_ |"
+            fi
+            echo "| Release name | ${RELEASE_NAME:-_<not a release build>_} |"
+            echo "| Mods filter | ${MODS:-<all EV_* mods>} |"
+            if [ -n "${TAG}" ] && { [ "${EVENT}" != "workflow_call" ] || [ "${PUBLISH}" = "true" ]; }; then
+              echo "| Release page | [${TAG}](${SERVER}/${REPO}/releases/tag/${TAG}) |"
+            fi
+            echo ""
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          if [ -f dist/manifest.json ]; then
+            COUNT=$(python -c "import json,sys; print(len(json.load(open('dist/manifest.json'))))")
+            TOTAL_KB=$(python -c "import json; print(f\"{sum(m['size_bytes'] for m in json.load(open('dist/manifest.json')))/1024:.1f}\")")
+            {
+              echo "### Summary"
+              echo ""
+              echo "- Packaged mods: **${COUNT}**"
+              echo "- Total size: **${TOTAL_KB} KB**"
+              echo ""
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+          if [ -f dist/RELEASE_NOTES.md ]; then
+            {
+              echo "<details><summary>📝 Release notes preview</summary>"
+              echo ""
+              cat dist/RELEASE_NOTES.md
+              echo ""
+              echo "</details>"
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi

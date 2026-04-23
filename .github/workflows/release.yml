@@ -62,9 +62,12 @@ jobs:
 
           echo "tag=${TAG}"     >> "$GITHUB_OUTPUT"
           echo "build=${NEXT_BUILD}" >> "$GITHUB_OUTPUT"
+          echo "date=${DATE}"   >> "$GITHUB_OUTPUT"
+          echo "last_build=${LAST_BUILD:-0}" >> "$GITHUB_OUTPUT"
 
       - name: Create and push tag
         if: ${{ inputs.dry_run != true }}
+        id: push_tag
         env:
           TAG: ${{ steps.compute.outputs.tag }}
         run: |
@@ -79,6 +82,43 @@ jobs:
 
           git tag -a "${TAG}" -m "Automated release ${TAG}"
           git push origin "${TAG}"
+
+          SHA=$(git rev-parse "${TAG}")
+          echo "sha=${SHA}" >> "$GITHUB_OUTPUT"
+
+      - name: Write job summary
+        if: always()
+        env:
+          TAG: ${{ steps.compute.outputs.tag }}
+          BUILD: ${{ steps.compute.outputs.build }}
+          LAST_BUILD: ${{ steps.compute.outputs.last_build }}
+          DATE: ${{ steps.compute.outputs.date }}
+          SHA: ${{ steps.push_tag.outputs.sha }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          MODS: ${{ inputs.mods }}
+          SERVER: ${{ github.server_url }}
+          REPO: ${{ github.repository }}
+        run: |
+          {
+            echo "## 🏷️ Release tag"
+            echo ""
+            if [ "${DRY_RUN}" = "true" ]; then
+              echo "**Mode:** 🧪 dry-run (tag computed, nothing pushed)"
+            else
+              echo "**Mode:** 🚀 publish"
+            fi
+            echo ""
+            echo "| Field | Value |"
+            echo "| --- | --- |"
+            echo "| Tag | \`${TAG:-<unresolved>}\` |"
+            echo "| Date (UTC) | ${DATE:-<unresolved>} |"
+            echo "| Build number | ${BUILD:-<unresolved>} (previous: ${LAST_BUILD:-0}) |"
+            echo "| Mods filter | ${MODS:-<all EV_* mods>} |"
+            if [ -n "${SHA}" ]; then
+              echo "| Commit | [\`${SHA:0:7}\`](${SERVER}/${REPO}/commit/${SHA}) |"
+              echo "| Tag page | [${TAG}](${SERVER}/${REPO}/releases/tag/${TAG}) _(populated after packaging step)_ |"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
 
   release:
     needs: create-tag
