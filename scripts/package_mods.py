@@ -22,6 +22,7 @@ Output
 import argparse
 import json
 import os
+import re
 import sys
 import xml.etree.ElementTree as ET
 import zipfile
@@ -31,6 +32,9 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 MODS_DIR = REPO_ROOT / "Mods"
 DEFAULT_OUTPUT_DIR = REPO_ROOT / "dist"
+
+# Matches a single-mod release tag, e.g. "EV_EpicCash-v1.2.1".
+SINGLE_MOD_TAG_RE = re.compile(r"^(?P<mod>EV_[A-Za-z0-9_]+)-v(?P<version>\d+\.\d+\.\d+)$")
 
 # Files/patterns excluded from the archive (not needed in-game)
 EXCLUDE_NAMES = {"NEXUS_DESCRIPTION.txt", ".git", ".gitignore", "__pycache__"}
@@ -132,10 +136,30 @@ def main():
         default="",
         help="Comma-separated list of mod folder names to package (default: all EV_* mods)",
     )
+    parser.add_argument(
+        "--tag",
+        type=str,
+        default="",
+        help=(
+            "Git tag driving this release. If it matches 'EV_<Name>-v<X.Y.Z>' only that"
+            " mod is packaged and its version is verified against ModInfo.xml. Other"
+            " tag shapes (e.g. 'v2026.04.23') package all EV_* mods."
+        ),
+    )
     args = parser.parse_args()
 
     output_dir: Path = args.output_dir.resolve()
     output_dir.mkdir(parents=True, exist_ok=True)
+
+    # Resolve mod selection: explicit --mods wins, otherwise try --tag, otherwise all.
+    single_mod_name: str | None = None
+    single_mod_expected_version: str | None = None
+    if not args.mods and args.tag:
+        m = SINGLE_MOD_TAG_RE.match(args.tag)
+        if m:
+            single_mod_name = m.group("mod")
+            single_mod_expected_version = m.group("version")
+            args.mods = single_mod_name
 
     # Discover mods
     if args.mods:
@@ -168,6 +192,16 @@ def main():
             manifest.append(result)
         else:
             errors += 1
+
+    # When a single-mod tag drove this run, verify the tag version matches ModInfo.xml.
+    if single_mod_name and single_mod_expected_version:
+        actual = manifest[0]["version"] if manifest else None
+        if actual != single_mod_expected_version:
+            print(
+                f"\nERROR  Tag version v{single_mod_expected_version} does not match"
+                f" {single_mod_name}/ModInfo.xml version {actual!r}."
+            )
+            sys.exit(2)
 
     # Write manifest
     manifest_path = output_dir / "manifest.json"
