@@ -183,11 +183,15 @@ def main() -> None:
 
     notes = build_notes(manifest, args.tag)
 
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(notes, encoding="utf-8")
+    output_path: Path = args.output.resolve()
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(notes, encoding="utf-8")
 
-    print(f"Wrote release notes: {args.output.relative_to(REPO_ROOT)}"
-          f" ({len(manifest)} mod(s))")
+    try:
+        shown = output_path.relative_to(REPO_ROOT)
+    except ValueError:
+        shown = output_path
+    print(f"Wrote release notes: {shown} ({len(manifest)} mod(s))")
 
 
 if __name__ == "__main__":
