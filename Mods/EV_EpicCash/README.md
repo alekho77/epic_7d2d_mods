@@ -132,33 +132,33 @@ All armor bundles include a full Tier 6 set — helmet, outfit, gloves, and boot
 
 ### 🟣 Skill Magazine Bundles
 
-All magazine bundles contain 10 copies of the respective magazine.
+All magazine bundles contain 10 copies of the respective magazine. Skill magazines feed both vanilla crafting skills and skill trees added by other modpacks, so the price sits slightly above the standard 10 EB tier.
 
 | Name | Contents | Description | Price |
 | --- | --- | --- | ---: |
-| Home Cooking Weekly Pack (10) | 10× Home Cooking Weekly | 10 Home Cooking Weekly magazines | 10 EB |
-| Medical Journal Pack (10) | 10× Medical Journal | 10 Medical Journal magazines | 10 EB |
-| Armored Up Pack (10) | 10× Armored Up | 10 Armored Up magazines | 10 EB |
-| Vehicle Adventures Pack (10) | 10× Vehicle Adventures | 10 Vehicle Adventures magazines | 10 EB |
-| Tools Digest Pack (10) | 10× Tools Digest | 10 Tools Digest magazines | 10 EB |
-| Handy Land Pack (10) | 10× Handy Land | 10 Handy Land magazines | 10 EB |
-| Scrapping 4 Fun Pack (10) | 10× Scrapping 4 Fun | 10 Scrapping 4 Fun magazines | 10 EB |
-| Furious Fists Pack (10) | 10× Furious Fists | 10 Furious Fists magazines | 10 EB |
-| Knife Guy Pack (10) | 10× Knife Guy | 10 Knife Guy magazines | 10 EB |
-| Big Hitters Pack (10) | 10× Big Hitters | 10 Big Hitters magazines | 10 EB |
-| Get Hammered Pack (10) | 10× Get Hammered | 10 Get Hammered magazines | 10 EB |
-| Sharp Sticks Pack (10) | 10× Sharp Sticks | 10 Sharp Sticks magazines | 10 EB |
-| Bow Hunters Pack (10) | 10× Bow Hunters | 10 Bow Hunters magazines | 10 EB |
-| Handgun Magazine Pack (10) | 10× Handgun Magazine | 10 Handgun Magazine magazines | 10 EB |
-| Shotgun Weekly Pack (10) | 10× Shotgun Weekly | 10 Shotgun Weekly magazines | 10 EB |
-| Rifle World Pack (10) | 10× Rifle World | 10 Rifle World magazines | 10 EB |
-| Tactical Warfare Pack (10) | 10× Tactical Warfare | 10 Tactical Warfare magazines | 10 EB |
-| Explosive Magazine Pack (10) | 10× Explosive Magazine | 10 Explosive Magazine magazines | 10 EB |
-| Tech Planet Pack (10) | 10× Tech Planet | 10 Tech Planet magazines | 10 EB |
-| Southern Farming Pack (10) | 10× Southern Farming | 10 Southern Farming magazines | 10 EB |
-| Wiring 101 Pack (10) | 10× Wiring 101 | 10 Wiring 101 magazines | 10 EB |
-| Electrical Traps Pack (10) | 10× Electrical Traps | 10 Electrical Traps magazines | 10 EB |
-| Forge Ahead Pack (10) | 10× Forge Ahead | 10 Forge Ahead magazines | 10 EB |
+| Home Cooking Weekly Pack (10) | 10× Home Cooking Weekly | 10 Home Cooking Weekly magazines | 12 EB |
+| Medical Journal Pack (10) | 10× Medical Journal | 10 Medical Journal magazines | 12 EB |
+| Armored Up Pack (10) | 10× Armored Up | 10 Armored Up magazines | 12 EB |
+| Vehicle Adventures Pack (10) | 10× Vehicle Adventures | 10 Vehicle Adventures magazines | 12 EB |
+| Tools Digest Pack (10) | 10× Tools Digest | 10 Tools Digest magazines | 12 EB |
+| Handy Land Pack (10) | 10× Handy Land | 10 Handy Land magazines | 12 EB |
+| Scrapping 4 Fun Pack (10) | 10× Scrapping 4 Fun | 10 Scrapping 4 Fun magazines | 12 EB |
+| Furious Fists Pack (10) | 10× Furious Fists | 10 Furious Fists magazines | 12 EB |
+| Knife Guy Pack (10) | 10× Knife Guy | 10 Knife Guy magazines | 12 EB |
+| Big Hitters Pack (10) | 10× Big Hitters | 10 Big Hitters magazines | 12 EB |
+| Get Hammered Pack (10) | 10× Get Hammered | 10 Get Hammered magazines | 12 EB |
+| Sharp Sticks Pack (10) | 10× Sharp Sticks | 10 Sharp Sticks magazines | 12 EB |
+| Bow Hunters Pack (10) | 10× Bow Hunters | 10 Bow Hunters magazines | 12 EB |
+| Handgun Magazine Pack (10) | 10× Handgun Magazine | 10 Handgun Magazine magazines | 12 EB |
+| Shotgun Weekly Pack (10) | 10× Shotgun Weekly | 10 Shotgun Weekly magazines | 12 EB |
+| Rifle World Pack (10) | 10× Rifle World | 10 Rifle World magazines | 12 EB |
+| Tactical Warfare Pack (10) | 10× Tactical Warfare | 10 Tactical Warfare magazines | 12 EB |
+| Explosive Magazine Pack (10) | 10× Explosive Magazine | 10 Explosive Magazine magazines | 12 EB |
+| Tech Planet Pack (10) | 10× Tech Planet | 10 Tech Planet magazines | 12 EB |
+| Southern Farming Pack (10) | 10× Southern Farming | 10 Southern Farming magazines | 12 EB |
+| Wiring 101 Pack (10) | 10× Wiring 101 | 10 Wiring 101 magazines | 12 EB |
+| Electrical Traps Pack (10) | 10× Electrical Traps | 10 Electrical Traps magazines | 12 EB |
+| Forge Ahead Pack (10) | 10× Forge Ahead | 10 Forge Ahead magazines | 12 EB |
 
 ### 🟪 Skill Book Bundles
 
@@ -166,25 +166,25 @@ All book bundles contain the complete set of 7 volumes. A full book series grant
 
 | Name | Contents | Description | Price |
 | --- | --- | --- | ---: |
-| The Fireman's Almanac Complete Set | 7 volumes | All 7 volumes of The Fireman's Almanac | 20 EB |
-| The Great Heist Complete Set | 7 volumes | All 7 volumes of The Great Heist | 20 EB |
-| Wasteland Treasures Complete Set | 7 volumes | All 7 volumes of Wasteland Treasures | 20 EB |
-| The Hunter's Journal Complete Set | 7 volumes | All 7 volumes of The Hunter's Journal | 20 EB |
-| Art of Mining Complete Set | 7 volumes | All 7 volumes of Art of Mining | 20 EB |
-| Night Stalker Complete Set | 7 volumes | All 7 volumes of Night Stalker | 25 EB |
-| Batter Up Complete Set | 7 volumes | All 7 volumes of Batter Up | 25 EB |
-| Sledge Saga Complete Set | 7 volumes | All 7 volumes of Sledge Saga | 25 EB |
-| Ranger's Guide to Archery Complete Set | 7 volumes | All 7 volumes of Ranger's Guide to Archery | 25 EB |
-| Sniper Complete Set | 7 volumes | All 7 volumes of Sniper | 25 EB |
-| Tech Junkie Complete Set | 7 volumes | All 7 volumes of Tech Junkie | 25 EB |
-| Bar Brawling Complete Set | 7 volumes | All 7 volumes of Bar Brawling | 25 EB |
-| Spear Hunter Complete Set | 7 volumes | All 7 volumes of Spear Hunter | 25 EB |
-| Lucky Looter Complete Set | 7 volumes | All 7 volumes of Lucky Looter | 30 EB |
-| Magnum Enforcer Complete Set | 7 volumes | All 7 volumes of Magnum Enforcer | 30 EB |
-| Pistol Pete Complete Set | 7 volumes | All 7 volumes of Pistol Pete | 30 EB |
-| Shotgun Messiah Complete Set | 7 volumes | All 7 volumes of Shotgun Messiah | 30 EB |
-| Automatic Weapons Handbook Complete Set | 7 volumes | All 7 volumes of Automatic Weapons Handbook | 30 EB |
-| Urban Combat Complete Set | 7 volumes | All 7 volumes of Urban Combat | 30 EB |
+| The Fireman's Almanac Complete Set | 7 volumes | All 7 volumes of The Fireman's Almanac | 15 EB |
+| The Great Heist Complete Set | 7 volumes | All 7 volumes of The Great Heist | 15 EB |
+| Wasteland Treasures Complete Set | 7 volumes | All 7 volumes of Wasteland Treasures | 15 EB |
+| The Hunter's Journal Complete Set | 7 volumes | All 7 volumes of The Hunter's Journal | 15 EB |
+| Art of Mining Complete Set | 7 volumes | All 7 volumes of Art of Mining | 15 EB |
+| Night Stalker Complete Set | 7 volumes | All 7 volumes of Night Stalker | 20 EB |
+| Batter Up Complete Set | 7 volumes | All 7 volumes of Batter Up | 20 EB |
+| Sledge Saga Complete Set | 7 volumes | All 7 volumes of Sledge Saga | 20 EB |
+| Ranger's Guide to Archery Complete Set | 7 volumes | All 7 volumes of Ranger's Guide to Archery | 20 EB |
+| Sniper Complete Set | 7 volumes | All 7 volumes of Sniper | 20 EB |
+| Tech Junkie Complete Set | 7 volumes | All 7 volumes of Tech Junkie | 20 EB |
+| Bar Brawling Complete Set | 7 volumes | All 7 volumes of Bar Brawling | 20 EB |
+| Spear Hunter Complete Set | 7 volumes | All 7 volumes of Spear Hunter | 20 EB |
+| Lucky Looter Complete Set | 7 volumes | All 7 volumes of Lucky Looter | 25 EB |
+| Magnum Enforcer Complete Set | 7 volumes | All 7 volumes of Magnum Enforcer | 25 EB |
+| Pistol Pete Complete Set | 7 volumes | All 7 volumes of Pistol Pete | 25 EB |
+| Shotgun Messiah Complete Set | 7 volumes | All 7 volumes of Shotgun Messiah | 25 EB |
+| Automatic Weapons Handbook Complete Set | 7 volumes | All 7 volumes of Automatic Weapons Handbook | 25 EB |
+| Urban Combat Complete Set | 7 volumes | All 7 volumes of Urban Combat | 25 EB |
 
 ### 💜 Workstation Bundle
 
@@ -280,6 +280,15 @@ No `craft_area` attribute means the recipe is craftable directly from the player
 
 ## Changelog
 
+### v1.2.1
+
+- Fine-tuned magazine and book bundle prices to better fit servers that run this mod alongside other modpacks (which often hand out books and magazines much faster than vanilla) while still making sense on pure vanilla servers
+- **Skill Magazines** (all 23 bundles): 10 → **12 EB**
+- **Skill Books S-tier** (Lucky Looter, Magnum Enforcer, Pistol Pete, Shotgun Messiah, Automatic Weapons, Urban Combat): 30 → **25 EB**
+- **Skill Books A-tier** (Night Stalker, Batter Up, Sledge Saga, Ranger's Guide, Sniper, Tech Junkie, Bar Brawling, Spear Hunter): 25 → **20 EB**
+- **Skill Books B-tier** (Fireman's Almanac, Great Heist, Wasteland Treasures, Hunter's Journal, Art of Mining): 20 → **15 EB**
+- All other bundle prices are unchanged
+
 ### v1.2.0
 
 - Rebalanced bundle prices to follow a consistent "impact-based" pricing model — bundles that massively accelerate progression or grant permanent passive bonuses now cost more, while low-impact or early-game bundles remain cheap
@@ -311,5 +320,5 @@ No `craft_area` attribute means the recipe is craftable directly from the player
 ---
 
 **Author:** Aleksei Khozin\
-**Version:** 1.2.0\
+**Version:** 1.2.1\
 **Website:** [https://github.com/alekho77/epic_7d2d_mods](https://github.com/alekho77/epic_7d2d_mods)

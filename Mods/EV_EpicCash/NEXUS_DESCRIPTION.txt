@@ -142,7 +142,7 @@ All tool bundles contain a single Tier 6 tool.
 
 [color=#BC13FE][size=4][b]Skill Magazine Bundles[/b][/size][/color]
 
-All magazine bundles contain 10 copies of the respective magazine — [b]10 EB[/b] each.
+All magazine bundles contain 10 copies of the respective magazine — [b]12 EB[/b] each.
 
 [list]
 [*]Home Cooking Weekly Pack (10)
@@ -175,25 +175,25 @@ All magazine bundles contain 10 copies of the respective magazine — [b]10 EB[/
 All book bundles contain the complete set of 7 volumes. A full series grants a powerful permanent passive bonus for the rest of the playthrough, so prices are tiered by the strength and universality of that bonus.
 
 [list]
-[*][b]The Fireman's Almanac Complete Set[/b] (20 EB)
-[*][b]The Great Heist Complete Set[/b] (20 EB)
-[*][b]Wasteland Treasures Complete Set[/b] (20 EB)
-[*][b]The Hunter's Journal Complete Set[/b] (20 EB)
-[*][b]Art of Mining Complete Set[/b] (20 EB)
-[*][b]Night Stalker Complete Set[/b] (25 EB)
-[*][b]Batter Up Complete Set[/b] (25 EB)
-[*][b]Sledge Saga Complete Set[/b] (25 EB)
-[*][b]Ranger's Guide to Archery Complete Set[/b] (25 EB)
-[*][b]Sniper Complete Set[/b] (25 EB)
-[*][b]Tech Junkie Complete Set[/b] (25 EB)
-[*][b]Bar Brawling Complete Set[/b] (25 EB)
-[*][b]Spear Hunter Complete Set[/b] (25 EB)
-[*][b]Lucky Looter Complete Set[/b] (30 EB)
-[*][b]Magnum Enforcer Complete Set[/b] (30 EB)
-[*][b]Pistol Pete Complete Set[/b] (30 EB)
-[*][b]Shotgun Messiah Complete Set[/b] (30 EB)
-[*][b]Automatic Weapons Handbook Complete Set[/b] (30 EB)
-[*][b]Urban Combat Complete Set[/b] (30 EB)
+[*][b]The Fireman's Almanac Complete Set[/b] (15 EB)
+[*][b]The Great Heist Complete Set[/b] (15 EB)
+[*][b]Wasteland Treasures Complete Set[/b] (15 EB)
+[*][b]The Hunter's Journal Complete Set[/b] (15 EB)
+[*][b]Art of Mining Complete Set[/b] (15 EB)
+[*][b]Night Stalker Complete Set[/b] (20 EB)
+[*][b]Batter Up Complete Set[/b] (20 EB)
+[*][b]Sledge Saga Complete Set[/b] (20 EB)
+[*][b]Ranger's Guide to Archery Complete Set[/b] (20 EB)
+[*][b]Sniper Complete Set[/b] (20 EB)
+[*][b]Tech Junkie Complete Set[/b] (20 EB)
+[*][b]Bar Brawling Complete Set[/b] (20 EB)
+[*][b]Spear Hunter Complete Set[/b] (20 EB)
+[*][b]Lucky Looter Complete Set[/b] (25 EB)
+[*][b]Magnum Enforcer Complete Set[/b] (25 EB)
+[*][b]Pistol Pete Complete Set[/b] (25 EB)
+[*][b]Shotgun Messiah Complete Set[/b] (25 EB)
+[*][b]Automatic Weapons Handbook Complete Set[/b] (25 EB)
+[*][b]Urban Combat Complete Set[/b] (25 EB)
 [/list]
 
 [color=#F000FF][size=4][b]Workstation Bundle[/b][/size][/color]
@@ -221,6 +221,17 @@ All book bundles contain the complete set of 7 volumes. A full series grants a p
 [quote]If your server runs mods that add custom items to the game, you can easily extend EpicCash to support them. Follow the guide in the mod's README to create bundles containing any modded items at any price.[/quote]
 
 [size=5][b]Changelog[/b][/size]
+
+[size=4][b]v1.2.1[/b][/size]
+
+[list]
+[*]Fine-tuned magazine and book bundle prices to better fit servers that run this mod alongside other modpacks (which often hand out books and magazines much faster than vanilla) while still making sense on pure vanilla servers
+[*][b]Skill Magazines[/b] (all 23 bundles): 10 → [b]12 EB[/b]
+[*][b]Skill Books S-tier[/b] (Lucky Looter, Magnum Enforcer, Pistol Pete, Shotgun Messiah, Automatic Weapons, Urban Combat): 30 → [b]25 EB[/b]
+[*][b]Skill Books A-tier[/b] (Night Stalker, Batter Up, Sledge Saga, Ranger's Guide, Sniper, Tech Junkie, Bar Brawling, Spear Hunter): 25 → [b]20 EB[/b]
+[*][b]Skill Books B-tier[/b] (Fireman's Almanac, Great Heist, Wasteland Treasures, Hunter's Journal, Art of Mining): 20 → [b]15 EB[/b]
+[*]All other bundle prices are unchanged
+[/list]
 
 [size=4][b]v1.2.0[/b][/size]
 
