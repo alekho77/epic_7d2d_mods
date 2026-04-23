@@ -75,8 +75,8 @@ The mod ships with [b]92 ready-made bundles[/b] across 10 categories, all crafta
 [*][b]Bicycle Kit[/b] (5 EB) — Bicycle, 2× Vehicle Storage mod
 [*][b]Minibike Starter Kit[/b] (7 EB) — Minibike, 3,000× Gas Can, Super Charger mod
 [*][b]Motorcycle Starter Kit[/b] (10 EB) — Motorcycle, 5,000× Gas Can, Fuel Saver mod
-[*][b]4x4 Truck Starter Kit[/b] (20 EB) — 4x4 Truck, 12,000× Gas Can, Fuel Saver / Super Charger / Reserve Fuel Tank mods
-[*][b]Gyrocopter Starter Kit[/b] (20 EB) — Gyrocopter, 12,000× Gas Can
+[*][b]4x4 Truck Starter Kit[/b] (30 EB) — 4x4 Truck, 12,000× Gas Can, Fuel Saver / Super Charger / Reserve Fuel Tank mods
+[*][b]Gyrocopter Starter Kit[/b] (30 EB) — Gyrocopter, 12,000× Gas Can
 [/list]
 
 [color=#FF3131][size=4][b]Weapon Bundles[/b][/size][/color]
@@ -84,12 +84,12 @@ The mod ships with [b]92 ready-made bundles[/b] across 10 categories, all crafta
 [list]
 [*][b]Pistol Kit[/b] (10 EB) — T6 Pistol, 600× AP 9mm rounds
 [*][b]Pump Shotgun Kit[/b] (10 EB) — T6 Pump Shotgun, 600× AP slugs
-[*][b]Sniper Rifle Kit[/b] (15 EB) — T6 Sniper Rifle, 1,000× AP 7.62mm rounds
+[*][b]Sniper Rifle Kit[/b] (20 EB) — T6 Sniper Rifle, 1,000× AP 7.62mm rounds
 [*][b]SMG-5 Kit[/b] (20 EB) — T6 SMG-5, 1,500× AP 9mm rounds
-[*][b]Desert Vulture Kit[/b] (20 EB) — T6 Desert Vulture, 1,000× AP .44 Magnum rounds
-[*][b]Auto Shotgun Kit[/b] (20 EB) — T6 Auto Shotgun, 1,000× AP slugs
-[*][b]Robotic Turret Kit[/b] (20 EB) — T6 Robotic Turret, 1,000× AP turret rounds
-[*][b]M60 Machine Gun Kit[/b] (25 EB) — T6 M60, 3,000× AP 7.62mm rounds
+[*][b]Desert Vulture Kit[/b] (25 EB) — T6 Desert Vulture, 1,000× AP .44 Magnum rounds
+[*][b]Auto Shotgun Kit[/b] (25 EB) — T6 Auto Shotgun, 1,000× AP slugs
+[*][b]Robotic Turret Kit[/b] (25 EB) — T6 Robotic Turret, 1,000× AP turret rounds
+[*][b]M60 Machine Gun Kit[/b] (40 EB) — T6 M60, 3,000× AP 7.62mm rounds
 [/list]
 
 [color=#FDFF00][size=4][b]Ammo Bundles[/b][/size][/color]
@@ -100,44 +100,44 @@ The mod ships with [b]92 ready-made bundles[/b] across 10 categories, all crafta
 [*][b]7.62mm Ammo Pack[/b] (1 EB) — 1,000× standard 7.62mm rounds
 [*][b]Shotgun Shell Pack[/b] (1 EB) — 1,000× standard shotgun shells
 [*][b]Robotic Turret Ammo Pack[/b] (1 EB) — 1,000× standard Robotic Turret rounds
-[*][b]AP 9mm Ammo Pack[/b] (2 EB) — 1,000× AP 9mm rounds
-[*][b]AP .44 Magnum Ammo Pack[/b] (2 EB) — 1,000× AP .44 Magnum rounds
-[*][b]AP 7.62mm Ammo Pack[/b] (2 EB) — 1,000× AP 7.62mm rounds
-[*][b]AP Shotgun Slug Pack[/b] (2 EB) — 1,000× AP shotgun slugs
-[*][b]AP Robotic Turret Ammo Pack[/b] (2 EB) — 1,000× AP Robotic Turret rounds
+[*][b]AP 9mm Ammo Pack[/b] (3 EB) — 1,000× AP 9mm rounds
+[*][b]AP .44 Magnum Ammo Pack[/b] (3 EB) — 1,000× AP .44 Magnum rounds
+[*][b]AP 7.62mm Ammo Pack[/b] (3 EB) — 1,000× AP 7.62mm rounds
+[*][b]AP Shotgun Slug Pack[/b] (3 EB) — 1,000× AP shotgun slugs
+[*][b]AP Robotic Turret Ammo Pack[/b] (3 EB) — 1,000× AP Robotic Turret rounds
 [/list]
 
 [color=#1F51FF][size=4][b]Armor Bundles[/b][/size][/color]
 
-All armor bundles include a full Tier 6 set (helmet, outfit, gloves, boots) — [b]10 EB[/b] each.
+All armor bundles include a full Tier 6 set (helmet, outfit, gloves, boots). Prices are tiered by the combat/crafting impact of each class's set bonuses.
 
 [list]
-[*]Lumberjack Armor Set
-[*]Preacher Armor Set
-[*]Rogue Armor Set
-[*]Athletic Armor Set
-[*]Enforcer Armor Set
-[*]Farmer Armor Set
-[*]Biker Armor Set
-[*]Scavenger Armor Set
-[*]Ranger Armor Set
-[*]Commando Armor Set
-[*]Assassin Armor Set
-[*]Miner Armor Set
-[*]Nomad Armor Set
-[*]Nerd Armor Set
-[*]Raider Armor Set
+[*][b]Lumberjack Armor Set[/b] (10 EB)
+[*][b]Preacher Armor Set[/b] (10 EB)
+[*][b]Farmer Armor Set[/b] (10 EB)
+[*][b]Miner Armor Set[/b] (10 EB)
+[*][b]Nomad Armor Set[/b] (10 EB)
+[*][b]Rogue Armor Set[/b] (15 EB)
+[*][b]Athletic Armor Set[/b] (15 EB)
+[*][b]Biker Armor Set[/b] (15 EB)
+[*][b]Scavenger Armor Set[/b] (15 EB)
+[*][b]Ranger Armor Set[/b] (15 EB)
+[*][b]Enforcer Armor Set[/b] (20 EB)
+[*][b]Commando Armor Set[/b] (20 EB)
+[*][b]Assassin Armor Set[/b] (20 EB)
+[*][b]Nerd Armor Set[/b] (20 EB)
+[*][b]Raider Armor Set[/b] (20 EB)
 [/list]
 
 [color=#39FF14][size=4][b]Tool Bundles[/b][/size][/color]
 
-All tool bundles contain a single Tier 6 tool — [b]5 EB[/b] each.
+All tool bundles contain a single Tier 6 tool.
 
 [list]
-[*]Nailgun Kit
-[*]Chainsaw Kit
-[*]Auger Kit
-[*]Impact Driver Kit
+[*][b]Nailgun Kit[/b] (5 EB)
+[*][b]Impact Driver Kit[/b] (5 EB)
+[*][b]Chainsaw Kit[/b] (12 EB)
+[*][b]Auger Kit[/b] (20 EB)
 [/list]
 
 [color=#BC13FE][size=4][b]Skill Magazine Bundles[/b][/size][/color]
@@ -172,34 +172,34 @@ All magazine bundles contain 10 copies of the respective magazine — [b]10 EB[/
 
 [color=#8F00F2][size=4][b]Skill Book Bundles[/b][/size][/color]
 
-All book bundles contain the complete set of 7 volumes — [b]10 EB[/b] each.
+All book bundles contain the complete set of 7 volumes. A full series grants a powerful permanent passive bonus for the rest of the playthrough, so prices are tiered by the strength and universality of that bonus.
 
 [list]
-[*]The Fireman's Almanac Complete Set
-[*]Night Stalker Complete Set
-[*]Lucky Looter Complete Set
-[*]Magnum Enforcer Complete Set
-[*]Batter Up Complete Set
-[*]Sledge Saga Complete Set
-[*]The Great Heist Complete Set
-[*]Wasteland Treasures Complete Set
-[*]The Hunter's Journal Complete Set
-[*]Art of Mining Complete Set
-[*]Ranger's Guide to Archery Complete Set
-[*]Pistol Pete Complete Set
-[*]Shotgun Messiah Complete Set
-[*]Sniper Complete Set
-[*]Automatic Weapons Handbook Complete Set
-[*]Urban Combat Complete Set
-[*]Tech Junkie Complete Set
-[*]Bar Brawling Complete Set
-[*]Spear Hunter Complete Set
+[*][b]The Fireman's Almanac Complete Set[/b] (20 EB)
+[*][b]The Great Heist Complete Set[/b] (20 EB)
+[*][b]Wasteland Treasures Complete Set[/b] (20 EB)
+[*][b]The Hunter's Journal Complete Set[/b] (20 EB)
+[*][b]Art of Mining Complete Set[/b] (20 EB)
+[*][b]Night Stalker Complete Set[/b] (25 EB)
+[*][b]Batter Up Complete Set[/b] (25 EB)
+[*][b]Sledge Saga Complete Set[/b] (25 EB)
+[*][b]Ranger's Guide to Archery Complete Set[/b] (25 EB)
+[*][b]Sniper Complete Set[/b] (25 EB)
+[*][b]Tech Junkie Complete Set[/b] (25 EB)
+[*][b]Bar Brawling Complete Set[/b] (25 EB)
+[*][b]Spear Hunter Complete Set[/b] (25 EB)
+[*][b]Lucky Looter Complete Set[/b] (30 EB)
+[*][b]Magnum Enforcer Complete Set[/b] (30 EB)
+[*][b]Pistol Pete Complete Set[/b] (30 EB)
+[*][b]Shotgun Messiah Complete Set[/b] (30 EB)
+[*][b]Automatic Weapons Handbook Complete Set[/b] (30 EB)
+[*][b]Urban Combat Complete Set[/b] (30 EB)
 [/list]
 
 [color=#F000FF][size=4][b]Workstation Bundle[/b][/size][/color]
 
 [list]
-[*][b]Basic Workstations Kit[/b] (50 EB) — Forge, Workbench, Cement Mixer, Chemistry Station, 2× Dew Collector
+[*][b]Basic Workstations Kit[/b] (25 EB) — Forge, Workbench, Cement Mixer, Chemistry Station, 2× Dew Collector
 [/list]
 
 [color=#66FF00][size=4][b]Food Bundles[/b][/size][/color]
@@ -221,6 +221,20 @@ All book bundles contain the complete set of 7 volumes — [b]10 EB[/b] each.
 [quote]If your server runs mods that add custom items to the game, you can easily extend EpicCash to support them. Follow the guide in the mod's README to create bundles containing any modded items at any price.[/quote]
 
 [size=5][b]Changelog[/b][/size]
+
+[size=4][b]v1.2.0[/b][/size]
+
+[list]
+[*]Rebalanced bundle prices to follow a consistent "impact-based" pricing model — bundles that massively accelerate progression or grant permanent passive bonuses now cost more, while low-impact or early-game bundles remain cheap
+[*][b]Vehicles:[/b] 4x4 Truck Starter Kit 20 → 30 EB, Gyrocopter Starter Kit 20 → 30 EB
+[*][b]Weapons:[/b] Sniper Rifle Kit 15 → 20 EB, Desert Vulture / Auto Shotgun / Robotic Turret kits 20 → 25 EB, M60 Machine Gun Kit 25 → 40 EB
+[*][b]Ammo:[/b] all AP ammo packs 2 → 3 EB (standard ammo unchanged at 1 EB)
+[*][b]Armor:[/b] tiered pricing — low-impact sets (Lumberjack, Preacher, Farmer, Miner, Nomad) stay at 10 EB; mid-impact sets (Rogue, Athletic, Biker, Scavenger, Ranger) raised to 15 EB; high-impact sets (Enforcer, Commando, Assassin, Nerd, Raider) raised to 20 EB
+[*][b]Tools:[/b] Chainsaw Kit 5 → 12 EB, Auger Kit 5 → 20 EB (Nailgun / Impact Driver unchanged at 5 EB)
+[*][b]Skill Books:[/b] tiered pricing — situational sets (Fireman's Almanac, Great Heist, Wasteland Treasures, Hunter's Journal, Art of Mining) raised to 20 EB; strong sets (Night Stalker, Batter Up, Sledge Saga, Ranger's Guide, Sniper, Tech Junkie, Bar Brawling, Spear Hunter) raised to 25 EB; top-tier must-have sets (Lucky Looter, Magnum Enforcer, Pistol Pete, Shotgun Messiah, Automatic Weapons, Urban Combat) raised to 30 EB
+[*][b]Workstations:[/b] Basic Workstations Kit 50 → 25 EB (early-game content; previous price was too steep)
+[*]Skill magazine bundles, food bundles, drink bundles, and standard ammo packs are unchanged
+[/list]
 
 [size=4][b]v1.1.0[/b][/size]
 
