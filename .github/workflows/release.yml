@@ -1,0 +1,92 @@
+name: Release
+
+# Creates a rolling YYYY.MM.DD.<Build> git tag and triggers a packaged release.
+#
+# - <Build> is a global, monotonically increasing counter across every run of
+#   this workflow — it is NOT reset when the date changes. The next value is
+#   computed by scanning all existing YYYY.MM.DD.N tags and taking max(N)+1.
+# - The tag is pushed with the default GITHUB_TOKEN; because such pushes do
+#   not fan-out to other workflows, this workflow directly invokes
+#   package-mods.yml as a reusable workflow to build and publish the release.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mods:
+        description: "Comma-separated mod folder names (empty = all EV_* mods)"
+        required: false
+        default: ""
+      dry_run:
+        description: "If true, compute the tag but do not push it or publish a release"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  create-tag:
+    runs-on: ubuntu-latest
+    outputs:
+      tag: ${{ steps.compute.outputs.tag }}
+      build: ${{ steps.compute.outputs.build }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Compute next YYYY.MM.DD.Build tag
+        id: compute
+        run: |
+          set -euo pipefail
+
+          # Make sure we have every tag locally, even if the runner's cache is shallow.
+          git fetch --tags --force --prune
+
+          LAST_BUILD=$(git tag -l \
+            | grep -E '^[0-9]{4}\.[0-9]{2}\.[0-9]{2}\.[0-9]+$' \
+            | awk -F. '{print $4}' \
+            | sort -n \
+            | tail -n 1 || true)
+
+          NEXT_BUILD=$(( ${LAST_BUILD:-0} + 1 ))
+          DATE=$(date -u +%Y.%m.%d)
+          TAG="${DATE}.${NEXT_BUILD}"
+
+          echo "Last build number: ${LAST_BUILD:-<none>}"
+          echo "Next build number: ${NEXT_BUILD}"
+          echo "New tag:           ${TAG}"
+
+          echo "tag=${TAG}"     >> "$GITHUB_OUTPUT"
+          echo "build=${NEXT_BUILD}" >> "$GITHUB_OUTPUT"
+
+      - name: Create and push tag
+        if: ${{ inputs.dry_run != true }}
+        env:
+          TAG: ${{ steps.compute.outputs.tag }}
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git rev-parse -q --verify "refs/tags/${TAG}" >/dev/null; then
+            echo "Tag ${TAG} already exists — aborting to avoid overwriting history." >&2
+            exit 1
+          fi
+
+          git tag -a "${TAG}" -m "Automated release ${TAG}"
+          git push origin "${TAG}"
+
+  release:
+    needs: create-tag
+    if: ${{ inputs.dry_run != true }}
+    uses: ./.github/workflows/package-mods.yml
+    permissions:
+      contents: write
+    with:
+      tag: ${{ needs.create-tag.outputs.tag }}
+      mods: ${{ inputs.mods }}
+      publish_release: true

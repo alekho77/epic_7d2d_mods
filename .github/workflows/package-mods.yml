@@ -7,12 +7,35 @@ on:
       - "v*"
       # Per-mod release, e.g. EV_EpicCash-v1.2.1
       - "EV_*-v*"
+      # Date-based rolling tag, e.g. 2026.04.23.7
+      - "[0-9][0-9][0-9][0-9].[0-9][0-9].[0-9][0-9].*"
   workflow_dispatch:
     inputs:
       mods:
         description: "Comma-separated mod folder names (empty = all)"
         required: false
         default: ""
+  # Reusable workflow entry point (called by release.yml after it creates a tag).
+  workflow_call:
+    inputs:
+      tag:
+        description: "Release tag name (drives packaging and release title)"
+        required: false
+        type: string
+        default: ""
+      mods:
+        description: "Comma-separated mod folder names (empty = all)"
+        required: false
+        type: string
+        default: ""
+      publish_release:
+        description: "Whether to publish a GitHub Release for the given tag"
+        required: false
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
 
 jobs:
   package:
@@ -21,6 +44,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # Make sure newly created tags from release.yml are visible here too.
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -32,12 +58,21 @@ jobs:
 
       - name: Resolve release metadata
         id: meta
+        env:
+          INPUT_TAG: ${{ inputs.tag }}
+          INPUT_MODS: ${{ inputs.mods }}
+          DISPATCH_MODS: ${{ github.event.inputs.mods }}
         run: |
           TAG=""
-          if [ "${GITHUB_REF_TYPE}" = "tag" ]; then
+          if [ -n "${INPUT_TAG}" ]; then
+            TAG="${INPUT_TAG}"
+          elif [ "${GITHUB_REF_TYPE}" = "tag" ]; then
             TAG="${GITHUB_REF_NAME}"
           fi
           echo "tag=${TAG}" >> "$GITHUB_OUTPUT"
+
+          MODS="${INPUT_MODS:-${DISPATCH_MODS}}"
+          echo "mods=${MODS}" >> "$GITHUB_OUTPUT"
 
           # Default release name mirrors the tag; refined below for single-mod tags.
           RELEASE_NAME="${TAG:-Manual build}"
@@ -45,21 +80,25 @@ jobs:
             MOD="${BASH_REMATCH[1]}"
             VER="${BASH_REMATCH[2]}"
             RELEASE_NAME="${MOD} v${VER}"
+          elif [[ "${TAG}" =~ ^([0-9]{4}\.[0-9]{2}\.[0-9]{2})\.([0-9]+)$ ]]; then
+            DATE="${BASH_REMATCH[1]}"
+            BUILD="${BASH_REMATCH[2]}"
+            RELEASE_NAME="EpicVales Mod Pack ${DATE} (build ${BUILD})"
           fi
           echo "release_name=${RELEASE_NAME}" >> "$GITHUB_OUTPUT"
 
       - name: Package mods
         run: |
           ARGS=""
-          if [ -n "${{ github.event.inputs.mods }}" ]; then
-            ARGS="--mods ${{ github.event.inputs.mods }}"
+          if [ -n "${{ steps.meta.outputs.mods }}" ]; then
+            ARGS="--mods ${{ steps.meta.outputs.mods }}"
           elif [ -n "${{ steps.meta.outputs.tag }}" ]; then
             ARGS="--tag ${{ steps.meta.outputs.tag }}"
           fi
           python scripts/package_mods.py $ARGS
 
       - name: Build release notes
-        if: startsWith(github.ref, 'refs/tags/')
+        if: steps.meta.outputs.tag != ''
         run: |
           python scripts/build_release_notes.py \
             --manifest dist/manifest.json \
@@ -82,9 +121,10 @@ jobs:
           path: dist/manifest.json
 
       - name: Publish GitHub Release
-        if: startsWith(github.ref, 'refs/tags/')
+        if: steps.meta.outputs.tag != '' && (github.event_name != 'workflow_call' || inputs.publish_release)
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ steps.meta.outputs.tag }}
           name: ${{ steps.meta.outputs.release_name }}
           body_path: dist/RELEASE_NOTES.md
           files: dist/*.zip
