@@ -22,10 +22,10 @@ Adds **Epic Bucks** crafting recipes for content from the **[Project Z](https://
 
 ## Features
 
-- **38 Project Z Recipes** — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, 9 Improved armor sets, and 5 Legendary named armor sets
+- **55 Project Z Recipes** — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, 9 Improved armor sets, 5 Legendary named armor sets, 11 Improved weapons, 4 Improved power tools, and 2 Improved robotics drones
 - **Always Unlocked** — no schematic or perk level required
 - **Inventory Crafting** — no workstation needed
-- **Tiered Pricing** — rare gear in the 45–75 EB range, Improved armor sets in the 150–200 EB range, Legendary weapons and armor sets priced very high (200–380 EB) to prevent instant end-game
+- **Tiered Pricing** — rare gear in the 45–75 EB range, Improved weapons/tools in the 75–180 EB range, Improved armor sets in the 150–200 EB range, Legendary weapons and armor sets priced very high (200–380 EB) to prevent instant end-game
 
 ## Included Recipes
 
@@ -114,6 +114,47 @@ End-game named armor sets with a gold `#FFB800` tint. Each set grants a unique *
 | Sonny Legendary Armor Set | Sonny | Heavy (premium) | 380 EB |
 | Maus Legendary Armor Set | Maus | Heavy (premium) | 380 EB |
 
+### Improved Weapons & Tools (from `Z_Master_Skills`)
+
+Deterministic Quality 6 "Improved" weapons, tools, and drones (tint `#8692FF`). Normally gated behind the `MasterWeapons` / `MasterTools` perks and the Improved Workbench.
+
+#### 🎯 Improved Ranged Weapons
+
+| Bundle | Price |
+| --- | ---: |
+| Improved M60 Machine Gun | 140 EB |
+| Improved Auto Shotgun | 120 EB |
+| Improved Sniper Rifle | 120 EB |
+| Improved SMG-5 | 120 EB |
+| Improved Compound Bow | 90 EB |
+| Improved Compound Crossbow | 90 EB |
+
+#### ⚔️ Improved Melee Weapons
+
+| Bundle | Price |
+| --- | ---: |
+| Improved Steel Spear | 90 EB |
+| Improved Steel Club | 90 EB |
+| Improved Steel Sledgehammer | 90 EB |
+| Improved Steel Knuckles | 90 EB |
+| Improved Machete | 90 EB |
+
+#### 🔧 Improved Power Tools
+
+| Bundle | Price |
+| --- | ---: |
+| Improved Chainsaw | 75 EB |
+| Improved Auger | 90 EB |
+| Improved Impact Driver | 90 EB |
+| Improved Nailgun | 140 EB |
+
+#### 🤖 Improved Robotics
+
+| Bundle | Price |
+| --- | ---: |
+| Improved Junk Sledge Drone | 180 EB |
+| Improved Junk Turret Drone | 180 EB |
+
 ## Installation
 
 1. Install **EV_EpicCash** — copy `EV_EpicCash` into your `7 Days to Die/Mods/` directory.
@@ -129,6 +170,13 @@ End-game named armor sets with a gold `#FFB800` tint. Each set grants a unique *
 - **Load Order:** The `ZZ_` prefix forces this mod to load after both `EV_*` and `Z_*` mods, which is required because recipes reference items defined in both.
 
 ## Changelog
+
+### v0.6.0
+
+- Added **17 Improved Weapon/Tool/Drone bundle recipes** from the `Z_Master_Skills` submod: 6 ranged weapons (M60, Auto Shotgun, Sniper Rifle, SMG-5, Compound Bow, Compound Crossbow), 5 melee weapons (Steel Spear / Club / Sledgehammer / Knuckles / Machete), 4 power tools (Chainsaw, Auger, Impact Driver, Nailgun), and 2 robotics drones (Junk Sledge, Junk Turret)
+- Each bundle yields a deterministic Quality 6 `Improved` piece — priced **75–180 EB** depending on role (bows cheapest, drones and Nailgun most expensive)
+- New bundles are grouped under their appropriate inventory tabs (**Ammo/Weapons → Ranged/Melee/Robotics**, **Tools/Traps**) and use the Improved-tint (`#8692FF`) convention
+- Added English and Russian localization strings for the new bundles
 
 ### v0.5.0
 
@@ -169,5 +217,5 @@ End-game named armor sets with a gold `#FFB800` tint. Each set grants a unique *
 ---
 
 **Author:** Aleksei Khozin\
-**Version:** 0.5.0\
+**Version:** 0.6.0\
 **Website:** [https://github.com/alekho77/epic_7d2d_mods](https://github.com/alekho77/epic_7d2d_mods)

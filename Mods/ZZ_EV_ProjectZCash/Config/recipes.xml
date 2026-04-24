@@ -173,6 +173,72 @@
 			<ingredient name="evCash" count="380"/>
 		</recipe>
 
+		<!-- =========================================================== -->
+		<!-- Project Z — Improved Weapons & Tools (Z_Master_Skills)       -->
+		<!-- Each bundle yields a deterministic Q6 "Improved" piece.      -->
+		<!-- Priced between Rare weapons (45-75 EB) and Legendary sets    -->
+		<!-- (300+ EB): mid-to-upper range.                               -->
+		<!-- =========================================================== -->
+
+		<!-- Improved Ranged Weapons -->
+		<recipe name="evGunM60ImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="140"/>
+		</recipe>
+		<recipe name="evGunAutoShotgunImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="120"/>
+		</recipe>
+		<recipe name="evGunSniperRifleImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="120"/>
+		</recipe>
+		<recipe name="evGunSMG5ImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="120"/>
+		</recipe>
+		<recipe name="evGunCompoundBowImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="90"/>
+		</recipe>
+		<recipe name="evGunCompoundCrossbowImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="90"/>
+		</recipe>
+
+		<!-- Improved Melee Weapons -->
+		<recipe name="evMeleeSteelSpearImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="90"/>
+		</recipe>
+		<recipe name="evMeleeSteelClubImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="90"/>
+		</recipe>
+		<recipe name="evMeleeSteelSledgehammerImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="90"/>
+		</recipe>
+		<recipe name="evMeleeSteelKnucklesImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="90"/>
+		</recipe>
+		<recipe name="evMeleeMacheteImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="90"/>
+		</recipe>
+
+		<!-- Improved Power Tools -->
+		<recipe name="evToolChainsawImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="75"/>
+		</recipe>
+		<recipe name="evToolAugerImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="90"/>
+		</recipe>
+		<recipe name="evToolImpactDriverImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="90"/>
+		</recipe>
+		<recipe name="evToolNailgunImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="140"/>
+		</recipe>
+
+		<!-- Improved Robotics -->
+		<recipe name="evGunJunkSledgeImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="180"/>
+		</recipe>
+		<recipe name="evGunJunkTurretImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="180"/>
+		</recipe>
+
 	</append>
 
 </config>

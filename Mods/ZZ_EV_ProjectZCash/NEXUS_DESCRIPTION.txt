@@ -27,10 +27,10 @@ The [font=Courier New]ZZ_[/font] folder prefix ensures the mod is loaded [b]afte
 [size=5][b]Features[/b][/size]
 
 [list]
-[*][b]38 Project Z Recipes[/b] — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, 9 Improved armor sets, and 5 Legendary named armor sets
+[*][b]55 Project Z Recipes[/b] — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, 9 Improved armor sets, 5 Legendary named armor sets, 11 Improved weapons, 4 Improved power tools, and 2 Improved robotics drones
 [*][b]Always Unlocked[/b] — no schematic or perk level required
 [*][b]Inventory Crafting[/b] — no workstation needed
-[*][b]Tiered Pricing[/b] — rare gear in the 45–75 EB range, Improved armor sets in the 150–200 EB range, Legendary weapons and armor sets priced very high (200–380 EB) to prevent instant end-game
+[*][b]Tiered Pricing[/b] — rare gear in the 45–75 EB range, Improved weapons/tools in the 75–180 EB range, Improved armor sets in the 150–200 EB range, Legendary weapons and armor sets priced very high (200–380 EB) to prevent instant end-game
 [/list]
 
 [size=5][b]Included Recipes[/b][/size]
@@ -120,6 +120,47 @@ End-game named armor sets with a gold [color=#FFB800]#FFB800[/color] tint. Each 
 [*][b]Maus Legendary Armor Set[/b] (380 EB) — Heavy armor, Maus class
 [/list]
 
+[size=4][b]Improved Weapons & Tools (from Z_Master_Skills)[/b][/size]
+
+Deterministic Quality 6 [color=#8692FF][b]Improved[/b][/color] weapons, tools, and drones. Normally gated behind the [font=Courier New]MasterWeapons[/font] / [font=Courier New]MasterTools[/font] perks and the Improved Workbench.
+
+[color=#FF3333][b]Improved Ranged Weapons[/b][/color]
+
+[list]
+[*][b]Improved M60 Machine Gun[/b] (140 EB)
+[*][b]Improved Auto Shotgun[/b] (120 EB)
+[*][b]Improved Sniper Rifle[/b] (120 EB)
+[*][b]Improved SMG-5[/b] (120 EB)
+[*][b]Improved Compound Bow[/b] (90 EB)
+[*][b]Improved Compound Crossbow[/b] (90 EB)
+[/list]
+
+[color=#AA55AA][b]Improved Melee Weapons[/b][/color]
+
+[list]
+[*][b]Improved Steel Spear[/b] (90 EB)
+[*][b]Improved Steel Club[/b] (90 EB)
+[*][b]Improved Steel Sledgehammer[/b] (90 EB)
+[*][b]Improved Steel Knuckles[/b] (90 EB)
+[*][b]Improved Machete[/b] (90 EB)
+[/list]
+
+[color=#55AAFF][b]Improved Power Tools[/b][/color]
+
+[list]
+[*][b]Improved Chainsaw[/b] (75 EB)
+[*][b]Improved Auger[/b] (90 EB)
+[*][b]Improved Impact Driver[/b] (90 EB)
+[*][b]Improved Nailgun[/b] (140 EB)
+[/list]
+
+[color=#55AAAA][b]Improved Robotics[/b][/color]
+
+[list]
+[*][b]Improved Junk Sledge Drone[/b] (180 EB)
+[*][b]Improved Junk Turret Drone[/b] (180 EB)
+[/list]
+
 [size=5][b]Installation[/b][/size]
 
 [list=1]
@@ -139,6 +180,15 @@ End-game named armor sets with a gold [color=#FFB800]#FFB800[/color] tint. Each 
 [/list]
 
 [size=5][b]Changelog[/b][/size]
+
+[size=4][b]v0.6.0[/b][/size]
+
+[list]
+[*]Added [b]17 Improved Weapon/Tool/Drone bundle recipes[/b] from the [font=Courier New]Z_Master_Skills[/font] submod: 6 ranged weapons (M60, Auto Shotgun, Sniper Rifle, SMG-5, Compound Bow, Compound Crossbow), 5 melee weapons (Steel Spear / Club / Sledgehammer / Knuckles / Machete), 4 power tools (Chainsaw, Auger, Impact Driver, Nailgun), and 2 robotics drones (Junk Sledge, Junk Turret)
+[*]Each bundle yields a deterministic Quality 6 [font=Courier New]Improved[/font] piece — priced [b]75–180 EB[/b] depending on role (bows cheapest, drones and Nailgun most expensive)
+[*]New bundles are grouped under their appropriate inventory tabs ([b]Ammo/Weapons → Ranged/Melee/Robotics[/b], [b]Tools/Traps[/b]) and use the Improved-tint ([font=Courier New]#8692FF[/font]) convention
+[*]Added English and Russian localization strings for the new bundles
+[/list]
 
 [size=4][b]v0.5.0[/b][/size]
 
