@@ -1073,6 +1073,119 @@
       </property>
     </item>
 
+    <!-- === Unique Armor Mods === -->
+    <item name="evModRadarBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Armor,Mods"/>
+      <property name="CustomIcon" value="modArmorNightVision"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModRadarBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modRadar"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModOkGoogleBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Armor,Mods"/>
+      <property name="CustomIcon" value="modArmorTreasureHunter"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModOkGoogleBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modOkGoogle"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModNerdBonusUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Armor,Mods"/>
+      <property name="CustomIcon" value="armorNerdOutfit"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModNerdBonusUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modNerdBonusUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModLightningRodBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Armor,Mods"/>
+      <property name="CustomIcon" value="electricwirerelay"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModLightningRodBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modLightningRod"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModReliableWindingBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Armor,Mods"/>
+      <property name="CustomIcon" value="meleeWpnKnucklesT0LeatherKnuckles"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModReliableWindingBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modReliableWinding"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModTerrainResistUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Armor,Mods"/>
+      <property name="CustomIcon" value="armorFarmerBoots"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModTerrainResistUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modTerrainResistUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModIrradiationResistUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Armor,Mods"/>
+      <property name="CustomIcon" value="falloutFlush"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModIrradiationResistUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modIrradiationResistUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModStabilityBoosterBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Armor,Mods"/>
+      <property name="CustomIcon" value="modArmorStealthBoots"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModStabilityBoosterBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modStabilityBooster"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
   </append>
 
 </config>

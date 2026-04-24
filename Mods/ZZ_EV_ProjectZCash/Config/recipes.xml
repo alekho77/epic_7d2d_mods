@@ -363,3 +363,32 @@
                         <ingredient name="evCash" count="70"/>
                 </recipe>
 
+                <!-- Project Z — Unique Armor Mods (Z_Rare_Modifiers) -->
+                <recipe name="evModRadarBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                        <ingredient name="evCash" count="100"/>
+                </recipe>
+                <recipe name="evModOkGoogleBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                        <ingredient name="evCash" count="70"/>
+                </recipe>
+                <recipe name="evModNerdBonusUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                        <ingredient name="evCash" count="150"/>
+                </recipe>
+                <recipe name="evModLightningRodBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                        <ingredient name="evCash" count="80"/>
+                </recipe>
+                <recipe name="evModReliableWindingBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                        <ingredient name="evCash" count="80"/>
+                </recipe>
+                <recipe name="evModTerrainResistUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                        <ingredient name="evCash" count="70"/>
+                </recipe>
+                <recipe name="evModIrradiationResistUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                        <ingredient name="evCash" count="90"/>
+                </recipe>
+                <recipe name="evModStabilityBoosterBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                        <ingredient name="evCash" count="80"/>
+                </recipe>
+
+
+	</append>
+</config>

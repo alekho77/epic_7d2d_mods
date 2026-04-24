@@ -22,10 +22,10 @@ Adds **Epic Bucks** crafting recipes for content from the **[Project Z](https://
 
 ## Features
 
-- **93 Project Z Recipes** — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, 9 Improved armor sets, 5 Legendary named armor sets, 11 Improved weapons, 4 Improved power tools, 2 Improved robotics drones, 5 Depleted Uranium ammo crates, and 33 Unique item-modifier bundles
+- **101 Project Z Recipes** — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, 9 Improved armor sets, 5 Legendary named armor sets, 11 Improved weapons, 4 Improved power tools, 2 Improved robotics drones, 5 Depleted Uranium ammo crates, 33 Unique item-modifier bundles, and 8 Unique armor-mod bundles
 - **Always Unlocked** — no schematic or perk level required
 - **Inventory Crafting** — no workstation needed
-- **Tiered Pricing** — Depleted Uranium ammo crates at 6 EB each, rare gear in the 45–75 EB range, Unique item-modifier bundles in the 50–90 EB range, Improved weapons/tools in the 75–180 EB range, Improved armor sets in the 150–200 EB range, Legendary weapons and armor sets priced very high (200–380 EB) to prevent instant end-game
+- **Tiered Pricing** — Depleted Uranium ammo crates at 6 EB each, rare gear in the 45–75 EB range, Unique item-modifier bundles in the 50–90 EB range, Unique armor-mod bundles in the 70–150 EB range, Improved weapons/tools in the 75–180 EB range, Improved armor sets in the 150–200 EB range, Legendary weapons and armor sets priced very high (200–380 EB) to prevent instant end-game
 
 ## Included Recipes
 
@@ -224,6 +224,21 @@ End-game gold-tint (`#FFB800`) item modifiers normally gated behind the Master c
 | Heavy Tip | Damage for Reactor Sledge drone | 70 EB |
 | Huge Supply | Magazine size for Improved Junk Turret | 70 EB |
 
+#### 🛡️ Unique Armor Mods
+
+Top-tier armor modifiers (gold-tint `#FFB800`) locked behind the Master Armor crafting perk at the Improved Workbench and dropped only from boss loot. Each bundle yields a single Quality 6 modifier.
+
+| Bundle | Slot | Effect | Price |
+| --- | --- | --- | ---: |
+| Radar | Head | Enemy radar overlay (buffRadar) | 100 EB |
+| OK Google | Head | +15% XP gain, +50 LootStage, reduced treasure blocks | 70 EB |
+| Nerd Bonus | Chest | +50% armor-point chance, +25% book-find chance | 150 EB |
+| Lightning Rod | Head | Full Shocked immunity + boss shock resist | 80 EB |
+| Reliable Winding | Hands | Immunity to boss drop-item debuff | 80 EB |
+| Terrain Resistance | Feet | Immunity to rough/snow/sand/destroyed-stone slowdowns | 70 EB |
+| Irradiation Resistance | Chest | Full radiation resistance | 90 EB |
+| Stability Booster | Feet | Boss knockdown resistance (stability) | 80 EB |
+
 ## Installation
 
 1. Install **EV_EpicCash** — copy `EV_EpicCash` into your `7 Days to Die/Mods/` directory.
@@ -239,6 +254,14 @@ End-game gold-tint (`#FFB800`) item modifiers normally gated behind the Master c
 - **Load Order:** The `ZZ_` prefix forces this mod to load after both `EV_*` and `Z_*` mods, which is required because recipes reference items defined in both.
 
 ## Changelog
+
+### v1.4.0
+
+- Added **8 Unique armor-mod bundle recipes** from the `Z_Rare_Modifiers` submod — gold-tint (`#FFB800`) head/chest/hands/feet armor modifiers normally locked behind the Master Armor crafting perk and dropped only from boss loot
+- **Top-tier picks** (70–150 EB): Radar (100 EB), OK Google (70 EB), Nerd Bonus (150 EB)
+- **High-value resistances** (70–90 EB): Lightning Rod (80 EB), Reliable Winding (80 EB), Terrain Resistance (70 EB), Irradiation Resistance (90 EB), Stability Booster (80 EB)
+- Also fixed missing `</append>` and `</config>` closing tags at the end of `recipes.xml`
+- Added English and Russian localization strings for the new bundles
 
 ### v1.3.0
 
@@ -312,5 +335,5 @@ End-game gold-tint (`#FFB800`) item modifiers normally gated behind the Master c
 ---
 
 **Author:** Aleksei Khozin\
-**Version:** 1.3.0\
+**Version:** 1.4.0\
 **Website:** [https://github.com/alekho77/epic_7d2d_mods](https://github.com/alekho77/epic_7d2d_mods)
