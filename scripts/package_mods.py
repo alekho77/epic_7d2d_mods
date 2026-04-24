@@ -2,9 +2,9 @@
 7 Days to Die — Mod Packager for NexusMods
 ==========================================
 
-Scans the /Mods folder for all EV_* modlets, reads each ModInfo.xml
-to extract name and version, and produces individual zip archives
-ready for upload to nexusmods.com.
+Scans the /Mods folder for all modlets (any subfolder containing a
+ModInfo.xml), reads each ModInfo.xml to extract name and version,
+and produces individual zip archives ready for upload to nexusmods.com.
 
 Usage
 -----
@@ -33,8 +33,9 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 MODS_DIR = REPO_ROOT / "Mods"
 DEFAULT_OUTPUT_DIR = REPO_ROOT / "dist"
 
-# Matches a single-mod release tag, e.g. "EV_EpicCash-v1.2.1".
-SINGLE_MOD_TAG_RE = re.compile(r"^(?P<mod>EV_[A-Za-z0-9_]+)-v(?P<version>\d+\.\d+\.\d+)$")
+# Matches a single-mod release tag, e.g. "EV_EpicCash-v1.2.1" or
+# "ZZ_EV_ProjectZCash-v1.0.0". The <mod> group is the mod folder name.
+SINGLE_MOD_TAG_RE = re.compile(r"^(?P<mod>[A-Za-z0-9_]+)-v(?P<version>\d+\.\d+\.\d+)$")
 
 # Files/patterns excluded from the archive (not needed in-game)
 EXCLUDE_NAMES = {"NEXUS_DESCRIPTION.txt", ".git", ".gitignore", "__pycache__"}
@@ -122,7 +123,7 @@ def package_mod(mod_path: Path, output_dir: Path) -> dict | None:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Package 7D2D EV_* mods into zip archives for NexusMods."
+        description="Package 7D2D mods from /Mods into zip archives for NexusMods."
     )
     parser.add_argument(
         "--output-dir",
@@ -134,16 +135,16 @@ def main():
         "--mods",
         type=str,
         default="",
-        help="Comma-separated list of mod folder names to package (default: all EV_* mods)",
+        help="Comma-separated list of mod folder names to package (default: all mods in /Mods)",
     )
     parser.add_argument(
         "--tag",
         type=str,
         default="",
         help=(
-            "Git tag driving this release. If it matches 'EV_<Name>-v<X.Y.Z>' only that"
+            "Git tag driving this release. If it matches '<ModFolder>-v<X.Y.Z>' only that"
             " mod is packaged and its version is verified against ModInfo.xml. Other"
-            " tag shapes (e.g. 'v2026.04.23') package all EV_* mods."
+            " tag shapes (e.g. '2026.04.23.7') package every mod in /Mods."
         ),
     )
     args = parser.parse_args()
@@ -174,7 +175,9 @@ def main():
     else:
         mod_dirs = sorted(
             p for p in MODS_DIR.iterdir()
-            if p.is_dir() and p.name.startswith("EV_")
+            if p.is_dir()
+            and not p.name.startswith(".")
+            and (p / "ModInfo.xml").is_file()
         )
 
     if not mod_dirs:

@@ -5,8 +5,9 @@ on:
     tags:
       # Repo-wide release (all mods)
       - "v*"
-      # Per-mod release, e.g. EV_EpicCash-v1.2.1
+      # Per-mod release, e.g. EV_EpicCash-v1.2.1 or ZZ_EV_ProjectZCash-v1.0.0
       - "EV_*-v*"
+      - "ZZ_EV_*-v*"
       # Date-based rolling tag, e.g. 2026.04.23.7
       - "[0-9][0-9][0-9][0-9].[0-9][0-9].[0-9][0-9].*"
   workflow_dispatch:
@@ -76,9 +77,9 @@ jobs:
 
           # Default release name mirrors the tag; refined below for single-mod tags.
           RELEASE_NAME="${TAG:-Manual build}"
-          if [[ "${TAG}" =~ ^(EV_[A-Za-z0-9_]+)-v([0-9]+\.[0-9]+\.[0-9]+)$ ]]; then
+          if [[ "${TAG}" =~ ^((ZZ_)?EV_[A-Za-z0-9_]+)-v([0-9]+\.[0-9]+\.[0-9]+)$ ]]; then
             MOD="${BASH_REMATCH[1]}"
-            VER="${BASH_REMATCH[2]}"
+            VER="${BASH_REMATCH[3]}"
             RELEASE_NAME="${MOD} v${VER}"
           elif [[ "${TAG}" =~ ^([0-9]{4}\.[0-9]{2}\.[0-9]{2})\.([0-9]+)$ ]]; then
             DATE="${BASH_REMATCH[1]}"
@@ -155,7 +156,7 @@ jobs:
               echo "| Tag | _<none — artifacts only>_ |"
             fi
             echo "| Release name | ${RELEASE_NAME:-_<not a release build>_} |"
-            echo "| Mods filter | ${MODS:-<all EV_* mods>} |"
+            echo "| Mods filter | ${MODS:-<all mods in /Mods>} |"
             if [ -n "${TAG}" ] && { [ "${EVENT}" != "workflow_call" ] || [ "${PUBLISH}" = "true" ]; }; then
               echo "| Release page | [${TAG}](${SERVER}/${REPO}/releases/tag/${TAG}) |"
             fi
