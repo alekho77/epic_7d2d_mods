@@ -22,7 +22,7 @@ Adds **Epic Bucks** crafting recipes for content from the **[Project Z](https://
 
 ## Features
 
-- **59 Project Z Recipes** — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, 9 Improved armor sets, 5 Legendary named armor sets, 11 Improved weapons, 4 Improved power tools, 2 Improved robotics drones, and 4 Depleted Uranium ammo crates
+- **60 Project Z Recipes** — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, 9 Improved armor sets, 5 Legendary named armor sets, 11 Improved weapons, 4 Improved power tools, 2 Improved robotics drones, and 5 Depleted Uranium ammo crates
 - **Always Unlocked** — no schematic or perk level required
 - **Inventory Crafting** — no workstation needed
 - **Tiered Pricing** — Depleted Uranium ammo crates at 6 EB each, rare gear in the 45–75 EB range, Improved weapons/tools in the 75–180 EB range, Improved armor sets in the 150–200 EB range, Legendary weapons and armor sets priced very high (200–380 EB) to prevent instant end-game
@@ -165,6 +165,7 @@ Experimental [5AFF75]Depleted Uranium[-] rounds — armor-ignoring, multi-target
 | 7.62mm DU Ammo Crate | 1000 | 6 EB |
 | .44 Magnum DU Ammo Crate | 1250 | 6 EB |
 | Shotgun DU Ammo Crate | 1000 | 6 EB |
+| Junk Turret DU Ammo Crate | 1000 | 6 EB |
 
 ## Installation
 
@@ -181,6 +182,11 @@ Experimental [5AFF75]Depleted Uranium[-] rounds — armor-ignoring, multi-target
 - **Load Order:** The `ZZ_` prefix forces this mod to load after both `EV_*` and `Z_*` mods, which is required because recipes reference items defined in both.
 
 ## Changelog
+
+### v1.2.0
+
+- Added a **5th Depleted Uranium ammo bundle**: Junk Turret DU ammunition (`ammoJunkTurretDU`) — 1000 rounds for **6 EB**, matching the pricing of the other DU crates
+- Added English and Russian localization strings for the new bundle
 
 ### v1.1.0
 
@@ -239,5 +245,5 @@ Experimental [5AFF75]Depleted Uranium[-] rounds — armor-ignoring, multi-target
 ---
 
 **Author:** Aleksei Khozin\
-**Version:** 1.1.0\
+**Version:** 1.2.0\
 **Website:** [https://github.com/alekho77/epic_7d2d_mods](https://github.com/alekho77/epic_7d2d_mods)

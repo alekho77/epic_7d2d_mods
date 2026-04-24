@@ -69,3 +69,5 @@ evAmmo44MagnumDUBundle,items,Item,,,.44 Magnum [5AFF75]Depleted Uranium[-] Ammo 
 evAmmo44MagnumDUBundleDesc,items,Item,,,Open to receive 1250 rounds of .44 Magnum [5AFF75]Depleted Uranium[-] ammunition.,Bundle description,,,,,,,,,Содержит 1250 патронов .44 Magnum [5AFF75](Обеднённый уран)[-].,,,
 evAmmoShotgunDUBundle,items,Item,,,Shotgun [5AFF75]Depleted Uranium[-] Ammo Crate (x1000),Bundle display name,,,,,,,,,Ящик патронов для дробовика [5AFF75](Обеднённый уран)[-] (x1000),,,
 evAmmoShotgunDUBundleDesc,items,Item,,,Open to receive 1000 shotgun shells of [5AFF75]Depleted Uranium[-] ammunition.,Bundle description,,,,,,,,,Содержит 1000 патронов для дробовика [5AFF75](Обеднённый уран)[-].,,,
+evAmmoJunkTurretDUBundle,items,Item,,,Junk Turret [5AFF75]Depleted Uranium[-] Ammo Crate (x1000),Bundle display name,,,,,,,,,Ящик боеприпасов для турели [5AFF75](Обеднённый уран)[-] (x1000),,,
+evAmmoJunkTurretDUBundleDesc,items,Item,,,Open to receive 1000 rounds of Junk Turret [5AFF75]Depleted Uranium[-] ammunition.,Bundle description,,,,,,,,,Содержит 1000 боеприпасов для турели [5AFF75](Обеднённый уран)[-].,,,

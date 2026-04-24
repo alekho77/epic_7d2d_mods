@@ -582,6 +582,20 @@
       </property>
     </item>
 
+    <item name="evAmmoJunkTurretDUBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Ammo"/>
+      <property name="CustomIcon" value="ammoJunkTurretRegular"/>
+      <property name="CustomIconTint" value="5AFF75"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmoJunkTurretDUBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammoJunkTurretDU"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
   </append>
 
 </config>

@@ -252,6 +252,9 @@
 		<recipe name="evAmmoShotgunDUBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="6"/>
 		</recipe>
+		<recipe name="evAmmoJunkTurretDUBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="6"/>
+		</recipe>
 
 	</append>
 
