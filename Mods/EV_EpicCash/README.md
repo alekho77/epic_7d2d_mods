@@ -263,7 +263,7 @@ The key in the first column must exactly match the `name` attribute of the item 
 Add a `<recipe>` block inside the `<append xpath="/recipes">` section in `Config/recipes.xml`.
 
 ```xml
-<recipe name="evMyCustomBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+<recipe name="evMyCustomBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
   <ingredient name="evCash" count="25"/>
 </recipe>
 ```
@@ -281,6 +281,12 @@ Add a `<recipe>` block inside the `<append xpath="/recipes">` section in `Config
 No `craft_area` attribute means the recipe is craftable directly from the player inventory with no workstation required.
 
 ## Changelog
+
+### v1.3.0
+
+- Bundle recipes now appear in the inventory crafting tabs alongside vanilla recipes — vehicle bundles show up under **Science** (same tab as vanilla vehicle parts), all skill magazine and skill book bundles also appear under **Science**, and the remaining bundles are distributed across **Ammo/Weapons**, **Clothing**, **Tools/Traps**, and **Food/Cooking**
+- All bundle recipes now use the standard vanilla `packMuleCrafting` tag, so they are properly scoped by the Pack Mule crafting-time perk just like every other inventory recipe
+- Crafting time raised from 1 → **2 seconds** for every bundle — still quick, but noticeable enough to prevent accidental mass-crafting
 
 ### v1.2.2
 
@@ -330,5 +336,5 @@ No `craft_area` attribute means the recipe is craftable directly from the player
 ---
 
 **Author:** Aleksei Khozin\
-**Version:** 1.2.1\
+**Version:** 1.3.0\
 **Website:** [https://github.com/alekho77/epic_7d2d_mods](https://github.com/alekho77/epic_7d2d_mods)

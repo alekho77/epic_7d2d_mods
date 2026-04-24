@@ -1,295 +1,295 @@
 <configs>
   <append xpath="/recipes">
     <!-- === VEHICLE BUNDLES === -->
-    <recipe name="evMotorcycleStarterBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evMotorcycleStarterBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="20"/>
     </recipe>
-    <recipe name="evMinibikeStarterBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evMinibikeStarterBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="15"/>
     </recipe>
-    <recipe name="evBicycleBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evBicycleBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="5"/>
     </recipe>
-    <recipe name="evTruckStarterBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evTruckStarterBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="50"/>
     </recipe>
-    <recipe name="evGyrocopterStarterBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evGyrocopterStarterBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="50"/>
     </recipe>
 
     <!-- === WEAPON BUNDLES === -->
-    <recipe name="evPistolBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evPistolBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="20"/>
     </recipe>
-    <recipe name="evSMG5Bundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evSMG5Bundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="50"/>
     </recipe>
-    <recipe name="evDesertVultureBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evDesertVultureBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="40"/>
     </recipe>
-    <recipe name="evPumpShotgunBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evPumpShotgunBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="20"/>
     </recipe>
-    <recipe name="evAutoShotgunBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evAutoShotgunBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="40"/>
     </recipe>
-    <recipe name="evSniperRifleBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evSniperRifleBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="40"/>
     </recipe>
-    <recipe name="evM60Bundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evM60Bundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="60"/>
     </recipe>
-    <recipe name="evRoboticTurretBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evRoboticTurretBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="30"/>
     </recipe>
 
     <!-- === AMMO BUNDLES === -->
-    <recipe name="evAmmo9mmBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evAmmo9mmBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="1"/>
     </recipe>
-    <recipe name="evAmmo9mmAPBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evAmmo9mmAPBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="3"/>
     </recipe>
-    <recipe name="evAmmo44Bundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evAmmo44Bundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="1"/>
     </recipe>
-    <recipe name="evAmmo44APBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evAmmo44APBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="3"/>
     </recipe>
-    <recipe name="evAmmo762Bundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evAmmo762Bundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="1"/>
     </recipe>
-    <recipe name="evAmmo762APBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evAmmo762APBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="3"/>
     </recipe>
-    <recipe name="evAmmoShotgunBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evAmmoShotgunBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="1"/>
     </recipe>
-    <recipe name="evAmmoShotgunAPBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evAmmoShotgunAPBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="3"/>
     </recipe>
-    <recipe name="evAmmoTurretBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evAmmoTurretBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="1"/>
     </recipe>
-    <recipe name="evAmmoTurretAPBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evAmmoTurretAPBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="3"/>
     </recipe>
 
     <!-- === ARMOR BUNDLES === -->
-    <recipe name="evArmorLumberjackBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evArmorLumberjackBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="40"/>
     </recipe>
-    <recipe name="evArmorPreacherBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evArmorPreacherBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="40"/>
     </recipe>
-    <recipe name="evArmorRogueBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evArmorRogueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="40"/>
     </recipe>
-    <recipe name="evArmorAthleticBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evArmorAthleticBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="40"/>
     </recipe>
-    <recipe name="evArmorEnforcerBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evArmorEnforcerBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="40"/>
     </recipe>
-    <recipe name="evArmorFarmerBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evArmorFarmerBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="40"/>
     </recipe>
-    <recipe name="evArmorBikerBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evArmorBikerBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="40"/>
     </recipe>
-    <recipe name="evArmorScavengerBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evArmorScavengerBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="40"/>
     </recipe>
-    <recipe name="evArmorRangerBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evArmorRangerBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="40"/>
     </recipe>
-    <recipe name="evArmorCommandoBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evArmorCommandoBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="40"/>
     </recipe>
-    <recipe name="evArmorAssassinBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evArmorAssassinBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="40"/>
     </recipe>
-    <recipe name="evArmorMinerBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evArmorMinerBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="40"/>
     </recipe>
-    <recipe name="evArmorNomadBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evArmorNomadBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="40"/>
     </recipe>
-    <recipe name="evArmorNerdBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evArmorNerdBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="40"/>
     </recipe>
-    <recipe name="evArmorRaiderBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evArmorRaiderBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="40"/>
     </recipe>
 
     <!-- === TOOL BUNDLES === -->
-    <recipe name="evNailgunBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evNailgunBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="30"/>
     </recipe>
-    <recipe name="evChainsawBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evChainsawBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="30"/>
     </recipe>
-    <recipe name="evAugerBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evAugerBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="30"/>
     </recipe>
-    <recipe name="evImpactDriverBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evImpactDriverBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="30"/>
     </recipe>
 
     <!-- === SKILL MAGAZINE BUNDLES === -->
-    <recipe name="evFoodMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evFoodMagazineBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="12"/>
     </recipe>
-    <recipe name="evMedicalMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evMedicalMagazineBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="12"/>
     </recipe>
-    <recipe name="evArmorMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evArmorMagazineBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="12"/>
     </recipe>
-    <recipe name="evVehiclesMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evVehiclesMagazineBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="12"/>
     </recipe>
-    <recipe name="evHarvestingToolsMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evHarvestingToolsMagazineBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="12"/>
     </recipe>
-    <recipe name="evRepairToolsMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evRepairToolsMagazineBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="12"/>
     </recipe>
-    <recipe name="evSalvageToolsMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evSalvageToolsMagazineBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="12"/>
     </recipe>
-    <recipe name="evKnucklesMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evKnucklesMagazineBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="12"/>
     </recipe>
-    <recipe name="evBladesMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evBladesMagazineBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="12"/>
     </recipe>
-    <recipe name="evClubsMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evClubsMagazineBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="12"/>
     </recipe>
-    <recipe name="evSledgehammersMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evSledgehammersMagazineBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="12"/>
     </recipe>
-    <recipe name="evSpearsMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evSpearsMagazineBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="12"/>
     </recipe>
-    <recipe name="evBowsMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evBowsMagazineBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="12"/>
     </recipe>
-    <recipe name="evHandgunsMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evHandgunsMagazineBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="12"/>
     </recipe>
-    <recipe name="evShotgunsMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evShotgunsMagazineBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="12"/>
     </recipe>
-    <recipe name="evRiflesMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evRiflesMagazineBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="12"/>
     </recipe>
-    <recipe name="evMachineGunsMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evMachineGunsMagazineBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="12"/>
     </recipe>
-    <recipe name="evExplosivesMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evExplosivesMagazineBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="12"/>
     </recipe>
-    <recipe name="evRoboticsMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evRoboticsMagazineBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="12"/>
     </recipe>
-    <recipe name="evSeedMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evSeedMagazineBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="12"/>
     </recipe>
-    <recipe name="evElectricianMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evElectricianMagazineBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="12"/>
     </recipe>
-    <recipe name="evTrapsMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evTrapsMagazineBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="12"/>
     </recipe>
-    <recipe name="evWorkstationMagazineBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evWorkstationMagazineBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="12"/>
     </recipe>
 
     <!-- === SKILL BOOK BUNDLES === -->
-    <recipe name="evFiremansAlmanacBookBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evFiremansAlmanacBookBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="25"/>
     </recipe>
-    <recipe name="evNightStalkerBookBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evNightStalkerBookBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="25"/>
     </recipe>
-    <recipe name="evLuckyLooterBookBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evLuckyLooterBookBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="25"/>
     </recipe>
-    <recipe name="evEnforcerBookBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evEnforcerBookBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="25"/>
     </recipe>
-    <recipe name="evBatterUpBookBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evBatterUpBookBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="25"/>
     </recipe>
-    <recipe name="evSledgeSagaBookBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evSledgeSagaBookBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="25"/>
     </recipe>
-    <recipe name="evGreatHeistBookBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evGreatHeistBookBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="25"/>
     </recipe>
-    <recipe name="evWasteTreasuresBookBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evWasteTreasuresBookBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="25"/>
     </recipe>
-    <recipe name="evHuntingJournalBookBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evHuntingJournalBookBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="25"/>
     </recipe>
-    <recipe name="evArtOfMiningBookBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evArtOfMiningBookBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="25"/>
     </recipe>
-    <recipe name="evRangersBookBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evRangersBookBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="25"/>
     </recipe>
-    <recipe name="evPistolPeteBookBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evPistolPeteBookBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="25"/>
     </recipe>
-    <recipe name="evShotgunMessiahBookBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evShotgunMessiahBookBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="25"/>
     </recipe>
-    <recipe name="evSniperBookBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evSniperBookBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="25"/>
     </recipe>
-    <recipe name="evAutoWeaponsBookBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evAutoWeaponsBookBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="25"/>
     </recipe>
-    <recipe name="evUrbanCombatBookBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evUrbanCombatBookBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="25"/>
     </recipe>
-    <recipe name="evTechJunkieBookBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evTechJunkieBookBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="25"/>
     </recipe>
-    <recipe name="evBarBrawlingBookBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evBarBrawlingBookBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="25"/>
     </recipe>
-    <recipe name="evSpearHunterBookBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evSpearHunterBookBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="25"/>
     </recipe>
 
     <!-- === WORKSTATION BUNDLE === -->
-    <recipe name="evWorkstationBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evWorkstationBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="25"/>
     </recipe>
 
     <!-- === FOOD BUNDLES === -->
-    <recipe name="evFoodSmallBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evFoodSmallBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="1"/>
     </recipe>
-    <recipe name="evFoodMediumBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evFoodMediumBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="2"/>
     </recipe>
-    <recipe name="evFoodLargeBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evFoodLargeBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="3"/>
     </recipe>
 
     <!-- === DRINK BUNDLES === -->
-    <recipe name="evDrinkSmallBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evDrinkSmallBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="1"/>
     </recipe>
-    <recipe name="evDrinkMediumBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evDrinkMediumBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="2"/>
     </recipe>
-    <recipe name="evDrinkLargeBundle" count="1" craft_time="1" always_unlocked="true" tags="packMuleCrafting">
+    <recipe name="evDrinkLargeBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="3"/>
     </recipe>
   </append>
