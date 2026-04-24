@@ -66,23 +66,23 @@ The mod ships with **92 ready-made bundles** across 10 categories, all craftable
 | Name | Contents | Description | Price |
 | --- | --- | --- | ---: |
 | Bicycle Kit | Bicycle, 2× Vehicle Storage mod | Fully assembled bicycle and 2 Vehicle Storage mods | 5 EB |
-| Minibike Starter Kit | Minibike, 3,000× Gas Can, Super Charger mod | Fully assembled minibike with 3,000 gasoline cans and a Super Charger mod | 7 EB |
-| Motorcycle Starter Kit | Motorcycle, 5,000× Gas Can, Fuel Saver mod | Fully assembled motorcycle with 5,000 gasoline cans and a Fuel Saver mod | 10 EB |
-| 4x4 Truck Starter Kit | 4x4 Truck, 12,000× Gas Can, Fuel Saver / Super Charger / Reserve Fuel Tank mods | Fully assembled 4x4 truck with 12,000 gasoline cans and 3 vehicle mods | 30 EB |
-| Gyrocopter Starter Kit | Gyrocopter, 12,000× Gas Can | Fully assembled gyrocopter and 12,000 gasoline cans | 30 EB |
+| Minibike Starter Kit | Minibike, 3,000× Gas Can, Super Charger mod | Fully assembled minibike with 3,000 gasoline cans and a Super Charger mod | 15 EB |
+| Motorcycle Starter Kit | Motorcycle, 5,000× Gas Can, Fuel Saver mod | Fully assembled motorcycle with 5,000 gasoline cans and a Fuel Saver mod | 20 EB |
+| 4x4 Truck Starter Kit | 4x4 Truck, 12,000× Gas Can, Fuel Saver / Super Charger / Reserve Fuel Tank mods | Fully assembled 4x4 truck with 12,000 gasoline cans and 3 vehicle mods | 50 EB |
+| Gyrocopter Starter Kit | Gyrocopter, 12,000× Gas Can | Fully assembled gyrocopter and 12,000 gasoline cans | 50 EB |
 
 ### 🔴 Weapon Bundles
 
 | Name | Contents | Description | Price |
 | --- | --- | --- | ---: |
-| Pistol Kit | T6 Pistol, 600× AP 9mm | Tier 6 Pistol and 600 AP 9mm rounds | 10 EB |
-| Pump Shotgun Kit | T6 Pump Shotgun, 600× AP Slugs | Tier 6 Pump Shotgun and 600 AP slugs | 10 EB |
-| Sniper Rifle Kit | T6 Sniper Rifle, 1,000× AP 7.62mm | Tier 6 Sniper Rifle and 1,000 AP 7.62mm rounds | 20 EB |
-| SMG-5 Kit | T6 SMG-5, 1,500× AP 9mm | Tier 6 SMG-5 and 1,500 AP 9mm rounds | 20 EB |
-| Desert Vulture Kit | T6 Desert Vulture, 1,000× AP .44 Magnum | Tier 6 Desert Vulture and 1,000 AP .44 Magnum rounds | 25 EB |
-| Auto Shotgun Kit | T6 Auto Shotgun, 1,000× AP Slugs | Tier 6 Auto Shotgun and 1,000 AP slugs | 25 EB |
-| Robotic Turret Kit | T6 Robotic Turret, 1,000× AP Turret Ammo | Tier 6 Robotic Turret and 1,000 AP turret rounds | 25 EB |
-| M60 Machine Gun Kit | T6 M60, 3,000× AP 7.62mm | Tier 6 M60 Machine Gun and 3,000 AP 7.62mm rounds | 40 EB |
+| Pistol Kit | T6 Pistol, 600× AP 9mm | Tier 6 Pistol and 600 AP 9mm rounds | 20 EB |
+| Pump Shotgun Kit | T6 Pump Shotgun, 600× AP Slugs | Tier 6 Pump Shotgun and 600 AP slugs | 20 EB |
+| Sniper Rifle Kit | T6 Sniper Rifle, 1,000× AP 7.62mm | Tier 6 Sniper Rifle and 1,000 AP 7.62mm rounds | 40 EB |
+| SMG-5 Kit | T6 SMG-5, 1,500× AP 9mm | Tier 6 SMG-5 and 1,500 AP 9mm rounds | 50 EB |
+| Desert Vulture Kit | T6 Desert Vulture, 1,000× AP .44 Magnum | Tier 6 Desert Vulture and 1,000 AP .44 Magnum rounds | 40 EB |
+| Auto Shotgun Kit | T6 Auto Shotgun, 1,000× AP Slugs | Tier 6 Auto Shotgun and 1,000 AP slugs | 40 EB |
+| Robotic Turret Kit | T6 Robotic Turret, 1,000× AP Turret Ammo | Tier 6 Robotic Turret and 1,000 AP turret rounds | 30 EB |
+| M60 Machine Gun Kit | T6 M60, 3,000× AP 7.62mm | Tier 6 M60 Machine Gun and 3,000 AP 7.62mm rounds | 60 EB |
 
 ### 🟡 Ammo Bundles
 
@@ -105,30 +105,30 @@ All armor bundles include a full Tier 6 set — helmet, outfit, gloves, and boot
 
 | Name | Contents | Description | Price |
 | --- | --- | --- | ---: |
-| Lumberjack Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Lumberjack armor set | 10 EB |
-| Preacher Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Preacher armor set | 10 EB |
-| Farmer Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Farmer armor set | 10 EB |
-| Miner Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Miner armor set | 10 EB |
-| Nomad Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Nomad armor set | 10 EB |
-| Rogue Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Rogue armor set | 15 EB |
-| Athletic Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Athletic armor set | 15 EB |
-| Biker Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Biker armor set | 15 EB |
-| Scavenger Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Scavenger armor set | 15 EB |
-| Ranger Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Ranger armor set | 15 EB |
-| Enforcer Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Enforcer armor set | 20 EB |
-| Commando Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Commando armor set | 20 EB |
-| Assassin Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Assassin armor set | 20 EB |
-| Nerd Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Nerd armor set | 20 EB |
-| Raider Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Raider armor set | 20 EB |
+| Lumberjack Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Lumberjack armor set | 20 EB |
+| Preacher Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Preacher armor set | 20 EB |
+| Farmer Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Farmer armor set | 20 EB |
+| Miner Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Miner armor set | 20 EB |
+| Nomad Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Nomad armor set | 20 EB |
+| Rogue Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Rogue armor set | 30 EB |
+| Athletic Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Athletic armor set | 30 EB |
+| Biker Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Biker armor set | 30 EB |
+| Scavenger Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Scavenger armor set | 30 EB |
+| Ranger Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Ranger armor set | 30 EB |
+| Enforcer Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Enforcer armor set | 40 EB |
+| Commando Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Commando armor set | 40 EB |
+| Assassin Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Assassin armor set | 40 EB |
+| Nerd Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Nerd armor set | 40 EB |
+| Raider Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Raider armor set | 40 EB |
 
 ### 🟢 Tool Bundles
 
 | Name | Contents | Description | Price |
 | --- | --- | --- | ---: |
-| Nailgun Kit | T6 Nailgun | Tier 6 Nailgun | 5 EB |
-| Impact Driver Kit | T6 Impact Driver | Tier 6 Impact Driver | 5 EB |
-| Chainsaw Kit | T6 Chainsaw | Tier 6 Chainsaw | 12 EB |
-| Auger Kit | T6 Auger | Tier 6 Auger | 20 EB |
+| Nailgun Kit | T6 Nailgun | Tier 6 Nailgun | 10 EB |
+| Impact Driver Kit | T6 Impact Driver | Tier 6 Impact Driver | 10 EB |
+| Chainsaw Kit | T6 Chainsaw | Tier 6 Chainsaw | 20 EB |
+| Auger Kit | T6 Auger | Tier 6 Auger | 30 EB |
 
 ### 🟣 Skill Magazine Bundles
 
