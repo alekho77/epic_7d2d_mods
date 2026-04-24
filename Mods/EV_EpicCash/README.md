@@ -128,7 +128,7 @@ Most tool bundles contain a single Tier 6 tool. Nailgun Kit also includes a stac
 | Name | Contents | Description | Price |
 | --- | --- | --- | ---: |
 | Nailgun Kit | T6 Nailgun, 500× Concrete Mix | Tier 6 Nailgun plus 500 Concrete Mix | 30 EB |
-| Impact Driver Kit | T6 Impact Driver | Tier 6 Impact Driver | 10 EB |
+| Impact Driver Kit | T6 Impact Driver | Tier 6 Impact Driver | 30 EB |
 | Chainsaw Kit | T6 Chainsaw | Tier 6 Chainsaw | 20 EB |
 | Auger Kit | T6 Auger | Tier 6 Auger | 30 EB |
 

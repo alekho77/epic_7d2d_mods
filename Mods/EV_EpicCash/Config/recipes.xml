@@ -127,13 +127,13 @@
       <ingredient name="evCash" count="30"/>
     </recipe>
     <recipe name="evChainsawBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
-      <ingredient name="evCash" count="20"/>
+      <ingredient name="evCash" count="30"/>
     </recipe>
     <recipe name="evAugerBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
       <ingredient name="evCash" count="30"/>
     </recipe>
     <recipe name="evImpactDriverBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
-      <ingredient name="evCash" count="10"/>
+      <ingredient name="evCash" count="30"/>
     </recipe>
 
     <!-- === SKILL MAGAZINE BUNDLES === -->
