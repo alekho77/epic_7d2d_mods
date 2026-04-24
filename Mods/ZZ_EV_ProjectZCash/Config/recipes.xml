@@ -54,6 +54,54 @@
 			<ingredient name="evCash" count="50"/>
 		</recipe>
 
+		<!-- Tools (Rare T3) -->
+		<recipe name="rareAugerBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="55"/>
+		</recipe>
+		<recipe name="rareChainsawBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="50"/>
+		</recipe>
+
+		<!-- =========================================================== -->
+		<!-- Project Z — Legendary (Unique) Weapon Bundles                -->
+		<!-- End-game tier above Rare. Intentionally priced very high so  -->
+		<!-- a single purchase is not a shortcut to full end-game gear.   -->
+		<!-- =========================================================== -->
+
+		<!-- Ranged -->
+		<recipe name="UniqueBuldogBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="350"/>
+		</recipe>
+		<recipe name="UniqueEraserBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="300"/>
+		</recipe>
+		<recipe name="UniqueGausBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="300"/>
+		</recipe>
+		<recipe name="UniqueZingerBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="300"/>
+		</recipe>
+
+		<!-- Melee -->
+		<recipe name="UniqueCombistickBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="200"/>
+		</recipe>
+		<recipe name="UniqueBarbarianBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="200"/>
+		</recipe>
+		<recipe name="UniqueDestructorBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="200"/>
+		</recipe>
+		<recipe name="UniqueMausClawsBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="200"/>
+		</recipe>
+		<recipe name="UniqueIndianaBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="200"/>
+		</recipe>
+		<recipe name="UniqueFlugenBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="200"/>
+		</recipe>
+
 	</append>
 
 </config>

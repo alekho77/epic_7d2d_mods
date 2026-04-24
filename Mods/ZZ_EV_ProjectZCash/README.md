@@ -22,10 +22,10 @@ Adds **Epic Bucks** crafting recipes for content from the **[Project Z](https://
 
 ## Features
 
-- **12 Rare Weapon Recipes** — craft random Tier 6 rare variants of Project Z weapons for Epic Bucks
+- **24 Project Z Recipes** — 12 rare weapons, 2 rare tools, and 10 legendary unique weapons
 - **Always Unlocked** — no schematic or perk level required
 - **Inventory Crafting** — no workstation needed
-- **Impact-Based Pricing** — aligned with the EpicCash v1.2.2 pricing model
+- **Tiered Pricing** — rare gear in the 45–75 EB range, legendary gear priced very high (200–350 EB) to prevent instant end-game
 
 ## Included Recipes
 
@@ -55,6 +55,37 @@ Each bundle yields **one random rare variant** (Quality 6) of the weapon with a 
 | Rare Machete (T3) | Convenient / Unkillable / Universal | 45 EB |
 | Rare Stun Baton (T3) | Convenient / Unkillable / Experienced | 50 EB |
 
+#### 🔧 Tools
+
+| Bundle | Variants | Price |
+| --- | --- | ---: |
+| Rare Auger | Metalist / Mason / Digger / Unkillable | 55 EB |
+| Rare Chainsaw | Lumberjack / Unkillable | 50 EB |
+
+### Legendary Unique Weapons (from `Z_Master_Skills`)
+
+End-game named weapons above the Rare tier (unique model, bronze `#C27E53` tint, powerful legendary passives). Each bundle yields **one random legendary variant** at Quality 6. Prices are intentionally set very high so that a single purchase does not act as a shortcut to full end-game gear.
+
+#### 🎯 Ranged Weapons (Legendary)
+
+| Bundle | Class | Variants | Price |
+| --- | --- | --- | ---: |
+| Unique Buldog | M60-class (7.62 mm) | Arsonist / URANUS / Breeze / Unkillable / Avenger / Berserk | 350 EB |
+| Unique Eraser | Auto Shotgun | Arsonist / URANUS / Unkillable / Avenger / Berserk | 300 EB |
+| Unique Gaus | Sniper Rifle | Arsonist / Tesla / URANUS / Unkillable | 300 EB |
+| Unique Zinger | SMG-5 | Arsonist / URANUS / Breeze / Unkillable / Avenger / Berserk | 300 EB |
+
+#### ⚔️ Melee Weapons (Legendary)
+
+| Bundle | Class | Variants | Price |
+| --- | --- | --- | ---: |
+| Unique Combistick | Spear | Crisis / Crusher / Masterpiece / Guardian / Surgeon | 200 EB |
+| Unique Barbarian | Axe | Crisis / Crusher / Masterpiece / Guardian | 200 EB |
+| Unique Destructor | Sledgehammer | Crisis / Crusher / Masterpiece / Guardian | 200 EB |
+| Unique Maus Claws | Knuckles | Crisis / Crusher / Masterpiece / Guardian / Surgeon | 200 EB |
+| Unique Indiana | Machete | Crisis / Crusher / Masterpiece / Guardian / Surgeon | 200 EB |
+| Unique Flugen | Stun Baton | Crisis / Crusher / Masterpiece / Guardian | 200 EB |
+
 ## Installation
 
 1. Install **EV_EpicCash** — copy `EV_EpicCash` into your `7 Days to Die/Mods/` directory.
@@ -71,6 +102,11 @@ Each bundle yields **one random rare variant** (Quality 6) of the weapon with a 
 
 ## Changelog
 
+### v0.2.0
+
+- Added 2 rare tool bundle recipes from `Z_RareItems`: Auger (55 EB), Chainsaw (50 EB)
+- Added 10 legendary unique weapon bundle recipes from `Z_Master_Skills`: 4 ranged (300–350 EB) + 6 melee (200 EB each)
+
 ### v0.1.0
 
 - Initial release with 12 Project Z rare weapon bundle recipes (6 ranged + 6 melee)
@@ -85,5 +121,5 @@ Each bundle yields **one random rare variant** (Quality 6) of the weapon with a 
 ---
 
 **Author:** Aleksei Khozin\
-**Version:** 0.1.0\
+**Version:** 0.2.0\
 **Website:** [https://github.com/alekho77/epic_7d2d_mods](https://github.com/alekho77/epic_7d2d_mods)
