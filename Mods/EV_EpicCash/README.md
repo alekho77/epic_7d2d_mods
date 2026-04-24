@@ -105,16 +105,16 @@ All armor bundles include a full Tier 6 set — helmet, outfit, gloves, and boot
 
 | Name | Contents | Description | Price |
 | --- | --- | --- | ---: |
-| Lumberjack Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Lumberjack armor set | 20 EB |
-| Preacher Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Preacher armor set | 20 EB |
-| Farmer Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Farmer armor set | 20 EB |
-| Miner Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Miner armor set | 20 EB |
-| Nomad Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Nomad armor set | 20 EB |
-| Rogue Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Rogue armor set | 30 EB |
-| Athletic Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Athletic armor set | 30 EB |
-| Biker Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Biker armor set | 30 EB |
-| Scavenger Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Scavenger armor set | 30 EB |
-| Ranger Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Ranger armor set | 30 EB |
+| Lumberjack Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Lumberjack armor set | 40 EB |
+| Preacher Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Preacher armor set | 40 EB |
+| Farmer Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Farmer armor set | 40 EB |
+| Miner Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Miner armor set | 40 EB |
+| Nomad Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Nomad armor set | 40 EB |
+| Rogue Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Rogue armor set | 40 EB |
+| Athletic Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Athletic armor set | 40 EB |
+| Biker Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Biker armor set | 40 EB |
+| Scavenger Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Scavenger armor set | 40 EB |
+| Ranger Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Ranger armor set | 40 EB |
 | Enforcer Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Enforcer armor set | 40 EB |
 | Commando Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Commando armor set | 40 EB |
 | Assassin Armor Set | T6 helmet, outfit, gloves, boots | Full Tier 6 Assassin armor set | 40 EB |
