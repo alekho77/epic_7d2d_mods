@@ -1,0 +1,95 @@
+[size=6][b]ZZ_EV_ProjectZCash — EpicCash Recipes for Project Z[/b][/size]
+
+[size=5][b]Description[/b][/size]
+
+Adds [b]Epic Bucks[/b] crafting recipes for content from the [url=https://7dtdprojectz.com/]Project Z[/url] modpack. Players can spend Epic Bucks ([font=Courier New]evCash[/font]) to craft rare weapon bundles added by [font=Courier New]Z_RareItems[/font], turning the EpicCash economy into a gateway to Project Z's rare gear.
+
+[quote]
+[color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
+
+[b]If you are running a dedicated server, this mod only needs to be installed on the server.[/b]
+Players connecting to the server [b]do not need to download or install anything[/b] on their game clients — all changes are synced automatically when they join.
+[/quote]
+
+[quote]
+[color=#cc9900][size=4][b]Requires Two Base Mods[/b][/size][/color]
+
+This modlet is an [b]add-on[/b] and does nothing on its own. It requires both base mods to be installed and loaded before it:
+
+[list=1]
+[*][url=https://github.com/alekho77/epic_7d2d_mods][b]EV_EpicCash[/b][/url] — provides the [font=Courier New]evCash[/font] currency used as the ingredient for all recipes.
+[*][url=https://7dtdprojectz.com/][b]Project Z[/b][/url] — specifically the [font=Courier New]Z_RareItems[/font] submod, which defines the rare weapon bundles this mod unlocks for crafting.
+[/list]
+
+The [font=Courier New]ZZ_[/font] folder prefix ensures the mod is loaded [b]after[/b] [font=Courier New]EV_*[/font] and [font=Courier New]Z_*[/font] mods (7D2D loads mods alphabetically by folder name), so all referenced items already exist when recipes are registered.
+[/quote]
+
+[size=5][b]Features[/b][/size]
+
+[list]
+[*][b]12 Rare Weapon Recipes[/b] — craft random Tier 6 rare variants of Project Z weapons for Epic Bucks
+[*][b]Always Unlocked[/b] — no schematic or perk level required
+[*][b]Inventory Crafting[/b] — no workstation needed
+[*][b]Impact-Based Pricing[/b] — aligned with the EpicCash v1.2.2 pricing model
+[/list]
+
+[size=5][b]Included Recipes[/b][/size]
+
+Each bundle yields [b]one random rare variant[/b] (Quality 6) of the weapon with a unique passive bonus (headshot multiplier, knockdown, vampirism, fast reload, etc.) rolled from the Project Z rare pool.
+
+[color=#FF3333][size=4][b]Ranged Weapons[/b][/size][/color]
+
+[list]
+[*][b]Rare Sniper Rifle[/b] (55 EB) — Crusher / Unkillable / Knockdown / Stable
+[*][b]Rare Auto Shotgun[/b] (55 EB) — Crusher / Unkillable / Snowstorm / Universal
+[*][b]Rare M60 Machine Gun[/b] (75 EB) — Snowstorm / Universal / Unkillable / Stable
+[*][b]Rare SMG-5[/b] (65 EB) — Snowstorm / Unkillable / Stable / Universal
+[*][b]Rare Desert Vulture[/b] (55 EB) — Experienced / Universal / Knockdown / Vampire
+[*][b]Rare Archery[/b] (50 EB) — Compound Bow / Crossbow × Robinhood / Ninja / Vampire
+[/list]
+
+[color=#AA55AA][size=4][b]Melee Weapons[/b][/size][/color]
+
+[list]
+[*][b]Rare Steel Spear (T3)[/b] (45 EB) — Awl / Convenient / Universal
+[*][b]Rare Steel Club (T3)[/b] (45 EB) — Experienced / Universal / Unkillable
+[*][b]Rare Steel Sledgehammer (T3)[/b] (45 EB) — Champion / Convenient / Vampire
+[*][b]Rare Steel Knuckles (T3)[/b] (45 EB) — Awl / Convenient / Experienced / Butcher
+[*][b]Rare Machete (T3)[/b] (45 EB) — Convenient / Unkillable / Universal
+[*][b]Rare Stun Baton (T3)[/b] (50 EB) — Convenient / Unkillable / Experienced
+[/list]
+
+[size=5][b]Installation[/b][/size]
+
+[list=1]
+[*]Install [b]EV_EpicCash[/b] — copy [font=Courier New]EV_EpicCash[/font] into your [font=Courier New]7 Days to Die/Mods/[/font] directory.
+[*]Install [b]Project Z[/b] — at minimum the [font=Courier New]Z_RareItems[/font] submod must be present in [font=Courier New]Mods/[/font].
+[*]Copy the [b]ZZ_EV_ProjectZCash[/b] folder into the same [font=Courier New]Mods/[/font] directory.
+[*]Restart the game or server.
+[/list]
+
+[size=5][b]Compatibility[/b][/size]
+
+[list]
+[*][b]Game Version:[/b] 7 Days to Die (latest stable)
+[*][b]Type:[/b] XML modlet (recipes only — no items, no buffs, no Harmony)
+[*][b]Multiplayer:[/b] Server-side only — clients do not need this mod installed.
+[*][b]Load Order:[/b] The [font=Courier New]ZZ_[/font] prefix forces this mod to load after both [font=Courier New]EV_*[/font] and [font=Courier New]Z_*[/font] mods, which is required because recipes reference items defined in both.
+[/list]
+
+[size=5][b]Changelog[/b][/size]
+
+[size=4][b]v0.1.0[/b][/size]
+
+[list]
+[*]Initial release with 12 Project Z rare weapon bundle recipes (6 ranged + 6 melee)
+[/list]
+
+[size=5][b]Credits[/b][/size]
+
+[list]
+[*][b]Base currency mod:[/b] [url=https://github.com/alekho77/epic_7d2d_mods]EV_EpicCash[/url] by Aleksei Khozin
+[*][b]Base content mod:[/b] [url=https://7dtdprojectz.com/]Project Z[/url] by BlackRabbit — specifically the [font=Courier New]Z_RareItems[/font] submod
+[*][b]Author:[/b] Aleksei Khozin
+[*][b]Community:[/b] [url=https://steamcommunity.com/groups/EpicVales]EpicVales Steam Group[/url]
+[/list]
