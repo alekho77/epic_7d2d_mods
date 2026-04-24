@@ -1243,6 +1243,63 @@
       </property>
     </item>
 
+    <!-- === Unique Vehicle Mods === -->
+    <item name="evModVehicleFuelSystemUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Vehicles,Mods"/>
+      <property name="CustomIcon" value="modVehicleReserveFuelTank"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModVehicleFuelSystemUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modVehicleFuelSystemUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModVehicleSuperChargerUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Vehicles,Mods"/>
+      <property name="CustomIcon" value="modVehicleSuperCharger"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModVehicleSuperChargerUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modVehicleSuperChargerUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModVehiclePlowUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Vehicles,Mods"/>
+      <property name="CustomIcon" value="modVehiclePlow"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModVehiclePlowUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modVehiclePlowUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModVehicleArmorUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Vehicles,Mods"/>
+      <property name="CustomIcon" value="modVehicleArmor"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModVehicleArmorUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modVehicleArmorUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
   </append>
 
 </config>

@@ -22,7 +22,7 @@ Adds **Epic Bucks** crafting recipes for content from the **[Project Z](https://
 
 ## Features
 
-- **105 Project Z Recipes** — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, 9 Improved armor sets, 5 Legendary named armor sets, 11 Improved weapons, 4 Improved power tools, 2 Improved robotics drones, 5 Depleted Uranium ammo crates, 33 Unique item-modifier bundles, 8 Unique armor-mod bundles, and the 4-piece Z Protector armor-mod set
+- **109 Project Z Recipes** — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, 9 Improved armor sets, 5 Legendary named armor sets, 11 Improved weapons, 4 Improved power tools, 2 Improved robotics drones, 5 Depleted Uranium ammo crates, 33 Unique item-modifier bundles, 8 Unique armor-mod bundles, the 4-piece Z Protector armor-mod set, and 4 Unique vehicle-mod bundles
 - **Always Unlocked** — no schematic or perk level required
 - **Inventory Crafting** — no workstation needed
 - **Tiered Pricing** — Depleted Uranium ammo crates at 6 EB each, rare gear in the 45–75 EB range, Unique item-modifier bundles in the 50–90 EB range, Unique armor-mod bundles in the 70–150 EB range, Improved weapons/tools in the 75–180 EB range, Improved armor sets in the 150–200 EB range, Legendary weapons and armor sets priced very high (200–380 EB) to prevent instant end-game, and the Z Protector set priced at 100 EB per piece (400 EB for the full set) because full storm immunity trivializes biome hazards
@@ -250,6 +250,17 @@ A 4-piece armor-mod set that grants **full biome-storm immunity** when all four 
 | Z Protector Gloves | Hands | +2 PDR, +5 cold/heat, +rad, `$StormResistGloves` | 100 EB |
 | Z Protector Boots | Feet | +2 PDR, +5 cold/heat, +rad, `$StormResistBoots` | 100 EB |
 
+#### 🚗 Unique Vehicle Mods
+
+Top-tier vehicle modifiers (gold-tint `#FFB800`) locked behind the Master Vehicle crafting perk at the Improved Workbench and dropped only from boss loot. Each bundle yields a single Quality 6 modifier.
+
+| Bundle | Slot | Effect | Price |
+| --- | --- | --- | ---: |
+| Vehicle Fuel System | Engine | −75% fuel use, +300% fuel tank capacity | 90 EB |
+| Vehicle SuperCharger | Engine | +60% torque, +90% top speed | 70 EB |
+| Vehicle Plow | Plow | +300% ram damage (entities and blocks) | 50 EB |
+| Vehicle Armor | Armor | +300% ram damage with reduced self-damage | 50 EB |
+
 ## Installation
 
 1. Install **EV_EpicCash** — copy `EV_EpicCash` into your `7 Days to Die/Mods/` directory.
@@ -265,6 +276,14 @@ A 4-piece armor-mod set that grants **full biome-storm immunity** when all four 
 - **Load Order:** The `ZZ_` prefix forces this mod to load after both `EV_*` and `Z_*` mods, which is required because recipes reference items defined in both.
 
 ## Changelog
+
+### v1.6.0
+
+- Added **4 Unique vehicle-mod bundle recipes** from the `Z_Rare_Modifiers` submod
+- **Vehicle Fuel System** (90 EB) — most valuable: −75% fuel use + 4× fuel tank
+- **Vehicle SuperCharger** (70 EB) — +60% torque, +90% top speed
+- **Vehicle Plow** (50 EB) and **Vehicle Armor** (50 EB) — +300% ram damage
+- Added English and Russian localization strings for the new bundles
 
 ### v1.5.0
 
@@ -353,5 +372,5 @@ A 4-piece armor-mod set that grants **full biome-storm immunity** when all four 
 ---
 
 **Author:** Aleksei Khozin\
-**Version:** 1.5.0\
+**Version:** 1.6.0\
 **Website:** [https://github.com/alekho77/epic_7d2d_mods](https://github.com/alekho77/epic_7d2d_mods)

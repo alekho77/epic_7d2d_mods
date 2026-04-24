@@ -403,3 +403,17 @@
                         <ingredient name="evCash" count="100"/>
                 </recipe>
 
+                <!-- Project Z — Unique Vehicle Mods (Z_Rare_Modifiers) -->
+                <recipe name="evModVehicleFuelSystemUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                        <ingredient name="evCash" count="90"/>
+                </recipe>
+                <recipe name="evModVehicleSuperChargerUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                        <ingredient name="evCash" count="70"/>
+                </recipe>
+                <recipe name="evModVehiclePlowUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                        <ingredient name="evCash" count="50"/>
+                </recipe>
+                <recipe name="evModVehicleArmorUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                        <ingredient name="evCash" count="50"/>
+                </recipe>
+
