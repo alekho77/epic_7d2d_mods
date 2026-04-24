@@ -282,6 +282,14 @@ No `craft_area` attribute means the recipe is craftable directly from the player
 
 ## Changelog
 
+### v1.2.2
+
+- Unified all armor bundle prices to **40 EB** — removed tiered pricing; all 15 armor sets now cost the same
+- **Tools** repriced for consistency: Nailgun Kit 5 → **30 EB**, Impact Driver Kit 5 → **30 EB**, Chainsaw Kit 12 → **30 EB**, Auger Kit 20 → **30 EB**
+- Nailgun Kit contents updated: now includes a T3 Nailgun (×6) **and** 500 Concrete Mix
+- Unified all Skill Book bundle prices to **25 EB** — removed tiered S/A/B pricing; all 19 book sets now cost the same
+- Food and drink bundle descriptions updated to document the actual random item pools
+
 ### v1.2.1
 
 - Fine-tuned magazine and book bundle prices to better fit servers that run this mod alongside other modpacks (which often hand out books and magazines much faster than vanilla) while still making sense on pure vanilla servers

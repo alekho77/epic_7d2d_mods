@@ -222,6 +222,16 @@ All book bundles contain the complete set of 7 volumes. Every Skill Book Bundle 
 
 [size=5][b]Changelog[/b][/size]
 
+[size=4][b]v1.2.2[/b][/size]
+
+[list]
+[*]Unified all armor bundle prices to [b]40 EB[/b] — removed tiered pricing; all 15 armor sets now cost the same
+[*][b]Tools[/b] repriced for consistency: Nailgun Kit 5 → [b]30 EB[/b], Impact Driver Kit 5 → [b]30 EB[/b], Chainsaw Kit 12 → [b]30 EB[/b], Auger Kit 20 → [b]30 EB[/b]
+[*]Nailgun Kit contents updated: now includes a T3 Nailgun (×6) [b]and[/b] 500 Concrete Mix
+[*]Unified all Skill Book bundle prices to [b]25 EB[/b] — removed tiered S/A/B pricing; all 19 book sets now cost the same
+[*]Food and drink bundle descriptions updated to document the actual random item pools
+[/list]
+
 [size=4][b]v1.2.1[/b][/size]
 
 [list]
