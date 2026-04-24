@@ -519,6 +519,69 @@
       </property>
     </item>
 
+    <!--
+      Depleted Uranium Ammo bundles (Z_Master_Skills).
+      DU rounds cannot be crafted and are normally obtainable only from
+      boss loot or the support radio request system. These bundles provide
+      a paid alternative via Epic Bucks. Bundle icon uses the DU tint
+      (#5AFF75) to visually match the Project Z convention.
+    -->
+    <item name="evAmmo9mmDUBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Ammo"/>
+      <property name="CustomIcon" value="ammo9mmBulletBall"/>
+      <property name="CustomIconTint" value="5AFF75"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmo9mmDUBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammo9mmBulletDU"/>
+        <property name="Create_item_count" value="1500"/>
+      </property>
+    </item>
+
+    <item name="evAmmo762DUBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Ammo"/>
+      <property name="CustomIcon" value="ammo762mmBulletBall"/>
+      <property name="CustomIconTint" value="5AFF75"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmo762DUBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammo762mmBulletDU"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
+    <item name="evAmmo44MagnumDUBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Ammo"/>
+      <property name="CustomIcon" value="ammo44MagnumBulletBall"/>
+      <property name="CustomIconTint" value="5AFF75"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmo44MagnumDUBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammo44MagnumBulletDU"/>
+        <property name="Create_item_count" value="1250"/>
+      </property>
+    </item>
+
+    <item name="evAmmoShotgunDUBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Ammo"/>
+      <property name="CustomIcon" value="ammoShotgunShell"/>
+      <property name="CustomIconTint" value="5AFF75"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmoShotgunDUBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammoShotgunSlugDU"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
   </append>
 
 </config>

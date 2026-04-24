@@ -22,10 +22,10 @@ Adds **Epic Bucks** crafting recipes for content from the **[Project Z](https://
 
 ## Features
 
-- **55 Project Z Recipes** — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, 9 Improved armor sets, 5 Legendary named armor sets, 11 Improved weapons, 4 Improved power tools, and 2 Improved robotics drones
+- **59 Project Z Recipes** — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, 9 Improved armor sets, 5 Legendary named armor sets, 11 Improved weapons, 4 Improved power tools, 2 Improved robotics drones, and 4 Depleted Uranium ammo crates
 - **Always Unlocked** — no schematic or perk level required
 - **Inventory Crafting** — no workstation needed
-- **Tiered Pricing** — rare gear in the 45–75 EB range, Improved weapons/tools in the 75–180 EB range, Improved armor sets in the 150–200 EB range, Legendary weapons and armor sets priced very high (200–380 EB) to prevent instant end-game
+- **Tiered Pricing** — Depleted Uranium ammo crates at 6 EB each, rare gear in the 45–75 EB range, Improved weapons/tools in the 75–180 EB range, Improved armor sets in the 150–200 EB range, Legendary weapons and armor sets priced very high (200–380 EB) to prevent instant end-game
 
 ## Included Recipes
 
@@ -155,6 +155,17 @@ Deterministic Quality 6 "Improved" weapons, tools, and drones (tint `#8692FF`). 
 | Improved Junk Sledge Drone | 180 EB |
 | Improved Junk Turret Drone | 180 EB |
 
+### Depleted Uranium Ammo (from `Z_Master_Skills`)
+
+Experimental [5AFF75]Depleted Uranium[-] rounds — armor-ignoring, multi-target penetrating ammunition that normally cannot be crafted and is obtainable only from boss loot or the in-game support radio system. These bundles provide a paid alternative via Epic Bucks and appear under **Ammo/Weapons → Ammo** in the inventory crafting tabs.
+
+| Bundle | Rounds | Price |
+| --- | ---: | ---: |
+| 9mm DU Ammo Crate | 1500 | 6 EB |
+| 7.62mm DU Ammo Crate | 1000 | 6 EB |
+| .44 Magnum DU Ammo Crate | 1250 | 6 EB |
+| Shotgun DU Ammo Crate | 1000 | 6 EB |
+
 ## Installation
 
 1. Install **EV_EpicCash** — copy `EV_EpicCash` into your `7 Days to Die/Mods/` directory.
@@ -170,6 +181,13 @@ Deterministic Quality 6 "Improved" weapons, tools, and drones (tint `#8692FF`). 
 - **Load Order:** The `ZZ_` prefix forces this mod to load after both `EV_*` and `Z_*` mods, which is required because recipes reference items defined in both.
 
 ## Changelog
+
+### v1.1.0
+
+- Added **4 Depleted Uranium ammo bundle recipes** from the `Z_Master_Skills` submod: 9mm (1500 rounds), 7.62mm (1000 rounds), .44 Magnum (1250 rounds), and shotgun shells (1000 rounds) — all priced at a flat **6 EB** each
+- DU rounds cannot normally be crafted and only drop from bosses or via the radio support system; these bundles make them reliably purchasable with Epic Bucks
+- Bundles are grouped under **Ammo/Weapons → Ammo** and use the Depleted Uranium tint (`#5AFF75`) to match the Project Z convention
+- Added English and Russian localization strings for the new bundles
 
 ### v1.0.0
 
@@ -221,5 +239,5 @@ Deterministic Quality 6 "Improved" weapons, tools, and drones (tint `#8692FF`). 
 ---
 
 **Author:** Aleksei Khozin\
-**Version:** 1.0.0\
+**Version:** 1.1.0\
 **Website:** [https://github.com/alekho77/epic_7d2d_mods](https://github.com/alekho77/epic_7d2d_mods)

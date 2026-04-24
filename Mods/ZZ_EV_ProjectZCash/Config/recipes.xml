@@ -239,6 +239,20 @@
 			<ingredient name="evCash" count="180"/>
 		</recipe>
 
+		<!-- Project Z — Depleted Uranium Ammo (Z_Master_Skills) -->
+		<recipe name="evAmmo9mmDUBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="6"/>
+		</recipe>
+		<recipe name="evAmmo762DUBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="6"/>
+		</recipe>
+		<recipe name="evAmmo44MagnumDUBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="6"/>
+		</recipe>
+		<recipe name="evAmmoShotgunDUBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="6"/>
+		</recipe>
+
 	</append>
 
 </config>
