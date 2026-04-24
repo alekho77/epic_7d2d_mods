@@ -172,14 +172,14 @@ evSpearHunterBookBundleDesc,items,Item,,,Open to receive all 7 volumes of Spear 
 evWorkstationBundle,items,Item,,,Basic Workstations Kit,Bundle display name,Grundausstattung Werkstätten,Kit de Estaciones de Trabajo Básicas,Basic Workstations Kit,Kit di Stazioni Base,基本作業台キット,기본 작업대 키트,Zestaw Podstawowych Stacji,Kit de Estações Básicas,Набор базовых рабочих станций,Temel İş İstasyonları Seti,基础工作站套装,基礎工作站套裝
 evWorkstationBundleDesc,items,Item,,,Open to receive a forge; workbench; cement mixer; chemistry station and 2 dew collectors.,Bundle description,,,,,,,,,Содержит кузницу; верстак; бетономешалку; химлабораторию и 2 коллектора росы.,,,
 evFoodSmallBundle,items,Item,,,Small Food Kit,Bundle display name,Kleines Essenspaket,Kit de Comida Pequeño,Small Food Kit,Kit Cibo Piccolo,小型食糧キット,소형 식량 키트,Mały Zestaw Żywności,Kit de Comida Pequeno,Малый комплект еды,Küçük Yiyecek Seti,小型食物套装,小型食物套裝
-evFoodSmallBundleDesc,items,Item,,,Open to receive 12 random meals.,Bundle description,,,,,,,,,Содержит 12 случайных блюд.,,,
+evFoodSmallBundleDesc,items,Item,,,Open to receive one random stack of 8-12 basic meals.,Bundle description,,,,,,,,,Содержит один случайный набор из 8-12 базовых блюд.,,,
 evFoodMediumBundle,items,Item,,,Medium Food Kit,Bundle display name,Mittleres Essenspaket,Kit de Comida Mediano,Medium Food Kit,Kit Cibo Medio,中型食糧キット,중형 식량 키트,Średni Zestaw Żywności,Kit de Comida Médio,Средний комплект еды,Orta Yiyecek Seti,中型食物套装,中型食物套裝
-evFoodMediumBundleDesc,items,Item,,,Open to receive 12 random hearty meals.,Bundle description,,,,,,,,,Содержит 12 случайных сытных блюд.,,,
+evFoodMediumBundleDesc,items,Item,,,Open to receive one random stack of 10 hearty meals.,Bundle description,,,,,,,,,Содержит один случайный набор из 10 сытных блюд.,,,
 evFoodLargeBundle,items,Item,,,Large Food Kit,Bundle display name,Großes Essenspaket,Kit de Comida Grande,Large Food Kit,Kit Cibo Grande,大型食糧キット,대형 식량 키트,Duży Zestaw Żywności,Kit de Comida Grande,Большой комплект еды,Büyük Yiyecek Seti,大型食物套装,大型食物套裝
-evFoodLargeBundleDesc,items,Item,,,Open to receive 12 random gourmet meals.,Bundle description,,,,,,,,,Содержит 12 случайных изысканных блюд.,,,
+evFoodLargeBundleDesc,items,Item,,,Open to receive one random stack of 10 gourmet meals.,Bundle description,,,,,,,,,Содержит один случайный набор из 10 изысканных блюд.,,,
 evDrinkSmallBundle,items,Item,,,Small Drink Kit,Bundle display name,Kleines Getränkepaket,Kit de Bebidas Pequeño,Small Drink Kit,Kit Bevande Piccolo,小型飲料キット,소형 음료 키트,Mały Zestaw Napojów,Kit de Bebidas Pequeno,Малый комплект напитков,Küçük İçecek Seti,小型饮料套装,小型飲料套裝
-evDrinkSmallBundleDesc,items,Item,,,Open to receive 15 random drinks.,Bundle description,,,,,,,,,Содержит 15 случайных напитков.,,,
+evDrinkSmallBundleDesc,items,Item,,,Open to receive one random stack of 12-20 basic drinks.,Bundle description,,,,,,,,,Содержит один случайный набор из 12-20 базовых напитков.,,,
 evDrinkMediumBundle,items,Item,,,Medium Drink Kit,Bundle display name,Mittleres Getränkepaket,Kit de Bebidas Mediano,Medium Drink Kit,Kit Bevande Medio,中型飲料キット,중형 음료 키트,Średni Zestaw Napojów,Kit de Bebidas Médio,Средний комплект напитков,Orta İçecek Seti,中型饮料套装,中型飲料套裝
-evDrinkMediumBundleDesc,items,Item,,,Open to receive 15 random quality drinks.,Bundle description,,,,,,,,,Содержит 15 случайных качественных напитков.,,,
+evDrinkMediumBundleDesc,items,Item,,,Open to receive one random stack of 15 quality drinks.,Bundle description,,,,,,,,,Содержит один случайный набор из 15 качественных напитков.,,,
 evDrinkLargeBundle,items,Item,,,Large Drink Kit,Bundle display name,Großes Getränkepaket,Kit de Bebidas Grande,Large Drink Kit,Kit Bevande Grande,大型飲料キット,대형 음료 키트,Duży Zestaw Napojów,Kit de Bebidas Grande,Большой комплект напитков,Büyük İçecek Seti,大型饮料套装,大型飲料套裝
-evDrinkLargeBundleDesc,items,Item,,,Open to receive 15 random premium drinks.,Bundle description,,,,,,,,,Содержит 15 случайных премиальных напитков.,,,
+evDrinkLargeBundleDesc,items,Item,,,Open to receive one random stack of 15 premium drinks.,Bundle description,,,,,,,,,Содержит один случайный набор из 15 премиальных напитков.,,,

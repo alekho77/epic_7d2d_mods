@@ -205,17 +205,17 @@ All book bundles contain the complete set of 7 volumes. Every Skill Book Bundle 
 [color=#66FF00][size=4][b]Food Bundles[/b][/size][/color]
 
 [list]
-[*][b]Small Food Kit[/b] (1 EB) — 12× random basic meals
-[*][b]Medium Food Kit[/b] (2 EB) — 12× random hearty meals
-[*][b]Large Food Kit[/b] (3 EB) — 12× random gourmet meals
+[*][b]Small Food Kit[/b] (1 EB) — one random stack of 8-12× Bacon and Eggs, Vegetable Stew, Grilled Meat, Blueberry Pie, Pumpkin Bread, or Boiled Egg
+[*][b]Medium Food Kit[/b] (2 EB) — one random stack of 10× Meat Stew, Steak and Potato Meal, Hobo Stew, Fish Tacos, Chili Dog, Pumpkin Pie, or Tuna Fish Gravy Toast
+[*][b]Large Food Kit[/b] (3 EB) — one random stack of 10× Honey Glazed Sham, Honey Brisket, Sham Chowder, Gumbo Stew, Shepherd's Pie, or Spaghetti
 [/list]
 
 [color=#00FFD5][size=4][b]Drink Bundles[/b][/size][/color]
 
 [list]
-[*][b]Small Drink Kit[/b] (1 EB) — 15× random basic drinks
-[*][b]Medium Drink Kit[/b] (2 EB) — 15× random quality drinks
-[*][b]Large Drink Kit[/b] (3 EB) — 15× random premium drinks
+[*][b]Small Drink Kit[/b] (1 EB) — one random stack of 12-20× Goldenrod Tea, Red Tea, Coffee, or Water
+[*][b]Medium Drink Kit[/b] (2 EB) — one random stack of 15× Pure Mineral Water or Yucca Juice
+[*][b]Large Drink Kit[/b] (3 EB) — one random stack of 15× Honey Tea, Yucca Juice Smoothie, Mega Crush, or Pure Mineral Water
 [/list]
 
 [quote]If your server runs mods that add custom items to the game, you can easily extend EpicCash to support them. Follow the guide in the mod's README to create bundles containing any modded items at any price.[/quote]

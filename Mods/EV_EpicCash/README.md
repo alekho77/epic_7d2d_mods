@@ -198,17 +198,17 @@ All book bundles contain the complete set of 7 volumes. Every Skill Book Bundle 
 
 | Name | Contents | Description | Price |
 | --- | --- | --- | ---: |
-| Small Food Kit | 12× random basic meals | 12 random meals (basic tier recipes) | 1 EB |
-| Medium Food Kit | 12× random hearty meals | 12 random meals (mid-tier recipes) | 2 EB |
-| Large Food Kit | 12× random gourmet meals | 12 random meals (top-tier recipes) | 3 EB |
+| Small Food Kit | One random stack: 8-12× basic meals | One random stack of Bacon and Eggs, Vegetable Stew, Grilled Meat, Blueberry Pie, Pumpkin Bread, or Boiled Egg | 1 EB |
+| Medium Food Kit | One random stack: 10× hearty meals | One random stack of Meat Stew, Steak and Potato Meal, Hobo Stew, Fish Tacos, Chili Dog, Pumpkin Pie, or Tuna Fish Gravy Toast | 2 EB |
+| Large Food Kit | One random stack: 10× gourmet meals | One random stack of Honey Glazed Sham, Honey Brisket, Sham Chowder, Gumbo Stew, Shepherd's Pie, or Spaghetti | 3 EB |
 
 ### 💧 Drink Bundles
 
 | Name | Contents | Description | Price |
 | --- | --- | --- | ---: |
-| Small Drink Kit | 15× random basic drinks | 15 random basic drinks | 1 EB |
-| Medium Drink Kit | 15× random quality drinks | 15 random quality drinks | 2 EB |
-| Large Drink Kit | 15× random premium drinks | 15 random premium drinks | 3 EB |
+| Small Drink Kit | One random stack: 12-20× basic drinks | One random stack of Goldenrod Tea, Red Tea, Coffee, or Water | 1 EB |
+| Medium Drink Kit | One random stack: 15× quality drinks | One random stack of Pure Mineral Water or Yucca Juice | 2 EB |
+| Large Drink Kit | One random stack: 15× premium drinks | One random stack of Honey Tea, Yucca Juice Smoothie, Mega Crush, or Pure Mineral Water | 3 EB |
 
 > **Extending with non-vanilla items:** If your server runs mods that add custom items to the game, you can easily extend EpicCash to support them. See the [Adding a Custom Bundle](#adding-a-custom-bundle) section below for a step-by-step guide on creating bundles with any items at any price.
 

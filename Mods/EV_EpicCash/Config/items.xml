@@ -1233,7 +1233,7 @@
         <property name="Create_item" value="resourcePaper"/>
         <property name="Create_item_count" value="0"/>
         <property name="Random_item" value="foodBaconAndEggs,foodVegetableStew,foodGrilledMeat,foodBlueberryPie,foodPumpkinBread,foodEggBoiled"/>
-        <property name="Random_item_count" value="12,12,12,12,12,12"/>
+        <property name="Random_item_count" value="10,8,12,8,12,12"/>
         <property name="Random_count" value="1"/>
         <property name="Unique_random_only" value="true"/>
       </property>
@@ -1251,7 +1251,7 @@
         <property name="Create_item" value="resourcePaper"/>
         <property name="Create_item_count" value="0"/>
         <property name="Random_item" value="foodMeatStew,foodSteakAndPotato,foodHoboStew,foodFishTacos,foodChiliDog,foodPumpkinPie,foodTunaFishGravyToast"/>
-        <property name="Random_item_count" value="12,12,12,12,12,12,12"/>
+        <property name="Random_item_count" value="10,10,10,10,10,10,10"/>
         <property name="Random_count" value="1"/>
         <property name="Unique_random_only" value="true"/>
       </property>
@@ -1269,7 +1269,7 @@
         <property name="Create_item" value="resourcePaper"/>
         <property name="Create_item_count" value="0"/>
         <property name="Random_item" value="foodHoneyGlazedSham,foodHoneyBrisket,foodShamChowder,foodGumboStew,foodShepardsPie,foodSpaghetti"/>
-        <property name="Random_item_count" value="12,12,12,12,12,12"/>
+        <property name="Random_item_count" value="10,10,10,10,10,10"/>
         <property name="Random_count" value="1"/>
         <property name="Unique_random_only" value="true"/>
       </property>
@@ -1289,7 +1289,7 @@
         <property name="Create_item" value="resourcePaper"/>
         <property name="Create_item_count" value="0"/>
         <property name="Random_item" value="drinkJarGoldenRodTea,drinkJarRedTea,drinkJarCoffee,drinkJarBoiledWater"/>
-        <property name="Random_item_count" value="15,15,15,15"/>
+        <property name="Random_item_count" value="15,12,15,20"/>
         <property name="Random_count" value="1"/>
         <property name="Unique_random_only" value="true"/>
       </property>
