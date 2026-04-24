@@ -43,4 +43,149 @@
   <set xpath="/items/item[@name='UniqueIndianaBundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
   <set xpath="/items/item[@name='UniqueFlugenBundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
 
+  <!--
+    Improved Armor bundles for Z_Armor_Improved.
+    Each bundle spawns the full 4-piece Q6 set of an "Improved" armor class.
+    The bundle item itself uses the Improved tint (#8692FF) to match the
+    visual convention from Z_Armor_Improved.
+  -->
+  <append xpath="/items">
+
+    <!-- Rogue Improved Armor Set -->
+    <item name="evArmorRogueImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorRogueHelmet"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorRogueImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorRogueHelmetImp,armorRogueOutfitImp,armorRogueGlovesImp,armorRogueBootsImp"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Enforcer Improved Armor Set -->
+    <item name="evArmorEnforcerImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorEnforcerHelmet"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorEnforcerImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorEnforcerHelmetImp,armorEnforcerOutfitImp,armorEnforcerGlovesImp,armorEnforcerBootsImp"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Ranger Improved Armor Set -->
+    <item name="evArmorRangerImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorRangerHelmet"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorRangerImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorRangerHelmetImp,armorRangerOutfitImp,armorRangerGlovesImp,armorRangerBootsImp"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Commando Improved Armor Set -->
+    <item name="evArmorCommandoImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorCommandoHelmet"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorCommandoImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorCommandoHelmetImp,armorCommandoOutfitImp,armorCommandoGlovesImp,armorCommandoBootsImp"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Assassin Improved Armor Set -->
+    <item name="evArmorAssassinImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorAssassinHelmet"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorAssassinImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorAssassinHelmetImp,armorAssassinOutfitImp,armorAssassinGlovesImp,armorAssassinBootsImp"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Gatherer Improved Armor Set (Project Z exclusive class; uses Miner helmet icon) -->
+    <item name="evArmorGathererImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorMinerHelmet"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorGathererImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorGathererHelmetImp,armorGathererOutfitImp,armorGathererGlovesImp,armorGathererBootsImp"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Nomad Improved Armor Set -->
+    <item name="evArmorNomadImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorNomadHelmet"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorNomadImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorNomadHelmetImp,armorNomadOutfitImp,armorNomadGlovesImp,armorNomadBootsImp"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Nerd Improved Armor Set -->
+    <item name="evArmorNerdImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorNerdHelmet"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorNerdImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorNerdHelmetImp,armorNerdOutfitImp,armorNerdGlovesImp,armorNerdBootsImp"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Raider Improved Armor Set -->
+    <item name="evArmorRaiderImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorRaiderHelmet"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorRaiderImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorRaiderHelmetImp,armorRaiderOutfitImp,armorRaiderGlovesImp,armorRaiderBootsImp"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+  </append>
+
 </config>

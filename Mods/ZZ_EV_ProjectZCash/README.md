@@ -22,10 +22,10 @@ Adds **Epic Bucks** crafting recipes for content from the **[Project Z](https://
 
 ## Features
 
-- **24 Project Z Recipes** — 12 rare weapons, 2 rare tools, and 10 legendary unique weapons
+- **33 Project Z Recipes** — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, and 9 Improved armor sets
 - **Always Unlocked** — no schematic or perk level required
 - **Inventory Crafting** — no workstation needed
-- **Tiered Pricing** — rare gear in the 45–75 EB range, legendary gear priced very high (200–350 EB) to prevent instant end-game
+- **Tiered Pricing** — rare gear in the 45–75 EB range, Improved armor sets in the 150–200 EB range, and legendary weapons priced very high (200–350 EB) to prevent instant end-game
 
 ## Included Recipes
 
@@ -86,6 +86,22 @@ End-game named weapons above the Rare tier (unique model, bronze `#C27E53` tint,
 | Unique Indiana | Machete | Crisis / Crusher / Masterpiece / Guardian / Surgeon | 200 EB |
 | Unique Flugen | Stun Baton | Crisis / Crusher / Masterpiece / Guardian | 200 EB |
 
+### Improved Armor Sets (from `Z_Armor_Improved`)
+
+Full 4-piece Quality 6 "Improved" armor sets. Each `Improved` piece is significantly stronger than its vanilla Quality 6 counterpart (higher physical/elemental resist, extra mod slots, class-specific passive bonuses) and normally requires the `MasterArmor` perk and the Improved Workbench to craft, so bundles are priced between Rare weapons and Legendary weapons.
+
+| Bundle | Class | Armor Type | Price |
+| --- | --- | --- | ---: |
+| Rogue Improved Armor Set | Rogue | Light | 150 EB |
+| Gatherer Improved Armor Set | Gatherer | Heavy (Project Z exclusive) | 150 EB |
+| Nomad Improved Armor Set | Nomad | Medium | 150 EB |
+| Nerd Improved Armor Set | Nerd | Light | 150 EB |
+| Ranger Improved Armor Set | Ranger | Medium | 170 EB |
+| Assassin Improved Armor Set | Assassin | Medium | 170 EB |
+| Commando Improved Armor Set | Commando | Medium | 180 EB |
+| Enforcer Improved Armor Set | Enforcer | Heavy | 200 EB |
+| Raider Improved Armor Set | Raider | Heavy | 200 EB |
+
 ## Installation
 
 1. Install **EV_EpicCash** — copy `EV_EpicCash` into your `7 Days to Die/Mods/` directory.
@@ -101,6 +117,13 @@ End-game named weapons above the Rare tier (unique model, bronze `#C27E53` tint,
 - **Load Order:** The `ZZ_` prefix forces this mod to load after both `EV_*` and `Z_*` mods, which is required because recipes reference items defined in both.
 
 ## Changelog
+
+### v0.4.0
+
+- Added **9 Improved Armor bundle recipes** from the `Z_Armor_Improved` submod, each yielding a full 4-piece Quality 6 set (helmet, outfit, gloves, boots) for one of the nine armor classes: Rogue, Gatherer, Nomad, Nerd, Ranger, Assassin, Commando, Enforcer, Raider
+- Tiered pricing for the new armor sets: **150 EB** (Rogue / Gatherer / Nomad / Nerd), **170 EB** (Ranger / Assassin), **180 EB** (Commando), **200 EB** (Enforcer / Raider) — positioned between Rare weapons and Legendary weapons
+- Added `Localization.txt` with English and Russian strings for the new bundle display names and descriptions
+- Bundles are grouped under **Clothing/Armor** and use the Improved-tint (`#8692FF`) visual convention from Project Z
 
 ### v0.3.0
 
@@ -127,5 +150,5 @@ End-game named weapons above the Rare tier (unique model, bronze `#C27E53` tint,
 ---
 
 **Author:** Aleksei Khozin\
-**Version:** 0.3.0\
+**Version:** 0.4.0\
 **Website:** [https://github.com/alekho77/epic_7d2d_mods](https://github.com/alekho77/epic_7d2d_mods)

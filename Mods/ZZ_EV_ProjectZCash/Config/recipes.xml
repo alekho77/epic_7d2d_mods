@@ -102,6 +102,49 @@
 			<ingredient name="evCash" count="200"/>
 		</recipe>
 
+		<!-- =========================================================== -->
+		<!-- Project Z — Improved Armor Bundles (Z_Armor_Improved)        -->
+		<!-- Each bundle yields a full 4-piece Q6 Improved set. Priced    -->
+		<!-- between Rare weapons (50-75 EB) and Unique weapons (200-350) -->
+		<!-- so that a single armor set is roughly equivalent to one      -->
+		<!-- legendary melee weapon but cheaper than a legendary firearm. -->
+		<!-- =========================================================== -->
+
+		<!-- Base tier (150 EB): Rogue, Gatherer, Nomad, Nerd -->
+		<recipe name="evArmorRogueImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="150"/>
+		</recipe>
+		<recipe name="evArmorGathererImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="150"/>
+		</recipe>
+		<recipe name="evArmorNomadImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="150"/>
+		</recipe>
+		<recipe name="evArmorNerdImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="150"/>
+		</recipe>
+
+		<!-- Mid tier (170 EB): Ranger, Assassin -->
+		<recipe name="evArmorRangerImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="170"/>
+		</recipe>
+		<recipe name="evArmorAssassinImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="170"/>
+		</recipe>
+
+		<!-- High tier (180 EB): Commando -->
+		<recipe name="evArmorCommandoImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="180"/>
+		</recipe>
+
+		<!-- Top tier (200 EB): Enforcer, Raider -->
+		<recipe name="evArmorEnforcerImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="200"/>
+		</recipe>
+		<recipe name="evArmorRaiderImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="200"/>
+		</recipe>
+
 	</append>
 
 </config>
