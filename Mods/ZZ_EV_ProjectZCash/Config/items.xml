@@ -1186,6 +1186,63 @@
       </property>
     </item>
 
+    <!-- === Z Protector Armor Set (Storm Immunity) === -->
+    <item name="evModRareArmorARResistHelmetBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Armor,Mods"/>
+      <property name="CustomIcon" value="modArmorPlatingReinforced"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModRareArmorARResistHelmetBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modRareArmorARResistHelmet"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModRareArmorARResistOutfitBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Armor,Mods"/>
+      <property name="CustomIcon" value="modArmorPlatingReinforced"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModRareArmorARResistOutfitBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modRareArmorARResistOutfit"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModRareArmorARResistGlovesBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Armor,Mods"/>
+      <property name="CustomIcon" value="modArmorPlatingReinforced"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModRareArmorARResistGlovesBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modRareArmorARResistGloves"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModRareArmorARResistBootsBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Armor,Mods"/>
+      <property name="CustomIcon" value="modArmorPlatingReinforced"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModRareArmorARResistBootsBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modRareArmorARResistBoots"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
   </append>
 
 </config>

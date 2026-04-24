@@ -22,10 +22,10 @@ Adds **Epic Bucks** crafting recipes for content from the **[Project Z](https://
 
 ## Features
 
-- **101 Project Z Recipes** — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, 9 Improved armor sets, 5 Legendary named armor sets, 11 Improved weapons, 4 Improved power tools, 2 Improved robotics drones, 5 Depleted Uranium ammo crates, 33 Unique item-modifier bundles, and 8 Unique armor-mod bundles
+- **105 Project Z Recipes** — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, 9 Improved armor sets, 5 Legendary named armor sets, 11 Improved weapons, 4 Improved power tools, 2 Improved robotics drones, 5 Depleted Uranium ammo crates, 33 Unique item-modifier bundles, 8 Unique armor-mod bundles, and the 4-piece Z Protector armor-mod set
 - **Always Unlocked** — no schematic or perk level required
 - **Inventory Crafting** — no workstation needed
-- **Tiered Pricing** — Depleted Uranium ammo crates at 6 EB each, rare gear in the 45–75 EB range, Unique item-modifier bundles in the 50–90 EB range, Unique armor-mod bundles in the 70–150 EB range, Improved weapons/tools in the 75–180 EB range, Improved armor sets in the 150–200 EB range, Legendary weapons and armor sets priced very high (200–380 EB) to prevent instant end-game
+- **Tiered Pricing** — Depleted Uranium ammo crates at 6 EB each, rare gear in the 45–75 EB range, Unique item-modifier bundles in the 50–90 EB range, Unique armor-mod bundles in the 70–150 EB range, Improved weapons/tools in the 75–180 EB range, Improved armor sets in the 150–200 EB range, Legendary weapons and armor sets priced very high (200–380 EB) to prevent instant end-game, and the Z Protector set priced at 200 EB per piece (800 EB for the full set) because full storm immunity trivializes biome hazards
 
 ## Included Recipes
 
@@ -239,6 +239,17 @@ Top-tier armor modifiers (gold-tint `#FFB800`) locked behind the Master Armor cr
 | Irradiation Resistance | Chest | Full radiation resistance | 90 EB |
 | Stability Booster | Feet | Boss knockdown resistance (stability) | 80 EB |
 
+#### ⛈️ Z Protector Armor Set (Storm Immunity)
+
+A 4-piece armor-mod set that grants **full biome-storm immunity** when all four modifiers are equipped simultaneously (each piece sets its own `$StormResist*` CVar — Helmet, Outfit, Gloves, Boots). Each individual piece also provides +2 Physical Damage Resist, +5 Hypothermal and +5 Hyperthermal resist, and +1 base Radiation resist for its slot. Priced deliberately high at **200 EB per piece (800 EB for the full set)** because storm immunity trivializes desert, snow, and wasteland biome hazards.
+
+| Bundle | Slot | Effect | Price |
+| --- | --- | --- | ---: |
+| Z Protector Helmet | Head | +2 PDR, +5 cold/heat, +rad, `$StormResistHelmet` | 200 EB |
+| Z Protector Outfit | Chest | +2 PDR, +5 cold/heat, +rad, `$StormResistOutfit` | 200 EB |
+| Z Protector Gloves | Hands | +2 PDR, +5 cold/heat, +rad, `$StormResistGloves` | 200 EB |
+| Z Protector Boots | Feet | +2 PDR, +5 cold/heat, +rad, `$StormResistBoots` | 200 EB |
+
 ## Installation
 
 1. Install **EV_EpicCash** — copy `EV_EpicCash` into your `7 Days to Die/Mods/` directory.
@@ -254,6 +265,13 @@ Top-tier armor modifiers (gold-tint `#FFB800`) locked behind the Master Armor cr
 - **Load Order:** The `ZZ_` prefix forces this mod to load after both `EV_*` and `Z_*` mods, which is required because recipes reference items defined in both.
 
 ## Changelog
+
+### v1.5.0
+
+- Added the **Z Protector armor-mod set** (4 bundles at **200 EB each**, full set = 800 EB) from the `Z_Rare_Modifiers` submod — Helmet / Outfit / Gloves / Boots pieces that together grant full immunity to desert, snow, and wasteland biome storms
+- Priced deliberately high because the full set trivializes biome hazards; individual pieces still provide +2 PDR, +5 cold/heat, and +1 base radiation resist for their slot
+- Also fixed a missing newline at the end of `Localization.txt` that glued the last v1.3.0 row to the first v1.4.0 row
+- Added English and Russian localization strings for the new bundles
 
 ### v1.4.0
 
@@ -335,5 +353,5 @@ Top-tier armor modifiers (gold-tint `#FFB800`) locked behind the Master Armor cr
 ---
 
 **Author:** Aleksei Khozin\
-**Version:** 1.4.0\
+**Version:** 1.5.0\
 **Website:** [https://github.com/alekho77/epic_7d2d_mods](https://github.com/alekho77/epic_7d2d_mods)
