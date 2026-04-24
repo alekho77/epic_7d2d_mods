@@ -102,6 +102,12 @@ End-game named weapons above the Rare tier (unique model, bronze `#C27E53` tint,
 
 ## Changelog
 
+### v0.3.0
+
+- Project Z bundle recipes now appear in the inventory crafting tabs alongside vanilla recipes — ranged weapon bundles show up under **Ammo/Weapons → Ranged Weapons**, melee bundles under **Ammo/Weapons → Melee Weapons**, and rare tool bundles under **Tools/Traps** (previously hidden because the source Project Z items used the custom `DonateWeapons` / `DonateMelee` / `DonateTools` groups that are not bound to any inventory tab)
+- All recipes now use the standard vanilla `packMuleCrafting` tag, so they are properly scoped by the Pack Mule crafting-time perk like every other inventory recipe
+- Crafting time raised from 1 → **2 seconds** for every recipe — still quick, but noticeable enough to prevent accidental mass-crafting
+
 ### v0.2.0
 
 - Added 2 rare tool bundle recipes from `Z_RareItems`: Auger (55 EB), Chainsaw (50 EB)
@@ -121,5 +127,5 @@ End-game named weapons above the Rare tier (unique model, bronze `#C27E53` tint,
 ---
 
 **Author:** Aleksei Khozin\
-**Version:** 0.2.0\
+**Version:** 0.3.0\
 **Website:** [https://github.com/alekho77/epic_7d2d_mods](https://github.com/alekho77/epic_7d2d_mods)

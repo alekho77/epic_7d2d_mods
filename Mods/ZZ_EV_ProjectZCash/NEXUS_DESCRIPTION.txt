@@ -112,6 +112,14 @@ End-game named weapons above the Rare tier (unique model, bronze tint, powerful 
 
 [size=5][b]Changelog[/b][/size]
 
+[size=4][b]v0.3.0[/b][/size]
+
+[list]
+[*]Project Z bundle recipes now appear in the inventory crafting tabs alongside vanilla recipes — ranged weapon bundles show up under [b]Ammo/Weapons → Ranged Weapons[/b], melee bundles under [b]Ammo/Weapons → Melee Weapons[/b], and rare tool bundles under [b]Tools/Traps[/b] (previously hidden because the source Project Z items used the custom [font=Courier New]DonateWeapons[/font] / [font=Courier New]DonateMelee[/font] / [font=Courier New]DonateTools[/font] groups that are not bound to any inventory tab)
+[*]All recipes now use the standard vanilla [font=Courier New]packMuleCrafting[/font] tag, so they are properly scoped by the Pack Mule crafting-time perk like every other inventory recipe
+[*]Crafting time raised from 1 → [b]2 seconds[/b] for every recipe — still quick, but noticeable enough to prevent accidental mass-crafting
+[/list]
+
 [size=4][b]v0.2.0[/b][/size]
 
 [list]

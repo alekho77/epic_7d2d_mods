@@ -15,50 +15,50 @@
 		<!-- =========================================================== -->
 
 		<!-- Ranged -->
-		<recipe name="rareSniperRifleBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="rareSniperRifleBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="55"/>
 		</recipe>
-		<recipe name="rareAutoShotgunBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="rareAutoShotgunBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="55"/>
 		</recipe>
-		<recipe name="rareM60Bundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="rareM60Bundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="75"/>
 		</recipe>
-		<recipe name="rareSMG5Bundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="rareSMG5Bundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="65"/>
 		</recipe>
-		<recipe name="rareDesertVultureBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="rareDesertVultureBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="55"/>
 		</recipe>
-		<recipe name="rareArcheryBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="rareArcheryBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="50"/>
 		</recipe>
 
 		<!-- Melee -->
-		<recipe name="rareSpearT3Bundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="rareSpearT3Bundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="45"/>
 		</recipe>
-		<recipe name="rareClubT3Bundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="rareClubT3Bundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="45"/>
 		</recipe>
-		<recipe name="rareSledgehammerT3Bundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="rareSledgehammerT3Bundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="45"/>
 		</recipe>
-		<recipe name="rareKnucklesT3Bundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="rareKnucklesT3Bundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="45"/>
 		</recipe>
-		<recipe name="rareMacheteT3Bundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="rareMacheteT3Bundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="45"/>
 		</recipe>
-		<recipe name="rareStunBatonT3Bundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="rareStunBatonT3Bundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="50"/>
 		</recipe>
 
 		<!-- Tools (Rare T3) -->
-		<recipe name="rareAugerBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="rareAugerBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="55"/>
 		</recipe>
-		<recipe name="rareChainsawBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="rareChainsawBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="50"/>
 		</recipe>
 
@@ -69,36 +69,36 @@
 		<!-- =========================================================== -->
 
 		<!-- Ranged -->
-		<recipe name="UniqueBuldogBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="UniqueBuldogBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="350"/>
 		</recipe>
-		<recipe name="UniqueEraserBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="UniqueEraserBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="300"/>
 		</recipe>
-		<recipe name="UniqueGausBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="UniqueGausBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="300"/>
 		</recipe>
-		<recipe name="UniqueZingerBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="UniqueZingerBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="300"/>
 		</recipe>
 
 		<!-- Melee -->
-		<recipe name="UniqueCombistickBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="UniqueCombistickBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="200"/>
 		</recipe>
-		<recipe name="UniqueBarbarianBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="UniqueBarbarianBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="200"/>
 		</recipe>
-		<recipe name="UniqueDestructorBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="UniqueDestructorBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="200"/>
 		</recipe>
-		<recipe name="UniqueMausClawsBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="UniqueMausClawsBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="200"/>
 		</recipe>
-		<recipe name="UniqueIndianaBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="UniqueIndianaBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="200"/>
 		</recipe>
-		<recipe name="UniqueFlugenBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+		<recipe name="UniqueFlugenBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
 			<ingredient name="evCash" count="200"/>
 		</recipe>
 

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+  <!--
+    Re-categorize Project Z bundle items so they appear in the vanilla
+    inventory crafting tabs (Ammo/Weapons and Tools/Traps) instead of the
+    custom "Donate*" groups from Z_RareItems / Z_Master_Skills, which are
+    not bound to any tab in the inventory crafting UI and therefore hide
+    the recipes added by this mod.
+  -->
+
+  <!-- ===== Rare Ranged Weapons (Z_RareItems) ===== -->
+  <set xpath="/items/item[@name='rareSniperRifleBundle']/property[@name='Group']/@value">Ammo/Weapons,Ranged Weapons</set>
+  <set xpath="/items/item[@name='rareAutoShotgunBundle']/property[@name='Group']/@value">Ammo/Weapons,Ranged Weapons</set>
+  <set xpath="/items/item[@name='rareM60Bundle']/property[@name='Group']/@value">Ammo/Weapons,Ranged Weapons</set>
+  <set xpath="/items/item[@name='rareSMG5Bundle']/property[@name='Group']/@value">Ammo/Weapons,Ranged Weapons</set>
+  <set xpath="/items/item[@name='rareDesertVultureBundle']/property[@name='Group']/@value">Ammo/Weapons,Ranged Weapons</set>
+  <set xpath="/items/item[@name='rareArcheryBundle']/property[@name='Group']/@value">Ammo/Weapons,Ranged Weapons</set>
+
+  <!-- ===== Rare Melee Weapons (Z_RareItems) ===== -->
+  <set xpath="/items/item[@name='rareSpearT3Bundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+  <set xpath="/items/item[@name='rareClubT3Bundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+  <set xpath="/items/item[@name='rareSledgehammerT3Bundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+  <set xpath="/items/item[@name='rareKnucklesT3Bundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+  <set xpath="/items/item[@name='rareMacheteT3Bundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+  <set xpath="/items/item[@name='rareStunBatonT3Bundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+
+  <!-- ===== Rare Tools (Z_RareItems) ===== -->
+  <set xpath="/items/item[@name='rareAugerBundle']/property[@name='Group']/@value">Tools/Traps</set>
+  <set xpath="/items/item[@name='rareChainsawBundle']/property[@name='Group']/@value">Tools/Traps</set>
+
+  <!-- ===== Legendary Ranged Weapons (Z_Master_Skills) ===== -->
+  <set xpath="/items/item[@name='UniqueBuldogBundle']/property[@name='Group']/@value">Ammo/Weapons,Ranged Weapons</set>
+  <set xpath="/items/item[@name='UniqueEraserBundle']/property[@name='Group']/@value">Ammo/Weapons,Ranged Weapons</set>
+  <set xpath="/items/item[@name='UniqueGausBundle']/property[@name='Group']/@value">Ammo/Weapons,Ranged Weapons</set>
+  <set xpath="/items/item[@name='UniqueZingerBundle']/property[@name='Group']/@value">Ammo/Weapons,Ranged Weapons</set>
+
+  <!-- ===== Legendary Melee Weapons (Z_Master_Skills) ===== -->
+  <set xpath="/items/item[@name='UniqueCombistickBundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+  <set xpath="/items/item[@name='UniqueBarbarianBundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+  <set xpath="/items/item[@name='UniqueDestructorBundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+  <set xpath="/items/item[@name='UniqueMausClawsBundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+  <set xpath="/items/item[@name='UniqueIndianaBundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+  <set xpath="/items/item[@name='UniqueFlugenBundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+
+</config>
