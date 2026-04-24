@@ -391,15 +391,15 @@
 
                 <!-- Project Z — Z Protector Armor Set: Storm Immunity (Z_Rare_Modifiers) -->
                 <recipe name="evModRareArmorARResistHelmetBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
-                        <ingredient name="evCash" count="200"/>
+                        <ingredient name="evCash" count="100"/>
                 </recipe>
                 <recipe name="evModRareArmorARResistOutfitBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
-                        <ingredient name="evCash" count="200"/>
+                        <ingredient name="evCash" count="100"/>
                 </recipe>
                 <recipe name="evModRareArmorARResistGlovesBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
-                        <ingredient name="evCash" count="200"/>
+                        <ingredient name="evCash" count="100"/>
                 </recipe>
                 <recipe name="evModRareArmorARResistBootsBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
-                        <ingredient name="evCash" count="200"/>
+                        <ingredient name="evCash" count="100"/>
                 </recipe>
 

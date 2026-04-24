@@ -30,7 +30,7 @@ The [font=Courier New]ZZ_[/font] folder prefix ensures the mod is loaded [b]afte
 [*][b]105 Project Z Recipes[/b] — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, 9 Improved armor sets, 5 Legendary named armor sets, 11 Improved weapons, 4 Improved power tools, 2 Improved robotics drones, 5 Depleted Uranium ammo crates, 33 Unique item-modifier bundles, 8 Unique armor-mod bundles, and the 4-piece Z Protector armor-mod set
 [*][b]Always Unlocked[/b] — no schematic or perk level required
 [*][b]Inventory Crafting[/b] — no workstation needed
-[*][b]Tiered Pricing[/b] — Depleted Uranium ammo crates at 6 EB each, rare gear in the 45–75 EB range, Unique item-modifier bundles in the 50–90 EB range, Unique armor-mod bundles in the 70–150 EB range, Improved weapons/tools in the 75–180 EB range, Improved armor sets in the 150–200 EB range, Legendary weapons and armor sets priced very high (200–380 EB) to prevent instant end-game, and the Z Protector set priced at 200 EB per piece (800 EB for the full set) because full storm immunity trivializes biome hazards
+[*][b]Tiered Pricing[/b] — Depleted Uranium ammo crates at 6 EB each, rare gear in the 45–75 EB range, Unique item-modifier bundles in the 50–90 EB range, Unique armor-mod bundles in the 70–150 EB range, Improved weapons/tools in the 75–180 EB range, Improved armor sets in the 150–200 EB range, Legendary weapons and armor sets priced very high (200–380 EB) to prevent instant end-game, and the Z Protector set priced at 100 EB per piece (400 EB for the full set) because full storm immunity trivializes biome hazards
 [/list]
 
 [size=5][b]Included Recipes[/b][/size]
@@ -250,10 +250,10 @@ Top-tier armor modifiers locked behind the Master Armor crafting perk at the Imp
 A 4-piece armor-mod set that grants [b]full biome-storm immunity[/b] when all four modifiers are equipped simultaneously. Each individual piece also provides +2 Physical Damage Resist, +5 Hypothermal and +5 Hyperthermal resist, and +1 base Radiation resist for its slot. Priced deliberately high because storm immunity trivializes desert, snow, and wasteland biome hazards.
 
 [list]
-[*][b]Z Protector Helmet[/b] (200 EB) — Head
-[*][b]Z Protector Outfit[/b] (200 EB) — Chest
-[*][b]Z Protector Gloves[/b] (200 EB) — Hands
-[*][b]Z Protector Boots[/b] (200 EB) — Feet
+[*][b]Z Protector Helmet[/b] (100 EB) — Head
+[*][b]Z Protector Outfit[/b] (100 EB) — Chest
+[*][b]Z Protector Gloves[/b] (100 EB) — Hands
+[*][b]Z Protector Boots[/b] (100 EB) — Feet
 [/list]
 
 [size=5][b]Installation[/b][/size]
@@ -279,7 +279,7 @@ A 4-piece armor-mod set that grants [b]full biome-storm immunity[/b] when all fo
 [size=4][b]v1.5.0[/b][/size]
 
 [list]
-[*]Added the [b]Z Protector armor-mod set[/b] (4 bundles at [b]200 EB each[/b], full set = 800 EB) from the [font=Courier New]Z_Rare_Modifiers[/font] submod — Helmet / Outfit / Gloves / Boots pieces that together grant full immunity to desert, snow, and wasteland biome storms
+[*]Added the [b]Z Protector armor-mod set[/b] (4 bundles at [b]100 EB each[/b], full set = 400 EB) from the [font=Courier New]Z_Rare_Modifiers[/font] submod — Helmet / Outfit / Gloves / Boots pieces that together grant full immunity to desert, snow, and wasteland biome storms
 [*]Priced deliberately high because the full set trivializes biome hazards; individual pieces still provide +2 PDR, +5 cold/heat, and +1 base radiation resist for their slot
 [*]Also fixed a missing newline at the end of [font=Courier New]Localization.txt[/font] that glued the last v1.3.0 row to the first v1.4.0 row
 [*]Added English and Russian localization strings for the new bundles
