@@ -131,10 +131,10 @@ All armor bundles include a full Tier 6 set (helmet, outfit, gloves, boots). Pri
 
 [color=#39FF14][size=4][b]Tool Bundles[/b][/size][/color]
 
-All tool bundles contain a single Tier 6 tool.
+Most tool bundles contain a single Tier 6 tool. Nailgun Kit also includes 500 Concrete Mix for immediate building and repairs.
 
 [list]
-[*][b]Nailgun Kit[/b] (10 EB)
+[*][b]Nailgun Kit[/b] (30 EB) — T6 Nailgun, 500× Concrete Mix
 [*][b]Impact Driver Kit[/b] (10 EB)
 [*][b]Chainsaw Kit[/b] (20 EB)
 [*][b]Auger Kit[/b] (30 EB)

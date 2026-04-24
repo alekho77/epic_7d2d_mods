@@ -78,7 +78,7 @@ evArmorNerdBundleDesc,items,Item,,,Open to receive a full Tier 6 Nerd armor set.
 evArmorRaiderBundle,items,Item,,,Raider Armor Set,Bundle display name,Raider-Rüstungsset,Set de Armadura de Saqueador,Set Armure Pillard,Set Armatura Predone,レイダーアーマーセット,약탈자 방어구 세트,Zestaw Zbroi Rajdera,Conjunto de Armadura de Saqueador,Комплект брони налётчика,Akıncı Zırh Seti,掠夺者护甲套装,掠奪者護甲套裝
 evArmorRaiderBundleDesc,items,Item,,,Open to receive a full Tier 6 Raider armor set.,Bundle description,,,,,,,,,Содержит полный комплект брони налётчика 6-го тира.,,,
 evNailgunBundle,items,Item,,,Nailgun Kit,Bundle display name,Nagelpistolen-Kit,Kit de Pistola de Clavos,Kit Pistolet à Clous,Kit Sparachiodi,ネイルガンキット,네일건 키트,Zestaw Gwoździarki,Kit de Pistola de Pregos,Набор «Гвоздомёт»,Çivi Tabancası Kiti,钉枪套装,釘槍套裝
-evNailgunBundleDesc,items,Item,,,Open to receive a Tier 6 Nailgun.,Bundle description,,,,,,,,,Содержит гвоздомёт 6-го тира.,,,
+evNailgunBundleDesc,items,Item,,,Open to receive a Tier 6 Nailgun and 500 Concrete Mix.,Bundle description,,,,,,,,,Содержит гвоздомёт 6-го тира и 500 ед. бетонной смеси.,,,
 evChainsawBundle,items,Item,,,Chainsaw Kit,Bundle display name,Kettensägen-Kit,Kit de Motosierra,Kit Tronçonneuse,Kit Motosega,チェーンソーキット,전기톱 키트,Zestaw Piły Łańcuchowej,Kit de Motosserra,Набор «Бензопила»,Testere Kiti,电锯套装,鏈鋸套裝
 evChainsawBundleDesc,items,Item,,,Open to receive a Tier 6 Chainsaw.,Bundle description,,,,,,,,,Содержит бензопилу 6-го тира.,,,
 evAugerBundle,items,Item,,,Auger Kit,Bundle display name,Erdbohrer-Kit,Kit de Barrena,Kit Foreuse,Kit Trivella,オーガーキット,오거 키트,Zestaw Świdra,Kit de Broca,Набор «Бур»,Delgi Kiti,螺旋钻套装,螺旋鉆套裝

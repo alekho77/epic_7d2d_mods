@@ -124,7 +124,7 @@
 
     <!-- === TOOL BUNDLES === -->
     <recipe name="evNailgunBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
-      <ingredient name="evCash" count="10"/>
+      <ingredient name="evCash" count="30"/>
     </recipe>
     <recipe name="evChainsawBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
       <ingredient name="evCash" count="20"/>

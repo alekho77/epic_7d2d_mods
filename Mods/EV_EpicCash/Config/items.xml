@@ -557,7 +557,7 @@
 
     <!-- === TOOL BUNDLES === -->
 
-    <!-- Nailgun Kit: T6 nailgun -->
+    <!-- Nailgun Kit: T6 nailgun + 500 concrete mix -->
     <item name="evNailgunBundle">
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
@@ -566,8 +566,8 @@
       <property name="ItemTypeIcon" value="bundle"/>
       <property name="DescriptionKey" value="evNailgunBundleDesc"/>
       <property class="Action0">
-        <property name="Create_item" value="meleeToolRepairT3Nailgun"/>
-        <property name="Create_item_count" value="6"/>
+        <property name="Create_item" value="meleeToolRepairT3Nailgun,resourceConcreteMix"/>
+        <property name="Create_item_count" value="6,500"/>
       </property>
     </item>
 
