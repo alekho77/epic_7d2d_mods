@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+	<!--
+		EpicCash recipes for Project Z content.
+		Loads after EV_EpicCash (ev* currency) and Z_RareItems (rare* bundles).
+		Recipes are added here once categories are reviewed and approved.
+	-->
+
+	<append xpath="/recipes">
+
+		<!-- =========================================================== -->
+		<!-- Project Z — Rare Weapon Bundles (Tier 3, Quality 6)          -->
+		<!-- Each bundle yields ONE random rare variant of the weapon.    -->
+		<!-- =========================================================== -->
+
+		<!-- Ranged -->
+		<recipe name="rareSniperRifleBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="55"/>
+		</recipe>
+		<recipe name="rareAutoShotgunBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="55"/>
+		</recipe>
+		<recipe name="rareM60Bundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="75"/>
+		</recipe>
+		<recipe name="rareSMG5Bundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="65"/>
+		</recipe>
+		<recipe name="rareDesertVultureBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="55"/>
+		</recipe>
+		<recipe name="rareArcheryBundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="50"/>
+		</recipe>
+
+		<!-- Melee -->
+		<recipe name="rareSpearT3Bundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="45"/>
+		</recipe>
+		<recipe name="rareClubT3Bundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="45"/>
+		</recipe>
+		<recipe name="rareSledgehammerT3Bundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="45"/>
+		</recipe>
+		<recipe name="rareKnucklesT3Bundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="45"/>
+		</recipe>
+		<recipe name="rareMacheteT3Bundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="45"/>
+		</recipe>
+		<recipe name="rareStunBatonT3Bundle" count="1" craft_time="1" always_unlocked="true" tags="perkCrafting">
+			<ingredient name="evCash" count="50"/>
+		</recipe>
+
+	</append>
+
+</config>
