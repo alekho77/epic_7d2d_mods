@@ -171,6 +171,10 @@ Deterministic Quality 6 "Improved" weapons, tools, and drones (tint `#8692FF`). 
 
 ## Changelog
 
+### v1.0.0
+
+- **First stable release.** Promoted the modlet from pre-release (0.x) to its first release version with no content changes relative to 0.6.0 — the full 55-recipe Project Z catalogue is now considered feature-complete and API-stable for EpicCash integration.
+
 ### v0.6.0
 
 - Added **17 Improved Weapon/Tool/Drone bundle recipes** from the `Z_Master_Skills` submod: 6 ranged weapons (M60, Auto Shotgun, Sniper Rifle, SMG-5, Compound Bow, Compound Crossbow), 5 melee weapons (Steel Spear / Club / Sledgehammer / Knuckles / Machete), 4 power tools (Chainsaw, Auger, Impact Driver, Nailgun), and 2 robotics drones (Junk Sledge, Junk Turret)
@@ -217,5 +221,5 @@ Deterministic Quality 6 "Improved" weapons, tools, and drones (tint `#8692FF`). 
 ---
 
 **Author:** Aleksei Khozin\
-**Version:** 0.6.0\
+**Version:** 1.0.0\
 **Website:** [https://github.com/alekho77/epic_7d2d_mods](https://github.com/alekho77/epic_7d2d_mods)

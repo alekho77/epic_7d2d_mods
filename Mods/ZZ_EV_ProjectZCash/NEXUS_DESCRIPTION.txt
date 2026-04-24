@@ -181,6 +181,12 @@ Deterministic Quality 6 [color=#8692FF][b]Improved[/b][/color] weapons, tools, a
 
 [size=5][b]Changelog[/b][/size]
 
+[size=4][b]v1.0.0[/b][/size]
+
+[list]
+[*][b]First stable release.[/b] Promoted the modlet from pre-release (0.x) to its first release version with no content changes relative to 0.6.0 — the full 55-recipe Project Z catalogue is now considered feature-complete and API-stable for EpicCash integration.
+[/list]
+
 [size=4][b]v0.6.0[/b][/size]
 
 [list]
