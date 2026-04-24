@@ -164,23 +164,23 @@ All magazine bundles contain 10 copies of the respective magazine. Skill magazin
 
 ### 🟪 Skill Book Bundles
 
-All book bundles contain the complete set of 7 volumes. A full book series grants a powerful permanent passive bonus for the rest of the playthrough, so prices are tiered by the strength and universality of that bonus.
+All book bundles contain the complete set of 7 volumes. Every Skill Book Bundle now costs 25 EB.
 
 | Name | Contents | Description | Price |
 | --- | --- | --- | ---: |
-| The Fireman's Almanac Complete Set | 7 volumes | All 7 volumes of The Fireman's Almanac | 15 EB |
-| The Great Heist Complete Set | 7 volumes | All 7 volumes of The Great Heist | 15 EB |
-| Wasteland Treasures Complete Set | 7 volumes | All 7 volumes of Wasteland Treasures | 15 EB |
-| The Hunter's Journal Complete Set | 7 volumes | All 7 volumes of The Hunter's Journal | 15 EB |
-| Art of Mining Complete Set | 7 volumes | All 7 volumes of Art of Mining | 15 EB |
-| Night Stalker Complete Set | 7 volumes | All 7 volumes of Night Stalker | 20 EB |
-| Batter Up Complete Set | 7 volumes | All 7 volumes of Batter Up | 20 EB |
-| Sledge Saga Complete Set | 7 volumes | All 7 volumes of Sledge Saga | 20 EB |
-| Ranger's Guide to Archery Complete Set | 7 volumes | All 7 volumes of Ranger's Guide to Archery | 20 EB |
-| Sniper Complete Set | 7 volumes | All 7 volumes of Sniper | 20 EB |
-| Tech Junkie Complete Set | 7 volumes | All 7 volumes of Tech Junkie | 20 EB |
-| Bar Brawling Complete Set | 7 volumes | All 7 volumes of Bar Brawling | 20 EB |
-| Spear Hunter Complete Set | 7 volumes | All 7 volumes of Spear Hunter | 20 EB |
+| The Fireman's Almanac Complete Set | 7 volumes | All 7 volumes of The Fireman's Almanac | 25 EB |
+| The Great Heist Complete Set | 7 volumes | All 7 volumes of The Great Heist | 25 EB |
+| Wasteland Treasures Complete Set | 7 volumes | All 7 volumes of Wasteland Treasures | 25 EB |
+| The Hunter's Journal Complete Set | 7 volumes | All 7 volumes of The Hunter's Journal | 25 EB |
+| Art of Mining Complete Set | 7 volumes | All 7 volumes of Art of Mining | 25 EB |
+| Night Stalker Complete Set | 7 volumes | All 7 volumes of Night Stalker | 25 EB |
+| Batter Up Complete Set | 7 volumes | All 7 volumes of Batter Up | 25 EB |
+| Sledge Saga Complete Set | 7 volumes | All 7 volumes of Sledge Saga | 25 EB |
+| Ranger's Guide to Archery Complete Set | 7 volumes | All 7 volumes of Ranger's Guide to Archery | 25 EB |
+| Sniper Complete Set | 7 volumes | All 7 volumes of Sniper | 25 EB |
+| Tech Junkie Complete Set | 7 volumes | All 7 volumes of Tech Junkie | 25 EB |
+| Bar Brawling Complete Set | 7 volumes | All 7 volumes of Bar Brawling | 25 EB |
+| Spear Hunter Complete Set | 7 volumes | All 7 volumes of Spear Hunter | 25 EB |
 | Lucky Looter Complete Set | 7 volumes | All 7 volumes of Lucky Looter | 25 EB |
 | Magnum Enforcer Complete Set | 7 volumes | All 7 volumes of Magnum Enforcer | 25 EB |
 | Pistol Pete Complete Set | 7 volumes | All 7 volumes of Pistol Pete | 25 EB |

@@ -172,22 +172,22 @@ All magazine bundles contain 10 copies of the respective magazine — [b]12 EB[/
 
 [color=#8F00F2][size=4][b]Skill Book Bundles[/b][/size][/color]
 
-All book bundles contain the complete set of 7 volumes. A full series grants a powerful permanent passive bonus for the rest of the playthrough, so prices are tiered by the strength and universality of that bonus.
+All book bundles contain the complete set of 7 volumes. Every Skill Book Bundle now costs 25 EB.
 
 [list]
-[*][b]The Fireman's Almanac Complete Set[/b] (15 EB)
-[*][b]The Great Heist Complete Set[/b] (15 EB)
-[*][b]Wasteland Treasures Complete Set[/b] (15 EB)
-[*][b]The Hunter's Journal Complete Set[/b] (15 EB)
-[*][b]Art of Mining Complete Set[/b] (15 EB)
-[*][b]Night Stalker Complete Set[/b] (20 EB)
-[*][b]Batter Up Complete Set[/b] (20 EB)
-[*][b]Sledge Saga Complete Set[/b] (20 EB)
-[*][b]Ranger's Guide to Archery Complete Set[/b] (20 EB)
-[*][b]Sniper Complete Set[/b] (20 EB)
-[*][b]Tech Junkie Complete Set[/b] (20 EB)
-[*][b]Bar Brawling Complete Set[/b] (20 EB)
-[*][b]Spear Hunter Complete Set[/b] (20 EB)
+[*][b]The Fireman's Almanac Complete Set[/b] (25 EB)
+[*][b]The Great Heist Complete Set[/b] (25 EB)
+[*][b]Wasteland Treasures Complete Set[/b] (25 EB)
+[*][b]The Hunter's Journal Complete Set[/b] (25 EB)
+[*][b]Art of Mining Complete Set[/b] (25 EB)
+[*][b]Night Stalker Complete Set[/b] (25 EB)
+[*][b]Batter Up Complete Set[/b] (25 EB)
+[*][b]Sledge Saga Complete Set[/b] (25 EB)
+[*][b]Ranger's Guide to Archery Complete Set[/b] (25 EB)
+[*][b]Sniper Complete Set[/b] (25 EB)
+[*][b]Tech Junkie Complete Set[/b] (25 EB)
+[*][b]Bar Brawling Complete Set[/b] (25 EB)
+[*][b]Spear Hunter Complete Set[/b] (25 EB)
 [*][b]Lucky Looter Complete Set[/b] (25 EB)
 [*][b]Magnum Enforcer Complete Set[/b] (25 EB)
 [*][b]Pistol Pete Complete Set[/b] (25 EB)
