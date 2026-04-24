@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+  <!--
+    Re-categorize Project Z bundle items so they appear in the vanilla
+    inventory crafting tabs (Ammo/Weapons and Tools/Traps) instead of the
+    custom "Donate*" groups from Z_RareItems / Z_Master_Skills, which are
+    not bound to any tab in the inventory crafting UI and therefore hide
+    the recipes added by this mod.
+  -->
+
+  <!-- ===== Rare Ranged Weapons (Z_RareItems) ===== -->
+  <set xpath="/items/item[@name='rareSniperRifleBundle']/property[@name='Group']/@value">Ammo/Weapons,Ranged Weapons</set>
+  <set xpath="/items/item[@name='rareAutoShotgunBundle']/property[@name='Group']/@value">Ammo/Weapons,Ranged Weapons</set>
+  <set xpath="/items/item[@name='rareM60Bundle']/property[@name='Group']/@value">Ammo/Weapons,Ranged Weapons</set>
+  <set xpath="/items/item[@name='rareSMG5Bundle']/property[@name='Group']/@value">Ammo/Weapons,Ranged Weapons</set>
+  <set xpath="/items/item[@name='rareDesertVultureBundle']/property[@name='Group']/@value">Ammo/Weapons,Ranged Weapons</set>
+  <set xpath="/items/item[@name='rareArcheryBundle']/property[@name='Group']/@value">Ammo/Weapons,Ranged Weapons</set>
+
+  <!-- ===== Rare Melee Weapons (Z_RareItems) ===== -->
+  <set xpath="/items/item[@name='rareSpearT3Bundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+  <set xpath="/items/item[@name='rareClubT3Bundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+  <set xpath="/items/item[@name='rareSledgehammerT3Bundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+  <set xpath="/items/item[@name='rareKnucklesT3Bundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+  <set xpath="/items/item[@name='rareMacheteT3Bundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+  <set xpath="/items/item[@name='rareStunBatonT3Bundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+
+  <!-- ===== Rare Tools (Z_RareItems) ===== -->
+  <set xpath="/items/item[@name='rareAugerBundle']/property[@name='Group']/@value">Tools/Traps</set>
+  <set xpath="/items/item[@name='rareChainsawBundle']/property[@name='Group']/@value">Tools/Traps</set>
+
+  <!-- ===== Legendary Ranged Weapons (Z_Master_Skills) ===== -->
+  <set xpath="/items/item[@name='UniqueBuldogBundle']/property[@name='Group']/@value">Ammo/Weapons,Ranged Weapons</set>
+  <set xpath="/items/item[@name='UniqueEraserBundle']/property[@name='Group']/@value">Ammo/Weapons,Ranged Weapons</set>
+  <set xpath="/items/item[@name='UniqueGausBundle']/property[@name='Group']/@value">Ammo/Weapons,Ranged Weapons</set>
+  <set xpath="/items/item[@name='UniqueZingerBundle']/property[@name='Group']/@value">Ammo/Weapons,Ranged Weapons</set>
+
+  <!-- ===== Legendary Melee Weapons (Z_Master_Skills) ===== -->
+  <set xpath="/items/item[@name='UniqueCombistickBundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+  <set xpath="/items/item[@name='UniqueBarbarianBundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+  <set xpath="/items/item[@name='UniqueDestructorBundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+  <set xpath="/items/item[@name='UniqueMausClawsBundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+  <set xpath="/items/item[@name='UniqueIndianaBundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+  <set xpath="/items/item[@name='UniqueFlugenBundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
+
+  <!--
+    Improved Armor bundles for Z_Armor_Improved.
+    Each bundle spawns the full 4-piece Q6 set of an "Improved" armor class.
+    The bundle item itself uses the Improved tint (#8692FF) to match the
+    visual convention from Z_Armor_Improved.
+  -->
+  <append xpath="/items">
+
+    <!-- Rogue Improved Armor Set -->
+    <item name="evArmorRogueImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorRogueHelmet"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorRogueImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorRogueHelmetImp,armorRogueOutfitImp,armorRogueGlovesImp,armorRogueBootsImp"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Enforcer Improved Armor Set -->
+    <item name="evArmorEnforcerImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorEnforcerHelmet"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorEnforcerImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorEnforcerHelmetImp,armorEnforcerOutfitImp,armorEnforcerGlovesImp,armorEnforcerBootsImp"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Ranger Improved Armor Set -->
+    <item name="evArmorRangerImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorRangerHelmet"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorRangerImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorRangerHelmetImp,armorRangerOutfitImp,armorRangerGlovesImp,armorRangerBootsImp"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Commando Improved Armor Set -->
+    <item name="evArmorCommandoImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorCommandoHelmet"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorCommandoImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorCommandoHelmetImp,armorCommandoOutfitImp,armorCommandoGlovesImp,armorCommandoBootsImp"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Assassin Improved Armor Set -->
+    <item name="evArmorAssassinImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorAssassinHelmet"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorAssassinImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorAssassinHelmetImp,armorAssassinOutfitImp,armorAssassinGlovesImp,armorAssassinBootsImp"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Gatherer Improved Armor Set (Project Z exclusive class; uses Miner helmet icon) -->
+    <item name="evArmorGathererImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorMinerHelmet"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorGathererImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorGathererHelmetImp,armorGathererOutfitImp,armorGathererGlovesImp,armorGathererBootsImp"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Nomad Improved Armor Set -->
+    <item name="evArmorNomadImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorNomadHelmet"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorNomadImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorNomadHelmetImp,armorNomadOutfitImp,armorNomadGlovesImp,armorNomadBootsImp"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Nerd Improved Armor Set -->
+    <item name="evArmorNerdImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorNerdHelmet"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorNerdImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorNerdHelmetImp,armorNerdOutfitImp,armorNerdGlovesImp,armorNerdBootsImp"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Raider Improved Armor Set -->
+    <item name="evArmorRaiderImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorRaiderHelmet"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorRaiderImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorRaiderHelmetImp,armorRaiderOutfitImp,armorRaiderGlovesImp,armorRaiderBootsImp"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!--
+      Legendary named armor sets from Z_Master_Skills. These pieces have their
+      own full-set buff (buffRescuerSetBonus / buffPredatorSetBonus / etc.)
+      when all 4 items of the same class are equipped, require the MasterArmor
+      perk, and are normally crafted at the Improved Workbench. Each bundle
+      uses the canonical gold tint (#FFB800) applied to the corresponding
+      class's CustomIcon helmet.
+    -->
+
+    <!-- Rescuer Legendary Armor Set (Light) -->
+    <item name="evArmorRescuerBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorCommandoHelmet"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorRescuerBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorRescuerHelmet,armorRescuerOutfit,armorRescuerGloves,armorRescuerBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Predator Legendary Armor Set (Medium) -->
+    <item name="evArmorPredatorBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorAssassinHelmet"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorPredatorBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorPredatorHelmet,armorPredatorOutfit,armorPredatorGloves,armorPredatorBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Plunderer Legendary Armor Set (Medium) -->
+    <item name="evArmorPlundererBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorRangerHelmet"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorPlundererBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorPlundererHelmet,armorPlundererOutfit,armorPlundererGloves,armorPlundererBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Sonny Legendary Armor Set (Heavy) -->
+    <item name="evArmorSonnyBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorBikerHelmet"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorSonnyBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorSonnyHelmet,armorSonnyOutfit,armorSonnyGloves,armorSonnyBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Maus Legendary Armor Set (Heavy) -->
+    <item name="evArmorMausBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorNomadHelmet"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorMausBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorMausHelmet,armorMausOutfit,armorMausGloves,armorMausBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!--
+      Improved weapons and tools from Z_Master_Skills. Each bundle yields a
+      single deterministic Quality 6 "Improved" piece (tint #8692FF),
+      normally gated behind MasterWeapons / MasterTools perks and the
+      Improved Workbench.
+    -->
+
+    <!-- === Improved Ranged Weapons === -->
+    <item name="evGunM60ImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Ranged Weapons"/>
+      <property name="CustomIcon" value="gunMGT3M60"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evGunM60ImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="gunMGT4M60Imp"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <item name="evGunAutoShotgunImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Ranged Weapons"/>
+      <property name="CustomIcon" value="gunShotgunT3AutoShotgun"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evGunAutoShotgunImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="gunShotgunT4AutoShotgunImp"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <item name="evGunSniperRifleImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Ranged Weapons"/>
+      <property name="CustomIcon" value="gunRifleT3SniperRifle"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evGunSniperRifleImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="gunRifleT4SniperRifleImp"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <item name="evGunSMG5ImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Ranged Weapons"/>
+      <property name="CustomIcon" value="gunHandgunT3SMG5"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evGunSMG5ImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="gunHandgunT4SMG5Imp"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <item name="evGunCompoundBowImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Ranged Weapons"/>
+      <property name="CustomIcon" value="gunBowT3CompoundBow"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evGunCompoundBowImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="gunBowT4CompoundBowImp"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <item name="evGunCompoundCrossbowImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Ranged Weapons"/>
+      <property name="CustomIcon" value="gunBowT3CompoundCrossbow"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evGunCompoundCrossbowImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="gunBowT4CompoundCrossbowImp"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <!-- === Improved Melee Weapons === -->
+    <item name="evMeleeSteelSpearImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+      <property name="CustomIcon" value="meleeWpnSpearT3SteelSpear"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evMeleeSteelSpearImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeWpnSpearT4SteelSpearImp"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <item name="evMeleeSteelClubImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+      <property name="CustomIcon" value="meleeWpnClubT3SteelClub"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evMeleeSteelClubImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeWpnClubT4SteelClubImp"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <item name="evMeleeSteelSledgehammerImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+      <property name="CustomIcon" value="meleeWpnSledgeT3SteelSledgehammer"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evMeleeSteelSledgehammerImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeWpnSledgeT4SteelSledgehammerImp"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <item name="evMeleeSteelKnucklesImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+      <property name="CustomIcon" value="meleeWpnKnucklesT3SteelKnuckles"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evMeleeSteelKnucklesImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeWpnKnucklesT4SteelKnucklesImp"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <item name="evMeleeMacheteImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+      <property name="CustomIcon" value="meleeWpnBladeT3Machete"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evMeleeMacheteImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeWpnBladeT4MacheteImp"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <!-- === Improved Power Tools === -->
+    <item name="evToolChainsawImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Tools/Traps"/>
+      <property name="CustomIcon" value="meleeToolAxeT3Chainsaw"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evToolChainsawImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeToolAxeT4ChainsawImp"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <item name="evToolAugerImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Tools/Traps"/>
+      <property name="CustomIcon" value="meleeToolPickT3Auger"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evToolAugerImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeToolPickT4AugerImp"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <item name="evToolImpactDriverImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Tools/Traps"/>
+      <property name="CustomIcon" value="meleeToolSalvageT3ImpactDriver"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evToolImpactDriverImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeToolSalvageT4ImpactDriverImp"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <item name="evToolNailgunImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Tools/Traps"/>
+      <property name="CustomIcon" value="meleeToolRepairT3Nailgun"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evToolNailgunImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeToolRepairT4NailgunImp"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <!-- === Improved Robotics === -->
+    <item name="evGunJunkSledgeImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Robotics"/>
+      <property name="CustomIcon" value="gunBotT1JunkSledge"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evGunJunkSledgeImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="gunBotJunkSledgeImp"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <item name="evGunJunkTurretImpBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Robotics"/>
+      <property name="CustomIcon" value="gunBotT2JunkTurret"/>
+      <property name="CustomIconTint" value="8692FF"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evGunJunkTurretImpBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="gunBotJunkTurretImp"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+  </append>
+
+</config>

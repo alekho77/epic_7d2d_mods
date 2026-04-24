@@ -222,6 +222,14 @@ All book bundles contain the complete set of 7 volumes. Every Skill Book Bundle 
 
 [size=5][b]Changelog[/b][/size]
 
+[size=4][b]v1.3.0[/b][/size]
+
+[list]
+[*]Bundle recipes now appear in the inventory crafting tabs alongside vanilla recipes — vehicle bundles show up under [b]Science[/b] (same tab as vanilla vehicle parts), all skill magazine and skill book bundles also appear under [b]Science[/b], and the remaining bundles are distributed across [b]Ammo/Weapons[/b], [b]Clothing[/b], [b]Tools/Traps[/b], and [b]Food/Cooking[/b]
+[*]All bundle recipes now use the standard vanilla [font=Courier New]packMuleCrafting[/font] tag, so they are properly scoped by the Pack Mule crafting-time perk just like every other inventory recipe
+[*]Crafting time raised from 1 → [b]2 seconds[/b] for every bundle — still quick, but noticeable enough to prevent accidental mass-crafting
+[/list]
+
 [size=4][b]v1.2.2[/b][/size]
 
 [list]

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+	<!--
+		EpicCash recipes for Project Z content.
+		Loads after EV_EpicCash (ev* currency) and Z_RareItems (rare* bundles).
+		Recipes are added here once categories are reviewed and approved.
+	-->
+
+	<append xpath="/recipes">
+
+		<!-- =========================================================== -->
+		<!-- Project Z — Rare Weapon Bundles (Tier 3, Quality 6)          -->
+		<!-- Each bundle yields ONE random rare variant of the weapon.    -->
+		<!-- =========================================================== -->
+
+		<!-- Ranged -->
+		<recipe name="rareSniperRifleBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="55"/>
+		</recipe>
+		<recipe name="rareAutoShotgunBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="55"/>
+		</recipe>
+		<recipe name="rareM60Bundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="75"/>
+		</recipe>
+		<recipe name="rareSMG5Bundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="65"/>
+		</recipe>
+		<recipe name="rareDesertVultureBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="55"/>
+		</recipe>
+		<recipe name="rareArcheryBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="50"/>
+		</recipe>
+
+		<!-- Melee -->
+		<recipe name="rareSpearT3Bundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="45"/>
+		</recipe>
+		<recipe name="rareClubT3Bundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="45"/>
+		</recipe>
+		<recipe name="rareSledgehammerT3Bundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="45"/>
+		</recipe>
+		<recipe name="rareKnucklesT3Bundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="45"/>
+		</recipe>
+		<recipe name="rareMacheteT3Bundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="45"/>
+		</recipe>
+		<recipe name="rareStunBatonT3Bundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="50"/>
+		</recipe>
+
+		<!-- Tools (Rare T3) -->
+		<recipe name="rareAugerBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="55"/>
+		</recipe>
+		<recipe name="rareChainsawBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="50"/>
+		</recipe>
+
+		<!-- =========================================================== -->
+		<!-- Project Z — Legendary (Unique) Weapon Bundles                -->
+		<!-- End-game tier above Rare. Intentionally priced very high so  -->
+		<!-- a single purchase is not a shortcut to full end-game gear.   -->
+		<!-- =========================================================== -->
+
+		<!-- Ranged -->
+		<recipe name="UniqueBuldogBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="350"/>
+		</recipe>
+		<recipe name="UniqueEraserBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="300"/>
+		</recipe>
+		<recipe name="UniqueGausBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="300"/>
+		</recipe>
+		<recipe name="UniqueZingerBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="300"/>
+		</recipe>
+
+		<!-- Melee -->
+		<recipe name="UniqueCombistickBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="200"/>
+		</recipe>
+		<recipe name="UniqueBarbarianBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="200"/>
+		</recipe>
+		<recipe name="UniqueDestructorBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="200"/>
+		</recipe>
+		<recipe name="UniqueMausClawsBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="200"/>
+		</recipe>
+		<recipe name="UniqueIndianaBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="200"/>
+		</recipe>
+		<recipe name="UniqueFlugenBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="200"/>
+		</recipe>
+
+		<!-- =========================================================== -->
+		<!-- Project Z — Improved Armor Bundles (Z_Armor_Improved)        -->
+		<!-- Each bundle yields a full 4-piece Q6 Improved set. Priced    -->
+		<!-- between Rare weapons (50-75 EB) and Unique weapons (200-350) -->
+		<!-- so that a single armor set is roughly equivalent to one      -->
+		<!-- legendary melee weapon but cheaper than a legendary firearm. -->
+		<!-- =========================================================== -->
+
+		<!-- Base tier (150 EB): Rogue, Gatherer, Nomad, Nerd -->
+		<recipe name="evArmorRogueImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="150"/>
+		</recipe>
+		<recipe name="evArmorGathererImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="150"/>
+		</recipe>
+		<recipe name="evArmorNomadImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="150"/>
+		</recipe>
+		<recipe name="evArmorNerdImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="150"/>
+		</recipe>
+
+		<!-- Mid tier (170 EB): Ranger, Assassin -->
+		<recipe name="evArmorRangerImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="170"/>
+		</recipe>
+		<recipe name="evArmorAssassinImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="170"/>
+		</recipe>
+
+		<!-- High tier (180 EB): Commando -->
+		<recipe name="evArmorCommandoImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="180"/>
+		</recipe>
+
+		<!-- Top tier (200 EB): Enforcer, Raider -->
+		<recipe name="evArmorEnforcerImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="200"/>
+		</recipe>
+		<recipe name="evArmorRaiderImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="200"/>
+		</recipe>
+
+		<!-- =========================================================== -->
+		<!-- Project Z — Legendary Armor Bundles (Z_Master_Skills)        -->
+		<!-- Top-tier named sets (Rescuer, Predator, Plunderer, Sonny,    -->
+		<!-- Maus) with unique full-set buffs. Priced above Improved      -->
+		<!-- sets and roughly on par with legendary weapons.              -->
+		<!-- =========================================================== -->
+
+		<!-- Light legendary (300 EB): Rescuer -->
+		<recipe name="evArmorRescuerBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="300"/>
+		</recipe>
+
+		<!-- Medium legendary (320 EB): Predator, Plunderer -->
+		<recipe name="evArmorPredatorBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="320"/>
+		</recipe>
+		<recipe name="evArmorPlundererBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="320"/>
+		</recipe>
+
+		<!-- Heavy legendary (380 EB): Sonny, Maus -->
+		<recipe name="evArmorSonnyBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="380"/>
+		</recipe>
+		<recipe name="evArmorMausBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="380"/>
+		</recipe>
+
+		<!-- =========================================================== -->
+		<!-- Project Z — Improved Weapons & Tools (Z_Master_Skills)       -->
+		<!-- Each bundle yields a deterministic Q6 "Improved" piece.      -->
+		<!-- Priced between Rare weapons (45-75 EB) and Legendary sets    -->
+		<!-- (300+ EB): mid-to-upper range.                               -->
+		<!-- =========================================================== -->
+
+		<!-- Improved Ranged Weapons -->
+		<recipe name="evGunM60ImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="140"/>
+		</recipe>
+		<recipe name="evGunAutoShotgunImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="120"/>
+		</recipe>
+		<recipe name="evGunSniperRifleImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="120"/>
+		</recipe>
+		<recipe name="evGunSMG5ImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="120"/>
+		</recipe>
+		<recipe name="evGunCompoundBowImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="90"/>
+		</recipe>
+		<recipe name="evGunCompoundCrossbowImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="90"/>
+		</recipe>
+
+		<!-- Improved Melee Weapons -->
+		<recipe name="evMeleeSteelSpearImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="90"/>
+		</recipe>
+		<recipe name="evMeleeSteelClubImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="90"/>
+		</recipe>
+		<recipe name="evMeleeSteelSledgehammerImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="90"/>
+		</recipe>
+		<recipe name="evMeleeSteelKnucklesImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="90"/>
+		</recipe>
+		<recipe name="evMeleeMacheteImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="90"/>
+		</recipe>
+
+		<!-- Improved Power Tools -->
+		<recipe name="evToolChainsawImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="75"/>
+		</recipe>
+		<recipe name="evToolAugerImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="90"/>
+		</recipe>
+		<recipe name="evToolImpactDriverImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="90"/>
+		</recipe>
+		<recipe name="evToolNailgunImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="140"/>
+		</recipe>
+
+		<!-- Improved Robotics -->
+		<recipe name="evGunJunkSledgeImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="180"/>
+		</recipe>
+		<recipe name="evGunJunkTurretImpBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="180"/>
+		</recipe>
+
+	</append>
+
+</config>
