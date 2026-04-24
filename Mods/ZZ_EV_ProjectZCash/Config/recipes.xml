@@ -145,6 +145,34 @@
 			<ingredient name="evCash" count="200"/>
 		</recipe>
 
+		<!-- =========================================================== -->
+		<!-- Project Z — Legendary Armor Bundles (Z_Master_Skills)        -->
+		<!-- Top-tier named sets (Rescuer, Predator, Plunderer, Sonny,    -->
+		<!-- Maus) with unique full-set buffs. Priced above Improved      -->
+		<!-- sets and roughly on par with legendary weapons.              -->
+		<!-- =========================================================== -->
+
+		<!-- Light legendary (300 EB): Rescuer -->
+		<recipe name="evArmorRescuerBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="300"/>
+		</recipe>
+
+		<!-- Medium legendary (320 EB): Predator, Plunderer -->
+		<recipe name="evArmorPredatorBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="320"/>
+		</recipe>
+		<recipe name="evArmorPlundererBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="320"/>
+		</recipe>
+
+		<!-- Heavy legendary (380 EB): Sonny, Maus -->
+		<recipe name="evArmorSonnyBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="380"/>
+		</recipe>
+		<recipe name="evArmorMausBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+			<ingredient name="evCash" count="380"/>
+		</recipe>
+
 	</append>
 
 </config>

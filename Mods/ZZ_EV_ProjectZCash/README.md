@@ -22,10 +22,10 @@ Adds **Epic Bucks** crafting recipes for content from the **[Project Z](https://
 
 ## Features
 
-- **33 Project Z Recipes** — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, and 9 Improved armor sets
+- **38 Project Z Recipes** — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, 9 Improved armor sets, and 5 Legendary named armor sets
 - **Always Unlocked** — no schematic or perk level required
 - **Inventory Crafting** — no workstation needed
-- **Tiered Pricing** — rare gear in the 45–75 EB range, Improved armor sets in the 150–200 EB range, and legendary weapons priced very high (200–350 EB) to prevent instant end-game
+- **Tiered Pricing** — rare gear in the 45–75 EB range, Improved armor sets in the 150–200 EB range, Legendary weapons and armor sets priced very high (200–380 EB) to prevent instant end-game
 
 ## Included Recipes
 
@@ -102,6 +102,18 @@ Full 4-piece Quality 6 "Improved" armor sets. Each `Improved` piece is significa
 | Enforcer Improved Armor Set | Enforcer | Heavy | 200 EB |
 | Raider Improved Armor Set | Raider | Heavy | 200 EB |
 
+### Legendary Named Armor Sets (from `Z_Master_Skills`)
+
+End-game named armor sets with a gold `#FFB800` tint. Each set grants a unique **full-set bonus buff** (e.g. `buffPredatorSetBonus`, `buffSonnySetBonus`) when all 4 pieces of the same class are equipped simultaneously. Normally crafted only at the Improved Workbench with the `MasterArmor` perk. Each bundle yields the full 4-piece set at Quality 6.
+
+| Bundle | Class | Armor Type | Price |
+| --- | --- | --- | ---: |
+| Rescuer Legendary Armor Set | Rescuer | Light | 300 EB |
+| Predator Legendary Armor Set | Predator | Medium | 320 EB |
+| Plunderer Legendary Armor Set | Plunderer | Medium | 320 EB |
+| Sonny Legendary Armor Set | Sonny | Heavy (premium) | 380 EB |
+| Maus Legendary Armor Set | Maus | Heavy (premium) | 380 EB |
+
 ## Installation
 
 1. Install **EV_EpicCash** — copy `EV_EpicCash` into your `7 Days to Die/Mods/` directory.
@@ -117,6 +129,13 @@ Full 4-piece Quality 6 "Improved" armor sets. Each `Improved` piece is significa
 - **Load Order:** The `ZZ_` prefix forces this mod to load after both `EV_*` and `Z_*` mods, which is required because recipes reference items defined in both.
 
 ## Changelog
+
+### v0.5.0
+
+- Added **5 Legendary Named Armor bundle recipes** from the `Z_Master_Skills` submod: Rescuer (Light, 300 EB), Predator (Medium, 320 EB), Plunderer (Medium, 320 EB), Sonny (Heavy, 380 EB), Maus (Heavy, 380 EB)
+- Each bundle yields a full 4-piece Quality 6 set (helmet, outfit, gloves, boots) and triggers the corresponding class-specific **full-set bonus buff** when all four pieces are equipped
+- Bundles use the gold tint (`#FFB800`) matching Project Z's convention for legendary named gear
+- Added English and Russian localization strings for the new bundles
 
 ### v0.4.0
 
@@ -150,5 +169,5 @@ Full 4-piece Quality 6 "Improved" armor sets. Each `Improved` piece is significa
 ---
 
 **Author:** Aleksei Khozin\
-**Version:** 0.4.0\
+**Version:** 0.5.0\
 **Website:** [https://github.com/alekho77/epic_7d2d_mods](https://github.com/alekho77/epic_7d2d_mods)

@@ -186,6 +186,90 @@
       </property>
     </item>
 
+    <!--
+      Legendary named armor sets from Z_Master_Skills. These pieces have their
+      own full-set buff (buffRescuerSetBonus / buffPredatorSetBonus / etc.)
+      when all 4 items of the same class are equipped, require the MasterArmor
+      perk, and are normally crafted at the Improved Workbench. Each bundle
+      uses the canonical gold tint (#FFB800) applied to the corresponding
+      class's CustomIcon helmet.
+    -->
+
+    <!-- Rescuer Legendary Armor Set (Light) -->
+    <item name="evArmorRescuerBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorCommandoHelmet"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorRescuerBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorRescuerHelmet,armorRescuerOutfit,armorRescuerGloves,armorRescuerBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Predator Legendary Armor Set (Medium) -->
+    <item name="evArmorPredatorBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorAssassinHelmet"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorPredatorBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorPredatorHelmet,armorPredatorOutfit,armorPredatorGloves,armorPredatorBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Plunderer Legendary Armor Set (Medium) -->
+    <item name="evArmorPlundererBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorRangerHelmet"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorPlundererBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorPlundererHelmet,armorPlundererOutfit,armorPlundererGloves,armorPlundererBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Sonny Legendary Armor Set (Heavy) -->
+    <item name="evArmorSonnyBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorBikerHelmet"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorSonnyBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorSonnyHelmet,armorSonnyOutfit,armorSonnyGloves,armorSonnyBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
+    <!-- Maus Legendary Armor Set (Heavy) -->
+    <item name="evArmorMausBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Clothing,Armor"/>
+      <property name="CustomIcon" value="armorNomadHelmet"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evArmorMausBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="armorMausHelmet,armorMausOutfit,armorMausGloves,armorMausBoots"/>
+        <property name="Create_item_count" value="6,6,6,6"/>
+      </property>
+    </item>
+
   </append>
 
 </config>

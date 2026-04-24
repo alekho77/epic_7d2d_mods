@@ -27,10 +27,10 @@ The [font=Courier New]ZZ_[/font] folder prefix ensures the mod is loaded [b]afte
 [size=5][b]Features[/b][/size]
 
 [list]
-[*][b]33 Project Z Recipes[/b] — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, and 9 Improved armor sets
+[*][b]38 Project Z Recipes[/b] — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, 9 Improved armor sets, and 5 Legendary named armor sets
 [*][b]Always Unlocked[/b] — no schematic or perk level required
 [*][b]Inventory Crafting[/b] — no workstation needed
-[*][b]Tiered Pricing[/b] — rare gear in the 45–75 EB range, Improved armor sets in the 150–200 EB range, and legendary weapons priced very high (200–350 EB) to prevent instant end-game
+[*][b]Tiered Pricing[/b] — rare gear in the 45–75 EB range, Improved armor sets in the 150–200 EB range, Legendary weapons and armor sets priced very high (200–380 EB) to prevent instant end-game
 [/list]
 
 [size=5][b]Included Recipes[/b][/size]
@@ -108,6 +108,18 @@ Full 4-piece Quality 6 [color=#8692FF][b]Improved[/b][/color] armor sets. Each I
 [*][b]Raider Improved Armor Set[/b] (200 EB) — Heavy armor, Raider class
 [/list]
 
+[size=4][b]Legendary Named Armor Sets (from Z_Master_Skills)[/b][/size]
+
+End-game named armor sets with a gold [color=#FFB800]#FFB800[/color] tint. Each set grants a unique [b]full-set bonus buff[/b] when all 4 pieces of the same class are equipped simultaneously. Normally crafted only at the Improved Workbench with the [font=Courier New]MasterArmor[/font] perk. Each bundle yields the full 4-piece set at Quality 6.
+
+[list]
+[*][b]Rescuer Legendary Armor Set[/b] (300 EB) — Light armor, Rescuer class
+[*][b]Predator Legendary Armor Set[/b] (320 EB) — Medium armor, Predator class
+[*][b]Plunderer Legendary Armor Set[/b] (320 EB) — Medium armor, Plunderer class
+[*][b]Sonny Legendary Armor Set[/b] (380 EB) — Heavy armor, Sonny class
+[*][b]Maus Legendary Armor Set[/b] (380 EB) — Heavy armor, Maus class
+[/list]
+
 [size=5][b]Installation[/b][/size]
 
 [list=1]
@@ -127,6 +139,15 @@ Full 4-piece Quality 6 [color=#8692FF][b]Improved[/b][/color] armor sets. Each I
 [/list]
 
 [size=5][b]Changelog[/b][/size]
+
+[size=4][b]v0.5.0[/b][/size]
+
+[list]
+[*]Added [b]5 Legendary Named Armor bundle recipes[/b] from the [font=Courier New]Z_Master_Skills[/font] submod: Rescuer (Light, 300 EB), Predator (Medium, 320 EB), Plunderer (Medium, 320 EB), Sonny (Heavy, 380 EB), Maus (Heavy, 380 EB)
+[*]Each bundle yields a full 4-piece Quality 6 set (helmet, outfit, gloves, boots) and triggers the corresponding class-specific [b]full-set bonus buff[/b] when all four pieces are equipped
+[*]Bundles use the gold tint ([font=Courier New]#FFB800[/font]) matching Project Z's convention for legendary named gear
+[*]Added English and Russian localization strings for the new bundles
+[/list]
 
 [size=4][b]v0.4.0[/b][/size]
 
