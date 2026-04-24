@@ -596,6 +596,483 @@
       </property>
     </item>
 
+    <!--
+      Unique item-modifier bundles (Z_Rare_Modifiers).
+      End-game gold-tint (#FFB800) mods normally unlocked by the Master
+      crafting perks at the Improved Workbench and dropped only from boss
+      loot. Each bundle yields a single Quality 6 modifier of the given
+      type. Priced 50-90 EB depending on gameplay power:
+        50 EB - durability/parts mods (passive upkeep bonuses),
+        70 EB - combat-enhancing modifiers,
+        80-90 EB - top-tier mechanical effects (Rad Remover, Hunter, Electro, Damage Accumulator).
+    -->
+
+    <!-- === Unique Gun Mods === -->
+    <item name="evModGunMagazineExtenderUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="modGunMagazineExtender"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModGunMagazineExtenderUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modGunMagazineExtenderUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModGunDrumMagazineExtenderUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="modGunDrumMagazineExtender"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModGunDrumMagazineExtenderUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modGunDrumMagazineExtenderUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModGunMeleeRadRemoverUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="modGunMeleeRadRemover"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModGunMeleeRadRemoverUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modGunMeleeRadRemoverUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModGunCrippleEmUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="modGunCrippleEm"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModGunCrippleEmUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modGunCrippleEmUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModGunForegripUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="modGunForegrip"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModGunForegripUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modGunForegripUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModGunBipodUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="modGunBipod"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModGunBipodUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modGunBipodUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModGunSoundSuppressorSilencerUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="modGunSoundSuppressorSilencer"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModGunSoundSuppressorSilencerUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modGunSoundSuppressorSilencerUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModGunBoosterUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="modGunTriggerGroupAutomatic"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModGunBoosterUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modGunBoosterUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModGunDamageAccumulatorUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="modGunTriggerGroupSemi"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModGunDamageAccumulatorUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modGunDamageAccumulatorUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModGunRiflePartsUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="gunRifleT1HuntingRifleParts"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModGunRiflePartsUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modGunRiflePartsUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModGunPistolPartsUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="gunHandgunT1PistolParts"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModGunPistolPartsUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modGunPistolPartsUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModGunShotgunPartsUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="gunShotgunT1DoubleBarrelParts"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModGunShotgunPartsUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modGunShotgunPartsUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModGunM60PartsUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="gunMGT1AK47Parts"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModGunM60PartsUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modGunM60PartsUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModTurretPartsUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="gunBotRoboticsParts"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModTurretPartsUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modTurretPartsUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <!-- === Unique Melee Mods === -->
+    <item name="evModMeleeDimondPartsHeavyUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="meleeWpnSpearT3SteelSpearParts"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModMeleeDimondPartsHeavyUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modMeleeDimondPartsHeavyUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModMeleeDimondPartsLightUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="meleeWpnKnucklesT3SteelKnucklesParts"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModMeleeDimondPartsLightUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modMeleeDimondPartsLightUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModMeleeErgonomicGripUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="modMeleeErgonomicGrip"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModMeleeErgonomicGripUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modMeleeErgonomicGripUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModMeleeTheHunterUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="modGunMeleeTheHunter"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModMeleeTheHunterUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modMeleeTheHunterUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModMeleeTerribleSpikesUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="modMeleeClubMetalSpikes"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModMeleeTerribleSpikesUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modMeleeTerribleSpikesUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModMeleeClubBurningUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="modMeleeClubBurningShaft"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModMeleeClubBurningUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modMeleeClubBurningUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModMeleeElectroUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="electricfencepost"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModMeleeElectroUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modMeleeElectroUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModSurgicalBladeUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="modMeleeSerratedBlade"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModSurgicalBladeUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modSurgicalBladeUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <!-- === Unique Tool Mods === -->
+    <item name="evModIncreasedBatteryUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Tools/Traps"/>
+      <property name="CustomIcon" value="carBattery"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModIncreasedBatteryUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modIncreasedBatteryUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModReactorElectricUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Tools/Traps"/>
+      <property name="CustomIcon" value="resourceElectricParts"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModReactorElectricUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modReactorElectricUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModElongatedCoreUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Tools/Traps"/>
+      <property name="CustomIcon" value="meleeToolPickT3Auger"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModElongatedCoreUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modElongatedCoreUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModReinforcedPartsUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Tools/Traps"/>
+      <property name="CustomIcon" value="meleeToolAxeT3ChainsawParts"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModReinforcedPartsUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modReinforcedPartsUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModLuckyMiningUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Tools/Traps"/>
+      <property name="CustomIcon" value="modMeleeBunkerBuster"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModLuckyMiningUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modLuckyMiningUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModEnhancedMechanismsUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Tools/Traps"/>
+      <property name="CustomIcon" value="resourceMechanicalParts"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModEnhancedMechanismsUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modEnhancedMechanismsUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModFastMechanismsUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Tools/Traps"/>
+      <property name="CustomIcon" value="resourceSpring"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModFastMechanismsUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modFastMechanismsUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModSpareBoxUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Tools/Traps"/>
+      <property name="CustomIcon" value="modRoboticDroneCargoMod"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModSpareBoxUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modSpareBoxUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <!-- === Unique Drone/Turret Mods === -->
+    <item name="evModReactorAmplifierUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="modMeleeStunBatonRepulsor"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModReactorAmplifierUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modReactorAmplifierUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModHeavyTipUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="meleeWpnSledgeT3SteelSledgehammerParts"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModHeavyTipUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modHeavyTipUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
+    <item name="evModHugeSupplyUniqueBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Mods"/>
+      <property name="CustomIcon" value="ammoJunkTurretShell"/>
+      <property name="CustomIconTint" value="FFB800"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evModHugeSupplyUniqueBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="modHugeSupplyUnique"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
   </append>
 
 </config>

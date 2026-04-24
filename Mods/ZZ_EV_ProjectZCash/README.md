@@ -22,10 +22,10 @@ Adds **Epic Bucks** crafting recipes for content from the **[Project Z](https://
 
 ## Features
 
-- **60 Project Z Recipes** — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, 9 Improved armor sets, 5 Legendary named armor sets, 11 Improved weapons, 4 Improved power tools, 2 Improved robotics drones, and 5 Depleted Uranium ammo crates
+- **93 Project Z Recipes** — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, 9 Improved armor sets, 5 Legendary named armor sets, 11 Improved weapons, 4 Improved power tools, 2 Improved robotics drones, 5 Depleted Uranium ammo crates, and 33 Unique item-modifier bundles
 - **Always Unlocked** — no schematic or perk level required
 - **Inventory Crafting** — no workstation needed
-- **Tiered Pricing** — Depleted Uranium ammo crates at 6 EB each, rare gear in the 45–75 EB range, Improved weapons/tools in the 75–180 EB range, Improved armor sets in the 150–200 EB range, Legendary weapons and armor sets priced very high (200–380 EB) to prevent instant end-game
+- **Tiered Pricing** — Depleted Uranium ammo crates at 6 EB each, rare gear in the 45–75 EB range, Unique item-modifier bundles in the 50–90 EB range, Improved weapons/tools in the 75–180 EB range, Improved armor sets in the 150–200 EB range, Legendary weapons and armor sets priced very high (200–380 EB) to prevent instant end-game
 
 ## Included Recipes
 
@@ -167,6 +167,63 @@ Experimental [5AFF75]Depleted Uranium[-] rounds — armor-ignoring, multi-target
 | Shotgun DU Ammo Crate | 1000 | 6 EB |
 | Junk Turret DU Ammo Crate | 1000 | 6 EB |
 
+### Unique Item Modifiers (from `Z_Rare_Modifiers`)
+
+End-game gold-tint (`#FFB800`) item modifiers normally gated behind the Master crafting perks at the Improved Workbench and dropped only from boss loot. Each bundle yields a single Quality 6 modifier. Priced **50–90 EB** depending on gameplay impact — durability/parts mods at 50 EB, combat-enhancing modifiers at 70 EB, and top-tier mechanical effects at 80–90 EB.
+
+#### 🎯 Unique Gun Mods
+
+| Bundle | Effect | Price |
+| --- | --- | ---: |
+| Magazine Extender | +150% magazine, +20% RoF, +50% reload | 70 EB |
+| Drum Magazine | +200% magazine, +25% reload | 70 EB |
+| Rad Remover | Blocks zombie regen 90s, +damage vs irradiated | 80 EB |
+| Cripple 'Em | 60% chance to cripple leg, -resist/-damage debuffs | 70 EB |
+| Fore Grip | Hip-fire and moving accuracy | 50 EB |
+| Bipod | ADS accuracy and control | 50 EB |
+| Silencer | Suppressed fire, +10% range, +150% stealth damage | 70 EB |
+| Gun Booster | Activate: x2 fire rate (MG-class) | 70 EB |
+| Damage Accumulator | Every 5th shot: 50% chance 400% damage | 90 EB |
+| Rifle Parts | +240% rifle durability, +30% skill | 50 EB |
+| Pistol Parts | +240% handgun durability, +30% skill | 50 EB |
+| Shotgun Parts | +240% shotgun durability, +30% skill | 50 EB |
+| Machine Gun Parts | +240% MG durability, +30% skill | 50 EB |
+| Turret Parts | Turret durability | 50 EB |
+
+#### ⚔️ Unique Melee Mods
+
+| Bundle | Effect | Price |
+| --- | --- | ---: |
+| Diamond Reinforcement (Heavy) | +150% durability for heavy melee | 50 EB |
+| Diamond Reinforcement (Light) | +150% durability for light melee | 50 EB |
+| Comfortable Handle | −25% stamina cost, +50% attack speed | 70 EB |
+| Hunter | Blocks zombie regen, +damage vs animals/irradiated | 90 EB |
+| Terrible Spikes | 60% bleed / 30% terrible bleed on power attack | 70 EB |
+| Burning Shaft | 100% chance to ignite target | 70 EB |
+| Electro | Powerful electroshock + AoE on power attack | 90 EB |
+| Surgical Blade | Butcher bonus for blades, knives, axes | 50 EB |
+
+#### 🔧 Unique Tool Mods
+
+| Bundle | Effect | Price |
+| --- | --- | ---: |
+| Increased Battery | Reactor tool battery capacity | 50 EB |
+| Advanced Electronics | Reactor tool electronics | 50 EB |
+| Elongated Core | Tool range | 50 EB |
+| Reinforced Parts | Motor/reactor tool damage and durability | 50 EB |
+| Lucky Mining | Treasure chance while mining | 70 EB |
+| Enhanced Mechanisms | Harvest damage (Improved Parsing tools) | 50 EB |
+| Fast Mechanisms | Harvest speed (Improved Parsing tools) | 50 EB |
+| Spare Bolt Box | Harvest count (Improved Parsing tools) | 50 EB |
+
+#### 🤖 Unique Drone/Turret Mods
+
+| Bundle | Effect | Price |
+| --- | --- | ---: |
+| Reactor Amplifier | Rounds-per-minute for Reactor Sledge drone | 70 EB |
+| Heavy Tip | Damage for Reactor Sledge drone | 70 EB |
+| Huge Supply | Magazine size for Improved Junk Turret | 70 EB |
+
 ## Installation
 
 1. Install **EV_EpicCash** — copy `EV_EpicCash` into your `7 Days to Die/Mods/` directory.
@@ -182,6 +239,16 @@ Experimental [5AFF75]Depleted Uranium[-] rounds — armor-ignoring, multi-target
 - **Load Order:** The `ZZ_` prefix forces this mod to load after both `EV_*` and `Z_*` mods, which is required because recipes reference items defined in both.
 
 ## Changelog
+
+### v1.3.0
+
+- Added **33 Unique item-modifier bundle recipes** from the `Z_Rare_Modifiers` submod — gold-tint (`#FFB800`) modifiers normally locked behind the Master crafting perks at the Improved Workbench and dropped only from boss loot
+- **14 Unique Gun mods** (50–90 EB): Magazine Extender, Drum Magazine, Rad Remover, Cripple 'Em, Fore Grip, Bipod, Silencer, Gun Booster, Damage Accumulator, Rifle/Pistol/Shotgun/Machine-Gun/Turret Parts
+- **8 Unique Melee mods** (50–90 EB): Diamond Reinforcement Heavy/Light, Comfortable Handle, Hunter, Terrible Spikes, Burning Shaft, Electro, Surgical Blade
+- **8 Unique Tool mods** (50–70 EB): Increased Battery, Advanced Electronics, Elongated Core, Reinforced Parts, Lucky Mining, Enhanced Mechanisms, Fast Mechanisms, Spare Bolt Box
+- **3 Unique Drone/Turret mods** (70 EB each): Reactor Amplifier, Heavy Tip, Huge Supply
+- Tiered pricing logic: **50 EB** for durability/parts mods, **70 EB** for combat-enhancing modifiers, **80–90 EB** for top-tier mechanical effects (Rad Remover, Hunter, Electro, Damage Accumulator)
+- Added English and Russian localization strings for the new bundles
 
 ### v1.2.0
 
@@ -245,5 +312,5 @@ Experimental [5AFF75]Depleted Uranium[-] rounds — armor-ignoring, multi-target
 ---
 
 **Author:** Aleksei Khozin\
-**Version:** 1.2.0\
+**Version:** 1.3.0\
 **Website:** [https://github.com/alekho77/epic_7d2d_mods](https://github.com/alekho77/epic_7d2d_mods)
