@@ -2,7 +2,7 @@
 
 ## Description
 
-Adds **Epic Bucks** crafting recipes for content from the **[Project Z](https://7dtdprojectz.com/)** modpack. Players can spend Epic Bucks (`evCash`) to craft rare weapon bundles added by `Z_RareItems`, turning the EpicCash economy into a gateway to Project Z's rare gear.
+Adds **Epic Bucks** crafting recipes for content from the **[Project Z](https://7dtdprojectz.com/)** modpack. Players can spend Epic Bucks (`evCash`) to craft item bundles added by Project Z submods, turning the EpicCash economy into a gateway to Project Z's extended content. New bundle categories are added over time.
 
 > ### 🟢 Server-Side Friendly
 >
@@ -16,7 +16,7 @@ Adds **Epic Bucks** crafting recipes for content from the **[Project Z](https://
 > This modlet is an **add-on** and does nothing on its own. It requires both base mods to be installed and loaded before it:
 >
 > 1. **[EV_EpicCash](https://github.com/alekho77/epic_7d2d_mods)** — provides the `evCash` currency used as the ingredient for all recipes.
-> 2. **[Project Z](https://7dtdprojectz.com/)** — specifically the `Z_RareItems` submod, which defines the rare weapon bundles this mod unlocks for crafting.
+> 2. **[Project Z](https://7dtdprojectz.com/)** — provides the items referenced by each recipe. Only the Project Z submods relevant to the currently added recipes are strictly required (see the *Included Recipes* section below).
 >
 > The `ZZ_` folder prefix ensures the mod is loaded **after** `EV_*` and `Z_*` mods (7D2D loads mods alphabetically by folder name), so all referenced items already exist when recipes are registered.
 
@@ -29,9 +29,11 @@ Adds **Epic Bucks** crafting recipes for content from the **[Project Z](https://
 
 ## Included Recipes
 
+### Rare Weapons (from `Z_RareItems`)
+
 Each bundle yields **one random rare variant** (Quality 6) of the weapon with a unique passive bonus (headshot multiplier, knockdown, vampirism, fast reload, etc.) rolled from the Project Z rare pool.
 
-### 🎯 Ranged Weapons
+#### 🎯 Ranged Weapons
 
 | Bundle | Variants | Price |
 | --- | --- | ---: |
@@ -42,7 +44,7 @@ Each bundle yields **one random rare variant** (Quality 6) of the weapon with a 
 | Rare Desert Vulture | Experienced / Universal / Knockdown / Vampire | 55 EB |
 | Rare Archery | Compound Bow / Crossbow × Robinhood / Ninja / Vampire | 50 EB |
 
-### ⚔️ Melee Weapons
+#### ⚔️ Melee Weapons
 
 | Bundle | Variants | Price |
 | --- | --- | ---: |
@@ -56,7 +58,7 @@ Each bundle yields **one random rare variant** (Quality 6) of the weapon with a 
 ## Installation
 
 1. Install **EV_EpicCash** — copy `EV_EpicCash` into your `7 Days to Die/Mods/` directory.
-2. Install **Project Z** — at minimum the `Z_RareItems` submod must be present in `Mods/`.
+2. Install **Project Z** — at minimum every submod referenced by the recipes listed above must be present in `Mods/`.
 3. Copy the **ZZ_EV_ProjectZCash** folder into the same `Mods/` directory.
 4. Restart the game or server.
 
@@ -76,7 +78,7 @@ Each bundle yields **one random rare variant** (Quality 6) of the weapon with a 
 ## Credits
 
 - **Base currency mod:** [EV_EpicCash](https://github.com/alekho77/epic_7d2d_mods) by Aleksei Khozin
-- **Base content mod:** [Project Z](https://7dtdprojectz.com/) by BlackRabbit — specifically the `Z_RareItems` submod
+- **Base content mod:** [Project Z](https://7dtdprojectz.com/) by BlackRabbit
 - **Author:** Aleksei Khozin
 - **Community:** [EpicVales Steam Group](https://steamcommunity.com/groups/EpicVales)
 

@@ -2,7 +2,7 @@
 
 [size=5][b]Description[/b][/size]
 
-Adds [b]Epic Bucks[/b] crafting recipes for content from the [url=https://7dtdprojectz.com/]Project Z[/url] modpack. Players can spend Epic Bucks ([font=Courier New]evCash[/font]) to craft rare weapon bundles added by [font=Courier New]Z_RareItems[/font], turning the EpicCash economy into a gateway to Project Z's rare gear.
+Adds [b]Epic Bucks[/b] crafting recipes for content from the [url=https://7dtdprojectz.com/]Project Z[/url] modpack. Players can spend Epic Bucks ([font=Courier New]evCash[/font]) to craft item bundles added by Project Z submods, turning the EpicCash economy into a gateway to Project Z's extended content. New bundle categories are added over time.
 
 [quote]
 [color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
@@ -18,7 +18,7 @@ This modlet is an [b]add-on[/b] and does nothing on its own. It requires both ba
 
 [list=1]
 [*][url=https://github.com/alekho77/epic_7d2d_mods][b]EV_EpicCash[/b][/url] — provides the [font=Courier New]evCash[/font] currency used as the ingredient for all recipes.
-[*][url=https://7dtdprojectz.com/][b]Project Z[/b][/url] — specifically the [font=Courier New]Z_RareItems[/font] submod, which defines the rare weapon bundles this mod unlocks for crafting.
+[*][url=https://7dtdprojectz.com/][b]Project Z[/b][/url] — provides the items referenced by each recipe. Only the Project Z submods relevant to the currently added recipes are strictly required (see the [i]Included Recipes[/i] section below).
 [/list]
 
 The [font=Courier New]ZZ_[/font] folder prefix ensures the mod is loaded [b]after[/b] [font=Courier New]EV_*[/font] and [font=Courier New]Z_*[/font] mods (7D2D loads mods alphabetically by folder name), so all referenced items already exist when recipes are registered.
@@ -35,9 +35,11 @@ The [font=Courier New]ZZ_[/font] folder prefix ensures the mod is loaded [b]afte
 
 [size=5][b]Included Recipes[/b][/size]
 
+[size=4][b]Rare Weapons (from Z_RareItems)[/b][/size]
+
 Each bundle yields [b]one random rare variant[/b] (Quality 6) of the weapon with a unique passive bonus (headshot multiplier, knockdown, vampirism, fast reload, etc.) rolled from the Project Z rare pool.
 
-[color=#FF3333][size=4][b]Ranged Weapons[/b][/size][/color]
+[color=#FF3333][b]Ranged Weapons[/b][/color]
 
 [list]
 [*][b]Rare Sniper Rifle[/b] (55 EB) — Crusher / Unkillable / Knockdown / Stable
@@ -48,7 +50,7 @@ Each bundle yields [b]one random rare variant[/b] (Quality 6) of the weapon with
 [*][b]Rare Archery[/b] (50 EB) — Compound Bow / Crossbow × Robinhood / Ninja / Vampire
 [/list]
 
-[color=#AA55AA][size=4][b]Melee Weapons[/b][/size][/color]
+[color=#AA55AA][b]Melee Weapons[/b][/color]
 
 [list]
 [*][b]Rare Steel Spear (T3)[/b] (45 EB) — Awl / Convenient / Universal
@@ -63,7 +65,7 @@ Each bundle yields [b]one random rare variant[/b] (Quality 6) of the weapon with
 
 [list=1]
 [*]Install [b]EV_EpicCash[/b] — copy [font=Courier New]EV_EpicCash[/font] into your [font=Courier New]7 Days to Die/Mods/[/font] directory.
-[*]Install [b]Project Z[/b] — at minimum the [font=Courier New]Z_RareItems[/font] submod must be present in [font=Courier New]Mods/[/font].
+[*]Install [b]Project Z[/b] — at minimum every submod referenced by the recipes listed above must be present in [font=Courier New]Mods/[/font].
 [*]Copy the [b]ZZ_EV_ProjectZCash[/b] folder into the same [font=Courier New]Mods/[/font] directory.
 [*]Restart the game or server.
 [/list]
@@ -89,7 +91,7 @@ Each bundle yields [b]one random rare variant[/b] (Quality 6) of the weapon with
 
 [list]
 [*][b]Base currency mod:[/b] [url=https://github.com/alekho77/epic_7d2d_mods]EV_EpicCash[/url] by Aleksei Khozin
-[*][b]Base content mod:[/b] [url=https://7dtdprojectz.com/]Project Z[/url] by BlackRabbit — specifically the [font=Courier New]Z_RareItems[/font] submod
+[*][b]Base content mod:[/b] [url=https://7dtdprojectz.com/]Project Z[/url] by BlackRabbit
 [*][b]Author:[/b] Aleksei Khozin
 [*][b]Community:[/b] [url=https://steamcommunity.com/groups/EpicVales]EpicVales Steam Group[/url]
 [/list]
