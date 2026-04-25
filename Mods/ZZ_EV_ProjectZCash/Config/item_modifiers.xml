@@ -63,12 +63,6 @@
   <set xpath="/item_modifiers/item_modifier[@name='modIrradiationResistUnique']/property[@name='Group']/@value">Armor,Mods</set>
   <set xpath="/item_modifiers/item_modifier[@name='modStabilityBooster']/property[@name='Group']/@value">Armor,Mods</set>
 
-  <!-- ===== Z Protector Armor Set: Storm Immunity (Armor → Mods) ===== -->
-  <set xpath="/item_modifiers/item_modifier[@name='modRareArmorARResistHelmet']/property[@name='Group']/@value">Armor,Mods</set>
-  <set xpath="/item_modifiers/item_modifier[@name='modRareArmorARResistOutfit']/property[@name='Group']/@value">Armor,Mods</set>
-  <set xpath="/item_modifiers/item_modifier[@name='modRareArmorARResistGloves']/property[@name='Group']/@value">Armor,Mods</set>
-  <set xpath="/item_modifiers/item_modifier[@name='modRareArmorARResistBoots']/property[@name='Group']/@value">Armor,Mods</set>
-
   <!-- ===== Unique Vehicle Mods (Vehicles → Mods) ===== -->
   <set xpath="/item_modifiers/item_modifier[@name='modVehicleFuelSystemUnique']/property[@name='Group']/@value">Vehicles,Mods</set>
   <set xpath="/item_modifiers/item_modifier[@name='modVehicleSuperChargerUnique']/property[@name='Group']/@value">Vehicles,Mods</set>

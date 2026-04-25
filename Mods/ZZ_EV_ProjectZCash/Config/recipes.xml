@@ -389,17 +389,17 @@
                         <ingredient name="evCash" count="80"/>
                 </recipe>
 
-                <!-- Project Z — Z Protector Armor Set: Storm Immunity (Z_Rare_Modifiers, direct) -->
-                <recipe name="modRareArmorARResistHelmet" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <!-- Project Z — Z Protector Armor Set: Storm Immunity (Z_Rare_Modifiers) -->
+                <recipe name="evModRareArmorARResistHelmetBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="100"/>
                 </recipe>
-                <recipe name="modRareArmorARResistOutfit" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="evModRareArmorARResistOutfitBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="100"/>
                 </recipe>
-                <recipe name="modRareArmorARResistGloves" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="evModRareArmorARResistGlovesBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="100"/>
                 </recipe>
-                <recipe name="modRareArmorARResistBoots" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="evModRareArmorARResistBootsBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="100"/>
                 </recipe>
 
