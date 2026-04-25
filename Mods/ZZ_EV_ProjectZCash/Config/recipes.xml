@@ -425,3 +425,6 @@
                         <ingredient name="evCash" count="2"/>
                 </recipe>
 
+	</append>
+
+</config>
