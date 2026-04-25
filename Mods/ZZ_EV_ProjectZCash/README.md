@@ -22,10 +22,10 @@ Adds **Epic Bucks** crafting recipes for content from the **[Project Z](https://
 
 ## Features
 
-- **111 Project Z Recipes** — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, 9 Improved armor sets, 5 Legendary named armor sets, 11 Improved weapons, 4 Improved power tools, 2 Improved robotics drones, 5 Depleted Uranium ammo crates, 33 Unique item-modifier bundles, 8 Unique armor-mod bundles, the 4-piece Z Protector armor-mod set, 4 Unique vehicle-mod bundles, and 2 advanced repair kits
+- **111 Project Z Recipes** — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, 9 Improved armor sets, 5 Legendary named armor sets, 11 Improved weapons, 4 Improved power tools, 2 Improved robotics drones, 5 Depleted Uranium ammo crates, 33 Unique item-modifier recipes, 8 Unique armor-mod recipes, the 4-piece Z Protector armor-mod set, 4 Unique vehicle-mod recipes, and 2 advanced repair kits
 - **Always Unlocked** — no schematic or perk level required
 - **Inventory Crafting** — no workstation needed
-- **Tiered Pricing** — Depleted Uranium ammo crates at 6 EB each, rare gear in the 45–75 EB range, Unique item-modifier bundles in the 50–90 EB range, Unique armor-mod bundles in the 70–150 EB range, Improved weapons/tools in the 75–180 EB range, Improved armor sets in the 150–200 EB range, Legendary weapons and armor sets priced very high (200–380 EB) to prevent instant end-game, and the Z Protector set priced at 100 EB per piece (400 EB for the full set) because full storm immunity trivializes biome hazards
+- **Tiered Pricing** — Depleted Uranium ammo crates at 6 EB each, rare gear in the 45–75 EB range, Unique item-modifier recipes in the 50–90 EB range, Unique armor-mod recipes in the 70–150 EB range, Improved weapons/tools in the 75–180 EB range, Improved armor sets in the 150–200 EB range, Legendary weapons and armor sets priced very high (200–380 EB) to prevent instant end-game, and the Z Protector set priced at 100 EB per piece (400 EB for the full set) because full storm immunity trivializes biome hazards
 
 ## Included Recipes
 
@@ -169,11 +169,11 @@ Experimental [5AFF75]Depleted Uranium[-] rounds — armor-ignoring, multi-target
 
 ### Unique Item Modifiers (from `Z_Rare_Modifiers`)
 
-End-game gold-tint (`#FFB800`) item modifiers normally gated behind the Master crafting perks at the Improved Workbench and dropped only from boss loot. Each bundle yields a single Quality 6 modifier. Priced **50–90 EB** depending on gameplay impact — durability/parts mods at 50 EB, combat-enhancing modifiers at 70 EB, and top-tier mechanical effects at 80–90 EB.
+End-game gold-tint (`#FFB800`) item modifiers normally gated behind the Master crafting perks at the Improved Workbench and dropped only from boss loot. Each recipe crafts the modifier directly (no bundle wrapper) at Quality 6. Priced **50–90 EB** depending on gameplay impact — durability/parts mods at 50 EB, combat-enhancing modifiers at 70 EB, and top-tier mechanical effects at 80–90 EB.
 
 #### 🎯 Unique Gun Mods
 
-| Bundle | Effect | Price |
+| Mod | Effect | Price |
 | --- | --- | ---: |
 | Magazine Extender | +150% magazine, +20% RoF, +50% reload | 70 EB |
 | Drum Magazine | +200% magazine, +25% reload | 70 EB |
@@ -192,7 +192,7 @@ End-game gold-tint (`#FFB800`) item modifiers normally gated behind the Master c
 
 #### ⚔️ Unique Melee Mods
 
-| Bundle | Effect | Price |
+| Mod | Effect | Price |
 | --- | --- | ---: |
 | Diamond Reinforcement (Heavy) | +150% durability for heavy melee | 50 EB |
 | Diamond Reinforcement (Light) | +150% durability for light melee | 50 EB |
@@ -205,7 +205,7 @@ End-game gold-tint (`#FFB800`) item modifiers normally gated behind the Master c
 
 #### 🔧 Unique Tool Mods
 
-| Bundle | Effect | Price |
+| Mod | Effect | Price |
 | --- | --- | ---: |
 | Increased Battery | Reactor tool battery capacity | 50 EB |
 | Advanced Electronics | Reactor tool electronics | 50 EB |
@@ -218,7 +218,7 @@ End-game gold-tint (`#FFB800`) item modifiers normally gated behind the Master c
 
 #### 🤖 Unique Drone/Turret Mods
 
-| Bundle | Effect | Price |
+| Mod | Effect | Price |
 | --- | --- | ---: |
 | Reactor Amplifier | Rounds-per-minute for Reactor Sledge drone | 70 EB |
 | Heavy Tip | Damage for Reactor Sledge drone | 70 EB |
@@ -226,9 +226,9 @@ End-game gold-tint (`#FFB800`) item modifiers normally gated behind the Master c
 
 #### 🛡️ Unique Armor Mods
 
-Top-tier armor modifiers (gold-tint `#FFB800`) locked behind the Master Armor crafting perk at the Improved Workbench and dropped only from boss loot. Each bundle yields a single Quality 6 modifier.
+Top-tier armor modifiers (gold-tint `#FFB800`) locked behind the Master Armor crafting perk at the Improved Workbench and dropped only from boss loot. Each recipe crafts the modifier directly at Quality 6.
 
-| Bundle | Slot | Effect | Price |
+| Mod | Slot | Effect | Price |
 | --- | --- | --- | ---: |
 | Radar | Head | Enemy radar overlay (buffRadar) | 100 EB |
 | OK Google | Head | +15% XP gain, +50 LootStage, reduced treasure blocks | 70 EB |
@@ -243,7 +243,7 @@ Top-tier armor modifiers (gold-tint `#FFB800`) locked behind the Master Armor cr
 
 A 4-piece armor-mod set that grants **full biome-storm immunity** when all four modifiers are equipped simultaneously (each piece sets its own `$StormResist*` CVar — Helmet, Outfit, Gloves, Boots). Each individual piece also provides +2 Physical Damage Resist, +5 Hypothermal and +5 Hyperthermal resist, and +1 base Radiation resist for its slot. Priced deliberately high at **100 EB per piece (400 EB for the full set)** because storm immunity trivializes desert, snow, and wasteland biome hazards.
 
-| Bundle | Slot | Effect | Price |
+| Mod | Slot | Effect | Price |
 | --- | --- | --- | ---: |
 | Z Protector Helmet | Head | +2 PDR, +5 cold/heat, +rad, `$StormResistHelmet` | 100 EB |
 | Z Protector Outfit | Chest | +2 PDR, +5 cold/heat, +rad, `$StormResistOutfit` | 100 EB |
@@ -252,9 +252,9 @@ A 4-piece armor-mod set that grants **full biome-storm immunity** when all four 
 
 #### 🚗 Unique Vehicle Mods
 
-Top-tier vehicle modifiers (gold-tint `#FFB800`) locked behind the Master Vehicle crafting perk at the Improved Workbench and dropped only from boss loot. Each bundle yields a single Quality 6 modifier.
+Top-tier vehicle modifiers (gold-tint `#FFB800`) locked behind the Master Vehicle crafting perk at the Improved Workbench and dropped only from boss loot. Each recipe crafts the modifier directly at Quality 6.
 
-| Bundle | Slot | Effect | Price |
+| Mod | Slot | Effect | Price |
 | --- | --- | --- | ---: |
 | Vehicle Fuel System | Engine | −75% fuel use, +300% fuel tank capacity | 90 EB |
 | Vehicle SuperCharger | Engine | +60% torque, +90% top speed | 70 EB |
@@ -285,6 +285,15 @@ Direct inventory recipes for the Project Z advanced repair kits (no bundle wrapp
 - **Load Order:** The `ZZ_` prefix forces this mod to load after both `EV_*` and `Z_*` mods, which is required because recipes reference items defined in both.
 
 ## Changelog
+
+### v1.7.1
+
+- **Refactored all Unique modifier bundles into direct recipes** for consistency with the v1.7.0 repair-kit pattern — modifiers are deterministic single objects, so the bundle wrapper was unnecessary
+- Affected categories: Unique Gun mods (14), Melee mods (8), Tool mods (8), Drone/Turret mods (3), Armor mods (8), Z Protector set (4), Vehicle mods (4) — **49 recipes** in total
+- Prices, craft times, and unlock conditions are unchanged; only the wrapper was removed
+- Added an `item_modifiers.xml` patch that re-categorizes each affected modifier from `RareMods` to its proper inventory crafting tab (`Ammo/Weapons,Mods` / `Tools/Traps` / `Armor,Mods` / `Vehicles,Mods`) so the new direct recipes are visible in the inventory UI
+- Removed the corresponding `evMod*Bundle` item entries and their localization strings — the bundles no longer exist
+- Other bundle categories (rare weapons, Improved weapons/tools, Improved/Legendary armor sets, Depleted Uranium ammo) are intentionally kept as bundles because they involve randomization or full multi-piece sets
 
 ### v1.7.0
 
@@ -387,5 +396,5 @@ Direct inventory recipes for the Project Z advanced repair kits (no bundle wrapp
 ---
 
 **Author:** Aleksei Khozin\
-**Version:** 1.7.0\
+**Version:** 1.7.1\
 **Website:** [https://github.com/alekho77/epic_7d2d_mods](https://github.com/alekho77/epic_7d2d_mods)

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+  <!--
+    Re-categorize Project Z Unique item modifiers (Z_Rare_Modifiers) so
+    they appear in the vanilla inventory crafting tabs. By default they
+    use Group="RareMods", which is not bound to any tab in the inventory
+    crafting UI and therefore hides the direct recipes added by this mod.
+
+    These modifiers are deterministic single objects (1 recipe = 1 mod),
+    so they no longer require bundle wrappers — we craft them directly
+    from Epic Bucks, exactly like the Repair Kit recipes.
+  -->
+
+  <!-- ===== Unique Gun Mods (Ammo/Weapons → Mods) ===== -->
+  <set xpath="/item_modifiers/item_modifier[@name='modGunMagazineExtenderUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunDrumMagazineExtenderUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunMeleeRadRemoverUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunCrippleEmUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunForegripUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunBipodUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencerUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunBoosterUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunDamageAccumulatorUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunRiflePartsUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunPistolPartsUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunShotgunPartsUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modGunM60PartsUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modTurretPartsUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+
+  <!-- ===== Unique Melee Mods (Ammo/Weapons → Mods) ===== -->
+  <set xpath="/item_modifiers/item_modifier[@name='modMeleeDimondPartsHeavyUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modMeleeDimondPartsLightUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modMeleeErgonomicGripUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modMeleeTheHunterUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modMeleeTerribleSpikesUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modMeleeClubBurningUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modMeleeElectroUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modSurgicalBladeUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+
+  <!-- ===== Unique Tool Mods (Tools/Traps) ===== -->
+  <set xpath="/item_modifiers/item_modifier[@name='modIncreasedBatteryUnique']/property[@name='Group']/@value">Tools/Traps</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modReactorElectricUnique']/property[@name='Group']/@value">Tools/Traps</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modElongatedCoreUnique']/property[@name='Group']/@value">Tools/Traps</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modReinforcedPartsUnique']/property[@name='Group']/@value">Tools/Traps</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modLuckyMiningUnique']/property[@name='Group']/@value">Tools/Traps</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modEnhancedMechanismsUnique']/property[@name='Group']/@value">Tools/Traps</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modFastMechanismsUnique']/property[@name='Group']/@value">Tools/Traps</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modSpareBoxUnique']/property[@name='Group']/@value">Tools/Traps</set>
+
+  <!-- ===== Unique Drone/Turret Mods (Ammo/Weapons → Mods) ===== -->
+  <set xpath="/item_modifiers/item_modifier[@name='modReactorAmplifierUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modHeavyTipUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modHugeSupplyUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
+
+  <!-- ===== Unique Armor Mods (Armor → Mods) ===== -->
+  <set xpath="/item_modifiers/item_modifier[@name='modRadar']/property[@name='Group']/@value">Armor,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modOkGoogle']/property[@name='Group']/@value">Armor,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modNerdBonusUnique']/property[@name='Group']/@value">Armor,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modLightningRod']/property[@name='Group']/@value">Armor,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modReliableWinding']/property[@name='Group']/@value">Armor,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modTerrainResistUnique']/property[@name='Group']/@value">Armor,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modIrradiationResistUnique']/property[@name='Group']/@value">Armor,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modStabilityBooster']/property[@name='Group']/@value">Armor,Mods</set>
+
+  <!-- ===== Z Protector Armor Set: Storm Immunity (Armor → Mods) ===== -->
+  <set xpath="/item_modifiers/item_modifier[@name='modRareArmorARResistHelmet']/property[@name='Group']/@value">Armor,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modRareArmorARResistOutfit']/property[@name='Group']/@value">Armor,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modRareArmorARResistGloves']/property[@name='Group']/@value">Armor,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modRareArmorARResistBoots']/property[@name='Group']/@value">Armor,Mods</set>
+
+  <!-- ===== Unique Vehicle Mods (Vehicles → Mods) ===== -->
+  <set xpath="/item_modifiers/item_modifier[@name='modVehicleFuelSystemUnique']/property[@name='Group']/@value">Vehicles,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modVehicleSuperChargerUnique']/property[@name='Group']/@value">Vehicles,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modVehiclePlowUnique']/property[@name='Group']/@value">Vehicles,Mods</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modVehicleArmorUnique']/property[@name='Group']/@value">Vehicles,Mods</set>
+
+</config>

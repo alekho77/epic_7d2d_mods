@@ -256,164 +256,164 @@
 			<ingredient name="evCash" count="6"/>
 		</recipe>
 
-                <!-- Project Z — Unique Gun Mods (Z_Rare_Modifiers) -->
-                <recipe name="evModGunMagazineExtenderUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <!-- Project Z — Unique Gun Mods (Z_Rare_Modifiers, direct) -->
+                <recipe name="modGunMagazineExtenderUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="70"/>
                 </recipe>
-                <recipe name="evModGunDrumMagazineExtenderUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modGunDrumMagazineExtenderUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="70"/>
                 </recipe>
-                <recipe name="evModGunMeleeRadRemoverUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modGunMeleeRadRemoverUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="80"/>
                 </recipe>
-                <recipe name="evModGunCrippleEmUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modGunCrippleEmUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="70"/>
                 </recipe>
-                <recipe name="evModGunForegripUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modGunForegripUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="50"/>
                 </recipe>
-                <recipe name="evModGunBipodUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modGunBipodUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="50"/>
                 </recipe>
-                <recipe name="evModGunSoundSuppressorSilencerUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modGunSoundSuppressorSilencerUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="70"/>
                 </recipe>
-                <recipe name="evModGunBoosterUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modGunBoosterUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="70"/>
                 </recipe>
-                <recipe name="evModGunDamageAccumulatorUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modGunDamageAccumulatorUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="90"/>
                 </recipe>
-                <recipe name="evModGunRiflePartsUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modGunRiflePartsUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="50"/>
                 </recipe>
-                <recipe name="evModGunPistolPartsUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modGunPistolPartsUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="50"/>
                 </recipe>
-                <recipe name="evModGunShotgunPartsUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modGunShotgunPartsUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="50"/>
                 </recipe>
-                <recipe name="evModGunM60PartsUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modGunM60PartsUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="50"/>
                 </recipe>
-                <recipe name="evModTurretPartsUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modTurretPartsUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="50"/>
                 </recipe>
 
-                <!-- Project Z — Unique Melee Mods (Z_Rare_Modifiers) -->
-                <recipe name="evModMeleeDimondPartsHeavyUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <!-- Project Z — Unique Melee Mods (Z_Rare_Modifiers, direct) -->
+                <recipe name="modMeleeDimondPartsHeavyUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="50"/>
                 </recipe>
-                <recipe name="evModMeleeDimondPartsLightUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modMeleeDimondPartsLightUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="50"/>
                 </recipe>
-                <recipe name="evModMeleeErgonomicGripUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modMeleeErgonomicGripUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="70"/>
                 </recipe>
-                <recipe name="evModMeleeTheHunterUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modMeleeTheHunterUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="90"/>
                 </recipe>
-                <recipe name="evModMeleeTerribleSpikesUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modMeleeTerribleSpikesUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="70"/>
                 </recipe>
-                <recipe name="evModMeleeClubBurningUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modMeleeClubBurningUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="70"/>
                 </recipe>
-                <recipe name="evModMeleeElectroUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modMeleeElectroUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="90"/>
                 </recipe>
-                <recipe name="evModSurgicalBladeUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modSurgicalBladeUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="50"/>
                 </recipe>
 
-                <!-- Project Z — Unique Tool Mods (Z_Rare_Modifiers) -->
-                <recipe name="evModIncreasedBatteryUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <!-- Project Z — Unique Tool Mods (Z_Rare_Modifiers, direct) -->
+                <recipe name="modIncreasedBatteryUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="50"/>
                 </recipe>
-                <recipe name="evModReactorElectricUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modReactorElectricUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="50"/>
                 </recipe>
-                <recipe name="evModElongatedCoreUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modElongatedCoreUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="50"/>
                 </recipe>
-                <recipe name="evModReinforcedPartsUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modReinforcedPartsUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="50"/>
                 </recipe>
-                <recipe name="evModLuckyMiningUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modLuckyMiningUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="70"/>
                 </recipe>
-                <recipe name="evModEnhancedMechanismsUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modEnhancedMechanismsUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="50"/>
                 </recipe>
-                <recipe name="evModFastMechanismsUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modFastMechanismsUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="50"/>
                 </recipe>
-                <recipe name="evModSpareBoxUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modSpareBoxUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="50"/>
                 </recipe>
 
-                <!-- Project Z — Unique Drone/Turret Mods (Z_Rare_Modifiers) -->
-                <recipe name="evModReactorAmplifierUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <!-- Project Z — Unique Drone/Turret Mods (Z_Rare_Modifiers, direct) -->
+                <recipe name="modReactorAmplifierUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="70"/>
                 </recipe>
-                <recipe name="evModHeavyTipUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modHeavyTipUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="70"/>
                 </recipe>
-                <recipe name="evModHugeSupplyUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modHugeSupplyUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="70"/>
                 </recipe>
 
-                <!-- Project Z — Unique Armor Mods (Z_Rare_Modifiers) -->
-                <recipe name="evModRadarBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <!-- Project Z — Unique Armor Mods (Z_Rare_Modifiers, direct) -->
+                <recipe name="modRadar" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="100"/>
                 </recipe>
-                <recipe name="evModOkGoogleBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modOkGoogle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="70"/>
                 </recipe>
-                <recipe name="evModNerdBonusUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modNerdBonusUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="150"/>
                 </recipe>
-                <recipe name="evModLightningRodBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modLightningRod" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="80"/>
                 </recipe>
-                <recipe name="evModReliableWindingBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modReliableWinding" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="80"/>
                 </recipe>
-                <recipe name="evModTerrainResistUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modTerrainResistUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="70"/>
                 </recipe>
-                <recipe name="evModIrradiationResistUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modIrradiationResistUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="90"/>
                 </recipe>
-                <recipe name="evModStabilityBoosterBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modStabilityBooster" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="80"/>
                 </recipe>
 
-                <!-- Project Z — Z Protector Armor Set: Storm Immunity (Z_Rare_Modifiers) -->
-                <recipe name="evModRareArmorARResistHelmetBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <!-- Project Z — Z Protector Armor Set: Storm Immunity (Z_Rare_Modifiers, direct) -->
+                <recipe name="modRareArmorARResistHelmet" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="100"/>
                 </recipe>
-                <recipe name="evModRareArmorARResistOutfitBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modRareArmorARResistOutfit" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="100"/>
                 </recipe>
-                <recipe name="evModRareArmorARResistGlovesBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modRareArmorARResistGloves" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="100"/>
                 </recipe>
-                <recipe name="evModRareArmorARResistBootsBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modRareArmorARResistBoots" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="100"/>
                 </recipe>
 
-                <!-- Project Z — Unique Vehicle Mods (Z_Rare_Modifiers) -->
-                <recipe name="evModVehicleFuelSystemUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <!-- Project Z — Unique Vehicle Mods (Z_Rare_Modifiers, direct) -->
+                <recipe name="modVehicleFuelSystemUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="90"/>
                 </recipe>
-                <recipe name="evModVehicleSuperChargerUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modVehicleSuperChargerUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="70"/>
                 </recipe>
-                <recipe name="evModVehiclePlowUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modVehiclePlowUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="50"/>
                 </recipe>
-                <recipe name="evModVehicleArmorUniqueBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                <recipe name="modVehicleArmorUnique" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="50"/>
                 </recipe>
 
