@@ -417,3 +417,11 @@
                         <ingredient name="evCash" count="50"/>
                 </recipe>
 
+                <!-- Project Z — Repair Kits (direct, not bundles) (Z_Master_Skills) -->
+                <recipe name="resourceRepairKitImp" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                        <ingredient name="evCash" count="1"/>
+                </recipe>
+                <recipe name="resourceRepairKitLeg" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                        <ingredient name="evCash" count="2"/>
+                </recipe>
+

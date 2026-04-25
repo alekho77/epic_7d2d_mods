@@ -22,7 +22,7 @@ Adds **Epic Bucks** crafting recipes for content from the **[Project Z](https://
 
 ## Features
 
-- **109 Project Z Recipes** — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, 9 Improved armor sets, 5 Legendary named armor sets, 11 Improved weapons, 4 Improved power tools, 2 Improved robotics drones, 5 Depleted Uranium ammo crates, 33 Unique item-modifier bundles, 8 Unique armor-mod bundles, the 4-piece Z Protector armor-mod set, and 4 Unique vehicle-mod bundles
+- **111 Project Z Recipes** — 12 rare weapons, 2 rare tools, 10 legendary unique weapons, 9 Improved armor sets, 5 Legendary named armor sets, 11 Improved weapons, 4 Improved power tools, 2 Improved robotics drones, 5 Depleted Uranium ammo crates, 33 Unique item-modifier bundles, 8 Unique armor-mod bundles, the 4-piece Z Protector armor-mod set, 4 Unique vehicle-mod bundles, and 2 advanced repair kits
 - **Always Unlocked** — no schematic or perk level required
 - **Inventory Crafting** — no workstation needed
 - **Tiered Pricing** — Depleted Uranium ammo crates at 6 EB each, rare gear in the 45–75 EB range, Unique item-modifier bundles in the 50–90 EB range, Unique armor-mod bundles in the 70–150 EB range, Improved weapons/tools in the 75–180 EB range, Improved armor sets in the 150–200 EB range, Legendary weapons and armor sets priced very high (200–380 EB) to prevent instant end-game, and the Z Protector set priced at 100 EB per piece (400 EB for the full set) because full storm immunity trivializes biome hazards
@@ -261,6 +261,15 @@ Top-tier vehicle modifiers (gold-tint `#FFB800`) locked behind the Master Vehicl
 | Vehicle Plow | Plow | +300% ram damage (entities and blocks) | 50 EB |
 | Vehicle Armor | Armor | +300% ram damage with reduced self-damage | 50 EB |
 
+### Repair Kits (from `Z_Master_Skills`)
+
+Direct inventory recipes for the Project Z advanced repair kits (no bundle wrapper — the items themselves are crafted). Priced very low so players can keep their Improved/Legendary gear maintained without farming workbench materials.
+
+| Item | Repair Amount | Price |
+| --- | ---: | ---: |
+| Improved Repair Kit (`resourceRepairKitImp`) | 2000 | 1 EB |
+| Legendary Repair Kit (`resourceRepairKitLeg`) | 2000 | 2 EB |
+
 ## Installation
 
 1. Install **EV_EpicCash** — copy `EV_EpicCash` into your `7 Days to Die/Mods/` directory.
@@ -276,6 +285,12 @@ Top-tier vehicle modifiers (gold-tint `#FFB800`) locked behind the Master Vehicl
 - **Load Order:** The `ZZ_` prefix forces this mod to load after both `EV_*` and `Z_*` mods, which is required because recipes reference items defined in both.
 
 ## Changelog
+
+### v1.7.0
+
+- Added **2 direct repair-kit recipes** from the `Z_Master_Skills` submod: Improved Repair Kit (1 EB) and Legendary Repair Kit (2 EB)
+- These are direct recipes (no bundle wrapper) since the items already exist in Project Z and don't need randomization
+- Coexists with the existing learnable workbench recipes — inventory crafting is just an extra option for players with Epic Bucks
 
 ### v1.6.0
 
@@ -372,5 +387,5 @@ Top-tier vehicle modifiers (gold-tint `#FFB800`) locked behind the Master Vehicl
 ---
 
 **Author:** Aleksei Khozin\
-**Version:** 1.6.0\
+**Version:** 1.7.0\
 **Website:** [https://github.com/alekho77/epic_7d2d_mods](https://github.com/alekho77/epic_7d2d_mods)
