@@ -7,9 +7,11 @@
     use Group="RareMods", which is not bound to any tab in the inventory
     crafting UI and therefore hides the direct recipes added by this mod.
 
-    These modifiers are deterministic single objects (1 recipe = 1 mod),
-    so they no longer require bundle wrappers — we craft them directly
-    from Epic Bucks, exactly like the Repair Kit recipes.
+    Groups used here match the inventory crafting menu tabs (Pack Mule):
+      Ammo/Weapons   — gun, melee, drone/turret mods
+      Tools/Traps    — tool mods
+      Clothing,Armor — armor mods
+      Science        — vehicle mods
   -->
 
   <!-- ===== Unique Gun Mods (Ammo/Weapons → Mods) ===== -->
@@ -53,20 +55,20 @@
   <set xpath="/item_modifiers/item_modifier[@name='modHeavyTipUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
   <set xpath="/item_modifiers/item_modifier[@name='modHugeSupplyUnique']/property[@name='Group']/@value">Ammo/Weapons,Mods</set>
 
-  <!-- ===== Unique Armor Mods (Armor → Mods) ===== -->
-  <set xpath="/item_modifiers/item_modifier[@name='modRadar']/property[@name='Group']/@value">Armor,Mods</set>
-  <set xpath="/item_modifiers/item_modifier[@name='modOkGoogle']/property[@name='Group']/@value">Armor,Mods</set>
-  <set xpath="/item_modifiers/item_modifier[@name='modNerdBonusUnique']/property[@name='Group']/@value">Armor,Mods</set>
-  <set xpath="/item_modifiers/item_modifier[@name='modLightningRod']/property[@name='Group']/@value">Armor,Mods</set>
-  <set xpath="/item_modifiers/item_modifier[@name='modReliableWinding']/property[@name='Group']/@value">Armor,Mods</set>
-  <set xpath="/item_modifiers/item_modifier[@name='modTerrainResistUnique']/property[@name='Group']/@value">Armor,Mods</set>
-  <set xpath="/item_modifiers/item_modifier[@name='modIrradiationResistUnique']/property[@name='Group']/@value">Armor,Mods</set>
-  <set xpath="/item_modifiers/item_modifier[@name='modStabilityBooster']/property[@name='Group']/@value">Armor,Mods</set>
+  <!-- ===== Unique Armor Mods (Clothing,Armor) ===== -->
+  <set xpath="/item_modifiers/item_modifier[@name='modRadar']/property[@name='Group']/@value">Clothing,Armor</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modOkGoogle']/property[@name='Group']/@value">Clothing,Armor</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modNerdBonusUnique']/property[@name='Group']/@value">Clothing,Armor</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modLightningRod']/property[@name='Group']/@value">Clothing,Armor</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modReliableWinding']/property[@name='Group']/@value">Clothing,Armor</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modTerrainResistUnique']/property[@name='Group']/@value">Clothing,Armor</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modIrradiationResistUnique']/property[@name='Group']/@value">Clothing,Armor</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modStabilityBooster']/property[@name='Group']/@value">Clothing,Armor</set>
 
-  <!-- ===== Unique Vehicle Mods (Vehicles → Mods) ===== -->
-  <set xpath="/item_modifiers/item_modifier[@name='modVehicleFuelSystemUnique']/property[@name='Group']/@value">Vehicles,Mods</set>
-  <set xpath="/item_modifiers/item_modifier[@name='modVehicleSuperChargerUnique']/property[@name='Group']/@value">Vehicles,Mods</set>
-  <set xpath="/item_modifiers/item_modifier[@name='modVehiclePlowUnique']/property[@name='Group']/@value">Vehicles,Mods</set>
-  <set xpath="/item_modifiers/item_modifier[@name='modVehicleArmorUnique']/property[@name='Group']/@value">Vehicles,Mods</set>
+  <!-- ===== Unique Vehicle Mods (Science) ===== -->
+  <set xpath="/item_modifiers/item_modifier[@name='modVehicleFuelSystemUnique']/property[@name='Group']/@value">Science</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modVehicleSuperChargerUnique']/property[@name='Group']/@value">Science</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modVehiclePlowUnique']/property[@name='Group']/@value">Science</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modVehicleArmorUnique']/property[@name='Group']/@value">Science</set>
 
 </config>
