@@ -140,7 +140,7 @@ def build_notes(manifest: list[dict], tag: str) -> str:
     lines.append("")
     lines.append(
         "**Author:** Aleksei Khozin \u00b7 **Community:**"
-        " [EpicVales Steam Group](https://steamcommunity.com/groups/EpicVales)"
+        " [EpicVales Steam Group](https://steamcommunity.com/groups/epic-vales)"
         " \u00b7 **Source:**"
         " [GitHub](https://github.com/alekho77/epic_7d2d_mods)"
     )

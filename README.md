@@ -1,6 +1,6 @@
 # EpicVales — 7 Days to Die Modlets
 
-A collection of modlets for **7 Days to Die** maintained by **Aleksei Khozin** for the [EpicVales](https://steamcommunity.com/groups/epicvales) Steam group.
+A collection of modlets for **7 Days to Die** maintained by **Aleksei Khozin** for the [EpicVales](https://steamcommunity.com/groups/epic-vales) Steam group.
 
 All mods use the `EV_` prefix and are designed to be lightweight, focused, and compatible with multiplayer servers.
 
