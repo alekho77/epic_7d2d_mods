@@ -68,7 +68,9 @@
   <!-- ===== Unique Vehicle Mods (Science) ===== -->
   <set xpath="/item_modifiers/item_modifier[@name='modVehicleFuelSystemUnique']/property[@name='Group']/@value">Science</set>
   <set xpath="/item_modifiers/item_modifier[@name='modVehicleSuperChargerUnique']/property[@name='Group']/@value">Science</set>
-  <set xpath="/item_modifiers/item_modifier[@name='modVehiclePlowUnique']/property[@name='Group']/@value">Science</set>
+  <insertAfter xpath="/item_modifiers/item_modifier[@name='modVehiclePlowUnique']/property[@name='UnlockedBy']">
+    <property name="Group" value="Science"/>
+  </insertAfter>
   <set xpath="/item_modifiers/item_modifier[@name='modVehicleArmorUnique']/property[@name='Group']/@value">Science</set>
 
 </config>
