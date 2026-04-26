@@ -600,7 +600,7 @@
     <item name="evModZProtectorBundle">
       <property name="Extends" value="questRewardBundleMaster"/>
       <property name="CreativeMode" value="Player"/>
-      <property name="Group" value="Armor,Mods"/>
+      <property name="Group" value="Clothing,Armor"/>
       <property name="CustomIcon" value="modArmorPlatingReinforced"/>
       <property name="CustomIconTint" value="FFB800"/>
       <property name="ItemTypeIcon" value="bundle"/>
