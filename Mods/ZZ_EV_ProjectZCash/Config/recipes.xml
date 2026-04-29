@@ -422,6 +422,12 @@
                 <recipe name="BoosterKillerPremium" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="30"/>
                 </recipe>
+                <recipe name="BoosterBreadwinner3" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                        <ingredient name="evCash" count="10"/>
+                </recipe>
+                <recipe name="BoosterBreadwinnerPremium" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                        <ingredient name="evCash" count="30"/>
+                </recipe>
 
                 <!-- Project Z — Super Elixirs (Z_SuperElixirs) -->
                 <recipe name="superElixirHordeExpert" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
