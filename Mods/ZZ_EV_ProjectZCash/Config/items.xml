@@ -43,6 +43,25 @@
   <set xpath="/items/item[@name='UniqueIndianaBundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
   <set xpath="/items/item[@name='UniqueFlugenBundle']/property[@name='Group']/@value">Ammo/Weapons,Melee Weapons</set>
 
+  <!-- ===== Super Elixirs (Z_SuperElixirs) — add Food/Cooking for inventory tab ===== -->
+  <!-- Original Group="CFElixirs,DonateFood" (workstation tab only). Adding Food/Cooking
+       makes them visible in the "Еда/Кулинария" tab of the Pack Mule crafting UI. -->
+  <set xpath="/items/item[@name='superElixirHordeExpert']/property[@name='Group']/@value">Food/Cooking,CFElixirs,DonateFood</set>
+  <set xpath="/items/item[@name='superElixirQuestRunner']/property[@name='Group']/@value">Food/Cooking,CFElixirs,DonateFood</set>
+  <set xpath="/items/item[@name='superElixirMeleeMaster']/property[@name='Group']/@value">Food/Cooking,CFElixirs,DonateFood</set>
+  <set xpath="/items/item[@name='superElixirMinerMaster']/property[@name='Group']/@value">Food/Cooking,CFElixirs,DonateFood</set>
+  <set xpath="/items/item[@name='superElixirTradeMaster']/property[@name='Group']/@value">Food/Cooking,CFElixirs,DonateFood</set>
+
+  <!-- ===== Boosters (Z_Master_Skills) — add Food/Cooking for inventory tab ===== -->
+  <!-- Original Group="DonateFood,Booster". Adding Food/Cooking makes them visible
+       in the "Еда/Кулинария" tab of the Pack Mule crafting UI. -->
+  <set xpath="/items/item[@name='BoosterXP3']/property[@name='Group']/@value">Food/Cooking,DonateFood,Booster</set>
+  <set xpath="/items/item[@name='BoosterXPPremium']/property[@name='Group']/@value">Food/Cooking,DonateFood,Booster</set>
+  <set xpath="/items/item[@name='BoosterKiller3']/property[@name='Group']/@value">Food/Cooking,DonateFood,Booster</set>
+  <set xpath="/items/item[@name='BoosterKillerPremium']/property[@name='Group']/@value">Food/Cooking,DonateFood,Booster</set>
+  <set xpath="/items/item[@name='BoosterBreadwinner3']/property[@name='Group']/@value">Food/Cooking,DonateFood,Booster</set>
+  <set xpath="/items/item[@name='BoosterBreadwinnerPremium']/property[@name='Group']/@value">Food/Cooking,DonateFood,Booster</set>
+
   <!--
     Improved Armor bundles for Z_Armor_Improved.
     Each bundle spawns the full 4-piece Q6 set of an "Improved" armor class.
