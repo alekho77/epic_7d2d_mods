@@ -2,19 +2,19 @@
 
   <!-- ============================================================
        EV_DailyWeeklyLootBoxes — Daily Loot Box
-       Tier selector: count="1" picks exactly one tier by weight.
-         75% → Common   (basic survival supplies)
-         20% → Uncommon (quality food, better medicine, HP ammo)
-          5% → Rare     (repair kits, steroids, skill magazine)
-       Each tier pool uses count="all" so every item in the
-       chosen tier is guaranteed to drop.
+      Tier selector: common is always granted.
+      Bonus rolls are independent add-ons:
+        20% → Uncommon (quality food, better medicine, HP ammo)
+      5% → Rare     (repair kits, steroids, skill magazine)
+      Each tier pool uses count="all" so every item in the
+      triggered tier is guaranteed to drop.
   ============================================================ -->
 
   <!-- Append all groups and the container in one block so
        forward references are resolved together. -->
   <append xpath="/lootcontainers">
 
-    <!-- *** evDailyCommonPool — 75% tier -->
+    <!-- *** evDailyCommonPool — always granted -->
     <lootgroup name="evDailyCommonPool" count="all">
       <item name="foodCanSham"         count="2,3"/>
       <item name="medicalBandage"      count="3,5"/>
@@ -35,11 +35,11 @@
       <item name="handgunsSkillMagazine"  count="2,3"/>
     </lootgroup>
 
-    <!-- *** Tier selector: picks exactly ONE tier by relative weight -->
-    <lootgroup name="evDailyTierSelector" count="1">
-      <item group="evDailyCommonPool"   prob="75"/>
-      <item group="evDailyUncommonPool" prob="20"/>
-      <item group="evDailyRarePool"     prob="5"/>
+    <!-- *** Tier selector: common is guaranteed, bonus tiers roll independently -->
+    <lootgroup name="evDailyTierSelector" count="all">
+      <item group="evDailyCommonPool"/>
+      <item group="evDailyUncommonPool" prob="0.20" force_prob="true"/>
+      <item group="evDailyRarePool"     prob="0.05" force_prob="true"/>
     </lootgroup>
 
     <!-- *** Loot container opened by evDailyLootBundle -->

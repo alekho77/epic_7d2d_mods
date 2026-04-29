@@ -2,7 +2,7 @@
 
 ## Description
 
-Adds **Daily** and **Weekly Loot Boxes** — special bundle items that open a loot selection window with a **tiered reward system**. Each box is randomly assigned one of three reward tiers when opened, keeping every day's reward a surprise.
+Adds **Daily** and **Weekly Loot Boxes** — special bundle items that open a loot selection window with a **tiered reward system**. Each box always grants a base reward tier and can independently add higher-tier bonus rewards on top.
 
 > ### 🟢 Server-Side Friendly
 >
@@ -11,7 +11,7 @@ Adds **Daily** and **Weekly Loot Boxes** — special bundle items that open a lo
 
 ## Features
 
-- **Tiered probability system** — each box draws from one of three tiers using weighted random selection
+- **Tiered probability system** — each box always grants a common reward and can independently add uncommon and rare bonus tiers
 - **Daily Loot Box** (`evDailyLootBundle`) — lightweight daily reward with three quality tiers
 - **Loot window UI** — uses the vanilla `OpenLootBundle` mechanic; opens a container window just like quest reward bundles
 - **No perks or loot abundance influence** — rewards are fixed regardless of player progression
@@ -19,15 +19,15 @@ Adds **Daily** and **Weekly Loot Boxes** — special bundle items that open a lo
 
 ## How It Works
 
-When a player right-clicks a **Daily Loot Box**, the game rolls a single weighted random draw against the three tiers:
+When a player right-clicks a **Daily Loot Box**, the reward is built in layers:
 
 | Tier | Probability | Contents |
 | ---- | ----------- | -------- |
-| 🟢 Common | 75% | 2–3× Canned Sham, 3–5× Bandage, 50–100× 9mm Ball ammo |
-| 🟡 Uncommon | 20% | 1–2× Meat Stew, 1–2× First Aid Kit, 50–100× 9mm HP ammo |
-| 🔴 Rare | 5% | 3–5× Repair Kit, 1–2× Steroids, 2–3× Handguns Skill Magazine |
+| 🟢 Common | Always | 2–3× Canned Sham, 3–5× Bandage, 50–100× 9mm Ball ammo |
+| 🟡 Uncommon | 20% extra roll | 1–2× Meat Stew, 1–2× First Aid Kit, 50–100× 9mm HP ammo |
+| 🔴 Rare | 5% extra roll | 3–5× Repair Kit, 1–2× Steroids, 2–3× Handguns Skill Magazine |
 
-The tier selector is a `count="1"` lootgroup with relative `prob` weights (75 / 20 / 5). Once a tier is selected, **all items** in that tier are given to the player — the result is shown in a loot window identical to vanilla quest reward bundles.
+The tier selector is a `count="all"` lootgroup. The common pool is always included, while the uncommon and rare pools use independent `force_prob="true"` rolls with `prob="0.20"` and `prob="0.05"`. If a bonus roll succeeds, **all items** in that tier are added to the same loot window.
 
 ## Installation
 
@@ -51,7 +51,7 @@ give <player_name> evDailyLootBundle 1
 ### v0.1.0
 
 - Initial prototype release
-- Added `evDailyLootBundle` (Daily Loot Box) with three reward tiers (75 / 20 / 5%)
+- Added `evDailyLootBundle` (Daily Loot Box) with guaranteed common rewards plus 20% uncommon and 5% rare bonus rolls
 - Common tier: Canned Sham, Bandage, 9mm Ball ammo
 - Uncommon tier: Meat Stew, First Aid Kit, 9mm HP ammo
 - Rare tier: Repair Kit, Steroids, Handguns Skill Magazine
