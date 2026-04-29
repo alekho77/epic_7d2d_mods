@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModInfo>
+  <Name value="EV_DailyWeeklyLootBoxes"/>
+  <DisplayName value="Daily &amp; Weekly Loot Boxes"/>
+  <Description value="Adds daily and weekly loot boxes that open a tiered loot window with 75/20/5% probability tiers for common, uncommon, and rare rewards."/>
+  <Author value="Aleksei Khozin"/>
+  <Version value="0.1.0"/>
+  <Website value="https://github.com/alekho77/epic_7d2d_mods"/>
+</ModInfo>

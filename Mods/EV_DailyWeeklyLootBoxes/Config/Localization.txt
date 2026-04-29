@@ -1,0 +1,3 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+evDailyLootBundle,items,Item,,,"Daily Loot Box",,,,,,,,,,,,
+evDailyLootBundleDesc,items,Item,,,"Open to receive one of three reward tiers: [00ff88]Common (75%)[-] — basic supplies, [ffcc00]Uncommon (20%)[-] — quality gear, [ff4444]Rare (5%)[-] — premium rewards.",,,,,,,,,,,,

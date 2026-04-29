@@ -1,0 +1,60 @@
+<configs>
+
+  <!-- ============================================================
+       EV_DailyWeeklyLootBoxes — Daily Loot Box
+       Tier selector: count="1" picks exactly one tier by weight.
+         75% → Common   (basic survival supplies)
+         20% → Uncommon (quality food, better medicine, HP ammo)
+          5% → Rare     (repair kits, steroids, skill magazine)
+       Each tier pool uses count="all" so every item in the
+       chosen tier is guaranteed to drop.
+  ============================================================ -->
+
+  <!-- Append all groups and the container in one block so
+       forward references are resolved together. -->
+  <append xpath="/lootcontainers">
+
+    <!-- *** evDailyCommonPool — 75% tier -->
+    <lootgroup name="evDailyCommonPool" count="all">
+      <item name="foodCanSham"         count="2,3"/>
+      <item name="medicalBandage"      count="3,5"/>
+      <item name="ammo9mmBulletBall"   count="50,100"/>
+    </lootgroup>
+
+    <!-- *** evDailyUncommonPool — 20% tier -->
+    <lootgroup name="evDailyUncommonPool" count="all">
+      <item name="foodMeatStew"        count="1,2"/>
+      <item name="medicalFirstAidKit"  count="1,2"/>
+      <item name="ammo9mmBulletHP"     count="50,100"/>
+    </lootgroup>
+
+    <!-- *** evDailyRarePool — 5% tier -->
+    <lootgroup name="evDailyRarePool" count="all">
+      <item name="resourceRepairKit"      count="3,5"/>
+      <item name="drugSteroids"           count="1,2"/>
+      <item name="handgunsSkillMagazine"  count="2,3"/>
+    </lootgroup>
+
+    <!-- *** Tier selector: picks exactly ONE tier by relative weight -->
+    <lootgroup name="evDailyTierSelector" count="1">
+      <item group="evDailyCommonPool"   prob="75"/>
+      <item group="evDailyUncommonPool" prob="20"/>
+      <item group="evDailyRarePool"     prob="5"/>
+    </lootgroup>
+
+    <!-- *** Loot container opened by evDailyLootBundle -->
+    <lootcontainer name="evDailyLootBox"
+                   count="1"
+                   size="3,2"
+                   sound_open="SupplyDrops/open_supply_crate"
+                   sound_close="SupplyDrops/close_supply_crate"
+                   loot_quality_template="qualBaseTemplate"
+                   destroy_on_close="empty"
+                   unique_item="true"
+                   ignore_loot_abundance="true">
+      <item group="evDailyTierSelector"/>
+    </lootcontainer>
+
+  </append>
+
+</configs>

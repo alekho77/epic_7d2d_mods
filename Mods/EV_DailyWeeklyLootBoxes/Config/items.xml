@@ -1,0 +1,28 @@
+<configs>
+
+  <!-- ============================================================
+       EV_DailyWeeklyLootBoxes — Daily Loot Bundle item
+       Uses OpenLootBundle to open a loot window whose contents
+       are generated from evDailyLootBox in loot.xml.
+  ============================================================ -->
+
+  <append xpath="/items">
+
+    <item name="evDailyLootBundle">
+      <property name="Extends"         value="questRewardBundleMaster"/>
+      <property name="CreativeMode"    value="Player"/>
+      <property name="CustomIcon"      value="block_missing"/>
+      <property name="CustomIconTint"  value="FFFFFF"/>
+      <property name="ItemTypeIcon"    value="bundle"/>
+      <property name="DescriptionKey"  value="evDailyLootBundleDesc"/>
+      <property class="Action0">
+        <property name="Class"       value="OpenLootBundle"/>
+        <property name="Delay"       value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="LootList"    value="evDailyLootBox"/>
+      </property>
+    </item>
+
+  </append>
+
+</configs>

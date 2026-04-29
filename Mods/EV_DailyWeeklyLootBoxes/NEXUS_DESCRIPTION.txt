@@ -1,0 +1,65 @@
+[size=6][b]Daily & Weekly Loot Boxes[/b][/size]
+
+[size=5][b]Description[/b][/size]
+
+Adds [b]Daily[/b] and [b]Weekly Loot Boxes[/b] — special bundle items that open a loot selection window with a [b]tiered reward system[/b]. Each box is randomly assigned one of three reward tiers when opened, keeping every day's reward a surprise.
+
+[quote]
+[color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
+
+[b]If you are running a dedicated server, this mod only needs to be installed on the server.[/b]
+Players connecting to the server [b]do not need to download or install anything[/b] on their game clients — all changes are synced automatically when they join.
+[/quote]
+
+[size=5][b]Features[/b][/size]
+
+[list]
+[*][b]Tiered probability system[/b] — each box draws from one of three tiers using weighted random selection
+[*][b]Daily Loot Box[/b] ([font=Courier New]evDailyLootBundle[/font]) — lightweight daily reward with three quality tiers
+[*][b]Loot window UI[/b] — uses the vanilla OpenLootBundle mechanic; opens a container window just like quest reward bundles
+[*][b]No perks or loot abundance influence[/b] — rewards are fixed regardless of player progression
+[*][b]Server-friendly[/b] — fully controlled by the server; admins distribute boxes via console commands
+[/list]
+
+[size=5][b]How It Works[/b][/size]
+
+When a player right-clicks a [b]Daily Loot Box[/b], the game rolls a single weighted random draw against the three tiers:
+
+[list]
+[*][color=#55aa55][b]Common (75%)[/b][/color] — 2–3× Canned Sham, 3–5× Bandage, 50–100× 9mm Ball ammo
+[*][color=#ffcc00][b]Uncommon (20%)[/b][/color] — 1–2× Meat Stew, 1–2× First Aid Kit, 50–100× 9mm HP ammo
+[*][color=#ff4444][b]Rare (5%)[/b][/color] — 3–5× Repair Kit, 1–2× Steroids, 2–3× Handguns Skill Magazine
+[/list]
+
+The tier selector is a [font=Courier New]count="1"[/font] lootgroup with relative [font=Courier New]prob[/font] weights (75 / 20 / 5). Once a tier is selected, [b]all items[/b] in that tier are given to the player — the result is shown in a loot window identical to vanilla quest reward bundles.
+
+[size=5][b]Installation[/b][/size]
+
+[list=1]
+[*]Copy the [font=Courier New]EV_DailyWeeklyLootBoxes[/font] folder into your [font=Courier New]7 Days to Die/Mods/[/font] directory.
+[*]Restart the game or server.
+[*]Distribute boxes to players via the admin console:
+[/list]
+
+[code]giveself evDailyLootBundle 1
+give <player_name> evDailyLootBundle 1[/code]
+
+[size=5][b]Compatibility[/b][/size]
+
+[list]
+[*][b]Game Version:[/b] 7 Days to Die (latest stable)
+[*][b]Type:[/b] XML modlet — no Harmony patches, no DLL, no Unity assets
+[*][b]Multiplayer:[/b] Server-side only — clients do not need this mod installed
+[/list]
+
+[size=5][b]Changelog[/b][/size]
+
+[size=4][b]v0.1.0[/b][/size]
+
+[list]
+[*]Initial prototype release
+[*]Added [font=Courier New]evDailyLootBundle[/font] (Daily Loot Box) with three reward tiers (75 / 20 / 5%)
+[*]Common tier: Canned Sham, Bandage, 9mm Ball ammo
+[*]Uncommon tier: Meat Stew, First Aid Kit, 9mm HP ammo
+[*]Rare tier: Repair Kit, Steroids, Handguns Skill Magazine
+[/list]
