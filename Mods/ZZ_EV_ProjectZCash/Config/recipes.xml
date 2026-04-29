@@ -408,6 +408,23 @@
                         <ingredient name="evCash" count="50"/>
                 </recipe>
 
+                <!-- Project Z — Super Elixirs (Z_SuperElixirs) -->
+                <recipe name="superElixirHordeExpert" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                        <ingredient name="evCash" count="1"/>
+                </recipe>
+                <recipe name="superElixirQuestRunner" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                        <ingredient name="evCash" count="1"/>
+                </recipe>
+                <recipe name="superElixirMeleeMaster" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                        <ingredient name="evCash" count="1"/>
+                </recipe>
+                <recipe name="superElixirMinerMaster" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                        <ingredient name="evCash" count="1"/>
+                </recipe>
+                <recipe name="superElixirTradeMaster" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+                        <ingredient name="evCash" count="1"/>
+                </recipe>
+
                 <!-- Project Z — Repair Kits (direct, not bundles) (Z_Master_Skills) -->
                 <recipe name="resourceRepairKitImp" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
                         <ingredient name="evCash" count="1"/>
