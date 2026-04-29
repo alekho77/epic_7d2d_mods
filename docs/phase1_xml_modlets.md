@@ -387,11 +387,11 @@ A random subset of items is selected from the pool. Uses `Create_item` as a requ
         <property name="Create_item" value="resourcePaper"/>
         <property name="Create_item_count" value="0"/>
         <!-- Pool of possible drops -->
-        <property name="Random_item" value="itemA,itemB,itemC,itemD,itemE,itemF"/>
-        <!-- How many of each selected item to give -->
-        <property name="Random_item_count" value="1,1,1"/>
+        <property name="Random_item" value="itemA,itemB,itemC,itemD"/>
+        <!-- Quantity per item in the pool (parallel array to Random_item) -->
+        <property name="Random_item_count" value="10,20,30,40"/>
         <!-- How many random items to pick from the pool -->
-        <property name="Random_count" value="3"/>
+        <property name="Random_count" value="2"/>
         <!-- No duplicate picks -->
         <property name="Unique_random_only" value="true"/>
     </property>
@@ -402,12 +402,47 @@ A random subset of items is selected from the pool. Uses `Create_item` as a requ
 | --- | --- |
 | `Random_item` | Comma-separated pool of all possible item/block IDs |
 | `Random_count` | Number of items to randomly pick from the pool |
-| `Random_item_count` | Comma-separated count **parallel to `Random_item`** — one value per item in the pool, defining how many the player receives if that item is picked |
+| `Random_item_count` | Comma-separated quantity **parallel to `Random_item`** — position N gives the count for pool item N. Missing trailing values default to `1`. |
 | `Unique_random_only` | `true` — each pick is unique (no duplicates); `false` — duplicates allowed |
 
+#### How the game resolves a random drop
+
+Given this configuration:
+
+```xml
+<property name="Random_item" value="A,B,C,D"/>
+<property name="Random_item_count" value="10,20,30,40"/>
+<property name="Random_count" value="2"/>
+```
+
+1. Pool: `A, B, C, D`
+2. Game randomly picks `Random_count` items — e.g. `B` and `D`
+3. Quantities are read by **position in the pool**: `B` is index 1 → count `20`; `D` is index 3 → count `40`
+4. Player receives: **B ×20** and **D ×40**
+
+`Random_item_count` is a parallel array to `Random_item`, **not** to `Random_count`.
+
+#### Shorthand for equal quantities
+
+When all items in the pool give the same count, you can provide fewer values — missing entries default to `1`:
+
+```xml
+<!-- Picks 3 unique items from a pool of 6; each gives 1 -->
+<property name="Random_item" value="A,B,C,D,E,F"/>
+<property name="Random_item_count" value="1,1,1"/>
+<property name="Random_count" value="3"/>
+```
+
+**Best practice:** when items have different counts, always provide `Random_item_count` values for every item in the pool to avoid ambiguity:
+
+```xml
+<!-- Picks 1 item; resourceMechanicalParts gives 100, others give 1 -->
+<property name="Random_item" value="resourceMechanicalParts,itemB,itemC,itemD"/>
+<property name="Random_item_count" value="100,1,1,1"/>
+<property name="Random_count" value="1"/>
+```
+
 > **Note**: `Create_item` + `Create_item_count` are still required as a placeholder. Set `Create_item_count` to `0` to give zero of the placeholder item.
->
-> **Important**: `Random_item_count` is a parallel array to `Random_item`, **not** to the number of slots. Each value specifies the quantity for the corresponding item in the pool. If fewer values are provided than items in the pool, remaining items default to count `1`.
 
 ### Pattern C: Loot Table Bundle (OpenLootBundle)
 

@@ -330,7 +330,7 @@ No `craft_area` attribute means the recipe is craftable directly from the player
 ## Credits
 
 - **Author:** Aleksei Khozin
-- **Community:** [EpicVales Steam Group](https://steamcommunity.com/groups/EpicVales)
+- **Community:** [EpicVales Steam Group](https://steamcommunity.com/groups/epic-vales)
 - **Source:** [GitHub Repository](https://github.com/alekho77/epic_7d2d_mods)
 
 ---

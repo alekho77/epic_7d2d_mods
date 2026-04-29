@@ -283,6 +283,6 @@ All book bundles contain the complete set of 7 volumes. Every Skill Book Bundle 
 
 [list]
 [*][b]Author:[/b] Aleksei Khozin
-[*][b]Community:[/b] [url=https://steamcommunity.com/groups/EpicVales]EpicVales Steam Group[/url]
+[*][b]Community:[/b] [url=https://steamcommunity.com/groups/epic-vales]EpicVales Steam Group[/url]
 [*][b]Source:[/b] [url=https://github.com/alekho77/epic_7d2d_mods]GitHub Repository[/url]
 [/list]

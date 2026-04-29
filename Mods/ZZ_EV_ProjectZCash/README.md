@@ -391,7 +391,7 @@ Direct inventory recipes for the Project Z advanced repair kits (no bundle wrapp
 - **Base currency mod:** [EV_EpicCash](https://github.com/alekho77/epic_7d2d_mods) by Aleksei Khozin
 - **Base content mod:** [Project Z](https://7dtdprojectz.com/) by BlackRabbit
 - **Author:** Aleksei Khozin
-- **Community:** [EpicVales Steam Group](https://steamcommunity.com/groups/EpicVales)
+- **Community:** [EpicVales Steam Group](https://steamcommunity.com/groups/epic-vales)
 
 ---
 
