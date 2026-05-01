@@ -8,12 +8,18 @@ Removes opening and closing time restrictions from all traders, making them avai
 >
 > **If you are running a dedicated server, this mod only needs to be installed on the server.**
 > Players connecting to the server **do not need to download or install anything** on their game clients — all changes are synced automatically when they join.
+>
+> **Important: Blood Moon Exception**
+>
+> Traders are open **24/7** on normal days, but during **Blood Moon** you still **cannot enter trader territory**.
+> This mod only removes the regular daily `open_time` and `close_time` restrictions and does **not** bypass the game's Blood Moon trader lockdown.
 
 ## Features
 
 - All 5 traders are open around the clock
 - Removes `open_time` and `close_time` attributes entirely
-- No more locked doors at night — trade whenever you want
+- No more locked doors at night on normal days
+- Blood Moon trader territory lockdown still applies
 
 ## Affected Traders
 
@@ -34,6 +40,7 @@ Removes opening and closing time restrictions from all traders, making them avai
 
 - 7 Days to Die 1.0 (Alpha 21+)
 - Server-side mod — works without client installation
+- Does not override the Blood Moon trader territory restriction
 - May conflict with mods that modify trader `open_time`/`close_time` attributes
 
 ## Changelog
