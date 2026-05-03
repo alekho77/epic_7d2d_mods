@@ -33,16 +33,16 @@ Only non-default qualities are annotated in the table. If a table entry does not
 | Ranged weapons | `gunHandgunT1Pistol`                        | `gunHandgunT2Magnum44`                      | `gunHandgunT3SMG5`                   |
 |                | `gunShotgunT1DoubleBarrel`                  | `gunShotgunT2PumpShotgun`                   | `gunHandgunT3DesertVulture`          |
 |                | `gunRifleT1HuntingRifle`                    | `gunRifleT2LeverActionRifle`                | `gunShotgunT3AutoShotgun`            |
-|                | `gunMGT1AK47` (Q3)                          | `gunMGT1AK47`                               | `gunRifleT3SniperRifle`              |
+|                | `gunMGT1AK47` (Q2)                          | `gunMGT1AK47`                               | `gunRifleT3SniperRifle`              |
 |                | `gunBowT1WoodenBow`                         | `gunBowT1IronCrossbow`                      | `gunMGT2TacticalAR`                  |
-|                |                                             | `gunMGT2TacticalAR` (Q3)                    | `gunMGT3M60`                         |
+|                |                                             | `gunMGT2TacticalAR` (Q2)                    | `gunMGT3M60`                         |
 |                |                                             |                                             | `gunBowT3CompoundBow`                |
 |                |                                             |                                             | `gunBowT3CompoundCrossbow`           |
-| Melee weapons  | `meleeWpnSpearT1IronSpear` (Q3)             | `meleeWpnSpearT1IronSpear`                  | `meleeWpnSpearT3SteelSpear`          |
-|                | `meleeWpnBladeT1HuntingKnife` (Q3)          | `meleeWpnBladeT3Machete` (Q3)               | `meleeWpnBladeT3Machete`             |
-|                | `meleeWpnClubT1BaseballBat` (Q3)            | `meleeWpnClubT1BaseballBat`                 | `meleeWpnClubT3SteelClub`            |
-|                | `meleeWpnSledgeT1IronSledgehammer` (Q3)     | `meleeWpnSpearT3SteelSpear` (Q3)            | `meleeWpnBatonT2StunBaton`           |
-|                | `meleeWpnBatonT0PipeBaton`                  | `meleeWpnBatonT2StunBaton` (Q3)             | `meleeWpnSledgeT3SteelSledgehammer`  |
+| Melee weapons  | `meleeWpnSpearT1IronSpear` (Q2)             | `meleeWpnSpearT1IronSpear`                  | `meleeWpnSpearT3SteelSpear`          |
+|                | `meleeWpnBladeT1HuntingKnife` (Q2)          | `meleeWpnBladeT3Machete` (Q2)               | `meleeWpnBladeT3Machete`             |
+|                | `meleeWpnClubT1BaseballBat` (Q2)            | `meleeWpnClubT1BaseballBat`                 | `meleeWpnClubT3SteelClub`            |
+|                | `meleeWpnSledgeT1IronSledgehammer` (Q2)     | `meleeWpnSpearT3SteelSpear` (Q2)            | `meleeWpnBatonT2StunBaton`           |
+|                | `meleeWpnBatonT0PipeBaton`                  | `meleeWpnBatonT2StunBaton` (Q2)             | `meleeWpnSledgeT3SteelSledgehammer`  |
 |                | `meleeWpnKnucklesT0LeatherKnuckles`         | `meleeWpnBladeT1HuntingKnife`               | `meleeWpnKnucklesT3SteelKnuckles`    |
 |                |                                             | `meleeWpnSledgeT1IronSledgehammer`          |                                      |
 |                |                                             | `meleeWpnKnucklesT1IronKnuckles`            |                                      |

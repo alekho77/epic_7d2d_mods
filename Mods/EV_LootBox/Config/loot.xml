@@ -65,7 +65,7 @@
 
     <!-- *** Optional category-matched weapon bonus groups
          In-game item quality (Q1-Q6) is controlled by loot_quality_template. -->
-    <lootgroup name="evLootBoxWeaponsSimpleQ3" count="1" loot_quality_template="qualTwitchT3Template">
+        <lootgroup name="evLootBoxWeaponsSimpleQ2" count="1" loot_quality_template="qualTwitchT2Template">
       <item name="gunMGT1AK47"/>
       <item name="meleeWpnSpearT1IronSpear"/>
       <item name="meleeWpnBladeT1HuntingKnife"/>
@@ -83,11 +83,11 @@
     </lootgroup>
 
     <lootgroup name="evLootBoxWeaponsSimple" count="1">
-      <item group="evLootBoxWeaponsSimpleQ3" prob="5"/>
+      <item group="evLootBoxWeaponsSimpleQ2" prob="5"/>
       <item group="evLootBoxWeaponsSimpleQ6" prob="6"/>
     </lootgroup>
 
-    <lootgroup name="evLootBoxWeaponsGoodQ3" count="1" loot_quality_template="qualTwitchT3Template">
+    <lootgroup name="evLootBoxWeaponsGoodQ2" count="1" loot_quality_template="qualTwitchT2Template">
       <item name="gunMGT2TacticalAR"/>
       <item name="meleeWpnBladeT3Machete"/>
       <item name="meleeWpnSpearT3SteelSpear"/>
@@ -108,7 +108,7 @@
     </lootgroup>
 
     <lootgroup name="evLootBoxWeaponsGood" count="1">
-      <item group="evLootBoxWeaponsGoodQ3" prob="4"/>
+      <item group="evLootBoxWeaponsGoodQ2" prob="4"/>
       <item group="evLootBoxWeaponsGoodQ6" prob="10"/>
     </lootgroup>
 
