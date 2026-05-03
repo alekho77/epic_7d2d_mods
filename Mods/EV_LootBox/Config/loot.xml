@@ -118,9 +118,9 @@
 
     <!-- *** Reward-category selector: choose exactly one category with 75/20/5 weights -->
     <lootgroup name="evLootBoxCategorySelector" count="1">
-      <item group="evLootBoxSimplePool" prob="0.75"/>
-      <item group="evLootBoxGoodPool" prob="0.20"/>
-      <item group="evLootBoxValuablePool" prob="0.05"/>
+      <item group="evLootBoxSimplePool" prob="75"/>
+      <item group="evLootBoxGoodPool" prob="20"/>
+      <item group="evLootBoxValuablePool" prob="5"/>
     </lootgroup>
 
     <!-- *** Loot container opened by evLootBox -->

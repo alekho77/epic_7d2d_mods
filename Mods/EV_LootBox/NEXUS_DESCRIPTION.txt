@@ -31,7 +31,7 @@ When a player right-clicks a [b]Loot Box[/b], the reward is built from one selec
 [*][color=#ff4444][b]Valuable (5% roll)[/b][/color] — Repair Kits, Steroids, and Handguns Skill Magazines
 [/list]
 
-The reward-category selector is a [font=Courier New]count="1"[/font] lootgroup with weighted entries. Each use of the box picks exactly one category: [font=Courier New]Simple[/font] at [font=Courier New]0.75[/font], [font=Courier New]Good[/font] at [font=Courier New]0.20[/font], or [font=Courier New]Valuable[/font] at [font=Courier New]0.05[/font]. Once a category is selected, [b]all items[/b] in that category are added to the same loot window.
+The reward-category selector is a [font=Courier New]count="1"[/font] lootgroup with weighted entries. Each use of the box picks exactly one category: [font=Courier New]Simple[/font] with weight [font=Courier New]75[/font], [font=Courier New]Good[/font] with weight [font=Courier New]20[/font], or [font=Courier New]Valuable[/font] with weight [font=Courier New]5[/font]. Once a category is selected, [b]all items[/b] in that category are added to the same loot window.
 
 [size=5][b]Installation[/b][/size]
 

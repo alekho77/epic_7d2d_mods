@@ -46,7 +46,7 @@ If a table entry does not include an explicit quality annotation, it is assumed 
 |                |                                             | `meleeWpnSledgeT1IronSledgehammer` (Q6)     |                                      |
 |                |                                             | `meleeWpnKnucklesT1IronKnuckles`            |                                      |
 
-The reward-category selector is a `count="1"` lootgroup with weighted entries. Each use of the box picks exactly one category: `Simple` at `0.75`, `Good` at `0.20`, or `Valuable` at `0.05`. Once a category is selected, **all items** in that category are added to the same loot window.
+The reward-category selector is a `count="1"` lootgroup with weighted entries. Each use of the box picks exactly one category: `Simple` with weight `75`, `Good` with weight `20`, or `Valuable` with weight `5`. Once a category is selected, **all items** in that category are added to the same loot window.
 
 ## Installation
 
