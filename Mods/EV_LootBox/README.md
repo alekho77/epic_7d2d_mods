@@ -25,22 +25,24 @@ Use the table below as the working template for grouped item IDs by tier:
 
 If a table entry does not include an explicit tier annotation, it is assumed to be Tier 6.
 
-| Group          | Simple                                           | Good                                             | Quality |
-| -------------- | ------------------------------------------------ | ------------------------------------------------ | ------- |
-| Ranged weapons | `gunHandgunT1Pistol`                             | `gunHandgunT2Magnum44`                           |         |
-|                | `gunShotgunT1DoubleBarrel`                       | `gunShotgunT2PumpShotgun`                        |         |
-|                | `gunRifleT1HuntingRifle`                         | `gunRifleT2LeverActionRifle`                     |         |
-|                | `gunMGT1AK47` (Tier 3)                           | `gunMGT1AK47` (Tier 6)                           |         |
-|                | `gunBowT1WoodenBow`                              | `gunBowT1IronCrossbow`                           |         |
-|                |                                                  | `gunMGT2TacticalAR` (Tier 3)                     |         |
-| Melee weapons  | `meleeWpnSpearT1IronSpear` (Tier 3)              | `meleeWpnSpearT1IronSpear` (Tier 6)              |         |
-|                | `meleeWpnBladeT1HuntingKnife` (Tier 3)           | `meleeWpnBladeT3Machete` (Tier 3)                |         |
-|                | `meleeWpnClubT1BaseballBat` (Tier 3)             | `meleeWpnClubT1BaseballBat` (Tier 6)             |         |
-|                | `meleeWpnSledgeT1IronSledgehammer` (Tier 3)      | `meleeWpnSpearT3SteelSpear` (Tier 3)             |         |
-|                | `meleeWpnBatonT0PipeBaton`                       | `meleeWpnBatonT2StunBaton` (Loot Tier 3)         |         |
-|                | `meleeWpnKnucklesT0LeatherKnuckles`              | `meleeWpnBladeT1HuntingKnife` (Tier 6)           |         |
-|                |                                                  | `meleeWpnSledgeT1IronSledgehammer` (Tier 6)      |         |
-|                |                                                  | `meleeWpnKnucklesT1IronKnuckles`                 |         |
+| Group          | Simple                                      | Good                                        | Quality                              |
+| -------------- | ------------------------------------------- | ------------------------------------------- | ------------------------------------ |
+| Ranged weapons | `gunHandgunT1Pistol`                        | `gunHandgunT2Magnum44`                      | `gunHandgunT3SMG5`                   |
+|                | `gunShotgunT1DoubleBarrel`                  | `gunShotgunT2PumpShotgun`                   | `gunHandgunT3DesertVulture`          |
+|                | `gunRifleT1HuntingRifle`                    | `gunRifleT2LeverActionRifle`                | `gunShotgunT3AutoShotgun`            |
+|                | `gunMGT1AK47` (Tier 3)                      | `gunMGT1AK47` (Tier 6)                      | `gunRifleT3SniperRifle`              |
+|                | `gunBowT1WoodenBow`                         | `gunBowT1IronCrossbow`                      | `gunMGT2TacticalAR` (Tier 6)         |
+|                |                                             | `gunMGT2TacticalAR` (Tier 3)                | `gunMGT3M60`                         |
+|                |                                             |                                             | `gunBowT3CompoundBow`                |
+|                |                                             |                                             | `gunBowT3CompoundCrossbow`           |
+| Melee weapons  | `meleeWpnSpearT1IronSpear` (Tier 3)         | `meleeWpnSpearT1IronSpear` (Tier 6)         | `meleeWpnSpearT3SteelSpear` (Tier 6) |
+|                | `meleeWpnBladeT1HuntingKnife` (Tier 3)      | `meleeWpnBladeT3Machete` (Tier 3)           | `meleeWpnBladeT3Machete` (Tier 6)    |
+|                | `meleeWpnClubT1BaseballBat` (Tier 3)        | `meleeWpnClubT1BaseballBat` (Tier 6)        | `meleeWpnClubT3SteelClub`            |
+|                | `meleeWpnSledgeT1IronSledgehammer` (Tier 3) | `meleeWpnSpearT3SteelSpear` (Tier 3)        | `meleeWpnBatonT2StunBaton` (Tier 6)  |
+|                | `meleeWpnBatonT0PipeBaton`                  | `meleeWpnBatonT2StunBaton` (Tier 3)         | `meleeWpnSledgeT3SteelSledgehammer`  |
+|                | `meleeWpnKnucklesT0LeatherKnuckles`         | `meleeWpnBladeT1HuntingKnife` (Tier 6)      | `meleeWpnKnucklesT3SteelKnuckles`    |
+|                |                                             | `meleeWpnSledgeT1IronSledgehammer` (Tier 6) |                                      |
+|                |                                             | `meleeWpnKnucklesT1IronKnuckles`            |                                      |
 
 The tier selector is a `count="all"` lootgroup. The Simple pool is always included, while the Good and Quality pools use independent `force_prob="true"` rolls with `prob="0.20"` and `prob="0.05"`. If a bonus roll succeeds, **all items** in that tier are added to the same loot window.
 
