@@ -11,8 +11,8 @@
       The selected category also rolls a 30% chance to add one matching weapon.
   ============================================================ -->
 
-  <!-- Append all groups and the container in one block so
-       forward references are resolved together. -->
+  <!-- Append all groups and the container in one block.
+    Referenced lootgroups still need to be defined before use. -->
   <append xpath="/lootcontainers">
 
     <!-- *** evLootBoxFoodSimple — one random simple food item
@@ -63,31 +63,6 @@
       <item name="drugPainkillers"         count="1,3"/>
     </lootgroup>
 
-    <!-- *** evLootBoxSimplePool — 75% reward category + 30% simple weapon bonus -->
-    <lootgroup name="evLootBoxSimplePool" count="all">
-      <item group="evLootBoxFoodSimple"/>
-      <item group="evLootBoxDrinkSimple"/>
-      <item group="evLootBoxMedSimple"/>
-      <item name="ammo9mmBulletBall"   count="50,100"/>
-      <item group="evLootBoxWeaponsSimple" prob="0.30" force_prob="true"/>
-    </lootgroup>
-
-    <!-- *** evLootBoxGoodPool — 20% reward category + 30% good weapon bonus -->
-    <lootgroup name="evLootBoxGoodPool" count="all">
-      <item name="foodMeatStew"        count="1,2"/>
-      <item name="medicalFirstAidKit"  count="1,2"/>
-      <item name="ammo9mmBulletHP"     count="50,100"/>
-      <item group="evLootBoxWeaponsGood" prob="0.30" force_prob="true"/>
-    </lootgroup>
-
-    <!-- *** evLootBoxValuablePool — 5% reward category + 30% valuable weapon bonus -->
-    <lootgroup name="evLootBoxValuablePool" count="all">
-      <item name="resourceRepairKit"      count="3,5"/>
-      <item name="drugSteroids"           count="1,2"/>
-      <item name="handgunsSkillMagazine"  count="2,3"/>
-      <item group="evLootBoxWeaponsValuable" prob="0.30" force_prob="true"/>
-    </lootgroup>
-
     <!-- *** Optional category-matched weapon bonus groups
          In-game item quality (Q1-Q6) is controlled by loot_quality_template. -->
     <lootgroup name="evLootBoxWeaponsSimple" count="1" loot_quality_template="qualTwitchT3Template">
@@ -118,6 +93,31 @@
       <item name="gunMGT2TacticalAR"/>
       <item name="meleeWpnSpearT3SteelSpear"/>
       <item name="meleeWpnBladeT3Machete"/>
+    </lootgroup>
+
+    <!-- *** evLootBoxSimplePool — 75% reward category + 30% simple weapon bonus -->
+    <lootgroup name="evLootBoxSimplePool" count="all">
+      <item group="evLootBoxFoodSimple"/>
+      <item group="evLootBoxDrinkSimple"/>
+      <item group="evLootBoxMedSimple"/>
+      <item name="ammo9mmBulletBall"   count="50,100"/>
+      <item group="evLootBoxWeaponsSimple" prob="0.30" force_prob="true"/>
+    </lootgroup>
+
+    <!-- *** evLootBoxGoodPool — 20% reward category + 30% good weapon bonus -->
+    <lootgroup name="evLootBoxGoodPool" count="all">
+      <item name="foodMeatStew"        count="1,2"/>
+      <item name="medicalFirstAidKit"  count="1,2"/>
+      <item name="ammo9mmBulletHP"     count="50,100"/>
+      <item group="evLootBoxWeaponsGood" prob="0.30" force_prob="true"/>
+    </lootgroup>
+
+    <!-- *** evLootBoxValuablePool — 5% reward category + 30% valuable weapon bonus -->
+    <lootgroup name="evLootBoxValuablePool" count="all">
+      <item name="resourceRepairKit"      count="3,5"/>
+      <item name="drugSteroids"           count="1,2"/>
+      <item name="handgunsSkillMagazine"  count="2,3"/>
+      <item group="evLootBoxWeaponsValuable" prob="0.30" force_prob="true"/>
     </lootgroup>
 
     <!-- *** Reward-category selector: choose exactly one category with 75/20/5 weights -->
