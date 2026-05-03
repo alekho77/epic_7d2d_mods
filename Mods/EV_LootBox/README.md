@@ -23,10 +23,19 @@ When a player right-clicks a **Loot Box**, the reward is built in layers:
 
 Use the table below as the working template for grouped item IDs by tier:
 
-| Group            | Simple | Good | Quality |
-| ---------------- | ------ | ---- | ------- |
-| Ranged weapons   |        |      |         |
-| Melee weapons    |        |      |         |
+| Group          | Simple                              | Good | Quality |
+| -------------- | ----------------------------------- | ---- | ------- |
+| Ranged weapons | `gunHandgunT1Pistol`                |      |         |
+|                | `gunShotgunT1DoubleBarrel`          |      |         |
+|                | `gunRifleT1HuntingRifle`            |      |         |
+|                | `gunMGT1AK47`                       |      |         |
+|                | `gunBowT1WoodenBow`                 |      |         |
+| Melee weapons  | `meleeWpnSpearT1IronSpear`          |      |         |
+|                | `meleeWpnBladeT1HuntingKnife`       |      |         |
+|                | `meleeWpnClubT1BaseballBat`         |      |         |
+|                | `meleeWpnSledgeT1IronSledgehammer`  |      |         |
+|                | `meleeWpnBatonT0PipeBaton`          |      |         |
+|                | `meleeWpnKnucklesT0LeatherKnuckles` |      |         |
 
 The tier selector is a `count="all"` lootgroup. The Simple pool is always included, while the Good and Quality pools use independent `force_prob="true"` rolls with `prob="0.20"` and `prob="0.05"`. If a bonus roll succeeds, **all items** in that tier are added to the same loot window.
 
