@@ -23,6 +23,19 @@
       </property>
     </item>
 
+    <item name="evLootBoxGoodWeaponBundle">
+      <property name="Extends"         value="questRewardBundleMaster"/>
+      <property name="CreativeMode"    value="Player"/>
+      <property name="CustomIcon"      value="bundleRifle"/>
+      <property name="CustomIconTint"  value="FFCC00"/>
+      <property name="ItemTypeIcon"    value="bundle"/>
+      <property name="DescriptionKey"  value="evLootBoxGoodWeaponBundleDesc"/>
+      <property class="Action0">
+        <property name="Random_item" value="gunMGT2TacticalAR,meleeWpnBladeT3Machete,meleeWpnSpearT3SteelSpear,meleeWpnBatonT2StunBaton,gunHandgunT2Magnum44,gunShotgunT2PumpShotgun,gunRifleT2LeverActionRifle,gunMGT1AK47,gunBowT1IronCrossbow,meleeWpnSpearT1IronSpear,meleeWpnClubT1BaseballBat,meleeWpnBladeT1HuntingKnife,meleeWpnSledgeT1IronSledgehammer,meleeWpnKnucklesT1IronKnuckles"/>
+        <property name="Random_item_count" value="2,2,2,2,6,6,6,6,6,6,6,6,6,6"/>
+      </property>
+    </item>
+
     <item name="evLootBoxValuableWeaponBundle">
       <property name="Extends"         value="questRewardBundleMaster"/>
       <property name="CreativeMode"    value="Player"/>

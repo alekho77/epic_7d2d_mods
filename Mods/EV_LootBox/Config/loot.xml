@@ -64,8 +64,8 @@
     </lootgroup>
 
         <!-- *** Optional category-matched weapon bonus groups
-          Simple and Good use loot_quality_template.
-          Valuable now routes through a dedicated weapon bundle item. -->
+          Simple still uses loot_quality_template.
+          Good and Valuable now route through dedicated weapon bundle items. -->
         <lootgroup name="evLootBoxWeaponsSimpleQ2" count="1" loot_quality_template="qualTwitchT2Template">
       <item name="gunMGT1AK47"/>
       <item name="meleeWpnSpearT1IronSpear"/>
@@ -88,31 +88,6 @@
       <item group="evLootBoxWeaponsSimpleQ6" prob="6"/>
     </lootgroup>
 
-    <lootgroup name="evLootBoxWeaponsGoodQ2" count="1" loot_quality_template="qualTwitchT2Template">
-      <item name="gunMGT2TacticalAR"/>
-      <item name="meleeWpnBladeT3Machete"/>
-      <item name="meleeWpnSpearT3SteelSpear"/>
-      <item name="meleeWpnBatonT2StunBaton"/>
-    </lootgroup>
-
-    <lootgroup name="evLootBoxWeaponsGoodQ6" count="1" loot_quality_template="qualTwitchT6Template">
-      <item name="gunHandgunT2Magnum44"/>
-      <item name="gunShotgunT2PumpShotgun"/>
-      <item name="gunRifleT2LeverActionRifle"/>
-      <item name="gunMGT1AK47"/>
-      <item name="gunBowT1IronCrossbow"/>
-      <item name="meleeWpnSpearT1IronSpear"/>
-      <item name="meleeWpnClubT1BaseballBat"/>
-      <item name="meleeWpnBladeT1HuntingKnife"/>
-      <item name="meleeWpnSledgeT1IronSledgehammer"/>
-      <item name="meleeWpnKnucklesT1IronKnuckles"/>
-    </lootgroup>
-
-    <lootgroup name="evLootBoxWeaponsGood" count="1">
-      <item group="evLootBoxWeaponsGoodQ2" prob="4"/>
-      <item group="evLootBoxWeaponsGoodQ6" prob="10"/>
-    </lootgroup>
-
     <!-- *** evLootBoxSimplePool — 75% reward category + 30% simple weapon bonus -->
     <lootgroup name="evLootBoxSimplePool" count="all">
       <item group="evLootBoxFoodSimple"/>
@@ -127,7 +102,7 @@
       <item name="foodMeatStew"        count="1,2"/>
       <item name="medicalFirstAidKit"  count="1,2"/>
       <item name="ammo9mmBulletHP"     count="50,100"/>
-      <item group="evLootBoxWeaponsGood" prob="0.30" force_prob="true"/>
+      <item name="evLootBoxGoodWeaponBundle" prob="0.30" force_prob="true"/>
     </lootgroup>
 
     <!-- *** evLootBoxValuablePool — 5% reward category + 30% valuable weapon bonus -->
