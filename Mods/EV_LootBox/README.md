@@ -21,34 +21,12 @@ Adds a **Loot Box** — a special bundle item that opens a loot selection window
 
 When a player right-clicks a **Loot Box**, the reward is built in layers:
 
-Use the table below as the working list of item IDs for each tier:
+Use the table below as the working template for grouped item IDs by tier:
 
-| Simple Items               | Good Items              | Quality Items              |
-| -------------------------- | ----------------------- | -------------------------- |
-| `foodCanPeas`              | `foodMeatStew`          | `resourceRepairKit`        |
-| `foodCanSoup`              | `medicalFirstAidKit`    | `drugSteroids`             |
-| `foodCanSham`              | `ammo9mmBulletHP`       | `handgunsSkillMagazine`    |
-| `foodCanChicken`           |                         |                            |
-| `foodCanChili`             |                         |                            |
-| `foodCanBeef`              |                         |                            |
-| `foodCanTuna`              |                         |                            |
-| `foodCanPasta`             |                         |                            |
-| `foodCornBread`            |                         |                            |
-| `foodGrilledMeat`          |                         |                            |
-| `foodEggBoiled`            |                         |                            |
-| `foodBakedPotato`          |                         |                            |
-| `drinkJarBoiledWater`      |                         |                            |
-| `drinkJarYuccaJuice`       |                         |                            |
-| `drinkJarGoldenRodTea`     |                         |                            |
-| `drinkJarBeer`             |                         |                            |
-| `medicalBandage`           |                         |                            |
-| `medicalAloeCream`         |                         |                            |
-| `medicalFirstAidBandage`   |                         |                            |
-| `drugVitamins`             |                         |                            |
-| `drugPainkillers`          |                         |                            |
-| `ammo9mmBulletBall`        |                         |                            |
-|                            |                         |                            |
-|                            |                         |                            |
+| Group            | Simple | Good | Quality |
+| ---------------- | ------ | ---- | ------- |
+| Ranged weapons   |        |      |         |
+| Melee weapons    |        |      |         |
 
 The tier selector is a `count="all"` lootgroup. The Simple pool is always included, while the Good and Quality pools use independent `force_prob="true"` rolls with `prob="0.20"` and `prob="0.05"`. If a bonus roll succeeds, **all items** in that tier are added to the same loot window.
 
