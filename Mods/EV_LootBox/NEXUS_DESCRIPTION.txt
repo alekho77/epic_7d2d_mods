@@ -2,7 +2,7 @@
 
 [size=5][b]Description[/b][/size]
 
-Adds a [b]Loot Box[/b] — a special bundle item that opens a loot selection window with a [b]tiered reward system[/b]. Each box always grants a base reward tier and can independently add higher-tier bonus rewards on top.
+Adds a [b]Loot Box[/b] — a special bundle item that opens a loot selection window with a [b]tiered reward system[/b]. Each box always grants a [b]Simple[/b] reward tier and can independently add [b]Good[/b] and [b]Quality[/b] bonus rewards on top.
 
 [quote]
 [color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
@@ -14,8 +14,8 @@ Players connecting to the server [b]do not need to download or install anything[
 [size=5][b]Features[/b][/size]
 
 [list]
-[*][b]Tiered probability system[/b] — each box always grants a common reward and can independently add uncommon and rare bonus tiers
-[*][b]Loot Box[/b] ([font=Courier New]evLootBox[/font]) — single reward box with three quality tiers
+[*][b]Tiered probability system[/b] — each box always grants a Simple reward and can independently add Good and Quality bonus tiers
+[*][b]Loot Box[/b] ([font=Courier New]evLootBox[/font]) — single reward box with three named tiers
 [*][b]Loot window UI[/b] — uses the vanilla OpenLootBundle mechanic; opens a container window just like quest reward bundles
 [*][b]No perks or loot abundance influence[/b] — rewards are fixed regardless of player progression
 [*][b]Server-friendly[/b] — fully controlled by the server; admins distribute boxes via console commands
@@ -26,12 +26,12 @@ Players connecting to the server [b]do not need to download or install anything[
 When a player right-clicks a [b]Loot Box[/b], the reward is built in layers:
 
 [list]
-[*][color=#55aa55][b]Common (always)[/b][/color] — 2–3× Canned Sham, 3–5× Bandage, 50–100× 9mm Ball ammo
-[*][color=#ffcc00][b]Uncommon (20% extra roll)[/b][/color] — 1–2× Meat Stew, 1–2× First Aid Kit, 50–100× 9mm HP ammo
-[*][color=#ff4444][b]Rare (5% extra roll)[/b][/color] — 3–5× Repair Kit, 1–2× Steroids, 2–3× Handguns Skill Magazine
+[*][color=#55aa55][b]Simple (always)[/b][/color] — canned food, basic drinks, basic medicine, and 9mm Ball ammo
+[*][color=#ffcc00][b]Good (20% extra roll)[/b][/color] — Meat Stew, First Aid Kit, and 9mm HP ammo
+[*][color=#ff4444][b]Quality (5% extra roll)[/b][/color] — Repair Kits, Steroids, and Handguns Skill Magazines
 [/list]
 
-The tier selector is a [font=Courier New]count="all"[/font] lootgroup. The common pool is always included, while the uncommon and rare pools use independent [font=Courier New]force_prob="true"[/font] rolls with [font=Courier New]prob="0.20"[/font] and [font=Courier New]prob="0.05"[/font]. If a bonus roll succeeds, [b]all items[/b] in that tier are added to the same loot window.
+The tier selector is a [font=Courier New]count="all"[/font] lootgroup. The Simple pool is always included, while the Good and Quality pools use independent [font=Courier New]force_prob="true"[/font] rolls with [font=Courier New]prob="0.20"[/font] and [font=Courier New]prob="0.05"[/font]. If a bonus roll succeeds, [b]all items[/b] in that tier are added to the same loot window.
 
 [size=5][b]Installation[/b][/size]
 
@@ -58,8 +58,8 @@ give <player_name> evLootBox 1[/code]
 
 [list]
 [*]Initial prototype release
-[*]Added [font=Courier New]evLootBox[/font] (Loot Box) with guaranteed common rewards plus 20% uncommon and 5% rare bonus rolls
-[*]Common tier: Canned Sham, Bandage, 9mm Ball ammo
-[*]Uncommon tier: Meat Stew, First Aid Kit, 9mm HP ammo
-[*]Rare tier: Repair Kit, Steroids, Handguns Skill Magazine
+[*]Added [font=Courier New]evLootBox[/font] (Loot Box) with guaranteed Simple rewards plus 20% Good and 5% Quality bonus rolls
+[*]Simple tier: Canned Sham, Bandage, 9mm Ball ammo
+[*]Good tier: Meat Stew, First Aid Kit, 9mm HP ammo
+[*]Quality tier: Repair Kit, Steroids, Handguns Skill Magazine
 [/list]
