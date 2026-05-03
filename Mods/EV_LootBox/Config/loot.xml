@@ -5,7 +5,7 @@
       Reward-category selector: Simple is always granted.
       Bonus rolls are independent add-ons:
         20% → Good    (better food, better medicine, HP ammo)
-         5% → Quality (repair kits, steroids, skill magazine)
+         5% → Valuable (repair kits, steroids, skill magazine)
       Each reward-category pool uses count="all" so every item in the
       triggered category is guaranteed to drop.
   ============================================================ -->
@@ -77,8 +77,8 @@
       <item name="ammo9mmBulletHP"     count="50,100"/>
     </lootgroup>
 
-    <!-- *** evLootBoxQualityPool — 5% reward category -->
-    <lootgroup name="evLootBoxQualityPool" count="all">
+    <!-- *** evLootBoxValuablePool — 5% reward category -->
+    <lootgroup name="evLootBoxValuablePool" count="all">
       <item name="resourceRepairKit"      count="3,5"/>
       <item name="drugSteroids"           count="1,2"/>
       <item name="handgunsSkillMagazine"  count="2,3"/>
@@ -110,7 +110,7 @@
       <item group="evLootBoxWeaponsGoodMacheteQ3"/>
     </lootgroup>
 
-    <lootgroup name="evLootBoxWeaponsQuality" count="1" loot_quality_template="qualTwitchT6Template">
+    <lootgroup name="evLootBoxWeaponsValuable" count="1" loot_quality_template="qualTwitchT6Template">
       <item name="gunMGT2TacticalAR"/>
       <item name="meleeWpnSpearT3SteelSpear"/>
       <item name="meleeWpnBladeT3Machete"/>
@@ -120,7 +120,7 @@
     <lootgroup name="evLootBoxCategorySelector" count="all">
       <item group="evLootBoxSimplePool"/>
       <item group="evLootBoxGoodPool" prob="0.20" force_prob="true"/>
-      <item group="evLootBoxQualityPool"  prob="0.05" force_prob="true"/>
+      <item group="evLootBoxValuablePool" prob="0.05" force_prob="true"/>
     </lootgroup>
 
     <!-- *** Loot container opened by evLootBox -->

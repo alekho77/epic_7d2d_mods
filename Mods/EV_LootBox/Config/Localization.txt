@@ -1,3 +1,3 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
 evLootBox,items,Item,,,"Loot Box",,,,,,,,,,,,
-evLootBoxDesc,items,Item,,,"Always grants the [00ff88]Simple[-] reward category, with an extra [ffcc00]Good[-] roll at 20% and an extra [ff4444]Quality[-] roll at 5%.",,,,,,,,,,,,
+evLootBoxDesc,items,Item,,,"Always grants the [00ff88]Simple[-] reward category, with an extra [ffcc00]Good[-] roll at 20% and an extra [ff4444]Valuable[-] roll at 5%.",,,,,,,,,,,,

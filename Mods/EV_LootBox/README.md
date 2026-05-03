@@ -2,7 +2,7 @@
 
 ## Description
 
-Adds a **Loot Box** — a special bundle item that opens a loot selection window with three named **reward categories**. Each box always grants the **Simple** category and can independently add **Good** and **Quality** bonus rewards on top.
+Adds a **Loot Box** — a special bundle item that opens a loot selection window with three named **reward categories**. Each box always grants the **Simple** category and can independently add **Good** and **Valuable** bonus rewards on top.
 
 > ### 🟢 Server-Side Friendly
 >
@@ -11,7 +11,7 @@ Adds a **Loot Box** — a special bundle item that opens a loot selection window
 
 ## Features
 
-- **Category-based probability system** — each box always grants a Simple reward and can independently add Good and Quality bonus categories
+- **Category-based probability system** — each box always grants a Simple reward and can independently add Good and Valuable bonus categories
 - **Loot Box** (`evLootBox`) — single reward box with three named reward categories
 - **Loot window UI** — uses the vanilla `OpenLootBundle` mechanic; opens a container window just like quest reward bundles
 - **No perks or loot abundance influence** — rewards are fixed regardless of player progression
@@ -23,11 +23,11 @@ When a player right-clicks a **Loot Box**, the reward is built in layers:
 
 Use the table below as the working template for grouped item IDs by reward category:
 
-Simple, Good, and Quality are reward categories. `Q1` to `Q6` refers to the in-game item quality.
+Simple, Good, and Valuable are reward categories. `Q1` to `Q6` refers to the in-game item quality.
 
 If a table entry does not include an explicit quality annotation, it is assumed to be `Q6`.
 
-| Group          | Simple                                      | Good                                        | Quality                              |
+| Group          | Simple                                      | Good                                        | Valuable                             |
 | -------------- | ------------------------------------------- | ------------------------------------------- | ------------------------------------ |
 | Ranged weapons | `gunHandgunT1Pistol`                        | `gunHandgunT2Magnum44`                      | `gunHandgunT3SMG5`                   |
 |                | `gunShotgunT1DoubleBarrel`                  | `gunShotgunT2PumpShotgun`                   | `gunHandgunT3DesertVulture`          |
@@ -46,7 +46,7 @@ If a table entry does not include an explicit quality annotation, it is assumed 
 |                |                                             | `meleeWpnSledgeT1IronSledgehammer` (Q6)     |                                      |
 |                |                                             | `meleeWpnKnucklesT1IronKnuckles`            |                                      |
 
-The reward-category selector is a `count="all"` lootgroup. The Simple pool is always included, while the Good and Quality pools use independent `force_prob="true"` rolls with `prob="0.20"` and `prob="0.05"`. If a bonus roll succeeds, **all items** in that category are added to the same loot window.
+The reward-category selector is a `count="all"` lootgroup. The Simple pool is always included, while the Good and Valuable pools use independent `force_prob="true"` rolls with `prob="0.20"` and `prob="0.05"`. If a bonus roll succeeds, **all items** in that category are added to the same loot window.
 
 ## Installation
 

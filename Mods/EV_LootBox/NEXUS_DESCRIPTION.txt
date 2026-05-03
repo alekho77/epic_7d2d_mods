@@ -2,7 +2,7 @@
 
 [size=5][b]Description[/b][/size]
 
-Adds a [b]Loot Box[/b] — a special bundle item that opens a loot selection window with three named [b]reward categories[/b]. Each box always grants the [b]Simple[/b] category and can independently add [b]Good[/b] and [b]Quality[/b] bonus rewards on top.
+Adds a [b]Loot Box[/b] — a special bundle item that opens a loot selection window with three named [b]reward categories[/b]. Each box always grants the [b]Simple[/b] category and can independently add [b]Good[/b] and [b]Valuable[/b] bonus rewards on top.
 
 [quote]
 [color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
@@ -14,7 +14,7 @@ Players connecting to the server [b]do not need to download or install anything[
 [size=5][b]Features[/b][/size]
 
 [list]
-[*][b]Category-based probability system[/b] — each box always grants a Simple reward and can independently add Good and Quality bonus categories
+[*][b]Category-based probability system[/b] — each box always grants a Simple reward and can independently add Good and Valuable bonus categories
 [*][b]Loot Box[/b] ([font=Courier New]evLootBox[/font]) — single reward box with three named reward categories
 [*][b]Loot window UI[/b] — uses the vanilla OpenLootBundle mechanic; opens a container window just like quest reward bundles
 [*][b]No perks or loot abundance influence[/b] — rewards are fixed regardless of player progression
@@ -28,10 +28,10 @@ When a player right-clicks a [b]Loot Box[/b], the reward is built in layers:
 [list]
 [*][color=#55aa55][b]Simple (always)[/b][/color] — canned food, basic drinks, basic medicine, and 9mm Ball ammo
 [*][color=#ffcc00][b]Good (20% extra roll)[/b][/color] — Meat Stew, First Aid Kit, and 9mm HP ammo
-[*][color=#ff4444][b]Quality (5% extra roll)[/b][/color] — Repair Kits, Steroids, and Handguns Skill Magazines
+[*][color=#ff4444][b]Valuable (5% extra roll)[/b][/color] — Repair Kits, Steroids, and Handguns Skill Magazines
 [/list]
 
-The reward-category selector is a [font=Courier New]count="all"[/font] lootgroup. The Simple pool is always included, while the Good and Quality pools use independent [font=Courier New]force_prob="true"[/font] rolls with [font=Courier New]prob="0.20"[/font] and [font=Courier New]prob="0.05"[/font]. If a bonus roll succeeds, [b]all items[/b] in that category are added to the same loot window.
+The reward-category selector is a [font=Courier New]count="all"[/font] lootgroup. The Simple pool is always included, while the Good and Valuable pools use independent [font=Courier New]force_prob="true"[/font] rolls with [font=Courier New]prob="0.20"[/font] and [font=Courier New]prob="0.05"[/font]. If a bonus roll succeeds, [b]all items[/b] in that category are added to the same loot window.
 
 [size=5][b]Installation[/b][/size]
 
@@ -58,8 +58,8 @@ give <player_name> evLootBox 1[/code]
 
 [list]
 [*]Initial prototype release
-[*]Added [font=Courier New]evLootBox[/font] (Loot Box) with guaranteed Simple rewards plus 20% Good and 5% Quality bonus rolls
+[*]Added [font=Courier New]evLootBox[/font] (Loot Box) with guaranteed Simple rewards plus 20% Good and 5% Valuable bonus rolls
 [*]Simple category: Canned Sham, Bandage, 9mm Ball ammo
 [*]Good category: Meat Stew, First Aid Kit, 9mm HP ammo
-[*]Quality category: Repair Kit, Steroids, Handguns Skill Magazine
+[*]Valuable category: Repair Kit, Steroids, Handguns Skill Magazine
 [/list]
