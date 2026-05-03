@@ -7,7 +7,7 @@ This repository contains **7 Days to Die** modlets authored by **Aleksei Khozin*
 ### Language
 - All code, comments, XML, Markdown files, and instructions must be written in **English**.
 - Respond in the same language the user used in their request.
-- Always append exactly **one sentence in English** at the very end of every reply summarizing what was done, regardless of the request language.
+- Always append exactly **one concise sentence in English** at the very end of every reply summarizing what was done, in the style of a git commit message, regardless of the request language.
 
 ### Linting After File Changes
 
@@ -19,7 +19,7 @@ After editing **any** file — including Markdown (`.md`), XML, JSON, plain text
 ### Git Commit Policy
 - **Never suggest committing changes** unless explicitly asked by the user.
 - When a commit is requested, execute it using console `git` commands.
-- Commit message must be exactly one sentence in English.
+- Commit message must be exactly one concise sentence in English, in the style of a git commit message.
 
 ## Project Structure
 
