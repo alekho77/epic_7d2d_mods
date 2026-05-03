@@ -64,29 +64,7 @@
     </lootgroup>
 
         <!-- *** Optional category-matched weapon bonus groups
-          Simple still uses loot_quality_template.
-          Good and Valuable now route through dedicated weapon bundle items. -->
-        <lootgroup name="evLootBoxWeaponsSimpleQ2" count="1" loot_quality_template="qualTwitchT2Template">
-      <item name="gunMGT1AK47"/>
-      <item name="meleeWpnSpearT1IronSpear"/>
-      <item name="meleeWpnBladeT1HuntingKnife"/>
-      <item name="meleeWpnClubT1BaseballBat"/>
-      <item name="meleeWpnSledgeT1IronSledgehammer"/>
-    </lootgroup>
-
-    <lootgroup name="evLootBoxWeaponsSimpleQ6" count="1" loot_quality_template="qualTwitchT6Template">
-      <item name="gunHandgunT1Pistol"/>
-      <item name="gunShotgunT1DoubleBarrel"/>
-      <item name="gunRifleT1HuntingRifle"/>
-      <item name="gunBowT1WoodenBow"/>
-      <item name="meleeWpnBatonT0PipeBaton"/>
-      <item name="meleeWpnKnucklesT0LeatherKnuckles"/>
-    </lootgroup>
-
-    <lootgroup name="evLootBoxWeaponsSimple" count="1">
-      <item group="evLootBoxWeaponsSimpleQ2" prob="5"/>
-      <item group="evLootBoxWeaponsSimpleQ6" prob="6"/>
-    </lootgroup>
+          Simple, Good, and Valuable now route through dedicated weapon bundle items. -->
 
     <!-- *** evLootBoxSimplePool — 75% reward category + 30% simple weapon bonus -->
     <lootgroup name="evLootBoxSimplePool" count="all">
@@ -94,7 +72,7 @@
       <item group="evLootBoxDrinkSimple"/>
       <item group="evLootBoxMedSimple"/>
       <item name="ammo9mmBulletBall"   count="50,100"/>
-      <item group="evLootBoxWeaponsSimple" prob="0.30" force_prob="true"/>
+      <item name="evLootBoxSimpleWeaponBundle" prob="0.30" force_prob="true"/>
     </lootgroup>
 
     <!-- *** evLootBoxGoodPool — 20% reward category + 30% good weapon bonus -->
