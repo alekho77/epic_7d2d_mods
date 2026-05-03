@@ -65,34 +65,68 @@
 
     <!-- *** Optional category-matched weapon bonus groups
          In-game item quality (Q1-Q6) is controlled by loot_quality_template. -->
-    <lootgroup name="evLootBoxWeaponsSimple" count="1" loot_quality_template="qualTwitchT3Template">
+    <lootgroup name="evLootBoxWeaponsSimpleQ3" count="1" loot_quality_template="qualTwitchT3Template">
       <item name="gunMGT1AK47"/>
       <item name="meleeWpnSpearT1IronSpear"/>
       <item name="meleeWpnBladeT1HuntingKnife"/>
+      <item name="meleeWpnClubT1BaseballBat"/>
+      <item name="meleeWpnSledgeT1IronSledgehammer"/>
     </lootgroup>
 
-    <lootgroup name="evLootBoxWeaponsGoodAk47Q6" count="all" loot_quality_template="qualTwitchT6Template">
-      <item name="gunMGT1AK47"/>
+    <lootgroup name="evLootBoxWeaponsSimpleQ6" count="1" loot_quality_template="qualTwitchT6Template">
+      <item name="gunHandgunT1Pistol"/>
+      <item name="gunShotgunT1DoubleBarrel"/>
+      <item name="gunRifleT1HuntingRifle"/>
+      <item name="gunBowT1WoodenBow"/>
+      <item name="meleeWpnBatonT0PipeBaton"/>
+      <item name="meleeWpnKnucklesT0LeatherKnuckles"/>
     </lootgroup>
 
-    <lootgroup name="evLootBoxWeaponsGoodSteelSpearQ3" count="all" loot_quality_template="qualTwitchT3Template">
-      <item name="meleeWpnSpearT3SteelSpear"/>
+    <lootgroup name="evLootBoxWeaponsSimple" count="1">
+      <item group="evLootBoxWeaponsSimpleQ3" prob="5"/>
+      <item group="evLootBoxWeaponsSimpleQ6" prob="6"/>
     </lootgroup>
 
-    <lootgroup name="evLootBoxWeaponsGoodMacheteQ3" count="all" loot_quality_template="qualTwitchT3Template">
+    <lootgroup name="evLootBoxWeaponsGoodQ3" count="1" loot_quality_template="qualTwitchT3Template">
+      <item name="gunMGT2TacticalAR"/>
       <item name="meleeWpnBladeT3Machete"/>
+      <item name="meleeWpnSpearT3SteelSpear"/>
+      <item name="meleeWpnBatonT2StunBaton"/>
+    </lootgroup>
+
+    <lootgroup name="evLootBoxWeaponsGoodQ6" count="1" loot_quality_template="qualTwitchT6Template">
+      <item name="gunHandgunT2Magnum44"/>
+      <item name="gunShotgunT2PumpShotgun"/>
+      <item name="gunRifleT2LeverActionRifle"/>
+      <item name="gunMGT1AK47"/>
+      <item name="gunBowT1IronCrossbow"/>
+      <item name="meleeWpnSpearT1IronSpear"/>
+      <item name="meleeWpnClubT1BaseballBat"/>
+      <item name="meleeWpnBladeT1HuntingKnife"/>
+      <item name="meleeWpnSledgeT1IronSledgehammer"/>
+      <item name="meleeWpnKnucklesT1IronKnuckles"/>
     </lootgroup>
 
     <lootgroup name="evLootBoxWeaponsGood" count="1">
-      <item group="evLootBoxWeaponsGoodAk47Q6"/>
-      <item group="evLootBoxWeaponsGoodSteelSpearQ3"/>
-      <item group="evLootBoxWeaponsGoodMacheteQ3"/>
+      <item group="evLootBoxWeaponsGoodQ3" prob="4"/>
+      <item group="evLootBoxWeaponsGoodQ6" prob="10"/>
     </lootgroup>
 
     <lootgroup name="evLootBoxWeaponsValuable" count="1" loot_quality_template="qualTwitchT6Template">
+      <item name="gunHandgunT3SMG5"/>
+      <item name="gunHandgunT3DesertVulture"/>
+      <item name="gunShotgunT3AutoShotgun"/>
+      <item name="gunRifleT3SniperRifle"/>
       <item name="gunMGT2TacticalAR"/>
+      <item name="gunMGT3M60"/>
+      <item name="gunBowT3CompoundBow"/>
+      <item name="gunBowT3CompoundCrossbow"/>
       <item name="meleeWpnSpearT3SteelSpear"/>
       <item name="meleeWpnBladeT3Machete"/>
+      <item name="meleeWpnClubT3SteelClub"/>
+      <item name="meleeWpnBatonT2StunBaton"/>
+      <item name="meleeWpnSledgeT3SteelSledgehammer"/>
+      <item name="meleeWpnKnucklesT3SteelKnuckles"/>
     </lootgroup>
 
     <!-- *** evLootBoxSimplePool — 75% reward category + 30% simple weapon bonus -->
