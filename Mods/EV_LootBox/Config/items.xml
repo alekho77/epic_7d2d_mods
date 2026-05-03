@@ -23,6 +23,19 @@
       </property>
     </item>
 
+    <item name="evLootBoxValuableWeaponBundle">
+      <property name="Extends"         value="questRewardBundleMaster"/>
+      <property name="CreativeMode"    value="Player"/>
+      <property name="CustomIcon"      value="bundleRifle"/>
+      <property name="CustomIconTint"  value="FF4444"/>
+      <property name="ItemTypeIcon"    value="bundle"/>
+      <property name="DescriptionKey"  value="evLootBoxValuableWeaponBundleDesc"/>
+      <property class="Action0">
+        <property name="Random_item" value="gunHandgunT3SMG5,gunHandgunT3DesertVulture,gunShotgunT3AutoShotgun,gunRifleT3SniperRifle,gunMGT2TacticalAR,gunMGT3M60,gunBowT3CompoundBow,gunBowT3CompoundCrossbow,meleeWpnSpearT3SteelSpear,meleeWpnBladeT3Machete,meleeWpnClubT3SteelClub,meleeWpnBatonT2StunBaton,meleeWpnSledgeT3SteelSledgehammer,meleeWpnKnucklesT3SteelKnuckles"/>
+        <property name="Random_item_count" value="6,6,6,6,6,6,6,6,6,6,6,6,6,6"/>
+      </property>
+    </item>
+
   </append>
 
 </configs>

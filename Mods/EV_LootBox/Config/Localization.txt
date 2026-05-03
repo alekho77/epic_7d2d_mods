@@ -1,3 +1,5 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
 evLootBox,items,Item,,,"Loot Box",,,,,,,,,,,,
 evLootBoxDesc,items,Item,,,"Rolls one reward category: [00ff88]Simple[-] at 75%, [ffcc00]Good[-] at 20%, or [ff4444]Valuable[-] at 5%, plus a 30% chance to add one matching weapon.",,,,,,,,,,,,
+evLootBoxValuableWeaponBundle,items,Item,,,"Valuable Weapon Bundle",,,,,,,,,,,,
+evLootBoxValuableWeaponBundleDesc,items,Item,,,"Contains one random [ff4444]Valuable[-] weapon at quality 6.",,,,,,,,,,,,
