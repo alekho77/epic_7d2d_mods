@@ -46,6 +46,12 @@ If a table entry does not include an explicit quality annotation, it is assumed 
 |                | `meleeWpnKnucklesT0LeatherKnuckles`         | `meleeWpnBladeT1HuntingKnife` (Q6)          | `meleeWpnKnucklesT3SteelKnuckles`    |
 |                |                                             | `meleeWpnSledgeT1IronSledgehammer` (Q6)     |                                      |
 |                |                                             | `meleeWpnKnucklesT1IronKnuckles`            |                                      |
+| Tools          | `meleeToolRepairT0TazasStoneAxe`            | `meleeToolRepairT3Nailgun` (Q2)             | `meleeToolRepairT3Nailgun` (Q6)      |
+|                | `meleeToolRepairT1ClawHammer`               | `meleeToolAxeT2SteelAxe`                    | `meleeToolAxeT3Chainsaw`             |
+|                | `meleeToolAxeT1IronFireaxe`                 | `meleeToolPickT2SteelPickaxe`               | `meleeToolPickT3Auger`               |
+|                | `meleeToolPickT1IronPickaxe`                | `meleeToolShovelT2SteelShovel`              | `meleeToolSalvageT3ImpactDriver`     |
+|                | `meleeToolShovelT1IronShovel`               | `meleeToolSalvageT2Ratchet`                 |                                      |
+|                | `meleeToolSalvageT1Wrench`                  |                                             |                                      |
 
 The reward-category selector is a `count="1"` lootgroup with weighted entries. Each use of the box picks exactly one category: `Simple` with weight `75`, `Good` with weight `20`, or `Valuable` with weight `5`. The base consumables in that category are guaranteed, and then the matching weapon group rolls at `30%`. If that bonus roll succeeds, one weapon from the same reward category is added to the same loot window.
 
