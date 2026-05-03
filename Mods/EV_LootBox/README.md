@@ -74,10 +74,6 @@ give <player_name> evLootBox 1
 ### v0.1.0
 
 - Initial prototype release
-- Added `evLootBox` (Loot Box) with guaranteed Simple rewards plus 20% Good and 5% Quality bonus rolls
-- Simple tier: Canned Sham, Bandage, 9mm Ball ammo
-- Good tier: Meat Stew, First Aid Kit, 9mm HP ammo
-- Quality tier: Repair Kit, Steroids, Handguns Skill Magazine
 
 ---
 
