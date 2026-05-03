@@ -2,12 +2,12 @@
 
   <!-- ============================================================
        EV_LootBox — Loot Box
-      Reward-category selector: Simple is always granted.
-      Bonus rolls are independent add-ons:
-        20% → Good    (better food, better medicine, HP ammo)
-         5% → Valuable (repair kits, steroids, skill magazine)
+      Reward-category selector: exactly one category is chosen.
+        75% → Simple   (basic supplies)
+        20% → Good     (better consumables)
+         5% → Valuable (rare support items)
       Each reward-category pool uses count="all" so every item in the
-      triggered category is guaranteed to drop.
+      selected category is guaranteed to drop.
   ============================================================ -->
 
   <!-- Append all groups and the container in one block so
@@ -62,7 +62,7 @@
       <item name="drugPainkillers"         count="1,3"/>
     </lootgroup>
 
-    <!-- *** evLootBoxSimplePool — always granted -->
+    <!-- *** evLootBoxSimplePool — 75% reward category -->
     <lootgroup name="evLootBoxSimplePool" count="all">
       <item group="evLootBoxFoodSimple"/>
       <item group="evLootBoxDrinkSimple"/>
@@ -116,11 +116,11 @@
       <item name="meleeWpnBladeT3Machete"/>
     </lootgroup>
 
-    <!-- *** Reward-category selector: Simple is guaranteed, bonus categories roll independently -->
-    <lootgroup name="evLootBoxCategorySelector" count="all">
-      <item group="evLootBoxSimplePool"/>
-      <item group="evLootBoxGoodPool" prob="0.20" force_prob="true"/>
-      <item group="evLootBoxValuablePool" prob="0.05" force_prob="true"/>
+    <!-- *** Reward-category selector: choose exactly one category with 75/20/5 weights -->
+    <lootgroup name="evLootBoxCategorySelector" count="1">
+      <item group="evLootBoxSimplePool" prob="0.75"/>
+      <item group="evLootBoxGoodPool" prob="0.20"/>
+      <item group="evLootBoxValuablePool" prob="0.05"/>
     </lootgroup>
 
     <!-- *** Loot container opened by evLootBox -->

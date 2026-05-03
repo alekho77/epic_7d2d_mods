@@ -2,7 +2,7 @@
 
 ## Description
 
-Adds a **Loot Box** — a special bundle item that opens a loot selection window with three named **reward categories**. Each box always grants the **Simple** category and can independently add **Good** and **Valuable** bonus rewards on top.
+Adds a **Loot Box** — a special bundle item that opens a loot selection window with three named **reward categories**. Each box rolls exactly one category: **Simple**, **Good**, or **Valuable**.
 
 > ### 🟢 Server-Side Friendly
 >
@@ -11,7 +11,7 @@ Adds a **Loot Box** — a special bundle item that opens a loot selection window
 
 ## Features
 
-- **Category-based probability system** — each box always grants a Simple reward and can independently add Good and Valuable bonus categories
+- **Category-based probability system** — each box rolls one reward category with 75% Simple, 20% Good, and 5% Valuable odds
 - **Loot Box** (`evLootBox`) — single reward box with three named reward categories
 - **Loot window UI** — uses the vanilla `OpenLootBundle` mechanic; opens a container window just like quest reward bundles
 - **No perks or loot abundance influence** — rewards are fixed regardless of player progression
@@ -19,7 +19,7 @@ Adds a **Loot Box** — a special bundle item that opens a loot selection window
 
 ## How It Works
 
-When a player right-clicks a **Loot Box**, the reward is built in layers:
+When a player right-clicks a **Loot Box**, the reward is built from one selected category:
 
 Use the table below as the working template for grouped item IDs by reward category:
 
@@ -46,7 +46,7 @@ If a table entry does not include an explicit quality annotation, it is assumed 
 |                |                                             | `meleeWpnSledgeT1IronSledgehammer` (Q6)     |                                      |
 |                |                                             | `meleeWpnKnucklesT1IronKnuckles`            |                                      |
 
-The reward-category selector is a `count="all"` lootgroup. The Simple pool is always included, while the Good and Valuable pools use independent `force_prob="true"` rolls with `prob="0.20"` and `prob="0.05"`. If a bonus roll succeeds, **all items** in that category are added to the same loot window.
+The reward-category selector is a `count="1"` lootgroup with weighted entries. Each use of the box picks exactly one category: `Simple` at `0.75`, `Good` at `0.20`, or `Valuable` at `0.05`. Once a category is selected, **all items** in that category are added to the same loot window.
 
 ## Installation
 
@@ -69,7 +69,7 @@ give <player_name> evLootBox 1
 
 ### v0.1.0
 
-- Initial prototype release
+- Initial prototype release with mutually exclusive 75% Simple, 20% Good, and 5% Valuable category rolls
 
 ---
 
