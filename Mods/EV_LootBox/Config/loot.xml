@@ -2,12 +2,12 @@
 
   <!-- ============================================================
        EV_LootBox — Loot Box
-      Tier selector: Simple is always granted.
+      Reward-category selector: Simple is always granted.
       Bonus rolls are independent add-ons:
         20% → Good    (better food, better medicine, HP ammo)
          5% → Quality (repair kits, steroids, skill magazine)
-      Each tier pool uses count="all" so every item in the
-      triggered tier is guaranteed to drop.
+      Each reward-category pool uses count="all" so every item in the
+      triggered category is guaranteed to drop.
   ============================================================ -->
 
   <!-- Append all groups and the container in one block so
@@ -70,14 +70,14 @@
       <item name="ammo9mmBulletBall"   count="50,100"/>
     </lootgroup>
 
-    <!-- *** evLootBoxGoodPool — 20% tier -->
+    <!-- *** evLootBoxGoodPool — 20% reward category -->
     <lootgroup name="evLootBoxGoodPool" count="all">
       <item name="foodMeatStew"        count="1,2"/>
       <item name="medicalFirstAidKit"  count="1,2"/>
       <item name="ammo9mmBulletHP"     count="50,100"/>
     </lootgroup>
 
-    <!-- *** evLootBoxQualityPool — 5% tier -->
+    <!-- *** evLootBoxQualityPool — 5% reward category -->
     <lootgroup name="evLootBoxQualityPool" count="all">
       <item name="resourceRepairKit"      count="3,5"/>
       <item name="drugSteroids"           count="1,2"/>
@@ -85,7 +85,7 @@
     </lootgroup>
 
     <!-- *** Standalone mixed weapon test groups; not referenced yet
-         Quality is controlled by loot_quality_template. -->
+         In-game item quality (Q1-Q6) is controlled by loot_quality_template. -->
     <lootgroup name="evLootBoxWeaponsSimple" count="1" loot_quality_template="qualTwitchT3Template">
       <item name="gunMGT1AK47"/>
       <item name="meleeWpnSpearT1IronSpear"/>
@@ -116,8 +116,8 @@
       <item name="meleeWpnBladeT3Machete"/>
     </lootgroup>
 
-    <!-- *** Tier selector: Simple is guaranteed, bonus tiers roll independently -->
-    <lootgroup name="evLootBoxTierSelector" count="all">
+    <!-- *** Reward-category selector: Simple is guaranteed, bonus categories roll independently -->
+    <lootgroup name="evLootBoxCategorySelector" count="all">
       <item group="evLootBoxSimplePool"/>
       <item group="evLootBoxGoodPool" prob="0.20" force_prob="true"/>
       <item group="evLootBoxQualityPool"  prob="0.05" force_prob="true"/>
@@ -133,7 +133,7 @@
                    destroy_on_close="empty"
                    unique_item="true"
                    ignore_loot_abundance="true">
-      <item group="evLootBoxTierSelector"/>
+      <item group="evLootBoxCategorySelector"/>
     </lootcontainer>
 
   </append>
