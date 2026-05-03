@@ -84,20 +84,33 @@
       <item name="handgunsSkillMagazine"  count="2,3"/>
     </lootgroup>
 
-    <!-- *** Standalone mixed weapon test groups; not referenced yet -->
-    <lootgroup name="evLootBoxWeaponsSimple" count="1">
+    <!-- *** Standalone mixed weapon test groups; not referenced yet
+         Quality is controlled by loot_quality_template. -->
+    <lootgroup name="evLootBoxWeaponsSimple" count="1" loot_quality_template="qualTwitchT3Template">
       <item name="gunMGT1AK47"/>
       <item name="meleeWpnSpearT1IronSpear"/>
       <item name="meleeWpnBladeT1HuntingKnife"/>
     </lootgroup>
 
-    <lootgroup name="evLootBoxWeaponsGood" count="1">
+    <lootgroup name="evLootBoxWeaponsGoodAk47Q6" count="all" loot_quality_template="qualTwitchT6Template">
       <item name="gunMGT1AK47"/>
+    </lootgroup>
+
+    <lootgroup name="evLootBoxWeaponsGoodSteelSpearQ3" count="all" loot_quality_template="qualTwitchT3Template">
       <item name="meleeWpnSpearT3SteelSpear"/>
+    </lootgroup>
+
+    <lootgroup name="evLootBoxWeaponsGoodMacheteQ3" count="all" loot_quality_template="qualTwitchT3Template">
       <item name="meleeWpnBladeT3Machete"/>
     </lootgroup>
 
-    <lootgroup name="evLootBoxWeaponsQuality" count="1">
+    <lootgroup name="evLootBoxWeaponsGood" count="1">
+      <item group="evLootBoxWeaponsGoodAk47Q6"/>
+      <item group="evLootBoxWeaponsGoodSteelSpearQ3"/>
+      <item group="evLootBoxWeaponsGoodMacheteQ3"/>
+    </lootgroup>
+
+    <lootgroup name="evLootBoxWeaponsQuality" count="1" loot_quality_template="qualTwitchT6Template">
       <item name="gunMGT2TacticalAR"/>
       <item name="meleeWpnSpearT3SteelSpear"/>
       <item name="meleeWpnBladeT3Machete"/>
