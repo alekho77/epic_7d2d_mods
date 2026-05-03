@@ -12,6 +12,7 @@ Adds a **Loot Box** — a special bundle item that opens a loot selection window
 ## Features
 
 - **Category-based probability system** — each box rolls one reward category with 75% Simple, 20% Good, and 5% Valuable odds
+- **Matched weapon bonus** — the selected category also has a 30% chance to add one weapon from the same reward category
 - **Loot Box** (`evLootBox`) — single reward box with three named reward categories
 - **Loot window UI** — uses the vanilla `OpenLootBundle` mechanic; opens a container window just like quest reward bundles
 - **No perks or loot abundance influence** — rewards are fixed regardless of player progression
@@ -19,7 +20,7 @@ Adds a **Loot Box** — a special bundle item that opens a loot selection window
 
 ## How It Works
 
-When a player right-clicks a **Loot Box**, the reward is built from one selected category:
+When a player right-clicks a **Loot Box**, the reward is built from one selected category plus an optional matching weapon bonus:
 
 Use the table below as the working template for grouped item IDs by reward category:
 
@@ -46,7 +47,7 @@ If a table entry does not include an explicit quality annotation, it is assumed 
 |                |                                             | `meleeWpnSledgeT1IronSledgehammer` (Q6)     |                                      |
 |                |                                             | `meleeWpnKnucklesT1IronKnuckles`            |                                      |
 
-The reward-category selector is a `count="1"` lootgroup with weighted entries. Each use of the box picks exactly one category: `Simple` with weight `75`, `Good` with weight `20`, or `Valuable` with weight `5`. Once a category is selected, **all items** in that category are added to the same loot window.
+The reward-category selector is a `count="1"` lootgroup with weighted entries. Each use of the box picks exactly one category: `Simple` with weight `75`, `Good` with weight `20`, or `Valuable` with weight `5`. The base consumables in that category are guaranteed, and then the matching weapon group rolls at `30%`. If that bonus roll succeeds, one weapon from the same reward category is added to the same loot window.
 
 ## Installation
 
@@ -69,7 +70,7 @@ give <player_name> evLootBox 1
 
 ### v0.1.0
 
-- Initial prototype release with mutually exclusive 75% Simple, 20% Good, and 5% Valuable category rolls
+- Initial prototype release with mutually exclusive 75% Simple, 20% Good, and 5% Valuable category rolls plus a 30% matching weapon bonus
 
 ---
 
