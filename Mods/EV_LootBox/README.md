@@ -26,27 +26,27 @@ Use the table below as the working template for grouped item IDs by reward categ
 
 Simple, Good, and Valuable are reward categories. `Q1` to `Q6` refers to the in-game item quality.
 
-If a table entry does not include an explicit quality annotation, it is assumed to be `Q6`.
+Only non-default qualities are annotated in the table. If a table entry does not include an explicit quality annotation, it is assumed to be `Q6`.
 
 | Group          | Simple                                      | Good                                        | Valuable                             |
 | -------------- | ------------------------------------------- | ------------------------------------------- | ------------------------------------ |
 | Ranged weapons | `gunHandgunT1Pistol`                        | `gunHandgunT2Magnum44`                      | `gunHandgunT3SMG5`                   |
 |                | `gunShotgunT1DoubleBarrel`                  | `gunShotgunT2PumpShotgun`                   | `gunHandgunT3DesertVulture`          |
 |                | `gunRifleT1HuntingRifle`                    | `gunRifleT2LeverActionRifle`                | `gunShotgunT3AutoShotgun`            |
-|                | `gunMGT1AK47` (Q3)                          | `gunMGT1AK47` (Q6)                          | `gunRifleT3SniperRifle`              |
-|                | `gunBowT1WoodenBow`                         | `gunBowT1IronCrossbow`                      | `gunMGT2TacticalAR` (Q6)             |
+|                | `gunMGT1AK47` (Q3)                          | `gunMGT1AK47`                               | `gunRifleT3SniperRifle`              |
+|                | `gunBowT1WoodenBow`                         | `gunBowT1IronCrossbow`                      | `gunMGT2TacticalAR`                  |
 |                |                                             | `gunMGT2TacticalAR` (Q3)                    | `gunMGT3M60`                         |
 |                |                                             |                                             | `gunBowT3CompoundBow`                |
 |                |                                             |                                             | `gunBowT3CompoundCrossbow`           |
-| Melee weapons  | `meleeWpnSpearT1IronSpear` (Q3)             | `meleeWpnSpearT1IronSpear` (Q6)             | `meleeWpnSpearT3SteelSpear` (Q6)     |
-|                | `meleeWpnBladeT1HuntingKnife` (Q3)          | `meleeWpnBladeT3Machete` (Q3)               | `meleeWpnBladeT3Machete` (Q6)        |
-|                | `meleeWpnClubT1BaseballBat` (Q3)            | `meleeWpnClubT1BaseballBat` (Q6)            | `meleeWpnClubT3SteelClub`            |
-|                | `meleeWpnSledgeT1IronSledgehammer` (Q3)     | `meleeWpnSpearT3SteelSpear` (Q3)            | `meleeWpnBatonT2StunBaton` (Q6)      |
+| Melee weapons  | `meleeWpnSpearT1IronSpear` (Q3)             | `meleeWpnSpearT1IronSpear`                  | `meleeWpnSpearT3SteelSpear`          |
+|                | `meleeWpnBladeT1HuntingKnife` (Q3)          | `meleeWpnBladeT3Machete` (Q3)               | `meleeWpnBladeT3Machete`             |
+|                | `meleeWpnClubT1BaseballBat` (Q3)            | `meleeWpnClubT1BaseballBat`                 | `meleeWpnClubT3SteelClub`            |
+|                | `meleeWpnSledgeT1IronSledgehammer` (Q3)     | `meleeWpnSpearT3SteelSpear` (Q3)            | `meleeWpnBatonT2StunBaton`           |
 |                | `meleeWpnBatonT0PipeBaton`                  | `meleeWpnBatonT2StunBaton` (Q3)             | `meleeWpnSledgeT3SteelSledgehammer`  |
-|                | `meleeWpnKnucklesT0LeatherKnuckles`         | `meleeWpnBladeT1HuntingKnife` (Q6)          | `meleeWpnKnucklesT3SteelKnuckles`    |
-|                |                                             | `meleeWpnSledgeT1IronSledgehammer` (Q6)     |                                      |
+|                | `meleeWpnKnucklesT0LeatherKnuckles`         | `meleeWpnBladeT1HuntingKnife`               | `meleeWpnKnucklesT3SteelKnuckles`    |
+|                |                                             | `meleeWpnSledgeT1IronSledgehammer`          |                                      |
 |                |                                             | `meleeWpnKnucklesT1IronKnuckles`            |                                      |
-| Tools          | `meleeToolRepairT0TazasStoneAxe`            | `meleeToolRepairT3Nailgun` (Q2)             | `meleeToolRepairT3Nailgun` (Q6)      |
+| Tools          | `meleeToolRepairT0TazasStoneAxe`            | `meleeToolRepairT3Nailgun` (Q2)             | `meleeToolRepairT3Nailgun`           |
 |                | `meleeToolRepairT1ClawHammer`               | `meleeToolAxeT2SteelAxe`                    | `meleeToolAxeT3Chainsaw`             |
 |                | `meleeToolAxeT1IronFireaxe`                 | `meleeToolPickT2SteelPickaxe`               | `meleeToolPickT3Auger`               |
 |                | `meleeToolPickT1IronPickaxe`                | `meleeToolShovelT2SteelShovel`              | `meleeToolSalvageT3ImpactDriver`     |
