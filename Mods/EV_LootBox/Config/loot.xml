@@ -84,6 +84,25 @@
       <item name="handgunsSkillMagazine"  count="2,3"/>
     </lootgroup>
 
+    <!-- *** Standalone mixed weapon test groups; not referenced yet -->
+    <lootgroup name="evLootBoxWeaponsSimple" count="1">
+      <item name="gunMGT1AK47"/>
+      <item name="meleeWpnSpearT1IronSpear"/>
+      <item name="meleeWpnBladeT1HuntingKnife"/>
+    </lootgroup>
+
+    <lootgroup name="evLootBoxWeaponsGood" count="1">
+      <item name="gunMGT1AK47"/>
+      <item name="meleeWpnSpearT3SteelSpear"/>
+      <item name="meleeWpnBladeT3Machete"/>
+    </lootgroup>
+
+    <lootgroup name="evLootBoxWeaponsQuality" count="1">
+      <item name="gunMGT2TacticalAR"/>
+      <item name="meleeWpnSpearT3SteelSpear"/>
+      <item name="meleeWpnBladeT3Machete"/>
+    </lootgroup>
+
     <!-- *** Tier selector: Simple is guaranteed, bonus tiers roll independently -->
     <lootgroup name="evLootBoxTierSelector" count="all">
       <item group="evLootBoxSimplePool"/>
