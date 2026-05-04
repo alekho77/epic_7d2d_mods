@@ -32,21 +32,30 @@ For food entries, parentheses indicate the stack count range that should drop fr
 
 | Group          | Simple                                      | Good                                        | Valuable                             |
 | -------------- | ------------------------------------------- | ------------------------------------------- | ------------------------------------ |
-| Food           | `foodCanBeef` (3-5)                         |                                             |                                      |
-|                | `foodCanChicken` (4-6)                      |                                             |                                      |
-|                | `foodCanLamb` (3-5)                         |                                             |                                      |
-|                | `foodCanCatfood` (4-6)                      |                                             |                                      |
-|                | `foodCanDogfood` (1-3)                      |                                             |                                      |
-|                | `foodCanChili` (1-3)                        |                                             |                                      |
-|                | `foodCanTuna` (3-5)                         |                                             |                                      |
-|                | `foodCanSham` (3-5)                         |                                             |                                      |
-|                | `foodCanPasta` (3-5)                        |                                             |                                      |
-|                | `foodCanSalmon` (3-5)                       |                                             |                                      |
-|                | `foodCanMiso` (4-6)                         |                                             |                                      |
+| Food           | `foodCanBeef` (3-5)                         | `foodHoney` (1-3)                           | `foodHoneyGlazedSham` (1-3)          |
+|                | `foodCanChicken` (4-6)                      | `foodMeatStew` (2-4)                        | `foodHoneyBrisket` (1-3)             |
+|                | `foodCanLamb` (3-5)                         | `foodSteakAndPotato` (1-3)                  | `foodGumboStew` (2-4)                |
+|                | `foodCanCatfood` (4-6)                      | `foodShamChowder` (1-3)                     | `foodShepardsPie` (1-3)              |
+|                | `foodCanDogfood` (1-3)                      | `foodHoboStew` (1-3)                        |                                      |
+|                | `foodCanChili` (1-3)                        | `foodFishTacos` (1-3)                       |                                      |
+|                | `foodCanTuna` (3-5)                         | `foodChiliDog` (1-3)                        |                                      |
+|                | `foodCanSham` (3-5)                         | `foodBlueberryPie` (2-4)                    |                                      |
+|                | `foodCanPasta` (3-5)                        | `foodPumpkinPie` (2-4)                      |                                      |
+|                | `foodCanSalmon` (3-5)                       | `foodSpaghetti` (1-3)                       |                                      |
+|                | `foodCanMiso` (4-6)                         | `foodTunaFishGravyToast` (1-3)              |                                      |
 |                | `foodCanPeas` (3-5)                         |                                             |                                      |
 |                | `foodCanPears` (4-6)                        |                                             |                                      |
 |                | `foodCanSoup` (4-6)                         |                                             |                                      |
 |                | `foodCanStock` (3-5)                        |                                             |                                      |
+|                | `foodCornOnTheCob` (4-6)                    |                                             |                                      |
+|                | `foodCornBread` (4-6)                       |                                             |                                      |
+|                | `foodGrilledMeat` (4-6)                     |                                             |                                      |
+|                | `foodBoiledMeat` (3-5)                      |                                             |                                      |
+|                | `foodBakedPotato` (4-6)                     |                                             |                                      |
+|                | `foodPumpkinBread` (3-5)                    |                                             |                                      |
+|                | `foodEggBoiled` (4-6)                       |                                             |                                      |
+|                | `foodBaconAndEggs` (2-4)                    |                                             |                                      |
+|                | `foodVegetableStew` (1-3)                   |                                             |                                      |
 | Ranged weapons | `gunHandgunT1Pistol`                        | `gunHandgunT2Magnum44`                      | `gunHandgunT3SMG5`                   |
 |                | `gunShotgunT1DoubleBarrel`                  | `gunShotgunT2PumpShotgun`                   | `gunHandgunT3DesertVulture`          |
 |                | `gunRifleT1HuntingRifle`                    | `gunRifleT2LeverActionRifle`                | `gunShotgunT3AutoShotgun`            |
