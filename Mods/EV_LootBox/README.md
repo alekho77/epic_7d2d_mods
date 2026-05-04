@@ -24,12 +24,29 @@ When a player right-clicks a **Loot Box**, the reward is built from one selected
 
 Use the table below as the working template for grouped item IDs by reward category:
 
-Simple, Good, and Valuable are reward categories. `Q1` to `Q6` refers to the in-game item quality.
+Simple, Good, and Valuable are reward categories. `Q1` to `Q6` refers to the in-game item quality for weapons and tools.
 
-Only non-default qualities are annotated in the table. If a table entry does not include an explicit quality annotation, it is assumed to be `Q6`.
+For weapons and tools, only non-default qualities are annotated in the table. If a weapon or tool entry does not include an explicit quality annotation, it is assumed to be `Q6`.
+
+For food entries, parentheses indicate the stack count range that should drop from the box.
 
 | Group          | Simple                                      | Good                                        | Valuable                             |
 | -------------- | ------------------------------------------- | ------------------------------------------- | ------------------------------------ |
+| Food           | `foodCanBeef` (3-5)                         |                                             |                                      |
+|                | `foodCanChicken` (4-6)                      |                                             |                                      |
+|                | `foodCanLamb` (3-5)                         |                                             |                                      |
+|                | `foodCanCatfood` (4-6)                      |                                             |                                      |
+|                | `foodCanDogfood` (1-3)                      |                                             |                                      |
+|                | `foodCanChili` (1-3)                        |                                             |                                      |
+|                | `foodCanTuna` (3-5)                         |                                             |                                      |
+|                | `foodCanSham` (3-5)                         |                                             |                                      |
+|                | `foodCanPasta` (3-5)                        |                                             |                                      |
+|                | `foodCanSalmon` (3-5)                       |                                             |                                      |
+|                | `foodCanMiso` (4-6)                         |                                             |                                      |
+|                | `foodCanPeas` (3-5)                         |                                             |                                      |
+|                | `foodCanPears` (4-6)                        |                                             |                                      |
+|                | `foodCanSoup` (4-6)                         |                                             |                                      |
+|                | `foodCanStock` (3-5)                        |                                             |                                      |
 | Ranged weapons | `gunHandgunT1Pistol`                        | `gunHandgunT2Magnum44`                      | `gunHandgunT3SMG5`                   |
 |                | `gunShotgunT1DoubleBarrel`                  | `gunShotgunT2PumpShotgun`                   | `gunHandgunT3DesertVulture`          |
 |                | `gunRifleT1HuntingRifle`                    | `gunRifleT2LeverActionRifle`                | `gunShotgunT3AutoShotgun`            |
