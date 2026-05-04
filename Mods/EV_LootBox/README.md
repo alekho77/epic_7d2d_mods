@@ -28,7 +28,7 @@ Simple, Good, and Valuable are reward categories. `Q1` to `Q6` refers to the in-
 
 For weapons and tools, only non-default qualities are annotated in the table. If a weapon or tool entry does not include an explicit quality annotation, it is assumed to be `Q6`.
 
-For food entries, parentheses indicate the stack count range that should drop from the box.
+For food and drink entries, parentheses indicate the stack count range that should drop from the box.
 
 | Group          | Simple                                      | Good                                        | Valuable                             |
 | -------------- | ------------------------------------------- | ------------------------------------------- | ------------------------------------ |
@@ -56,6 +56,10 @@ For food entries, parentheses indicate the stack count range that should drop fr
 |                | `foodEggBoiled` (4-6)                       |                                             |                                      |
 |                | `foodBaconAndEggs` (2-4)                    |                                             |                                      |
 |                | `foodVegetableStew` (1-3)                   |                                             |                                      |
+| Drinks         | `drinkJarYuccaJuice` (1-3)                  | `drinkJarPureMineralWater` (2-4)            | `drinkJarHoneyTea` (2-4)             |
+|                | `drinkJarGoldenRodTea` (2-4)                | `drinkJarRedTea` (2-3)                      | `drinkJarBlackStrapCoffee` (1-3)     |
+|                | `drinkJarCoffee` (1-3)                      |                                             |                                      |
+|                | `drinkJarBoiledWater` (5-7)                 |                                             |                                      |
 | Ranged weapons | `gunHandgunT1Pistol`                        | `gunHandgunT2Magnum44`                      | `gunHandgunT3SMG5`                   |
 |                | `gunShotgunT1DoubleBarrel`                  | `gunShotgunT2PumpShotgun`                   | `gunHandgunT3DesertVulture`          |
 |                | `gunRifleT1HuntingRifle`                    | `gunRifleT2LeverActionRifle`                | `gunShotgunT3AutoShotgun`            |
