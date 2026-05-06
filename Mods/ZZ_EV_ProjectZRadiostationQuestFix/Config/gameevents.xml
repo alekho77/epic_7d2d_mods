@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <set xpath="/gameevents/action_sequence[@name='action_spawn_reward_SmallCase_ExperimentalAlloys']/action[@class='SpawnEntity']/property[@name='min_distance']/@value">3</set>
+  <set xpath="/gameevents/action_sequence[@name='action_spawn_reward_SmallCase_ExperimentalAlloys']/action[@class='SpawnEntity']/property[@name='max_distance']/@value">3</set>
+</config>

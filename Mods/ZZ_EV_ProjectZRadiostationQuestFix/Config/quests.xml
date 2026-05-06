@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <set xpath="/quests/quest[@id='SmallCase03']/objective[@type='RallyPoint']/property[@name='rally_marker_type']/@value">questRallyMarkerBuriedSupplies</set>
+  <set xpath="/quests/quest[@id='SmallCase03']/objective[@type='POIStayWithin']/@type">StayWithin</set>
+</config>

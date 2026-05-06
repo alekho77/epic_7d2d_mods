@@ -1,0 +1,65 @@
+[size=6][b]ZZ_EV_ProjectZRadiostationQuestFix[/b][/size]
+
+[size=5][b]Description[/b][/size]
+
+Fixes the first [b]Project Z Radio Station[/b] support quest used by [b]Rare Samples Chapter 2[/b].
+
+[quote]
+[color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
+
+[b]If you are running a dedicated server, this mod only needs to be installed on the server.[/b]
+Players connecting to the server [b]do not need to download or install anything[/b] on their game clients — all changes are synced automatically when they join.
+[/quote]
+
+[quote]
+[color=#cc9900][size=4][b]Requires Project Z[/b][/size][/color]
+
+This modlet is an [b]add-on[/b] for [b]Project Z[/b] and requires the [font=Courier New]Z_Radiostation[/font] module to be installed.
+The [font=Courier New]ZZ_[/font] prefix ensures this patch loads [b]after[/b] Project Z so the target quest and game event already exist.
+[/quote]
+
+[size=5][b]Features[/b][/size]
+
+[list]
+[*]Changes [font=Courier New]SmallCase03[/font] zone tracking from the default POI-style objective to the buried-supplies style [font=Courier New]StayWithin[/font] objective
+[*]Changes the rally marker from [font=Courier New]questRallyMarkerFetchClear[/font] to [font=Courier New]questRallyMarkerBuriedSupplies[/font]
+[*]Reduces the experimental-alloy reward crate spawn distance from [font=Courier New]15-20[/font] blocks to exactly [font=Courier New]3[/font] blocks from the player
+[*]Touches only the first small experimental-alloys request used by [b]Rare Samples[/b] Chapter 2
+[/list]
+
+[size=5][b]How It Works[/b][/size]
+
+[list=1]
+[*][font=Courier New]SmallCase03[/font] is the first Radio Station support quest that delivers the [font=Courier New]10[/font] experimental alloys needed by [font=Courier New]RareSamples2[/font].
+[*]The phase-3 area tracking now uses the same [font=Courier New]StayWithin[/font] style used by vanilla buried-supplies quests.
+[*]The phase-4 reward spawn now drops the alloy crate almost directly next to the player instead of [font=Courier New]15-20[/font] blocks away.
+[/list]
+
+The goal is to make the quest transition into its reward phase more reliable and make the spawned crate much harder to lose.
+
+[size=5][b]Installation[/b][/size]
+
+[list=1]
+[*]Copy the [font=Courier New]ZZ_EV_ProjectZRadiostationQuestFix[/font] folder into your game's [font=Courier New]Mods/[/font] directory.
+[*]Make sure [b]Project Z[/b] with [font=Courier New]Z_Radiostation[/font] is already installed.
+[*]Restart the game or server.
+[/list]
+
+[size=5][b]Compatibility[/b][/size]
+
+[list]
+[*]7 Days to Die latest stable
+[*]Server-side XML patch
+[*]Requires [b]Project Z[/b], specifically [font=Courier New]Z_Radiostation[/font]
+[*]May conflict with other mods that patch [font=Courier New]SmallCase03[/font] or [font=Courier New]action_spawn_reward_SmallCase_ExperimentalAlloys[/font]
+[/list]
+
+[size=5][b]Changelog[/b][/size]
+
+[size=4][b]v1.0.0[/b][/size]
+
+[list]
+[*]Switched [font=Courier New]SmallCase03[/font] to buried-supplies style zone tracking
+[*]Changed the rally marker to the buried-supplies marker type
+[*]Reduced the experimental-alloy crate spawn distance to [font=Courier New]3[/font] blocks
+[/list]
