@@ -1,8 +1,10 @@
 [size=6][b]Reduced Looting XP[/b][/size]
 
+[quote][color=#cc9900][b]Test Build[/b][/color] — exact XP reduction is under active investigation.[/quote]
+
 [size=5][b]Description[/b][/size]
 
-Reduces XP gained from opening untouched loot containers to [b]20% of vanilla[/b], rebalancing progression toward combat and survival gameplay.
+Reduces XP gained from opening untouched loot containers, rebalancing progression toward combat and survival gameplay.
 
 In vanilla 7 Days to Die, opening an untouched loot container awards XP proportional to the player's current game stage. Both world-placed containers (crates, safes, fridges) and zombie drop bags award XP on first open — bags spawn untouched and use the same XP code path as world containers. Players who focus on aggressive POI runs, blood moon looting, and systematic container farming can level disproportionately fast compared to players who progress mainly through combat. This mod reduces container XP while leaving kill XP, loot tables, and bag spawning behavior unchanged.
 
@@ -16,7 +18,7 @@ Players connecting to the server [b]do not need to download or install anything[
 [size=5][b]Features[/b][/size]
 
 [list]
-[*]Reduces untouched container XP (world containers and zombie drop bags) to 20% of vanilla — effective rate changes from [b]gameStage × (XPMultiplier/100)[/b] to [b]gameStage × (XPMultiplier/100) × 0.2[/b]
+[*]Reduces XP from opening untouched containers (world containers and zombie drop bags)
 [*]The looting XP branch stays enabled — it is rebalanced, not removed
 [*]All other XP sources (kills, crafting, quests, selling, harvesting, upgrading) remain completely unchanged
 [*]Loot quality, loot quantity, scavenging speed, and Lucky Looter perk are [b]not[/b] affected
@@ -26,40 +28,20 @@ Players connecting to the server [b]do not need to download or install anything[
 
 [size=5][b]How It Works[/b][/size]
 
-The vanilla XP formula for opening an untouched container is:
-
-[quote][b]xp = floor(gameStage × (XPMultiplier / 100))[/b][/quote]
-
-[b]XPMultiplier[/b] is the server's XP Multiplier game setting (default [b]100[/b] — meaning 100%). With default settings, vanilla awards [b]gameStage[/b] XP per untouched container — e.g., game stage 50 gives 50 XP. Both world-placed containers and zombie drop bags use this same code path.
-
-This mod applies [b]perc_add -0.8[/b] to [b]PlayerExpGain[/b] for the [b]Looting[/b] tag. This reduces the XP multiplier by 80%, leaving 20% of vanilla:
-
-[quote][b]xp = floor(gameStage × (XPMultiplier / 100) × (1 + (-0.8)))[/b]
-[b]    = floor(gameStage × (XPMultiplier / 100) × 0.2)[/b][/quote]
-
-With default server settings ([b]XPMultiplier = 100[/b]):
-
-[quote][b]xp = floor(gameStage × 0.2)[/b][/quote]
-
-The result is [b]20% of vanilla XP[/b] at any given game stage. XP bonus buffs such as Grandpa's Learning Elixir ([b]perc_add 0.2[/b]) stack additively with this mod's [b]-0.8[/b], raising the effective multiplier from [b]0.2[/b] to [b]0.4[/b]. This keeps XP boosts proportional and does not restore the full vanilla rate.
-
-[size=4][b]Important to Keep in Mind[/b][/size]
-
-Looting XP is an integer — it is floor-truncated. At very low game stage the result rounds down to [b]0 XP[/b] per container.
-
-With default server settings ([b]XPMultiplier = 100[/b]), the first game stage that produces at least [b]1 XP[/b] per untouched container:
+Confirmed from decompiling [b]Assembly-CSharp.dll[/b] ([b]XUiC_LootWindowGroup[/b], [b]Progression.AddLevelExp[/b], [b]EffectManager.GetValue[/b]):
 
 [list]
-[*][b]-0.90[/b] — 10% of vanilla — first non-zero at game stage [b]10[/b]
-[*][b]-0.80[/b] (this mod) — 20% of vanilla — first non-zero at game stage [b]5[/b]
-[*][b]-0.75[/b] — 25% of vanilla — first non-zero at game stage [b]4[/b]
-[*][b]-0.50[/b] — 50% of vanilla — first non-zero at game stage [b]2[/b]
-[*][b]0[/b] (vanilla) — 100% — first non-zero at game stage [b]1[/b]
+[*]Looting XP is awarded on first open of an untouched non-player container
+[*]The base XP value passed to the effect system is [b]gameStage × (XPMultiplier / 100)[/b]
+[*][b]EffectManager.GetValue[/b] returns [b]_base_value × _perc_value[/b]
+[*][b]base_set VALUE[/b] replaces [b]_base_value[/b] with the literal value (absolute replacement)
+[*][b]perc_add VALUE[/b] accumulates into [b]_perc_value[/b] (which starts at 1.0)
+[*]The final result is cast to [b]int[/b] (floor-truncated before granting)
 [/list]
 
-With default server settings, this mod produces non-zero looting XP from game stage 5 onward, consistently at 20% of the vanilla rate throughout the game.
+This mod applies [b]base_set 0.8[/b] to [b]PlayerExpGain[/b] for the [b]Looting[/b] tag. [b]The exact XP output of this configuration is under investigation[/b] — in-game testing at known game stages is required to confirm behavior.
 
-[quote][b]Note:[/b] If the server's [b]XPMultiplier[/b] is set below 100 (e.g., 20 for a 20% global XP rate), the threshold shifts higher and the absolute XP values scale down proportionally. For example, with [b]XPMultiplier = 20[/b] the first non-zero GS with this mod is 25.[/quote]
+[quote][b]Note:[/b] The Project Z overhaul mod applies [b]PlayerExpGain perc_add -1 tags="Looting"[/b] via an always-active buff, which zeroes looting XP on its own. Test results from Project Z sessions may not reflect vanilla behavior.[/quote]
 
 [size=5][b]Installation[/b][/size]
 
@@ -74,6 +56,7 @@ With default server settings, this mod produces non-zero looting XP from game st
 [*]7 Days to Die 1.0 (Alpha 21+)
 [*]Server-side mod — works without client installation
 [*]May conflict with mods that modify [b]PlayerExpGain[/b] on the [b]playerMale[/b] entity class
+[*][b]Project Z:[/b] The Z_Game_Balance sub-mod applies its own [b]PlayerExpGain perc_add -1 tags="Looting"[/b] modifier, which stacks with this mod. Behavior under Project Z differs from vanilla.
 [/list]
 
 [size=4][b]Companion Mod[/b][/size]
@@ -85,5 +68,5 @@ Works well alongside [url=https://github.com/alekho77/epic_7d2d_mods][b]EV_Remov
 [size=4][b]v1.0.0[/b][/size]
 
 [list]
-[*]Initial release — opening loot containers grants 20% of vanilla XP
+[*]Initial release — reduces XP from opening untouched loot containers (exact reduction under investigation)
 [/list]

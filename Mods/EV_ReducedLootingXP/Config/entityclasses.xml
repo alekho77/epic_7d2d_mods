@@ -1,12 +1,12 @@
 <configs>
-  <!-- Reduce XP gained from opening untouched loot containers to 20% of vanilla.
-       perc_add -0.8 reduces PlayerExpGain by 80% for the Looting XP branch, leaving 20%.
-       base_set must NOT be used here: base_set replaces _base_value with the literal value,
-       so base_set 0.2 sets XP to a flat 0.2 which always floor-truncates to 0.
+  <!-- TEST BUILD — value under active investigation.
+       base_set 0.8 replaces _base_value with the literal 0.8 before perc modifiers are applied.
+       Exact XP output is not yet confirmed in-game across game stages.
+       See Refs/ContainerLootXP_Research.md for test plan and hypotheses.
        Loot quality, search speed, loot tables, and Lucky Looter perk are completely unaffected. -->
   <append xpath="/entity_classes/entity_class[@name='playerMale']">
     <effect_group name="Reduced Looting XP">
-      <passive_effect name="PlayerExpGain" operation="perc_add" value="-0.8" tags="Looting"/>
+      <passive_effect name="PlayerExpGain" operation="base_set" value="0.8" tags="Looting"/>
     </effect_group>
   </append>
 </configs>
