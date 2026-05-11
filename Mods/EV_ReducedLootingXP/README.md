@@ -13,7 +13,7 @@ In vanilla 7 Days to Die, opening an untouched loot container awards XP proporti
 
 ## Features
 
-- Reduces untouched container XP (world containers and zombie drop bags) to 20% of vanilla — effective rate changes from `gameStage × 0.2` to `gameStage × 0.04`
+- Reduces untouched container XP (world containers and zombie drop bags) to 20% of vanilla — effective rate changes from `gameStage × (XPMultiplier/100)` to `gameStage × (XPMultiplier/100) × 0.2`
 - The looting XP branch stays enabled — it is rebalanced, not removed
 - All other XP sources (kills, crafting, quests, selling, harvesting, upgrading) remain completely unchanged
 - Loot quality, loot quantity, scavenging speed, and Lucky Looter perk are **not** affected
@@ -22,33 +22,40 @@ In vanilla 7 Days to Die, opening an untouched loot container awards XP proporti
 
 ## How It Works
 
-The vanilla XP formula for opening an untouched container is:
+The vanilla XP formula for opening an untouched container, derived from decompiling `Progression.AddLevelExp`:
 
-> `xp = floor(gameStage × 0.2 × PlayerExpGain)`
+> `xp = floor(gameStage × (XPMultiplier / 100))`
 
-The inner `0.2` is a hardcoded engine constant. `PlayerExpGain` for the `Looting` tag defaults to `1.0`, so vanilla awards approximately `gameStage / 5` XP per container. Both world-placed containers and zombie drop bags use this same code path.
+`XPMultiplier` is the server's XP Multiplier game setting (default **100** — meaning 100%). With default settings, vanilla awards `gameStage` XP per untouched container — e.g., game stage 50 gives 50 XP. Both world-placed containers and zombie drop bags use this same code path.
 
-This mod sets `PlayerExpGain` to `0.2` for the `Looting` tag, making the effective formula:
+This mod applies `perc_add -0.8` to `PlayerExpGain` for the `Looting` tag. This reduces the XP multiplier by 80%, leaving 20% of vanilla:
 
-> `xp = floor(gameStage × 0.2 × 0.2) = floor(gameStage × 0.04)`
+> `xp = floor(gameStage × (XPMultiplier / 100) × (1 + (−0.8)))`
+> `= floor(gameStage × (XPMultiplier / 100) × 0.2)`
 
-The result is approximately **20% of vanilla XP** at any given game stage (when both round to a non-zero integer). XP bonus buffs such as Grandpa's Learning Elixir apply multiplicatively on top of the reduced `0.2` base, keeping boosts proportional without restoring the full vanilla rate.
+With default server settings (`XPMultiplier = 100`):
+
+> `xp = floor(gameStage × 0.2)`
+
+The result is **20% of vanilla XP** at any given game stage. XP bonus buffs such as Grandpa's Learning Elixir (`perc_add 0.2`) stack additively with this mod's `-0.8`, raising the effective multiplier from `0.2` to `0.4`. This keeps XP boosts proportional and does not restore the full vanilla rate.
 
 ### Important to Keep in Mind
 
-Looting XP is an integer — it is `floor`-truncated. At low game stage the result rounds down to `0 XP` per container.
+Looting XP is an integer — it is `floor`-truncated. At very low game stage the result rounds down to `0 XP` per container.
 
-With no XP buffs or perks active, the first game stage that produces at least `1 XP` per untouched container is `ceil(5 / PlayerExpGain)`:
+The first game stage that produces at least `1 XP` per untouched container is `ceil(1 / (XPMultiplier/100 × effectiveMultiplier))`. With default server settings (`XPMultiplier = 100`):
 
-| `PlayerExpGain` | First game stage with non-zero loot XP |
-| --- | --- |
-| `0.10` | `50` |
-| **`0.20` (this mod)** | **`25`** |
-| `0.25` | `20` |
-| `0.50` | `10` |
-| `1.00` (vanilla) | `5` |
+| `perc_add` value | Remaining XP | First non-zero GS (default server) |
+| --- | --- | --- |
+| `−0.90` | 10% of vanilla | `10` |
+| **`−0.80` (this mod)** | **20% of vanilla** | **`5`** |
+| `−0.75` | 25% of vanilla | `4` |
+| `−0.50` | 50% of vanilla | `2` |
+| `0` (vanilla) | 100% | `1` |
 
-With this mod set to `0.2`, looting XP from containers is zero until game stage 25. This is intentional — the mod targets players who use large-scale looting as a primary XP source, not casual early-game looting.
+With default server settings, this mod produces non-zero looting XP from game stage 5 onward, consistently at 20% of the vanilla rate throughout the game.
+
+> **Note:** If the server's `XPMultiplier` is set below 100 (e.g., 20 for a 20% global XP rate), the threshold shifts higher and the absolute XP values scale down proportionally. For example, with `XPMultiplier = 20` the first non-zero GS with this mod is 25.
 
 ## Installation
 
