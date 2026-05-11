@@ -34,6 +34,10 @@ Sets `PlayerExpGain` base value to `0` for the `Selling` tag on the player entit
 - Server-side mod — works without client installation
 - May conflict with mods that modify `PlayerExpGain` on `playerMale` entity class
 
+### Companion Mod
+
+Works well alongside [**EV_ReducedLootingXP**](https://github.com/alekho77/epic_7d2d_mods), which reduces XP from opening loot containers to 10% of vanilla. Together, the two mods close the two most common non-combat XP exploits and shift the progression curve decisively toward zombie killing, crafting, and questing.
+
 ## Changelog
 
 ### v1.0.0

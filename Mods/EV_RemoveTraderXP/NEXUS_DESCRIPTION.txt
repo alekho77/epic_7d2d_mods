@@ -42,6 +42,10 @@ Sets [b]PlayerExpGain[/b] base value to [b]0[/b] for the [b]Selling[/b] tag on t
 [*]May conflict with mods that modify [b]PlayerExpGain[/b] on the [b]playerMale[/b] entity class
 [/list]
 
+[size=4][b]Companion Mod[/b][/size]
+
+Works well alongside [url=https://github.com/alekho77/epic_7d2d_mods][b]EV_ReducedLootingXP[/b][/url], which reduces XP from opening loot containers to 10% of vanilla. Together, the two mods close the two most common non-combat XP exploits and shift the progression curve decisively toward zombie killing, crafting, and questing.
+
 [size=5][b]Changelog[/b][/size]
 
 [size=4][b]v1.0.0[/b][/size]
