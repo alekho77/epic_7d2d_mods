@@ -4,7 +4,7 @@
 
 Reduces XP gained from opening untouched loot containers to [b]20% of vanilla[/b], rebalancing progression toward combat and survival gameplay.
 
-In vanilla 7 Days to Die, the active first-open looting XP branch awards XP equal to the player's current game stage when an untouched world container is opened. Players who focus on aggressive POI routes, airdrops, and other untouched containers can level disproportionately fast compared to players who mainly progress through direct combat. Zombie drop bags use a separate entity-loot path, but vanilla spawns them prefilled and already touched, so that bag-side first-open XP branch is effectively disabled by default. This mod reduces the active container XP branch while leaving kill XP, loot tables, and bag spawning behavior unchanged.
+In vanilla 7 Days to Die, opening an untouched loot container awards XP proportional to the player's current game stage. Both world-placed containers (crates, safes, fridges) and zombie drop bags award XP on first open — bags spawn untouched and use the same XP code path as world containers. Players who focus on aggressive POI runs, blood moon looting, and systematic container farming can level disproportionately fast compared to players who progress mainly through combat. This mod reduces container XP while leaving kill XP, loot tables, and bag spawning behavior unchanged.
 
 [quote]
 [color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
@@ -16,40 +16,43 @@ Players connecting to the server [b]do not need to download or install anything[
 [size=5][b]Features[/b][/size]
 
 [list]
-[*]Reduces untouched world-container XP to 20% of vanilla (game stage × 0.2 instead of game stage × 1)
-[*]The active looting XP branch stays enabled — it is rebalanced, not removed
+[*]Reduces untouched container XP (world containers and zombie drop bags) to 20% of vanilla — effective rate changes from [b]gameStage × 0.2[/b] to [b]gameStage × 0.04[/b]
+[*]The looting XP branch stays enabled — it is rebalanced, not removed
 [*]All other XP sources (kills, crafting, quests, selling, harvesting, upgrading) remain completely unchanged
 [*]Loot quality, loot quantity, scavenging speed, and Lucky Looter perk are [b]not[/b] affected
-[*]Zombie drop bags keep vanilla behavior: they are separate [b]EntityLootContainer*[/b] drops and their bag-side first-open XP branch remains effectively disabled because they spawn already touched
+[*]Zombie drop bags ([b]EntityLootContainer*[/b]) spawn untouched and award first-open XP the same as world containers — this mod reduces that XP too
 [*]Player chests, secure storage, and dropped player backpacks are excluded from looting XP by the game engine and are unaffected by this mod
 [/list]
 
 [size=5][b]How It Works[/b][/size]
 
-Vanilla has two separate loot-related XP paths:
+The vanilla XP formula for opening an untouched container is:
 
-[list=1]
-[*]Untouched world containers use the active looting XP branch. On first open, the game grants XP equal to the player's current [b]gameStage[/b], then applies [b]PlayerExpGain[/b] with the [b]Looting[/b] tag.
-[*]Zombie drop bags are separate [b]EntityLootContainer*[/b] entities. The game spawns them with copied inventory content, which marks their backing loot container as already touched before the player opens it. Because the first-open looting XP award only fires for untouched containers, this bag-side branch is effectively disabled in vanilla.
-[/list]
+[quote][b]xp = floor(gameStage × 0.2 × PlayerExpGain)[/b][/quote]
 
-This mod changes only the active container branch by setting [b]PlayerExpGain[/b] base multiplier to [b]0.2[/b] for the [b]Looting[/b] tag on the player entity. Using [b]base_set 0.2[/b] scales the base before any additive percentage buffs apply — so a player with Grandpa's Learning Elixir (+20%) gains [b]gameStage × 0.2 × 1.2[/b] rather than [b]gameStage × 1.2[/b], keeping XP boost items proportional without restoring the full vanilla looting XP.
+The inner [b]0.2[/b] is a hardcoded engine constant. [b]PlayerExpGain[/b] for the [b]Looting[/b] tag defaults to [b]1.0[/b], so vanilla awards approximately [b]gameStage / 5[/b] XP per container. Both world-placed containers and zombie drop bags use this same code path.
+
+This mod sets [b]PlayerExpGain[/b] to [b]0.2[/b] for the [b]Looting[/b] tag, making the effective formula:
+
+[quote][b]xp = floor(gameStage × 0.2 × 0.2) = floor(gameStage × 0.04)[/b][/quote]
+
+The result is approximately [b]20% of vanilla XP[/b] at any given game stage (when both round to a non-zero integer). XP bonus buffs such as Grandpa's Learning Elixir apply multiplicatively on top of the reduced [b]0.2[/b] base, keeping boosts proportional without restoring the full vanilla rate.
 
 [size=4][b]Important to Keep in Mind[/b][/size]
 
-Looting XP from the active untouched-container branch is granted as whole numbers. At low game stage, strong reductions can round down to [b]0 XP[/b] per container.
+Looting XP is an integer — it is floor-truncated. At low game stage the result rounds down to [b]0 XP[/b] per container.
 
-With no XP buffs or perks active, players start receiving at least [b]1 XP[/b] from untouched world containers at these game stages:
+With no XP buffs or perks active, the first game stage that produces at least [b]1 XP[/b] per untouched container is [b]ceil(5 / PlayerExpGain)[/b]:
 
 [list]
-[*][b]0.10[/b] — first non-zero loot XP at game stage [b]10[/b]
-[*][b]0.20[/b] — first non-zero loot XP at game stage [b]5[/b]
-[*][b]0.25[/b] — first non-zero loot XP at game stage [b]4[/b]
-[*][b]0.50[/b] — first non-zero loot XP at game stage [b]2[/b]
-[*][b]1.00[/b] — first non-zero loot XP at game stage [b]1[/b]
+[*][b]0.10[/b] — first non-zero loot XP at game stage [b]50[/b]
+[*][b]0.20[/b] (this mod) — first non-zero loot XP at game stage [b]25[/b]
+[*][b]0.25[/b] — first non-zero loot XP at game stage [b]20[/b]
+[*][b]0.50[/b] — first non-zero loot XP at game stage [b]10[/b]
+[*][b]1.00[/b] (vanilla) — first non-zero loot XP at game stage [b]5[/b]
 [/list]
 
-That is why this mod uses [b]0.2[/b] instead of [b]0.1[/b]: it still heavily nerfs looting XP but avoids making early-game container XP disappear entirely.
+With this mod set to [b]0.2[/b], looting XP from containers is zero until game stage 25. This is intentional — the mod targets players who use large-scale looting as a primary XP source, not casual early-game looting.
 
 [size=5][b]Installation[/b][/size]
 
