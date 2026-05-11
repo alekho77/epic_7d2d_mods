@@ -2,7 +2,7 @@
 <ModInfo>
   <Name value="EV_ReducedLootingXP"/>
   <DisplayName value="Reduced Looting XP"/>
-  <Description value="Reduces XP from opening loot containers to 10% of vanilla, rebalancing progression toward combat."/>
+  <Description value="Reduces XP from opening loot containers to 20% of vanilla, rebalancing progression toward combat."/>
   <Author value="Aleksei Khozin"/>
   <Version value="1.0.0"/>
   <Website value="https://github.com/alekho77/epic_7d2d_mods"/>

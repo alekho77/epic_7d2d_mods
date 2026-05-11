@@ -2,7 +2,7 @@
 
 [size=5][b]Description[/b][/size]
 
-Reduces XP gained from opening untouched loot containers to [b]10% of vanilla[/b], rebalancing progression toward combat and survival gameplay.
+Reduces XP gained from opening untouched loot containers to [b]20% of vanilla[/b], rebalancing progression toward combat and survival gameplay.
 
 In vanilla 7 Days to Die, opening a loot container awards XP equal to the player's current game stage. This adds up quickly: a blood moon night produces large numbers of loot bags and air drops, and systematically opening them can yield more XP than the fighting itself. Players who focus on looting routes rather than engaging enemies level disproportionately fast compared to players who actually fight their way through the game. This mod reduces that imbalance by keeping the looting XP channel active but much less dominant.
 
@@ -16,7 +16,7 @@ Players connecting to the server [b]do not need to download or install anything[
 [size=5][b]Features[/b][/size]
 
 [list]
-[*]Reduces container-open XP to 10% of vanilla (game stage × 0.1 instead of game stage × 1)
+[*]Reduces container-open XP to 20% of vanilla (game stage × 0.2 instead of game stage × 1)
 [*]XP is still rewarded for looting — the channel is not removed, just rebalanced
 [*]All other XP sources (kills, crafting, quests, selling, harvesting, upgrading) remain completely unchanged
 [*]Loot quality, loot quantity, scavenging speed, and Lucky Looter perk are [b]not[/b] affected
@@ -25,7 +25,23 @@ Players connecting to the server [b]do not need to download or install anything[
 
 [size=5][b]How It Works[/b][/size]
 
-Sets [b]PlayerExpGain[/b] base multiplier to [b]0.1[/b] for the [b]Looting[/b] tag on the player entity. Using [b]base_set 0.1[/b] scales the base before any additive percentage buffs apply — so a player with Grandpa's Learning Elixir (+20%) gains [b]gameStage × 0.1 × 1.2[/b] rather than [b]gameStage × 1.2[/b], keeping XP boost items proportional without restoring the full vanilla looting XP.
+Sets [b]PlayerExpGain[/b] base multiplier to [b]0.2[/b] for the [b]Looting[/b] tag on the player entity. Using [b]base_set 0.2[/b] scales the base before any additive percentage buffs apply — so a player with Grandpa's Learning Elixir (+20%) gains [b]gameStage × 0.2 × 1.2[/b] rather than [b]gameStage × 1.2[/b], keeping XP boost items proportional without restoring the full vanilla looting XP.
+
+[size=4][b]Important to Keep in Mind[/b][/size]
+
+Looting XP is granted as whole numbers. At low game stage, strong reductions can round down to [b]0 XP[/b] per container.
+
+With no XP buffs or perks active, players start receiving at least [b]1 XP[/b] from looting at these game stages:
+
+[list]
+[*][b]0.10[/b] — first non-zero loot XP at game stage [b]10[/b]
+[*][b]0.20[/b] — first non-zero loot XP at game stage [b]5[/b]
+[*][b]0.25[/b] — first non-zero loot XP at game stage [b]4[/b]
+[*][b]0.50[/b] — first non-zero loot XP at game stage [b]2[/b]
+[*][b]1.00[/b] — first non-zero loot XP at game stage [b]1[/b]
+[/list]
+
+That is why this mod uses [b]0.2[/b] instead of [b]0.1[/b]: it still heavily nerfs looting XP but avoids making early-game container XP disappear entirely.
 
 [size=5][b]Installation[/b][/size]
 
@@ -51,5 +67,5 @@ Works well alongside [url=https://github.com/alekho77/epic_7d2d_mods][b]EV_Remov
 [size=4][b]v1.0.0[/b][/size]
 
 [list]
-[*]Initial release — opening loot containers grants 10% of vanilla XP
+[*]Initial release — opening loot containers grants 20% of vanilla XP
 [/list]

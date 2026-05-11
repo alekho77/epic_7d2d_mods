@@ -1,10 +1,12 @@
 <configs>
-  <!-- Reduce XP gained from opening untouched loot containers to 10% of vanilla.
-       base_set 0.1 scales the base multiplier, so 0.1 * (1 + any perc_add) gives ~10% of normal.
+  <!-- Reduce XP gained from opening untouched loot containers to 20% of vanilla.
+       base_set 0.2 scales the base multiplier, so 0.2 * (1 + any perc_add) gives ~20% of normal.
+       0.2 is preferred over 0.1 because looting XP is integer-truncated: at low game stage,
+       0.1 rounds down to 0 XP for containers opened below game stage 10.
        Loot quality, search speed, loot tables, and Lucky Looter perk are completely unaffected. -->
   <append xpath="/entity_classes/entity_class[@name='playerMale']">
     <effect_group name="Reduced Looting XP">
-      <passive_effect name="PlayerExpGain" operation="base_set" value="0.1" tags="Looting"/>
+      <passive_effect name="PlayerExpGain" operation="base_set" value="0.2" tags="Looting"/>
     </effect_group>
   </append>
 </configs>
