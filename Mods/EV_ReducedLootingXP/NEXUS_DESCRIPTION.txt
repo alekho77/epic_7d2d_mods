@@ -1,0 +1,55 @@
+[size=6][b]Reduced Looting XP[/b][/size]
+
+[size=5][b]Description[/b][/size]
+
+Reduces XP gained from opening untouched loot containers to [b]10% of vanilla[/b], rebalancing progression toward combat and survival gameplay.
+
+In vanilla 7 Days to Die, opening a loot container awards XP equal to the player's current game stage. This adds up quickly: a blood moon night produces large numbers of loot bags and air drops, and systematically opening them can yield more XP than the fighting itself. Players who focus on looting routes rather than engaging enemies level disproportionately fast compared to players who actually fight their way through the game. This mod reduces that imbalance by keeping the looting XP channel active but much less dominant.
+
+[quote]
+[color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
+
+[b]If you are running a dedicated server, this mod only needs to be installed on the server.[/b]
+Players connecting to the server [b]do not need to download or install anything[/b] on their game clients — all changes are synced automatically when they join.
+[/quote]
+
+[size=5][b]Features[/b][/size]
+
+[list]
+[*]Reduces container-open XP to 10% of vanilla (game stage × 0.1 instead of game stage × 1)
+[*]XP is still rewarded for looting — the channel is not removed, just rebalanced
+[*]All other XP sources (kills, crafting, quests, selling, harvesting, upgrading) remain completely unchanged
+[*]Loot quality, loot quantity, scavenging speed, and Lucky Looter perk are [b]not[/b] affected
+[*]Player chests, secure storage, and dropped backpacks are excluded from looting XP by the game engine and are unaffected by this mod
+[/list]
+
+[size=5][b]How It Works[/b][/size]
+
+Sets [b]PlayerExpGain[/b] base multiplier to [b]0.1[/b] for the [b]Looting[/b] tag on the player entity. Using [b]base_set 0.1[/b] scales the base before any additive percentage buffs apply — so a player with Grandpa's Learning Elixir (+20%) gains [b]gameStage × 0.1 × 1.2[/b] rather than [b]gameStage × 1.2[/b], keeping XP boost items proportional without restoring the full vanilla looting XP.
+
+[size=5][b]Installation[/b][/size]
+
+[list=1]
+[*]Copy the [b]EV_ReducedLootingXP[/b] folder into your [b]7 Days to Die/Mods/[/b] directory.
+[*]Restart the game or server.
+[/list]
+
+[size=5][b]Compatibility[/b][/size]
+
+[list]
+[*]7 Days to Die 1.0 (Alpha 21+)
+[*]Server-side mod — works without client installation
+[*]May conflict with mods that modify [b]PlayerExpGain[/b] on the [b]playerMale[/b] entity class
+[/list]
+
+[size=4][b]Companion Mod[/b][/size]
+
+Works well alongside [url=https://github.com/alekho77/epic_7d2d_mods][b]EV_RemoveTraderXP[/b][/url], which completely removes XP from selling items to traders. Together, the two mods close the two most common non-combat XP exploits and shift the progression curve decisively toward zombie killing, crafting, and questing.
+
+[size=5][b]Changelog[/b][/size]
+
+[size=4][b]v1.0.0[/b][/size]
+
+[list]
+[*]Initial release — opening loot containers grants 10% of vanilla XP
+[/list]
