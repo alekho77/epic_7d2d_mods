@@ -1,12 +1,16 @@
 <configs>
-  <!-- TEST BUILD — value under active investigation.
-       base_set 0.8 replaces _base_value with the literal 0.8 before perc modifiers are applied.
-       Exact XP output is not yet confirmed in-game across game stages.
-       See Refs/ContainerLootXP_Research.md for test plan and hypotheses.
-       Loot quality, search speed, loot tables, and Lucky Looter perk are completely unaffected. -->
+  <!-- Reduce XP gained from opening untouched loot containers to 20% of vanilla.
+       Uses perc_add -0.8 which sets _perc_value = 1 + (-0.8) = 0.2.
+       Final XP = (int)(gameStage * XPMultiplier/100 * 0.2).
+       At XPMultiplier=100: GS5->1, GS10->2, GS27->5, GS50->10.
+       base_set is NOT used here: base_set replaces _base_value with a literal number,
+       which would give flat XP (e.g. base_set 5 = always 5 XP regardless of GS).
+       Loot quality, search speed, loot tables, and Lucky Looter perk are unaffected.
+       Note: incompatible with Project Z Z_Game_Balance which applies its own
+       PlayerExpGain perc_add -1 tags="Looting" via buffStatusCheck02. -->
   <append xpath="/entity_classes/entity_class[@name='playerMale']">
     <effect_group name="Reduced Looting XP">
-      <passive_effect name="PlayerExpGain" operation="base_set" value="0.8" tags="Looting"/>
+      <passive_effect name="PlayerExpGain" operation="perc_add" value="-0.8" tags="Looting"/>
     </effect_group>
   </append>
 </configs>

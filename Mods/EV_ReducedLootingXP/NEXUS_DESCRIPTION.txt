@@ -1,12 +1,10 @@
 [size=6][b]Reduced Looting XP[/b][/size]
 
-[quote][color=#cc9900][b]Test Build[/b][/color] — exact XP reduction is under active investigation.[/quote]
-
 [size=5][b]Description[/b][/size]
 
-Reduces XP gained from opening untouched loot containers, rebalancing progression toward combat and survival gameplay.
+Reduces XP gained from opening untouched loot containers to [b]20% of vanilla[/b], rebalancing progression toward combat and survival gameplay.
 
-In vanilla 7 Days to Die, opening an untouched loot container awards XP proportional to the player's current game stage. Both world-placed containers (crates, safes, fridges) and zombie drop bags award XP on first open — bags spawn untouched and use the same XP code path as world containers. Players who focus on aggressive POI runs, blood moon looting, and systematic container farming can level disproportionately fast compared to players who progress mainly through combat. This mod reduces container XP while leaving kill XP, loot tables, and bag spawning behavior unchanged.
+In vanilla 7 Days to Die, opening an untouched loot container awards XP equal to the player's current game stage. World-placed containers (crates, safes, fridges) grant this XP on first open. Players who focus on aggressive POI runs, blood moon looting, and systematic container farming can level disproportionately fast compared to players who progress mainly through combat. This mod reduces container XP while leaving kill XP, loot tables, and bag spawning behavior unchanged.
 
 [quote]
 [color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
@@ -18,11 +16,10 @@ Players connecting to the server [b]do not need to download or install anything[
 [size=5][b]Features[/b][/size]
 
 [list]
-[*]Reduces XP from opening untouched containers (world containers and zombie drop bags)
+[*]Reduces XP from opening untouched world containers to 20% of vanilla
 [*]The looting XP branch stays enabled — it is rebalanced, not removed
 [*]All other XP sources (kills, crafting, quests, selling, harvesting, upgrading) remain completely unchanged
 [*]Loot quality, loot quantity, scavenging speed, and Lucky Looter perk are [b]not[/b] affected
-[*]Zombie drop bags ([b]EntityLootContainer*[/b]) spawn untouched and award first-open XP the same as world containers — this mod reduces that XP too
 [*]Player chests, secure storage, and dropped player backpacks are excluded from looting XP by the game engine and are unaffected by this mod
 [/list]
 
@@ -32,16 +29,23 @@ Confirmed from decompiling [b]Assembly-CSharp.dll[/b] ([b]XUiC_LootWindowGroup[/
 
 [list]
 [*]Looting XP is awarded on first open of an untouched non-player container
-[*]The base XP value passed to the effect system is [b]gameStage × (XPMultiplier / 100)[/b]
-[*][b]EffectManager.GetValue[/b] returns [b]_base_value × _perc_value[/b]
-[*][b]base_set VALUE[/b] replaces [b]_base_value[/b] with the literal value (absolute replacement)
-[*][b]perc_add VALUE[/b] accumulates into [b]_perc_value[/b] (which starts at 1.0)
-[*]The final result is cast to [b]int[/b] (floor-truncated before granting)
+[*]Base XP passed to the effect system equals [b]gameStage × (XPMultiplier / 100)[/b]
+[*][b]EffectManager.GetValue[/b] returns [b]_base_value × _perc_value[/b]; [b]_perc_value[/b] starts at 1.0
+[*][b]perc_add VALUE[/b] adds to [b]_perc_value[/b] — applying [b]perc_add -0.8[/b] yields [b]_perc_value = 0.2[/b]
+[*]Final XP = [b](int)(gameStage × XPMultiplier/100 × 0.2)[/b] (C# cast truncates toward zero)
 [/list]
 
-This mod applies [b]base_set 0.8[/b] to [b]PlayerExpGain[/b] for the [b]Looting[/b] tag. [b]The exact XP output of this configuration is under investigation[/b] — in-game testing at known game stages is required to confirm behavior.
+At the default XPMultiplier of 100:
 
-[quote][b]Note:[/b] The Project Z overhaul mod applies [b]PlayerExpGain perc_add -1 tags="Looting"[/b] via an always-active buff, which zeroes looting XP on its own. Test results from Project Z sessions may not reflect vanilla behavior.[/quote]
+[list]
+[*][b]Game Stage 5:[/b] 5 XP vanilla → 1 XP with mod
+[*][b]Game Stage 10:[/b] 10 XP vanilla → 2 XP with mod
+[*][b]Game Stage 27:[/b] 27 XP vanilla → 5 XP with mod
+[*][b]Game Stage 50:[/b] 50 XP vanilla → 10 XP with mod
+[*][b]Game Stage 100:[/b] 100 XP vanilla → 20 XP with mod
+[/list]
+
+[quote][b]Why not base_set?[/b] [b]base_set VALUE[/b] replaces the base XP with a literal number, giving the same flat XP at every game stage regardless of progression. [b]perc_add[/b] preserves the game-stage-proportional scaling while applying a fixed multiplier.[/quote]
 
 [size=5][b]Installation[/b][/size]
 
@@ -53,10 +57,15 @@ This mod applies [b]base_set 0.8[/b] to [b]PlayerExpGain[/b] for the [b]Looting[
 [size=5][b]Compatibility[/b][/size]
 
 [list]
-[*]7 Days to Die 1.0 (Alpha 21+)
+[*]7 Days to Die 1.0 (b313) and later
 [*]Server-side mod — works without client installation
 [*]May conflict with mods that modify [b]PlayerExpGain[/b] on the [b]playerMale[/b] entity class
-[*][b]Project Z:[/b] The Z_Game_Balance sub-mod applies its own [b]PlayerExpGain perc_add -1 tags="Looting"[/b] modifier, which stacks with this mod. Behavior under Project Z differs from vanilla.
+[/list]
+
+[size=4][b]Known Incompatibilities[/b][/size]
+
+[list]
+[*][b]Project Z (Z_Game_Balance):[/b] Applies [b]PlayerExpGain perc_add -1 tags="Looting"[/b] via an always-active buff, which stacks with this mod and zeroes looting XP entirely. A compatibility patch is required if you want partial looting XP under Project Z.
 [/list]
 
 [size=4][b]Companion Mod[/b][/size]
@@ -68,5 +77,5 @@ Works well alongside [url=https://github.com/alekho77/epic_7d2d_mods][b]EV_Remov
 [size=4][b]v1.0.0[/b][/size]
 
 [list]
-[*]Initial release — reduces XP from opening untouched loot containers (exact reduction under investigation)
+[*]Initial release — reduces XP from opening untouched loot containers to 20% of vanilla via [b]perc_add -0.8[/b]
 [/list]
