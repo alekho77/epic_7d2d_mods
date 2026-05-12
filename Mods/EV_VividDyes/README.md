@@ -15,12 +15,12 @@ Adds 16 new vivid and bright dyes with eye-catching colors to customize your wea
 
 | Dye | Color (RGB) | Preview |
 | --- | --- | --- |
-| Dye: Royal Purple | 140, 4, 181 | 🟣 Deep vibrant purple |
+| Dye: Royal Purple | 126, 3, 176 | 🟣 Deep vibrant purple |
 | Dye: Turquoise | 41, 255, 244 | 🔵 Bright cyan-turquoise |
-| Dye: Gold | 255, 210, 59 | 🟡 Rich golden yellow |
-| Dye: Silver | 165, 207, 204 | ⚪ Light metallic silver |
-| Dye: Bronze | 255, 157, 61 | 🟠 Warm metallic bronze |
-| Dye: Lime | 47, 255, 0 | 🟢 Vivid acid green |
+| Dye: Gold | 255, 214, 64 | 🟡 Rich golden yellow |
+| Dye: Silver | 208, 208, 208 | ⚪ Light metallic silver |
+| Dye: Bronze | 122, 74, 32 | 🟠 Warm metallic bronze |
+| Dye: Lime | 49, 240, 0 | 🟢 Vivid acid green |
 | Dye: Candy Pink | 255, 0, 221 | 🩷 Hot neon pink |
 | Dye: Neon Orange | 255, 89, 0 | 🟧 Bright vivid orange |
 
@@ -28,14 +28,14 @@ Adds 16 new vivid and bright dyes with eye-catching colors to customize your wea
 
 | Dye | Color (RGB) | Preview |
 | --- | --- | --- |
-| Dye: Plasma Blue | 0, 72, 255 | 🔵 Bright electric blue |
-| Dye: Acid Yellow | 230, 255, 0 | 🟡 Searing acid yellow |
-| Dye: Toxic Mint | 0, 255, 155 | 🟢 Toxic mint green |
-| Dye: Blood Neon | 255, 0, 45 | 🔴 Neon blood red |
-| Dye: Blacklight Indigo | 75, 0, 255 | 🟣 UV blacklight indigo |
-| Dye: Radioactive Cyan | 0, 210, 255 | 🔵 Cold radioactive cyan |
-| Dye: Venom Green | 0, 255, 60 | 🟢 Venom dark green |
-| Dye: Molten Red | 255, 35, 0 | 🔴 Scorching molten red |
+| Dye: Plasma Blue | 0, 144, 255 | 🔵 Bright electric blue |
+| Dye: Acid Yellow | 127, 138, 0 | 🟡 Searing acid yellow |
+| Dye: Toxic Mint | 0, 168, 120 | 🟢 Toxic mint green |
+| Dye: Blood Neon | 208, 0, 64 | 🔴 Neon blood red |
+| Dye: Blacklight Indigo | 6, 2, 51 | 🟣 UV blacklight indigo |
+| Dye: Radioactive Cyan | 0, 77, 102 | 🔵 Cold radioactive cyan |
+| Dye: Venom Green | 0, 90, 26 | 🟢 Venom dark green |
+| Dye: Molten Red | 77, 0, 16 | 🔴 Scorching molten red |
 
 ## Features
 

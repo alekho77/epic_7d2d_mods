@@ -6,7 +6,7 @@
 			<property name="Extends" value="modGeneralMaster"/>
 			<property name="DescriptionKey" value="modDyeGroupDesc"/>
 			<property name="CustomIcon" value="modDyeWhite"/>
-			<property name="CustomIconTint" value="96,0,125"/>
+			<property name="CustomIconTint" value="126,3,176"/>
 			<property name="Material" value="Mpaint"/>
 			<property name="Weight" value="20"/>
 			<property name="EconomicValue" value="50"/>
@@ -14,8 +14,8 @@
 			<property name="SoundPlace" value="dye_place"/>
 
 			<item_property_overrides name="*">
-				<property name="TintColor" value="140,4,181"/>
-				<property name="CustomIconTint" value="140,4,181"/>
+				<property name="TintColor" value="126,3,176"/>
+				<property name="CustomIconTint" value="126,3,176"/>
 			</item_property_overrides>
 		</item_modifier>
 
@@ -42,7 +42,7 @@
 			<property name="Extends" value="modGeneralMaster"/>
 			<property name="DescriptionKey" value="modDyeGroupDesc"/>
 			<property name="CustomIcon" value="modDyeWhite"/>
-			<property name="CustomIconTint" value="255,210,59"/>
+			<property name="CustomIconTint" value="255,214,64"/>
 			<property name="Material" value="Mpaint"/>
 			<property name="Weight" value="20"/>
 			<property name="EconomicValue" value="50"/>
@@ -50,8 +50,8 @@
 			<property name="SoundPlace" value="dye_place"/>
 
 			<item_property_overrides name="*">
-				<property name="TintColor" value="255,210,59"/>
-				<property name="CustomIconTint" value="255,210,59"/>
+				<property name="TintColor" value="255,214,64"/>
+				<property name="CustomIconTint" value="255,214,64"/>
 			</item_property_overrides>
 		</item_modifier>
 
@@ -60,7 +60,7 @@
 			<property name="Extends" value="modGeneralMaster"/>
 			<property name="DescriptionKey" value="modDyeGroupDesc"/>
 			<property name="CustomIcon" value="modDyeWhite"/>
-			<property name="CustomIconTint" value="213,245,243"/>
+			<property name="CustomIconTint" value="208,208,208"/>
 			<property name="Material" value="Mpaint"/>
 			<property name="Weight" value="20"/>
 			<property name="EconomicValue" value="50"/>
@@ -68,8 +68,8 @@
 			<property name="SoundPlace" value="dye_place"/>
 
 			<item_property_overrides name="*">
-				<property name="TintColor" value="165,207,204"/>
-				<property name="CustomIconTint" value="213,245,243"/>
+				<property name="TintColor" value="208,208,208"/>
+				<property name="CustomIconTint" value="208,208,208"/>
 			</item_property_overrides>
 		</item_modifier>
 
@@ -78,7 +78,7 @@
 			<property name="Extends" value="modGeneralMaster"/>
 			<property name="DescriptionKey" value="modDyeGroupDesc"/>
 			<property name="CustomIcon" value="modDyeWhite"/>
-			<property name="CustomIconTint" value="255,157,61"/>
+			<property name="CustomIconTint" value="122,74,32"/>
 			<property name="Material" value="Mpaint"/>
 			<property name="Weight" value="20"/>
 			<property name="EconomicValue" value="50"/>
@@ -86,8 +86,8 @@
 			<property name="SoundPlace" value="dye_place"/>
 
 			<item_property_overrides name="*">
-				<property name="TintColor" value="255,157,61"/>
-				<property name="CustomIconTint" value="255,157,61"/>
+				<property name="TintColor" value="122,74,32"/>
+				<property name="CustomIconTint" value="122,74,32"/>
 			</item_property_overrides>
 		</item_modifier>
 
@@ -96,7 +96,7 @@
 			<property name="Extends" value="modGeneralMaster"/>
 			<property name="DescriptionKey" value="modDyeGroupDesc"/>
 			<property name="CustomIcon" value="modDyeWhite"/>
-			<property name="CustomIconTint" value="47,255,0"/>
+			<property name="CustomIconTint" value="49,240,0"/>
 			<property name="Material" value="Mpaint"/>
 			<property name="Weight" value="20"/>
 			<property name="EconomicValue" value="50"/>
@@ -104,8 +104,8 @@
 			<property name="SoundPlace" value="dye_place"/>
 
 			<item_property_overrides name="*">
-				<property name="TintColor" value="47,255,0"/>
-				<property name="CustomIconTint" value="47,255,0"/>
+				<property name="TintColor" value="49,240,0"/>
+				<property name="CustomIconTint" value="49,240,0"/>
 			</item_property_overrides>
 		</item_modifier>
 
@@ -150,7 +150,7 @@
 			<property name="Extends" value="modGeneralMaster"/>
 			<property name="DescriptionKey" value="modDyeGroupDesc"/>
 			<property name="CustomIcon" value="modDyeWhite"/>
-			<property name="CustomIconTint" value="0,72,255"/>
+			<property name="CustomIconTint" value="0,144,255"/>
 			<property name="Material" value="Mpaint"/>
 			<property name="Weight" value="20"/>
 			<property name="EconomicValue" value="50"/>
@@ -158,8 +158,8 @@
 			<property name="SoundPlace" value="dye_place"/>
 
 			<item_property_overrides name="*">
-				<property name="TintColor" value="0,72,255"/>
-				<property name="CustomIconTint" value="0,72,255"/>
+				<property name="TintColor" value="0,144,255"/>
+				<property name="CustomIconTint" value="0,144,255"/>
 			</item_property_overrides>
 		</item_modifier>
 
@@ -168,7 +168,7 @@
 			<property name="Extends" value="modGeneralMaster"/>
 			<property name="DescriptionKey" value="modDyeGroupDesc"/>
 			<property name="CustomIcon" value="modDyeWhite"/>
-			<property name="CustomIconTint" value="230,255,0"/>
+			<property name="CustomIconTint" value="127,138,0"/>
 			<property name="Material" value="Mpaint"/>
 			<property name="Weight" value="20"/>
 			<property name="EconomicValue" value="50"/>
@@ -176,8 +176,8 @@
 			<property name="SoundPlace" value="dye_place"/>
 
 			<item_property_overrides name="*">
-				<property name="TintColor" value="230,255,0"/>
-				<property name="CustomIconTint" value="230,255,0"/>
+				<property name="TintColor" value="127,138,0"/>
+				<property name="CustomIconTint" value="127,138,0"/>
 			</item_property_overrides>
 		</item_modifier>
 
@@ -186,7 +186,7 @@
 			<property name="Extends" value="modGeneralMaster"/>
 			<property name="DescriptionKey" value="modDyeGroupDesc"/>
 			<property name="CustomIcon" value="modDyeWhite"/>
-			<property name="CustomIconTint" value="0,255,155"/>
+			<property name="CustomIconTint" value="0,168,120"/>
 			<property name="Material" value="Mpaint"/>
 			<property name="Weight" value="20"/>
 			<property name="EconomicValue" value="50"/>
@@ -194,8 +194,8 @@
 			<property name="SoundPlace" value="dye_place"/>
 
 			<item_property_overrides name="*">
-				<property name="TintColor" value="0,255,155"/>
-				<property name="CustomIconTint" value="0,255,155"/>
+				<property name="TintColor" value="0,168,120"/>
+				<property name="CustomIconTint" value="0,168,120"/>
 			</item_property_overrides>
 		</item_modifier>
 
@@ -204,7 +204,7 @@
 			<property name="Extends" value="modGeneralMaster"/>
 			<property name="DescriptionKey" value="modDyeGroupDesc"/>
 			<property name="CustomIcon" value="modDyeWhite"/>
-			<property name="CustomIconTint" value="255,0,45"/>
+			<property name="CustomIconTint" value="208,0,64"/>
 			<property name="Material" value="Mpaint"/>
 			<property name="Weight" value="20"/>
 			<property name="EconomicValue" value="50"/>
@@ -212,8 +212,8 @@
 			<property name="SoundPlace" value="dye_place"/>
 
 			<item_property_overrides name="*">
-				<property name="TintColor" value="255,0,45"/>
-				<property name="CustomIconTint" value="255,0,45"/>
+				<property name="TintColor" value="208,0,64"/>
+				<property name="CustomIconTint" value="208,0,64"/>
 			</item_property_overrides>
 		</item_modifier>
 
@@ -222,7 +222,7 @@
 			<property name="Extends" value="modGeneralMaster"/>
 			<property name="DescriptionKey" value="modDyeGroupDesc"/>
 			<property name="CustomIcon" value="modDyeWhite"/>
-			<property name="CustomIconTint" value="75,0,255"/>
+			<property name="CustomIconTint" value="6,2,51"/>
 			<property name="Material" value="Mpaint"/>
 			<property name="Weight" value="20"/>
 			<property name="EconomicValue" value="50"/>
@@ -230,8 +230,8 @@
 			<property name="SoundPlace" value="dye_place"/>
 
 			<item_property_overrides name="*">
-				<property name="TintColor" value="75,0,255"/>
-				<property name="CustomIconTint" value="75,0,255"/>
+				<property name="TintColor" value="6,2,51"/>
+				<property name="CustomIconTint" value="6,2,51"/>
 			</item_property_overrides>
 		</item_modifier>
 
@@ -240,7 +240,7 @@
 			<property name="Extends" value="modGeneralMaster"/>
 			<property name="DescriptionKey" value="modDyeGroupDesc"/>
 			<property name="CustomIcon" value="modDyeWhite"/>
-			<property name="CustomIconTint" value="0,210,255"/>
+			<property name="CustomIconTint" value="0,77,102"/>
 			<property name="Material" value="Mpaint"/>
 			<property name="Weight" value="20"/>
 			<property name="EconomicValue" value="50"/>
@@ -248,8 +248,8 @@
 			<property name="SoundPlace" value="dye_place"/>
 
 			<item_property_overrides name="*">
-				<property name="TintColor" value="0,210,255"/>
-				<property name="CustomIconTint" value="0,210,255"/>
+				<property name="TintColor" value="0,77,102"/>
+				<property name="CustomIconTint" value="0,77,102"/>
 			</item_property_overrides>
 		</item_modifier>
 
@@ -258,7 +258,7 @@
 			<property name="Extends" value="modGeneralMaster"/>
 			<property name="DescriptionKey" value="modDyeGroupDesc"/>
 			<property name="CustomIcon" value="modDyeWhite"/>
-			<property name="CustomIconTint" value="0,255,60"/>
+			<property name="CustomIconTint" value="0,90,26"/>
 			<property name="Material" value="Mpaint"/>
 			<property name="Weight" value="20"/>
 			<property name="EconomicValue" value="50"/>
@@ -266,8 +266,8 @@
 			<property name="SoundPlace" value="dye_place"/>
 
 			<item_property_overrides name="*">
-				<property name="TintColor" value="0,255,60"/>
-				<property name="CustomIconTint" value="0,255,60"/>
+				<property name="TintColor" value="0,90,26"/>
+				<property name="CustomIconTint" value="0,90,26"/>
 			</item_property_overrides>
 		</item_modifier>
 
@@ -276,7 +276,7 @@
 			<property name="Extends" value="modGeneralMaster"/>
 			<property name="DescriptionKey" value="modDyeGroupDesc"/>
 			<property name="CustomIcon" value="modDyeWhite"/>
-			<property name="CustomIconTint" value="255,35,0"/>
+			<property name="CustomIconTint" value="77,0,16"/>
 			<property name="Material" value="Mpaint"/>
 			<property name="Weight" value="20"/>
 			<property name="EconomicValue" value="50"/>
@@ -284,8 +284,8 @@
 			<property name="SoundPlace" value="dye_place"/>
 
 			<item_property_overrides name="*">
-				<property name="TintColor" value="255,35,0"/>
-				<property name="CustomIconTint" value="255,35,0"/>
+				<property name="TintColor" value="77,0,16"/>
+				<property name="CustomIconTint" value="77,0,16"/>
 			</item_property_overrides>
 		</item_modifier>
 

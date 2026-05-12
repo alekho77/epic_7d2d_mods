@@ -16,12 +16,12 @@ Players connecting to the server [b]do not need to download or install anything[
 [size=4][b]Vivid Set (v1.0.0)[/b][/size]
 
 [list]
-[*][color=#8C04B5][b]Dye: Royal Purple[/b][/color] — Deep vibrant purple (140, 4, 181)
+[*][color=#7E03B0][b]Dye: Royal Purple[/b][/color] — Deep vibrant purple (126, 3, 176)
 [*][color=#29FFF4][b]Dye: Turquoise[/b][/color] — Bright cyan-turquoise (41, 255, 244)
-[*][color=#FFD23B][b]Dye: Gold[/b][/color] — Rich golden yellow (255, 210, 59)
-[*][b]Dye: Silver[/b] — Light metallic silver (165, 207, 204)
-[*][color=#FF9D3D][b]Dye: Bronze[/b][/color] — Warm metallic bronze (255, 157, 61)
-[*][color=#2FFF00][b]Dye: Lime[/b][/color] — Vivid acid green (47, 255, 0)
+[*][color=#FFD640][b]Dye: Gold[/b][/color] — Rich golden yellow (255, 214, 64)
+[*][color=#D0D0D0][b]Dye: Silver[/b][/color] — Light metallic silver (208, 208, 208)
+[*][color=#7A4A20][b]Dye: Bronze[/b][/color] — Warm metallic bronze (122, 74, 32)
+[*][color=#31F000][b]Dye: Lime[/b][/color] — Vivid acid green (49, 240, 0)
 [*][color=#FF00DD][b]Dye: Candy Pink[/b][/color] — Hot neon pink (255, 0, 221)
 [*][color=#FF5900][b]Dye: Neon Orange[/b][/color] — Bright vivid orange (255, 89, 0)
 [/list]
@@ -29,14 +29,14 @@ Players connecting to the server [b]do not need to download or install anything[
 [size=4][b]Neon/Acid Set (v1.1.0)[/b][/size]
 
 [list]
-[*][color=#0048FF][b]Dye: Plasma Blue[/b][/color] — Bright electric blue (0, 72, 255)
-[*][color=#E6FF00][b]Dye: Acid Yellow[/b][/color] — Searing acid yellow (230, 255, 0)
-[*][color=#00FF9B][b]Dye: Toxic Mint[/b][/color] — Toxic mint green (0, 255, 155)
-[*][color=#FF002D][b]Dye: Blood Neon[/b][/color] — Neon blood red (255, 0, 45)
-[*][color=#4B00FF][b]Dye: Blacklight Indigo[/b][/color] — UV blacklight indigo (75, 0, 255)
-[*][color=#00D2FF][b]Dye: Radioactive Cyan[/b][/color] — Cold radioactive cyan (0, 210, 255)
-[*][color=#00FF3C][b]Dye: Venom Green[/b][/color] — Venom dark green (0, 255, 60)
-[*][color=#FF2300][b]Dye: Molten Red[/b][/color] — Scorching molten red (255, 35, 0)
+[*][color=#0090FF][b]Dye: Plasma Blue[/b][/color] — Bright electric blue (0, 144, 255)
+[*][color=#7F8A00][b]Dye: Acid Yellow[/b][/color] — Searing acid yellow (127, 138, 0)
+[*][color=#00A878][b]Dye: Toxic Mint[/b][/color] — Toxic mint green (0, 168, 120)
+[*][color=#D00040][b]Dye: Blood Neon[/b][/color] — Neon blood red (208, 0, 64)
+[*][color=#060233][b]Dye: Blacklight Indigo[/b][/color] — UV blacklight indigo (6, 2, 51)
+[*][color=#004D66][b]Dye: Radioactive Cyan[/b][/color] — Cold radioactive cyan (0, 77, 102)
+[*][color=#005A1A][b]Dye: Venom Green[/b][/color] — Venom dark green (0, 90, 26)
+[*][color=#4D0010][b]Dye: Molten Red[/b][/color] — Scorching molten red (77, 0, 16)
 [/list]
 
 [size=5][b]Features[/b][/size]
