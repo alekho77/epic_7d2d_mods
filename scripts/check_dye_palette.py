@@ -15,7 +15,8 @@ Pair classification (report-only; script always exits 0):
   FAIL  ΔE00 < min     (default 25)
 
 The script logs every pair to the console, sorted by ΔE00 ascending, followed
-by a summary block.  No files are written or modified.
+by a summary block.  The report is also always written to
+build/check_dye_palette.txt (UTF-8, overwritten on every run).
 
 Usage
 -----
@@ -36,6 +37,8 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_XML = REPO_ROOT / "Mods" / "EV_VividDyes" / "Config" / "item_modifiers.xml"
+BUILD_DIR = REPO_ROOT / "build"
+DEFAULT_OUTPUT = BUILD_DIR / "check_dye_palette.txt"
 
 # ── colour math ────────────────────────────────────────────────────────────────
 
@@ -376,18 +379,27 @@ def main() -> None:
     except ValueError:
         shown = xml_path
 
-    print(f"Loading dyes from: {shown}\n")
+    # Accumulate all report lines; flush to console + file together at the end.
+    lines: list[str] = []
+
+    def emit(text: str = "") -> None:
+        lines.append(text)
+
+    emit(f"Loading dyes from: {shown}")
+    emit()
     dyes = load_dyes(xml_path)
 
     if not dyes:
         raise SystemExit("No custom dyes found in the specified file.")
 
-    print(f"Loaded {len(dyes)} dye(s):")
+    emit(f"Loaded {len(dyes)} dye(s):")
     for d in dyes:
-        print(f"  {d.display_name:<{_W}} {d.hex}  gray={d.gray:5.1f}  hue={d.hue:5.1f}°  sat={d.saturation:.2f}  L*={d.lab[0]:5.1f}")
+        emit(f"  {d.display_name:<{_W}} {d.hex}  gray={d.gray:5.1f}  hue={d.hue:5.1f}°  sat={d.saturation:.2f}  L*={d.lab[0]:5.1f}")
 
     n_expected = len(dyes) * (len(dyes) - 1) // 2
-    print(f"\nChecking {n_expected} unordered pairs ...\n")
+    emit()
+    emit(f"Checking {n_expected} unordered pairs ...")
+    emit()
 
     results: list[PairResult] = [
         evaluate_pair(a, b, args.min_delta_e, args.target_delta_e, args.min_gray_gap, args.min_hue_gap)
@@ -395,38 +407,51 @@ def main() -> None:
     ]
     results.sort(key=lambda r: r.delta_e)
 
-    print(f"─── Pair results ({len(results)} pairs, sorted by ΔE00 asc) " + "─" * 40)
+    emit(f"─── Pair results ({len(results)} pairs, sorted by ΔE00 asc) " + "─" * 40)
     for r in results:
-        print(_row(r))
+        emit(_row(r))
 
     # ── summary ──────────────────────────────────────────────────────────────
     n_pass = sum(1 for r in results if r.status == "PASS")
     n_warn = sum(1 for r in results if r.status == "WARN")
     n_fail = sum(1 for r in results if r.status == "FAIL")
 
-    print()
-    print("─── Summary " + "─" * 70)
-    print(f"  Dyes loaded   : {len(dyes)}")
-    print(f"  Pairs checked : {len(results)}")
-    print(f"  PASS (ΔE00 ≥ {args.target_delta_e:.0f}) : {n_pass}")
-    print(f"  WARN (ΔE00 ≥ {args.min_delta_e:.0f}) : {n_warn}")
-    print(f"  FAIL (ΔE00 < {args.min_delta_e:.0f}) : {n_fail}")
+    emit()
+    emit("─── Summary " + "─" * 70)
+    emit(f"  Dyes loaded   : {len(dyes)}")
+    emit(f"  Pairs checked : {len(results)}")
+    emit(f"  PASS (ΔE00 ≥ {args.target_delta_e:.0f}) : {n_pass}")
+    emit(f"  WARN (ΔE00 ≥ {args.min_delta_e:.0f}) : {n_warn}")
+    emit(f"  FAIL (ΔE00 < {args.min_delta_e:.0f}) : {n_fail}")
 
     worst = results[:10]
-    print(f"\n  Worst {len(worst)} pairs by ΔE00:")
+    emit()
+    emit(f"  Worst {len(worst)} pairs by ΔE00:")
     for r in worst:
-        print(f"    [{r.status}]  {r.dye_a.display_name} vs {r.dye_b.display_name}  ΔE00={r.delta_e:.1f}")
+        emit(f"    [{r.status}]  {r.dye_a.display_name} vs {r.dye_b.display_name}  ΔE00={r.delta_e:.1f}")
 
     flagged = [r for r in results if r.notes]
     if flagged:
-        print(f"\n  Pairs with additional risk flags ({len(flagged)}):")
+        emit()
+        emit(f"  Pairs with additional risk flags ({len(flagged)}):")
         for r in flagged:
-            print(f"    [{r.status}]  {r.dye_a.display_name} / {r.dye_b.display_name}: " + ", ".join(r.notes))
+            emit(f"    [{r.status}]  {r.dye_a.display_name} / {r.dye_b.display_name}: " + ", ".join(r.notes))
 
-    print()
-    print("  Audit complete.  Script is report-only — no files were modified.")
+    emit()
+    emit("  Audit complete.")
 
-    # Always exit 0 (report-only mode).
+    # ── flush: console + file ─────────────────────────────────────────────────
+    report = "\n".join(lines)
+    print(report)
+    BUILD_DIR.mkdir(parents=True, exist_ok=True)
+    DEFAULT_OUTPUT.write_text(report + "\n", encoding="utf-8")
+    try:
+        out_shown = DEFAULT_OUTPUT.relative_to(REPO_ROOT)
+    except ValueError:
+        out_shown = DEFAULT_OUTPUT
+    print(f"\n  Report saved → {out_shown}")
+
+    # Always exit 0.
 
 
 if __name__ == "__main__":
