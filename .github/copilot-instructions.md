@@ -203,6 +203,14 @@ Mods/
 
 Both `README.md` and `NEXUS_DESCRIPTION.txt` **must** follow the same section order. The structure merges our conventions with the [Nexus Mods recommended layout](https://wiki.nexusmods.com/index.php/Mod_description_best_practices).
 
+### Description Audience
+
+- `README.md` and `NEXUS_DESCRIPTION.txt` are **player-facing documents**. Write them for players and server admins, not for programmers.
+- Prefer gameplay outcomes, installation impact, compatibility guidance, and plain-language explanations over implementation provenance.
+- Avoid reverse-engineering details, DLL names, internal class or method names, exact floating-point analysis, or other developer-only investigation notes in public mod descriptions unless the user explicitly asks for that level of detail.
+- Keep advanced developer-facing details in code comments, internal research notes, or other non-public implementation documentation instead.
+- Developer comments inside XML, code, or internal notes may include technical reasoning when it is useful for maintenance.
+
 | # | Section | Required | Purpose |
 |---|---------|----------|---------|
 | 1 | **Title** | ✅ | Human-readable mod name (not the folder name). In Markdown: `# Mod Title`. In BBCode: `[size=6][b]Mod Title[/b][/size]`. |
