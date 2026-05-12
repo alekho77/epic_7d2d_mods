@@ -6,8 +6,9 @@
        base_set is NOT used here: base_set replaces _base_value with a literal number,
        which would give flat XP (e.g. base_set 5 = always 5 XP regardless of GS).
        Loot quality, search speed, loot tables, and Lucky Looter perk are unaffected.
-       Note: incompatible with Project Z Z_Game_Balance which applies its own
-       PlayerExpGain perc_add -1 tags="Looting" via buffStatusCheck02. -->
+       Note: large overhaul modpacks may also modify PlayerExpGain for the Looting tag
+       or add untagged PlayerExpGain effects that stack with this mod, altering the
+       final XP. Check other mods for PlayerExpGain / tags="Looting" before combining. -->
   <append xpath="/entity_classes/entity_class[@name='playerMale']">
     <effect_group name="Reduced Looting XP">
       <passive_effect name="PlayerExpGain" operation="perc_add" value="-0.8" tags="Looting"/>

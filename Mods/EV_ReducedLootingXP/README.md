@@ -52,9 +52,17 @@ At the default XPMultiplier of 100:
 - Server-side mod — works without client installation
 - May conflict with mods that modify `PlayerExpGain` on the `playerMale` entity class
 
-### Known Incompatibilities
+### Large Modpacks and Overhauls
 
-- **Project Z (Z_Game_Balance):** Applies `PlayerExpGain perc_add -1 tags="Looting"` via an always-active buff, which stacks with this mod and zeroes looting XP entirely. A compatibility patch is required if you want partial looting XP under Project Z.
+Some large overhaul modpacks and total-conversion mods already tune the looting XP branch independently. When they are installed together with this mod the `perc_add` values stack and the final XP will differ from the table above — it could be higher or lower depending on what the other mod adds.
+
+Before combining this mod with a large modpack, search the other mod's `Config/` files for the following patterns:
+
+- `PlayerExpGain` with `tags="Looting"` — directly modifies the same branch as this mod
+- Untagged `PlayerExpGain` effects — apply to all XP branches including looting
+- `buffStatusCheck02` — a vanilla always-active player status buff that overhauls commonly append their XP modifiers to
+
+If any of these are present, the two mods need a compatibility patch to produce a predictable looting XP value.
 
 ### Companion Mod
 
