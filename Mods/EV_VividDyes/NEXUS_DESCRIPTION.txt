@@ -2,7 +2,7 @@
 
 [size=5][b]Description[/b][/size]
 
-Adds 8 new vivid and bright dyes with eye-catching acid colors to customize your weapons, tools, vehicles, and drones. Stand out in the apocalypse with Royal Purple, Turquoise, Gold, Silver, Bronze, Lime, Candy Pink, and Neon Orange.
+Adds 16 new vivid and bright dyes with eye-catching colors to customize your weapons, tools, vehicles, and drones. Stand out in the apocalypse with the original 8 vivid colors — Royal Purple, Turquoise, Gold, Silver, Bronze, Lime, Candy Pink, and Neon Orange — plus 8 new neon/acid shades: Plasma Blue, Acid Yellow, Toxic Mint, Blood Neon, Blacklight Indigo, Radioactive Cyan, Venom Green, and Molten Red.
 
 [quote]
 [color=#55aa55][size=4][b]Server-Side Friendly[/b][/size][/color]
@@ -12,6 +12,8 @@ Players connecting to the server [b]do not need to download or install anything[
 [/quote]
 
 [size=5][b]New Dyes[/b][/size]
+
+[size=4][b]Vivid Set (v1.0.0)[/b][/size]
 
 [list]
 [*][color=#8C04B5][b]Dye: Royal Purple[/b][/color] — Deep vibrant purple (140, 4, 181)
@@ -24,10 +26,23 @@ Players connecting to the server [b]do not need to download or install anything[
 [*][color=#FF5900][b]Dye: Neon Orange[/b][/color] — Bright vivid orange (255, 89, 0)
 [/list]
 
+[size=4][b]Neon/Acid Set (v1.1.0)[/b][/size]
+
+[list]
+[*][color=#0048FF][b]Dye: Plasma Blue[/b][/color] — Bright electric blue (0, 72, 255)
+[*][color=#E6FF00][b]Dye: Acid Yellow[/b][/color] — Searing acid yellow (230, 255, 0)
+[*][color=#00FF9B][b]Dye: Toxic Mint[/b][/color] — Toxic mint green (0, 255, 155)
+[*][color=#FF002D][b]Dye: Blood Neon[/b][/color] — Neon blood red (255, 0, 45)
+[*][color=#4B00FF][b]Dye: Blacklight Indigo[/b][/color] — UV blacklight indigo (75, 0, 255)
+[*][color=#00D2FF][b]Dye: Radioactive Cyan[/b][/color] — Cold radioactive cyan (0, 210, 255)
+[*][color=#00FF3C][b]Dye: Venom Green[/b][/color] — Venom dark green (0, 255, 60)
+[*][color=#FF2300][b]Dye: Molten Red[/b][/color] — Scorching molten red (255, 35, 0)
+[/list]
+
 [size=5][b]Features[/b][/size]
 
 [list]
-[*][b]8 new dyes[/b] with vivid, bright, acid-style colors not found in vanilla
+[*][b]16 new dyes[/b] in two sets: 8 vivid originals and 8 neon/acid shades not found in vanilla
 [*][b]Fully integrated[/b] into the game's loot system — find them in the same places as vanilla dyes
 [*][b]Cosmetic auto-attach[/b] — randomly applied to looted weapons, tools, vehicles, and drones (10% chance each)
 [*][b]Same icon system[/b] as vanilla dyes — uses tinted version of the standard dye icon
@@ -55,10 +70,15 @@ Based on the original [url=https://www.nexusmods.com/7daystodie/mods/526]7 Days 
 
 [size=5][b]Changelog[/b][/size]
 
+[b]v1.1.0[/b]
+[list]
+[*]Added 8 new neon/acid dyes: Plasma Blue, Acid Yellow, Toxic Mint, Blood Neon, Blacklight Indigo, Radioactive Cyan, Venom Green, Molten Red
+[/list]
+
 [b]v1.0.0[/b]
 [list]
 [*]Initial release with 8 new vivid dyes adapted for 7D2D 1.0+
 [/list]
 
 [b]Author:[/b] Aleksei Khozin
-[b]Version:[/b] 1.0.0
+[b]Version:[/b] 1.1.0

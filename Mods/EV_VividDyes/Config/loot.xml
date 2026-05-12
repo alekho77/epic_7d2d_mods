@@ -8,5 +8,13 @@
 		<item name="modDyeLime"/>
 		<item name="modDyeCandyPink"/>
 		<item name="modDyeNeonOrange"/>
+		<item name="modDyePlasmaBlue"/>
+		<item name="modDyeAcidYellow"/>
+		<item name="modDyeToxicMint"/>
+		<item name="modDyeBloodNeon"/>
+		<item name="modDyeBlacklightIndigo"/>
+		<item name="modDyeRadioactiveCyan"/>
+		<item name="modDyeVenomGreen"/>
+		<item name="modDyeMoltenRed"/>
 	</append>
 </config>
