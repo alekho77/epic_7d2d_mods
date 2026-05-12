@@ -2,7 +2,7 @@
 
 [size=5][b]Description[/b][/size]
 
-Reduces XP gained from opening untouched loot containers to [b]20% of vanilla[/b], rebalancing progression toward combat and survival gameplay.
+Reduces XP gained from opening untouched loot containers to [b]approximately 20% of vanilla[/b], rebalancing progression toward combat and survival gameplay.
 
 In vanilla 7 Days to Die, opening an untouched loot container awards XP equal to the player's current game stage. World-placed containers (crates, safes, fridges) grant this XP on first open. Players who focus on aggressive POI runs, blood moon looting, and systematic container farming can level disproportionately fast compared to players who progress mainly through combat. This mod reduces container XP while leaving kill XP, loot tables, and bag spawning behavior unchanged.
 
@@ -16,7 +16,7 @@ Players connecting to the server [b]do not need to download or install anything[
 [size=5][b]Features[/b][/size]
 
 [list]
-[*]Reduces XP from opening untouched world containers to 20% of vanilla
+[*]Reduces XP from opening untouched world containers to approximately 20% of vanilla
 [*]The looting XP branch stays enabled — it is rebalanced, not removed
 [*]All other XP sources (kills, crafting, quests, selling, harvesting, upgrading) remain completely unchanged
 [*]Loot quality, loot quantity, scavenging speed, and Lucky Looter perk are [b]not[/b] affected
@@ -31,9 +31,11 @@ Confirmed from decompiling [b]Assembly-CSharp.dll[/b] ([b]XUiC_LootWindowGroup[/
 [*]Looting XP is awarded on first open of an untouched non-player container
 [*]Base XP passed to the effect system equals [b]gameStage × (XPMultiplier / 100)[/b]
 [*][b]EffectManager.GetValue[/b] returns [b]_base_value × _perc_value[/b]; [b]_perc_value[/b] starts at 1.0
-[*][b]perc_add VALUE[/b] adds to [b]_perc_value[/b] — applying [b]perc_add -0.8[/b] yields [b]_perc_value = 0.2[/b]
-[*]Final XP = [b](int)(gameStage × XPMultiplier/100 × 0.2)[/b] (C# cast truncates toward zero)
+[*][b]perc_add VALUE[/b] adds to [b]_perc_value[/b] — applying [b]perc_add -0.799[/b] yields [b]_perc_value ≈ 0.201[/b]
+[*]Final XP = [b](int)(gameStage × XPMultiplier/100 × ~0.201)[/b] (C# cast truncates toward zero)
 [/list]
+
+[quote][b]Why -0.799 and not -0.8?[/b] -0.8 cannot be represented exactly in IEEE 754 single-precision float — the nearest float32 is approximately -0.800000012, giving an effective multiplier of ~0.199999988 instead of 0.2. Because C# casts to [b]int[/b] by truncation (not rounding), this causes all exactly-divisible thresholds to drop by 1: GS10 → 1, GS25 → 4, GS50 → 9. Using -0.799 keeps the effective multiplier safely above 0.2 and produces the expected results.[/quote]
 
 At the default XPMultiplier of 100:
 
@@ -85,5 +87,5 @@ Works well alongside [url=https://github.com/alekho77/epic_7d2d_mods][b]EV_Remov
 [size=4][b]v1.0.0[/b][/size]
 
 [list]
-[*]Initial release — reduces XP from opening untouched loot containers to 20% of vanilla via [b]perc_add -0.8[/b]
+[*]Initial release — reduces XP from opening untouched loot containers to approximately 20% of vanilla via [b]perc_add -0.799[/b]
 [/list]
