@@ -21,13 +21,13 @@ In vanilla 7 Days to Die, opening an untouched loot container awards XP equal to
 
 ## How It Works
 
-Confirmed from decompiling `Assembly-CSharp.dll` (`XUiC_LootWindowGroup`, `Progression.AddLevelExp`, `EffectManager.GetValue`):
+The game calculates looting XP for untouched non-player containers as follows:
 
 - Looting XP is awarded on first open of an untouched non-player container
 - Base XP passed to the effect system equals `gameStage × (XPMultiplier / 100)`
-- `EffectManager.GetValue` returns `_base_value × _perc_value`; `_perc_value` starts at `1.0`
-- `perc_add VALUE` adds to `_perc_value` — applying `perc_add -0.799` yields `_perc_value ≈ 0.201`
-- Final XP = `(int)(gameStage × XPMultiplier/100 × ~0.201)` (C# cast truncates toward zero)
+- The looting XP multiplier starts at `1.0`
+- `perc_add VALUE` adds to that multiplier — applying `perc_add -0.799` yields an effective multiplier of approximately `0.201`
+- Final XP = `(int)(gameStage × XPMultiplier/100 × ~0.201)` (fractional XP is discarded)
 
 > **Why `-0.799` and not `-0.8`?** `-0.8` cannot be represented exactly in IEEE 754 single-precision float — the nearest `float32` is approximately `-0.800000012`, giving an effective multiplier of `~0.199999988` instead of `0.2`. Because C# casts to `int` by truncation (not rounding), this causes all exactly-divisible thresholds to drop by 1: GS10 → 1, GS25 → 4, GS50 → 9. Using `-0.799` keeps the effective multiplier safely above `0.2` and produces the expected results.
 
