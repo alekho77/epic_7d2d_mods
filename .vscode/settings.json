@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "**/Localization.txt": "csv",
+    "**/BlockUpdates.csv": "csv"
+  }
+}
