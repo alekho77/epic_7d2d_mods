@@ -2,7 +2,7 @@
 
 ## Description
 
-A comprehensive archery overhaul that increases damage for bows, crossbows, arrows, and bolts, and adds crafting recipes to convert arrows into crossbow bolts and vice versa at a 1:1 ratio with no material loss.
+A comprehensive archery overhaul that increases damage for bows, crossbows, arrows, and bolts, adds crafting recipes to convert arrows into crossbow bolts and vice versa at a 1:1 ratio with no material loss, and adds a perk-based ammo refund chance for archery projectiles.
 
 > ### 🟢 Server-Side Friendly
 >
@@ -22,6 +22,7 @@ A comprehensive archery overhaul that increases damage for bows, crossbows, arro
 - **10 disassembled ammo bundles** — craft from 30 arrows or bolts to recover 75% of raw materials
 - Disassembly recipes require a **Workbench** and reading all 7 volumes of **Ranger's Guide to Archery**
 - Bundle icons use vanilla ammo icons with a light red tint for easy identification
+- **Perk-based ammo refund** - vanilla arrows and bolts have a chance to be returned after projectile impact based on Archery perk level
 
 ## Damage Changes
 
@@ -52,6 +53,26 @@ A comprehensive archery overhaul that increases damage for bows, crossbows, arro
 | Wooden Bow | +9 | +19 | +111% |
 | Compound Bow | +29 | +51 | +76% |
 | Compound Crossbow | +25 | +50 | +100% |
+
+## Archery Ammo Refund
+
+Starting in v1.3.0, vanilla arrows and crossbow bolts can be refunded after projectile impact. This is a pure XML implementation: the ammo is spent normally when fired, then the mod has a chance to add one matching arrow or bolt back to the player's inventory when the projectile impact event fires.
+
+| Archery Perk Level | Refund Chance |
+| --- | --- |
+| 0 | 0% |
+| 1 | 10% |
+| 2 | 20% |
+| 3 | 30% |
+| 4 | 40% |
+| 5 | 50% |
+
+This refund is added for vanilla arrows and bolts only:
+
+- Stone, Iron, Steel AP, Flaming, and Exploding Arrows
+- Stone, Iron, Steel AP, Flaming, and Exploding Crossbow Bolts
+
+If another mod adds custom arrows or bolts, those custom ammo items will not automatically receive this refund effect. Their item XML needs matching `onProjectileImpact` refund triggers and matching `gameevents.xml` AddItems events, following the same pattern used for the vanilla arrows and bolts.
 
 ## Conversion Recipes
 
@@ -102,8 +123,16 @@ The mod adds 10 disassembly recipes — one for each arrow and crossbow bolt typ
 - 7 Days to Die 1.0 (Alpha 21+)
 - Server-side mod — works without client installation
 - May conflict with mods that modify arrow/bolt EntityDamage values or bow/crossbow base_add damage
+- Ammo refund effects are added only to vanilla arrow and bolt item names. Custom ammo from other mods needs equivalent refund XML added separately.
 
 ## Changelog
+
+### v1.3.0
+
+- Added XML-only ammo refund chance for vanilla arrows and crossbow bolts after projectile impact
+- Refund chance scales with Archery perk level: 0/10/20/30/40/50% for levels 0-5
+- Added refund support for Stone, Iron, Steel AP, Flaming, and Exploding arrows and bolts
+- Added compatibility note for custom arrow/bolt ammo from other mods
 
 ### v1.2.0
 
@@ -122,5 +151,5 @@ The mod adds 10 disassembly recipes — one for each arrow and crossbow bolt typ
 ---
 
 **Author:** Aleksei Khozin  
-**Version:** 1.2.0  
+**Version:** 1.3.0  
 **Website:** <https://github.com/alekho77/epic_7d2d_mods>

@@ -2,8 +2,8 @@
 <ModInfo>
   <Name value="EnhancedArcheryDamage"/>
   <DisplayName value="Enhanced Archery Damage"/>
-  <Description value="Increases damage for bows, crossbows, arrows, and bolts, adds arrow-bolt conversion recipes, and disassembly recipes that break down ammo into raw materials at 75% return"/>
+  <Description value="Increases damage for bows, crossbows, arrows, and bolts, adds arrow-bolt conversion recipes, disassembly recipes, and perk-based ammo refund on projectile impact"/>
   <Author value="Aleksei Khozin"/>
-  <Version value="1.2.0"/>
+  <Version value="1.3.0"/>
   <Website value="https://github.com/alekho77/epic_7d2d_mods"/>
 </ModInfo>

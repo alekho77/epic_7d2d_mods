@@ -210,4 +210,238 @@
 
   </append>
 
+  <!-- === ARCHERY AMMO REFUND ON PROJECTILE IMPACT === -->
+  <!-- These triggers refund one matching arrow/bolt after projectile impact.
+       This is XML-only refund behavior, not true pre-shot ammo preservation. -->
+
+  <append xpath="//item[@name='ammoArrowStone']/effect_group[@name='ammoArrowStone']">
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowStone">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="1"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowStone">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="2"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowStone">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="3"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowStone">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="4"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="40"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowStone">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="5"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+    </triggered_effect>
+  </append>
+
+  <append xpath="//item[@name='ammoArrowIron']/effect_group[@name='ammoArrowIron']">
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowIron">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="1"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowIron">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="2"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowIron">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="3"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowIron">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="4"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="40"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowIron">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="5"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+    </triggered_effect>
+  </append>
+
+  <append xpath="//item[@name='ammoArrowSteelAP']/effect_group[@name='ammoArrowSteelAP']">
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowSteelAP">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="1"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowSteelAP">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="2"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowSteelAP">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="3"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowSteelAP">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="4"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="40"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowSteelAP">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="5"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+    </triggered_effect>
+  </append>
+
+  <append xpath="//item[@name='ammoArrowFlaming']/effect_group[@name='ammoArrowFlaming']">
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowFlaming">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="1"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowFlaming">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="2"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowFlaming">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="3"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowFlaming">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="4"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="40"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowFlaming">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="5"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+    </triggered_effect>
+  </append>
+
+  <append xpath="//item[@name='ammoArrowExploding']/effect_group[@name='ammoArrowExploding']">
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowExploding">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="1"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowExploding">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="2"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowExploding">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="3"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowExploding">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="4"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="40"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoArrowExploding">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="5"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+    </triggered_effect>
+  </append>
+
+  <append xpath="//item[@name='ammoCrossbowBoltStone']/effect_group[@name='ammoCrossbowBoltStone']">
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltStone">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="1"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltStone">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="2"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltStone">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="3"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltStone">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="4"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="40"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltStone">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="5"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+    </triggered_effect>
+  </append>
+
+  <append xpath="//item[@name='ammoCrossbowBoltIron']/effect_group[@name='ammoCrossbowBoltIron']">
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltIron">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="1"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltIron">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="2"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltIron">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="3"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltIron">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="4"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="40"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltIron">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="5"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+    </triggered_effect>
+  </append>
+
+  <append xpath="//item[@name='ammoCrossbowBoltSteelAP']/effect_group[@name='ammoCrossbowBoltSteelAP']">
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltSteelAP">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="1"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltSteelAP">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="2"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltSteelAP">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="3"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltSteelAP">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="4"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="40"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltSteelAP">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="5"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+    </triggered_effect>
+  </append>
+
+  <append xpath="//item[@name='ammoCrossbowBoltFlaming']/effect_group[@name='ammoCrossbowBoltFlaming']">
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltFlaming">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="1"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltFlaming">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="2"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltFlaming">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="3"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltFlaming">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="4"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="40"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltFlaming">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="5"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+    </triggered_effect>
+  </append>
+
+  <append xpath="//item[@name='ammoCrossbowBoltExploding']/effect_group[@name='ammoCrossbowBoltExploding']">
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltExploding">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="1"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltExploding">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="2"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltExploding">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="3"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltExploding">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="4"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="40"/>
+    </triggered_effect>
+    <triggered_effect trigger="onProjectileImpact" action="CallGameEvent" target="self" event="evEadRefund_ammoCrossbowBoltExploding">
+      <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="5"/>
+      <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+    </triggered_effect>
+  </append>
+
 </config>
