@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <!-- Ammo refund events used by arrow/bolt projectile impact triggers. -->
+  <append xpath="/gameevents">
+
+    <action_sequence name="evEadRefund_ammoArrowStone">
+      <property name="allow_user_trigger" value="false"/>
+      <property name="action_type" value="Game"/>
+      <action class="AddItems">
+        <property name="added_items" value="ammoArrowStone"/>
+        <property name="added_item_counts" value="1"/>
+      </action>
+    </action_sequence>
+
+    <action_sequence name="evEadRefund_ammoArrowIron">
+      <property name="allow_user_trigger" value="false"/>
+      <property name="action_type" value="Game"/>
+      <action class="AddItems">
+        <property name="added_items" value="ammoArrowIron"/>
+        <property name="added_item_counts" value="1"/>
+      </action>
+    </action_sequence>
+
+    <action_sequence name="evEadRefund_ammoArrowSteelAP">
+      <property name="allow_user_trigger" value="false"/>
+      <property name="action_type" value="Game"/>
+      <action class="AddItems">
+        <property name="added_items" value="ammoArrowSteelAP"/>
+        <property name="added_item_counts" value="1"/>
+      </action>
+    </action_sequence>
+
+    <action_sequence name="evEadRefund_ammoArrowFlaming">
+      <property name="allow_user_trigger" value="false"/>
+      <property name="action_type" value="Game"/>
+      <action class="AddItems">
+        <property name="added_items" value="ammoArrowFlaming"/>
+        <property name="added_item_counts" value="1"/>
+      </action>
+    </action_sequence>
+
+    <action_sequence name="evEadRefund_ammoArrowExploding">
+      <property name="allow_user_trigger" value="false"/>
+      <property name="action_type" value="Game"/>
+      <action class="AddItems">
+        <property name="added_items" value="ammoArrowExploding"/>
+        <property name="added_item_counts" value="1"/>
+      </action>
+    </action_sequence>
+
+    <action_sequence name="evEadRefund_ammoCrossbowBoltStone">
+      <property name="allow_user_trigger" value="false"/>
+      <property name="action_type" value="Game"/>
+      <action class="AddItems">
+        <property name="added_items" value="ammoCrossbowBoltStone"/>
+        <property name="added_item_counts" value="1"/>
+      </action>
+    </action_sequence>
+
+    <action_sequence name="evEadRefund_ammoCrossbowBoltIron">
+      <property name="allow_user_trigger" value="false"/>
+      <property name="action_type" value="Game"/>
+      <action class="AddItems">
+        <property name="added_items" value="ammoCrossbowBoltIron"/>
+        <property name="added_item_counts" value="1"/>
+      </action>
+    </action_sequence>
+
+    <action_sequence name="evEadRefund_ammoCrossbowBoltSteelAP">
+      <property name="allow_user_trigger" value="false"/>
+      <property name="action_type" value="Game"/>
+      <action class="AddItems">
+        <property name="added_items" value="ammoCrossbowBoltSteelAP"/>
+        <property name="added_item_counts" value="1"/>
+      </action>
+    </action_sequence>
+
+    <action_sequence name="evEadRefund_ammoCrossbowBoltFlaming">
+      <property name="allow_user_trigger" value="false"/>
+      <property name="action_type" value="Game"/>
+      <action class="AddItems">
+        <property name="added_items" value="ammoCrossbowBoltFlaming"/>
+        <property name="added_item_counts" value="1"/>
+      </action>
+    </action_sequence>
+
+    <action_sequence name="evEadRefund_ammoCrossbowBoltExploding">
+      <property name="allow_user_trigger" value="false"/>
+      <property name="action_type" value="Game"/>
+      <action class="AddItems">
+        <property name="added_items" value="ammoCrossbowBoltExploding"/>
+        <property name="added_item_counts" value="1"/>
+      </action>
+    </action_sequence>
+
+  </append>
+</config>
