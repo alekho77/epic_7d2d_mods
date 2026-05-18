@@ -7,3 +7,11 @@ modDyeBronze,item_modifiers,mod,,,Dye: Bronze,,Färben: Bronze,Tinte: Bronce,Tei
 modDyeLime,item_modifiers,mod,,,Dye: Lime,,Färben: Limettengrün,Tinte: Lima,Teinture : citron vert,Tintura: Lime,染料：ライム,염색: 라임,Barwnik: Limonkowy,Tintura: Lima,Краситель: Лайм,Boya: Limon Yeşili,染色剂:青柠色,染料：青檸色
 modDyeCandyPink,item_modifiers,mod,,,Dye: Candy Pink,,Färben: Bonbonrosa,Tinte: Rosa Caramelo,Teinture : rose bonbon,Tintura: Rosa Confetto,染料：キャンディーピンク,염색: 캔디 핑크,Barwnik: Cukierkowy Róż,Tintura: Rosa Doce,Краситель: Леденцовый Розовый,Boya: Şeker Pembesi,染色剂:糖果粉,染料：糖果粉
 modDyeNeonOrange,item_modifiers,mod,,,Dye: Neon Orange,,Färben: Neonorange,Tinte: Naranja Neón,Teinture : orange fluo,Tintura: Arancione Neon,染料：ネオンオレンジ,염색: 네온 오렌지,Barwnik: Neonowy Pomarańczowy,Tintura: Laranja Neon,Краситель: Неоновый Оранжевый,Boya: Neon Turuncu,染色剂:霓虹橙,染料：霓虹橙
+modDyePlasmaBlue,item_modifiers,mod,,,Dye: Plasma Blue,,,,,,,,,,Краситель: Плазменный синий,,,
+modDyeAcidYellow,item_modifiers,mod,,,Dye: Acid Yellow,,,,,,,,,,Краситель: Кислотно-жёлтый,,,
+modDyeToxicMint,item_modifiers,mod,,,Dye: Toxic Mint,,,,,,,,,,Краситель: Ядовито-мятный,,,
+modDyeBloodNeon,item_modifiers,mod,,,Dye: Blood Neon,,,,,,,,,,Краситель: Неоново-красный,,,
+modDyeBlacklightIndigo,item_modifiers,mod,,,Dye: Blacklight Indigo,,,,,,,,,,Краситель: Ультрафиолетовый индиго,,,
+modDyeRadioactiveCyan,item_modifiers,mod,,,Dye: Radioactive Cyan,,,,,,,,,,Краситель: Радиоактивный голубой,,,
+modDyeVenomGreen,item_modifiers,mod,,,Dye: Venom Green,,,,,,,,,,Краситель: Ядовито-зелёный,,,
+modDyeMoltenRed,item_modifiers,mod,,,Dye: Molten Red,,,,,,,,,,Краситель: Раскалённый красно-алый,,,

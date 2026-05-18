@@ -2,8 +2,8 @@
 <ModInfo>
 	<Name value="EV_VividDyes"/>
 	<DisplayName value="EpicVales Vivid Dyes"/>
-	<Description value="Adds 8 new vivid and bright dyes: Royal Purple, Turquoise, Gold, Silver, Bronze, Lime, Candy Pink, and Neon Orange."/>
+	<Description value="Adds 16 new vivid and bright dyes: 8 original vivid colors plus 8 neon/acid colors including Plasma Blue, Acid Yellow, Toxic Mint, and more."/>
 	<Author value="Aleksei Khozin"/>
-	<Version value="1.0.0"/>
+	<Version value="1.1.0"/>
 	<Website value="https://github.com/alekho77/epic_7d2d_mods"/>
 </ModInfo>

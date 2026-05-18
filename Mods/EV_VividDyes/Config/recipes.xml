@@ -56,5 +56,29 @@
 		<recipe name="modDyeNeonOrange" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
 			<ingredient name="resourcePaint" count="500"/>
 		</recipe>
+		<recipe name="modDyePlasmaBlue" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+		<recipe name="modDyeAcidYellow" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+		<recipe name="modDyeToxicMint" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+		<recipe name="modDyeBloodNeon" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+		<recipe name="modDyeBlacklightIndigo" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+		<recipe name="modDyeRadioactiveCyan" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+		<recipe name="modDyeVenomGreen" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
+		<recipe name="modDyeMoltenRed" count="1" craft_area="workbench" craft_time="2" always_unlocked="true" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="500"/>
+		</recipe>
 	</append>
 </config>
