@@ -15,27 +15,27 @@ Adds 16 new vivid and bright dyes with eye-catching colors to customize your wea
 
 | Dye | Color (RGB) | Preview |
 | --- | --- | --- |
-| Dye: Royal Purple | 126, 3, 176 | 🟣 Deep vibrant purple |
-| Dye: Turquoise | 41, 255, 244 | 🔵 Bright cyan-turquoise |
-| Dye: Gold | 255, 214, 64 | 🟡 Rich golden yellow |
-| Dye: Silver | 208, 208, 208 | ⚪ Light metallic silver |
-| Dye: Bronze | 122, 74, 32 | 🟠 Warm metallic bronze |
-| Dye: Lime | 49, 240, 0 | 🟢 Vivid acid green |
-| Dye: Candy Pink | 255, 0, 221 | 🩷 Hot neon pink |
-| Dye: Neon Orange | 255, 89, 0 | 🟧 Bright vivid orange |
+| Dye: Royal Purple | 179, 38, 221 | 🟣 Bright electric purple |
+| Dye: Turquoise | 33, 234, 238 | 🔵 Bright cyan-turquoise |
+| Dye: Gold | 245, 197, 33 | 🟡 Rich golden yellow |
+| Dye: Silver | 230, 230, 230 | ⚪ Bright metallic silver |
+| Dye: Bronze | 202, 140, 60 | 🟠 Warm vivid bronze |
+| Dye: Lime | 102, 250, 56 | 🟢 Vivid acid green |
+| Dye: Candy Pink | 222, 21, 162 | 🩷 Hot neon pink |
+| Dye: Neon Orange | 235, 99, 21 | 🟧 Bright vivid orange |
 
 ### Neon/Acid Set (v1.1.0)
 
 | Dye | Color (RGB) | Preview |
 | --- | --- | --- |
-| Dye: Plasma Blue | 0, 144, 255 | 🔵 Bright electric blue |
-| Dye: Acid Yellow | 127, 138, 0 | 🟡 Searing acid yellow |
-| Dye: Toxic Mint | 0, 168, 120 | 🟢 Toxic mint green |
-| Dye: Blood Neon | 208, 0, 64 | 🔴 Neon blood red |
-| Dye: Blacklight Indigo | 6, 2, 51 | 🟣 UV blacklight indigo |
-| Dye: Radioactive Cyan | 0, 77, 102 | 🔵 Cold radioactive cyan |
-| Dye: Venom Green | 0, 90, 26 | 🟢 Venom dark green |
-| Dye: Molten Red | 77, 0, 16 | 🔴 Scorching molten red |
+| Dye: Plasma Blue | 37, 156, 242 | 🔵 Bright azure plasma blue |
+| Dye: Acid Yellow | 227, 253, 15 | 🟡 Bright acid yellow |
+| Dye: Toxic Mint | 23, 250, 208 | 🟢 Bright toxic mint |
+| Dye: Blood Neon | 233, 41, 91 | 🔴 Neon crimson blood red |
+| Dye: Blacklight Indigo | 71, 61, 233 | 🟣 Bright UV indigo |
+| Dye: Radioactive Cyan | 47, 191, 235 | 🔵 Bright radioactive cyan |
+| Dye: Venom Green | 1, 202, 89 | 🟢 Bright venom green |
+| Dye: Molten Red | 226, 51, 38 | 🔴 Bright molten red |
 
 ## Features
 

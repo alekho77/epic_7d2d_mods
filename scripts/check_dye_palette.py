@@ -3,16 +3,22 @@
 ==================================
 
 Parses EV_VividDyes/Config/item_modifiers.xml, extracts every custom dye's
-TintColor, then checks every unordered colour pair using perceptual metrics:
+TintColor, then checks colour brightness and every unordered colour pair using
+perceptual metrics:
 
-  • ΔE00 (CIEDE2000)       — primary gate
+  • CIELAB L*              — primary brightness gate for vivid colours
+  • HSL saturation         — guardrail against washed-out non-silver colours
+  • ΔE00 (CIEDE2000)       — perceptual separation between pairs
   • Rec.601 grayscale gap  — secondary readability signal
   • HSL hue gap            — heuristic for same-brightness collisions
 
-Pair classification (report-only; script always exits 0):
-  PASS  ΔE00 ≥ target  (default 30)
-  WARN  ΔE00 ≥ min     (default 25)
-  FAIL  ΔE00 < min     (default 25)
+Default profile: bright-vivid
+  Per-colour FAIL if a dye is near-black or a non-silver dye lacks saturation.
+  Palette FAIL if the new v1.1 dyes are too dark on average.
+  Pair status: FAIL < 12, WARN 12-18, OK 18-25, GREAT ≥ 25.
+
+Strict profile: strict-de
+  Old CIEDE2000-only gate: FAIL < 25, WARN 25-30, PASS ≥ 30.
 
 The script logs every pair to the console, sorted by ΔE00 ascending, followed
 by a summary block.  The report is also always written to
@@ -21,6 +27,7 @@ build/check_dye_palette.txt (UTF-8, overwritten on every run).
 Usage
 -----
     python scripts/check_dye_palette.py
+    python scripts/check_dye_palette.py --profile strict-de
     python scripts/check_dye_palette.py --xml path/to/item_modifiers.xml
     python scripts/check_dye_palette.py --min-delta-e 25 --target-delta-e 30 --min-gray-gap 30 --min-hue-gap 25
 """
@@ -31,14 +38,52 @@ import argparse
 import itertools
 import math
 import re
+import sys
 import xml.etree.ElementTree as ET
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_XML = REPO_ROOT / "Mods" / "EV_VividDyes" / "Config" / "item_modifiers.xml"
 BUILD_DIR = REPO_ROOT / "build"
 DEFAULT_OUTPUT = BUILD_DIR / "check_dye_palette.txt"
+NEW_DYE_IDS = {
+    "modDyePlasmaBlue",
+    "modDyeAcidYellow",
+    "modDyeToxicMint",
+    "modDyeBloodNeon",
+    "modDyeBlacklightIndigo",
+    "modDyeRadioactiveCyan",
+    "modDyeVenomGreen",
+    "modDyeMoltenRed",
+}
+
+
+@dataclass(frozen=True)
+class AuditProfile:
+    name: str
+    fail_de: float
+    warn_de: float
+    great_de: float
+    strict_de_only: bool = False
+    min_new_avg_l: float = 65.0
+    min_new_avg_gray: float = 120.0
+    near_black_max_channel: int = 170
+    near_black_l: float = 45.0
+    min_non_silver_saturation: float = 0.45
+    min_non_silver_chroma: float = 25.0
+
+
+PROFILES = {
+    "bright-vivid": AuditProfile(name="bright-vivid", fail_de=12.0, warn_de=18.0, great_de=25.0),
+    "strict-de": AuditProfile(
+        name="strict-de",
+        fail_de=25.0,
+        warn_de=25.0,
+        great_de=30.0,
+        strict_de_only=True,
+    ),
+}
 
 # ── colour math ────────────────────────────────────────────────────────────────
 
@@ -220,7 +265,9 @@ class Dye:
     hue: float = field(init=False)
     saturation: float = field(init=False)
     lab: tuple[float, float, float] = field(init=False)
+    lab_chroma: float = field(init=False)
     luminance: float = field(init=False)
+    max_channel: int = field(init=False)
 
     def __post_init__(self) -> None:
         r, g, b = self.rgb
@@ -229,7 +276,9 @@ class Dye:
         self.hue = hsl_hue(r, g, b)
         self.saturation = hsl_saturation(r, g, b)
         self.lab = rgb_to_lab(r, g, b)
+        self.lab_chroma = math.sqrt(self.lab[1] * self.lab[1] + self.lab[2] * self.lab[2])
         self.luminance = w3c_luminance(r, g, b)
+        self.max_channel = max(r, g, b)
 
 
 def _parse_rgb(value: str) -> tuple[int, int, int] | None:
@@ -310,8 +359,7 @@ class PairResult:
 def evaluate_pair(
     a: Dye,
     b: Dye,
-    min_de: float,
-    target_de: float,
+    profile: AuditProfile,
     min_gray_gap: float,
     min_hue_gap: float,
 ) -> PairResult:
@@ -325,12 +373,22 @@ def evaluate_pair(
     if hd < min_hue_gap and a.saturation > 0.5 and b.saturation > 0.5:
         notes.append(f"Δhue={hd:.0f}°<{min_hue_gap:.0f}°")
 
-    if de < min_de:
-        status = "FAIL"
-    elif de < target_de:
-        status = "WARN"
+    if profile.strict_de_only:
+        if de < profile.fail_de:
+            status = "FAIL"
+        elif de < profile.great_de:
+            status = "WARN"
+        else:
+            status = "PASS"
     else:
-        status = "PASS"
+        if de < profile.fail_de:
+            status = "FAIL"
+        elif de < profile.warn_de:
+            status = "WARN"
+        elif de < profile.great_de:
+            status = "OK"
+        else:
+            status = "GREAT"
 
     return PairResult(a, b, de, gd, hd, status, notes)
 
@@ -351,11 +409,73 @@ def _row(r: PairResult) -> str:
     )
 
 
+def _is_silver(dye: Dye) -> bool:
+    return dye.id == "modDyeSilver"
+
+
+def _brightness_notes(dye: Dye, profile: AuditProfile) -> list[str]:
+    if profile.strict_de_only:
+        return []
+
+    notes: list[str] = []
+    if dye.max_channel < profile.near_black_max_channel and dye.lab[0] < profile.near_black_l:
+        notes.append(
+            f"near-black max={dye.max_channel}<"
+            f"{profile.near_black_max_channel} and L*={dye.lab[0]:.1f}<{profile.near_black_l:.0f}"
+        )
+    if not _is_silver(dye) and dye.saturation < profile.min_non_silver_saturation:
+        notes.append(f"sat={dye.saturation:.2f}<{profile.min_non_silver_saturation:.2f}")
+    if not _is_silver(dye) and dye.lab_chroma < profile.min_non_silver_chroma:
+        notes.append(f"C*={dye.lab_chroma:.1f}<{profile.min_non_silver_chroma:.0f}")
+    return notes
+
+
+def _brightness_status(dye: Dye, profile: AuditProfile) -> str:
+    if profile.strict_de_only:
+        return "INFO"
+    return "FAIL" if _brightness_notes(dye, profile) else "PASS"
+
+
+def _color_row(dye: Dye, profile: AuditProfile) -> str:
+    r, g, b = dye.rgb
+    status = _brightness_status(dye, profile)
+    notes = _brightness_notes(dye, profile)
+    note_str = ("  !" + " !".join(notes)) if notes else ""
+    return (
+        f"  {status:<5} {dye.display_name:<{_W}} {dye.hex}  "
+        f"RGB=({r:3},{g:3},{b:3})  max={dye.max_channel:3}  "
+        f"gray={dye.gray:5.1f}  L*={dye.lab[0]:5.1f}  "
+        f"C*={dye.lab_chroma:5.1f}  hue={dye.hue:5.1f}°  sat={dye.saturation:.2f}"
+        f"{note_str}"
+    )
+
+
+def _new_dye_average_notes(dyes: list[Dye], profile: AuditProfile) -> tuple[float, float, list[str]]:
+    new_dyes = [d for d in dyes if d.id in NEW_DYE_IDS]
+    if not new_dyes:
+        return 0.0, 0.0, ["no v1.1 dye IDs found"]
+
+    avg_l = sum(d.lab[0] for d in new_dyes) / len(new_dyes)
+    avg_gray = sum(d.gray for d in new_dyes) / len(new_dyes)
+    notes: list[str] = []
+    if not profile.strict_de_only:
+        if avg_l < profile.min_new_avg_l:
+            notes.append(f"new-8 avg L*={avg_l:.1f}<{profile.min_new_avg_l:.0f}")
+        if avg_gray < profile.min_new_avg_gray:
+            notes.append(f"new-8 avg gray={avg_gray:.1f}<{profile.min_new_avg_gray:.0f}")
+    return avg_l, avg_gray, notes
+
+
 # ── main ───────────────────────────────────────────────────────────────────────
 
 def main() -> None:
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
+    if hasattr(sys.stderr, "reconfigure"):
+        sys.stderr.reconfigure(encoding="utf-8")
+
     parser = argparse.ArgumentParser(
-        description="Audit EV_VividDyes dye palette for perceptual colour separation."
+        description="Audit EV_VividDyes dye palette for vivid brightness and perceptual separation."
     )
     parser.add_argument(
         "--xml",
@@ -364,11 +484,26 @@ def main() -> None:
         metavar="PATH",
         help="Path to item_modifiers.xml (default: auto-detected from repo root)",
     )
-    parser.add_argument("--min-delta-e",  type=float, default=25.0, metavar="N", help="FAIL threshold (default 25)")
-    parser.add_argument("--target-delta-e", type=float, default=30.0, metavar="N", help="PASS threshold (default 30)")
+    parser.add_argument(
+        "--profile",
+        choices=sorted(PROFILES),
+        default="bright-vivid",
+        help="Audit profile: bright-vivid keeps dyes bright; strict-de uses the old ΔE00-only gate",
+    )
+    parser.add_argument("--min-delta-e", type=float, default=None, metavar="N", help="Override pair FAIL threshold")
+    parser.add_argument("--warn-delta-e", type=float, default=None, metavar="N", help="Override bright-vivid WARN/OK threshold")
+    parser.add_argument("--target-delta-e", type=float, default=None, metavar="N", help="Override GREAT/PASS threshold")
     parser.add_argument("--min-gray-gap", type=float, default=30.0, metavar="N", help="Grayscale gap warning threshold (default 30)")
     parser.add_argument("--min-hue-gap",  type=float, default=25.0, metavar="N", help="Hue-angle gap warning threshold (default 25°)")
     args = parser.parse_args()
+
+    profile = PROFILES[args.profile]
+    if args.min_delta_e is not None:
+        profile = replace(profile, fail_de=args.min_delta_e)
+    if args.warn_delta_e is not None:
+        profile = replace(profile, warn_de=args.warn_delta_e)
+    if args.target_delta_e is not None:
+        profile = replace(profile, great_de=args.target_delta_e)
 
     xml_path: Path = args.xml.resolve()
     if not xml_path.is_file():
@@ -386,15 +521,40 @@ def main() -> None:
         lines.append(text)
 
     emit(f"Loading dyes from: {shown}")
+    emit(f"Profile: {profile.name}")
+    if profile.strict_de_only:
+        emit(f"Pair status: FAIL ΔE00<{profile.fail_de:.0f}, WARN {profile.fail_de:.0f}-{profile.great_de:.0f}, PASS ≥{profile.great_de:.0f}")
+    else:
+        emit(
+            "Pair status: "
+            f"FAIL ΔE00<{profile.fail_de:.0f}, "
+            f"WARN {profile.fail_de:.0f}-{profile.warn_de:.0f}, "
+            f"OK {profile.warn_de:.0f}-{profile.great_de:.0f}, "
+            f"GREAT ≥{profile.great_de:.0f}"
+        )
     emit()
     dyes = load_dyes(xml_path)
 
     if not dyes:
         raise SystemExit("No custom dyes found in the specified file.")
 
-    emit(f"Loaded {len(dyes)} dye(s):")
+    emit(f"Loaded {len(dyes)} dye(s).")
+    emit()
+    emit("─── Color brightness and chroma " + "─" * 48)
     for d in dyes:
-        emit(f"  {d.display_name:<{_W}} {d.hex}  gray={d.gray:5.1f}  hue={d.hue:5.1f}°  sat={d.saturation:.2f}  L*={d.lab[0]:5.1f}")
+        emit(_color_row(d, profile))
+
+    brightness_failures = [d for d in dyes if _brightness_status(d, profile) == "FAIL"]
+    new_avg_l, new_avg_gray, avg_notes = _new_dye_average_notes(dyes, profile)
+    palette_brightness_status = "INFO" if profile.strict_de_only else ("FAIL" if avg_notes else "PASS")
+
+    emit()
+    emit("─── Palette brightness " + "─" * 56)
+    emit(f"  New v1.1 dye average L*   : {new_avg_l:5.1f}  target ≥ {profile.min_new_avg_l:.0f}")
+    emit(f"  New v1.1 dye average gray : {new_avg_gray:5.1f}  target ≥ {profile.min_new_avg_gray:.0f}")
+    emit(f"  Brightness status         : {palette_brightness_status}")
+    for note in avg_notes:
+        emit(f"  !{note}")
 
     n_expected = len(dyes) * (len(dyes) - 1) // 2
     emit()
@@ -402,7 +562,7 @@ def main() -> None:
     emit()
 
     results: list[PairResult] = [
-        evaluate_pair(a, b, args.min_delta_e, args.target_delta_e, args.min_gray_gap, args.min_hue_gap)
+        evaluate_pair(a, b, profile, args.min_gray_gap, args.min_hue_gap)
         for a, b in itertools.combinations(dyes, 2)
     ]
     results.sort(key=lambda r: r.delta_e)
@@ -412,17 +572,25 @@ def main() -> None:
         emit(_row(r))
 
     # ── summary ──────────────────────────────────────────────────────────────
-    n_pass = sum(1 for r in results if r.status == "PASS")
-    n_warn = sum(1 for r in results if r.status == "WARN")
-    n_fail = sum(1 for r in results if r.status == "FAIL")
+    status_order = ["GREAT", "OK", "PASS", "WARN", "FAIL"]
+    status_counts = {status: sum(1 for r in results if r.status == status) for status in status_order}
 
     emit()
     emit("─── Summary " + "─" * 70)
-    emit(f"  Dyes loaded   : {len(dyes)}")
-    emit(f"  Pairs checked : {len(results)}")
-    emit(f"  PASS (ΔE00 ≥ {args.target_delta_e:.0f}) : {n_pass}")
-    emit(f"  WARN (ΔE00 ≥ {args.min_delta_e:.0f}) : {n_warn}")
-    emit(f"  FAIL (ΔE00 < {args.min_delta_e:.0f}) : {n_fail}")
+    emit(f"  Profile             : {profile.name}")
+    emit(f"  Dyes loaded         : {len(dyes)}")
+    emit(f"  Pairs checked       : {len(results)}")
+    if profile.strict_de_only:
+        emit(f"  PASS (ΔE00 ≥ {profile.great_de:.0f})      : {status_counts['PASS']}")
+        emit(f"  WARN (ΔE00 ≥ {profile.fail_de:.0f})      : {status_counts['WARN']}")
+        emit(f"  FAIL (ΔE00 < {profile.fail_de:.0f})      : {status_counts['FAIL']}")
+    else:
+        emit(f"  GREAT (ΔE00 ≥ {profile.great_de:.0f})     : {status_counts['GREAT']}")
+        emit(f"  OK ({profile.warn_de:.0f} ≤ ΔE00 < {profile.great_de:.0f})     : {status_counts['OK']}")
+        emit(f"  WARN ({profile.fail_de:.0f} ≤ ΔE00 < {profile.warn_de:.0f})   : {status_counts['WARN']}")
+        emit(f"  FAIL (ΔE00 < {profile.fail_de:.0f})      : {status_counts['FAIL']}")
+        emit(f"  Color brightness FAIL : {len(brightness_failures)}")
+        emit(f"  Palette brightness    : {palette_brightness_status}")
 
     worst = results[:10]
     emit()
