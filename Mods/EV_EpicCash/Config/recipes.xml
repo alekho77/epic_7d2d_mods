@@ -42,6 +42,39 @@
     <recipe name="evRoboticTurretBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="30"/>
     </recipe>
+    <recipe name="evHuntingKnifeBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+      <ingredient name="evCash" count="8"/>
+    </recipe>
+    <recipe name="evMacheteBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+      <ingredient name="evCash" count="15"/>
+    </recipe>
+    <recipe name="evBaseballBatBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+      <ingredient name="evCash" count="8"/>
+    </recipe>
+    <recipe name="evSteelClubBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+      <ingredient name="evCash" count="15"/>
+    </recipe>
+    <recipe name="evStunBatonBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+      <ingredient name="evCash" count="12"/>
+    </recipe>
+    <recipe name="evIronSledgehammerBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+      <ingredient name="evCash" count="8"/>
+    </recipe>
+    <recipe name="evSteelSledgehammerBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+      <ingredient name="evCash" count="15"/>
+    </recipe>
+    <recipe name="evIronKnucklesBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+      <ingredient name="evCash" count="8"/>
+    </recipe>
+    <recipe name="evSteelKnucklesBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+      <ingredient name="evCash" count="15"/>
+    </recipe>
+    <recipe name="evIronSpearBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+      <ingredient name="evCash" count="8"/>
+    </recipe>
+    <recipe name="evSteelSpearBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+      <ingredient name="evCash" count="15"/>
+    </recipe>
 
     <!-- === AMMO BUNDLES === -->
     <recipe name="evAmmo9mmBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
@@ -73,6 +106,30 @@
     </recipe>
     <recipe name="evAmmoTurretAPBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
       <ingredient name="evCash" count="3"/>
+    </recipe>
+    <recipe name="evAmmoArrowIronBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+      <ingredient name="evCash" count="1"/>
+    </recipe>
+    <recipe name="evAmmoArrowSteelAPBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+      <ingredient name="evCash" count="2"/>
+    </recipe>
+    <recipe name="evAmmoArrowFlamingBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+      <ingredient name="evCash" count="3"/>
+    </recipe>
+    <recipe name="evAmmoArrowExplodingBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+      <ingredient name="evCash" count="4"/>
+    </recipe>
+    <recipe name="evAmmoCrossbowBoltIronBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+      <ingredient name="evCash" count="1"/>
+    </recipe>
+    <recipe name="evAmmoCrossbowBoltSteelAPBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+      <ingredient name="evCash" count="2"/>
+    </recipe>
+    <recipe name="evAmmoCrossbowBoltFlamingBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+      <ingredient name="evCash" count="3"/>
+    </recipe>
+    <recipe name="evAmmoCrossbowBoltExplodingBundle" count="1" craft_time="2" always_unlocked="true" tags="packMuleCrafting">
+      <ingredient name="evCash" count="4"/>
     </recipe>
 
     <!-- === ARMOR BUNDLES === -->

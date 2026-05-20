@@ -214,6 +214,171 @@
       </property>
     </item>
 
+    <!-- Hunting Knife: T6 hunting knife -->
+    <item name="evHuntingKnifeBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+      <property name="CustomIcon" value="meleeWpnBladeT1HuntingKnife"/>
+      <property name="CustomIconTint" value="FF3131"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evHuntingKnifeBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeWpnBladeT1HuntingKnife"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <!-- Machete: T6 machete -->
+    <item name="evMacheteBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+      <property name="CustomIcon" value="meleeWpnBladeT3Machete"/>
+      <property name="CustomIconTint" value="FF3131"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evMacheteBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeWpnBladeT3Machete"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <!-- Baseball Bat: T6 baseball bat -->
+    <item name="evBaseballBatBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+      <property name="CustomIcon" value="meleeWpnClubT1BaseballBat"/>
+      <property name="CustomIconTint" value="FF3131"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evBaseballBatBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeWpnClubT1BaseballBat"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <!-- Steel Club: T6 steel club -->
+    <item name="evSteelClubBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+      <property name="CustomIcon" value="meleeWpnClubT3SteelClub"/>
+      <property name="CustomIconTint" value="FF3131"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evSteelClubBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeWpnClubT3SteelClub"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <!-- Stun Baton: T6 stun baton -->
+    <item name="evStunBatonBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+      <property name="CustomIcon" value="meleeWpnBatonT2StunBaton"/>
+      <property name="CustomIconTint" value="FF3131"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evStunBatonBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeWpnBatonT2StunBaton"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <!-- Iron Sledgehammer: T6 iron sledgehammer -->
+    <item name="evIronSledgehammerBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+      <property name="CustomIcon" value="meleeWpnSledgeT1IronSledgehammer"/>
+      <property name="CustomIconTint" value="FF3131"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evIronSledgehammerBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeWpnSledgeT1IronSledgehammer"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <!-- Steel Sledgehammer: T6 steel sledgehammer -->
+    <item name="evSteelSledgehammerBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+      <property name="CustomIcon" value="meleeWpnSledgeT3SteelSledgehammer"/>
+      <property name="CustomIconTint" value="FF3131"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evSteelSledgehammerBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeWpnSledgeT3SteelSledgehammer"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <!-- Iron Knuckles: T6 iron knuckles -->
+    <item name="evIronKnucklesBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+      <property name="CustomIcon" value="meleeWpnKnucklesT1IronKnuckles"/>
+      <property name="CustomIconTint" value="FF3131"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evIronKnucklesBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeWpnKnucklesT1IronKnuckles"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <!-- Steel Knuckles: T6 steel knuckles -->
+    <item name="evSteelKnucklesBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+      <property name="CustomIcon" value="meleeWpnKnucklesT3SteelKnuckles"/>
+      <property name="CustomIconTint" value="FF3131"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evSteelKnucklesBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeWpnKnucklesT3SteelKnuckles"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <!-- Iron Spear: T6 iron spear -->
+    <item name="evIronSpearBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+      <property name="CustomIcon" value="meleeWpnSpearT1IronSpear"/>
+      <property name="CustomIconTint" value="FF3131"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evIronSpearBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeWpnSpearT1IronSpear"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
+    <!-- Steel Spear: T6 steel spear -->
+    <item name="evSteelSpearBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+      <property name="CustomIcon" value="meleeWpnSpearT3SteelSpear"/>
+      <property name="CustomIconTint" value="FF3131"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evSteelSpearBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="meleeWpnSpearT3SteelSpear"/>
+        <property name="Create_item_count" value="6"/>
+      </property>
+    </item>
+
     <!-- === AMMO BUNDLES === -->
 
     <!-- 9mm Ammo Bundle: 1000 regular 9mm rounds -->
@@ -363,6 +528,126 @@
       <property class="Action0">
         <property name="Create_item" value="ammoJunkTurretAP"/>
         <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
+    <!-- Iron Arrow Bundle: 250 iron arrows -->
+    <item name="evAmmoArrowIronBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Ammo"/>
+      <property name="CustomIcon" value="ammoArrowIron"/>
+      <property name="CustomIconTint" value="FDFF00"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmoArrowIronBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammoArrowIron"/>
+        <property name="Create_item_count" value="250"/>
+      </property>
+    </item>
+
+    <!-- Steel AP Arrow Bundle: 200 steel AP arrows -->
+    <item name="evAmmoArrowSteelAPBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Ammo"/>
+      <property name="CustomIcon" value="ammoArrowSteelAP"/>
+      <property name="CustomIconTint" value="FDFF00"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmoArrowSteelAPBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammoArrowSteelAP"/>
+        <property name="Create_item_count" value="200"/>
+      </property>
+    </item>
+
+    <!-- Flaming Arrow Bundle: 100 flaming arrows -->
+    <item name="evAmmoArrowFlamingBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Ammo"/>
+      <property name="CustomIcon" value="ammoArrowFlaming"/>
+      <property name="CustomIconTint" value="FDFF00"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmoArrowFlamingBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammoArrowFlaming"/>
+        <property name="Create_item_count" value="100"/>
+      </property>
+    </item>
+
+    <!-- Exploding Arrow Bundle: 75 exploding arrows -->
+    <item name="evAmmoArrowExplodingBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Ammo"/>
+      <property name="CustomIcon" value="ammoArrowExploding"/>
+      <property name="CustomIconTint" value="FDFF00"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmoArrowExplodingBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammoArrowExploding"/>
+        <property name="Create_item_count" value="75"/>
+      </property>
+    </item>
+
+    <!-- Iron Crossbow Bolt Bundle: 250 iron crossbow bolts -->
+    <item name="evAmmoCrossbowBoltIronBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Ammo"/>
+      <property name="CustomIcon" value="ammoCrossbowBoltIron"/>
+      <property name="CustomIconTint" value="FDFF00"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmoCrossbowBoltIronBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammoCrossbowBoltIron"/>
+        <property name="Create_item_count" value="250"/>
+      </property>
+    </item>
+
+    <!-- Steel AP Crossbow Bolt Bundle: 200 steel AP crossbow bolts -->
+    <item name="evAmmoCrossbowBoltSteelAPBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Ammo"/>
+      <property name="CustomIcon" value="ammoCrossbowBoltSteelAP"/>
+      <property name="CustomIconTint" value="FDFF00"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmoCrossbowBoltSteelAPBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammoCrossbowBoltSteelAP"/>
+        <property name="Create_item_count" value="200"/>
+      </property>
+    </item>
+
+    <!-- Flaming Crossbow Bolt Bundle: 100 flaming crossbow bolts -->
+    <item name="evAmmoCrossbowBoltFlamingBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Ammo"/>
+      <property name="CustomIcon" value="ammoCrossbowBoltFlaming"/>
+      <property name="CustomIconTint" value="FDFF00"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmoCrossbowBoltFlamingBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammoCrossbowBoltFlaming"/>
+        <property name="Create_item_count" value="100"/>
+      </property>
+    </item>
+
+    <!-- Exploding Crossbow Bolt Bundle: 75 exploding crossbow bolts -->
+    <item name="evAmmoCrossbowBoltExplodingBundle">
+      <property name="Extends" value="questRewardBundleMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Group" value="Ammo/Weapons,Ammo"/>
+      <property name="CustomIcon" value="ammoCrossbowBoltExploding"/>
+      <property name="CustomIconTint" value="FDFF00"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="evAmmoCrossbowBoltExplodingBundleDesc"/>
+      <property class="Action0">
+        <property name="Create_item" value="ammoCrossbowBoltExploding"/>
+        <property name="Create_item_count" value="75"/>
       </property>
     </item>
 

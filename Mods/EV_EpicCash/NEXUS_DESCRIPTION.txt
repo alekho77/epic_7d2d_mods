@@ -27,7 +27,7 @@ Epic Bucks is a neon yellow in-game currency that server administrators distribu
 [*]Players open their crafting menu and exchange Epic Bucks for the item bundles they want — no further admin involvement needed.
 [/list]
 
-This mod ships [b]92 ready-made bundles[/b] covering vehicles, weapons, ammo, armor, tools, skill magazines, skill books, workstations, food, and drinks. A built-in guide also explains how to add your own custom bundles for any combination of items at any price.
+This mod ships [b]110 ready-made bundles[/b] covering vehicles, weapons, ammo, armor, tools, skill magazines, skill books, workstations, food, and drinks. A built-in guide also explains how to add your own custom bundles for any combination of items at any price.
 
 [size=5][b]Features[/b][/size]
 
@@ -38,7 +38,7 @@ This mod ships [b]92 ready-made bundles[/b] covering vehicles, weapons, ammo, ar
 [*][b]Cannot Be Sold[/b] — not sellable to traders, keeping it as a server-only economy
 [*][b]Cannot Be Used as Fuel[/b] — prevents accidental burning
 [*][b]Creative Menu Access[/b] — available in creative mode for easy admin distribution
-[*][b]92 Ready-Made Bundles[/b] — vehicles, weapons, ammo, armor, tools, magazines, books, workstations, food, and drinks
+[*][b]110 Ready-Made Bundles[/b] — vehicles, weapons, ammo, armor, tools, magazines, books, workstations, food, and drinks
 [*][b]Color-Coded Categories[/b] — each bundle type has a unique neon icon tint for instant recognition
 [*][b]Extensible[/b] — add unlimited custom bundles with any items and prices
 [/list]
@@ -67,7 +67,7 @@ give <player_name> evCash 100[/code]
 
 [size=5][b]Included Bundles[/b][/size]
 
-The mod ships with [b]92 ready-made bundles[/b] across 10 categories, all craftable from the player inventory using Epic Bucks (EB).
+The mod ships with [b]110 ready-made bundles[/b] across 10 categories, all craftable from the player inventory using Epic Bucks (EB).
 
 [color=#FF6A00][size=4][b]Vehicle Bundles[/b][/size][/color]
 
@@ -90,6 +90,17 @@ The mod ships with [b]92 ready-made bundles[/b] across 10 categories, all crafta
 [*][b]Auto Shotgun Kit[/b] (40 EB) — T6 Auto Shotgun, 1,000× AP slugs
 [*][b]Robotic Turret Kit[/b] (30 EB) — T6 Robotic Turret, 1,000× AP turret rounds
 [*][b]M60 Machine Gun Kit[/b] (60 EB) — T6 M60, 3,000× AP 7.62mm rounds
+[*][b]Hunting Knife[/b] (8 EB) — T6 Hunting Knife
+[*][b]Machete[/b] (15 EB) — T6 Machete
+[*][b]Baseball Bat[/b] (8 EB) — T6 Baseball Bat
+[*][b]Steel Club[/b] (15 EB) — T6 Steel Club
+[*][b]Stun Baton[/b] (12 EB) — T6 Stun Baton
+[*][b]Iron Sledgehammer[/b] (8 EB) — T6 Iron Sledgehammer
+[*][b]Steel Sledgehammer[/b] (15 EB) — T6 Steel Sledgehammer
+[*][b]Iron Knuckles[/b] (8 EB) — T6 Iron Knuckles
+[*][b]Steel Knuckles[/b] (15 EB) — T6 Steel Knuckles
+[*][b]Iron Spear[/b] (8 EB) — T6 Iron Spear
+[*][b]Steel Spear[/b] (15 EB) — T6 Steel Spear
 [/list]
 
 [color=#FDFF00][size=4][b]Ammo Bundles[/b][/size][/color]
@@ -105,6 +116,14 @@ The mod ships with [b]92 ready-made bundles[/b] across 10 categories, all crafta
 [*][b]AP 7.62mm Ammo Pack[/b] (3 EB) — 1,000× AP 7.62mm rounds
 [*][b]AP Shotgun Slug Pack[/b] (3 EB) — 1,000× AP shotgun slugs
 [*][b]AP Robotic Turret Ammo Pack[/b] (3 EB) — 1,000× AP Robotic Turret rounds
+[*][b]Iron Arrow Pack[/b] (1 EB) — 250× Iron Arrows
+[*][b]Steel AP Arrow Pack[/b] (2 EB) — 200× Steel AP Arrows
+[*][b]Flaming Arrow Pack[/b] (3 EB) — 100× Flaming Arrows
+[*][b]Exploding Arrow Pack[/b] (4 EB) — 75× Exploding Arrows
+[*][b]Iron Crossbow Bolt Pack[/b] (1 EB) — 250× Iron Crossbow Bolts
+[*][b]Steel AP Crossbow Bolt Pack[/b] (2 EB) — 200× Steel AP Crossbow Bolts
+[*][b]Flaming Crossbow Bolt Pack[/b] (3 EB) — 100× Flaming Crossbow Bolts
+[*][b]Exploding Crossbow Bolt Pack[/b] (4 EB) — 75× Exploding Crossbow Bolts
 [/list]
 
 [color=#1F51FF][size=4][b]Armor Bundles[/b][/size][/color]
@@ -221,6 +240,14 @@ All book bundles contain the complete set of 7 volumes. Every Skill Book Bundle 
 [quote]If your server runs mods that add custom items to the game, you can easily extend EpicCash to support them. Follow the guide in the mod's README to create bundles containing any modded items at any price.[/quote]
 
 [size=5][b]Changelog[/b][/size]
+
+[size=4][b]v1.3.1[/b][/size]
+
+[list]
+[*]Added 11 vanilla melee weapon purchases that each grant exactly one Tier 6 weapon with no ammo or extra items
+[*]Added 8 arrow and crossbow bolt packs for iron, steel AP, flaming, and exploding projectile types, with smaller counts than firearm ammo packs
+[*]Updated EpicCash documentation and package metadata for the 110 ready-made bundle set
+[/list]
 
 [size=4][b]v1.3.0[/b][/size]
 
