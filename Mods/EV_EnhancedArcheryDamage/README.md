@@ -127,6 +127,10 @@ The mod adds 10 disassembly recipes — one for each arrow and crossbow bolt typ
 
 ## Changelog
 
+### v1.3.1
+
+- Fixed ammo refund not firing on dedicated servers (added `allow_client_call="true"` to all projectile-impact refund triggers)
+
 ### v1.3.0
 
 - Added XML-only ammo refund chance for vanilla arrows and crossbow bolts after projectile impact
@@ -151,5 +155,5 @@ The mod adds 10 disassembly recipes — one for each arrow and crossbow bolt typ
 ---
 
 **Author:** Aleksei Khozin  
-**Version:** 1.3.0  
+**Version:** 1.3.1  
 **Website:** <https://github.com/alekho77/epic_7d2d_mods>
