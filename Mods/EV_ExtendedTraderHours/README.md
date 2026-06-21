@@ -38,7 +38,7 @@ Removes opening and closing time restrictions from all traders, making them avai
 
 ## Compatibility
 
-- 7 Days to Die 1.0 (Alpha 21+)
+- 7 Days to Die v3.0
 - Server-side mod — works without client installation
 - Does not override the Blood Moon trader territory restriction
 - May conflict with mods that modify trader `open_time`/`close_time` attributes

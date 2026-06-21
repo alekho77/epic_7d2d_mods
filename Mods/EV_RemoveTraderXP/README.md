@@ -30,7 +30,7 @@ Sets `PlayerExpGain` base value to `0` for the `Selling` tag on the player entit
 
 ## Compatibility
 
-- 7 Days to Die 1.0 (Alpha 21+)
+- 7 Days to Die v3.0
 - Server-side mod — works without client installation
 - May conflict with mods that modify `PlayerExpGain` on `playerMale` entity class
 

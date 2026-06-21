@@ -23,7 +23,7 @@ Remember that scene in *Police Academy* where a tiny, delicate girl casually pul
 
 ## Compatibility
 
-- 7 Days to Die 1.0 (Alpha 21+)
+- 7 Days to Die v3.0
 - Server-side mod — works without client installation
 - May conflict with mods that modify the `gunHandgunT2Magnum44` EntityDamage `base_add` value
 

@@ -51,7 +51,7 @@ Allows players to recover storage containers, chests, and safes by disassembling
 
 ## Compatibility
 
-- 7 Days to Die 1.0 (Alpha 21+)
+- 7 Days to Die v3.0
 - Server and single-player compatible
 - Works alongside other storage and base building mods
 - Uses standard `drop event="Harvest"` with `tool_category="Disassemble"` — no custom scripts

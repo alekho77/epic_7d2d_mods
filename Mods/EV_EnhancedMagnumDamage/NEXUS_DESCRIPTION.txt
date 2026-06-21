@@ -30,7 +30,7 @@ Players connecting to the server [b]do not need to download or install anything[
 [size=5][b]Compatibility[/b][/size]
 
 [list]
-[*]7 Days to Die 1.0 (Alpha 21+)
+[*]7 Days to Die v3.0
 [*]Server-side mod — works without client installation
 [*]May conflict with mods that modify the gunHandgunT2Magnum44 EntityDamage base_add value
 [/list]

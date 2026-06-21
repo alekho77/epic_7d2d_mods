@@ -47,7 +47,7 @@ At the default XPMultiplier of 100:
 
 ## Compatibility
 
-- 7 Days to Die 1.0 (b313) and later
+- 7 Days to Die v3.0
 - Server-side mod — works without client installation
 - May conflict with mods that modify `PlayerExpGain` on the `playerMale` entity class
 

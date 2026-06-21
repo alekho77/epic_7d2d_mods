@@ -44,7 +44,7 @@ Makes nights significantly darker for a more immersive and challenging survival 
 
 ## Compatibility
 
-- 7 Days to Die 1.0 (Alpha 21+)
+- 7 Days to Die v3.0
 - Server and single-player compatible
 - May conflict with mods that modify `worldglobal.xml` ambient values or the `modArmorNightVision` item modifier
 

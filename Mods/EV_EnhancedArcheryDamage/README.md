@@ -120,7 +120,7 @@ The mod adds 10 disassembly recipes — one for each arrow and crossbow bolt typ
 
 ## Compatibility
 
-- 7 Days to Die 1.0 (Alpha 21+)
+- 7 Days to Die v3.0
 - Server-side mod — works without client installation
 - May conflict with mods that modify arrow/bolt EntityDamage values or bow/crossbow base_add damage
 - Ammo refund effects are added only to vanilla arrow and bolt item names. Custom ammo from other mods needs equivalent refund XML added separately.
@@ -142,7 +142,7 @@ The mod adds 10 disassembly recipes — one for each arrow and crossbow bolt typ
 
 - Added 10 disassembly recipes to break down 30 arrows/bolts into raw materials at 75% return
 - Disassembly requires a Workbench and all 7 volumes of Ranger's Guide to Archery
-- Added Localization.txt with English and Russian translations for all bundle items
+- Added Localization.csv with English and Russian translations for all bundle items
 
 ### v1.1.0
 
