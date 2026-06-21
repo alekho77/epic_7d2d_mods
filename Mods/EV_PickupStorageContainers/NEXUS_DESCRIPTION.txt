@@ -63,7 +63,7 @@ Players connecting to the server [b]do not need to download or install anything[
 [size=5][b]Compatibility[/b][/size]
 
 [list]
-[*]7 Days to Die 1.0 (Alpha 21+)
+[*]7 Days to Die v3.0
 [*]Server and single-player compatible
 [*]Works alongside other storage and base building mods
 [*]Uses standard drop event="Harvest" with tool_category="Disassemble" — no custom scripts

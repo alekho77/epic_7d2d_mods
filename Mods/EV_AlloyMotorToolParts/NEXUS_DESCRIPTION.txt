@@ -56,7 +56,7 @@ The recipe is locked behind the [b]Salvage Tools[/b] progression line (Scrapping
 [size=5][b]Compatibility[/b][/size]
 
 [list]
-[*]7 Days to Die 1.0 (Alpha 21+)
+[*]7 Days to Die v3.0
 [*]Server and single-player compatible
 [*]May conflict with mods that modify the Salvage Tools progression cap or the craftingSalvageTools skill tree
 [/list]
@@ -84,7 +84,7 @@ This mod is the first part of an advanced tool parts system:
 [*][b]items.xml[/b] — Item definition with recolored icon
 [*][b]recipes.xml[/b] — Crafting recipe with unlock tag
 [*][b]progression.xml[/b] — Progression system, cap increase, and UI display entry
-[*][b]Localization.txt[/b] — English and Russian localization
+[*][b]Localization.csv[/b] — English and Russian localization
 [/list]
 
 [size=5][b]Changelog[/b][/size]

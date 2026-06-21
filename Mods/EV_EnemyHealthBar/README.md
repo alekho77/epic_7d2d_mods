@@ -21,9 +21,9 @@ Displays the enemy health bar above targets at all times, not just when aiming a
 
 ## Compatibility
 
-- 7 Days to Die 1.0 (Alpha 21+)
+- 7 Days to Die v3.0
 - Client-side mod
-- May conflict with mods that modify the `windowTargetBar` visibility setting in `XUi/windows.xml`
+- May conflict with mods that modify the `windowTargetBar` visibility setting in `XUi_InGame/windows.xml`
 
 ## Changelog
 

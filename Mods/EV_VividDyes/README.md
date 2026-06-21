@@ -52,7 +52,7 @@ Adds 16 new vivid and bright dyes with eye-catching colors to customize your wea
 
 ## Compatibility
 
-- 7 Days to Die 1.0+
+- 7 Days to Die v3.0
 - Server and single-player compatible
 - Compatible with other dye mods as long as they don't use the same internal names
 

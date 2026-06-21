@@ -268,7 +268,7 @@ Add a new `<item>` block inside the `<append xpath="/items">` section in `Config
 
 ### Step 2 — Add localization
 
-Add two rows to `Config/Localization.txt` — one for the display name and one for the description. At minimum fill in the `english` column; copy the pattern from existing entries for other languages.
+Add two rows to `Config/Localization.csv` — one for the display name and one for the description. At minimum fill in the `english` column; copy the pattern from existing entries for other languages.
 
 ```text
 evMyCustomBundle,items,Item,,,My Custom Bundle,Bundle display name,...
