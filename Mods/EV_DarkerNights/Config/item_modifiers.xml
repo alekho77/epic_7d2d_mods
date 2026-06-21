@@ -4,29 +4,18 @@
   <!-- Combines NightVision (standard green effect) + Bright (additional lighting) -->
   <!-- Provides classic NVG look with enhanced brightness for very dark nights -->
   
-  <append xpath="/item_modifiers/item_modifier[@name='modArmorNightVision']">
-    <!-- Enable NVG: combination of NightVision (standard green effect) + Bright (additional lighting) -->
-    
-    <!-- Standard night vision effect -->
-    <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfItemActivate']/@effect_name">NightVision</set>
-    <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfItemActivate']/@intensity">1.0</set>
-    <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfItemActivate']/@fade">1.2</set>
-    
-    <!-- Additional lighting effect - Bright -->
+  <!-- Standard night vision effect -->
+  <set xpath="/item_modifiers/item_modifier[@name='modArmorNightVision']/effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfItemActivate' and @effect_name='NightVision']/@intensity">1.0</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modArmorNightVision']/effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfItemActivate' and @effect_name='NightVision']/@fade">1.2</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modArmorNightVision']/effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfItemDeactivate' and @effect_name='NightVision']/@intensity">0</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modArmorNightVision']/effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfItemDeactivate' and @effect_name='NightVision']/@fade">1.2</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modArmorNightVision']/effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfEquipStop' and @effect_name='NightVision']/@intensity">0</set>
+  <set xpath="/item_modifiers/item_modifier[@name='modArmorNightVision']/effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfEquipStop' and @effect_name='NightVision']/@fade">1.2</set>
+
+  <!-- Additional lighting effect - Bright -->
+  <append xpath="/item_modifiers/item_modifier[@name='modArmorNightVision']/effect_group">
     <triggered_effect trigger="onSelfItemActivate" action="ModifyScreenEffect" effect_name="Bright" intensity="0.9" fade="1.2"/>
-
-    <!-- Disable NVG - turn off both effects -->
-    <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfItemDeactivate']/@effect_name">NightVision</set>
-    <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfItemDeactivate']/@intensity">0</set>
-    <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfItemDeactivate']/@fade">1.2</set>
-    
     <triggered_effect trigger="onSelfItemDeactivate" action="ModifyScreenEffect" effect_name="Bright" intensity="0" fade="1.2"/>
-
-    <!-- Remove goggles - disable both effects -->
-    <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfEquipStop']/@effect_name">NightVision</set>
-    <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfEquipStop']/@intensity">0</set>
-    <set xpath="effect_group/triggered_effect[@action='ModifyScreenEffect' and @trigger='onSelfEquipStop']/@fade">1.2</set>
-    
     <triggered_effect trigger="onSelfEquipStop" action="ModifyScreenEffect" effect_name="Bright" intensity="0" fade="1.2"/>
   </append>
 </config>
