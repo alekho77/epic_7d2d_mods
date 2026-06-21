@@ -78,24 +78,34 @@ Mods/
 
 ## Vanilla Game Data Reference (Source of Truth)
 
-The repository contains a `/Data` folder with the **complete original unmodified game data** — a full copy of the `Data\` directory from the vanilla 7 Days to Die installation. Its structure mirrors the game installation as documented in `docs/modding_guide.md`:
+The repository contains **two snapshots** of the vanilla game data, one per major version:
+
+### `/Data3/` — v3.x (current target)
+
+This is the **primary source of truth** for all active mod development. It is a full copy of the `Data\` directory from the vanilla 7 Days to Die **v3.x** installation:
 
 | Subfolder | Contents |
 |-----------|----------|
-| `Data/Config/` | All XML configuration files — the primary modding reference |
-| `Data/Prefabs/` | POI prefab definitions |
-| `Data/ItemIcons/` | Item icon textures |
-| `Data/Bundles/` | Legacy Unity AssetBundles |
-| `Data/Addressables/` | Unity Addressables catalog and assets |
-| `Data/Music/` | Background music tracks |
-| `Data/Worlds/` | Bundled world maps |
-| `Data/Stamps/` | World generation stamp assets |
+| `Data3/Config/` | All XML configuration files — the primary modding reference |
+| `Data3/Prefabs/` | POI prefab definitions |
+| `Data3/ItemIcons/` | Item icon textures |
+| `Data3/Bundles/` | Legacy Unity AssetBundles |
+| `Data3/Addressables/` | Unity Addressables catalog and assets |
+| `Data3/Music/` | Background music tracks |
+| `Data3/Worlds/` | Bundled world maps |
+| `Data3/Stamps/` | World generation stamp assets |
+| `Data3/0_TFP_Harmony/` | TFP base Harmony DLL — baseline Harmony framework shipped with v3.x |
+| `Data3/Web/` | Web-based UI assets (new in v3.x) |
 
-> **CRITICAL**: Before writing or modifying any mod, always read the relevant vanilla file(s) from `/Data/Config` first.
-> These files are the authoritative source for item names, property keys, buff IDs, perk names, UI elements, entity names, and all inter-file relationships.
+### `/Data/` — v2.6 (historical reference only)
+
+The `/Data` folder is a snapshot of the vanilla **v2.6** game data. Keep it for cross-version comparison but **do not use it as the primary reference for new mods** — XML schemas, item names, and property keys may differ from v3.x.
+
+> **CRITICAL**: Before writing or modifying any mod, always read the relevant vanilla file(s) from `/Data3/Config` first.
+> These files are the authoritative source for item names, property keys, buff IDs, perk names, UI elements, entity names, and all inter-file relationships for the current v3.x target.
 > Never guess or assume values — look them up in the source files.
 >
-> When a request involves non-config assets (icons, prefabs, bundles, etc.), consult the relevant subfolder under `/Data` as well.
+> When a request involves non-config assets (icons, prefabs, bundles, etc.), consult the relevant subfolder under `/Data3` as well.
 
 ### Inventory Object Catalog (`docs/inventory_catalog.md`)
 
@@ -103,9 +113,11 @@ The file `docs/inventory_catalog.md` is a **pre-built catalog of all game object
 
 1. **Find an object ID by name or description.** When the user refers to an object by its English name, Russian name, or description — search `docs/inventory_catalog.md` to resolve the internal ID (e.g., `gunHandgunT2Magnum44`).
 2. **Browse object groups and categories.** The catalog is organized into categorized sections (Ranged Weapons, Melee Weapons, Loot Containers, Armor Mods, etc.) — use these to discover related objects or get a list of IDs in a specific group.
-3. **Look up detailed properties in XML configs.** Once the internal ID is known, search the corresponding XML config file (`items.xml`, `blocks.xml`, or `item_modifiers.xml` under `/Data/Config/`) by the `name` attribute to find its full property set, effects, recipes, and relationships.
+3. **Look up detailed properties in XML configs.** Once the internal ID is known, search the corresponding XML config file (`items.xml`, `blocks.xml`, or `item_modifiers.xml` under `/Data3/Config/`) by the `name` attribute to find its full property set, effects, recipes, and relationships.
 
-> **Workflow**: user description/name → search `docs/inventory_catalog.md` → get internal ID → search `/Data/Config/*.xml` by that ID for full details.
+> **Workflow**: user description/name → search `docs/inventory_catalog.md` → get internal ID → search `/Data3/Config/*.xml` by that ID for full details.
+>
+> **Note**: `docs/inventory_catalog.md` was generated from `/Data/Config` (v2.6). Until it is rebuilt against `Data3/`, treat it as a best-effort index — always confirm IDs and properties in the v3.x XML files.
 
 ## Reference Mods (`Refs/`)
 
@@ -170,13 +182,18 @@ All reference modlets follow the same xpath-patching system as EpicVales modlets
 | `XUi_Common/` | Shared UI components: `controls.xml`, `styles.xml` |
 | `XUi_Menu/` | Main menu UI: `windows.xml`, `controls.xml`, `styles.xml`, `xui.xml` |
 
-All files listed above are located under `/Data/Config/`.
+All files listed above are located under `/Data3/Config/` (v3.x, current target). The same file layout exists under `/Data/Config/` for the v2.6 historical reference.
 
 ## Game Version
 
-Target the **latest stable release** unless the user explicitly specifies a different version in their request.
+All mods in this repository currently target **7 Days to Die v3.x**.
 
-When searching forums, wikis, or any external materials: first determine the current latest stable version of 7 Days to Die, then scope all searches and references to that version. Modding APIs, XML schemas, and property names can differ significantly between versions.
+| Folder | Game version | Status |
+|--------|-------------|--------|
+| `/Data3/` | v3.x | **Active — primary reference for all new mods** |
+| `/Data/` | v2.6 | Historical reference only — do not use for new development |
+
+When searching forums, wikis, or any external materials: scope all searches to **v3.x**. Modding APIs, XML schemas, and property names can differ significantly between v2.6 and v3.x.
 
 ## Testing Mods
 
